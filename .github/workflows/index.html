@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ANKEN（アンケン）｜ハイスペック副業人材のビジネスマッチング</title>
+<meta name="description" content="ANKENは、RFP（RFP）を無料で作成し、AIが最速でプロ人材とマッチング。営業電話ゼロ・業界最安水準の手数料で、少額の副業発注からビジネスマッチングまで対応します。「外注したいけど要件をまとめるのが面倒」「営業電話に振り回されたくない」をANKENが解決。要件定義、見積もり、RFPの無料代行、AIによる即日マッチング、業界最安手数料で、副業人材の発注をもっとカジュアルに。" />
+<meta name="keywords" content="ビジネスマッチング, 副業 発注, 要件定義 無料, RFP作成, AIマッチング, 業務委託, フリーランス" />
+<meta property="og:title" content="ANKEN｜その“ちょっとした”仕事、要件定義からプロにお任せ。" />
+<meta property="og:description" content="無料RFP作成 × AIマッチング × 業界最安手数料。少額案件もお試しOK。" />
+<meta property="og:type" content="website" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0B1221" />
+
+<!-- Tailwind CSS (CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0B1221',
+          midnight: '#101935',
+          accent: '#F59E0B',
+          accentDark: '#B45309',
+          accentText: '#92400E',
+          highlight: '#FACC15',
+          softgray: '#FAF8F2',
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans JP', system-ui, sans-serif;
+    /* 日本語の自然な改行（対応ブラウザ） */
+    line-break: strict;
+  }
+
+  /*
+    日本語改行の制御:
+    - 見出し・キャッチでは「文節（=phrase）」単位でのみ改行させる
+    - 本文では auto-phrase が効くブラウザでは自動で文節改行
+  */
+  .ja-phrase {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-break: strict;
+  }
+  @supports (word-break: auto-phrase) {
+    .ja-auto { word-break: auto-phrase; }
+  }
+  /* phrase: 改行禁止の意味の塊。span.phrase はインラインブロックで丸ごと改行 */
+  .phrase { display: inline-block; }
+
+  /* Hero gradient */
+  .hero-bg {
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(245,158,11,0.32), transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, rgba(250,204,21,0.22), transparent 60%),
+      linear-gradient(180deg, #0B1221 0%, #101935 60%, #0B1221 100%);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Marquee-like text accent */
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.25);
+    color: transparent;
+  }
+
+  /* Card hover */
+  .card-hover { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -20px rgba(245,158,11,0.45); }
+
+  /* FAQ accordion */
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform .2s ease; }
+
+  /* Step connector line */
+  @media (min-width: 768px) {
+    .step-line::before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: calc(50% + 40px);
+      right: calc(-50% + 40px);
+      height: 2px;
+      background: linear-gradient(to right, #F59E0B, rgba(245,158,11,0.2));
+    }
+    .step-item:last-child .step-line::before { display: none; }
+  }
+
+  /* Sticky CTA on mobile */
+  .sticky-cta { box-shadow: 0 -8px 24px -8px rgba(0,0,0,0.25); }
+
+  /* Subtle pulse */
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(250,204,21,0.55); }
+    70% { box-shadow: 0 0 0 14px rgba(250,204,21,0); }
+    100% { box-shadow: 0 0 0 0 rgba(250,204,21,0); }
+  }
+  .pulse { animation: pulse-ring 2.4s infinite; }
+</style>
+</head>
+
+<body class="bg-white text-ink antialiased ja-auto">
+
+<!-- ============================== HEADER ============================== -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-ink items-center justify-center">
+        <img src="logo-40.png" class="w-7 h-7" alt="ANKEN">
+      </span>
+      <span class="font-bold tracking-tight text-lg"><span class="text-accentText">ANKEN</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-gray-600">
+      <a href="#problem" class="hover:text-ink">発注のお悩み</a>
+      <a href="#solution" class="hover:text-ink">サービスの特徴</a>
+      <a href="#steps" class="hover:text-ink">ご利用の流れ</a>
+      <a href="#trust" class="hover:text-ink">仕組み</a>
+      <a href="#faq" class="hover:text-ink">FAQ</a>
+    </nav>
+    <a href="#cta"
+       class="inline-flex items-center gap-2 bg-ink hover:bg-midnight text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition">
+      <span class="phrase">無料で相談する</span>
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ============================== HERO ============================== -->
+<section id="top" class="relative hero-bg text-white overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-60 pointer-events-none"></div>
+
+  <!-- Background key visual: smiling business pro (decorative, right side) -->
+  <div aria-hidden="true" class="hidden lg:block absolute inset-y-0 right-0 w-[55%] xl:w-[50%] pointer-events-none">
+    <!-- warm glows behind the photo -->
+    <div class="absolute right-[6%] top-1/2 -translate-y-1/2 w-[78%] aspect-square rounded-full bg-accent/35 blur-3xl"></div>
+    <div class="absolute right-[14%] top-1/2 -translate-y-[55%] w-[55%] aspect-square rounded-full bg-highlight/25 blur-2xl"></div>
+    <!-- the person photo -->
+    <img src="assets/hero-person.png" alt=""
+         class="absolute right-0 bottom-0 h-[92%] lg:h-[96%] w-auto object-contain object-right-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
+         loading="eager" decoding="async" />
+    <!-- left-edge fade so the headline stays readable -->
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-transparent"></div>
+    <div class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-ink to-transparent"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-4 md:px-6 pt-16 pb-24 md:pt-24 md:pb-32">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-3 py-1 text-xs md:text-sm mb-6">
+        <span class="w-2 h-2 rounded-full bg-highlight pulse"></span>
+        <span class="phrase">優秀人材を副業で活用しませんか？</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-black leading-tight tracking-tight ja-phrase">
+        <span class="phrase">その<span class="text-highlight">“ちょっとした”仕事</span>、</span>
+        <span class="phrase"><span class="underline decoration-accent decoration-4 underline-offset-8">要件定義から</span>プロにお任せ。</span>
+      </h1>
+
+      <p class="mt-6 md:mt-8 text-base md:text-lg text-gray-200 leading-relaxed ja-phrase">
+        <span class="phrase">ANKEN（アンケン）は、</span><span class="phrase"><strong class="text-white">人と仕事のマイクロ・マッチング</strong>サービス。</span>
+        <span class="phrase">ヒアリングのプロがRFPを<strong class="text-highlight">無料</strong>で作成し、お見積りします。</span>
+        <span class="phrase">メガベンチャー出身のハイスペックメンバーが副業でお手伝いするので、単価を抑えて品質の高い納品をご提供することができます。</span>
+        <span class="phrase">少額案件のお試しから、</span><span class="phrase">開発チームのビジネスマッチングまで。</span><span class="phrase">発注企業様はサービスは無料で利用可能！</span><span class="phrase">名刺1枚と10分のヒアリングで納品イメージまでお手伝いいたします。</span>
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="#cta"
+           class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accentDark hover:text-white text-ink font-bold px-6 py-4 rounded-xl text-base md:text-lg transition shadow-lg shadow-accent/40">
+          <span class="phrase">無料で案件の相談をする！</span>
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#solution"
+           class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-6 py-4 rounded-xl text-base md:text-lg transition">
+          <span class="phrase">サービスを見る</span>
+        </a>
+      </div>
+
+      <!-- KPI strip -->
+      <dl class="mt-12 grid grid-cols-3 gap-4 max-w-2xl">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
+          <dt class="text-xs text-gray-300">RFP作成費用</dt>
+          <dd class="text-2xl md:text-3xl font-black mt-1">¥0<span class="text-sm font-medium text-gray-300 ml-1">／回</span></dd>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
+          <dt class="text-xs text-gray-300">マッチング</dt>
+          <dd class="text-2xl md:text-3xl font-black mt-1">最速<span class="text-highlight">即日</span></dd>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
+          <dt class="text-xs text-gray-300">発注企業様</dt>
+          <dd class="text-2xl md:text-3xl font-black mt-1"><span class="phrase">相談だけでも</span></span></dd>
+        </div>
+      </dl>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== LOGO BAR / TRUST STRIP ============================== -->
+<section class="bg-softgray border-y border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-gray-600 ja-phrase">
+      <span class="phrase">副業発注／業務委託／PMO支援／開発・デザイン・マーケからデータ分析まで、</span>
+      <span class="phrase"><strong class="text-ink">幅広いビジネスマッチング</strong>に対応</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================== PROBLEM / EMPATHY ============================== -->
+<section id="problem" class="py-20 md:py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-accentText font-bold tracking-widest text-xs md:text-sm">PROBLEM</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">外注したい。</span>
+        <span class="phrase">でも、<span class="bg-highlight/40 px-2">こんな“小さなストレス”</span>、ありませんか？</span>
+      </h2>
+      <p class="mt-5 text-gray-600 text-sm md:text-base ja-phrase">
+        <span class="phrase">副業・業務委託の発注は、</span><span class="phrase">本来もっとカジュアルでいいはず。</span>
+        <span class="phrase">ANKENは、</span><span class="phrase">発注担当者の「面倒」を</span><span class="phrase">ぜんぶ引き取ります。</span>
+      </p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      <article class="bg-softgray rounded-2xl p-7 border border-gray-100">
+        <!-- illustration: document pile / overwhelmed desk -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FEF3C7"/><stop offset="100%" stop-color="#FDE68A"/></linearGradient>
+              <linearGradient id="docGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F3F4F6"/></linearGradient>
+            </defs>
+            <!-- desk surface -->
+            <rect x="8" y="68" width="134" height="10" rx="3" fill="#D97706" opacity="0.25"/>
+            <!-- doc stack back -->
+            <rect x="42" y="28" width="56" height="44" rx="3" transform="rotate(-8 70 50)" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="1"/>
+            <rect x="44" y="26" width="56" height="44" rx="3" transform="rotate(4 72 48)" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1"/>
+            <!-- main document -->
+            <rect x="46" y="20" width="58" height="48" rx="3" fill="url(#docGrad)" stroke="#D97706" stroke-width="1.5"/>
+            <!-- text lines on doc -->
+            <line x1="53" y1="30" x2="97" y2="30" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="53" y1="37" x2="97" y2="37" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="53" y1="44" x2="80" y2="44" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- big ? on doc -->
+            <text x="88" y="62" font-size="20" font-weight="900" fill="#F59E0B" opacity="0.9" font-family="sans-serif">?</text>
+            <!-- clock (top left) -->
+            <circle cx="24" cy="30" r="14" fill="white" stroke="#D97706" stroke-width="1.5"/>
+            <line x1="24" y1="30" x2="24" y2="22" stroke="#0B1221" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="24" y1="30" x2="30" y2="30" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="24" cy="30" r="1.5" fill="#0B1221"/>
+            <!-- flying paper -->
+            <rect x="108" y="14" width="30" height="22" rx="2" fill="white" stroke="#F59E0B" stroke-width="1.2" transform="rotate(15 123 25)"/>
+            <line x1="113" y1="22" x2="133" y2="22" stroke="#D1D5DB" stroke-width="1" stroke-linecap="round" transform="rotate(15 123 25)"/>
+            <line x1="113" y1="28" x2="128" y2="28" stroke="#D1D5DB" stroke-width="1" stroke-linecap="round" transform="rotate(15 123 25)"/>
+            <!-- sweat drop -->
+            <path d="M103 12 Q105 8 107 12 Q107 16 103 16 Q99 16 103 12Z" fill="#93C5FD" opacity="0.8"/>
+          </svg>
+        </div>
+        <h3 class="mt-3 text-lg font-bold ja-phrase">要件をまとめるのが面倒…</h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
+          <span class="phrase">「お願いしたい仕事はあるけど、</span><span class="phrase">ドキュメント化する時間がない」。</span>
+          <span class="phrase">結局、社内で抱え込んで</span><span class="phrase">進まない案件が積み上がっていく。</span>
+        </p>
+      </article>
+      <article class="bg-softgray rounded-2xl p-7 border border-gray-100">
+        <!-- illustration: spam phone calls -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#374151"/><stop offset="100%" stop-color="#111827"/></linearGradient>
+            </defs>
+            <!-- ringing waves -->
+            <path d="M52 50 Q44 42 44 34 Q44 20 58 15" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            <path d="M46 56 Q34 46 34 34 Q34 14 58 8" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+            <!-- phone body -->
+            <rect x="56" y="18" width="38" height="64" rx="6" fill="url(#phoneGrad)" stroke="#4B5563" stroke-width="1"/>
+            <rect x="60" y="26" width="30" height="42" rx="2" fill="#1F2937"/>
+            <!-- screen glow (incoming call) -->
+            <rect x="60" y="26" width="30" height="42" rx="2" fill="#EF4444" opacity="0.15"/>
+            <!-- caller icon on screen -->
+            <circle cx="75" cy="38" r="6" fill="#6B7280"/>
+            <path d="M63 52 Q63 44 75 44 Q87 44 87 52" fill="#6B7280"/>
+            <!-- incoming call badge -->
+            <rect x="62" y="56" width="26" height="8" rx="4" fill="#EF4444" opacity="0.9"/>
+            <text x="75" y="63" text-anchor="middle" font-size="5.5" font-weight="bold" fill="white" font-family="sans-serif">着信中...</text>
+            <!-- home button -->
+            <circle cx="75" cy="76" r="3" fill="#374151" stroke="#6B7280" stroke-width="0.8"/>
+            <!-- notification bubbles (multiple incoming) -->
+            <circle cx="104" cy="28" r="13" fill="#EF4444" opacity="0.9"/>
+            <text x="104" y="33" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="sans-serif">!</text>
+            <circle cx="120" cy="48" r="9" fill="#F59E0B" opacity="0.9"/>
+            <text x="120" y="53" text-anchor="middle" font-size="10" font-weight="bold" fill="white" font-family="sans-serif">3</text>
+            <circle cx="108" cy="66" r="8" fill="#EF4444" opacity="0.7"/>
+            <text x="108" y="71" text-anchor="middle" font-size="10" font-weight="bold" fill="white" font-family="sans-serif">5</text>
+            <!-- ringing waves right -->
+            <path d="M98 50 Q106 42 106 34 Q106 20 92 15" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+            <!-- small mail icon -->
+            <rect x="18" y="36" width="24" height="16" rx="2" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+            <polyline points="18,36 30,46 42,36" fill="none" stroke="#93C5FD" stroke-width="1" stroke-linecap="round"/>
+            <circle cx="30" cy="33" r="4" fill="#EF4444"/>
+            <text x="30" y="36.5" text-anchor="middle" font-size="6" font-weight="bold" fill="white" font-family="sans-serif">9+</text>
+          </svg>
+        </div>
+        <h3 class="mt-3 text-lg font-bold ja-phrase">営業電話が鳴り止まない</h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
+          <span class="phrase">少額の副業発注なのに、</span><span class="phrase">登録した瞬間から大量の電話・メール。</span>
+          <span class="phrase">選ぶ前に疲弊してしまう、</span><span class="phrase">という声が後を絶ちません。</span>
+        </p>
+      </article>
+      <article class="bg-softgray rounded-2xl p-7 border border-gray-100">
+        <!-- illustration: searching for talent -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="searchGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.2"/><stop offset="100%" stop-color="#D97706" stop-opacity="0.05"/></linearGradient>
+            </defs>
+            <!-- person silhouette 1 (left, greyed) -->
+            <circle cx="28" cy="38" r="10" fill="#D1D5DB"/>
+            <path d="M12 72 Q12 58 28 58 Q44 58 44 72" fill="#E5E7EB"/>
+            <!-- person silhouette 2 (center, greyed) -->
+            <circle cx="75" cy="34" r="12" fill="#9CA3AF"/>
+            <path d="M56 75 Q56 58 75 58 Q94 58 94 75" fill="#D1D5DB"/>
+            <!-- person silhouette 3 (right, greyed) -->
+            <circle cx="122" cy="38" r="10" fill="#D1D5DB"/>
+            <path d="M106 72 Q106 58 122 58 Q138 58 138 72" fill="#E5E7EB"/>
+            <!-- question marks over greyed persons -->
+            <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="900" fill="#9CA3AF" font-family="sans-serif">?</text>
+            <text x="122" y="42" text-anchor="middle" font-size="10" font-weight="900" fill="#9CA3AF" font-family="sans-serif">?</text>
+            <!-- magnifying glass centered on middle person -->
+            <circle cx="75" cy="42" r="22" fill="none" stroke="#D97706" stroke-width="3" opacity="0.7"/>
+            <line x1="90" y1="58" x2="103" y2="72" stroke="#D97706" stroke-width="3.5" stroke-linecap="round"/>
+            <!-- highlight glow inside lens -->
+            <circle cx="75" cy="42" r="22" fill="url(#searchGrad)"/>
+            <!-- small star/sparkle (highlight) -->
+            <path d="M75 20 L77 26 L83 26 L78 30 L80 36 L75 32 L70 36 L72 30 L67 26 L73 26 Z" fill="#F59E0B" opacity="0.85" transform="scale(0.55) translate(61 15)"/>
+          </svg>
+        </div>
+        <h3 class="mt-3 text-lg font-bold ja-phrase">良いメンバーが見つからない</h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
+          <span class="phrase">メガベンチャー出身の中堅メンバーが、副業時間で土日平日夜に業務をサポートします</span>
+          <span class="phrase">「ちょっと頼む」だけで、</span><span class="phrase">翌日仕上げが可能です。</span>
+        </p>
+      </article>
+    </div>
+
+    <div class="mt-10 text-center">
+      <p class="inline-flex items-center gap-2 text-sm md:text-base font-bold text-ink bg-highlight/40 rounded-full px-5 py-2">
+        <span class="phrase">その“ちょっと”を、</span>
+        <span class="phrase">ANKENが解決します。</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SOLUTION / STRENGTHS ============================== -->
+<section id="solution" class="py-20 md:py-28 bg-ink text-white relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="relative max-w-6xl mx-auto px-4 md:px-6">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-highlight font-bold tracking-widest text-xs md:text-sm">SOLUTION</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">ANKEN の</span>
+        <span class="phrase"><span class="text-accent">3つの強み</span></span>
+      </h2>
+      <p class="mt-5 text-gray-300 text-sm md:text-base ja-phrase">
+        <span class="phrase">ビジネスマッチングを、</span>
+        <span class="phrase">もっと速く・もっと安く・もっとストレスなく。</span>
+      </p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <!-- Strength 1 (HERO USP) -->
+      <article class="card-hover bg-gradient-to-b from-white/[0.07] to-white/[0.03] rounded-2xl p-7 border border-accent/40 relative">
+        <span class="absolute -top-3 left-7 bg-highlight text-ink text-[11px] font-bold px-3 py-1 rounded-full">サービスの強み</span>
+        <!-- illustration: free RFP document creation -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="rfpDocGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBBF24" stop-opacity="0.18"/><stop offset="100%" stop-color="#F59E0B" stop-opacity="0.06"/></linearGradient>
+            </defs>
+            <!-- main document -->
+            <rect x="38" y="8" width="60" height="76" rx="5" fill="white" opacity="0.12" stroke="#F59E0B" stroke-width="1.5"/>
+            <rect x="38" y="8" width="60" height="76" rx="5" fill="url(#rfpDocGrad)"/>
+            <!-- doc header band -->
+            <rect x="38" y="8" width="60" height="14" rx="5" fill="#F59E0B" opacity="0.4"/>
+            <text x="68" y="19" text-anchor="middle" font-size="7" font-weight="bold" fill="#FBBF24" font-family="sans-serif">RFP</text>
+            <!-- text lines -->
+            <line x1="46" y1="32" x2="90" y2="32" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <line x1="46" y1="40" x2="90" y2="40" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+            <line x1="46" y1="48" x2="78" y2="48" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+            <line x1="46" y1="56" x2="90" y2="56" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
+            <line x1="46" y1="64" x2="82" y2="64" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
+            <!-- ¥0 FREE badge -->
+            <rect x="44" y="70" width="48" height="10" rx="5" fill="#FACC15" opacity="0.9"/>
+            <text x="68" y="78" text-anchor="middle" font-size="7" font-weight="bold" fill="#0B1221" font-family="sans-serif">完全無料 ¥0</text>
+            <!-- sparkles -->
+            <path d="M28 22 L30 28 L28 34 L26 28 Z" fill="#FACC15" opacity="0.9"/>
+            <path d="M22 28 L28 30 L34 28 L28 26 Z" fill="#FACC15" opacity="0.9"/>
+            <path d="M112 14 L114 19 L112 24 L110 19 Z" fill="#FACC15" opacity="0.8"/>
+            <path d="M107 19 L112 21 L117 19 L112 17 Z" fill="#FACC15" opacity="0.8"/>
+            <circle cx="24" cy="58" r="4" fill="#F59E0B" opacity="0.4"/>
+            <circle cx="126" cy="52" r="3" fill="#FACC15" opacity="0.5"/>
+            <!-- chat bubble with AI indicator -->
+            <path d="M110 68 Q110 62 116 62 H136 Q142 62 142 68 V78 Q142 84 136 84 H124 L120 90 L120 84 H116 Q110 84 110 78 Z" fill="#F59E0B" opacity="0.25" stroke="#F59E0B" stroke-width="1"/>
+            <text x="126" y="71" text-anchor="middle" font-size="5" fill="#FACC15" font-family="sans-serif" font-weight="bold">AI</text>
+            <text x="126" y="80" text-anchor="middle" font-size="5" fill="#FACC15" font-family="sans-serif">自動生成</text>
+          </svg>
+        </div>
+        <h3 class="mt-5 text-xl font-black ja-phrase">
+          <span class="phrase">無料でRFPを作成！</span>
+          <span class="phrase">納品イメージもお手伝い！</span>
+        </h3>
+        <p class="mt-3 text-sm text-gray-300 leading-relaxed ja-phrase">
+          <span class="phrase">チャットで10分話すだけで、</span><span class="phrase">AIと専任スタッフが</span>
+          <span class="phrase"><strong class="text-white">フワっとした要件を固めます</strong>。</span>
+          <span class="phrase">「金額感や期間がわからない」でも、</span>
+          <span class="phrase">プロに頼める形まで一緒に整えます。</span>
+        </p>
+        <ul class="mt-5 text-sm space-y-2 text-gray-200">
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">業務スコープ／成果物／予算感を整理</span></li>
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">そのまま社内稟議にも使える品質</span></li>
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">週末に仕上げて月曜納品！</span></li>
+        </ul>
+      </article>
+
+      <!-- Strength 2 -->
+      <article class="card-hover bg-white/[0.05] rounded-2xl p-7 border border-white/10">
+        <!-- illustration: AI matching – instant talent recommendation -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="aiNodeGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FACC15"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
+            </defs>
+            <!-- person silhouettes (candidates) – right side -->
+            <circle cx="122" cy="22" r="9" fill="#FACC15" opacity="0.85"/>
+            <path d="M111 42 Q111 34 122 34 Q133 34 133 42" fill="#FACC15" opacity="0.6"/>
+            <circle cx="122" cy="60" r="9" fill="#6B7280" opacity="0.5"/>
+            <path d="M111 80 Q111 72 122 72 Q133 72 133 80" fill="#6B7280" opacity="0.35"/>
+            <!-- match badge on top candidate -->
+            <rect x="108" y="10" width="28" height="10" rx="5" fill="#22C55E" opacity="0.9"/>
+            <text x="122" y="18" text-anchor="middle" font-size="6" font-weight="bold" fill="white" font-family="sans-serif">マッチ96%</text>
+            <!-- connection lines -->
+            <line x1="74" y1="50" x2="112" y2="24" stroke="#FACC15" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 2" opacity="0.8"/>
+            <line x1="74" y1="50" x2="112" y2="62" stroke="#6B7280" stroke-width="1" stroke-linecap="round" stroke-dasharray="3 3" opacity="0.4"/>
+            <!-- AI engine center node -->
+            <circle cx="74" cy="50" r="20" fill="url(#aiNodeGrad)" opacity="0.2"/>
+            <circle cx="74" cy="50" r="16" fill="#0B1221" stroke="#FACC15" stroke-width="1.5"/>
+            <text x="74" y="46" text-anchor="middle" font-size="7" font-weight="bold" fill="#FACC15" font-family="sans-serif">AI</text>
+            <text x="74" y="56" text-anchor="middle" font-size="5.5" fill="#FCD34D" font-family="sans-serif">Match</text>
+            <!-- connection to requirement (left) -->
+            <line x1="38" y1="50" x2="58" y2="50" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 2" opacity="0.7"/>
+            <!-- requirement card (left) -->
+            <rect x="8" y="34" width="30" height="32" rx="4" fill="#1F2937" stroke="#F59E0B" stroke-width="1"/>
+            <line x1="13" y1="42" x2="33" y2="42" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+            <line x1="13" y1="48" x2="33" y2="48" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <line x1="13" y1="54" x2="26" y2="54" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+            <text x="23" y="38" text-anchor="middle" font-size="5" fill="#FACC15" font-family="sans-serif" font-weight="bold">RFP</text>
+            <!-- speed indicator -->
+            <rect x="50" y="78" width="50" height="12" rx="6" fill="#FACC15" opacity="0.15" stroke="#FACC15" stroke-width="0.8"/>
+            <text x="75" y="87" text-anchor="middle" font-size="6.5" font-weight="bold" fill="#FACC15" font-family="sans-serif">最速 即日ご紹介</text>
+          </svg>
+        </div>
+        <h3 class="mt-5 text-xl font-black ja-phrase">
+          <span class="phrase">副業人材のマッチングで</span>
+          <span class="phrase">費用対効果をUP！</span>
+        </h3>
+        <p class="mt-3 text-sm text-gray-300 leading-relaxed ja-phrase">
+          <span class="phrase">要件をもとに、</span><span class="phrase"><strong class="text-white">最適な副業・業務委託メンバー</strong>を</span><span class="phrase">レコメンドいたします。</span>
+          <span class="phrase">スカウト・候補者選定・条件交渉の手間を</span><span class="phrase">圧縮します。</span>
+        </p>
+        <ul class="mt-5 text-sm space-y-2 text-gray-200">
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">最速即日でご紹介</span></li>
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">営業電話・しつこい連絡ゼロ</span></li>
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">候補者プロフィールはチャットで確認</span></li>
+        </ul>
+      </article>
+
+      <!-- Strength 3 -->
+      <article class="card-hover bg-white/[0.05] rounded-2xl p-7 border border-white/10">
+        <!-- illustration: single contract / low-cost trial -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="contractGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+            </defs>
+            <!-- contract document -->
+            <rect x="30" y="8" width="64" height="80" rx="5" fill="url(#contractGrad)" stroke="#F59E0B" stroke-width="1.5"/>
+            <!-- header band -->
+            <rect x="30" y="8" width="64" height="14" rx="5" fill="#F59E0B" opacity="0.35"/>
+            <text x="62" y="19" text-anchor="middle" font-size="7" font-weight="bold" fill="#FACC15" font-family="sans-serif">契約書</text>
+            <!-- text lines -->
+            <line x1="38" y1="30" x2="86" y2="30" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+            <line x1="38" y1="37" x2="86" y2="37" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+            <line x1="38" y1="44" x2="74" y2="44" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+            <!-- BISII stamp circle -->
+            <circle cx="76" cy="62" r="14" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+            <circle cx="76" cy="62" r="11" fill="none" stroke="#F59E0B" stroke-width="0.8" opacity="0.4"/>
+            <text x="76" y="60" text-anchor="middle" font-size="5.5" font-weight="bold" fill="#FACC15" font-family="sans-serif">当社</text>
+            <text x="76" y="68" text-anchor="middle" font-size="5.5" font-weight="bold" fill="#FACC15" font-family="sans-serif">のみ</text>
+            <!-- signature line -->
+            <line x1="38" y1="78" x2="62" y2="78" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <path d="M40 78 Q44 74 48 78 Q52 82 56 78 Q58 76 60 78" fill="none" stroke="#FACC15" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+            <!-- shield (security / single point) -->
+            <path d="M114 16 Q124 12 134 16 L134 36 Q134 48 124 54 Q114 48 114 36 Z" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
+            <text x="124" y="38" text-anchor="middle" font-size="14" fill="#FACC15" font-family="sans-serif" opacity="0.9">✓</text>
+            <!-- low price badge -->
+            <rect x="96" y="64" width="46" height="22" rx="5" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1"/>
+            <text x="119" y="74" text-anchor="middle" font-size="6" fill="#FACC15" font-family="sans-serif" font-weight="bold">月額固定費</text>
+            <text x="119" y="82" text-anchor="middle" font-size="7" fill="#FACC15" font-family="sans-serif" font-weight="bold">¥0</text>
+            <!-- small person icon (client side) -->
+            <circle cx="12" cy="42" r="8" fill="#F59E0B" opacity="0.3"/>
+            <path d="M4 60 Q4 52 12 52 Q20 52 20 60" fill="#F59E0B" opacity="0.2"/>
+            <!-- arrow (contract direction) -->
+            <path d="M22 50 L28 50" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" marker-end="url(#arrowF)"/>
+          </svg>
+        </div>
+        <h3 class="mt-5 text-xl font-black ja-phrase">
+          <span class="phrase">契約は当社で完結</span>
+          <span class="phrase">再委託だけ許容してください</span>
+        </h3>
+        <p class="mt-3 text-sm text-gray-300 leading-relaxed ja-phrase">
+          <span class="phrase">少額案件にやさしい料金設計。</span>
+          <span class="phrase"><strong class="text-white">数万円のお試し発注</strong>から</span><span class="phrase">始められるので、</span>
+          <span class="phrase">「まず一度頼んでみる」が</span><span class="phrase">無理なくできます。</span>
+        </p>
+        <ul class="mt-5 text-sm space-y-2 text-gray-200">
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">月額固定費・登録料 0円</span></li>
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">業務委託費のみのご請求</span></li>
+          <li class="flex gap-2"><span class="text-highlight">✓</span> <span class="phrase">少額・短期の副業発注もOK</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== STEPS ============================== -->
+<section id="steps" class="py-20 md:py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-accentText font-bold tracking-widest text-xs md:text-sm">HOW IT WORKS</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">ご利用は</span>
+        <span class="phrase"><span class="text-accentText">3ステップ</span>だけ</span>
+      </h2>
+      <p class="mt-5 text-gray-600 text-sm md:text-base ja-phrase">
+        <span class="phrase">ご相談からRFP作成とメンバー紹介まで、</span>
+        <span class="phrase">最短即日で完結します。</span>
+      </p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-8">
+      <!-- Step 1 -->
+      <div class="step-item relative text-center md:text-left">
+        <div class="step-line relative">
+          <div class="inline-flex items-center justify-center w-[72px] h-[72px] rounded-full bg-ink text-white font-black text-2xl shadow-xl shadow-ink/10 border-4 border-white">
+            01
+          </div>
+        </div>
+        <h3 class="mt-5 text-lg md:text-xl font-bold ja-phrase">
+          <span class="phrase">チャットで</span><span class="phrase">気軽に相談</span>
+        </h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
+          <span class="phrase">「こんな仕事、頼める？」のひと言でOK。</span>
+          <span class="phrase">専用チャットから24時間、</span><span class="phrase">名刺1枚で無料でご相談いただけます。</span>
+        </p>
+      </div>
+      <!-- Step 2 -->
+      <div class="step-item relative text-center md:text-left">
+        <div class="step-line relative">
+          <div class="inline-flex items-center justify-center w-[72px] h-[72px] rounded-full bg-accent text-ink font-black text-2xl shadow-xl shadow-accent/40 border-4 border-white">
+            02
+          </div>
+        </div>
+        <h3 class="mt-5 text-lg md:text-xl font-bold ja-phrase">
+          <span class="phrase">マッチングヒアリング</span>
+        </h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
+          <span class="phrase">「要件が決まっていない」</span>
+          <span class="phrase">「相場だけ知りたい」</span>
+          <span class="phrase">「進め方を相談したい」といった段階から</span>
+          <span class="phrase">納期・予算・成果物のイメージなど、</span>
+          <span class="phrase">5〜10分で必要な情報を整理します。</span>
+          <span class="phrase">難しい専門用語は不要です。</span>
+        </p>
+      </div>
+      <!-- Step 3 -->
+      <div class="step-item relative text-center md:text-left">
+        <div class="step-line relative">
+          <div class="inline-flex items-center justify-center w-[72px] h-[72px] rounded-full bg-highlight text-ink font-black text-2xl shadow-xl shadow-highlight/40 border-4 border-white">
+            03
+          </div>
+        </div>
+        <h3 class="mt-5 text-lg md:text-xl font-bold ja-phrase">
+          <span class="phrase">RFP ＆</span>
+          <span class="phrase">メンバー紹介</span>
+        </h3>
+        <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
+          <span class="phrase">業務内容をイメージできる形に落として、</span>
+          <span class="phrase">最適な副業人材をご紹介。</span>
+          <span class="phrase">メガベンチャーで鍛えた人材を見てから、</span><span class="phrase">発注するかご判断ください。</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROJECT SAMPLES ============================== -->
+<section id="projects" class="py-20 md:py-28 bg-white border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-accentText font-bold tracking-widest text-xs md:text-sm">PROJECT SAMPLES</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">こんな案件が</span>
+        <span class="phrase">いま動いています</span>
+      </h2>
+      <p class="mt-5 text-gray-600 text-sm md:text-base ja-phrase">
+        <span class="phrase">週数時間のスポット業務から、</span>
+        <span class="phrase">フルコミットの開発・PMO案件まで。</span>
+        <span class="phrase">優秀な副業人材を、必要な分だけご活用いただけます。</span>
+      </p>
+    </div>
+
+    <ul class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <!-- 案件 1: データ分析 -->
+      <li class="card-hover bg-softgray rounded-2xl p-6 border border-gray-100 flex flex-col items-center text-center">
+        <!-- ゲーム事業のデータ分析業務 illustration -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="monitorGrad1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1F2937"/><stop offset="100%" stop-color="#111827"/></linearGradient>
+            </defs>
+            <!-- monitor body -->
+            <rect x="22" y="10" width="106" height="66" rx="6" fill="url(#monitorGrad1)" stroke="#374151" stroke-width="1.5"/>
+            <rect x="28" y="16" width="94" height="54" rx="3" fill="#0F172A"/>
+            <!-- monitor stand -->
+            <rect x="68" y="76" width="14" height="10" rx="1" fill="#374151"/>
+            <rect x="56" y="84" width="38" height="5" rx="2" fill="#4B5563"/>
+            <!-- game controller icon on screen (left) -->
+            <rect x="34" y="26" width="36" height="20" rx="8" fill="#D97706" opacity="0.3" stroke="#F59E0B" stroke-width="1"/>
+            <rect x="36" y="33" width="3" height="6" rx="0.5" fill="#FACC15" opacity="0.8"/>
+            <rect x="34" y="35" width="7" height="2" rx="0.5" fill="#FACC15" opacity="0.8"/>
+            <circle cx="58" cy="34" r="2" fill="#F59E0B" opacity="0.7"/>
+            <circle cx="63" cy="34" r="2" fill="#F59E0B" opacity="0.5"/>
+            <!-- bar chart on screen (right) -->
+            <line x1="82" y1="50" x2="118" y2="50" stroke="#374151" stroke-width="1"/>
+            <rect x="84" y="38" width="6" height="12" rx="1" fill="#F59E0B" opacity="0.8"/>
+            <rect x="93" y="32" width="6" height="18" rx="1" fill="#D97706"/>
+            <rect x="102" y="40" width="6" height="10" rx="1" fill="#F59E0B" opacity="0.7"/>
+            <rect x="111" y="35" width="6" height="15" rx="1" fill="#FACC15" opacity="0.9"/>
+            <polyline points="84,42 93,34 102,43 111,36" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- label -->
+            <text x="51" y="54" text-anchor="middle" font-size="5" fill="#6B7280" font-family="sans-serif">Game KPI</text>
+            <text x="100" y="58" text-anchor="middle" font-size="5" fill="#6B7280" font-family="sans-serif">Analytics</text>
+          </svg>
+        </div>
+        <span class="mt-4 inline-flex w-fit items-center gap-1 text-[11px] font-bold text-ink bg-highlight rounded-full px-3 py-1">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span class="phrase">週 5〜10時間</span>
+        </span>
+        <h3 class="mt-3 text-base md:text-lg font-bold leading-snug ja-phrase">
+          <span class="phrase">KPI、施策効果の</span>
+          <span class="phrase">データ分析業務</span>
+           <span class="phrase">時給：5,000円〜</span>
+        </h3>
+      </li>
+
+      <!-- 案件 2: AWSコスト見直し -->
+      <li class="card-hover bg-softgray rounded-2xl p-6 border border-gray-100 flex flex-col items-center text-center">
+        <!-- AWSのコスト見直しと保守 illustration -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <!-- cloud AWS -->
+            <path d="M30 58 Q24 58 24 50 Q24 40 36 39 Q38 28 52 28 Q60 22 70 27 Q80 22 88 32 Q100 32 100 44 Q108 44 108 54 Q108 64 96 64 H36 Q30 64 30 58Z" fill="#FF9900" opacity="0.2" stroke="#FF9900" stroke-width="1.5"/>
+            <!-- AWS badge -->
+            <rect x="54" y="38" width="32" height="14" rx="4" fill="#FF9900" opacity="0.95"/>
+            <text x="70" y="48" text-anchor="middle" font-size="8" font-weight="bold" fill="white" font-family="monospace">AWS</text>
+            <!-- cost graph going down (good!) -->
+            <rect x="18" y="70" width="114" height="22" rx="4" fill="white" opacity="0.7"/>
+            <line x1="26" y1="88" x2="124" y2="88" stroke="#D1D5DB" stroke-width="1"/>
+            <rect x="28" y="74" width="10" height="14" rx="1" fill="#EF4444" opacity="0.7"/>
+            <rect x="44" y="78" width="10" height="10" rx="1" fill="#F97316" opacity="0.7"/>
+            <rect x="60" y="80" width="10" height="8" rx="1" fill="#F59E0B" opacity="0.7"/>
+            <rect x="76" y="82" width="10" height="6" rx="1" fill="#84CC16" opacity="0.7"/>
+            <rect x="92" y="84" width="10" height="4" rx="1" fill="#22C55E" opacity="0.8"/>
+            <polyline points="33,76 49,80 65,82 81,83 97,85" fill="none" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round"/>
+            <text x="114" y="84" font-size="8" fill="#22C55E" font-weight="bold" font-family="sans-serif">↓</text>
+            <!-- wrench tool -->
+            <path d="M118 14 Q126 6 128 12 Q130 18 124 20 L112 32 L108 28 Z" fill="#B45309" opacity="0.55"/>
+            <rect x="104" y="28" width="6" height="14" rx="1" transform="rotate(-45 107 35)" fill="#92400E" opacity="0.55"/>
+            <!-- ¥ badge -->
+            <circle cx="26" cy="22" r="14" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+            <text x="26" y="27" text-anchor="middle" font-size="14" font-weight="bold" fill="#D97706" font-family="sans-serif">¥</text>
+          </svg>
+        </div>
+        <span class="mt-4 inline-flex w-fit items-center gap-1 text-[11px] font-bold text-ink bg-highlight rounded-full px-3 py-1">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span class="phrase">週 20〜30時間</span>
+        </span>
+        <h3 class="mt-3 text-base md:text-lg font-bold leading-snug ja-phrase">
+          <span class="phrase">AWSの</span>
+          <span class="phrase">コスト見直しと保守</span>
+           <span class="phrase">時給：10,000円〜</span>
+        </h3>
+      </li>
+
+      <!-- 案件 3: 超ミニマムPoC開発 -->
+      <li class="card-hover bg-softgray rounded-2xl p-6 border border-gray-100 flex flex-col items-center text-center">
+        <!-- 新規サービスの超ミニマムPoC開発 illustration -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <defs>
+              <linearGradient id="laptopGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1F2937"/><stop offset="100%" stop-color="#111827"/></linearGradient>
+            </defs>
+            <!-- laptop body -->
+            <rect x="20" y="18" width="90" height="58" rx="4" fill="url(#laptopGrad)" stroke="#374151" stroke-width="1.5"/>
+            <rect x="26" y="24" width="78" height="46" rx="2" fill="#0F172A"/>
+            <!-- laptop base -->
+            <rect x="10" y="76" width="110" height="6" rx="3" fill="#4B5563"/>
+            <!-- code on screen -->
+            <rect x="30" y="28" width="30" height="4" rx="1" fill="#F59E0B" opacity="0.7"/>
+            <rect x="30" y="35" width="45" height="3" rx="1" fill="#6B7280" opacity="0.6"/>
+            <rect x="36" y="41" width="35" height="3" rx="1" fill="#34D399" opacity="0.7"/>
+            <rect x="36" y="47" width="40" height="3" rx="1" fill="#93C5FD" opacity="0.6"/>
+            <rect x="30" y="53" width="28" height="3" rx="1" fill="#F59E0B" opacity="0.5"/>
+            <!-- cursor blink -->
+            <rect x="60" y="53" width="2" height="6" rx="0.5" fill="#FACC15" opacity="0.9"/>
+            <!-- rocket launching (right side) -->
+            <path d="M114 62 Q120 50 118 34 Q114 20 108 16 Q102 20 100 34 Q98 50 104 62Z" fill="#D97706" opacity="0.4" stroke="#F59E0B" stroke-width="1.2"/>
+            <circle cx="111" cy="36" r="5" fill="white" opacity="0.6" stroke="#D97706" stroke-width="1"/>
+            <path d="M100 58 L92 68 L100 66Z" fill="#B45309" opacity="0.6"/>
+            <path d="M122 58 L130 68 L122 66Z" fill="#B45309" opacity="0.6"/>
+            <ellipse cx="111" cy="66" rx="5" ry="3" fill="#FACC15" opacity="0.8"/>
+            <!-- PoC badge -->
+            <rect x="122" y="14" width="26" height="12" rx="4" fill="#D97706" opacity="0.9"/>
+            <text x="135" y="23" text-anchor="middle" font-size="7" font-weight="bold" fill="white" font-family="sans-serif">PoC</text>
+            <!-- stars -->
+            <circle cx="132" cy="34" r="2" fill="#FACC15" opacity="0.8"/>
+            <circle cx="140" cy="48" r="1.5" fill="#FACC15" opacity="0.6"/>
+            <circle cx="128" cy="56" r="1" fill="#FACC15" opacity="0.7"/>
+          </svg>
+        </div>
+        <span class="mt-4 inline-flex w-fit items-center gap-1 text-[11px] font-bold text-ink bg-highlight rounded-full px-3 py-1">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span class="phrase">週 10〜30時間</span>
+        </span>
+        <h3 class="mt-3 text-base md:text-lg font-bold leading-snug ja-phrase">
+          <span class="phrase">新規サービスの</span>
+          <span class="phrase">超ミニマムPoC開発</span>
+           <span class="phrase">時給：7,000円〜</span>
+        </h3>
+      </li>
+
+      <!-- 案件 4: 壁打ち・要件定義 -->
+      <li class="card-hover bg-softgray rounded-2xl p-6 border border-gray-100 flex flex-col items-center text-center">
+        <!-- 新規事業の壁打ち＆PMO illustration -->
+        <div class="flex justify-center">
+          <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
+            <!-- whiteboard -->
+            <rect x="14" y="8" width="96" height="62" rx="4" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+            <rect x="14" y="8" width="96" height="10" rx="4" fill="#E5E7EB"/>
+            <rect x="14" y="14" width="96" height="4" fill="#E5E7EB"/>
+            <!-- whiteboard stand -->
+            <line x1="52" y1="70" x2="44" y2="88" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+            <line x1="72" y1="70" x2="80" y2="88" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+            <line x1="40" y1="88" x2="84" y2="88" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+            <!-- sticky notes on whiteboard -->
+            <rect x="22" y="22" width="22" height="18" rx="2" fill="#FDE68A" stroke="#F59E0B" stroke-width="0.8"/>
+            <line x1="25" y1="28" x2="41" y2="28" stroke="#D97706" stroke-width="1" stroke-linecap="round"/>
+            <line x1="25" y1="33" x2="39" y2="33" stroke="#D97706" stroke-width="1" stroke-linecap="round"/>
+            <rect x="50" y="18" width="22" height="18" rx="2" fill="#BBF7D0" stroke="#22C55E" stroke-width="0.8"/>
+            <line x1="53" y1="24" x2="69" y2="24" stroke="#16A34A" stroke-width="1" stroke-linecap="round"/>
+            <line x1="53" y1="29" x2="67" y2="29" stroke="#16A34A" stroke-width="1" stroke-linecap="round"/>
+            <rect x="78" y="22" width="22" height="18" rx="2" fill="#BFDBFE" stroke="#3B82F6" stroke-width="0.8"/>
+            <line x1="81" y1="28" x2="97" y2="28" stroke="#2563EB" stroke-width="1" stroke-linecap="round"/>
+            <line x1="81" y1="33" x2="95" y2="33" stroke="#2563EB" stroke-width="1" stroke-linecap="round"/>
+            <!-- gantt / roadmap bars -->
+            <rect x="22" y="46" width="40" height="5" rx="2" fill="#F59E0B" opacity="0.7"/>
+            <rect x="66" y="46" width="30" height="5" rx="2" fill="#D97706" opacity="0.6"/>
+            <rect x="22" y="54" width="24" height="5" rx="2" fill="#22C55E" opacity="0.6"/>
+            <rect x="50" y="54" width="46" height="5" rx="2" fill="#3B82F6" opacity="0.5"/>
+            <!-- person left (client) -->
+            <circle cx="126" cy="34" r="10" fill="#FDE68A" stroke="#F59E0B" stroke-width="1.2"/>
+            <path d="M114 56 Q114 46 126 46 Q138 46 138 56" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+            <!-- speech bubble -->
+            <path d="M108 18 Q108 13 113 13 H134 Q139 13 139 18 V26 Q139 31 134 31 H122 L118 36 L118 31 H113 Q108 31 108 26Z" fill="#FACC15" opacity="0.3" stroke="#F59E0B" stroke-width="0.8"/>
+            <!-- PMO badge -->
+            <rect x="114" y="62" width="32" height="12" rx="4" fill="#B45309" opacity="0.85"/>
+            <text x="130" y="71" text-anchor="middle" font-size="7" font-weight="bold" fill="white" font-family="sans-serif">PMO</text>
+          </svg>
+        </div>
+        <span class="mt-4 inline-flex w-fit items-center gap-1 text-[11px] font-bold text-ink bg-highlight rounded-full px-3 py-1">
+          <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span class="phrase">週 10〜30時間</span>
+        </span>
+        <h3 class="mt-3 text-base md:text-lg font-bold leading-snug ja-phrase">
+          <span class="phrase">新規事業のPMO</span>
+          <span class="phrase">壁打ち＆伴走支援</span>
+          <span class="phrase">時給：5,000円〜</span>
+        </h3>
+      </li>
+
+    </ul>
+
+    <div class="mt-10 text-center">
+      <a href="#cta" class="inline-flex items-center gap-2 text-sm md:text-base font-bold text-accentText hover:text-accentDark transition">
+        <span class="phrase">この他にも多数のご相談をいただいております。まずはお気軽にご相談ください</span>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TRUST / MECHANISM ============================== -->
+<section id="trust" class="py-20 md:py-28 bg-softgray">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">無料のPMO業務サポートも！</span>
+      </h2>
+      <p class="mt-5 text-gray-700 text-sm md:text-base leading-relaxed ja-phrase">
+        <span class="phrase">ANKENは、</span><span class="phrase">自社スタッフが</span><span class="phrase">無料でPMOで伴走支援。</span>
+        <span class="phrase">副業メンバーの経験・スキル・稼働状況を確認しながら指示を出し、</span>
+        <span class="phrase"><strong>担当者様の</strong></span><span class="phrase"><strong>手間・負荷・面倒を</strong>極限まで減らします。</span>
+        <span class="phrase">急ぎで人員を確保したい、優秀なメンバーに依頼したい。</span>
+        <span class="phrase">こんな時はすぐにご相談ください。当日中にご提案いたします</span>
+      </p>
+
+      <div class="mt-8 grid sm:grid-cols-2 gap-4">
+        <div class="bg-white rounded-xl p-5 border border-gray-200">
+          <div class="text-accentText font-bold text-sm">手間・面倒を削減</div>
+          <p class="mt-1 text-xs text-gray-600 leading-relaxed ja-phrase">
+            <span class="phrase">指示だけしたい</span>
+            <span class="phrase">納品チェックだけしたい。</span>
+          </p>
+        </div>
+        <div class="bg-white rounded-xl p-5 border border-gray-200">
+          <div class="text-accentText font-bold text-sm">PMOサポート</div>
+          <p class="mt-1 text-xs text-gray-600 leading-relaxed ja-phrase">
+            <span class="phrase">進行管理・トラブル対応を</span>
+            <span class="phrase">専任スタッフが伴走。</span>
+          </p>
+        </div>
+        <div class="bg-white rounded-xl p-5 border border-gray-200">
+          <div class="text-accentText font-bold text-sm">NDA・契約まで一括</div>
+          <p class="mt-1 text-xs text-gray-600 leading-relaxed ja-phrase">
+            <span class="phrase">個人との毎回の契約は不要！</span>
+            <span class="phrase">当社が責任を持って対応いたします。</span>
+          </p>
+        </div>
+        <div class="bg-white rounded-xl p-5 border border-gray-200">
+          <div class="text-accentText font-bold text-sm">登録メンバーは審査制</div>
+          <p class="mt-1 text-xs text-gray-600 leading-relaxed ja-phrase">
+            <span class="phrase">実績・スキルを確認した</span>
+            <span class="phrase">副業・業務委託人材のみ。</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual block – Chat consultation UI -->
+    <div class="relative">
+      <div class="aspect-[4/5] md:aspect-square bg-gradient-to-br from-ink to-midnight rounded-2xl text-white shadow-2xl shadow-ink/20 relative overflow-hidden flex flex-col">
+        <div class="absolute inset-0 grid-bg opacity-40 pointer-events-none"></div>
+
+        <!-- Chat header -->
+        <div class="relative flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-white/5">
+          <div class="w-9 h-9 rounded-full bg-accent/30 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white">ANKEN 無料相談チャット　イメージ</div>
+            <div class="flex items-center gap-1.5 text-[10px] text-emerald-400 mt-0.5">
+              <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></span>
+              担当者がオンライン中
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat messages -->
+        <div class="relative flex-1 overflow-hidden px-4 py-4 space-y-4 text-xs flex flex-col justify-start">
+
+          <!-- Client message 1 -->
+          <div class="flex justify-end">
+            <div class="max-w-[82%]">
+              <div class="text-[10px] text-gray-400 text-right mb-1">お客様（発注企業）</div>
+              <div class="bg-accent/25 border border-accent/35 rounded-2xl rounded-tr-sm px-3 py-2 leading-relaxed ja-phrase">
+                <span class="phrase">AWSのコスト削減について相談したいのですが、どこから始めればよいか分からなくて…</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ANKEN response 1 -->
+          <div class="flex justify-start">
+            <div class="max-w-[82%]">
+              <div class="text-[10px] text-gray-400 mb-1">ANKEN 担当者</div>
+              <div class="bg-white/10 border border-white/15 rounded-2xl rounded-tl-sm px-3 py-2 leading-relaxed ja-phrase">
+                <span class="phrase">ご相談ありがとうございます！現在の月額費用と、主にお使いのAWSサービスを教えていただけますか？</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client message 2 -->
+          <div class="flex justify-end">
+            <div class="max-w-[75%]">
+              <div class="bg-accent/25 border border-accent/35 rounded-2xl rounded-tr-sm px-3 py-2 leading-relaxed ja-phrase">
+                <span class="phrase">月300万ほどです。EC2とRDSがメインです。</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ANKEN response 2 (hearing) -->
+          <div class="flex justify-start">
+            <div class="max-w-[85%]">
+              <div class="bg-white/10 border border-white/15 rounded-2xl rounded-tl-sm px-3 py-2 leading-relaxed ja-phrase">
+                <span class="phrase">AWSの請求書のスクリーンショットをお持ちでしたらご提供ください✅ エンジニアが確認し、負荷の高い箇所から費用削減できる案を検討いたします</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI auto-generate badge -->
+          <div class="flex justify-start">
+            <div class="bg-highlight/10 border border-highlight/30 rounded-xl px-3 py-2 text-[11px] leading-relaxed">
+              <span class="text-highlight font-bold">✦ ANKEN AI：</span>
+              <span class="text-gray-200">RFPとお見積りを作成いたします…</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input bar -->
+        <div class="relative px-4 pb-4">
+          <div class="bg-white/10 border border-white/20 rounded-xl flex items-center gap-2 px-4 py-2.5">
+            <span class="text-[11px] text-gray-400 flex-1">メッセージを入力…</span>
+            <svg class="w-4 h-4 text-accent flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21L23 12 2 3v7l15 2-15 2z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section id="faq" class="py-20 md:py-28 bg-white">
+  <div class="max-w-3xl mx-auto px-4 md:px-6">
+    <div class="text-center">
+      <p class="text-accentText font-bold tracking-widest text-xs md:text-sm">FAQ</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight">よくあるご質問</h2>
+    </div>
+
+    <div class="mt-10 space-y-3">
+      <details class="group bg-softgray rounded-xl border border-gray-200 p-5 open:bg-white open:border-accent/40 open:shadow-md transition">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-bold text-base md:text-lg ja-phrase">料金はどのように発生しますか？</span>
+          <span class="faq-icon text-accentText text-2xl leading-none">＋</span>
+        </summary>
+        <p class="mt-4 text-sm text-gray-700 leading-relaxed ja-phrase">
+          <span class="phrase">RFP（RFP）の作成や、</span>
+          <span class="phrase">候補者の紹介までは</span><span class="phrase"><strong>すべて無料</strong>です。</span>
+          <span class="phrase">実際にマッチングが成立し、</span>
+          <span class="phrase">業務委託契約を締結いただいた場合のみ、</span>
+          <span class="phrase">業界最安水準の手数料を頂戴します。</span>
+          <span class="phrase">月額固定費や登録料はかかりません。</span>
+        </p>
+      </details>
+
+      <details class="group bg-softgray rounded-xl border border-gray-200 p-5 open:bg-white open:border-accent/40 open:shadow-md transition">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-bold text-base md:text-lg ja-phrase">紹介後にキャンセルできますか？</span>
+          <span class="faq-icon text-accentText text-2xl leading-none">＋</span>
+        </summary>
+        <p class="mt-4 text-sm text-gray-700 leading-relaxed ja-phrase">
+          <span class="phrase">はい。</span>
+          <span class="phrase">紹介された候補者と契約を結ぶ前であれば、</span>
+          <span class="phrase">いつでもキャンセル可能です。</span><span class="phrase">費用は発生しません。</span>
+          <span class="phrase">「思っていたのと違った」</span>
+          <span class="phrase">「今回は社内対応に切り替えたい」など、</span>
+          <span class="phrase">お気軽にチャットでお伝えください。</span>
+        </p>
+      </details>
+
+      <details class="group bg-softgray rounded-xl border border-gray-200 p-5 open:bg-white open:border-accent/40 open:shadow-md transition">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-bold text-base md:text-lg ja-phrase">小さな案件でも依頼できますか？</span>
+          <span class="faq-icon text-accentText text-2xl leading-none">＋</span>
+        </summary>
+        <p class="mt-4 text-sm text-gray-700 leading-relaxed ja-phrase">
+          <span class="phrase">もちろんです。</span>
+          <span class="phrase">ANKENは</span>
+          <span class="phrase">「人と仕事のマイクロ・マッチング」がコンセプト。</span>
+          <span class="phrase">数万円規模の副業発注・スポット業務にも</span><span class="phrase">対応しています。</span>
+          <span class="phrase">まずは少額の“お試し発注”から、</span>
+          <span class="phrase">相性の良いプロ人材を見つけていただけます。</span>
+        </p>
+      </details>
+
+      <details class="group bg-softgray rounded-xl border border-gray-200 p-5 open:bg-white open:border-accent/40 open:shadow-md transition">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-bold text-base md:text-lg ja-phrase">どんな職種・業務に対応していますか？</span>
+          <span class="faq-icon text-accentText text-2xl leading-none">＋</span>
+        </summary>
+        <p class="mt-4 text-sm text-gray-700 leading-relaxed ja-phrase">
+          <span class="phrase">Web制作、デザイン、ライティング、</span>
+          <span class="phrase">マーケティング、エンジニアリング、</span>
+          <span class="phrase">PMO・事務BPO、調査・リサーチなど</span>
+          <span class="phrase">幅広く対応しています。</span>
+          <span class="phrase">「これは頼めるかな？」と迷われたら、</span>
+          <span class="phrase">まずはチャットでお気軽にご相談ください。</span>
+        </p>
+      </details>
+
+      <details class="group bg-softgray rounded-xl border border-gray-200 p-5 open:bg-white open:border-accent/40 open:shadow-md transition">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-bold text-base md:text-lg ja-phrase">本当に営業電話はかかってきませんか？</span>
+          <span class="faq-icon text-accentText text-2xl leading-none">＋</span>
+        </summary>
+        <p class="mt-4 text-sm text-gray-700 leading-relaxed ja-phrase">
+          <span class="phrase">はい。</span>
+          <span class="phrase">ANKENではすべてのやり取りを</span>
+          <span class="phrase">チャット上で完結させる設計のため、</span>
+          <span class="phrase">登録時に電話番号は必須ではありません。</span>
+          <span class="phrase">提携先・候補者からの直接の営業電話も</span>
+          <span class="phrase">発生しません。</span>
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<section id="cta" class="relative bg-ink text-white overflow-hidden">
+  <div class="absolute inset-0 hero-bg opacity-90"></div>
+  <div class="relative max-w-5xl mx-auto px-4 md:px-6 py-20 md:py-28 text-center">
+    <h2 class="text-3xl md:text-5xl font-black leading-tight ja-phrase">
+      <span class="phrase">RFP＆お見積り</span>
+      <span class="phrase"><span class="text-highlight">無料</span>でご提供します。</span>
+    </h2>
+    <p class="mt-5 text-gray-200 text-sm md:text-base ja-phrase">
+      <span class="phrase">ANKENなら、</span>
+      <span class="phrase">最短即日で</span>
+      <span class="phrase">あなたの仕事にぴったりのプロ人材へ。</span>
+      <span class="phrase">登録は名刺を送っていただくだけ。</span>
+      <span class="phrase">営業電話は一切いたしません。</span>
+    </p>
+
+    <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3">
+      <a href="#"
+         class="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-7 py-4 rounded-xl text-base md:text-lg transition shadow-xl shadow-highlight/30">
+        <span class="phrase">無料で相談を始める</span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="member.html"
+         class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-7 py-4 rounded-xl text-base md:text-lg transition">
+        <span class="phrase">副業メンバーのご登録はこちら</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="bg-midnight text-gray-400">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 grid md:grid-cols-4 gap-10">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex w-8 h-8 rounded-lg bg-white/10 items-center justify-center">
+          <img src="logo-40.png" class="w-7 h-7" alt="ANKEN">
+        </span>
+        <span class="font-bold tracking-tight text-lg text-white"><span class="text-accent">ANKEN</span></span>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="text-white font-bold text-sm">メニュー</h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="#solution" class="hover:text-white">サービスの特徴</a></li>
+        <li><a href="#steps" class="hover:text-white">ご利用の流れ</a></li>
+        <li><a href="#faq" class="hover:text-white">よくあるご質問</a></li>
+        <li><a href="#cta" class="hover:text-white">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-white font-bold text-sm">運営会社</h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="https://www.bisii.co.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white">株式会社BISII</a></li>
+        <li><a href="termsforcompany.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white">利用規約</a></li>
+        <li><a href="PP.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white">プライバシーポリシー</a></li>
+        <li><a href="ISP.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white">情報セキュリティポリシー</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs">
+      <span>© BISII Inc.</span>
+      <span class="ja-phrase">
+        <span class="phrase">ビジネスマッチング／</span>
+        <span class="phrase">副業 発注／</span>
+        <span class="phrase">要件定義 無料</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== STICKY MOBILE CTA ============================== -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 sticky-cta">
+  <div class="px-4 py-3">
+    <a href="#cta" class="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accentDark text-ink hover:text-white font-bold py-3.5 rounded-xl">
+      <span class="phrase">無料で相談する</span>
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
