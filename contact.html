@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>無料相談・お問い合わせ｜ANKEN（アンケン）</title>
+<meta name="description" content="ANKENへのお問い合わせ・無料相談はこちらから。会社名・お名前・メールアドレス・ご依頼内容をご記入のうえ送信してください。" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0B1221" />
+
+<!-- Tailwind CSS (CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0B1221',
+          midnight: '#101935',
+          accent: '#F59E0B',
+          accentDark: '#B45309',
+          accentText: '#92400E',
+          highlight: '#FACC15',
+          softgray: '#FAF8F2',
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Noto Sans JP', system-ui, sans-serif; line-break: strict; }
+  .phrase { display: inline-block; }
+
+  .hero-bg {
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(245,158,11,0.28), transparent 60%),
+      radial-gradient(700px 400px at -10% 60%, rgba(250,204,21,0.18), transparent 60%),
+      linear-gradient(180deg, #0B1221 0%, #101935 100%);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* input focus ring */
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #F59E0B;
+    box-shadow: 0 0 0 3px rgba(245,158,11,0.18);
+  }
+
+  /* submit button ripple */
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner { animation: spin 0.8s linear infinite; }
+
+  /* success fade */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fadeUp 0.4s ease both; }
+</style>
+</head>
+<body class="bg-softgray text-ink antialiased">
+
+<!-- ===== HEADER ===== -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-ink items-center justify-center">
+        <img src="logo-40.png" class="w-7 h-7" alt="ANKEN">
+      </span>
+      <span class="font-bold tracking-tight text-lg"><span class="text-accentText">ANKEN</span></span>
+    </a>
+    <a href="index.html" class="text-sm text-gray-500 hover:text-ink transition flex items-center gap-1">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+      トップに戻る
+    </a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero-bg relative overflow-hidden py-16 md:py-20">
+  <div class="grid-bg absolute inset-0 opacity-60"></div>
+  <div class="relative max-w-2xl mx-auto px-4 md:px-6 text-center">
+    <span class="inline-flex items-center gap-1.5 bg-accent/20 border border-accent/30 text-accent text-xs font-bold tracking-wider uppercase px-3 py-1.5 rounded-full mb-5">
+      無料相談
+    </span>
+    <h1 class="text-white text-3xl md:text-4xl font-black leading-tight mb-3">
+      <span class="phrase">まずは、お気軽に</span><br>
+      <span class="text-highlight phrase">ご相談ください。</span>
+    </h1>
+    <p class="text-white/65 text-sm md:text-base leading-relaxed">
+      要件が固まっていなくても大丈夫です。<br>
+      内容を確認のうえ、1時間以内にご返信します。
+    </p>
+  </div>
+</section>
+
+<!-- ===== FORM SECTION ===== -->
+<section class="py-14 md:py-20">
+  <div class="max-w-xl mx-auto px-4 md:px-6">
+
+    <!-- success message (hidden by default) -->
+    <div id="success-msg" class="hidden fade-up mb-8 bg-green-50 border border-green-200 rounded-2xl p-6 text-center">
+      <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h2 class="text-green-800 font-black text-lg mb-1">送信が完了しました</h2>
+      <p class="text-green-700 text-sm">お問い合わせありがとうございます。<br>内容を確認のうえ、担当者よりご連絡します。</p>
+      <a href="index.html" class="inline-flex items-center gap-1 mt-4 text-sm font-bold text-accentText hover:text-accentDark transition">
+        トップページへ戻る →
+      </a>
+    </div>
+
+    <!-- error message (hidden by default) -->
+    <div id="error-msg" class="hidden mb-6 bg-red-50 border border-red-200 rounded-2xl p-4 text-center text-red-700 text-sm">
+      送信に失敗しました。しばらくしてから再度お試しいただくか、<a href="mailto:mat@bisii.co.jp" class="underline font-bold">mat@bisii.co.jp</a> へ直接ご連絡ください。
+    </div>
+
+    <div id="form-wrap" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8">
+      <h2 class="text-ink font-black text-xl mb-6">お問い合わせフォーム</h2>
+
+      <!-- Formspree endpoint — first submission triggers email verification to mat@bisii.co.jp -->
+      <form id="contact-form"
+            action="https://formspree.io/f/mat@bisii.co.jp"
+            method="POST"
+            novalidate
+            class="space-y-5">
+
+        <!-- hidden: page source -->
+        <input type="hidden" name="_subject" value="【ANKEN】新規お問い合わせ" />
+        <input type="hidden" name="_next" value="" />
+        <input type="hidden" name="_language" value="ja" />
+
+        <!-- 会社名 -->
+        <div>
+          <label for="company" class="block text-sm font-bold text-gray-800 mb-1.5">
+            会社名 <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="company"
+            type="text"
+            name="company"
+            placeholder="株式会社〇〇"
+            required
+            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition"
+          />
+          <p class="mt-1 text-xs text-red-500 hidden" data-error="company">会社名を入力してください。</p>
+        </div>
+
+        <!-- お名前 -->
+        <div>
+          <label for="name" class="block text-sm font-bold text-gray-800 mb-1.5">
+            お名前 <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="山田 太郎"
+            required
+            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition"
+          />
+          <p class="mt-1 text-xs text-red-500 hidden" data-error="name">お名前を入力してください。</p>
+        </div>
+
+        <!-- メールアドレス -->
+        <div>
+          <label for="email" class="block text-sm font-bold text-gray-800 mb-1.5">
+            メールアドレス <span class="text-red-500">*</span>
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="your@company.com"
+            required
+            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition"
+          />
+          <p class="mt-1 text-xs text-red-500 hidden" data-error="email">有効なメールアドレスを入力してください。</p>
+        </div>
+
+        <!-- ご依頼内容 -->
+        <div>
+          <label for="message" class="block text-sm font-bold text-gray-800 mb-1.5">
+            ご依頼内容 <span class="text-red-500">*</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="お気軽にご記入ください。例：Webサイト制作を依頼したい、マーケティング施策の相談をしたい、など"
+            required
+            class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition resize-none"
+          ></textarea>
+          <p class="mt-1 text-xs text-red-500 hidden" data-error="message">ご依頼内容を入力してください。</p>
+        </div>
+
+        <!-- submit -->
+        <button
+          id="submit-btn"
+          type="submit"
+          class="w-full flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black py-4 rounded-xl text-base transition shadow-lg shadow-highlight/20 disabled:opacity-60 disabled:cursor-not-allowed"
+        >
+          <span id="btn-label">送信する</span>
+          <svg id="btn-arrow" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          <svg id="btn-spinner" class="hidden w-5 h-5 spinner" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 018-8"/></svg>
+        </button>
+
+        <p class="text-center text-xs text-gray-400 leading-relaxed">
+          送信いただいた情報は、ご相談への返信目的にのみ使用します。<br>
+          1時間以内にご返信します。
+        </p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-ink text-white/60 py-10">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="inline-flex w-7 h-7 rounded-lg bg-white/10 items-center justify-center">
+        <img src="logo-40.png" class="w-6 h-6" alt="ANKEN">
+      </span>
+      <span class="font-bold text-white"><span class="text-highlight">ANKEN</span></span>
+    </a>
+    <p>© 2025 ANKEN by 株式会社ビシィッ. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const form      = document.getElementById('contact-form');
+  const btn       = document.getElementById('submit-btn');
+  const btnLabel  = document.getElementById('btn-label');
+  const btnArrow  = document.getElementById('btn-arrow');
+  const btnSpinner= document.getElementById('btn-spinner');
+  const successMsg= document.getElementById('success-msg');
+  const errorMsg  = document.getElementById('error-msg');
+  const formWrap  = document.getElementById('form-wrap');
+
+  /* ---- inline validation ---- */
+  function validateField(input) {
+    const err = document.querySelector(`[data-error="${input.id}"]`);
+    if (!err) return true;
+    const ok = input.checkValidity() && input.value.trim() !== '';
+    err.classList.toggle('hidden', ok);
+    input.classList.toggle('border-red-400', !ok);
+    return ok;
+  }
+
+  ['company','name','email','message'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('blur', () => validateField(el));
+  });
+
+  /* ---- submit ---- */
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // validate all
+    const fields = ['company','name','email','message'].map(id => document.getElementById(id));
+    const allOk  = fields.every(f => validateField(f));
+    if (!allOk) { fields.find(f => !f.checkValidity() || f.value.trim() === '')?.focus(); return; }
+
+    // loading state
+    btn.disabled   = true;
+    btnLabel.textContent = '送信中...';
+    btnArrow.classList.add('hidden');
+    btnSpinner.classList.remove('hidden');
+    errorMsg.classList.add('hidden');
+
+    try {
+      const data = new FormData(form);
+      const res  = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' }
+      });
+
+      if (res.ok) {
+        formWrap.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const json = await res.json().catch(() => ({}));
+        throw new Error(json.error || 'server error');
+      }
+    } catch (err) {
+      errorMsg.classList.remove('hidden');
+      btn.disabled = false;
+      btnLabel.textContent = '送信する';
+      btnArrow.classList.remove('hidden');
+      btnSpinner.classList.add('hidden');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
