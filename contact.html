@@ -130,23 +130,24 @@
 
     <!-- error message (hidden by default) -->
     <div id="error-msg" class="hidden mb-6 bg-red-50 border border-red-200 rounded-2xl p-4 text-center text-red-700 text-sm">
-      送信に失敗しました。しばらくしてから再度お試しいただくか、<a href="mailto:mat@bisii.co.jp" class="underline font-bold">mat@bisii.co.jp</a> へ直接ご連絡ください。
+      送信に失敗しました。ご迷惑をおかけしますが、LINEよりご連絡をお願いいたします。
     </div>
 
     <div id="form-wrap" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8">
       <h2 class="text-ink font-black text-xl mb-6">お問い合わせフォーム</h2>
 
-      <!-- Formspree endpoint — first submission triggers email verification to mat@bisii.co.jp -->
+      <!-- Web3Forms endpoint -->
       <form id="contact-form"
-            action="https://formspree.io/f/mat@bisii.co.jp"
+            action="https://api.web3forms.com/submit"
             method="POST"
             novalidate
             class="space-y-5">
 
-        <!-- hidden: page source -->
-        <input type="hidden" name="_subject" value="【ANKEN】新規お問い合わせ" />
-        <input type="hidden" name="_next" value="" />
-        <input type="hidden" name="_language" value="ja" />
+        <!-- Web3Forms access key -->
+        <input type="hidden" name="access_key" value="4934e419-c922-482a-84be-11c82d5c4c07" />
+        <input type="hidden" name="subject" value="【ANKEN】新規お問い合わせ" />
+        <input type="hidden" name="from_name" value="ANKENお問い合わせフォーム" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
 
         <!-- 会社名 -->
         <div>
@@ -296,13 +297,13 @@
         headers: { Accept: 'application/json' }
       });
 
-      if (res.ok) {
+      const json = await res.json().catch(() => ({}));
+      if (res.ok && json.success) {
         formWrap.classList.add('hidden');
         successMsg.classList.remove('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
-        const json = await res.json().catch(() => ({}));
-        throw new Error(json.error || 'server error');
+        throw new Error(json.message || 'server error');
       }
     } catch (err) {
       errorMsg.classList.remove('hidden');
