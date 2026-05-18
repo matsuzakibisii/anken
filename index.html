@@ -139,13 +139,13 @@
     <nav class="hidden md:flex items-center gap-7 text-sm text-gray-600">
       <a href="#problem" class="hover:text-ink">発注のお悩み</a>
       <a href="#solution" class="hover:text-ink">サービスの特徴</a>
-      <a href="#steps" class="hover:text-ink">ご利用の流れ</a>
-      <a href="#trust" class="hover:text-ink">仕組み</a>
+      <a href="#members" class="hover:text-ink">メンバー紹介</a>
       <a href="#faq" class="hover:text-ink">FAQ</a>
+      <a href="member.html" class="hover:text-ink text-accentText font-semibold">副業登録</a>
     </nav>
     <a href="contact.html"
        class="inline-flex items-center gap-2 bg-ink hover:bg-midnight text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition">
-      <span class="phrase">お問合せ</span>
+      <span class="phrase">案件を相談する</span>
       <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
@@ -201,20 +201,30 @@
       </div>
 
       <!-- KPI strip -->
-      <dl class="mt-12 grid grid-cols-3 gap-4 max-w-2xl">
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
+      <dl class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
           <dt class="text-xs text-gray-300">業務コンサルレポート</dt>
-          <dd class="text-2xl md:text-3xl font-black mt-1">¥0<span class="text-sm font-medium text-gray-300 ml-1">／回</span></dd>
+          <dd class="text-2xl font-black mt-1">¥0<span class="text-xs font-medium text-gray-300 ml-1">／回</span></dd>
         </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
           <dt class="text-xs text-gray-300">マッチング</dt>
-          <dd class="text-2xl md:text-3xl font-black mt-1">最速<span class="text-highlight">即日</span></dd>
+          <dd class="text-2xl font-black mt-1">最速<span class="text-highlight">即日</span></dd>
         </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 md:p-5">
-          <dt class="text-xs text-gray-300">発注企業様</dt>
-          <dd class="text-2xl md:text-3xl font-black mt-1"><span class="phrase">相談だけでも</span></span></dd>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+          <dt class="text-xs text-gray-300">副業登録料</dt>
+          <dd class="text-2xl font-black mt-1 text-highlight">¥0</dd>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+          <dt class="text-xs text-gray-300">最低稼働コミット</dt>
+          <dd class="text-lg font-black mt-1 leading-tight"><span class="phrase">週末</span><span class="text-highlight phrase">だけ</span><span class="phrase">でも</span></dd>
         </div>
       </dl>
+
+      <!-- Dual CTA hint for engineers -->
+      <p class="mt-5 text-sm text-gray-400 ja-phrase">
+        <span class="phrase">副業案件を探しているエンジニアの方は</span>
+        <a href="member.html" class="text-highlight font-bold hover:underline phrase">こちら →</a>
+      </p>
     </div>
 
   </div>
@@ -624,6 +634,122 @@
           <span class="phrase">メガベンチャーで鍛えた人材を見てから、</span><span class="phrase">発注するかご判断ください。</span>
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MEMBER PROFILES ============================== -->
+<section id="members" class="py-20 md:py-28 bg-softgray">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-accentText font-bold tracking-widest text-xs md:text-sm">WHO'S REGISTERED</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">「このレベルの人が頼めるなら</span>
+        <span class="phrase"><span class="text-accentText">安心だ」</span>と思えるメンバーが揃っています</span>
+      </h2>
+      <p class="mt-5 text-gray-600 text-sm md:text-base ja-phrase">
+        <span class="phrase">全員、実績・スキルを審査した上で登録。</span>
+        <span class="phrase">個人情報は匿名でご紹介します。</span>
+      </p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <!-- Profile 1 -->
+      <article class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
+            <svg class="w-6 h-6 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <div>
+            <div class="font-black text-ink text-sm">30代 · 男性</div>
+            <div class="text-xs text-gray-500 mt-0.5">メガベンチャー在籍 · 副業可</div>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-0.5 rounded-full">Next.js</span>
+            <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-0.5 rounded-full">Python</span>
+            <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-0.5 rounded-full">AI実装</span>
+            <span class="text-xs bg-amber-100 text-amber-800 font-bold px-2.5 py-0.5 rounded-full">フルスタック</span>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed ja-phrase">
+            <span class="phrase">LLMを活用した社内業務自動化を複数社で実績。</span>
+            <span class="phrase">要件定義から実装・テストまで一貫対応。</span>
+          </p>
+          <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+            <span>稼働：<strong class="text-ink">土日・平日夜</strong></span>
+            <span class="font-bold text-accentText">時給 8,000円〜</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Profile 2 -->
+      <article class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <div>
+            <div class="font-black text-ink text-sm">20代 · 男性</div>
+            <div class="text-xs text-gray-500 mt-0.5">スタートアップ勤務 · スポット可</div>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2.5 py-0.5 rounded-full">AWS</span>
+            <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2.5 py-0.5 rounded-full">インフラ</span>
+            <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2.5 py-0.5 rounded-full">コスト最適化</span>
+            <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2.5 py-0.5 rounded-full">Terraform</span>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed ja-phrase">
+            <span class="phrase">AWSコスト最適化で複数社の月額費用を平均40%削減した実績あり。</span>
+            <span class="phrase">スポット診断から継続保守まで対応。</span>
+          </p>
+          <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+            <span>稼働：<strong class="text-ink">スポット〜週10h</strong></span>
+            <span class="font-bold text-accentText">時給 10,000円〜</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Profile 3 -->
+      <article class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+            <svg class="w-6 h-6 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <div>
+            <div class="font-black text-ink text-sm">30代 · 女性</div>
+            <div class="text-xs text-gray-500 mt-0.5">大手EC勤務 · 副業可</div>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-xs bg-green-100 text-green-800 font-bold px-2.5 py-0.5 rounded-full">PM</span>
+            <span class="text-xs bg-green-100 text-green-800 font-bold px-2.5 py-0.5 rounded-full">事業企画</span>
+            <span class="text-xs bg-green-100 text-green-800 font-bold px-2.5 py-0.5 rounded-full">新規事業</span>
+            <span class="text-xs bg-green-100 text-green-800 font-bold px-2.5 py-0.5 rounded-full">PMO</span>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed ja-phrase">
+            <span class="phrase">新規事業立ち上げをPMとして多数経験。</span>
+            <span class="phrase">要件定義・ロードマップ策定・ステークホルダー調整まで幅広く支援可能。</span>
+          </p>
+          <div class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+            <span>稼働：<strong class="text-ink">週5〜15h</strong></span>
+            <span class="font-bold text-accentText">時給 6,000円〜</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="mt-6 text-center text-xs text-gray-400">※ プロフィールは実際の登録メンバーを参考にした匿名情報です。</p>
+
+    <div class="mt-10 text-center">
+      <a href="contact.html"
+         class="inline-flex items-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-7 py-4 rounded-xl text-base transition shadow-lg shadow-highlight/20">
+        <span class="phrase">このレベルの人材に相談してみる（無料）</span>
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -1047,6 +1173,147 @@
           <span class="phrase">発生しません。</span>
         </p>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ENGINEER SECTION ============================== -->
+<section id="for-engineers" class="py-20 md:py-28 bg-ink text-white relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="relative max-w-6xl mx-auto px-4 md:px-6">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-highlight font-bold tracking-widest text-xs md:text-sm">FOR ENGINEERS</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">現職が忙しくても、</span>
+        <span class="phrase"><span class="text-highlight">土日・平日夜だけ</span>で稼げます</span>
+      </h2>
+      <p class="mt-5 text-gray-300 text-sm md:text-base ja-phrase">
+        <span class="phrase">週3日〜が多い副業市場で、ANKENはマイクロ（スポット）特化。</span>
+        <span class="phrase">忙しいハイスペックエンジニアが、無理なく小遣い稼ぎ・スキルアップできる設計です。</span>
+      </p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 gap-6">
+      <!-- Left: Commitment & Fees -->
+      <div class="space-y-4">
+        <article class="bg-white/[0.07] rounded-2xl p-6 border border-white/10">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3 class="font-black text-white text-base ja-phrase">平日の夜だけ・土日だけでもOK</h3>
+              <p class="mt-1.5 text-sm text-gray-300 leading-relaxed ja-phrase">
+                <span class="phrase">週1〜2時間のスポット案件から対応。</span>
+                <span class="phrase">チャットベースの非同期コミュニケーションなので、</span>
+                <span class="phrase">MTGを入れずに完結する案件が中心です。</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/[0.07] rounded-2xl p-6 border border-white/10">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3 class="font-black text-white text-base ja-phrase">手数料の透明性</h3>
+              <p class="mt-1.5 text-sm text-gray-300 leading-relaxed ja-phrase">
+                <span class="phrase">エンジニアへの報酬は<strong class="text-white">発注額の70〜80%</strong>を目安にお支払い。</span>
+                <span class="phrase">登録料・月額費用は一切かかりません。</span>
+                <span class="phrase">案件ごとに報酬額を事前にご確認いただけます。</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white/[0.07] rounded-2xl p-6 border border-white/10">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="font-black text-white text-base ja-phrase">NDA・契約はANKENが代行</h3>
+              <p class="mt-1.5 text-sm text-gray-300 leading-relaxed ja-phrase">
+                <span class="phrase">個人で企業とNDAを結ぶ手間は不要。</span>
+                <span class="phrase">ANKENが契約・請求・トラブル対応を一括管理するので、</span>
+                <span class="phrase">あなたは業務に集中できます。</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Right: Example micro projects for engineers -->
+      <div class="bg-white/[0.05] rounded-2xl p-6 border border-white/10">
+        <h3 class="font-black text-white text-lg mb-5 ja-phrase">
+          <span class="phrase">こんな粒度の案件が</span>
+          <span class="phrase text-highlight">今すぐ</span><span class="phrase">入ってきます</span>
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 w-5 h-5 rounded-full bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3 h-3 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="text-sm leading-relaxed">
+              <strong class="text-white">既存サイトのバグ修正</strong>
+              <span class="text-gray-300">（1日〜・スポット）</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 w-5 h-5 rounded-full bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3 h-3 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="text-sm leading-relaxed">
+              <strong class="text-white">社内ツールのAI連携プロトタイプ作成</strong>
+              <span class="text-gray-300">（土日のみ・2週間）</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 w-5 h-5 rounded-full bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3 h-3 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="text-sm leading-relaxed">
+              <strong class="text-white">サーバー費用の削減診断</strong>
+              <span class="text-gray-300">（スポット・レポート提出のみ）</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 w-5 h-5 rounded-full bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3 h-3 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="text-sm leading-relaxed">
+              <strong class="text-white">Webスクレイピング・データ整形</strong>
+              <span class="text-gray-300">（週末2〜3時間×1ヶ月）</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 w-5 h-5 rounded-full bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3 h-3 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="text-sm leading-relaxed">
+              <strong class="text-white">新規事業の技術選定レビュー</strong>
+              <span class="text-gray-300">（壁打ち1〜2回のみ）</span>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 w-5 h-5 rounded-full bg-highlight/20 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3 h-3 text-highlight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="text-sm leading-relaxed">
+              <strong class="text-white">LP・管理画面のUI改善</strong>
+              <span class="text-gray-300">（平日夜のみ・週3〜5時間）</span>
+            </div>
+          </li>
+        </ul>
+
+        <a href="member.html"
+           class="mt-7 w-full flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black py-3.5 rounded-xl text-sm transition">
+          <span class="phrase">副業メンバーとして登録する（無料）</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>

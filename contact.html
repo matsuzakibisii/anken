@@ -197,20 +197,69 @@
           <p class="mt-1 text-xs text-red-500 hidden" data-error="email">有効なメールアドレスを入力してください。</p>
         </div>
 
+        <!-- 現在の状況 -->
+        <div>
+          <label class="block text-sm font-bold text-gray-800 mb-2">
+            現在の状況 <span class="text-red-500">*</span>
+          </label>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="situation" value="構想段階" class="accent-amber-500 shrink-0">
+              <span>構想段階</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="situation" value="開発中・リソース不足" class="accent-amber-500 shrink-0">
+              <span>開発中・リソース不足</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="situation" value="スポットのバグ修正・改善" class="accent-amber-500 shrink-0">
+              <span>スポットのバグ修正・改善</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="situation" value="まだ決まっていない" class="accent-amber-500 shrink-0">
+              <span>まだ決まっていない</span>
+            </label>
+          </div>
+          <p class="mt-1 text-xs text-red-500 hidden" id="situation-error">現在の状況を選択してください。</p>
+        </div>
+
+        <!-- 希望する人材タイプ -->
+        <div>
+          <label class="block text-sm font-bold text-gray-800 mb-2">
+            希望する人材タイプ <span class="text-gray-400 text-xs font-normal ml-1">（複数選択可）</span>
+          </label>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="フロントエンド" class="accent-amber-500 shrink-0">
+              <span>フロントエンド</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="バックエンド" class="accent-amber-500 shrink-0">
+              <span>バックエンド</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="AI・DX化" class="accent-amber-500 shrink-0">
+              <span>AI・DX化</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="まるっと相談したい" class="accent-amber-500 shrink-0">
+              <span>まるっと相談したい</span>
+            </label>
+          </div>
+        </div>
+
         <!-- ご依頼内容 -->
         <div>
           <label for="message" class="block text-sm font-bold text-gray-800 mb-1.5">
-            ご依頼内容 <span class="text-red-500">*</span>
+            ご依頼内容・補足 <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span>
           </label>
           <textarea
             id="message"
             name="message"
-            rows="5"
-            placeholder="お気軽にご記入ください。例：Webサイト制作を依頼したい、マーケティング施策の相談をしたい、など"
-            required
+            rows="4"
+            placeholder="決まっていなくてもOKです。例：「バグを直したいが、どこから手をつければいいか分からない」「土日で完結する案件を探している」など、思ったことをそのままどうぞ。"
             class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition resize-none"
           ></textarea>
-          <p class="mt-1 text-xs text-red-500 hidden" data-error="message">ご依頼内容を入力してください。</p>
         </div>
 
         <!-- submit -->
@@ -277,10 +326,21 @@
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // validate all
-    const fields = ['company','name','email','message'].map(id => document.getElementById(id));
+    // validate text fields (message is now optional)
+    const fields = ['company','name','email'].map(id => document.getElementById(id));
     const allOk  = fields.every(f => validateField(f));
-    if (!allOk) { fields.find(f => !f.checkValidity() || f.value.trim() === '')?.focus(); return; }
+
+    // validate situation radio
+    const situationErr = document.getElementById('situation-error');
+    const situationSelected = document.querySelector('input[name="situation"]:checked');
+    if (!situationSelected) {
+      situationErr.classList.remove('hidden');
+      if (allOk) { document.querySelector('input[name="situation"]').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    } else {
+      situationErr.classList.add('hidden');
+    }
+
+    if (!allOk || !situationSelected) { fields.find(f => !f.checkValidity() || f.value.trim() === '')?.focus(); return; }
 
     // loading state
     btn.disabled   = true;
