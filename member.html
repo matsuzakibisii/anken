@@ -97,6 +97,15 @@
   /* Sticky CTA */
   .sticky-cta { box-shadow: 0 -8px 24px -8px rgba(0,0,0,0.25); }
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GWT2G24L7Z');
+</script>
 </head>
 <body class="bg-softgray text-ink antialiased">
 
@@ -585,7 +594,8 @@
     <!-- simple contact form -->
     <div class="bg-white rounded-2xl p-6 md:p-8 text-left shadow-2xl">
       <h3 class="text-ink font-black text-xl mb-6 text-center">メンバー登録フォーム</h3>
-      <form action="https://bisii.co.jp/contact" method="get" target="_blank" class="space-y-4">
+      <form action="https://bisii.co.jp/contact" method="get" target="_blank" class="space-y-4"
+            onsubmit="if(typeof gtag==='function') gtag('event','sign_up',{method:'member_form'})">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-sm font-bold text-gray-700 mb-1.5">お名前 <span class="text-red-500">*</span></label>

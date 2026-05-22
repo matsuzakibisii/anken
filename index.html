@@ -123,9 +123,21 @@
     100% { box-shadow: 0 0 0 0 rgba(250,204,21,0); }
   }
   .pulse { animation: pulse-ring 2.4s infinite; }
-
-
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GWT2G24L7Z');
+
+  /* ---- イベント送信ヘルパー ---- */
+  function gaSend(eventName, params) {
+    if (typeof gtag === 'function') gtag('event', eventName, params);
+  }
+</script>
 </head>
 
 <body class="bg-white text-ink antialiased ja-auto">
@@ -145,9 +157,9 @@
       <a href="#members" class="hover:text-ink">メンバー紹介</a>
       <a href="#faq" class="hover:text-ink">FAQ</a>
       <a href="#media" class="hover:text-ink">コンテンツメディア</a>
-      <a href="member.html" class="hover:text-ink text-accentText font-semibold">副業登録</a>
+      <a href="member.html" onclick="gaSend('cta_click',{cta_location:'header_member'})" class="hover:text-ink text-accentText font-semibold">副業登録</a>
     </nav>
-    <a href="contact.html"
+    <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'header'})"
        class="inline-flex items-center gap-2 bg-ink hover:bg-midnight text-white text-xs sm:text-sm font-semibold px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg transition">
       <span class="phrase">案件を相談する</span>
       <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -193,7 +205,7 @@
       </p>
 
       <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <a href="contact.html"
+        <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'hero'})"
            class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accentDark hover:text-white text-ink font-bold px-6 py-4 rounded-xl text-base md:text-lg transition shadow-lg shadow-accent/40">
           <span class="phrase">無料で案件の相談をする！</span>
           <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -749,7 +761,7 @@
     <p class="mt-6 text-center text-xs text-gray-400">※ プロフィールは実際の登録メンバーを参考にした匿名情報です。</p>
 
     <div class="mt-10 text-center">
-      <a href="contact.html"
+      <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'members_section'})"
          class="inline-flex items-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-7 py-4 rounded-xl text-base transition shadow-lg shadow-highlight/20">
         <span class="phrase">このレベルの人材に相談してみる（無料）</span>
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1312,7 +1324,7 @@
           </li>
         </ul>
 
-        <a href="member.html"
+        <a href="member.html" onclick="gaSend('cta_click',{cta_location:'engineer_section'})"
            class="mt-7 w-full flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black py-3.5 rounded-xl text-sm transition">
           <span class="phrase">副業メンバーとして登録する（無料）</span>
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1339,7 +1351,7 @@
     </p>
 
     <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3">
-      <a href="contact.html"
+      <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'bottom_cta'})"
          class="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-7 py-4 rounded-xl text-base md:text-lg transition shadow-xl shadow-highlight/30">
         <span class="phrase">お問合せ</span>
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1524,7 +1536,7 @@
 <!-- ============================== STICKY MOBILE CTA ============================== -->
 <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-gray-200 sticky-cta">
   <div class="px-4 py-3 flex gap-2">
-    <a href="contact.html" class="flex-1 flex items-center justify-center gap-1.5 bg-accent hover:bg-accentDark text-ink hover:text-white font-bold py-3.5 rounded-xl text-sm">
+    <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'sticky_mobile'})" class="flex-1 flex items-center justify-center gap-1.5 bg-accent hover:bg-accentDark text-ink hover:text-white font-bold py-3.5 rounded-xl text-sm">
       <span class="phrase">お問合せ</span>
     </a>
   </div>
