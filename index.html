@@ -45,11 +45,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
 <style>
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   body {
     font-family: 'Noto Sans JP', system-ui, sans-serif;
     /* 日本語の自然な改行（対応ブラウザ） */
     line-break: strict;
+    overflow-x: hidden;
   }
 
   /*
@@ -66,7 +67,7 @@
     .ja-auto { word-break: auto-phrase; }
   }
   /* phrase: 改行禁止の意味の塊。span.phrase はインラインブロックで丸ごと改行 */
-  .phrase { display: inline-block; }
+  .phrase { display: inline-block; max-width: 100%; overflow-wrap: break-word; }
 
   /* Hero gradient */
   .hero-bg {
@@ -122,6 +123,8 @@
     100% { box-shadow: 0 0 0 0 rgba(250,204,21,0); }
   }
   .pulse { animation: pulse-ring 2.4s infinite; }
+
+
 </style>
 </head>
 
@@ -141,12 +144,13 @@
       <a href="#solution" class="hover:text-ink">サービスの特徴</a>
       <a href="#members" class="hover:text-ink">メンバー紹介</a>
       <a href="#faq" class="hover:text-ink">FAQ</a>
+      <a href="#media" class="hover:text-ink">コンテンツメディア</a>
       <a href="member.html" class="hover:text-ink text-accentText font-semibold">副業登録</a>
     </nav>
     <a href="contact.html"
-       class="inline-flex items-center gap-2 bg-ink hover:bg-midnight text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition">
+       class="inline-flex items-center gap-2 bg-ink hover:bg-midnight text-white text-xs sm:text-sm font-semibold px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg transition">
       <span class="phrase">案件を相談する</span>
-      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
 </header>
@@ -255,7 +259,7 @@
       </p>
     </div>
 
-    <div class="mt-12 grid md:grid-cols-3 gap-5">
+    <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
       <article class="bg-softgray rounded-2xl p-7 border border-gray-100">
         <!-- illustration: document pile / overwhelmed desk -->
         <div class="flex justify-center">
@@ -402,7 +406,7 @@
       </p>
     </div>
 
-    <div class="mt-14 grid md:grid-cols-3 gap-6">
+    <div class="mt-14 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
       <!-- Strength 1 (HERO USP) -->
       <article class="card-hover bg-gradient-to-b from-white/[0.07] to-white/[0.03] rounded-2xl p-7 border border-accent/40 relative">
         <span class="absolute -top-3 left-7 bg-highlight text-ink text-[11px] font-bold px-3 py-1 rounded-full">サービスの強み</span>
@@ -582,7 +586,7 @@
       </p>
     </div>
 
-    <div class="mt-14 grid md:grid-cols-3 gap-8">
+    <div class="mt-14 grid sm:grid-cols-3 gap-8">
       <!-- Step 1 -->
       <div class="step-item relative text-center md:text-left">
         <div class="step-line relative">
@@ -653,7 +657,7 @@
       </p>
     </div>
 
-    <div class="mt-12 grid md:grid-cols-3 gap-6">
+    <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
       <!-- Profile 1 -->
       <article class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
         <div class="flex items-center gap-3 mb-4">
@@ -962,7 +966,7 @@
 </section>
 
 <!-- ============================== TRUST / MECHANISM ============================== -->
-<section id="trust" class="py-20 md:py-28 bg-softgray">
+<section id="trust" class="py-20 md:py-28 bg-softgray overflow-hidden">
   <div class="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
     <div>
       <h2 class="text-2xl md:text-4xl font-black leading-tight ja-phrase">
@@ -1009,7 +1013,7 @@
     </div>
 
     <!-- Visual block – Chat consultation UI -->
-    <div class="relative">
+    <div class="relative min-w-0 w-full">
       <div class="aspect-[4/5] md:aspect-square bg-gradient-to-br from-ink to-midnight rounded-2xl text-white shadow-2xl shadow-ink/20 relative overflow-hidden flex flex-col">
         <div class="absolute inset-0 grid-bg opacity-40 pointer-events-none"></div>
 
@@ -1034,7 +1038,7 @@
           <div class="flex justify-end">
             <div class="max-w-[82%]">
               <div class="text-[10px] text-gray-400 text-right mb-1">お客様（発注企業）</div>
-              <div class="bg-accent/25 border border-accent/35 rounded-2xl rounded-tr-sm px-3 py-2 leading-relaxed ja-phrase">
+              <div class="bg-accent/25 border border-accent/35 rounded-2xl rounded-tr-sm px-3 py-2 leading-relaxed ja-phrase break-words overflow-hidden">
                 <span class="phrase">AWSのコスト削減について相談したいのですが、どこから始めればよいか分からなくて…</span>
               </div>
             </div>
@@ -1044,7 +1048,7 @@
           <div class="flex justify-start">
             <div class="max-w-[82%]">
               <div class="text-[10px] text-gray-400 mb-1">ANKEN 担当者</div>
-              <div class="bg-white/10 border border-white/15 rounded-2xl rounded-tl-sm px-3 py-2 leading-relaxed ja-phrase">
+              <div class="bg-white/10 border border-white/15 rounded-2xl rounded-tl-sm px-3 py-2 leading-relaxed ja-phrase break-words overflow-hidden">
                 <span class="phrase">ご相談ありがとうございます！現在の月額費用と、主にお使いのAWSサービスを教えていただけますか？</span>
               </div>
             </div>
@@ -1062,7 +1066,7 @@
           <!-- ANKEN response 2 (hearing) -->
           <div class="flex justify-start">
             <div class="max-w-[85%]">
-              <div class="bg-white/10 border border-white/15 rounded-2xl rounded-tl-sm px-3 py-2 leading-relaxed ja-phrase">
+              <div class="bg-white/10 border border-white/15 rounded-2xl rounded-tl-sm px-3 py-2 leading-relaxed ja-phrase break-words overflow-hidden">
                 <span class="phrase">AWSの請求書のスクリーンショットをお持ちでしたらご提供ください✅ エンジニアが確認し、負荷の高い箇所から費用削減できる案を検討いたします</span>
               </div>
             </div>
@@ -1070,7 +1074,7 @@
 
           <!-- AI auto-generate badge -->
           <div class="flex justify-start">
-            <div class="bg-highlight/10 border border-highlight/30 rounded-xl px-3 py-2 text-[11px] leading-relaxed">
+            <div class="max-w-[90%] bg-highlight/10 border border-highlight/30 rounded-xl px-3 py-2 text-[11px] leading-relaxed break-words">
               <span class="text-highlight font-bold">✦ ANKEN AI：</span>
               <span class="text-gray-200">業務コンサルレポートとお見積りを作成いたします…</span>
             </div>
@@ -1349,9 +1353,132 @@
   </div>
 </section>
 
+<!-- ============================== CONTENTS MEDIA ============================== -->
+<section id="media" class="py-20 md:py-28 bg-softgray">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+
+    <!-- Section header -->
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-accentText font-bold tracking-widest text-xs md:text-sm">CONTENTS MEDIA</p>
+      <h2 class="mt-3 text-2xl md:text-4xl font-black leading-tight ja-phrase">
+        <span class="phrase">開発現場の「困った」を</span>
+        <span class="phrase">解決するメディア</span>
+      </h2>
+      <p class="mt-5 text-gray-600 text-sm md:text-base ja-phrase">
+        <span class="phrase">スポット外注・AI開発・副業エンジニアの働き方まで、</span>
+        <span class="phrase">マイクロ・マッチングに役立つ情報を発信しています。</span>
+      </p>
+    </div>
+
+    <!-- Article cards -->
+    <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Article A: 発注者向け スポット外注 -->
+      <article class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+        <a href="blog/blog-a.html" class="block overflow-hidden">
+          <img src="blog/images/img-card-a.svg"
+               alt="スポットエンジニアに依頼したい企業へ｜今すぐ即戦力を確保する方法"
+               class="w-full transition duration-300 hover:scale-105" loading="lazy">
+        </a>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="inline-block text-xs font-bold text-blue-700 bg-blue-50 rounded-full px-3 py-1 mb-3 w-fit">発注者向け｜スポット外注</span>
+          <h3 class="font-black text-ink text-base leading-snug mb-3 ja-phrase">
+            <a href="blog/blog-a.html" class="hover:text-accentText transition">
+              スポットエンジニアに依頼したい企業へ｜今すぐ即戦力を確保する方法
+            </a>
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed flex-1 ja-phrase">
+            <span class="phrase">「週1回だけ」「このタスクだけ」お願いしたい——でも大手外注は高すぎる。</span>
+            <span class="phrase">固定費ゼロ・タスク単位から依頼できる仕組みで、開発リソース不足を低コストで解消する方法を解説します。</span>
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5">
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">スポットエンジニア 依頼</span>
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">単発 開発 外注</span>
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">開発リソース 不足</span>
+          </div>
+          <a href="blog/blog-a.html" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accentText hover:text-accentDark transition">
+            記事を読む
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article B: 発注者向け AI開発 -->
+      <article class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+        <a href="blog/blog-b.html" class="block overflow-hidden">
+          <img src="blog/images/img-card-b.svg"
+               alt="「AIツールを作りたいけどエンジニアがいない」を週末スポット発注で解決する方法"
+               class="w-full transition duration-300 hover:scale-105" loading="lazy">
+        </a>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="inline-block text-xs font-bold text-green-700 bg-green-50 rounded-full px-3 py-1 mb-3 w-fit">発注者向け｜AI開発</span>
+          <h3 class="font-black text-ink text-base leading-snug mb-3 ja-phrase">
+            <a href="blog/blog-b.html" class="hover:text-accentText transition">
+              「AIツールを作りたいけどエンジニアがいない」を週末スポット発注で解決する方法
+            </a>
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed flex-1 ja-phrase">
+            <span class="phrase">ChatGPT APIやRAGを使った社内ツールを作りたいが、AIエンジニアの採用は難しい。</span>
+            <span class="phrase">週末・短期のスポット発注でAI開発のPoC・プロトタイプを最速で実現する方法を紹介します。</span>
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5">
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">AI開発 外注 スポット</span>
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">社内ツール AI 依頼</span>
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">AIエンジニア 短期</span>
+          </div>
+          <a href="blog/blog-b.html" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accentText hover:text-accentDark transition">
+            記事を読む
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Article C: エンジニア向け 副業 -->
+      <article class="card-hover bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+        <a href="blog/blog-c.html" class="block overflow-hidden">
+          <img src="blog/images/img-card-c.svg"
+               alt="土日だけでOK！メガベンチャーエンジニアが副業でAI案件を最高効率で稼ぐ方法"
+               class="w-full transition duration-300 hover:scale-105" loading="lazy">
+        </a>
+        <div class="p-6 flex flex-col flex-1">
+          <span class="inline-block text-xs font-bold text-orange-700 bg-orange-50 rounded-full px-3 py-1 mb-3 w-fit">エンジニア向け｜副業</span>
+          <h3 class="font-black text-ink text-base leading-snug mb-3 ja-phrase">
+            <a href="blog/blog-c.html" class="hover:text-accentText transition">
+              土日だけでOK！メガベンチャーエンジニアが副業でAI案件を最高効率で稼ぐ方法
+            </a>
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed flex-1 ja-phrase">
+            <span class="phrase">本業は続けたまま、土日・平日夜の空き時間で副業収入を得たい。</span>
+            <span class="phrase">週1日・タスク単位の「マイクロコミット型」副業スタイルで、最新AI技術を実践しながら効率よく稼ぐ方法を解説します。</span>
+          </p>
+          <div class="mt-4 flex flex-wrap gap-1.5">
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">エンジニア 副業 週末</span>
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">フルスタック 副業</span>
+            <span class="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">AI エンジニア 副業</span>
+          </div>
+          <a href="blog/blog-c.html" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accentText hover:text-accentDark transition">
+            記事を読む
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /grid -->
+
+    <!-- View all link -->
+    <div class="mt-10 text-center">
+      <a href="blog/" class="inline-flex items-center gap-2 text-sm md:text-base font-bold text-accentText hover:text-accentDark transition">
+        コンテンツメディアをすべて見る
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
 <!-- ============================== FOOTER ============================== -->
 <footer class="bg-midnight text-gray-400">
-  <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 grid md:grid-cols-4 gap-10">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-14 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
     <div class="md:col-span-2">
       <div class="flex items-center gap-2">
         <span class="inline-flex w-8 h-8 rounded-lg bg-white/10 items-center justify-center">
@@ -1367,6 +1494,7 @@
         <li><a href="#solution" class="hover:text-white">サービスの特徴</a></li>
         <li><a href="#steps" class="hover:text-white">ご利用の流れ</a></li>
         <li><a href="#faq" class="hover:text-white">よくあるご質問</a></li>
+        <li><a href="#media" class="hover:text-white">コンテンツメディア</a></li>
         <li><a href="contact.html" class="hover:text-white">お問い合わせ</a></li>
       </ul>
     </div>

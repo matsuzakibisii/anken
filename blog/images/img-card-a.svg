@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 315" width="600" height="315">
+  <defs>
+  <linearGradient id="cardGradA" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1B3A5C"/>
+    <stop offset="100%" stop-color="#0F2540"/>
+  </linearGradient>
+  </defs>
+<rect width="600" height="315" fill="url(#cardGradA)"/>
+<line x1="0" y1="0" x2="0" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="60" y1="0" x2="60" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="120" y1="0" x2="120" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="180" y1="0" x2="180" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="240" y1="0" x2="240" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="300" y1="0" x2="300" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="360" y1="0" x2="360" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="420" y1="0" x2="420" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="480" y1="0" x2="480" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="540" y1="0" x2="540" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="600" y1="0" x2="600" y2="315" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="0" y1="0" x2="600" y2="0" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="0" y1="60" x2="600" y2="60" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="0" y1="120" x2="600" y2="120" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="0" y1="180" x2="600" y2="180" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="0" y1="240" x2="600" y2="240" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<line x1="0" y1="300" x2="600" y2="300" stroke="#2E75B6" stroke-width="0.5" opacity="0.08"/>
+<rect x="0" y="0" width="600" height="7" fill="#2E75B6" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<circle cx="80" cy="120" r="48" fill="#2E75B6" opacity="0.15" stroke="none" stroke-width="0"/>
+<circle cx="80" cy="120" r="48" fill="#2E75B6" opacity="0" stroke="#2E75B6" stroke-width="2"/>
+<text x="80" y="134" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="40" fill="#fff" font-weight="normal" text-anchor="middle" opacity="0.85">💼</text>
+<text x="148" y="88" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="19" fill="#fff" font-weight="700" text-anchor="start" opacity="1.0">スポットエンジニアに</text>
+<text x="148" y="126" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="19" fill="#fff" font-weight="700" text-anchor="start" opacity="1.0">依頼したい企業へ</text>
+<rect x="148" y="188" width="90" height="26" fill="#2E75B6" rx="13" opacity="0.2" stroke="none" stroke-width="0"/>
+<rect x="148" y="188" width="90" height="26" fill="#2E75B6" rx="13" opacity="0" stroke="#2E75B6" stroke-width="1.5"/>
+<text x="193" y="205" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">スポット外注</text>
+<rect x="237" y="188" width="79" height="26" fill="#2E75B6" rx="13" opacity="0.2" stroke="none" stroke-width="0"/>
+<rect x="237" y="188" width="79" height="26" fill="#2E75B6" rx="13" opacity="0" stroke="#2E75B6" stroke-width="1.5"/>
+<text x="276" y="205" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">即戦力確保</text>
+<rect x="0" y="268" width="600" height="47" fill="#0F2540" rx="0" opacity="0.7" stroke="none" stroke-width="0"/>
+<rect x="0" y="268" width="90" height="47" fill="#2E75B6" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="45" y="298" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="14" fill="#fff" font-weight="900" text-anchor="middle" opacity="1.0">ANKEN</text>
+<text x="310" y="298" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="13" fill="#888888" font-weight="400" text-anchor="middle" opacity="0.7">anken.bisii.co.jp</text>
+</svg>
