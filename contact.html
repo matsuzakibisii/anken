@@ -367,6 +367,7 @@
 
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.success) {
+        if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: 'contact_form' });
         formWrap.classList.add('hidden');
         successMsg.classList.remove('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
