@@ -216,8 +216,8 @@
               <span>構想段階</span>
             </label>
             <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
-              <input type="radio" name="situation" value="開発中・リソース不足" class="accent-amber-500 shrink-0">
-              <span>開発中・リソース不足</span>
+              <input type="radio" name="situation" value="リソース不足" class="accent-amber-500 shrink-0">
+              <span>リソース不足</span>
             </label>
             <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
               <input type="radio" name="situation" value="スポットのバグ修正・改善" class="accent-amber-500 shrink-0">
@@ -236,7 +236,8 @@
           <label class="block text-sm font-bold text-gray-800 mb-2">
             希望する人材タイプ <span class="text-gray-400 text-xs font-normal ml-1">（複数選択可）</span>
           </label>
-          <div class="grid grid-cols-2 gap-2">
+          <p class="text-xs text-gray-400 mb-1.5">― エンジニア職種 ―</p>
+          <div class="grid grid-cols-2 gap-2 mb-3">
             <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
               <input type="checkbox" name="talent" value="フロントエンド" class="accent-amber-500 shrink-0">
               <span>フロントエンド</span>
@@ -249,9 +250,98 @@
               <input type="checkbox" name="talent" value="AI・DX化" class="accent-amber-500 shrink-0">
               <span>AI・DX化</span>
             </label>
+          </div>
+          <p class="text-xs text-gray-400 mb-1.5">― デスクワーク職種 ―</p>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="AI関連" class="accent-amber-500 shrink-0">
+              <span>AI関連</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="PM" class="accent-amber-500 shrink-0">
+              <span>PM</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="PMO" class="accent-amber-500 shrink-0">
+              <span>PMO</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="データ分析" class="accent-amber-500 shrink-0">
+              <span>データ分析</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="業務コンサル" class="accent-amber-500 shrink-0">
+              <span>業務コンサル</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="バックオフィス" class="accent-amber-500 shrink-0">
+              <span>バックオフィス</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="組織構築" class="accent-amber-500 shrink-0">
+              <span>組織構築</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="採用支援" class="accent-amber-500 shrink-0">
+              <span>採用支援</span>
+            </label>
             <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
               <input type="checkbox" name="talent" value="まるっと相談したい" class="accent-amber-500 shrink-0">
               <span>まるっと相談したい</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="checkbox" name="talent" value="その他" class="accent-amber-500 shrink-0">
+              <span>その他</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 稼働希望 -->
+        <div>
+          <label class="block text-sm font-bold text-gray-800 mb-2">
+            稼働希望 <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span>
+          </label>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="start_timing" value="すぐに稼働希望" class="accent-amber-500 shrink-0">
+              <span>すぐに稼働希望</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="start_timing" value="１ヶ月以内" class="accent-amber-500 shrink-0">
+              <span>１ヶ月以内</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="start_timing" value="３ヶ月以内" class="accent-amber-500 shrink-0">
+              <span>３ヶ月以内</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="start_timing" value="検討中" class="accent-amber-500 shrink-0">
+              <span>検討中</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 時給目安 -->
+        <div>
+          <label class="block text-sm font-bold text-gray-800 mb-2">
+            時給目安 <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span>
+          </label>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="hourly_rate" value="5千円以下" class="accent-amber-500 shrink-0">
+              <span>5千円以下</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="hourly_rate" value="8千円以下" class="accent-amber-500 shrink-0">
+              <span>8千円以下</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="hourly_rate" value="1万円以下" class="accent-amber-500 shrink-0">
+              <span>1万円以下</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="hourly_rate" value="1万円以上" class="accent-amber-500 shrink-0">
+              <span>1万円以上</span>
             </label>
           </div>
         </div>
