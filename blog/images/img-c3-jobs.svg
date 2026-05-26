@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460">
+  <defs>
+  <linearGradient id="bgC3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0F2540"/>
+    <stop offset="100%" stop-color="#1B3A5C"/>
+  </linearGradient>
+  </defs>
+<rect width="1200" height="460" fill="url(#bgC3)"/>
+<line x1="0" y1="0" x2="0" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="100" y1="0" x2="100" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="200" y1="0" x2="200" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="300" y1="0" x2="300" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="400" y1="0" x2="400" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="500" y1="0" x2="500" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="600" y1="0" x2="600" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="700" y1="0" x2="700" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="800" y1="0" x2="800" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="900" y1="0" x2="900" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="1000" y1="0" x2="1000" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="1100" y1="0" x2="1100" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<line x1="1200" y1="0" x2="1200" y2="460" stroke="#2E75B6" stroke-width="0.5" opacity="0.06"/>
+<rect x="0" y="0" width="1200" height="6" fill="#F5A623" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="600" y="52" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="28" fill="#fff" font-weight="900" text-anchor="middle" opacity="1.0">スポット案件の種類と特徴</text>
+<rect x="45" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0.07" stroke="none" stroke-width="0"/>
+<rect x="45" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0" stroke="#2E75B6" stroke-width="1.5"/>
+<rect x="45" y="80" width="198" height="8" fill="#2E75B6" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="144" y="150" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="44" fill="#fff" font-weight="normal" text-anchor="middle" opacity="0.8">💻</text>
+<text x="144" y="206" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">フロントエンド</text>
+<text x="144" y="230" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">実装</text>
+<text x="144" y="280" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">React/Next.js</text>
+<text x="144" y="302" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">週末2日完結</text>
+<circle cx="144" cy="358" r="8" fill="#2E75B6" opacity="0.8" stroke="none" stroke-width="0"/>
+<rect x="267" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0.07" stroke="none" stroke-width="0"/>
+<rect x="267" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0" stroke="#F5A623" stroke-width="1.5"/>
+<rect x="267" y="80" width="198" height="8" fill="#F5A623" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="366" y="150" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="44" fill="#fff" font-weight="normal" text-anchor="middle" opacity="0.8">🤖</text>
+<text x="366" y="206" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">ChatGPT API</text>
+<text x="366" y="230" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">組み込み</text>
+<text x="366" y="280" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">LLM連携</text>
+<text x="366" y="302" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">タスク単位</text>
+<circle cx="366" cy="358" r="8" fill="#F5A623" opacity="0.8" stroke="none" stroke-width="0"/>
+<rect x="489" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0.07" stroke="none" stroke-width="0"/>
+<rect x="489" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0" stroke="#27AE60" stroke-width="1.5"/>
+<rect x="489" y="80" width="198" height="8" fill="#27AE60" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="588" y="150" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="44" fill="#fff" font-weight="normal" text-anchor="middle" opacity="0.8">🔍</text>
+<text x="588" y="206" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">RAGシステム</text>
+<text x="588" y="230" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">構築</text>
+<text x="588" y="280" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">Vector DB設計</text>
+<text x="588" y="302" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">1〜2週間</text>
+<circle cx="588" cy="358" r="8" fill="#27AE60" opacity="0.8" stroke="none" stroke-width="0"/>
+<rect x="711" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0.07" stroke="none" stroke-width="0"/>
+<rect x="711" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0" stroke="#9B59B6" stroke-width="1.5"/>
+<rect x="711" y="80" width="198" height="8" fill="#9B59B6" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="810" y="150" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="44" fill="#fff" font-weight="normal" text-anchor="middle" opacity="0.8">📊</text>
+<text x="810" y="206" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">データ分析</text>
+<text x="810" y="230" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">ダッシュボード</text>
+<text x="810" y="280" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">Python/Streamlit</text>
+<text x="810" y="302" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">短期完結</text>
+<circle cx="810" cy="358" r="8" fill="#9B59B6" opacity="0.8" stroke="none" stroke-width="0"/>
+<rect x="933" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0.07" stroke="none" stroke-width="0"/>
+<rect x="933" y="80" width="198" height="300" fill="#fff" rx="14" opacity="0" stroke="#E67E22" stroke-width="1.5"/>
+<rect x="933" y="80" width="198" height="8" fill="#E67E22" rx="0" opacity="1.0" stroke="none" stroke-width="0"/>
+<text x="1032" y="150" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="44" fill="#fff" font-weight="normal" text-anchor="middle" opacity="0.8">🔧</text>
+<text x="1032" y="206" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">バグ修正</text>
+<text x="1032" y="230" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle" opacity="1.0">技術調査</text>
+<text x="1032" y="280" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">スポット対応</text>
+<text x="1032" y="302" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="12" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">高時給</text>
+<circle cx="1032" cy="358" r="8" fill="#E67E22" opacity="0.8" stroke="none" stroke-width="0"/>
+<text x="600" y="415" font-family="Noto Sans JP,Hiragino Sans,Meiryo,sans-serif" font-size="15" fill="#D8E6F2" font-weight="400" text-anchor="middle" opacity="0.75">週1日〜・土日のみ・タスク単位　すべてフレキシブルに参画できます</text>
+</svg>
