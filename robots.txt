@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# ブログ・コンテンツはすべてクロール許可
+Allow: /blog/
+
+# 管理・システムファイルは除外
+Disallow: /.DS_Store
+
+# サイトマップ
+Sitemap: https://anken.bisii.co.jp/sitemap.xml

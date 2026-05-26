@@ -1061,6 +1061,80 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .site-footer__links a:hover { color: rgba(255,255,255,0.9); }
 
+/* ── インラインCTA（記事中間・上部配置） ───────────── */
+.cta-inline {
+  background: linear-gradient(135deg, var(--color-bg-light) 0%, #e8f4fd 100%);
+  border: 1.5px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg) var(--space-xl);
+  margin: var(--space-xl) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.cta-inline p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn--sm {
+  padding: 10px 20px;
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+/* ── ピラーページ専用バナー（media.html 用） ────── */
+.pillar-banner {
+  background: linear-gradient(135deg, #101935 0%, #1B3A5C 100%);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl) var(--space-2xl);
+  margin: var(--space-2xl) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.pillar-banner__label {
+  display: inline-block;
+  background: rgba(245,166,35,.15);
+  color: #F5A623;
+  border: 1px solid rgba(245,166,35,.4);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+
+.pillar-banner__title {
+  font-size: var(--font-size-lg);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.pillar-banner__desc {
+  font-size: var(--font-size-sm);
+  color: rgba(255,255,255,.7);
+  line-height: 1.8;
+}
+
+.pillar-banner__cta {
+  flex-shrink: 0;
+}
+
 /* ── ユーティリティ ─────────────────────────────────── */
 .text-center { text-align: center; }
 .mt-sm { margin-top: var(--space-sm); }
