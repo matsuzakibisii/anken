@@ -96,6 +96,15 @@
 
   /* Sticky CTA */
   .sticky-cta { box-shadow: 0 -8px 24px -8px rgba(0,0,0,0.25); }
+
+  /* Spinner + success fade (contact.html と共通) */
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner { animation: spin 0.8s linear infinite; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fadeUp 0.4s ease both; }
 </style>
 
 <!-- Google tag (gtag.js) -->
@@ -578,10 +587,26 @@
   </div>
 </section>
 
+<!-- ===== 送信完了メッセージ（hero の外・白背景） ===== -->
+<section id="member-success-section" class="hidden py-20 md:py-28">
+  <div class="max-w-xl mx-auto px-4 md:px-6">
+    <div id="member-success-msg" class="fade-up bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
+      <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
+        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h2 class="text-green-800 font-black text-lg mb-1">送信が完了しました</h2>
+      <p class="text-green-700 text-sm">ご登録ありがとうございます。<br>内容を確認のうえ、担当者よりご連絡します。</p>
+      <a href="index.html" class="inline-flex items-center gap-1 mt-4 text-sm font-bold text-accentText hover:text-accentDark transition">
+        トップページへ戻る →
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== CTA / REGISTER ===== -->
-<section id="register" class="hero-bg py-20 md:py-28 relative overflow-hidden">
+<section id="register-section" class="hero-bg py-20 md:py-28 relative overflow-hidden">
   <div class="grid-bg absolute inset-0 opacity-60"></div>
-  <div class="relative max-w-3xl mx-auto px-4 md:px-6 text-center">
+  <div id="register" class="relative max-w-3xl mx-auto px-4 md:px-6 text-center">
     <p class="text-accent text-sm font-bold tracking-widest uppercase mb-4">Join ANKEN</p>
     <h2 class="text-white text-3xl md:text-5xl font-black leading-tight mb-4">
       <span class="phrase">スキルを武器に、</span><br>
@@ -590,18 +615,6 @@
     <p class="text-white/65 mb-10 text-base md:text-lg leading-relaxed max-w-xl mx-auto ja-auto">
       登録は無料・5分で完了。あなたのスキルとペースに合った案件を、AIが自動でご提案します。
     </p>
-
-    <!-- success message (hidden by default) -->
-    <div id="member-success-msg" class="hidden mb-8 bg-green-50 border border-green-200 rounded-2xl p-6 text-center">
-      <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
-        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-      </div>
-      <h2 class="text-green-800 font-black text-lg mb-1">登録が完了しました</h2>
-      <p class="text-green-700 text-sm">ご登録ありがとうございます。<br>内容を確認のうえ、担当者よりご連絡します。</p>
-      <a href="index.html" class="inline-flex items-center gap-1 mt-4 text-sm font-bold text-accentText hover:text-accentDark transition">
-        トップページへ戻る →
-      </a>
-    </div>
 
     <!-- error message (hidden by default) -->
     <div id="member-error-msg" class="hidden mb-6 bg-red-50 border border-red-200 rounded-2xl p-4 text-center text-red-700 text-sm">
@@ -669,8 +682,8 @@
         </div>
         <button id="member-submit-btn" type="submit" class="w-full flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black py-4 rounded-xl text-base transition shadow-lg shadow-highlight/25 disabled:opacity-60 disabled:cursor-not-allowed">
           <span id="member-btn-label">無料でメンバー登録する</span>
-          <span id="member-btn-arrow">→</span>
-          <svg id="member-btn-spinner" class="hidden w-5 h-5 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-dasharray="30 60" stroke-linecap="round"/></svg>
+          <svg id="member-btn-arrow" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          <svg id="member-btn-spinner" class="hidden w-5 h-5 spinner" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 018-8"/></svg>
         </button>
       </form>
       <p class="text-center text-xs text-gray-400 mt-4">ご登録いただいた個人情報は案件マッチング目的のみに使用します。</p>
@@ -703,25 +716,25 @@
 
 <script>
 (function () {
-  const form       = document.getElementById('member-form');
-  const btn        = document.getElementById('member-submit-btn');
-  const btnLabel   = document.getElementById('member-btn-label');
-  const btnArrow   = document.getElementById('member-btn-arrow');
-  const btnSpinner = document.getElementById('member-btn-spinner');
-  const successMsg = document.getElementById('member-success-msg');
-  const errorMsg   = document.getElementById('member-error-msg');
-  const formWrap   = document.getElementById('member-form-wrap');
+  const form          = document.getElementById('member-form');
+  const btn           = document.getElementById('member-submit-btn');
+  const btnLabel      = document.getElementById('member-btn-label');
+  const btnArrow      = document.getElementById('member-btn-arrow');
+  const btnSpinner    = document.getElementById('member-btn-spinner');
+  const errorMsg      = document.getElementById('member-error-msg');
+  const registerSection = document.getElementById('register-section');
+  const successSection  = document.getElementById('member-success-section');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // HTML5 validation
+    // バリデーション
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
     }
 
-    // loading state
+    // ローディング状態
     btn.disabled = true;
     btnLabel.textContent = '送信中...';
     btnArrow.classList.add('hidden');
@@ -739,9 +752,10 @@
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.success) {
         if (typeof gtag === 'function') gtag('event', 'sign_up', { method: 'member_form' });
-        formWrap.classList.add('hidden');
-        successMsg.classList.remove('hidden');
-        window.scrollTo({ top: successMsg.offsetTop - 80, behavior: 'smooth' });
+        // hero セクションを非表示にして完了画面を表示（contact.html と同じ体験）
+        registerSection.classList.add('hidden');
+        successSection.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         throw new Error(json.message || 'server error');
       }
