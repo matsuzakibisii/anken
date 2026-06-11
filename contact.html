@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>無料相談・お問い合わせ｜ANKEN（アンケン）</title>
-<meta name="description" content="ANKENへのお問い合わせ・無料相談はこちらから。会社名・お名前・メールアドレス・ご依頼内容をご記入のうえ送信してください。" />
+<title>スポットエンジニアへの無料相談｜ANKEN（アンケン）</title>
+<meta name="description" content="開発リソース不足・AIツール開発・スポット外注のご相談はこちら。要件が固まっていなくてもOK。1時間以内にご返信します。" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -130,8 +130,8 @@
       <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-3">
         <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
       </div>
-      <h2 class="text-green-800 font-black text-lg mb-1">送信が完了しました</h2>
-      <p class="text-green-700 text-sm">お問い合わせありがとうございます。<br>内容を確認のうえ、担当者よりご連絡します。</p>
+      <h2 class="text-green-800 font-black text-lg mb-1">ご相談を受け付けました</h2>
+      <p class="text-green-700 text-sm">ありがとうございます。内容を確認のうえ、<br>1時間以内に担当者よりご連絡いたします。</p>
       <a href="index.html" class="inline-flex items-center gap-1 mt-4 text-sm font-bold text-accentText hover:text-accentDark transition">
         トップページへ戻る →
       </a>
@@ -356,7 +356,7 @@
             id="message"
             name="message"
             rows="4"
-            placeholder="決まっていなくてもOKです。例：「バグを直したいが、どこから手をつければいいか分からない」「土日で完結する案件を探している」など、思ったことをそのままどうぞ。"
+            placeholder="決まっていなくてもOKです。例：「ChatGPT APIを使った社内ツールを作りたい」「スポットで開発リソースを補強したい」「何ができるか聞いてみたい」など、思ったことをそのままどうぞ。"
             class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition resize-none"
           ></textarea>
         </div>
@@ -365,9 +365,10 @@
         <button
           id="submit-btn"
           type="submit"
+          onclick="if(typeof gtag==='function') gtag('event','cta_click',{event_category:'contact',event_label:'submit_btn'})"
           class="w-full flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black py-4 rounded-xl text-base transition shadow-lg shadow-highlight/20 disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          <span id="btn-label">送信する</span>
+          <span id="btn-label">無料で相談する</span>
           <svg id="btn-arrow" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           <svg id="btn-spinner" class="hidden w-5 h-5 spinner" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 8 0 018-8"/></svg>
         </button>
