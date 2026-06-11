@@ -1,0 +1,172 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ANKENスポット副業の受注フロー</title>
+  <desc id="desc">ANKENスポット副業の受注フローを、無料登録、案件マッチング、スポット稼働、報酬受取の4ステップで横並びに示した図。</desc>
+
+  <defs>
+    <style>
+      .font {
+        font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .title {
+        fill: #0B1221;
+        font-size: 32px;
+        font-weight: 900;
+      }
+      .step-num {
+        fill: #F59E0B;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+      }
+      .step-title {
+        fill: #0B1221;
+        font-size: 21px;
+        font-weight: 900;
+      }
+      .step-sub {
+        fill: #475569;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .card {
+        fill: #FFFFFF;
+        stroke: #E5E7EB;
+        stroke-width: 1.5;
+      }
+      .icon-bg {
+        fill: #FEF3C7;
+      }
+      .navy-fill {
+        fill: #0B1221;
+      }
+      .amber-fill {
+        fill: #F59E0B;
+      }
+      .icon-line {
+        fill: none;
+        stroke: #0B1221;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .icon-line-amber {
+        fill: none;
+        stroke: #F59E0B;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .arrow {
+        fill: none;
+        stroke: #F59E0B;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0B1221" flood-opacity="0.10"/>
+    </filter>
+
+    <marker id="arrow-head" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#F59E0B"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#FFFDF8"/>
+
+  <!-- Header -->
+  <text x="600" y="58" text-anchor="middle" class="font title">ANKENスポット副業の受注フロー</text>
+
+  <!-- Connecting arrows -->
+  <path d="M310 245 H372" class="arrow" marker-end="url(#arrow-head)"/>
+  <path d="M550 245 H612" class="arrow" marker-end="url(#arrow-head)"/>
+  <path d="M790 245 H852" class="arrow" marker-end="url(#arrow-head)"/>
+
+  <!-- Step 1 -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="125" width="240" height="250" rx="24" class="card"/>
+    <circle cx="190" cy="190" r="42" class="icon-bg"/>
+
+    <!-- Registration icon -->
+    <g transform="translate(154 154)">
+      <circle cx="26" cy="21" r="13" class="icon-line"/>
+      <path d="M8 58 C11 43, 20 36, 36 36 C47 36, 55 40, 59 49" class="icon-line"/>
+      <circle cx="58" cy="18" r="14" class="amber-fill"/>
+      <path d="M52 18 H64" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <path d="M58 12 V24" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <text x="190" y="264" text-anchor="middle" class="font step-num">STEP 01</text>
+    <text x="190" y="298" text-anchor="middle" class="font step-title">無料登録</text>
+    <text x="190" y="326" text-anchor="middle" class="font step-sub">プロフィールを入力</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g filter="url(#shadow)">
+    <rect x="370" y="125" width="240" height="250" rx="24" class="card"/>
+    <circle cx="490" cy="190" r="42" class="icon-bg"/>
+
+    <!-- Matching icon -->
+    <g transform="translate(452 154)">
+      <circle cx="18" cy="24" r="13" class="icon-line"/>
+      <circle cx="58" cy="24" r="13" class="icon-line"/>
+      <path d="M31 24 H45" class="icon-line-amber"/>
+      <path d="M18 41 C11 41, 8 48, 8 58 H36 C36 48, 33 41, 26 41" class="icon-line"/>
+      <path d="M58 41 C51 41, 48 48, 48 58 H76 C76 48, 73 41, 66 41" class="icon-line"/>
+      <path d="M33 13 C38 7, 47 7, 52 13" class="icon-line-amber"/>
+    </g>
+
+    <text x="490" y="264" text-anchor="middle" class="font step-num">STEP 02</text>
+    <text x="490" y="298" text-anchor="middle" class="font step-title">案件マッチング</text>
+    <text x="490" y="326" text-anchor="middle" class="font step-sub">条件に合う案件を紹介</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g filter="url(#shadow)">
+    <rect x="670" y="125" width="240" height="250" rx="24" class="card"/>
+    <circle cx="790" cy="190" r="42" class="icon-bg"/>
+
+    <!-- Work icon -->
+    <g transform="translate(750 154)">
+      <rect x="5" y="18" width="70" height="45" rx="8" class="icon-line"/>
+      <path d="M24 18 V10 H56 V18" class="icon-line"/>
+      <path d="M19 39 H61" class="icon-line-amber"/>
+      <circle cx="40" cy="39" r="6" class="amber-fill"/>
+      <path d="M14 68 H66" class="icon-line"/>
+    </g>
+
+    <text x="790" y="264" text-anchor="middle" class="font step-num">STEP 03</text>
+    <text x="790" y="296" text-anchor="middle" class="font step-title">スポット稼働</text>
+    <text x="790" y="324" text-anchor="middle" class="font step-sub">土日・タスク単位</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g filter="url(#shadow)">
+    <rect x="970" y="125" width="160" height="250" rx="24" class="card"/>
+    <circle cx="1050" cy="190" r="42" class="icon-bg"/>
+
+    <!-- Payment icon -->
+    <g transform="translate(1017 154)">
+      <rect x="2" y="15" width="64" height="48" rx="8" class="icon-line"/>
+      <path d="M2 29 H66" class="icon-line-amber"/>
+      <circle cx="50" cy="48" r="6" class="amber-fill"/>
+      <path d="M18 47 H34" class="icon-line"/>
+      <path d="M23 6 L50 6" class="icon-line"/>
+    </g>
+
+    <text x="1050" y="264" text-anchor="middle" class="font step-num">STEP 04</text>
+    <text x="1050" y="298" text-anchor="middle" class="font step-title">報酬受取</text>
+    <text x="1050" y="326" text-anchor="middle" class="font step-sub">成果に応じて入金</text>
+  </g>
+
+  <!-- Bottom note -->
+  <g>
+    <rect x="360" y="410" width="480" height="40" rx="20" fill="#0B1221"/>
+    <text x="600" y="436" text-anchor="middle" class="font" fill="#FFFFFF" font-size="15" font-weight="800">
+      長期拘束なし。週末・平日夜の空き時間で始められるスポット副業
+    </text>
+  </g>
+</svg>

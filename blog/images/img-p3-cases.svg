@@ -1,0 +1,137 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">週末スポット依頼で実現したAIツール事例</title>
+  <desc id="desc">3列カード型レイアウトで、週末スポット依頼により実現したAIツール事例を紹介する図。社内ドキュメント検索Bot、営業提案文生成ツール、データ分析レポート自動化の3事例と、それぞれの稼働日数の目安を示している。</desc>
+
+  <defs>
+    <style>
+      .font {
+        font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        fill: #0B1221;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 900;
+      }
+      .subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        fill: #475569;
+      }
+      .card-title {
+        font-size: 22px;
+        font-weight: 800;
+        fill: #0B1221;
+      }
+      .card-text {
+        font-size: 15px;
+        font-weight: 500;
+        fill: #334155;
+      }
+      .pill-text {
+        font-size: 15px;
+        font-weight: 800;
+        fill: #0B1221;
+      }
+      .label {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #F59E0B;
+        letter-spacing: 0.08em;
+      }
+      .icon-stroke {
+        stroke: #0B1221;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .icon-fill {
+        fill: #F59E0B;
+      }
+      .card-shadow {
+        filter: drop-shadow(0 8px 20px rgba(11,18,33,0.08));
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" fill="#FFFDF8"/>
+
+  <!-- Header -->
+  <text x="600" y="54" text-anchor="middle" class="font title">週末スポット依頼で実現したAIツール事例</text>
+  <text x="600" y="82" text-anchor="middle" class="font subtitle">AI実装を小さく素早く進める、代表的な3つのユースケース</text>
+
+  <!-- Cards -->
+  <!-- Card 1 -->
+  <g class="card-shadow">
+    <rect x="70" y="120" width="320" height="290" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="100" y="156" class="font label">CASE 01</text>
+
+    <!-- Document icon -->
+    <g transform="translate(98 178)">
+      <rect x="0" y="0" width="68" height="82" rx="10" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2.5"/>
+      <path d="M45 0 L68 23 L68 25 L45 25 Z" fill="#F59E0B" opacity="0.9"/>
+      <line x1="14" y1="30" x2="52" y2="30" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="14" y1="43" x2="52" y2="43" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="14" y1="56" x2="44" y2="56" class="icon-stroke" stroke="#F59E0B"/>
+      <circle cx="58" cy="67" r="14" fill="#0B1221"/>
+      <circle cx="58" cy="67" r="7" fill="#FFFFFF"/>
+      <line x1="66" y1="75" x2="76" y2="85" class="icon-stroke" stroke="#0B1221"/>
+    </g>
+
+    <text x="100" y="286" class="font card-title">社内ドキュメント検索Bot</text>
+    <text x="100" y="316" class="font card-text">社内資料やFAQを検索し、</text>
+    <text x="100" y="338" class="font card-text">必要な情報をすばやく参照。</text>
+
+    <rect x="100" y="362" width="180" height="34" rx="17" fill="#FEF3C7"/>
+    <text x="190" y="384" text-anchor="middle" class="font pill-text">稼働目安：土日2日</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g class="card-shadow">
+    <rect x="440" y="120" width="320" height="290" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="470" y="156" class="font label">CASE 02</text>
+
+    <!-- Mail icon -->
+    <g transform="translate(468 184)">
+      <rect x="0" y="6" width="92" height="62" rx="12" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2.5"/>
+      <path d="M10 18 L46 43 L82 18" class="icon-stroke" stroke="#F59E0B"/>
+      <path d="M12 58 L34 38" class="icon-stroke" stroke="#F59E0B"/>
+      <path d="M80 58 L58 38" class="icon-stroke" stroke="#F59E0B"/>
+      <circle cx="78" cy="0" r="15" fill="#0B1221"/>
+      <path d="M71 -2 C74 -8, 82 -8, 85 -2 C86 2, 82 6, 78 10 C74 6, 70 2, 71 -2 Z" fill="#FFFFFF"/>
+    </g>
+
+    <text x="470" y="286" class="font card-title">営業提案文生成ツール</text>
+    <text x="470" y="316" class="font card-text">顧客条件に応じた提案文を</text>
+    <text x="470" y="338" class="font card-text">AIで自動生成し作成時間を短縮。</text>
+
+    <rect x="470" y="362" width="140" height="34" rx="17" fill="#FEF3C7"/>
+    <text x="540" y="384" text-anchor="middle" class="font pill-text">稼働目安：3日</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g class="card-shadow">
+    <rect x="810" y="120" width="320" height="290" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="840" y="156" class="font label">CASE 03</text>
+
+    <!-- Graph icon -->
+    <g transform="translate(840 182)">
+      <rect x="0" y="0" width="96" height="76" rx="14" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2.5"/>
+      <line x1="18" y1="58" x2="18" y2="18" class="icon-stroke" stroke="#0B1221"/>
+      <line x1="18" y1="58" x2="78" y2="58" class="icon-stroke" stroke="#0B1221"/>
+      <rect x="28" y="42" width="10" height="16" rx="3" fill="#F59E0B"/>
+      <rect x="45" y="33" width="10" height="25" rx="3" fill="#F59E0B"/>
+      <rect x="62" y="24" width="10" height="34" rx="3" fill="#0B1221"/>
+      <path d="M26 48 L50 36 L66 28" class="icon-stroke" stroke="#0B1221"/>
+      <path d="M66 28 L74 20" class="icon-stroke" stroke="#0B1221"/>
+      <path d="M67 19 L75 19 L75 27" class="icon-stroke" stroke="#0B1221"/>
+    </g>
+
+    <text x="840" y="286" class="font card-title">データ分析レポート自動化</text>
+    <text x="840" y="316" class="font card-text">集計からレポート作成までを</text>
+    <text x="840" y="338" class="font card-text">自動化して分析業務を効率化。</text>
+
+    <rect x="840" y="362" width="176" height="34" rx="17" fill="#FEF3C7"/>
+    <text x="928" y="384" text-anchor="middle" class="font pill-text">稼働目安：週末×2回</text>
+  </g>
+</svg>
