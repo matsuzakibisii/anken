@@ -1,0 +1,79 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F9FAFB" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="900" fill="#0B1221">業務別AIツール活用シーン</text>
+
+  <!-- Card 1: メール・文書作成 -->
+  <rect x="40" y="70" width="340" height="360" fill="#FFFFFF" rx="12" stroke="#F59E0B" stroke-width="2"/>
+  <!-- Icon background -->
+  <rect x="120" y="100" width="180" height="120" fill="#FEF3C7" rx="12"/>
+  <!-- Envelope icon -->
+  <rect x="145" y="120" width="130" height="80" fill="none" stroke="#F59E0B" stroke-width="3" rx="4"/>
+  <polyline points="145,120 210,165 275,120" fill="none" stroke="#F59E0B" stroke-width="3"/>
+  <line x1="145" y1="200" x2="185" y2="200" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="195" y1="200" x2="235" y2="200" stroke="#F59E0B" stroke-width="2"/>
+
+  <text x="210" y="250" text-anchor="middle" font-size="18" font-weight="900" fill="#0B1221">メール・文書作成</text>
+  <text x="210" y="280" text-anchor="middle" font-size="14" fill="#6B7280">営業メール、提案書、</text>
+  <text x="210" y="300" text-anchor="middle" font-size="14" fill="#6B7280">報告書の草案作成に</text>
+  <rect x="80" y="320" width="260" height="36" fill="#F59E0B" rx="18"/>
+  <text x="210" y="344" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">推奨：ChatGPT / Claude</text>
+  <text x="210" y="388" text-anchor="middle" font-size="13" fill="#9CA3AF">自然な日本語・長文対応</text>
+  <text x="210" y="408" text-anchor="middle" font-size="13" fill="#9CA3AF">が得意なモデルが最適</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="395" y="255" text-anchor="middle" font-size="28" fill="#D1D5DB">→</text>
+
+  <!-- Card 2: 情報収集・調査 -->
+  <rect x="430" y="70" width="340" height="360" fill="#FFFFFF" rx="12" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="510" y="100" width="180" height="120" fill="#FEF3C7" rx="12"/>
+  <!-- Search icon -->
+  <circle cx="610" cy="155" r="35" fill="none" stroke="#F59E0B" stroke-width="3"/>
+  <line x1="635" y1="180" x2="660" y2="205" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="595" y1="148" x2="625" y2="148" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="595" y1="158" x2="620" y2="158" stroke="#F59E0B" stroke-width="2"/>
+
+  <text x="600" y="250" text-anchor="middle" font-size="18" font-weight="900" fill="#0B1221">情報収集・市場調査</text>
+  <text x="600" y="280" text-anchor="middle" font-size="14" fill="#6B7280">競合調査、最新トレンド、</text>
+  <text x="600" y="300" text-anchor="middle" font-size="14" fill="#6B7280">業界ニュースのリサーチに</text>
+  <rect x="470" y="320" width="260" height="36" fill="#F59E0B" rx="18"/>
+  <text x="600" y="344" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">推奨：Gemini / ChatGPT</text>
+  <text x="600" y="388" text-anchor="middle" font-size="13" fill="#9CA3AF">Google検索連携・Web検索</text>
+  <text x="600" y="408" text-anchor="middle" font-size="13" fill="#9CA3AF">機能で最新情報を取得</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="785" y="255" text-anchor="middle" font-size="28" fill="#D1D5DB">→</text>
+
+  <!-- Card 3: 資料・コード・分析 -->
+  <rect x="820" y="70" width="340" height="360" fill="#FFFFFF" rx="12" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="900" y="100" width="180" height="120" fill="#FEF3C7" rx="12"/>
+  <!-- Document/chart icon -->
+  <rect x="930" y="115" width="80" height="90" fill="none" stroke="#F59E0B" stroke-width="3" rx="4"/>
+  <line x1="942" y1="140" x2="998" y2="140" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="942" y1="155" x2="990" y2="155" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="942" y1="170" x2="985" y2="170" stroke="#F59E0B" stroke-width="2"/>
+  <!-- Bar chart overlay -->
+  <rect x="1030" y="155" width="18" height="50" fill="#F59E0B" rx="2"/>
+  <rect x="1052" y="135" width="18" height="70" fill="#0B1221" rx="2"/>
+  <rect x="1074" y="145" width="18" height="60" fill="#F59E0B" rx="2"/>
+
+  <text x="990" y="250" text-anchor="middle" font-size="18" font-weight="900" fill="#0B1221">資料作成・分析・コード</text>
+  <text x="990" y="280" text-anchor="middle" font-size="14" fill="#6B7280">プレゼン資料、データ分析、</text>
+  <text x="990" y="300" text-anchor="middle" font-size="14" fill="#6B7280">コードレビューや修正に</text>
+  <rect x="860" y="320" width="260" height="36" fill="#0B1221" rx="18"/>
+  <text x="990" y="344" text-anchor="middle" font-size="14" font-weight="700" fill="#F59E0B">推奨：Claude / ChatGPT</text>
+  <text x="990" y="388" text-anchor="middle" font-size="13" fill="#9CA3AF">長文コンテキスト処理・</text>
+  <text x="990" y="408" text-anchor="middle" font-size="13" fill="#9CA3AF">コーディング支援が強力</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="458" text-anchor="middle" font-size="13" fill="#9CA3AF">※ AIの機能・料金は2026年6月時点の情報です。最新情報は各社公式サイトをご確認ください。</text>
+</svg>
