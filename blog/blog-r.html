@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIで業務を効率化する具体的な5ステップを解説。メール・議事録・報告書作成をChatGPT・Claude・Geminiで自動化する実践手順を、AI初心者にもわかりやすく紹介します。2026年最新版。">
+  <title>AI業務効率化の実践手順5ステップ｜メール・議事録・報告書を自動化する方法【2026年版】 | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="AI業務効率化の実践手順5ステップ｜メール・議事録・報告書を自動化する方法【2026年版】">
+  <meta property="og:description" content="ChatGPT・Claude・Geminiを使ってメール作成・議事録・報告書を効率化する実践的な5ステップを解説。AI初心者でも今日から実践できます。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-r1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-r.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="AI業務効率化の実践手順5ステップ｜メール・議事録・報告書を自動化する方法【2026年版】">
+  <meta name="twitter:description" content="ChatGPT・Claude・Geminiで日常業務を効率化する5ステップ。メール・議事録・資料作成を自動化する実践ガイド。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-r1-hero.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GWT2G24L7Z');
+    gtag('config', 'G-VHGE2HHG65');
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_r',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_r',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>AI業務効率化の実践手順5ステップ</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--g">AI業務効率化｜方法・手順</span>
+      <h1 class="article-hero__title">AI業務効率化の実践手順5ステップ<br>メール・議事録・報告書を自動化する方法【2026年版】</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年6月13日</span>
+        <span class="article-hero__meta-item">⏱ 約10分で読めます</span>
+        <span class="article-hero__meta-item">🔑 AI 業務効率化、ChatGPT 使い方、議事録 自動化、メール作成 AI</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-r1-hero.png" alt="AI業務効率化を表すフラットイラスト" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">AIで業務を効率化したいが、何から手をつければいいか迷っていませんか</a></li>
+          <li><a href="#sec2">AI業務効率化の5ステップ全体像</a>
+            <ul class="toc__list--sub">
+              <li><a href="#sec2-1">Step 1：効率化したい業務を特定する</a></li>
+              <li><a href="#sec2-2">Step 2：用途に合ったAIツールを選ぶ</a></li>
+              <li><a href="#sec2-3">Step 3：プロンプトテンプレートを作る</a></li>
+              <li><a href="#sec2-4">Step 4：小さく試して改善する</a></li>
+              <li><a href="#sec2-5">Step 5：チームに展開・定着させる</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec3">業務別の具体的な効率化手順</a>
+            <ul class="toc__list--sub">
+              <li><a href="#sec3-1">メール作成・返信を効率化する</a></li>
+              <li><a href="#sec3-2">議事録作成を効率化する</a></li>
+              <li><a href="#sec3-3">報告書・提案資料を効率化する</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec4">よくある失敗パターンと対処法</a></li>
+          <li><a href="#sec5">さらに上を目指す：AIをシステム化・ツール化する</a></li>
+          <li><a href="#sec6">まとめ：AI効率化は「小さく始めて広げる」が鉄則</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+
+        <!-- セクション1 -->
+        <h2 id="sec1">AIで業務を効率化したいが、何から手をつければいいか迷っていませんか</h2>
+
+        <p>「ChatGPTが話題なのはわかるが、どの業務に使えばいいかわからない」「とりあえず試してみたけど、うまく活用できていない」——AIの普及とともに、このような声が多く聞かれるようになっています。</p>
+
+        <p>AIはポテンシャルが高い分、使い方を間違えると「ただの検索ツール」で終わってしまいます。反対に、正しい手順で導入すれば<strong>メール作成が5分→1分、議事録が30分→5分</strong>といった劇的な効率化が実現します。</p>
+
+        <p>この記事では、AI業務効率化を確実に成果につなげるための<strong>5つのステップ</strong>と、具体的な業務ごとの実践手順をまとめました。AI初心者の方でも今日から取り組めるよう、プロンプト例も交えて解説します。</p>
+
+        <!-- セクション2 -->
+        <h2 id="sec2">AI業務効率化の5ステップ全体像</h2>
+
+        <p>AI導入で失敗する多くのケースは「ツールを入れたが定着しなかった」です。定着させるためには、正しい順序で進めることが重要です。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-r2-steps.svg" alt="AI業務効率化の5ステップと時間削減効果" width="1200" height="500">
+          <figcaption>図1：AI業務効率化の5ステップと業務別の時間削減効果の目安</figcaption>
+        </figure>
+
+        <h3 id="sec2-1">Step 1：効率化したい業務を特定する</h3>
+
+        <p>最初のステップは「何を効率化するか」を明確にすることです。AIは万能ではないため、<strong>繰り返し発生し、かつパターン化できる業務</strong>を対象にするのが成功の鍵です。</p>
+
+        <p>効率化に向いている業務の特徴は以下のとおりです。</p>
+
+        <ul>
+          <li>毎日・毎週繰り返し発生する（例：週次レポート、日報、メール返信）</li>
+          <li>インプット情報が決まっている（例：会議の録音、数値データ、顧客情報）</li>
+          <li>アウトプットの形式がある程度定まっている（例：報告書テンプレート、メール文体）</li>
+        </ul>
+
+        <p>まずは自分の1週間の業務を棚卸しし、「毎回30分以上かかっている繰り返し業務」を3つ書き出すところから始めましょう。</p>
+
+        <h3 id="sec2-2">Step 2：用途に合ったAIツールを選ぶ</h3>
+
+        <p>業務の種類に応じて最適なAIツールは変わります。2026年現在の主要ツールの使い分けは以下のとおりです。</p>
+
+        <ul>
+          <li><strong>文書作成・長文処理・報告書</strong> → Claude（長文コンテキストに強い）</li>
+          <li><strong>情報収集・最新情報が必要な業務</strong> → Gemini（Google検索連携が強み）</li>
+          <li><strong>コード作成・データ分析・幅広い業務</strong> → ChatGPT（汎用性が高い）</li>
+          <li><strong>無料で試したい・最初の1本</strong> → Gemini（無料プランが最も充実）</li>
+        </ul>
+
+        <p>どれか1つに絞る必要はありません。「文書はClaude、調査はGemini」のように使い分けることで、それぞれの強みを最大活用できます。</p>
+
+        <h3 id="sec2-3">Step 3：プロンプトテンプレートを作る</h3>
+
+        <p>AIを効率化ツールとして使い続けるためには、<strong>毎回ゼロから指示を書かない仕組み</strong>が必要です。そのために「プロンプトテンプレート」を作成します。</p>
+
+        <p>優れたプロンプトテンプレートには以下の要素が含まれます。</p>
+
+        <ol>
+          <li><strong>役割指定</strong>：「あなたはビジネスメールのプロです」</li>
+          <li><strong>状況説明</strong>：「以下の内容を元に〇〇を作成してください」</li>
+          <li><strong>インプット欄</strong>：「【入力情報】〇〇」（ここを毎回書き換えるだけ）</li>
+          <li><strong>出力形式の指定</strong>：「箇条書きで3点・300字以内で出力してください」</li>
+        </ol>
+
+        <p>一度テンプレートを作れば、次回からはインプット欄を書き換えるだけで、毎回同じ品質のアウトプットを得られます。テンプレートはNotionやGoogleドキュメントなどで管理すると共有も楽です。</p>
+
+        <h3 id="sec2-4">Step 4：小さく試して改善する</h3>
+
+        <p>AIの出力は最初から完璧ではありません。重要なのは<strong>「試す → 評価する → プロンプトを改善する」</strong>のサイクルを回すことです。</p>
+
+        <p>最初は自分1人の業務で試し、「使える」と感じたら少しずつ業務範囲を広げていきます。プロンプトの改善は、出力を見て「何が足りないか」「何が余計か」を具体的にAIにフィードバックすることで精度が上がります。</p>
+
+        <div class="note-box" style="background:#F0FDF4;border-left:4px solid #22C55E;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#166534;"><strong>💡 プロンプト改善のコツ</strong><br>「もっと簡潔に」「5行以内で」「敬語を使って」など、出力の問題点を具体的に指示しましょう。曖昧なフィードバック（「なんか違う」）よりも、具体的な修正指示のほうがAIは正確に対応できます。</p>
+        </div>
+
+        <h3 id="sec2-5">Step 5：チームに展開・定着させる</h3>
+
+        <p>個人で効果が確認できたら、チームへの展開を検討します。展開時のポイントは以下のとおりです。</p>
+
+        <ul>
+          <li><strong>成功事例を共有する</strong>：「〇〇の業務に使ったら◯分削減できた」という具体的な数字を伝える</li>
+          <li><strong>プロンプトテンプレートを共有する</strong>：NotionやSlackのチャンネルに置いて誰でも使えるようにする</li>
+          <li><strong>ルールを決める</strong>：「個人情報・機密情報はAIに入力しない」などの社内ガイドラインを設ける</li>
+          <li><strong>定期的に見直す</strong>：月1回など定期的にプロンプトの精度と業務効果を評価する</li>
+        </ul>
+
+        <!-- セクション3 -->
+        <h2 id="sec3">業務別の具体的な効率化手順</h2>
+
+        <figure class="article-figure">
+          <img src="images/img-r3-usecase.svg" alt="業務別AI効率化ユースケース一覧" width="1200" height="480">
+          <figcaption>図2：業務種別ごとのAI活用パターンと導入難易度</figcaption>
+        </figure>
+
+        <h3 id="sec3-1">メール作成・返信を効率化する</h3>
+
+        <p>メール作成は、AIで最も手軽に効率化できる業務の一つです。以下のプロンプトテンプレートを活用してください。</p>
+
+        <div class="note-box" style="background:#FFFBEB;border-left:4px solid #F59E0B;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#92400E;"><strong>📝 メール作成プロンプトテンプレート</strong></p>
+          <p style="margin:8px 0 0;font-size:13px;color:#78350F;line-height:1.8;">
+            あなたはビジネスメール作成のプロです。以下の情報をもとに、丁寧でわかりやすいビジネスメールを作成してください。<br><br>
+            【宛先】〇〇様（〇〇会社）<br>
+            【目的】〇〇（例：打ち合わせの日程調整、見積もりの依頼 など）<br>
+            【伝えたいこと】〇〇<br>
+            【トーン】丁寧・簡潔（or 親しみやすく・フレンドリー）<br>
+            【文字数】300字以内<br><br>
+            件名も含めて出力してください。
+          </p>
+        </div>
+
+        <p>このテンプレートを使えば、【宛先】【目的】【伝えたいこと】を書き換えるだけで、毎回高品質なメールを数秒で生成できます。</p>
+
+        <h3 id="sec3-2">議事録作成を効率化する</h3>
+
+        <p>会議の議事録作成は、AIによる効率化で特に大きな時間削減が見込める業務です。推奨フローは以下のとおりです。</p>
+
+        <ol>
+          <li><strong>会議を録音する</strong>：Zoomのレコーディング機能やiPhoneのボイスメモを使用</li>
+          <li><strong>文字起こしツールを使う</strong>：Notta・Otter.ai・Googleドキュメントの音声入力などで文字起こし（5〜10分）</li>
+          <li><strong>AIで要約・整形する</strong>：文字起こしテキストをClaudeまたはChatGPTに貼り付け、以下のプロンプトで要約</li>
+        </ol>
+
+        <div class="note-box" style="background:#FFFBEB;border-left:4px solid #F59E0B;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#92400E;"><strong>📝 議事録要約プロンプトテンプレート</strong></p>
+          <p style="margin:8px 0 0;font-size:13px;color:#78350F;line-height:1.8;">
+            以下の会議の文字起こしを整理して、議事録を作成してください。<br><br>
+            【フォーマット】<br>
+            ■ 会議概要（日時・参加者・目的）<br>
+            ■ 決定事項（箇条書き）<br>
+            ■ 課題・懸念点（箇条書き）<br>
+            ■ 次のアクション（担当者・期限付き）<br><br>
+            【文字起こし本文】<br>
+            〇〇（ここに文字起こしテキストを貼り付け）
+          </p>
+        </div>
+
+        <p>このフローを使えば、従来30〜60分かかっていた議事録作成が<strong>5〜10分</strong>に短縮できます。</p>
+
+        <h3 id="sec3-3">報告書・提案資料を効率化する</h3>
+
+        <p>月次レポートや提案書のような定型的な報告書は、AIとテンプレートの組み合わせで大幅に効率化できます。手順は以下のとおりです。</p>
+
+        <ol>
+          <li>報告書の「型（アウトライン）」をあらかじめAIに作らせる</li>
+          <li>実績数値や具体的な出来事だけを自分でインプット</li>
+          <li>「このインプット情報を使って〇〇の書式で報告書を作成して」とAIに指示する</li>
+          <li>出力を確認・修正して完成</li>
+        </ol>
+
+        <p>特にClaudeは長文の読み込み・生成が得意なため、複数ページにわたる報告書や提案書の作成に適しています。PDFや過去の報告書をそのまま読み込ませて「この形式で今月分を書いて」という指示も可能です。</p>
+
+        <!-- セクション4 -->
+        <h2 id="sec4">よくある失敗パターンと対処法</h2>
+
+        <p>AI業務効率化を試みた企業・個人の多くが直面する失敗パターンと、その対処法をまとめます。</p>
+
+        <ul>
+          <li>
+            <strong>失敗1：「思ったより精度が低い」</strong><br>
+            → プロンプトが曖昧なことが原因。役割・状況・出力形式を具体的に指定すると精度が大幅に上がります。
+          </li>
+          <li>
+            <strong>失敗2：「使い続けられない」</strong><br>
+            → 毎回ゼロから書いていることが原因。プロンプトテンプレートを作り、コピペで使える状態にすることが定着の鍵です。
+          </li>
+          <li>
+            <strong>失敗3：「機密情報を入力してしまった」</strong><br>
+            → 社内ガイドラインを事前に作成することが重要。個人情報・顧客情報・機密情報はAIに入力しないルールを徹底しましょう。
+          </li>
+          <li>
+            <strong>失敗4：「チームに広がらない」</strong><br>
+            → 成功体験の共有不足が原因。具体的な時間削減効果を数字で見せることが、チームへの展開を加速します。
+          </li>
+        </ul>
+
+        <!-- セクション5 -->
+        <h2 id="sec5">さらに上を目指す：AIをシステム化・ツール化する</h2>
+
+        <p>AIを「チャットで指示する」段階から進め、社内専用ツールやAPI連携ツールとして実装すると、さらに劇的な効率化が可能になります。</p>
+
+        <p>たとえば以下のようなカスタムツールが、週末のスポット開発で実現できます。</p>
+
+        <ul>
+          <li>Slackに届いたメッセージを自動で要約・分類するBot</li>
+          <li>社内ドキュメントを検索して回答するRAGシステム</li>
+          <li>フォームに入力するだけで提案書や見積書が自動生成されるWebツール</li>
+          <li>会議録音を自動でアップロードすると議事録がSlackに届く自動化フロー</li>
+        </ul>
+
+        <p>このようなカスタム開発には、ChatGPT・Claude・Gemini APIを扱えるエンジニアが必要です。しかし正社員採用するほどの工数ではなく、<strong>週末2〜3日のスポット依頼で完成するケースがほとんど</strong>です。</p>
+
+        <div class="note-box" style="background:#FEF3C7;border-left:4px solid #F59E0B;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#92400E;"><strong>🔧 AI社内ツールのスポット開発を検討している方へ</strong><br>ANKENでは、ChatGPT・Claude・Gemini APIを活用した社内ツール開発を得意とするエンジニアと、週末スポットでマッチングできます。要件が固まっていない段階からでも相談可能です。</p>
+        </div>
+
+        <!-- セクション6 -->
+        <h2 id="sec6">まとめ：AI効率化は「小さく始めて広げる」が鉄則</h2>
+
+        <p>AI業務効率化の5ステップをまとめます。</p>
+
+        <ol>
+          <li><strong>業務を特定する</strong>：繰り返し・パターン化できる業務を3つ書き出す</li>
+          <li><strong>ツールを選ぶ</strong>：用途に応じてClaude・ChatGPT・Geminiを使い分ける</li>
+          <li><strong>プロンプトテンプレートを作る</strong>：役割・状況・出力形式を明記したテンプレートを用意する</li>
+          <li><strong>小さく試して改善する</strong>：1業務で試し、フィードバックでプロンプトを磨く</li>
+          <li><strong>チームに展開する</strong>：成功事例と時間削減効果を数字で共有する</li>
+        </ol>
+
+        <p>最初から完璧なシステムを目指す必要はありません。<strong>まず1業務で5分の削減を実現し、それを積み重ねる</strong>——この地道なアプローチが、AIを本当に業務に定着させる唯一の方法です。</p>
+
+        <p>さらに高度なAI活用（API連携・カスタムツール化）をご検討中の方は、ぜひANKENのスポット発注をご活用ください。要件整理から一緒に進められるエンジニアとマッチングします。</p>
+
+        <!-- CTAボックス -->
+        <div class="cta-box">
+          <div class="cta-box__title">AI業務ツールの開発をスポットで依頼する</div>
+          <p class="cta-box__desc">議事録自動化・社内ドキュメントBot・提案書生成ツールなど、ChatGPT・Claude API活用の社内ツール開発をスポットで依頼できます。固定費ゼロ・週末対応可能。初回相談は無料です。</p>
+          <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_r',event_label:'bottom_cta'})">👉 無料でスポット依頼を相談する</a>
+          <p class="cta-box__sub">要件が固まっていなくてもOK。相談から始められます。</p>
+        </div>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-q.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">ChatGPT・Claude・Gemini の違いと使い分け完全ガイド</span>
+          </a>
+          <a href="blog-s.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">業務効率化に使えるAIプロンプト集30選</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">AI業務ツールをスポットで開発</div>
+        <p class="sidebar-cta__desc">議事録Bot・文書自動化など、ChatGPT・Claude API対応エンジニアへ週末スポット発注。固定費ゼロで始められます。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_r',event_label:'sidebar_cta'})">無料でスポット依頼を相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--f" style="font-size:11px;margin-bottom:4px;display:inline-block;">参考プロンプト集｜業務効率化</span>
+            <a href="blog-s.html">業務効率化に使えるAIプロンプト集30選</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-q.html">ChatGPT・Claude・Gemini の違いと使い分け完全ガイド</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--b" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜AI開発</span>
+            <a href="blog-f.html">ノウハウ不足でも作れる社内AIツール</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#F9FAFB" rx="12"/>
+
+  <!-- タイトル -->
+  <text x="600" y="46" text-anchor="middle" font-size="22" font-weight="900" fill="#0B1221">業務別AIプロンプト活用フロー：Before → AIプロンプト → After</text>
+
+  <!-- ====== 行1: メール作成 ====== -->
+  <!-- Before -->
+  <rect x="40" y="80" width="260" height="80" rx="8" fill="#E5E7EB"/>
+  <text x="170" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">Before</text>
+  <text x="170" y="128" text-anchor="middle" font-size="13" fill="#374151">メール1通に</text>
+  <text x="170" y="146" text-anchor="middle" font-size="13" fill="#374151">15〜20分かかる</text>
+  <!-- 矢印 -->
+  <line x1="305" y1="120" x2="385" y2="120" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- AI -->
+  <rect x="390" y="80" width="420" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+  <text x="600" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#B45309">AIプロンプト活用</text>
+  <text x="600" y="128" text-anchor="middle" font-size="13" fill="#0B1221">役割・状況・トーン・文字数を指定して</text>
+  <text x="600" y="146" text-anchor="middle" font-size="13" fill="#0B1221">ChatGPT / Claude に生成依頼</text>
+  <!-- 矢印 -->
+  <line x1="815" y1="120" x2="895" y2="120" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+  <!-- After -->
+  <rect x="900" y="80" width="260" height="80" rx="8" fill="#0B1221"/>
+  <text x="1030" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#F59E0B">After</text>
+  <text x="1030" y="128" text-anchor="middle" font-size="13" fill="#FFFFFF">下書き生成まで1分。</text>
+  <text x="1030" y="146" text-anchor="middle" font-size="13" fill="#FFFFFF">確認・修正のみで完了</text>
+  <!-- ラベル -->
+  <text x="40" y="175" font-size="12" font-weight="700" fill="#F59E0B">📧 メール作成</text>
+
+  <!-- ====== 行2: 議事録 ====== -->
+  <rect x="40" y="200" width="260" height="80" rx="8" fill="#E5E7EB"/>
+  <text x="170" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">Before</text>
+  <text x="170" y="248" text-anchor="middle" font-size="13" fill="#374151">会議後に30〜60分</text>
+  <text x="170" y="266" text-anchor="middle" font-size="13" fill="#374151">かけて議事録を整理</text>
+  <line x1="305" y1="240" x2="385" y2="240" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="390" y="200" width="420" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+  <text x="600" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#B45309">AIプロンプト活用</text>
+  <text x="600" y="248" text-anchor="middle" font-size="13" fill="#0B1221">発言メモ or 文字起こしを貼り付けて</text>
+  <text x="600" y="266" text-anchor="middle" font-size="13" fill="#0B1221">決定事項・ToDoを自動構造化</text>
+  <line x1="815" y1="240" x2="895" y2="240" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="900" y="200" width="260" height="80" rx="8" fill="#0B1221"/>
+  <text x="1030" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#F59E0B">After</text>
+  <text x="1030" y="248" text-anchor="middle" font-size="13" fill="#FFFFFF">会議終了後5分で</text>
+  <text x="1030" y="266" text-anchor="middle" font-size="13" fill="#FFFFFF">共有可能な議事録が完成</text>
+  <text x="40" y="295" font-size="12" font-weight="700" fill="#F59E0B">📋 議事録・会議まとめ</text>
+
+  <!-- ====== 行3: 報告書 ====== -->
+  <rect x="40" y="320" width="260" height="80" rx="8" fill="#E5E7EB"/>
+  <text x="170" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">Before</text>
+  <text x="170" y="368" text-anchor="middle" font-size="13" fill="#374151">数値を集めてから</text>
+  <text x="170" y="386" text-anchor="middle" font-size="13" fill="#374151">文章化に2〜3時間</text>
+  <line x1="305" y1="360" x2="385" y2="360" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="390" y="320" width="420" height="80" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+  <text x="600" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#B45309">AIプロンプト活用</text>
+  <text x="600" y="368" text-anchor="middle" font-size="13" fill="#0B1221">KPI実績・課題・対策を入力して</text>
+  <text x="600" y="386" text-anchor="middle" font-size="13" fill="#0B1221">報告書の構造と文章を自動生成</text>
+  <line x1="815" y1="360" x2="895" y2="360" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="900" y="320" width="260" height="80" rx="8" fill="#0B1221"/>
+  <text x="1030" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#F59E0B">After</text>
+  <text x="1030" y="368" text-anchor="middle" font-size="13" fill="#FFFFFF">初稿30分で完成。</text>
+  <text x="1030" y="386" text-anchor="middle" font-size="13" fill="#FFFFFF">レビューと修正だけでOK</text>
+  <text x="40" y="415" font-size="12" font-weight="700" fill="#F59E0B">📊 報告書・資料作成</text>
+
+  <!-- 注釈 -->
+  <text x="600" y="460" text-anchor="middle" font-size="12" fill="#9CA3AF">※効果は業務量・習熟度・プロンプトの精度によって異なります</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F9FAFB" rx="12"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#0B1221">業務カテゴリ別：AIプロンプト活用で削減できる時間の目安</text>
+  <text x="600" y="75" text-anchor="middle" font-size="14" fill="#6B7280">週40時間労働のビジネスパーソンを想定（目安）</text>
+
+  <!-- 横軸ラベル -->
+  <text x="180" y="460" text-anchor="middle" font-size="14" fill="#374151" font-weight="700">メール作成</text>
+  <text x="380" y="460" text-anchor="middle" font-size="14" fill="#374151" font-weight="700">議事録・会議</text>
+  <text x="580" y="460" text-anchor="middle" font-size="14" fill="#374151" font-weight="700">報告書・資料</text>
+  <text x="780" y="460" text-anchor="middle" font-size="14" fill="#374151" font-weight="700">データ分析</text>
+  <text x="980" y="460" text-anchor="middle" font-size="14" fill="#374151" font-weight="700">SNS・マーケ</text>
+
+  <!-- 縦軸 -->
+  <line x1="80" y1="100" x2="80" y2="430" stroke="#D1D5DB" stroke-width="1.5"/>
+  <!-- 縦軸目盛り -->
+  <text x="70" y="435" text-anchor="end" font-size="12" fill="#9CA3AF">0h</text>
+  <line x1="78" y1="430" x2="1150" y2="430" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="70" y="360" text-anchor="end" font-size="12" fill="#9CA3AF">1h</text>
+  <line x1="78" y1="355" x2="1150" y2="355" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="70" y="285" text-anchor="end" font-size="12" fill="#9CA3AF">2h</text>
+  <line x1="78" y1="280" x2="1150" y2="280" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="70" y="210" text-anchor="end" font-size="12" fill="#9CA3AF">3h</text>
+  <line x1="78" y1="205" x2="1150" y2="205" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="70" y="135" text-anchor="end" font-size="12" fill="#9CA3AF">4h</text>
+  <line x1="78" y1="130" x2="1150" y2="130" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- バー：メール（週3h削減） -->
+  <rect x="110" y="205" width="140" height="225" rx="6" fill="#0B1221" opacity="0.85"/>
+  <text x="180" y="195" text-anchor="middle" font-size="15" font-weight="900" fill="#0B1221">週3h削減</text>
+
+  <!-- バー：議事録（週3.5h削減） -->
+  <rect x="310" y="168" width="140" height="262" rx="6" fill="#F59E0B"/>
+  <text x="380" y="158" text-anchor="middle" font-size="15" font-weight="900" fill="#0B1221">週3.5h削減</text>
+
+  <!-- バー：報告書（週2.5h削減） -->
+  <rect x="510" y="243" width="140" height="187" rx="6" fill="#0B1221" opacity="0.75"/>
+  <text x="580" y="233" text-anchor="middle" font-size="15" font-weight="900" fill="#0B1221">週2.5h削減</text>
+
+  <!-- バー：データ分析（週2h削減） -->
+  <rect x="710" y="280" width="140" height="150" rx="6" fill="#F59E0B" opacity="0.8"/>
+  <text x="780" y="270" text-anchor="middle" font-size="15" font-weight="900" fill="#0B1221">週2h削減</text>
+
+  <!-- バー：SNS（週1.5h削減） -->
+  <rect x="910" y="318" width="140" height="112" rx="6" fill="#0B1221" opacity="0.6"/>
+  <text x="980" y="308" text-anchor="middle" font-size="15" font-weight="900" fill="#0B1221">週1.5h削減</text>
+
+  <!-- 合計ラベル -->
+  <rect x="80" y="480" width="1080" height="1" fill="none"/>
+  <text x="600" y="496" text-anchor="middle" font-size="13" fill="#6B7280">※合計：週約12.5時間（月50時間）の削減ポテンシャル。業務量・習熟度により異なります。</text>
+</svg>
