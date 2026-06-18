@@ -1,0 +1,134 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">バックオフィスAI化で実現した自動化事例</title>
+  <desc id="desc">3列カード型レイアウトで、バックオフィスAI化により実現した自動化事例を紹介する図。請求書のOCR読み取りと自動仕訳、勤怠データの集計レポート自動化、見積書・契約書のテンプレート自動生成の3事例と、それぞれの稼働日数の目安を示している。</desc>
+
+  <defs>
+    <style>
+      .font {
+        font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        fill: #0B1221;
+      }
+      .title {
+        font-size: 28px;
+        font-weight: 900;
+      }
+      .subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        fill: #475569;
+      }
+      .card-title {
+        font-size: 21px;
+        font-weight: 800;
+        fill: #0B1221;
+      }
+      .card-text {
+        font-size: 15px;
+        font-weight: 500;
+        fill: #334155;
+      }
+      .pill-text {
+        font-size: 14px;
+        font-weight: 800;
+        fill: #0B1221;
+      }
+      .label {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #F59E0B;
+        letter-spacing: 0.08em;
+      }
+      .icon-stroke {
+        stroke: #0B1221;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .card-shadow {
+        filter: drop-shadow(0 8px 20px rgba(11,18,33,0.08));
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" fill="#FFFDF8"/>
+
+  <!-- Header -->
+  <text x="600" y="52" text-anchor="middle" class="font title">バックオフィスAI化で実現した自動化事例</text>
+  <text x="600" y="80" text-anchor="middle" class="font subtitle">スポット依頼で1業務ずつ自動化を進める、代表的な3つのユースケース</text>
+
+  <!-- Card 1: 請求書OCR -->
+  <g class="card-shadow">
+    <rect x="70" y="118" width="320" height="292" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="100" y="154" class="font label">CASE 01</text>
+
+    <!-- Invoice/scan icon -->
+    <g transform="translate(98 176)">
+      <rect x="0" y="0" width="68" height="84" rx="10" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2.5"/>
+      <line x1="14" y1="20" x2="52" y2="20" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="14" y1="33" x2="52" y2="33" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="14" y1="46" x2="40" y2="46" class="icon-stroke" stroke="#F59E0B"/>
+      <rect x="10" y="58" width="48" height="16" rx="3" fill="#0B1221"/>
+      <text x="34" y="70" text-anchor="middle" font-size="10" font-weight="700" fill="#FFFFFF" font-family="Noto Sans JP, sans-serif">¥12,000</text>
+      <circle cx="58" cy="14" r="13" fill="#0B1221"/>
+      <path d="M52 14 L57 19 L65 9" class="icon-stroke" stroke="#FFFFFF" stroke-width="2.5"/>
+    </g>
+
+    <text x="100" y="284" class="font card-title">請求書OCR自動仕訳</text>
+    <text x="100" y="314" class="font card-text">受領した請求書を読み取り、</text>
+    <text x="100" y="336" class="font card-text">仕訳データへ自動変換。</text>
+
+    <rect x="100" y="360" width="180" height="34" rx="17" fill="#FEF3C7"/>
+    <text x="190" y="382" text-anchor="middle" class="font pill-text">稼働目安：土日2日</text>
+  </g>
+
+  <!-- Card 2: 勤怠データ集計 -->
+  <g class="card-shadow">
+    <rect x="440" y="118" width="320" height="292" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="470" y="154" class="font label">CASE 02</text>
+
+    <!-- Calendar/clock icon -->
+    <g transform="translate(468 176)">
+      <rect x="0" y="6" width="92" height="74" rx="12" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2.5"/>
+      <line x1="0" y1="28" x2="92" y2="28" stroke="#F59E0B" stroke-width="2.5"/>
+      <line x1="20" y1="0" x2="20" y2="14" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="72" y1="0" x2="72" y2="14" class="icon-stroke" stroke="#F59E0B"/>
+      <circle cx="66" cy="56" r="20" fill="#0B1221"/>
+      <line x1="66" y1="56" x2="66" y2="44" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="66" y1="56" x2="75" y2="60" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="10" y="40" width="14" height="14" rx="2" fill="#F59E0B"/>
+      <rect x="28" y="40" width="14" height="14" rx="2" fill="#E5E7EB"/>
+    </g>
+
+    <text x="470" y="284" class="font card-title">勤怠データ集計レポート自動化</text>
+    <text x="470" y="314" class="font card-text">勤怠記録を自動集計し、</text>
+    <text x="470" y="336" class="font card-text">月次レポートを自動作成。</text>
+
+    <rect x="470" y="360" width="140" height="34" rx="17" fill="#FEF3C7"/>
+    <text x="540" y="382" text-anchor="middle" class="font pill-text">稼働目安：3日</text>
+  </g>
+
+  <!-- Card 3: 見積書・契約書テンプレ -->
+  <g class="card-shadow">
+    <rect x="810" y="118" width="320" height="292" rx="22" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+    <text x="840" y="154" class="font label">CASE 03</text>
+
+    <!-- Template/doc-stack icon -->
+    <g transform="translate(840 178)">
+      <rect x="14" y="10" width="62" height="76" rx="9" fill="#E5E7EB"/>
+      <rect x="6" y="0" width="62" height="76" rx="9" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2.5"/>
+      <line x1="20" y1="20" x2="58" y2="20" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="20" y1="33" x2="58" y2="33" class="icon-stroke" stroke="#F59E0B"/>
+      <line x1="20" y1="46" x2="46" y2="46" class="icon-stroke" stroke="#F59E0B"/>
+      <circle cx="70" cy="64" r="16" fill="#0B1221"/>
+      <path d="M62 64 L68 70 L79 56" class="icon-stroke" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+
+    <text x="840" y="284" class="font card-title">見積書・契約書テンプレ自動生成</text>
+    <text x="840" y="314" class="font card-text">入力条件に応じて見積書・</text>
+    <text x="840" y="336" class="font card-text">契約書のひな型を自動作成。</text>
+
+    <rect x="840" y="360" width="176" height="34" rx="17" fill="#FEF3C7"/>
+    <text x="928" y="382" text-anchor="middle" class="font pill-text">稼働目安：週末×2回</text>
+  </g>
+</svg>

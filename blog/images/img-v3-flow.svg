@@ -1,0 +1,73 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title3 desc3">
+  <title id="title3">依頼文が書けないときのANKEN相談フロー</title>
+  <desc id="desc3">ざっくりした要望を伝える、ANKENが質問でヒアリングする、要件を依頼文に整理する、エンジニアとマッチングするという4ステップの図解。</desc>
+
+  <style>
+    .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; fill: #2E1065; }
+    .stepLbl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; fill: #FFFFFF; }
+    .cardTtl { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; fill: #2E1065; }
+    .cardDsc { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; fill: #5B5570; }
+  </style>
+
+  <rect x="0" y="0" width="1200" height="460" fill="#F6F2FC"/>
+  <text x="40" y="46" font-size="26" class="ttl">依頼文が書けないときのANKEN相談フロー</text>
+  <line x1="40" y1="62" x2="220" y2="62" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- arrows between 4 cards -->
+  <polygon points="300,250 332,250 332,238 360,260 332,282 332,270 300,270" fill="#C4B5FD"/>
+  <polygon points="590,250 622,250 622,238 650,260 622,282 622,270 590,270" fill="#C4B5FD"/>
+  <polygon points="880,250 912,250 912,238 940,260 912,282 912,270 880,270" fill="#C4B5FD"/>
+
+  <!-- Step 1 -->
+  <g transform="translate(40,120)">
+    <rect width="260" height="280" rx="16" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="22" fill="#7C3AED"/>
+    <text x="40" y="47" font-size="18" text-anchor="middle" class="stepLbl">1</text>
+    <!-- speech bubble icon -->
+    <rect x="95" y="22" width="60" height="38" rx="8" fill="#EDE4FB"/>
+    <polygon points="108,60 108,72 122,60" fill="#EDE4FB"/>
+    <text x="40" y="100" font-size="16" class="cardTtl">ざっくり相談する</text>
+    <text x="40" y="128" font-size="13" class="cardDsc">「請求書処理を楽にしたい」</text>
+    <text x="40" y="148" font-size="13" class="cardDsc">など、曖昧な要望のままでOK</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(330,120)">
+    <rect width="260" height="280" rx="16" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="22" fill="#9333EA"/>
+    <text x="40" y="47" font-size="18" text-anchor="middle" class="stepLbl">2</text>
+    <!-- question icon -->
+    <circle cx="125" cy="40" r="20" fill="#EDE4FB"/>
+    <text x="125" y="48" font-size="22" text-anchor="middle" font-weight="900" fill="#9333EA">?</text>
+    <text x="40" y="100" font-size="16" class="cardTtl">ANKENがヒアリング</text>
+    <text x="40" y="128" font-size="13" class="cardDsc">目的・完成イメージ・条件を</text>
+    <text x="40" y="148" font-size="13" class="cardDsc">質問形式で一緒に整理</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(620,120)">
+    <rect width="260" height="280" rx="16" fill="#F3E8FF" stroke="#C084FC" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#D97706"/>
+    <text x="40" y="47" font-size="18" text-anchor="middle" class="stepLbl">3</text>
+    <!-- document icon -->
+    <rect x="105" y="18" width="44" height="56" rx="4" fill="#EDE4FB" stroke="#C4B5FD" stroke-width="1.5"/>
+    <line x1="113" y1="32" x2="141" y2="32" stroke="#9333EA" stroke-width="2"/>
+    <line x1="113" y1="42" x2="141" y2="42" stroke="#9333EA" stroke-width="2"/>
+    <line x1="113" y1="52" x2="129" y2="52" stroke="#9333EA" stroke-width="2"/>
+    <text x="40" y="100" font-size="16" class="cardTtl">依頼文に整理</text>
+    <text x="40" y="128" font-size="13" class="cardDsc">プロ目線で要件を文書化し</text>
+    <text x="40" y="148" font-size="13" class="cardDsc">そのまま使える依頼文に</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(910,120)">
+    <rect width="250" height="280" rx="16" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="22" fill="#7C3AED"/>
+    <text x="40" y="47" font-size="18" text-anchor="middle" class="stepLbl">4</text>
+    <!-- handshake-ish icon: two overlapping rounded shapes -->
+    <circle cx="112" cy="34" r="16" fill="#EDE4FB"/>
+    <circle cx="140" cy="34" r="16" fill="#DCC8F7"/>
+    <text x="40" y="100" font-size="16" class="cardTtl">エンジニアと<tspan x="40" dy="20">マッチング開始</tspan></text>
+    <text x="40" y="148" font-size="13" class="cardDsc">最短翌日から稼働できる</text>
+  </g>
+</svg>

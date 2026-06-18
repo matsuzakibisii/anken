@@ -1,0 +1,52 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2 desc2">
+  <title id="title2">伝わる依頼文に入れるべき5つの要素</title>
+  <desc id="desc2">背景・完成イメージ・スコープ・条件・連絡方法という5つの要素を、それぞれ番号付きカードで示した図解。</desc>
+
+  <style>
+    .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; fill: #2E1065; }
+    .lbl { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; fill: #2E1065; }
+    .dsc { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; fill: #5B5570; }
+    .num { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; fill: #FFFFFF; }
+  </style>
+
+  <rect x="0" y="0" width="1200" height="560" fill="#F6F2FC"/>
+  <text x="40" y="46" font-size="26" class="ttl">伝わる依頼文に入れるべき5つの要素</text>
+  <line x1="40" y1="62" x2="220" y2="62" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- row template: y offset 96 each row height ~84 -->
+  <!-- Row 1 -->
+  <rect x="40" y="86" width="1120" height="78" rx="14" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+  <circle cx="84" cy="125" r="24" fill="#7C3AED"/>
+  <text x="84" y="133" font-size="20" text-anchor="middle" class="num">1</text>
+  <text x="128" y="118" font-size="18" class="lbl">背景・目的｜なぜ依頼するのか</text>
+  <text x="128" y="142" font-size="14" class="dsc">「何のために」「誰が使うか」を一言添えるだけで、エンジニアの判断精度が上がる</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="178" width="1120" height="78" rx="14" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+  <circle cx="84" cy="217" r="24" fill="#9333EA"/>
+  <text x="84" y="225" font-size="20" text-anchor="middle" class="num">2</text>
+  <text x="128" y="210" font-size="18" class="lbl">完成イメージ｜参考サービス・スクショ</text>
+  <text x="128" y="234" font-size="14" class="dsc">近いイメージの既存サービスやスクリーンショットを1つ挙げるだけで誤解が大幅に減る</text>
+
+  <!-- Row 3 (highlighted as most important) -->
+  <rect x="40" y="270" width="1120" height="78" rx="14" fill="#F3E8FF" stroke="#C084FC" stroke-width="2"/>
+  <circle cx="84" cy="309" r="24" fill="#D97706"/>
+  <text x="84" y="317" font-size="20" text-anchor="middle" class="num">3</text>
+  <text x="128" y="302" font-size="18" class="lbl">スコープ｜やること・やらないことの線引き</text>
+  <text x="128" y="326" font-size="14" class="dsc">「ここまでお願いしたい」「これは対象外」を明記する、最も失敗を防ぐ要素</text>
+  <text x="1060" y="312" font-size="13" font-weight="700" fill="#B45309">最重要</text>
+
+  <!-- Row 4 -->
+  <rect x="40" y="362" width="1120" height="78" rx="14" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+  <circle cx="84" cy="401" r="24" fill="#7C3AED"/>
+  <text x="84" y="409" font-size="20" text-anchor="middle" class="num">4</text>
+  <text x="128" y="394" font-size="18" class="lbl">条件｜期限・予算・稼働形態</text>
+  <text x="128" y="418" font-size="14" class="dsc">「土日2日で」「予算5万円まで」など制約を先に伝えると提案の精度が上がる</text>
+
+  <!-- Row 5 -->
+  <rect x="40" y="454" width="1120" height="78" rx="14" fill="#FFFFFF" stroke="#E6DCF7" stroke-width="1.5"/>
+  <circle cx="84" cy="493" r="24" fill="#9333EA"/>
+  <text x="84" y="501" font-size="20" text-anchor="middle" class="num">5</text>
+  <text x="128" y="486" font-size="18" class="lbl">連絡方法｜質問の窓口と返信の目安</text>
+  <text x="128" y="510" font-size="14" class="dsc">「質問はチャットで、当日中に返信」など連絡ルールを決めると停滞を防げる</text>
+</svg>

@@ -1,0 +1,109 @@
+<svg width="1792" height="1024" viewBox="0 0 1792 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">灯台が小さな船を導く夕暮れの海のイメージ</title>
+  <desc id="desc">夕暮れの海を背景に、岬の上に立つ灯台が光を放ち、その光が小さな帆船を進むべき方向へ導いている。手描き風・水彩タッチのイラストで、依頼文が外注先を正しい方向へ導くことを比喩的に表現している。</desc>
+
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#221A3D"/>
+      <stop offset="38%" stop-color="#4B3760"/>
+      <stop offset="68%" stop-color="#9A6B72"/>
+      <stop offset="86%" stop-color="#F0926A"/>
+      <stop offset="100%" stop-color="#FFD9A0"/>
+    </linearGradient>
+
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#7C97A0"/>
+      <stop offset="12%" stop-color="#4F7186"/>
+      <stop offset="55%" stop-color="#274C61"/>
+      <stop offset="100%" stop-color="#13222F"/>
+    </linearGradient>
+
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FBF4E6" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#E8C9B0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#E8C9B0" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#FFF6DC" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#FFE5A8" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FFE5A8" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="beamGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#FFEFC2" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFEFC2" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="rockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A2E4E"/>
+      <stop offset="100%" stop-color="#1C1730"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="1792" height="1024" fill="url(#skyGrad)"/>
+
+  <!-- soft watercolor cloud washes -->
+  <path d="M120,160 C260,110 420,120 560,165 C700,205 760,150 900,170 C880,230 760,250 620,235 C460,260 260,250 120,210 Z" fill="#E9D9DA" opacity="0.10"/>
+  <path d="M900,90 C1060,55 1230,75 1360,120 C1480,160 1560,130 1660,150 C1630,210 1480,225 1340,205 C1180,230 1000,200 900,150 Z" fill="#F3E0CE" opacity="0.12"/>
+  <path d="M40,300 C220,260 380,280 520,320 C420,360 260,365 120,345 C70,338 40,325 40,300 Z" fill="#E9D9DA" opacity="0.08"/>
+
+  <!-- moon glow -->
+  <circle cx="1430" cy="190" r="230" fill="url(#moonGlow)"/>
+  <circle cx="1430" cy="190" r="58" fill="#FBF4E6" opacity="0.9"/>
+
+  <!-- birds -->
+  <path d="M260,230 q14,-16 28,0 q14,-16 28,0" fill="none" stroke="#1C1730" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <path d="M340,260 q11,-13 22,0 q11,-13 22,0" fill="none" stroke="#1C1730" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+  <path d="M200,290 q10,-12 20,0 q10,-12 20,0" fill="none" stroke="#1C1730" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- sea -->
+  <rect x="0" y="620" width="1792" height="404" fill="url(#seaGrad)"/>
+
+  <!-- horizon light reflection -->
+  <ellipse cx="1430" cy="640" rx="420" ry="26" fill="#F3D9B4" opacity="0.30"/>
+  <ellipse cx="1430" cy="675" rx="300" ry="16" fill="#F3D9B4" opacity="0.18"/>
+
+  <!-- water texture strokes -->
+  <path d="M0,700 C120,690 220,712 340,698 C460,684 560,706 680,696" fill="none" stroke="#7C97A0" stroke-width="4" opacity="0.18" stroke-linecap="round"/>
+  <path d="M120,760 C260,748 380,772 520,758 C660,744 780,768 920,756" fill="none" stroke="#5C8497" stroke-width="4" opacity="0.16" stroke-linecap="round"/>
+  <path d="M900,820 C1040,806 1160,832 1300,818 C1420,806 1540,828 1680,816" fill="none" stroke="#3E657A" stroke-width="4" opacity="0.18" stroke-linecap="round"/>
+  <path d="M40,900 C200,886 360,910 520,896 C700,880 860,904 1040,892" fill="none" stroke="#274C61" stroke-width="4" opacity="0.20" stroke-linecap="round"/>
+  <path d="M1050,950 C1220,936 1380,958 1560,944 C1650,937 1700,948 1760,944" fill="none" stroke="#1C2F3D" stroke-width="4" opacity="0.22" stroke-linecap="round"/>
+
+  <!-- rocky headland with lighthouse (right third) -->
+  <path d="M1230,1024 L1240,760 C1255,700 1300,660 1350,645 C1400,630 1430,650 1455,690 C1480,730 1470,780 1500,830 C1530,880 1560,930 1600,1024 Z" fill="url(#rockGrad)"/>
+  <path d="M1240,760 C1280,740 1320,735 1360,742" fill="none" stroke="#4A3C60" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- lighthouse base platform -->
+  <ellipse cx="1378" cy="648" rx="58" ry="14" fill="#2B2138" opacity="0.5"/>
+
+  <!-- lighthouse tower -->
+  <polygon points="1352,648 1404,648 1394,430 1362,430" fill="#FBF4E6"/>
+  <polygon points="1358,560 1398,560 1393,500 1363,500" fill="#E0584B"/>
+  <polygon points="1364,430 1392,430 1388,395 1368,395" fill="#D9CDB8"/>
+  <!-- lantern room -->
+  <rect x="1357" y="368" width="42" height="32" rx="3" fill="#2B2138"/>
+  <circle cx="1378" cy="384" r="13" fill="url(#lampGlow)"/>
+  <polygon points="1349,366 1407,366 1395,344 1361,344" fill="#1F1830"/>
+  <rect x="1373" y="330" width="10" height="16" fill="#1F1830"/>
+
+  <!-- light glow halo -->
+  <circle cx="1378" cy="384" r="120" fill="url(#lampGlow)" opacity="0.55"/>
+
+  <!-- light beam sweeping toward the boat -->
+  <polygon points="1378,384 120,560 360,700" fill="url(#beamGrad)"/>
+  <polygon points="1378,384 360,700 540,650" fill="url(#beamGrad)" opacity="0.6"/>
+
+  <!-- small sailboat within the beam -->
+  <g transform="translate(330,690)">
+    <path d="M-46,16 C-30,28 30,28 46,16 C40,30 -34,30 -46,16 Z" fill="#1C2538"/>
+    <rect x="-3" y="-58" width="5" height="74" fill="#1C2538"/>
+    <path d="M2,-54 C36,-40 40,-6 4,12 Z" fill="#EDE3D0" opacity="0.92"/>
+    <path d="M-2,-44 C-22,-30 -24,-6 0,10 Z" fill="#D8CBB0" opacity="0.85"/>
+  </g>
+
+  <!-- gentle foreground vignette -->
+  <path d="M0,1024 L0,860 C200,900 420,940 700,950 C1000,962 1300,940 1792,880 L1792,1024 Z" fill="#10101C" opacity="0.16"/>
+</svg>

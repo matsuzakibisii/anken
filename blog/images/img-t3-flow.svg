@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="480" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="50" y="55" font-size="26" font-weight="900" fill="#0B1221">スポット外注で失敗を防ぐ進め方フロー</text>
+  <text x="50" y="84" font-size="14" fill="#6B7280">タスク単位で小さく始めて、リスクを最小化する4ステップ</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1 -->
+  <rect x="50" y="140" width="240" height="220" rx="16" fill="#0B1221"/>
+  <circle cx="170" cy="200" r="28" fill="#F59E0B"/>
+  <text x="170" y="208" font-size="22" font-weight="900" fill="#0B1221" text-anchor="middle">1</text>
+  <text x="170" y="255" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">要件を可視化</text>
+  <text x="170" y="280" font-size="13" fill="#D1D5DB" text-anchor="middle">画面フロー図・</text>
+  <text x="170" y="298" font-size="13" fill="#D1D5DB" text-anchor="middle">参考サービスで共有</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 290 250 L 330 250" stroke="#F59E0B" stroke-width="4" fill="none"/>
+  <polygon points="330,242 345,250 330,258" fill="#F59E0B"/>
+
+  <!-- Step 2 -->
+  <rect x="350" y="140" width="240" height="220" rx="16" fill="#0B1221"/>
+  <circle cx="470" cy="200" r="28" fill="#F59E0B"/>
+  <text x="470" y="208" font-size="22" font-weight="900" fill="#0B1221" text-anchor="middle">2</text>
+  <text x="470" y="255" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">タスク単位で発注</text>
+  <text x="470" y="280" font-size="13" fill="#D1D5DB" text-anchor="middle">機能を分解し</text>
+  <text x="470" y="298" font-size="13" fill="#D1D5DB" text-anchor="middle">段階的に依頼</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 590 250 L 630 250" stroke="#F59E0B" stroke-width="4" fill="none"/>
+  <polygon points="630,242 645,250 630,258" fill="#F59E0B"/>
+
+  <!-- Step 3 -->
+  <rect x="650" y="140" width="240" height="220" rx="16" fill="#0B1221"/>
+  <circle cx="770" cy="200" r="28" fill="#F59E0B"/>
+  <text x="770" y="208" font-size="22" font-weight="900" fill="#0B1221" text-anchor="middle">3</text>
+  <text x="770" y="255" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">受け入れ基準を設定</text>
+  <text x="770" y="280" font-size="13" fill="#D1D5DB" text-anchor="middle">数値で測れる</text>
+  <text x="770" y="298" font-size="13" fill="#D1D5DB" text-anchor="middle">完了条件を合意</text>
+
+  <!-- Arrow 3 -->
+  <path d="M 890 250 L 930 250" stroke="#F59E0B" stroke-width="4" fill="none"/>
+  <polygon points="930,242 945,250 930,258" fill="#F59E0B"/>
+
+  <!-- Step 4 -->
+  <rect x="950" y="140" width="200" height="220" rx="16" fill="#F59E0B"/>
+  <circle cx="1050" cy="200" r="28" fill="#0B1221"/>
+  <text x="1050" y="208" font-size="22" font-weight="900" fill="#F59E0B" text-anchor="middle">4</text>
+  <text x="1050" y="255" font-size="16" font-weight="700" fill="#0B1221" text-anchor="middle">週次レビュー</text>
+  <text x="1050" y="280" font-size="13" fill="#1C1917" text-anchor="middle">議事録・ドキュメント</text>
+  <text x="1050" y="298" font-size="13" fill="#1C1917" text-anchor="middle">整備で資産化</text>
+
+  <!-- Footer -->
+  <text x="50" y="440" font-size="13" fill="#9CA3AF">小さな成功を積み重ねることで、外注先との信頼関係と社内のノウハウが蓄積されていく</text>
+</svg>

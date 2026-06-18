@@ -1,0 +1,62 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">バックオフィスAI化における大手受託開発とスポット依頼の費用・期間比較</title>
+  <desc id="desc">大手受託開発は費用150万円から300万円、期間2か月から3か月。スポット依頼は費用数万円から数十万円、期間数日から2週間という比較を示す棒グラフ。</desc>
+
+  <defs>
+    <style>
+      .font { font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .amber { fill: #F59E0B; }
+      .navy { fill: #0B1221; }
+      .axis { stroke: #0B1221; stroke-width: 2; }
+      .grid { stroke: #E5E7EB; stroke-width: 1; }
+      .small { font-size: 14px; font-weight: 500; fill: #0B1221; }
+      .label { font-size: 18px; font-weight: 700; fill: #0B1221; }
+      .title { font-size: 28px; font-weight: 900; fill: #0B1221; }
+      .inside-light { font-size: 16px; font-weight: 700; fill: #0B1221; }
+      .inside-dark { font-size: 16px; font-weight: 700; fill: #FFFFFF; }
+      .num { font-size: 22px; font-weight: 900; }
+      .sub { font-size: 14px; font-weight: 600; fill: #4B5563; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+
+  <text x="600" y="50" text-anchor="middle" class="font title">大手受託開発 vs スポット依頼｜費用・期間の違い</text>
+
+  <line x1="140" y1="120" x2="1080" y2="120" class="grid"/>
+  <line x1="140" y1="190" x2="1080" y2="190" class="grid"/>
+  <line x1="140" y1="260" x2="1080" y2="260" class="grid"/>
+  <line x1="140" y1="330" x2="1080" y2="330" class="grid"/>
+  <line x1="140" y1="400" x2="1080" y2="400" class="axis"/>
+
+  <text x="125" y="405" text-anchor="end" class="font small">0万円</text>
+  <text x="125" y="335" text-anchor="end" class="font small">100万円</text>
+  <text x="125" y="265" text-anchor="end" class="font small">200万円</text>
+  <text x="125" y="195" text-anchor="end" class="font small">300万円</text>
+
+  <!-- 大手受託開発バー：300万円相当 -->
+  <g>
+    <rect x="300" y="120" width="180" height="280" class="navy"/>
+    <rect x="300" y="120" width="180" height="280" fill="none" stroke="#0B1221" stroke-width="2"/>
+    <text x="390" y="245" text-anchor="middle" class="font inside-dark num">150〜300万円</text>
+    <text x="390" y="275" text-anchor="middle" class="font inside-dark sub" fill="#E5E7EB">期間：2〜3ヶ月</text>
+    <text x="390" y="440" text-anchor="middle" class="font label">大手受託開発</text>
+  </g>
+
+  <!-- スポット依頼バー：低コスト -->
+  <g>
+    <rect x="720" y="358" width="180" height="42" class="amber"/>
+    <rect x="720" y="358" width="180" height="42" fill="none" stroke="#0B1221" stroke-width="2"/>
+    <text x="810" y="345" text-anchor="middle" class="font navy num">数万〜数十万円</text>
+    <text x="810" y="320" text-anchor="middle" class="font sub">期間：数日〜2週間</text>
+    <text x="810" y="440" text-anchor="middle" class="font label">スポット依頼</text>
+  </g>
+
+  <g>
+    <rect x="936" y="142" width="184" height="92" rx="12" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2"/>
+    <text x="1028" y="172" text-anchor="middle" class="font small" font-weight="700">ポイント</text>
+    <text x="1028" y="195" text-anchor="middle" class="font small">1業務に絞ることで</text>
+    <text x="1028" y="214" text-anchor="middle" class="font small">費用と期間の両方を</text>
+    <text x="1028" y="233" text-anchor="middle" class="font small">大幅に圧縮できる</text>
+  </g>
+</svg>

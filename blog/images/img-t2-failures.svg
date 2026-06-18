@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="50" y="55" font-size="26" font-weight="900" fill="#0B1221">エンジニア外注でよくある失敗パターン</text>
+  <text x="50" y="84" font-size="14" fill="#6B7280">発注トラブルにおける発生比率の目安</text>
+
+  <!-- Bars -->
+  <!-- Category 1 -->
+  <text x="50" y="150" font-size="16" font-weight="700" fill="#0B1221">① 仕様が曖昧なまま発注</text>
+  <rect x="380" y="130" width="630" height="34" rx="6" fill="#FEF3C7"/>
+  <rect x="380" y="130" width="630" height="34" rx="6" fill="#F59E0B"/>
+  <text x="1020" y="153" font-size="18" font-weight="900" fill="#0B1221">35%</text>
+
+  <!-- Category 2 -->
+  <text x="50" y="210" font-size="16" font-weight="700" fill="#0B1221">② コストが予算を超過</text>
+  <rect x="380" y="190" width="450" height="34" rx="6" fill="#FDE7C3"/>
+  <rect x="380" y="190" width="450" height="34" rx="6" fill="#F5A623"/>
+  <text x="840" y="213" font-size="18" font-weight="900" fill="#0B1221">25%</text>
+
+  <!-- Category 3 -->
+  <text x="50" y="270" font-size="16" font-weight="700" fill="#0B1221">③ 納品物の品質不足</text>
+  <rect x="380" y="250" width="360" height="34" rx="6" fill="#FBEFD8"/>
+  <rect x="380" y="250" width="360" height="34" rx="6" fill="#F6B541"/>
+  <text x="750" y="273" font-size="18" font-weight="900" fill="#0B1221">20%</text>
+
+  <!-- Category 4 -->
+  <text x="50" y="330" font-size="16" font-weight="700" fill="#0B1221">④ コミュニケーション不足</text>
+  <rect x="380" y="310" width="270" height="34" rx="6" fill="#0B1221" opacity="0.85"/>
+  <text x="660" y="333" font-size="18" font-weight="900" fill="#0B1221">15%</text>
+
+  <!-- Category 5 -->
+  <text x="50" y="390" font-size="16" font-weight="700" fill="#0B1221">⑤ 完成後のブラックボックス化</text>
+  <rect x="380" y="370" width="90" height="34" rx="6" fill="#0B1221" opacity="0.55"/>
+  <text x="480" y="393" font-size="18" font-weight="900" fill="#0B1221">5%</text>
+
+  <!-- Footer note -->
+  <text x="50" y="460" font-size="13" fill="#9CA3AF">※ ANKEN社内ヒアリング・外注トラブル相談内容の傾向に基づく参考値</text>
+</svg>
