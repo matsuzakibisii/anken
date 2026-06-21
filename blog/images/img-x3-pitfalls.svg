@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" font-family="'Noto Sans JP', sans-serif">
+  <rect x="0" y="0" width="1200" height="480" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="600" y="54" text-anchor="middle" font-size="28" font-weight="900" fill="#0F172A">議事録AI活用でよくある失敗と対策</text>
+
+  <!-- Card 1 -->
+  <g>
+    <rect x="60" y="100" width="340" height="320" rx="16" fill="#F1FBF9" stroke="#0EA5A4" stroke-width="2"/>
+    <circle cx="230" cy="166" r="34" fill="#0EA5A4"/>
+    <!-- lock icon -->
+    <rect x="216" y="160" width="28" height="20" rx="3" fill="#FFFFFF"/>
+    <path d="M222 160 v-8 a8 8 0 0 1 16 0 v8" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <text x="230" y="230" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">機密情報の</text>
+    <text x="230" y="254" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">取り扱い</text>
+    <line x1="100" y1="278" x2="360" y2="278" stroke="#CFEAE6" stroke-width="1"/>
+    <text x="230" y="312" text-anchor="middle" font-size="14" fill="#475569">経営会議・人事会議など</text>
+    <text x="230" y="334" text-anchor="middle" font-size="14" fill="#475569">機密度に応じてAIサービス</text>
+    <text x="230" y="356" text-anchor="middle" font-size="14" fill="#475569">を使い分ける</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g>
+    <rect x="430" y="100" width="340" height="320" rx="16" fill="#FFF4F3" stroke="#FB7185" stroke-width="2"/>
+    <circle cx="600" cy="166" r="34" fill="#FB7185"/>
+    <!-- magnifier icon -->
+    <circle cx="594" cy="160" r="11" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <line x1="603" y1="169" x2="613" y2="179" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="600" y="230" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">要約精度の</text>
+    <text x="600" y="254" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">ばらつき</text>
+    <line x1="470" y1="278" x2="730" y2="278" stroke="#FBDADC" stroke-width="1"/>
+    <text x="600" y="312" text-anchor="middle" font-size="14" fill="#475569">専門用語・略語の誤認識は</text>
+    <text x="600" y="334" text-anchor="middle" font-size="14" fill="#475569">人による最終チェックの</text>
+    <text x="600" y="356" text-anchor="middle" font-size="14" fill="#475569">工程で防ぐ</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g>
+    <rect x="800" y="100" width="340" height="320" rx="16" fill="#F2F0FE" stroke="#7C6FF0" stroke-width="2"/>
+    <circle cx="970" cy="166" r="34" fill="#7C6FF0"/>
+    <!-- cycle icon -->
+    <path d="M958 156 a14 14 0 1 1 -3 18" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="955,150 967,153 957,162" fill="#FFFFFF"/>
+    <text x="970" y="230" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">運用が</text>
+    <text x="970" y="254" text-anchor="middle" font-size="18" font-weight="700" fill="#0F172A">定着しない</text>
+    <line x1="840" y1="278" x2="1100" y2="278" stroke="#DCD7FB" stroke-width="1"/>
+    <text x="970" y="312" text-anchor="middle" font-size="14" fill="#475569">共有先・フォーマット・</text>
+    <text x="970" y="334" text-anchor="middle" font-size="14" fill="#475569">確認担当者を固定して</text>
+    <text x="970" y="356" text-anchor="middle" font-size="14" fill="#475569">運用をシンプルに保つ</text>
+  </g>
+</svg>

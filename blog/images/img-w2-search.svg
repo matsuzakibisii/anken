@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="900" fill="#0F2E2E">情報を探すのにかかる時間の比較</text>
+  <text x="600" y="78" text-anchor="middle" font-size="14" fill="#5B7C7C">従来の社内検索 vs ナレッジ検索AI（RAG）導入後</text>
+
+  <!-- Before -->
+  <g>
+    <rect x="160" y="140" width="380" height="64" rx="10" fill="#E8F3F1"/>
+    <rect x="160" y="140" width="380" height="64" rx="10" fill="#0E7C66"/>
+    <text x="180" y="178" font-size="18" font-weight="700" fill="#FFFFFF">平均 20分／回</text>
+    <text x="160" y="228" font-size="15" font-weight="700" fill="#0F2E2E">従来の社内検索</text>
+    <text x="160" y="250" font-size="12.5" fill="#5B7C7C">複数の共有フォルダ・チャット・</text>
+    <text x="160" y="268" font-size="12.5" fill="#5B7C7C">メールを横断的に探す必要がある</text>
+  </g>
+
+  <!-- After -->
+  <g>
+    <rect x="660" y="140" width="40" height="64" rx="10" fill="#E8F3F1"/>
+    <rect x="660" y="140" width="40" height="64" rx="10" fill="#16A893"/>
+    <text x="668" y="178" font-size="18" font-weight="700" fill="#FFFFFF"></text>
+    <text x="710" y="172" font-size="18" font-weight="700" fill="#0F2E2E">平均 30秒／回</text>
+    <text x="660" y="228" font-size="15" font-weight="700" fill="#0F2E2E">RAG導入後</text>
+    <text x="660" y="250" font-size="12.5" fill="#5B7C7C">チャットで質問するだけで、</text>
+    <text x="660" y="268" font-size="12.5" fill="#5B7C7C">根拠となる文書ごと即座に回答</text>
+  </g>
+
+  <!-- divider arrow -->
+  <g>
+    <line x1="600" y1="172" x2="640" y2="172" stroke="#9FC9C2" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="640,166 654,172 640,178" fill="#9FC9C2"/>
+  </g>
+
+  <!-- bottom highlight box -->
+  <rect x="160" y="330" width="880" height="110" rx="14" fill="#F2FAF8" stroke="#BFE3DC" stroke-width="1.5"/>
+  <text x="600" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#0F2E2E">同じ質問・確認が繰り返し発生している文書群ほど、導入効果を実感しやすい</text>
+  <text x="600" y="396" text-anchor="middle" font-size="13" fill="#5B7C7C">FAQ・提案書・マニュアルなど、対象を1つに絞ってスポット発注すれば短期間で検証できる</text>
+  <text x="600" y="420" text-anchor="middle" font-size="11" fill="#8FB8B1">※ 時間は導入事例をもとにしたイメージです。実際の効果は対象文書・運用により異なります。</text>
+</svg>
