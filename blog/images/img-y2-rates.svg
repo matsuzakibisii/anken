@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 28px; fill: #1E1B4B; }
+      .sub { font-family: 'Noto Sans JP', sans-serif; font-weight: 500; font-size: 15px; fill: #6B7280; }
+      .cat { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 17px; fill: #1E1B4B; }
+      .catsub { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 13px; fill: #6B7280; }
+      .val { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 20px; fill: #FFFFFF; }
+      .valOut { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 20px; fill: #1E1B4B; }
+      .axis { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 13px; fill: #9CA3AF; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+
+  <text x="60" y="56" class="ttl">経験帯別 スポット外注 時間単価相場（2026年）</text>
+  <text x="60" y="84" class="sub">スポット・短期タスクで依頼する場合の時間単価イメージ（フルタイム月単価とは別軸の目安）</text>
+
+  <!-- plot area baseline -->
+  <line x1="330" y1="130" x2="330" y2="460" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- gridlines -->
+  <line x1="330" y1="130" x2="1130" y2="130" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="596.7" y1="130" x2="596.7" y2="460" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="863.3" y1="130" x2="863.3" y2="460" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="1130" y1="130" x2="1130" y2="460" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="330" y="478" class="axis">¥0</text>
+  <text x="580" y="478" class="axis">¥6,000</text>
+  <text x="847" y="478" class="axis">¥9,000</text>
+  <text x="1090" y="478" class="axis">¥12,000</text>
+
+  <!-- Row 1: ジュニア -->
+  <text x="60" y="170" class="cat">ジュニア（1〜3年）</text>
+  <text x="60" y="190" class="catsub">基本的な実装・改修タスク</text>
+  <rect x="330" y="150" width="233" height="40" rx="6" fill="#C7D2FE"/>
+  <text x="345" y="177" class="val" fill="#1E1B4B">¥3,500</text>
+
+  <!-- Row 2: ミドル -->
+  <text x="60" y="245" class="cat">ミドル（3〜5年）</text>
+  <text x="60" y="265" class="catsub">標準的な機能開発・API連携</text>
+  <rect x="330" y="225" width="333" height="40" rx="6" fill="#A5B4FC"/>
+  <text x="345" y="252" class="val" fill="#1E1B4B">¥5,000</text>
+
+  <!-- Row 3: シニア -->
+  <text x="60" y="320" class="cat">シニア（5〜10年）</text>
+  <text x="60" y="340" class="catsub">設計込み・複雑な要件対応</text>
+  <rect x="330" y="300" width="500" height="40" rx="6" fill="#6366F1"/>
+  <text x="345" y="327" class="val">¥7,500</text>
+
+  <!-- Row 4: AI専門/トップ層 -->
+  <text x="60" y="395" class="cat">AI専門・トップ層（10年〜）</text>
+  <text x="60" y="415" class="catsub">RAG構築・AIエージェント開発等</text>
+  <rect x="330" y="375" width="800" height="40" rx="6" fill="#84CC16"/>
+  <text x="1060" y="402" class="val" fill="#1E1B4B" text-anchor="end">¥12,000</text>
+
+  <text x="60" y="450" class="axis">※時給換算は目安です。タスクの難易度・稼働期間により変動します。</text>
+</svg>

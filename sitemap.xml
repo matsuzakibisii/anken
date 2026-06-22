@@ -195,4 +195,11 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-y.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

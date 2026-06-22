@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 26px; fill: #1E1B4B; }
+      .budget { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 30px; fill: #4F46E5; }
+      .budgetG { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 30px; fill: #65A30D; }
+      .ctitle { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 19px; fill: #1E1B4B; }
+      .cdesc { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 14px; fill: #6B7280; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" fill="#FFFFFF"/>
+  <text x="50" y="42" class="ttl">予算帯別｜スポット外注の活用シーン例</text>
+
+  <!-- Card 1 -->
+  <rect x="50" y="70" width="340" height="380" rx="18" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.5"/>
+  <circle cx="220" cy="150" r="44" fill="#C7D2FE"/>
+  <path d="M200 135 h40 v8 h-40 z M200 150 h40 v8 h-40 z M200 165 h26 v8 h-26 z" fill="#4F46E5"/>
+  <text x="220" y="232" class="budget" text-anchor="middle">5万円台〜</text>
+  <text x="220" y="270" class="ctitle" text-anchor="middle">LPの軽微な改修</text>
+  <text x="80" y="305" class="cdesc">フォームの不具合修正、</text>
+  <text x="80" y="325" class="cdesc">文言・デザインの微調整など</text>
+  <text x="80" y="345" class="cdesc">単発タスクの依頼に最適です。</text>
+  <text x="80" y="385" class="cdesc">想定稼働：土日1〜2日</text>
+
+  <!-- Card 2 -->
+  <rect x="430" y="70" width="340" height="380" rx="18" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.5"/>
+  <circle cx="600" cy="150" r="44" fill="#A5B4FC"/>
+  <circle cx="600" cy="150" r="16" fill="none" stroke="#4F46E5" stroke-width="4"/>
+  <path d="M600 122 v10 M600 168 v10 M572 150 h10 M618 150 h10 M581 131 l7 7 M619 131 l-7 7 M581 169 l7 -7 M619 169 l-7 -7" stroke="#4F46E5" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="600" y="232" class="budget" text-anchor="middle">20万円台〜</text>
+  <text x="600" y="270" class="ctitle" text-anchor="middle">社内ツールにAI機能を追加</text>
+  <text x="460" y="305" class="cdesc">既存の業務システムに、</text>
+  <text x="460" y="325" class="cdesc">文章生成・要約などのAI機能を</text>
+  <text x="460" y="345" class="cdesc">スポットで組み込みます。</text>
+  <text x="460" y="385" class="cdesc">想定稼働：週末スポット×2〜3回</text>
+
+  <!-- Card 3 -->
+  <rect x="810" y="70" width="340" height="380" rx="18" fill="#F7FEE7" stroke="#BEF264" stroke-width="1.5"/>
+  <circle cx="980" cy="150" r="44" fill="#D9F99D"/>
+  <path d="M958 138 h44 a8 8 0 0 1 8 8 v18 a8 8 0 0 1 -8 8 h-28 l-12 10 v-10 h-4 a8 8 0 0 1 -8 -8 v-18 a8 8 0 0 1 8 -8 z" fill="#65A30D"/>
+  <text x="980" y="232" class="budgetG" text-anchor="middle">40万円台〜</text>
+  <text x="980" y="270" class="ctitle" text-anchor="middle">RAGチャットボット導入</text>
+  <text x="840" y="305" class="cdesc">社内文書を検索できるAI</text>
+  <text x="840" y="325" class="cdesc">チャットボットを、要件定義から</text>
+  <text x="840" y="345" class="cdesc">構築まで一括で依頼します。</text>
+  <text x="840" y="385" class="cdesc">想定稼働：週末スポット×4〜6回</text>
+
+</svg>
