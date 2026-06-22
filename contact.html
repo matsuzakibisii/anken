@@ -362,6 +362,56 @@
           </div>
         </div>
 
+        <!-- どこでこのサイトをお知りになりましたか？ -->
+        <div>
+          <label class="block text-sm font-bold text-gray-800 mb-2">
+            どこでこのサイトをお知りになりましたか？ <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span>
+          </label>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="Yahoo!、Googleなどで検索した" class="accent-amber-500 shrink-0">
+              <span>Yahoo!、Googleなどで検索した</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="知人が紹介してくれた（ブログ、メールなどウェブで）" class="accent-amber-500 shrink-0">
+              <span>知人が紹介してくれた（ブログ、メールなどウェブで）</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="知人が紹介してくれた（直接口コミで）" class="accent-amber-500 shrink-0">
+              <span>知人が紹介してくれた（直接口コミで）</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="他のサイトで紹介されていた" class="accent-amber-500 shrink-0">
+              <span>他のサイトで紹介されていた</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="ウェブ上で広告をみた" class="accent-amber-500 shrink-0">
+              <span>ウェブ上で広告をみた</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="新聞・雑誌で見た" class="accent-amber-500 shrink-0">
+              <span>新聞・雑誌で見た</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="SNSで見た" class="accent-amber-500 shrink-0">
+              <span>SNSで見た</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="その他" class="accent-amber-500 shrink-0" id="referral-other-radio">
+              <span>その他</span>
+            </label>
+          </div>
+          <div id="referral-other-wrap" class="mt-2 hidden">
+            <textarea
+              id="referral_source_other"
+              name="referral_source_other"
+              rows="2"
+              placeholder="具体的にお聞かせください"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition resize-none"
+            ></textarea>
+          </div>
+        </div>
+
         <!-- ご依頼内容 -->
         <div>
           <label for="message" class="block text-sm font-bold text-gray-800 mb-1.5">
@@ -435,6 +485,17 @@
   ['company','name','email','message'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('blur', () => validateField(el));
+  });
+
+  /* ---- referral source: show textarea only when「その他」is selected ---- */
+  const referralOtherWrap  = document.getElementById('referral-other-wrap');
+  const referralOtherInput = document.getElementById('referral_source_other');
+  document.querySelectorAll('input[name="referral_source"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      const isOther = document.getElementById('referral-other-radio').checked;
+      referralOtherWrap.classList.toggle('hidden', !isOther);
+      if (!isOther && referralOtherInput) referralOtherInput.value = '';
+    });
   });
 
   /* ---- submit ---- */

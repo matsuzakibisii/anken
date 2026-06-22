@@ -687,6 +687,52 @@
           </select>
         </div>
         <div>
+          <label class="block text-sm font-bold text-gray-700 mb-2">どこでこのサイトをお知りになりましたか？ <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span></label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="Yahoo!、Googleなどで検索した" class="accent-accent shrink-0">
+              <span>Yahoo!、Googleなどで検索した</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="知人が紹介してくれた（ブログ、メールなどウェブで）" class="accent-accent shrink-0">
+              <span>知人が紹介してくれた（ブログ、メールなどウェブで）</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="知人が紹介してくれた（直接口コミで）" class="accent-accent shrink-0">
+              <span>知人が紹介してくれた（直接口コミで）</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="他のサイトで紹介されていた" class="accent-accent shrink-0">
+              <span>他のサイトで紹介されていた</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="ウェブ上で広告をみた" class="accent-accent shrink-0">
+              <span>ウェブ上で広告をみた</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="新聞・雑誌で見た" class="accent-accent shrink-0">
+              <span>新聞・雑誌で見た</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="SNSで見た" class="accent-accent shrink-0">
+              <span>SNSで見た</span>
+            </label>
+            <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-accent transition has-[:checked]:border-accent has-[:checked]:bg-amber-50">
+              <input type="radio" name="referral_source" value="その他" class="accent-accent shrink-0" id="member-referral-other-radio">
+              <span>その他</span>
+            </label>
+          </div>
+          <div id="member-referral-other-wrap" class="mt-2 hidden">
+            <textarea
+              id="member-referral-other"
+              name="referral_source_other"
+              rows="2"
+              placeholder="具体的にお聞かせください"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition resize-none"
+            ></textarea>
+          </div>
+        </div>
+        <div>
           <label class="block text-sm font-bold text-gray-700 mb-1.5">自己紹介・ご経歴（任意）</label>
           <textarea name="message" rows="3" placeholder="現在の職種、経験年数、得意なことなどをご自由にお書きください。" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition resize-none"></textarea>
         </div>
@@ -725,7 +771,6 @@
     </div>
     <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
       <p>© 2025 ANKEN by 株式会社ビシィッ. All rights reserved.</p>
-      <p>お問い合わせ: <a href="mailto:info@bisii.co.jp" class="hover:text-white transition underline">info@bisii.co.jp</a></p>
     </div>
   </div>
 </footer>
@@ -740,6 +785,17 @@
   const errorMsg      = document.getElementById('member-error-msg');
   const registerSection = document.getElementById('register-section');
   const successSection  = document.getElementById('member-success-section');
+
+  /* ---- referral source: show textarea only when「その他」is selected ---- */
+  const referralOtherWrap  = document.getElementById('member-referral-other-wrap');
+  const referralOtherInput = document.getElementById('member-referral-other');
+  document.querySelectorAll('input[name="referral_source"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      const isOther = document.getElementById('member-referral-other-radio').checked;
+      referralOtherWrap.classList.toggle('hidden', !isOther);
+      if (!isOther && referralOtherInput) referralOtherInput.value = '';
+    });
+  });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
