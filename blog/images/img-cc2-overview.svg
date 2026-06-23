@@ -1,0 +1,30 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#F8FAFC"/>
+  <text x="600" y="55" text-anchor="middle" font-size="26" font-weight="700" fill="#1E293B">デジタル化・AI導入補助金2026 概要</text>
+
+  <!-- Card 1 -->
+  <rect x="70" y="110" width="320" height="260" rx="14" fill="#1E293B"/>
+  <text x="230" y="160" text-anchor="middle" font-size="14" fill="#94A3B8">申請受付開始</text>
+  <text x="230" y="210" text-anchor="middle" font-size="30" font-weight="900" fill="#FFFFFF">2026/3/30</text>
+  <rect x="170" y="240" width="120" height="4" fill="#059669"/>
+  <text x="230" y="280" text-anchor="middle" font-size="13" fill="#CBD5E1">中小企業・小規模事業者の</text>
+  <text x="230" y="300" text-anchor="middle" font-size="13" fill="#CBD5E1">AI・IT導入を支援</text>
+
+  <!-- Card 2 -->
+  <rect x="440" y="110" width="320" height="260" rx="14" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <text x="600" y="160" text-anchor="middle" font-size="14" fill="#475569">補助上限額（目安）</text>
+  <text x="600" y="210" text-anchor="middle" font-size="30" font-weight="900" fill="#059669">最大450万円</text>
+  <rect x="540" y="240" width="120" height="4" fill="#059669"/>
+  <text x="600" y="280" text-anchor="middle" font-size="13" fill="#475569">申請枠によって</text>
+  <text x="600" y="300" text-anchor="middle" font-size="13" fill="#475569">上限額が異なる</text>
+
+  <!-- Card 3 -->
+  <rect x="810" y="110" width="320" height="260" rx="14" fill="#1E293B"/>
+  <text x="970" y="160" text-anchor="middle" font-size="14" fill="#94A3B8">補助率</text>
+  <text x="970" y="210" text-anchor="middle" font-size="30" font-weight="900" fill="#F59E0B">1/2 〜 4/5</text>
+  <rect x="910" y="240" width="120" height="4" fill="#F59E0B"/>
+  <text x="970" y="280" text-anchor="middle" font-size="13" fill="#CBD5E1">賃上げ等の条件を満たす</text>
+  <text x="970" y="300" text-anchor="middle" font-size="13" fill="#CBD5E1">小規模事業者は引き上げ</text>
+
+  <text x="600" y="450" text-anchor="middle" font-size="13" fill="#64748B">※最新の要件・上限額は公式サイトで必ずご確認ください</text>
+</svg>

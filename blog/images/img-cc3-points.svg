@@ -1,0 +1,31 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="480" fill="#F8FAFC"/>
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="700" fill="#1E293B">補助金活用時に注意したい3つのポイント</text>
+
+  <!-- Card 1 -->
+  <rect x="60" y="100" width="330" height="300" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <circle cx="225" cy="165" r="30" fill="#1E293B"/>
+  <text x="225" y="174" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">1</text>
+  <text x="225" y="232" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">最新の申請要件を</text>
+  <text x="225" y="254" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">公式サイトで確認</text>
+  <text x="225" y="288" text-anchor="middle" font-size="13" fill="#64748B">補助率・上限額・対象範囲は</text>
+  <text x="225" y="306" text-anchor="middle" font-size="13" fill="#64748B">年度・申請枠で変わる</text>
+
+  <!-- Card 2 -->
+  <rect x="435" y="100" width="330" height="300" rx="14" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <circle cx="600" cy="165" r="30" fill="#059669"/>
+  <text x="600" y="174" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">2</text>
+  <text x="600" y="232" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">信頼できる</text>
+  <text x="600" y="254" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">支援事業者を選ぶ</text>
+  <text x="600" y="288" text-anchor="middle" font-size="13" fill="#64748B">対応できるツールの種類・</text>
+  <text x="600" y="306" text-anchor="middle" font-size="13" fill="#64748B">得意分野は事業者ごとに異なる</text>
+
+  <!-- Card 3 -->
+  <rect x="810" y="100" width="330" height="300" rx="14" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="975" cy="165" r="30" fill="#F59E0B"/>
+  <text x="975" y="174" text-anchor="middle" font-size="22" font-weight="900" fill="#1E293B">3</text>
+  <text x="975" y="232" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">実施スケジュールを</text>
+  <text x="975" y="254" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">見越して準備</text>
+  <text x="975" y="288" text-anchor="middle" font-size="13" fill="#64748B">採択後の事業期間内に</text>
+  <text x="975" y="306" text-anchor="middle" font-size="13" fill="#64748B">導入・実装まで完了が必要</text>
+</svg>

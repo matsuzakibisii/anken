@@ -1,0 +1,34 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="480" fill="#FAFAF9"/>
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="700" fill="#1E1B2E">士業のAI活用事例3つ</text>
+
+  <!-- timeline line -->
+  <line x1="120" y1="240" x2="1080" y2="240" stroke="#D6D0E8" stroke-width="4"/>
+
+  <!-- Node 1 -->
+  <circle cx="240" cy="240" r="14" fill="#7C3AED"/>
+  <rect x="100" y="100" width="280" height="110" rx="12" fill="#F3EEFF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="240" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">税理士事務所</text>
+  <text x="240" y="155" text-anchor="middle" font-size="13" fill="#5B21B6">レシート・請求書の</text>
+  <text x="240" y="174" text-anchor="middle" font-size="13" fill="#5B21B6">AIデータ化＋仕訳案提示</text>
+  <text x="240" y="196" text-anchor="middle" font-size="12" fill="#7C3AED" font-weight="700">週末2日で試作</text>
+  <line x1="240" y1="210" x2="240" y2="226" stroke="#7C3AED" stroke-width="2"/>
+
+  <!-- Node 2 -->
+  <circle cx="600" cy="240" r="14" fill="#0D9488"/>
+  <rect x="460" y="270" width="280" height="110" rx="12" fill="#ECFDF5" stroke="#0D9488" stroke-width="1.5"/>
+  <text x="600" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">社労士事務所</text>
+  <text x="600" y="325" text-anchor="middle" font-size="13" fill="#047857">就業規則・労務書類の</text>
+  <text x="600" y="344" text-anchor="middle" font-size="13" fill="#047857">たたき台作成支援</text>
+  <text x="600" y="366" text-anchor="middle" font-size="12" fill="#0D9488" font-weight="700">週末3日で構築</text>
+  <line x1="600" y1="254" x2="600" y2="270" stroke="#0D9488" stroke-width="2"/>
+
+  <!-- Node 3 -->
+  <circle cx="960" cy="240" r="14" fill="#7C3AED"/>
+  <rect x="820" y="100" width="280" height="110" rx="12" fill="#F3EEFF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="960" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#4C1D95">行政書士事務所</text>
+  <text x="960" y="155" text-anchor="middle" font-size="13" fill="#5B21B6">過去の許認可申請書を</text>
+  <text x="960" y="174" text-anchor="middle" font-size="13" fill="#5B21B6">参照した下書き作成</text>
+  <text x="960" y="196" text-anchor="middle" font-size="12" fill="#7C3AED" font-weight="700">週末2回で実装</text>
+  <line x1="960" y1="210" x2="960" y2="226" stroke="#7C3AED" stroke-width="2"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="480" fill="#FAF3E8"/>
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="700" fill="#3A2E1F">見積書作成AI化の活用シーン3例</text>
+
+  <!-- Card 1 -->
+  <rect x="60" y="100" width="320" height="300" rx="16" fill="#FFFFFF" stroke="#E3D5BB" stroke-width="1.5"/>
+  <circle cx="220" cy="170" r="34" fill="#C2410C"/>
+  <path d="M205,170 h30 M210,160 h20 M210,180 h20" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="220" y="232" text-anchor="middle" font-size="17" font-weight="700" fill="#3A2E1F">商品見積もりの</text>
+  <text x="220" y="256" text-anchor="middle" font-size="17" font-weight="700" fill="#3A2E1F">自動生成</text>
+  <text x="220" y="290" text-anchor="middle" font-size="13" fill="#7A6A55">商品マスター整理＋</text>
+  <text x="220" y="310" text-anchor="middle" font-size="13" fill="#7A6A55">類似案件参照</text>
+  <rect x="160" y="345" width="120" height="28" rx="14" fill="#F3E7D6"/>
+  <text x="220" y="364" text-anchor="middle" font-size="12" fill="#9A6A2D" font-weight="700">週末2日で試作</text>
+
+  <!-- Card 2 -->
+  <rect x="440" y="100" width="320" height="300" rx="16" fill="#FFFFFF" stroke="#E3D5BB" stroke-width="1.5"/>
+  <circle cx="600" cy="170" r="34" fill="#4D7C5F"/>
+  <rect x="585" y="155" width="30" height="22" rx="3" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="600" y="232" text-anchor="middle" font-size="17" font-weight="700" fill="#3A2E1F">問い合わせ文からの</text>
+  <text x="600" y="256" text-anchor="middle" font-size="17" font-weight="700" fill="#3A2E1F">見積もり作成</text>
+  <text x="600" y="290" text-anchor="middle" font-size="13" fill="#7A6A55">依頼文を貼るだけで</text>
+  <text x="600" y="310" text-anchor="middle" font-size="13" fill="#7A6A55">項目候補を提示</text>
+  <rect x="540" y="345" width="120" height="28" rx="14" fill="#E4EEE6"/>
+  <text x="600" y="364" text-anchor="middle" font-size="12" fill="#33614A" font-weight="700">週末1回で構築</text>
+
+  <!-- Card 3 -->
+  <rect x="820" y="100" width="320" height="300" rx="16" fill="#FFFFFF" stroke="#E3D5BB" stroke-width="1.5"/>
+  <circle cx="980" cy="170" r="34" fill="#9A6A2D"/>
+  <path d="M965,178 l10,-18 l8,10 l12,-16" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="980" y="232" text-anchor="middle" font-size="17" font-weight="700" fill="#3A2E1F">保守契約の</text>
+  <text x="980" y="256" text-anchor="middle" font-size="17" font-weight="700" fill="#3A2E1F">更新見積もり作成</text>
+  <text x="980" y="290" text-anchor="middle" font-size="13" fill="#7A6A55">契約内容と利用状況を</text>
+  <text x="980" y="310" text-anchor="middle" font-size="13" fill="#7A6A55">踏まえて自動生成</text>
+  <rect x="920" y="345" width="120" height="28" rx="14" fill="#F3E7D6"/>
+  <text x="980" y="364" text-anchor="middle" font-size="12" fill="#9A6A2D" font-weight="700">週末2〜3日で実装</text>
+</svg>

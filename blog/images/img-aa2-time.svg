@@ -1,0 +1,24 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#FAF3E8"/>
+  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="700" fill="#3A2E1F">見積書作成1件あたりの所要時間</text>
+  <text x="600" y="86" text-anchor="middle" font-size="15" fill="#7A6A55">AI導入前と導入後の比較イメージ</text>
+
+  <!-- Before -->
+  <text x="120" y="160" font-size="17" font-weight="700" fill="#3A2E1F">導入前</text>
+  <rect x="120" y="175" width="900" height="46" rx="8" fill="#EAE0CC"/>
+  <rect x="120" y="175" width="800" height="46" rx="8" fill="#C2410C"/>
+  <text x="940" y="205" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="end">約45分／件</text>
+
+  <!-- After -->
+  <text x="120" y="280" font-size="17" font-weight="700" fill="#3A2E1F">導入後（AI自動生成＋人の最終確認）</text>
+  <rect x="120" y="295" width="900" height="46" rx="8" fill="#EAE0CC"/>
+  <rect x="120" y="295" width="220" height="46" rx="8" fill="#4D7C5F"/>
+  <text x="360" y="325" font-size="20" font-weight="700" fill="#3A2E1F">約12分／件</text>
+
+  <!-- annotation -->
+  <line x1="120" y1="380" x2="1020" y2="380" stroke="#C7B8A0" stroke-width="1"/>
+  <circle cx="120" cy="380" r="5" fill="#4D7C5F"/>
+  <circle cx="340" cy="380" r="5" fill="#4D7C5F"/>
+  <text x="600" y="420" text-anchor="middle" font-size="16" fill="#3A2E1F" font-weight="700">所要時間を約70%短縮（イメージ値）</text>
+  <text x="600" y="448" text-anchor="middle" font-size="13" fill="#7A6A55">※実際の短縮率は業種・商品構成により異なります</text>
+</svg>

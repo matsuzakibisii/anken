@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 28px; fill: #0F172A; }
+      .sub { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 16px; fill: #64748B; }
+      .lbl { font-family: 'Noto Sans JP', sans-serif; font-weight: 500; font-size: 18px; fill: #0F172A; }
+      .val { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 16px; fill: #FFFFFF; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 13px; fill: #94A3B8; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" fill="#F8FAFC"/>
+
+  <text x="60" y="55" class="ttl">kintoneカスタマイズの依頼内容別の傾向</text>
+  <text x="60" y="82" class="sub">企業から寄せられる改修依頼の内容を4つに分類（イメージ）</text>
+
+  <!-- Bar 1 -->
+  <text x="60" y="148" class="lbl">画面・入力フォームのカスタマイズ</text>
+  <rect x="60" y="160" width="980" height="40" rx="8" fill="#E2E8F0"/>
+  <rect x="60" y="160" width="780" height="40" rx="8" fill="#2563EB"/>
+  <text x="700" y="186" class="val">最も多い依頼内容</text>
+
+  <!-- Bar 2 -->
+  <text x="60" y="232" class="lbl">外部API連携（kintone REST API）</text>
+  <rect x="60" y="244" width="980" height="40" rx="8" fill="#E2E8F0"/>
+  <rect x="60" y="244" width="600" height="40" rx="8" fill="#FB7185"/>
+  <text x="520" y="270" class="val">他システム連携の相談</text>
+
+  <!-- Bar 3 -->
+  <text x="60" y="316" class="lbl">複数アプリ連携・データ集計の仕組み構築</text>
+  <rect x="60" y="328" width="980" height="40" rx="8" fill="#E2E8F0"/>
+  <rect x="60" y="328" width="440" height="40" rx="8" fill="#60A5FA"/>
+  <text x="370" y="354" class="val">集計・ダッシュボード化</text>
+
+  <!-- Bar 4 -->
+  <text x="60" y="400" class="lbl">プラグインの導入・設定</text>
+  <rect x="60" y="412" width="980" height="40" rx="8" fill="#E2E8F0"/>
+  <rect x="60" y="412" width="280" height="40" rx="8" fill="#FDA4AF"/>
+  <text x="210" y="438" class="val">設定・競合調整</text>
+
+  <text x="60" y="475" class="note">※ ANKEN調べ・依頼傾向のイメージを図示したものであり、統計データではありません。</text>
+</svg>
