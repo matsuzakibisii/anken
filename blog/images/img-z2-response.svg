@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="900" fill="#0F172A">一次回答までの時間比較</text>
+  <text x="600" y="78" text-anchor="middle" font-size="14" fill="#64748B">従来の問い合わせ対応 vs AIチャットボット導入後</text>
+
+  <!-- Left: Before gauge -->
+  <g>
+    <circle cx="340" cy="240" r="120" fill="none" stroke="#E2E8F0" stroke-width="22"/>
+    <circle cx="340" cy="240" r="120" fill="none" stroke="#2563EB" stroke-width="22"
+            stroke-dasharray="754" stroke-dashoffset="38" transform="rotate(-90 340 240)"/>
+    <text x="340" y="230" text-anchor="middle" font-size="34" font-weight="900" fill="#1E293B">約4時間</text>
+    <text x="340" y="260" text-anchor="middle" font-size="14" fill="#64748B">平均の一次回答時間</text>
+    <text x="340" y="392" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">従来の問い合わせ対応</text>
+    <text x="340" y="414" text-anchor="middle" font-size="12.5" fill="#64748B">担当者が空き時間に確認し返信</text>
+  </g>
+
+  <!-- Right: After gauge -->
+  <g>
+    <circle cx="860" cy="240" r="120" fill="none" stroke="#FFEDD5" stroke-width="22"/>
+    <circle cx="860" cy="240" r="120" fill="none" stroke="#F97316" stroke-width="22"
+            stroke-dasharray="754" stroke-dashoffset="738" transform="rotate(-90 860 240)"/>
+    <text x="860" y="230" text-anchor="middle" font-size="34" font-weight="900" fill="#1E293B">約10秒</text>
+    <text x="860" y="260" text-anchor="middle" font-size="14" fill="#64748B">チャット送信後の応答時間</text>
+    <text x="860" y="392" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">AIチャットボット導入後</text>
+    <text x="860" y="414" text-anchor="middle" font-size="12.5" fill="#64748B">定型的な質問にAIが即時回答</text>
+  </g>
+
+  <!-- center arrow -->
+  <g>
+    <line x1="490" y1="240" x2="700" y2="240" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5"/>
+    <polygon points="700,233 716,240 700,247" fill="#CBD5E1"/>
+  </g>
+
+  <rect x="160" y="450" width="880" height="36" rx="10" fill="#F8FAFC"/>
+  <text x="600" y="473" text-anchor="middle" font-size="12.5" fill="#94A3B8">※時間は導入事例をもとにしたイメージです。対象とする質問内容・運用により効果は異なります。</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 26px; fill: #0F172A; }
+      .ctitle { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 18px; fill: #0F172A; }
+      .cdesc { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 13.5px; fill: #64748B; }
+      .tag { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 12.5px; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" fill="#FFFFFF"/>
+  <text x="50" y="46" class="ttl">カスタマーサポートAI化｜活用シーン3例</text>
+
+  <!-- Card 1 -->
+  <rect x="50" y="80" width="340" height="360" rx="18" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <circle cx="220" cy="160" r="42" fill="#2563EB"/>
+  <path d="M198 148 h44 a6 6 0 0 1 6 6 v18 a6 6 0 0 1 -6 6 h-30 l-12 10 v-10 h-2 a6 6 0 0 1 -6 -6 v-18 a6 6 0 0 1 6 -6 z" fill="#FFFFFF"/>
+  <rect x="80" y="226" width="80" height="24" rx="12" fill="#2563EB"/>
+  <text x="120" y="242" text-anchor="middle" class="tag">週末2日</text>
+  <text x="220" y="290" class="ctitle" text-anchor="middle">配送・返品FAQの自動応答</text>
+  <text x="80" y="324" class="cdesc">「いつ届くか」「返品の手順は」</text>
+  <text x="80" y="344" class="cdesc">といった定型質問にAIが即時回答し、</text>
+  <text x="80" y="364" class="cdesc">担当者は個別対応に集中できます。</text>
+
+  <!-- Card 2 -->
+  <rect x="430" y="80" width="340" height="360" rx="18" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1.5"/>
+  <circle cx="600" cy="160" r="42" fill="#F97316"/>
+  <path d="M580 145 l20 14 l20 -14 M580 145 v22 a4 4 0 0 0 4 4 h32 a4 4 0 0 0 4 -4 v-22" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="460" y="226" width="80" height="24" rx="12" fill="#F97316"/>
+  <text x="500" y="242" text-anchor="middle" class="tag">週末1回</text>
+  <text x="600" y="290" class="ctitle" text-anchor="middle">問い合わせの一次受付振り分け</text>
+  <text x="460" y="324" class="cdesc">「請求は経理へ」「技術的な質問は</text>
+  <text x="460" y="344" class="cdesc">サポートへ」をAIが振り分け、</text>
+  <text x="460" y="364" class="cdesc">担当者へのエスカレーションを自動化。</text>
+
+  <!-- Card 3 -->
+  <rect x="810" y="80" width="340" height="360" rx="18" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+  <circle cx="980" cy="160" r="42" fill="#334155"/>
+  <circle cx="980" cy="160" r="17" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+  <line x1="980" y1="160" x2="980" y2="149" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="980" y1="160" x2="989" y2="166" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="840" y="226" width="98" height="24" rx="12" fill="#334155"/>
+  <text x="889" y="242" text-anchor="middle" class="tag">週末2〜3日</text>
+  <text x="980" y="290" class="ctitle" text-anchor="middle">営業時間外の一次対応</text>
+  <text x="840" y="324" class="cdesc">夜間・休日の問い合わせにも</text>
+  <text x="840" y="344" class="cdesc">よくある質問への回答と</text>
+  <text x="840" y="364" class="cdesc">翌営業日案内を自動で返信します。</text>
+
+</svg>
