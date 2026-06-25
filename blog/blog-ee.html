@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChatGPT・Claudeなどのツールを導入したのに使われない企業向けに、社内AIリテラシー研修の設計手順を解説。教えるべき4つの基本ステップ、業種・職種別に変えるべきポイント、研修を定着させる工夫を紹介します。">
+  <title>社内AIリテラシー研修の進め方｜ChatGPT・Claude導入で何を教えるべきか【2026年版】 | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="社内AIリテラシー研修の進め方｜ChatGPT・Claude導入で何を教えるべきか【2026年版】">
+  <meta property="og:description" content="AIツールを導入したのに現場で使われない——その原因と、研修で教えるべき4つの基本ステップ、業種・職種別の研修内容の変え方をわかりやすく解説します。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-ee1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-ee.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="社内AIリテラシー研修の進め方【2026年版】">
+  <meta name="twitter:description" content="ChatGPT・Claude導入企業が研修で教えるべき内容と、定着させるための工夫を解説します。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-ee1-hero.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GWT2G24L7Z');
+    gtag('config', 'G-VHGE2HHG65');
+  </script>
+  <!-- favicon（blog/配下のファイルは ../で参照） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_ee',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_ee',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>社内AIリテラシー研修の進め方</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--e">AIの使い方・設定・機能解説</span>
+      <h1 class="article-hero__title">社内AIリテラシー研修の進め方<br>ChatGPT・Claude導入で何を教えるべきか【2026年版】</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年6月24日</span>
+        <span class="article-hero__meta-item">⏱ 約9分で読めます</span>
+        <span class="article-hero__meta-item">🔑 AIリテラシー研修、社内AI研修 進め方、ChatGPT 社内研修</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-ee1-hero.png" alt="灯台の光に向かって小舟が進んでいく3Dレンダー風イラスト（AI研修による学びのイメージ）" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">「AIツールを導入したのに使われない」のはなぜか</a></li>
+          <li>
+            <a href="#sec2">研修設計の前に整理すべき3つのこと</a>
+            <ul class="toc__list--sub">
+              <li><a href="#sec2-1">①研修の目的を明確にする</a></li>
+              <li><a href="#sec2-2">②対象者のレベルを分ける</a></li>
+              <li><a href="#sec2-3">③対象ツールを決める</a></li>
+            </ul>
+          </li>
+          <li><a href="#sec3">研修で教えるべき4つの基本ステップ</a></li>
+          <li><a href="#sec4">業種・職種によって変えるべき研修内容</a></li>
+          <li><a href="#sec5">研修後に「使われ続ける」ための定着の工夫</a></li>
+          <li><a href="#sec6">研修担当者を社内に立てられない場合の選択肢</a></li>
+          <li><a href="#sec7">まとめ・ANKENへのご相談</a></li>
+        </ol>
+      </nav>
+
+      <!-- 本文 -->
+      <article class="article-body">
+
+        <p>「ChatGPTやClaudeを導入したものの、結局使っているのは情報システム部門の数人だけ」——2026年に入り、多くの企業からこうした声を耳にするようになりました。ツール導入自体は数クリックで完了しますが、<strong>現場の社員が実際に使いこなせるようになるかどうかは、研修設計にかかっている</strong>と言っても過言ではありません。</p>
+
+        <p>この記事では、社内でAIリテラシー研修を企画する際に整理すべきポイントと、研修で教えるべき4つの基本ステップ、業種・職種によって内容をどう変えるべきかを解説します。</p>
+
+        <h2 id="sec1">「AIツールを導入したのに使われない」のはなぜか</h2>
+
+        <p>AIツールの社内導入が「PoC止まり」「一部の人だけが使う」状態で終わってしまう企業には、いくつか共通点があります。多いのは、<strong>ツールのアカウントを配布しただけで、使い方を体系的に教える機会を作っていない</strong>ケースです。</p>
+
+        <p>ChatGPTやClaudeは直感的に使えるツールではありますが、「何を聞けば業務が楽になるのか」「どこまで社内情報を入力していいのか」が分からないまま使い始めると、多くの社員は数回試したきりで離脱してしまいます。逆に言えば、<strong>最初の研修設計を丁寧に行うことが、AI活用が現場に定着するかどうかの分岐点</strong>になります。</p>
+
+        <h2 id="sec2">研修設計の前に整理すべき3つのこと</h2>
+
+        <p>研修の内容を考える前に、次の3点を整理しておくと、的外れな研修になることを防げます。</p>
+
+        <h3 id="sec2-1">①研修の目的を明確にする</h3>
+        <div class="merit-card">
+          <div class="merit-card__num">POINT 01</div>
+          <p>「AIに触れたことがない社員のリテラシー向上」と「すでに使っている社員の応用力強化」では、研修内容が大きく変わります。<strong>誰のどんな状態を変えたいのか</strong>を最初に決めましょう。</p>
+        </div>
+
+        <h3 id="sec2-2">②対象者のレベルを分ける</h3>
+        <div class="merit-card merit-card--b">
+          <div class="merit-card__num">POINT 02</div>
+          <p>全社員を一度に同じ研修に集めると、初心者には早すぎて、経験者には物足りない内容になりがちです。<strong>「未経験者」「基本操作はできる」「業務で使い始めている」</strong>の3段階程度に分けて設計するのが現実的です。</p>
+        </div>
+
+        <h3 id="sec2-3">③対象ツールを決める</h3>
+        <div class="merit-card merit-card--c">
+          <div class="merit-card__num">POINT 03</div>
+          <p>ChatGPT・Claude・Gemini のどれを主に使うのか、複数ツールを並行運用するのかを決めておきます。<strong>研修中に画面操作を見せる以上、対象ツールが定まっていないと教材が作れません。</strong></p>
+        </div>
+
+        <p>この3点が固まっていれば、研修の時間配分や教材のボリュームを具体的に決めやすくなります。</p>
+
+        <h2 id="sec3">研修で教えるべき4つの基本ステップ</h2>
+
+        <p>AIリテラシー研修の内容は、業種や対象者によって細部は変わりますが、骨格となる4つのステップは共通しています。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-ee2-steps.svg" alt="社内AIリテラシー研修で教えるべき4つの基本ステップを示す円環状のステップ図" width="1200" height="520">
+          <figcaption>図1：研修で教えるべき4つの基本ステップ（円環で循環的に振り返る設計が効果的）</figcaption>
+        </figure>
+
+        <div class="point-box">
+          <div class="point-box__title">研修カリキュラムの基本構成</div>
+          <ul>
+            <li>ステップ1｜基本操作・初期設定（アカウント作成、画面の基本操作、社内ルールの確認）</li>
+            <li>ステップ2｜プロンプトの書き方の基本（目的・前提条件・出力形式を伝える型を覚える）</li>
+            <li>ステップ3｜情報セキュリティ・社内ルール（入力してよい情報の範囲、機密情報の扱い）</li>
+            <li>ステップ4｜業務テーマ別の実践ワーク（自分の業務に当てはめて実際に使ってみる）</li>
+          </ul>
+        </div>
+
+        <p>特に重要なのはステップ3とステップ4です。<strong>セキュリティ教育を省略すると、後から「入力していい情報の範囲」をめぐる社内トラブルにつながりやすく</strong>、実践ワークを省略すると「研修では分かったが、自分の業務にどう使うか分からない」という状態のまま終わってしまいます。</p>
+
+        <p>ステップ4の実践ワークでは、参加者自身の日常業務（メール作成、議事録整理、資料の下書きなど）を題材にすることで、研修後の活用率が大きく変わります。汎用的な例題だけで終わらせず、<strong>「自分ごと化」できる課題を必ず1つ以上含める</strong>ことをおすすめします。</p>
+
+        <h2 id="sec4">業種・職種によって変えるべき研修内容</h2>
+
+        <p>研修の骨格は共通していても、<strong>業種・職種によって「教えるべき実践テーマ」と「セキュリティ上の注意点」は大きく異なります。</strong></p>
+
+        <figure class="article-figure">
+          <img src="images/img-ee3-industry.svg" alt="一般事務・営業職向け研修と専門職（介護・士業など）向け研修の内容の違いを示すカード型比較図" width="1200" height="480">
+          <figcaption>図2：対象者の職種によって変わる研修テーマとセキュリティ上の注意点（イメージ）</figcaption>
+        </figure>
+
+        <p>一般事務・営業職向けの研修では、メール文面の下書き、議事録の要約、提案書のアウトライン作成など、<strong>汎用的な文書業務を題材にしたワーク</strong>が中心になります。プロンプトの基本型を覚えれば、比較的早く業務への応用が進みやすい層です。</p>
+
+        <p>一方、介護・士業・製造現場など専門性の高い職種では、業務知識とAIの組み合わせ方を教える必要があります。たとえば介護現場であれば記録業務の要約・申し送り文の整理、士業であれば契約書・議事録のチェック観点の整理など、<strong>「その業界特有の業務」に即した実践テーマ</strong>を用意することで、研修の納得感が大きく変わります。また、専門職ほど扱う情報の機密性が高いケースが多く、<strong>入力してよい情報の境界線をより具体的に示す</strong>必要があります。</p>
+
+        <p>全社員に同一の教材を配るのではなく、職種ごとに実践ワークの題材だけを差し替える、という設計が現実的かつ効果的です。</p>
+
+        <h2 id="sec5">研修後に「使われ続ける」ための定着の工夫</h2>
+
+        <p>研修は一度実施しただけでは定着しません。実施後に効果が薄れてしまう企業の多くは、<strong>「研修して終わり」になってしまい、フォローの仕組みがない</strong>という共通点があります。</p>
+
+        <p>定着率を高めるためには、次のような工夫が有効です。</p>
+
+        <ul>
+          <li><strong>社内Q&amp;Aチャンネルの設置</strong>：質問や活用例を投稿できる場を作り、研修後の疑問をその場で解消できるようにする</li>
+          <li><strong>プロンプト集の社内共有</strong>：研修で作ったプロンプトをテンプレート化し、誰でも使い回せる状態にしておく</li>
+          <li><strong>1ヶ月後の振り返り会</strong>：研修直後ではなく、実際に使ってみてからの疑問・困りごとを共有する機会を設ける</li>
+          <li><strong>活用事例の社内発信</strong>：実際に業務時間を削減できた事例を紹介し、他の社員の活用意欲を高める</li>
+        </ul>
+
+        <div class="note-box" style="background:#F0FDF4;border-left:4px solid #22C55E;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#166534;"><strong>💡 定着のコツ</strong><br>研修を1回のイベントとして終わらせず、<strong>「研修＋フォロー」を1つのセットとして設計</strong>することが、AI活用が一部の人だけの取り組みで終わらないための最大のポイントです。</p>
+        </div>
+
+        <h2 id="sec6">研修担当者を社内に立てられない場合の選択肢</h2>
+
+        <p>ここまで紹介した内容を実行しようとすると、「カリキュラムを作る人材がいない」「教材作成に時間が取れない」という壁にぶつかる企業も少なくありません。特に情報システム部門が小規模、あるいは専任者がいない中小企業では、研修設計そのものが後回しになりがちです。</p>
+
+        <p>このような場合、社内に研修担当者を新たに採用するのではなく、<strong>カリキュラム設計や教材作成だけをスポットで外部に依頼する</strong>という選択肢があります。AIツールの活用に詳しいエンジニアやAI活用支援者に、自社の業務に合わせた実践ワークの設計だけを切り出して依頼することで、固定費をかけずに研修の質を高めることができます。</p>
+
+        <div class="note-box" style="background:#FEF3C7;border-left:4px solid #F59E0B;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#92400E;"><strong>🔧 「研修教材だけ作ってほしい」企業様へ</strong><br>ANKENでは、業種別の実践ワーク設計やプロンプトテンプレート作成など、AIリテラシー研修の一部だけを切り出してスポットで依頼することも可能です。固定費ゼロ・週末対応のエンジニアとマッチングできます。</p>
+        </div>
+
+        <h2 id="sec7">まとめ・ANKENへのご相談</h2>
+
+        <p>AIツールを「導入しただけ」で終わらせず、現場で使われ続ける状態にするには、<strong>目的・対象者レベル・対象ツールを整理した上で、基本操作からセキュリティ、実践ワークまでを段階的に教える研修設計</strong>が欠かせません。業種・職種に応じて実践テーマを差し替え、研修後のフォローまでセットで設計することが、定着の分かれ道になります。</p>
+
+        <p>ANKENでは、研修カリキュラムの設計支援から、AIを活用した社内ツール開発まで、固定費ゼロ・週末スポットからのご相談に対応しています。</p>
+
+        <!-- CTAボックス -->
+        <div class="cta-box">
+          <div class="cta-box__title">AIリテラシー研修・社内AI活用をスポットで相談したい企業様へ</div>
+          <p class="cta-box__desc">研修教材の設計から、ChatGPT・Claude APIを使った社内ツール開発まで、固定費ゼロ・週末スポットから依頼可能です。</p>
+          <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_ee',event_label:'bottom_cta_contact'})">👉 無料でスポット依頼を相談する</a>
+          <p class="cta-box__sub">初回相談は無料です。要件が固まっていなくてもOKです。</p>
+        </div>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-dd.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">kintoneカスタマイズをスポット外注で実現する方法</span>
+          </a>
+          <a href="blog-ff.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">AI-OCR導入で請求書・書類処理を自動化する方法</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">AI活用・研修設計をスポットで依頼する</div>
+        <p class="sidebar-cta__desc">固定費ゼロ・週末スポットから。AIに強いエンジニアとすぐつながれます。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_ee',event_label:'sidebar_cta'})">無料でスポット依頼を相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-q.html">ChatGPT・Claude・Gemini の違いと使い分け完全ガイド</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-r.html">AI業務効率化の実践手順5ステップ</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--b" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜AI開発</span>
+            <a href="blog-f.html">ノウハウ不足でも作れる社内AIツール</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

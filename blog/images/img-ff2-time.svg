@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect x="0" y="0" width="1200" height="500" fill="#FFFBF7"/>
+
+  <!-- Title -->
+  <text x="60" y="52" font-size="26" font-weight="900" fill="#2A2420">書類1件あたりの処理時間比較（イメージ）</text>
+  <text x="60" y="82" font-size="15" font-weight="500" fill="#78716C">手作業での入力と、AI-OCR導入後の処理時間の違い</text>
+
+  <!-- Legend -->
+  <rect x="780" y="62" width="18" height="18" rx="3" fill="#A8A29E"/>
+  <text x="804" y="76" font-size="14" font-weight="700" fill="#44403C">手作業</text>
+  <rect x="900" y="62" width="18" height="18" rx="3" fill="#B33C5D"/>
+  <text x="924" y="76" font-size="14" font-weight="700" fill="#44403C">AI-OCR導入後</text>
+
+  <!-- Axis -->
+  <line x1="150" y1="430" x2="1100" y2="430" stroke="#D6D3D1" stroke-width="2"/>
+  <line x1="150" y1="110" x2="150" y2="430" stroke="#D6D3D1" stroke-width="2"/>
+
+  <!-- Grid lines (0,4,8,12 min) -->
+  <g stroke="#EDE9E6" stroke-width="1">
+    <line x1="150" y1="338" x2="1100" y2="338"/>
+    <line x1="150" y1="247" x2="1100" y2="247"/>
+    <line x1="150" y1="155" x2="1100" y2="155"/>
+  </g>
+  <g font-size="13" fill="#A8A29E">
+    <text x="120" y="434" text-anchor="end">0分</text>
+    <text x="120" y="342" text-anchor="end">4分</text>
+    <text x="120" y="251" text-anchor="end">8分</text>
+    <text x="120" y="159" text-anchor="end">12分</text>
+  </g>
+  <text x="40" y="270" font-size="14" fill="#78716C" transform="rotate(-90 40 270)" text-anchor="middle">処理時間（分）</text>
+
+  <!-- Group 1: 請求書 -->
+  <rect x="250" y="247" width="70" height="183" rx="4" fill="#A8A29E"/>
+  <text x="285" y="237" font-size="15" font-weight="700" fill="#57534E" text-anchor="middle">8分</text>
+  <rect x="340" y="396" width="70" height="34" rx="4" fill="#B33C5D"/>
+  <text x="375" y="386" font-size="15" font-weight="700" fill="#9D174D" text-anchor="middle">1.5分</text>
+  <text x="330" y="460" font-size="16" font-weight="700" fill="#2A2420" text-anchor="middle">請求書</text>
+
+  <!-- Group 2: 納品書 -->
+  <rect x="550" y="293" width="70" height="137" rx="4" fill="#A8A29E"/>
+  <text x="585" y="283" font-size="15" font-weight="700" fill="#57534E" text-anchor="middle">6分</text>
+  <rect x="640" y="407" width="70" height="23" rx="4" fill="#B33C5D"/>
+  <text x="675" y="397" font-size="15" font-weight="700" fill="#9D174D" text-anchor="middle">1分</text>
+  <text x="630" y="460" font-size="16" font-weight="700" fill="#2A2420" text-anchor="middle">納品書</text>
+
+  <!-- Group 3: 申込書・契約書 -->
+  <rect x="850" y="156" width="70" height="274" rx="4" fill="#A8A29E"/>
+  <text x="885" y="146" font-size="15" font-weight="700" fill="#57534E" text-anchor="middle">12分</text>
+  <rect x="940" y="384" width="70" height="46" rx="4" fill="#B33C5D"/>
+  <text x="975" y="374" font-size="15" font-weight="700" fill="#9D174D" text-anchor="middle">2分</text>
+  <text x="930" y="460" font-size="16" font-weight="700" fill="#2A2420" text-anchor="middle">申込書・契約書</text>
+
+  <text x="1100" y="480" font-size="12" fill="#A8A29E" text-anchor="end">※社内ヒアリングに基づく目安値（イメージ）</text>
+</svg>
