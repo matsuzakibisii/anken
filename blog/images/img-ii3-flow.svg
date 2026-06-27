@@ -1,0 +1,82 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="480" fill="#FFFFFF"/>
+  <text x="600" y="48" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="24" font-weight="700" fill="#0F172A">スポット外注でFDE人材を確保する5つのステップ</text>
+
+  <!-- 5 step cards -->
+  <!-- card width 200, gap 20, total 5*200+4*20=1080, start x=60 -->
+
+  <!-- Step1 -->
+  <g>
+    <rect x="60" y="120" width="200" height="220" rx="14" fill="#F0F9FF" stroke="#0369A1" stroke-width="2"/>
+    <circle cx="160" cy="170" r="26" fill="#0369A1"/>
+    <text x="160" y="178" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="160" y="225" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#0C4A6E">業務理解の</text>
+    <text x="160" y="246" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#0C4A6E">深さを定義</text>
+    <text x="160" y="280" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#075985">対象業務の</text>
+    <text x="160" y="300" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#075985">範囲を絞る</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M265 230 L290 230" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step2 -->
+  <g>
+    <rect x="296" y="120" width="200" height="220" rx="14" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <circle cx="396" cy="170" r="26" fill="#FB923C"/>
+    <text x="396" y="178" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="396" y="225" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#9A3412">スキルを</text>
+    <text x="396" y="246" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#9A3412">2軸に分解</text>
+    <text x="396" y="280" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#9A3412">技術観点／</text>
+    <text x="396" y="300" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#9A3412">業務観点</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M501 230 L526 230" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step3 -->
+  <g>
+    <rect x="532" y="120" width="200" height="220" rx="14" fill="#F0F9FF" stroke="#0369A1" stroke-width="2"/>
+    <circle cx="632" cy="170" r="26" fill="#0369A1"/>
+    <text x="632" y="178" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="632" y="225" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#0C4A6E">スポット</text>
+    <text x="632" y="246" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#0C4A6E">マッチング</text>
+    <text x="632" y="280" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#075985">FDE的役割の</text>
+    <text x="632" y="300" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#075985">人材を探す</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M737 230 L762 230" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step4 -->
+  <g>
+    <rect x="768" y="120" width="200" height="220" rx="14" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <circle cx="868" cy="170" r="26" fill="#FB923C"/>
+    <text x="868" y="178" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="868" y="225" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#9A3412">PoC〜実装を</text>
+    <text x="868" y="246" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#9A3412">一気通貫で依頼</text>
+    <text x="868" y="280" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#9A3412">分業させず</text>
+    <text x="868" y="300" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#9A3412">同じ人材に依頼</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <path d="M973 230 L998 230" stroke="#94A3B8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step5 -->
+  <g>
+    <rect x="1004" y="120" width="200" height="220" rx="14" fill="#F0F9FF" stroke="#0369A1" stroke-width="2"/>
+    <circle cx="1104" cy="170" r="26" fill="#0369A1"/>
+    <text x="1104" y="178" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="1104" y="225" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#0C4A6E">知見を社内に</text>
+    <text x="1104" y="246" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#0C4A6E">残す仕組み化</text>
+    <text x="1104" y="280" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#075985">ドキュメント化</text>
+    <text x="1104" y="300" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#075985">して引き継ぐ</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <text x="600" y="410" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748B">正社員採用ではなく、必要なタイミングだけFDE的な機能をスポットで確保する</text>
+</svg>
