@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect x="0" y="0" width="1200" height="500" fill="#FAFDFC"/>
+
+  <!-- Title -->
+  <text x="60" y="52" font-size="26" font-weight="900" fill="#0F2E2A">求人原稿1本あたりの作成時間比較（イメージ）</text>
+  <text x="60" y="82" font-size="15" font-weight="500" fill="#5B7A75">人力での作成と、AI活用後の作成時間の違い</text>
+
+  <!-- Left card: 人力作成 -->
+  <rect x="60" y="120" width="500" height="330" rx="20" fill="#FFFFFF" stroke="#E2EDE9" stroke-width="2"/>
+  <rect x="60" y="120" width="500" height="56" rx="20" fill="#E7ECEA"/>
+  <rect x="60" y="156" width="500" height="20" fill="#E7ECEA"/>
+  <text x="310" y="156" font-size="17" font-weight="700" fill="#52514C" text-anchor="middle">人力で作成する場合</text>
+
+  <g transform="translate(220,210)">
+    <rect x="0" y="0" width="60" height="76" rx="4" fill="none" stroke="#9A9A92" stroke-width="3"/>
+    <line x1="12" y1="20" x2="48" y2="20" stroke="#9A9A92" stroke-width="3"/>
+    <line x1="12" y1="36" x2="48" y2="36" stroke="#9A9A92" stroke-width="3"/>
+    <line x1="12" y1="52" x2="34" y2="52" stroke="#9A9A92" stroke-width="3"/>
+  </g>
+  <text x="310" y="330" font-size="40" font-weight="900" fill="#52514C" text-anchor="middle">45分</text>
+  <text x="310" y="362" font-size="14" fill="#7A7A70" text-anchor="middle">ゼロから文章構成を考え、媒体ごとに</text>
+  <text x="310" y="384" font-size="14" fill="#7A7A70" text-anchor="middle">書き直す時間を含む（1本あたり）</text>
+  <text x="310" y="424" font-size="13" fill="#9A9A92" text-anchor="middle">※職種・媒体により変動</text>
+
+  <!-- Right card: AI活用後 -->
+  <rect x="640" y="120" width="500" height="330" rx="20" fill="#FFFFFF" stroke="#F2A93B" stroke-width="2.5"/>
+  <rect x="640" y="120" width="500" height="56" rx="20" fill="#FDF1DA"/>
+  <rect x="640" y="156" width="500" height="20" fill="#FDF1DA"/>
+  <text x="890" y="156" font-size="17" font-weight="700" fill="#9C6A12" text-anchor="middle">AI活用後</text>
+
+  <g transform="translate(800,210)">
+    <circle cx="30" cy="30" r="30" fill="#FDF1DA"/>
+    <path d="M30 12 L36 26 L30 22 L24 26 Z" fill="#F2A93B"/>
+    <path d="M30 48 L24 34 L30 38 L36 34 Z" fill="#F2A93B"/>
+    <path d="M12 30 L26 24 L22 30 L26 36 Z" fill="#F2A93B"/>
+    <path d="M48 30 L34 36 L38 30 L34 24 Z" fill="#F2A93B"/>
+  </g>
+  <text x="890" y="330" font-size="40" font-weight="900" fill="#0F6B5C" text-anchor="middle">12分</text>
+  <text x="890" y="362" font-size="14" fill="#5B7A75" text-anchor="middle">AIが複数パターンを生成し、人は選んで</text>
+  <text x="890" y="384" font-size="14" fill="#5B7A75" text-anchor="middle">事実確認・微調整するだけ（1本あたり）</text>
+  <text x="890" y="424" font-size="13" fill="#0F6B5C" text-anchor="middle" font-weight="700">約73%の時間短縮（イメージ）</text>
+
+  <!-- Arrow between cards -->
+  <g stroke="#CFC9BD" stroke-width="3" fill="none">
+    <line x1="568" y1="285" x2="630" y2="285"/>
+    <polygon points="630,275 650,285 630,295" fill="#CFC9BD" stroke="none"/>
+  </g>
+
+  <text x="1140" y="480" font-size="12" fill="#9A9A92" text-anchor="end">※社内ヒアリングに基づく目安値（イメージ）</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#F5F5FF"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="900" fill="#1E1B4B">Slack上の情報がAIを経てNotionに集約される仕組み</text>
+
+  <!-- connecting lines from satellites to hub -->
+  <line x1="270" y1="150" x2="520" y2="250" stroke="#A5B4FC" stroke-width="3"/>
+  <line x1="270" y1="350" x2="520" y2="260" stroke="#A5B4FC" stroke-width="3"/>
+  <line x1="930" y1="150" x2="680" y2="250" stroke="#A5B4FC" stroke-width="3"/>
+  <line x1="930" y1="350" x2="680" y2="260" stroke="#A5B4FC" stroke-width="3"/>
+
+  <!-- arrowheads -->
+  <polygon points="500,238 524,250 500,262" fill="#4338CA"/>
+  <polygon points="500,272 524,260 500,248" fill="#4338CA"/>
+  <polygon points="700,238 676,250 700,262" fill="#4338CA"/>
+  <polygon points="700,272 676,260 700,248" fill="#4338CA"/>
+
+  <!-- satellite: Slack message -->
+  <g>
+    <rect x="170" y="105" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="2"/>
+    <circle cx="205" cy="150" r="16" fill="#84CC16"/>
+    <path d="M197,150 h16 M205,142 v16" stroke="#1E1B4B" stroke-width="2" stroke-linecap="round"/>
+    <text x="235" y="145" font-size="15" font-weight="700" fill="#1E1B4B">Slackの会話</text>
+    <text x="235" y="166" font-size="12" fill="#4F46E5">決定事項・共有事項</text>
+  </g>
+
+  <!-- satellite: file -->
+  <g>
+    <rect x="170" y="305" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="2"/>
+    <rect x="190" y="332" width="30" height="36" rx="3" fill="#84CC16"/>
+    <text x="235" y="345" font-size="15" font-weight="700" fill="#1E1B4B">共有ファイル</text>
+    <text x="235" y="366" font-size="12" fill="#4F46E5">資料・議事録の添付</text>
+  </g>
+
+  <!-- hub -->
+  <g>
+    <circle cx="600" cy="255" r="95" fill="#4338CA"/>
+    <circle cx="600" cy="255" r="95" fill="none" stroke="#1E1B4B" stroke-width="3"/>
+    <text x="600" y="240" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">AI</text>
+    <text x="600" y="262" text-anchor="middle" font-size="13" fill="#E0E7FF">要約・タグ付け</text>
+    <text x="600" y="282" text-anchor="middle" font-size="13" fill="#E0E7FF">自動転記</text>
+  </g>
+
+  <!-- satellite: task -->
+  <g>
+    <rect x="830" y="105" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="2"/>
+    <rect x="850" y="135" width="22" height="22" rx="4" fill="none" stroke="#84CC16" stroke-width="3"/>
+    <path d="M855,146 l5,5 l10,-10" stroke="#84CC16" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="890" y="145" font-size="15" font-weight="700" fill="#1E1B4B">タスク・期限</text>
+    <text x="890" y="166" font-size="12" fill="#4F46E5">担当者・締切の抽出</text>
+  </g>
+
+  <!-- satellite: knowledge -->
+  <g>
+    <rect x="830" y="305" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="2"/>
+    <path d="M850,365 v-28 a14,14 0 0 1 28,0 v28" fill="none" stroke="#84CC16" stroke-width="3"/>
+    <text x="900" y="345" font-size="15" font-weight="700" fill="#1E1B4B">ナレッジ</text>
+    <text x="900" y="366" font-size="12" fill="#4F46E5">過去の知見・ノウハウ</text>
+  </g>
+
+  <!-- Notion destination -->
+  <g>
+    <rect x="500" y="420" width="200" height="60" rx="12" fill="#1E1B4B"/>
+    <text x="600" y="456" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">Notionに整理して集約</text>
+  </g>
+  <line x1="600" y1="350" x2="600" y2="418" stroke="#1E1B4B" stroke-width="3"/>
+  <polygon points="588,408 600,430 612,408" fill="#1E1B4B"/>
+
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect x="0" y="0" width="1200" height="480" fill="#FAFDFC"/>
+
+  <!-- Title -->
+  <text x="600" y="48" font-size="24" font-weight="900" fill="#0F2E2A" text-anchor="middle">求人原稿・スカウト文のAI活用シーン（イメージ）</text>
+
+  <!-- Card 1 -->
+  <g>
+    <rect x="60" y="110" width="340" height="300" rx="18" fill="#FFFFFF" stroke="#E2EDE9" stroke-width="2"/>
+    <circle cx="230" cy="180" r="42" fill="#E7F5F1"/>
+    <g transform="translate(206,156)">
+      <rect x="0" y="0" width="36" height="48" rx="3" fill="none" stroke="#0F6B5C" stroke-width="3"/>
+      <line x1="8" y1="14" x2="28" y2="14" stroke="#0F6B5C" stroke-width="3"/>
+      <line x1="8" y1="24" x2="28" y2="24" stroke="#0F6B5C" stroke-width="3"/>
+      <line x1="8" y1="34" x2="20" y2="34" stroke="#0F6B5C" stroke-width="3"/>
+    </g>
+    <text x="230" y="252" font-size="14" font-weight="700" fill="#0F6B5C" text-anchor="middle">CASE 1</text>
+    <text x="230" y="282" font-size="17" font-weight="900" fill="#0F2E2A" text-anchor="middle">求人媒体向け原稿</text>
+    <text x="230" y="306" font-size="17" font-weight="900" fill="#0F2E2A" text-anchor="middle">の一括生成</text>
+    <text x="230" y="340" font-size="13" fill="#5B7A75" text-anchor="middle">職種ごとに訴求の異なる</text>
+    <text x="230" y="360" font-size="13" fill="#5B7A75" text-anchor="middle">長文原稿を複数パターン作成</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g>
+    <rect x="430" y="110" width="340" height="300" rx="18" fill="#FFFFFF" stroke="#F2A93B" stroke-width="2.5"/>
+    <circle cx="600" cy="180" r="42" fill="#FDF1DA"/>
+    <g transform="translate(576,156)">
+      <rect x="0" y="6" width="48" height="34" rx="5" fill="none" stroke="#9C6A12" stroke-width="3"/>
+      <path d="M2 10 L24 26 L46 10" fill="none" stroke="#9C6A12" stroke-width="3"/>
+    </g>
+    <text x="600" y="252" font-size="14" font-weight="700" fill="#9C6A12" text-anchor="middle">CASE 2</text>
+    <text x="600" y="282" font-size="17" font-weight="900" fill="#0F2E2A" text-anchor="middle">スカウトメールの</text>
+    <text x="600" y="306" font-size="17" font-weight="900" fill="#0F2E2A" text-anchor="middle">個別パーソナライズ</text>
+    <text x="600" y="340" font-size="13" fill="#5B7A75" text-anchor="middle">候補者の経歴に合わせて</text>
+    <text x="600" y="360" font-size="13" fill="#5B7A75" text-anchor="middle">一文目の訴求だけを自動で差し替え</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g>
+    <rect x="800" y="110" width="340" height="300" rx="18" fill="#FFFFFF" stroke="#E2EDE9" stroke-width="2"/>
+    <circle cx="970" cy="180" r="42" fill="#E7F5F1"/>
+    <g transform="translate(946,156)">
+      <rect x="0" y="14" width="48" height="34" rx="6" fill="none" stroke="#0F6B5C" stroke-width="3"/>
+      <path d="M10 14 L10 6 Q10 0 16 0 L32 0 Q38 0 38 6 L38 14" fill="none" stroke="#0F6B5C" stroke-width="3"/>
+      <circle cx="24" cy="30" r="6" fill="#0F6B5C"/>
+    </g>
+    <text x="970" y="252" font-size="14" font-weight="700" fill="#0F6B5C" text-anchor="middle">CASE 3</text>
+    <text x="970" y="282" font-size="17" font-weight="900" fill="#0F2E2A" text-anchor="middle">SNS・採用サイト</text>
+    <text x="970" y="306" font-size="17" font-weight="900" fill="#0F2E2A" text-anchor="middle">告知文の量産</text>
+    <text x="970" y="340" font-size="13" fill="#5B7A75" text-anchor="middle">同じ採用情報から文字数の</text>
+    <text x="970" y="360" font-size="13" fill="#5B7A75" text-anchor="middle">異なる告知文を複数生成</text>
+  </g>
+
+  <text x="600" y="450" font-size="13" fill="#9A9A92" text-anchor="middle">※生成後は事実確認・自社らしい言葉づかいへの調整が必要です</text>
+</svg>
