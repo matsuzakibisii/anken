@@ -1,0 +1,53 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="480" fill="#FFF7F8"/>
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="900" fill="#3B0764">契約書AIチェック導入の3ステップ</text>
+
+  <!-- Step 1 -->
+  <g>
+    <circle cx="220" cy="230" r="74" fill="#FFFFFF" stroke="#7C3AED" stroke-width="3"/>
+    <text x="220" y="220" text-anchor="middle" font-size="15" font-weight="900" fill="#7C3AED">STEP 1</text>
+    <text x="220" y="246" text-anchor="middle" font-size="13" fill="#4C1D95">📑 整理</text>
+    <text x="220" y="330" text-anchor="middle" font-size="14" font-weight="700" fill="#3B0764">契約書フォーマット・</text>
+    <text x="220" y="350" text-anchor="middle" font-size="14" font-weight="700" fill="#3B0764">チェック観点の整理</text>
+  </g>
+
+  <path d="M310,230 L430,230" stroke="#C4B5FD" stroke-width="3" marker-end="url(#arrow1)"/>
+
+  <!-- Step 2 -->
+  <g>
+    <circle cx="520" cy="230" r="74" fill="#FFFFFF" stroke="#FB7185" stroke-width="3"/>
+    <text x="520" y="220" text-anchor="middle" font-size="15" font-weight="900" fill="#E11D48">STEP 2</text>
+    <text x="520" y="246" text-anchor="middle" font-size="13" fill="#9F1239">🤖 設計</text>
+    <text x="520" y="330" text-anchor="middle" font-size="14" font-weight="700" fill="#3B0764">社内規定に合わせた</text>
+    <text x="520" y="350" text-anchor="middle" font-size="14" font-weight="700" fill="#3B0764">AIチェック観点の設計</text>
+  </g>
+
+  <path d="M610,230 L730,230" stroke="#C4B5FD" stroke-width="3" marker-end="url(#arrow1)"/>
+
+  <!-- Step 3 -->
+  <g>
+    <circle cx="820" cy="230" r="74" fill="#FFFFFF" stroke="#F59E0B" stroke-width="3"/>
+    <text x="820" y="220" text-anchor="middle" font-size="15" font-weight="900" fill="#B45309">STEP 3</text>
+    <text x="820" y="246" text-anchor="middle" font-size="13" fill="#92400E">✅ 運用</text>
+    <text x="820" y="330" text-anchor="middle" font-size="14" font-weight="700" fill="#3B0764">試験運用から</text>
+    <text x="820" y="350" text-anchor="middle" font-size="14" font-weight="700" fill="#3B0764">本番運用・承認体制へ</text>
+  </g>
+
+  <path d="M910,230 L1030,230" stroke="#C4B5FD" stroke-width="3" marker-end="url(#arrow1)"/>
+
+  <!-- Result -->
+  <g>
+    <rect x="1030" y="180" width="130" height="100" rx="14" fill="#7C3AED"/>
+    <text x="1095" y="222" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">工数</text>
+    <text x="1095" y="244" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">削減</text>
+    <text x="1095" y="266" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">＋安心</text>
+  </g>
+
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#C4B5FD"/>
+    </marker>
+  </defs>
+
+  <text x="600" y="445" text-anchor="middle" font-size="13" fill="#6B21A8">最終判断は人が行う前提で、AIに一次チェックを担わせる体制を段階的に構築する</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="500" fill="#FAF5FF"/>
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="900" fill="#3B0764">契約書1件あたりの確認時間（イメージ）</text>
+
+  <!-- Axis -->
+  <line x1="260" y1="100" x2="260" y2="420" stroke="#C4B5FD" stroke-width="2"/>
+  <line x1="260" y1="420" x2="1080" y2="420" stroke="#C4B5FD" stroke-width="2"/>
+
+  <!-- Bar 1: manual check -->
+  <text x="240" y="190" text-anchor="end" font-size="16" font-weight="700" fill="#3B0764">手動チェック</text>
+  <rect x="260" y="150" width="760" height="80" rx="10" fill="#7C3AED" opacity="0.85"/>
+  <text x="650" y="200" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">平均 約45〜60分／件</text>
+
+  <!-- Bar 2: AI check -->
+  <text x="240" y="330" text-anchor="end" font-size="16" font-weight="700" fill="#3B0764">AIチェック導入後</text>
+  <rect x="260" y="290" width="190" height="80" rx="10" fill="#FB7185" opacity="0.9"/>
+  <text x="345" y="340" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">約10分／件</text>
+  <text x="475" y="340" font-size="14" fill="#9F1239">＋人による最終確認</text>
+
+  <!-- Callout -->
+  <rect x="780" y="290" width="300" height="80" rx="12" fill="#FFFFFF" stroke="#FB7185" stroke-width="2"/>
+  <text x="930" y="320" text-anchor="middle" font-size="14" font-weight="700" fill="#9F1239">一次チェックの時間を</text>
+  <text x="930" y="345" text-anchor="middle" font-size="20" font-weight="900" fill="#BE123C">約1/4〜1/6に短縮</text>
+
+  <text x="600" y="465" text-anchor="middle" font-size="13" fill="#6B21A8">※社内ヒアリングに基づく目安値。AIは一次チェックを担い、最終判断は必ず人が行う前提</text>
+</svg>
