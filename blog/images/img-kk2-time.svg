@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 26px; fill: #1E293B; }
+      .sub { font-family: 'Noto Sans JP', sans-serif; font-weight: 500; font-size: 14px; fill: #64748B; }
+      .cat { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 19px; fill: #1E293B; }
+      .lbl { font-family: 'Noto Sans JP', sans-serif; font-weight: 500; font-size: 13px; fill: #94A3B8; }
+      .timeBefore { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 30px; fill: #94A3B8; }
+      .timeAfter { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 34px; fill: #DB2777; }
+      .pct { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 14px; fill: #047857; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" fill="#FFFBFC"/>
+
+  <text x="50" y="52" class="ttl">AIプロンプト活用による文章作成時間の目安比較</text>
+  <text x="50" y="78" class="sub">1件あたりの文章作成にかかる時間（担当者の感覚値・目安）</text>
+
+  <!-- Card 1 -->
+  <g>
+    <rect x="50" y="110" width="340" height="340" rx="18" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="2"/>
+    <circle cx="220" cy="160" r="26" fill="#FDF2F8"/>
+    <path d="M204 154 h32 v18 h-32 z M204 154 l16 12 l16 -12" fill="none" stroke="#DB2777" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="220" y="215" text-anchor="middle" class="cat">クレーム一次回答</text>
+
+    <text x="135" y="285" text-anchor="middle" class="lbl">Before</text>
+    <text x="135" y="320" text-anchor="middle" class="timeBefore">15分</text>
+
+    <path d="M195 295 h40" stroke="#CBD5E1" stroke-width="3"/>
+    <path d="M225 286 l10 9 l-10 9" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="305" y="285" text-anchor="middle" class="lbl">After</text>
+    <text x="305" y="328" text-anchor="middle" class="timeAfter">5分</text>
+
+    <rect x="155" y="405" width="130" height="28" rx="14" fill="#ECFDF5"/>
+    <text x="220" y="424" text-anchor="middle" class="pct">約67%短縮</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g>
+    <rect x="430" y="110" width="340" height="340" rx="18" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="2"/>
+    <circle cx="600" cy="160" r="26" fill="#FDF2F8"/>
+    <path d="M600 148 l5 10 11 1.5 -8 7.5 2 11 -10 -5.5 -10 5.5 2 -11 -8 -7.5 11 -1.5 z" fill="#DB2777"/>
+    <text x="600" y="215" text-anchor="middle" class="cat">レビュー返信</text>
+
+    <text x="515" y="285" text-anchor="middle" class="lbl">Before</text>
+    <text x="515" y="320" text-anchor="middle" class="timeBefore">8分</text>
+
+    <path d="M575 295 h40" stroke="#CBD5E1" stroke-width="3"/>
+    <path d="M605 286 l10 9 l-10 9" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="685" y="285" text-anchor="middle" class="lbl">After</text>
+    <text x="685" y="328" text-anchor="middle" class="timeAfter">2分</text>
+
+    <rect x="535" y="405" width="130" height="28" rx="14" fill="#ECFDF5"/>
+    <text x="600" y="424" text-anchor="middle" class="pct">約75%短縮</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g>
+    <rect x="810" y="110" width="340" height="340" rx="18" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="2"/>
+    <circle cx="980" cy="160" r="26" fill="#FDF2F8"/>
+    <rect x="965" y="148" width="30" height="24" rx="3" fill="none" stroke="#DB2777" stroke-width="2.5"/>
+    <text x="980" y="166" text-anchor="middle" font-family="Noto Sans JP" font-weight="900" font-size="16" fill="#DB2777">?</text>
+    <text x="980" y="215" text-anchor="middle" class="cat">FAQ項目作成</text>
+
+    <text x="895" y="285" text-anchor="middle" class="lbl">Before</text>
+    <text x="895" y="320" text-anchor="middle" class="timeBefore">20分</text>
+
+    <path d="M955 295 h40" stroke="#CBD5E1" stroke-width="3"/>
+    <path d="M985 286 l10 9 l-10 9" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="1065" y="285" text-anchor="middle" class="lbl">After</text>
+    <text x="1065" y="328" text-anchor="middle" class="timeAfter">6分</text>
+
+    <rect x="915" y="405" width="130" height="28" rx="14" fill="#ECFDF5"/>
+    <text x="980" y="424" text-anchor="middle" class="pct">約70%短縮</text>
+  </g>
+
+  <text x="50" y="478" class="lbl">※社内ヒアリングをもとにした目安値です。文章の難易度や確認体制により変動します。</text>
+</svg>
