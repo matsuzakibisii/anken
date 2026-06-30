@@ -1,0 +1,74 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 28px; fill: #3B2A1A; }
+      .lbl { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 16px; fill: #FFFBEB; }
+      .h   { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 19px; fill: #3B2A1A; }
+      .b   { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 14px; fill: #5C4A33; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="480" fill="#FFF8E7"/>
+  <text x="60" y="55" class="ttl">補助金＋スポット外注で実現するAI活用の例</text>
+  <line x1="60" y1="75" x2="1140" y2="75" stroke="#D9A93B" stroke-width="2"/>
+
+  <!-- Row 1 -->
+  <g>
+    <rect x="60" y="110" width="280" height="90" rx="10" fill="#F3E4BE"/>
+    <text x="80" y="145" class="h" fill="#92400E">Before</text>
+    <text x="80" y="172" class="b">提案書・見積書づくりに</text>
+    <text x="80" y="190" class="b">毎回時間がかかる</text>
+
+    <path d="M 350 155 L 410 155" stroke="#C2773A" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <rect x="430" y="110" width="280" height="90" rx="10" fill="#C2773A"/>
+    <text x="450" y="145" class="lbl">After</text>
+    <text x="450" y="172" class="lbl" font-weight="400" font-size="14">過去の提案書をもとに</text>
+    <text x="450" y="190" class="lbl" font-weight="400" font-size="14">AIが下書きを自動作成</text>
+
+    <text x="760" y="160" class="h">提案書・見積書の自動下書き</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g>
+    <rect x="60" y="225" width="280" height="90" rx="10" fill="#F3E4BE"/>
+    <text x="80" y="260" class="h" fill="#92400E">Before</text>
+    <text x="80" y="287" class="b">請求書・経費処理の</text>
+    <text x="80" y="305" class="b">入力作業に手間がかかる</text>
+
+    <path d="M 350 270 L 410 270" stroke="#1F2937" stroke-width="4" marker-end="url(#arrow2)"/>
+
+    <rect x="430" y="225" width="280" height="90" rx="10" fill="#1F2937"/>
+    <text x="450" y="260" class="lbl">After</text>
+    <text x="450" y="287" class="lbl" font-weight="400" font-size="14">AI-OCRで紙の書類を</text>
+    <text x="450" y="305" class="lbl" font-weight="400" font-size="14">データ化し会計ソフトへ連携</text>
+
+    <text x="760" y="275" class="h">請求書・経費処理のデータ化</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g>
+    <rect x="60" y="340" width="280" height="90" rx="10" fill="#F3E4BE"/>
+    <text x="80" y="375" class="h" fill="#92400E">Before</text>
+    <text x="80" y="402" class="b">よくある質問への対応に</text>
+    <text x="80" y="420" class="b">時間を取られている</text>
+
+    <path d="M 350 385 L 410 385" stroke="#C2773A" stroke-width="4" marker-end="url(#arrow)"/>
+
+    <rect x="430" y="340" width="280" height="90" rx="10" fill="#C2773A"/>
+    <text x="450" y="375" class="lbl">After</text>
+    <text x="450" y="402" class="lbl" font-weight="400" font-size="14">一次回答をAIチャット</text>
+    <text x="450" y="420" class="lbl" font-weight="400" font-size="14">ボットに任せる仕組みを導入</text>
+
+    <text x="760" y="390" class="h">顧客対応の一次受け自動化</text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#C2773A"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1F2937"/>
+    </marker>
+  </defs>
+</svg>

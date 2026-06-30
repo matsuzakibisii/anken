@@ -1,0 +1,58 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ttl { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 30px; fill: #3B2A1A; }
+      .num { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 26px; fill: #FFFBEB; }
+      .h   { font-family: 'Noto Sans JP', sans-serif; font-weight: 700; font-size: 21px; fill: #3B2A1A; }
+      .b   { font-family: 'Noto Sans JP', sans-serif; font-weight: 400; font-size: 15px; fill: #5C4A33; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" fill="#FFF8E7"/>
+  <text x="60" y="60" class="ttl">個人事業主・フリーランスが申請前に確認したい3つのポイント</text>
+  <line x1="60" y1="80" x2="1140" y2="80" stroke="#D9A93B" stroke-width="2"/>
+
+  <!-- card 1 -->
+  <g>
+    <rect x="60" y="130" width="330" height="300" rx="16" fill="#FFFFFF" stroke="#E3C97A" stroke-width="2"/>
+    <circle cx="120" cy="180" r="28" fill="#C2773A"/>
+    <text x="120" y="189" text-anchor="middle" class="num">1</text>
+    <text x="80" y="240" class="h">事業実態を示す資料</text>
+    <text x="80" y="275" class="b">開業届・確定申告書</text>
+    <text x="80" y="298" class="b">（青色／白色申告）の</text>
+    <text x="80" y="321" class="b">提出・保管状況を確認</text>
+    <rect x="80" y="350" width="270" height="60" rx="8" fill="#FFF3D6"/>
+    <text x="95" y="376" class="b" font-weight="700" fill="#92400E">法人の登記事項証明書に</text>
+    <text x="95" y="397" class="b" font-weight="700" fill="#92400E">相当する確認資料</text>
+  </g>
+
+  <!-- card 2 -->
+  <g>
+    <rect x="435" y="130" width="330" height="300" rx="16" fill="#FFFFFF" stroke="#E3C97A" stroke-width="2"/>
+    <circle cx="495" cy="180" r="28" fill="#1F2937"/>
+    <text x="495" y="189" text-anchor="middle" class="num">2</text>
+    <text x="455" y="240" class="h">導入範囲の明確化</text>
+    <text x="455" y="275" class="b">「何にAIを使いたいか」を</text>
+    <text x="455" y="298" class="b">自分の言葉で具体的に</text>
+    <text x="455" y="321" class="b">説明できる状態にする</text>
+    <rect x="455" y="350" width="270" height="60" rx="8" fill="#FFF3D6"/>
+    <text x="470" y="376" class="b" font-weight="700" fill="#92400E">情シス部門がない分、</text>
+    <text x="470" y="397" class="b" font-weight="700" fill="#92400E">自分での整理が重要</text>
+  </g>
+
+  <!-- card 3 -->
+  <g>
+    <rect x="810" y="130" width="330" height="300" rx="16" fill="#FFFFFF" stroke="#E3C97A" stroke-width="2"/>
+    <circle cx="870" cy="180" r="28" fill="#C2773A"/>
+    <text x="870" y="189" text-anchor="middle" class="num">3</text>
+    <text x="830" y="240" class="h">無理のないスケジュール</text>
+    <text x="830" y="275" class="b">本業と並行して進める</text>
+    <text x="830" y="298" class="b">前提で、実装期間内に</text>
+    <text x="830" y="321" class="b">収まる外注先を早めに確保</text>
+    <rect x="830" y="350" width="270" height="60" rx="8" fill="#FFF3D6"/>
+    <text x="845" y="376" class="b" font-weight="700" fill="#92400E">採択後の実装遅延を</text>
+    <text x="845" y="397" class="b" font-weight="700" fill="#92400E">防ぐカギ</text>
+  </g>
+
+  <text x="60" y="470" class="b" fill="#92400E">出典：ANKEN作成（デジタル化・AI導入補助金2026 制度概要をもとに編集部で整理）</text>
+</svg>
