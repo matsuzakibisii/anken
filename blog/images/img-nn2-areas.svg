@@ -1,0 +1,88 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8FFFE"/>
+
+  <!-- タイトル -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="900" fill="#0F766E">不動産業｜AI活用で効果が出やすい3つの領域と期待効果</text>
+
+  <!-- カード①：物件案内 -->
+  <rect x="40" y="80" width="350" height="380" rx="16" fill="#0F766E"/>
+  <rect x="40" y="80" width="350" height="8" rx="8" fill="#EAB308"/>
+  <!-- アイコン：建物 -->
+  <rect x="175" y="115" width="80" height="70" rx="4" fill="none" stroke="#EAB308" stroke-width="3"/>
+  <rect x="200" y="135" width="30" height="50" rx="2" fill="#EAB308" opacity="0.9"/>
+  <polygon points="175,115 215,88 255,115" fill="#EAB308" opacity="0.7"/>
+  <!-- ラベル -->
+  <text x="215" y="220" text-anchor="middle" font-size="18" font-weight="900" fill="#EAB308">領域①</text>
+  <text x="215" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">物件案内・説明文</text>
+  <text x="215" y="272" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">の自動生成</text>
+  <!-- 区切り線 -->
+  <line x1="70" y1="295" x2="360" y2="295" stroke="#EAB308" stroke-width="1" opacity="0.4"/>
+  <!-- 詳細 -->
+  <text x="215" y="322" text-anchor="middle" font-size="13" fill="#CCFBF1">物件情報を入力するだけで</text>
+  <text x="215" y="342" text-anchor="middle" font-size="13" fill="#CCFBF1">ポータル・チラシ・SNS用の</text>
+  <text x="215" y="362" text-anchor="middle" font-size="13" fill="#CCFBF1">説明文を即時生成</text>
+  <!-- 効果バッジ -->
+  <rect x="115" y="408" width="200" height="34" rx="17" fill="#EAB308"/>
+  <text x="215" y="430" text-anchor="middle" font-size="13" font-weight="700" fill="#0F766E">制作時間 20分 → 3分</text>
+  <!-- 難易度 -->
+  <text x="215" y="455" text-anchor="middle" font-size="12" fill="#6EE7D9">実装難易度：★☆☆（低い）</text>
+
+  <!-- カード②：顧客対応 -->
+  <rect x="425" y="80" width="350" height="380" rx="16" fill="#0F766E"/>
+  <rect x="425" y="80" width="350" height="8" rx="8" fill="#EAB308"/>
+  <!-- アイコン：チャット -->
+  <rect x="545" y="108" width="70" height="55" rx="8" fill="none" stroke="#EAB308" stroke-width="3"/>
+  <rect x="565" y="126" width="30" height="4" rx="2" fill="#EAB308" opacity="0.8"/>
+  <rect x="556" y="135" width="48" height="4" rx="2" fill="#EAB308" opacity="0.6"/>
+  <rect x="565" y="144" width="30" height="4" rx="2" fill="#EAB308" opacity="0.8"/>
+  <polygon points="545,163 545,173 558,163" fill="#EAB308" opacity="0.7"/>
+  <!-- ラベル -->
+  <text x="600" y="220" text-anchor="middle" font-size="18" font-weight="900" fill="#EAB308">領域②</text>
+  <text x="600" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">問い合わせ・内覧予約</text>
+  <text x="600" y="272" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">の初期対応自動化</text>
+  <!-- 区切り線 -->
+  <line x1="455" y1="295" x2="745" y2="295" stroke="#EAB308" stroke-width="1" opacity="0.4"/>
+  <!-- 詳細 -->
+  <text x="600" y="322" text-anchor="middle" font-size="13" fill="#CCFBF1">24時間365日のFAQ自動応答</text>
+  <text x="600" y="342" text-anchor="middle" font-size="13" fill="#CCFBF1">＋内覧予約フォームへの</text>
+  <text x="600" y="362" text-anchor="middle" font-size="13" fill="#CCFBF1">スムーズな誘導を実現</text>
+  <!-- 効果バッジ -->
+  <rect x="500" y="408" width="200" height="34" rx="17" fill="#EAB308"/>
+  <text x="600" y="430" text-anchor="middle" font-size="13" font-weight="700" fill="#0F766E">夜間・休日対応率が向上</text>
+  <!-- 難易度 -->
+  <text x="600" y="455" text-anchor="middle" font-size="12" fill="#6EE7D9">実装難易度：★★☆（中程度）</text>
+
+  <!-- カード③：書類処理 -->
+  <rect x="810" y="80" width="350" height="380" rx="16" fill="#0F766E"/>
+  <rect x="810" y="80" width="350" height="8" rx="8" fill="#EAB308"/>
+  <!-- アイコン：書類 -->
+  <rect x="930" y="108" width="60" height="75" rx="4" fill="none" stroke="#EAB308" stroke-width="3"/>
+  <line x1="942" y1="128" x2="978" y2="128" stroke="#EAB308" stroke-width="2.5"/>
+  <line x1="942" y1="140" x2="978" y2="140" stroke="#EAB308" stroke-width="2.5"/>
+  <line x1="942" y1="152" x2="965" y2="152" stroke="#EAB308" stroke-width="2.5"/>
+  <circle cx="962" cy="162" r="14" fill="#EAB308" opacity="0.9"/>
+  <text x="962" y="167" text-anchor="middle" font-size="14" font-weight="900" fill="#0F766E">✓</text>
+  <!-- ラベル -->
+  <text x="985" y="220" text-anchor="middle" font-size="18" font-weight="900" fill="#EAB308">領域③</text>
+  <text x="985" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">重要事項説明書・</text>
+  <text x="985" y="272" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">書類チェックの省力化</text>
+  <!-- 区切り線 -->
+  <line x1="840" y1="295" x2="1130" y2="295" stroke="#EAB308" stroke-width="1" opacity="0.4"/>
+  <!-- 詳細 -->
+  <text x="985" y="322" text-anchor="middle" font-size="13" fill="#CCFBF1">AI-OCRで必須項目を自動抽出</text>
+  <text x="985" y="342" text-anchor="middle" font-size="13" fill="#CCFBF1">記載漏れ・異常値を自動で</text>
+  <text x="985" y="362" text-anchor="middle" font-size="13" fill="#CCFBF1">フラグ立てしてヒューマンエラー防止</text>
+  <!-- 効果バッジ -->
+  <rect x="885" y="408" width="200" height="34" rx="17" fill="#EAB308"/>
+  <text x="985" y="430" text-anchor="middle" font-size="13" font-weight="700" fill="#0F766E">確認工数 30〜60分→数分</text>
+  <!-- 難易度 -->
+  <text x="985" y="455" text-anchor="middle" font-size="12" fill="#6EE7D9">実装難易度：★★☆（中程度）</text>
+</svg>
