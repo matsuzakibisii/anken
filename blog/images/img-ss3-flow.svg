@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1A73E8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F0F4FF" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="900" fill="#1A1A2E">Gemini for Google Workspace｜始めるまでの3ステップ</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1 -->
+  <rect x="60" y="88" width="310" height="330" rx="20" fill="#FFFFFF" stroke="#1A73E8" stroke-width="2.5"/>
+  <!-- Step number badge -->
+  <circle cx="120" cy="88" r="30" fill="#1A73E8"/>
+  <text x="120" y="95" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">1</text>
+  <!-- Icon area -->
+  <rect x="80" y="108" width="270" height="80" rx="12" fill="#E8F0FE"/>
+  <text x="215" y="145" text-anchor="middle" font-size="36">🏢</text>
+  <text x="215" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#1A73E8">プランを確認・申し込む</text>
+  <!-- Content -->
+  <text x="215" y="215" text-anchor="middle" font-size="16" font-weight="900" fill="#1A1A2E">プラン選択・有効化</text>
+  <line x1="90" y1="225" x2="340" y2="225" stroke="#E0E0E0" stroke-width="1"/>
+
+  <text x="90" y="252" font-size="12" font-weight="700" fill="#333">✅ Google Workspaceにアクセス</text>
+  <text x="90" y="272" font-size="11" fill="#555">  Business Starter（月600円〜）以上</text>
+
+  <text x="90" y="298" font-size="12" font-weight="700" fill="#333">✅ 管理コンソールでGemini有効化</text>
+  <text x="90" y="318" font-size="11" fill="#555">  admin.google.com から設定</text>
+
+  <text x="90" y="344" font-size="12" font-weight="700" fill="#333">✅ ユーザー・部署単位で権限付与</text>
+  <text x="90" y="364" font-size="11" fill="#555">  まずは一部のチームで試験運用OK</text>
+
+  <rect x="80" y="378" width="270" height="28" rx="8" fill="#E8F0FE"/>
+  <text x="215" y="396" text-anchor="middle" font-size="11" font-weight="700" fill="#1565C0">⏱ 所要時間：約30分（管理者のみ）</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="370" y1="253" x2="440" y2="253" stroke="#1A73E8" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="405" y="243" text-anchor="middle" font-size="11" fill="#1A73E8" font-weight="700">NEXT</text>
+
+  <!-- Step 2 -->
+  <rect x="445" y="88" width="310" height="330" rx="20" fill="#FFFFFF" stroke="#34A853" stroke-width="2.5"/>
+  <circle cx="505" cy="88" r="30" fill="#34A853"/>
+  <text x="505" y="95" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">2</text>
+  <rect x="465" y="108" width="270" height="80" rx="12" fill="#E8F5E9"/>
+  <text x="600" y="145" text-anchor="middle" font-size="36">🤖</text>
+  <text x="600" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#34A853">各アプリで機能を試す</text>
+
+  <text x="600" y="215" text-anchor="middle" font-size="16" font-weight="900" fill="#1A1A2E">機能確認・社内試用</text>
+  <line x1="475" y1="225" x2="725" y2="225" stroke="#E0E0E0" stroke-width="1"/>
+
+  <text x="475" y="252" font-size="12" font-weight="700" fill="#333">✅ Gmailで「下書き」ボタンを使う</text>
+  <text x="475" y="272" font-size="11" fill="#555">  件名入力だけでメール本文が生成</text>
+
+  <text x="475" y="298" font-size="12" font-weight="700" fill="#333">✅ Docsで新規文書作成時に試す</text>
+  <text x="475" y="318" font-size="11" fill="#555">  「Geminiで下書き作成」から開始</text>
+
+  <text x="475" y="344" font-size="12" font-weight="700" fill="#333">✅ Meetの会議でメモ機能をON</text>
+  <text x="475" y="364" font-size="11" fill="#555">  会議開始後に「メモを取る」で起動</text>
+
+  <rect x="465" y="378" width="270" height="28" rx="8" fill="#E8F5E9"/>
+  <text x="600" y="396" text-anchor="middle" font-size="11" font-weight="700" fill="#1B5E20">⏱ 所要時間：1〜3日（実際に触れて慣れる）</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="755" y1="253" x2="825" y2="253" stroke="#1A73E8" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="790" y="243" text-anchor="middle" font-size="11" fill="#1A73E8" font-weight="700">NEXT</text>
+
+  <!-- Step 3 -->
+  <rect x="830" y="88" width="310" height="330" rx="20" fill="#FFFFFF" stroke="#EA4335" stroke-width="2.5"/>
+  <circle cx="890" cy="88" r="30" fill="#EA4335"/>
+  <text x="890" y="95" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">3</text>
+  <rect x="850" y="108" width="270" height="80" rx="12" fill="#FCE8E6"/>
+  <text x="985" y="145" text-anchor="middle" font-size="36">🚀</text>
+  <text x="985" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#EA4335">業務フローに組み込む</text>
+
+  <text x="985" y="215" text-anchor="middle" font-size="16" font-weight="900" fill="#1A1A2E">全社展開・定着化</text>
+  <line x1="860" y1="225" x2="1110" y2="225" stroke="#E0E0E0" stroke-width="1"/>
+
+  <text x="860" y="252" font-size="12" font-weight="700" fill="#333">✅ よく使う用途を社内でテンプレ化</text>
+  <text x="860" y="272" font-size="11" fill="#555">  プロンプトの定番パターンを共有</text>
+
+  <text x="860" y="298" font-size="12" font-weight="700" fill="#333">✅ チーム単位でルールを設定</text>
+  <text x="860" y="318" font-size="11" fill="#555">  機密情報の入力制限等を整備</text>
+
+  <text x="860" y="344" font-size="12" font-weight="700" fill="#333">✅ 活用事例を社内で横展開</text>
+  <text x="860" y="364" font-size="11" fill="#555">  月次でAI活用状況をレビュー</text>
+
+  <rect x="850" y="378" width="270" height="28" rx="8" fill="#FCE8E6"/>
+  <text x="985" y="396" text-anchor="middle" font-size="11" font-weight="700" fill="#B71C1C">⏱ 所要時間：1〜2週間で定着</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="450" text-anchor="middle" font-size="12" fill="#888">※個人のGoogleアカウント（gmail.com）ではなく、Google Workspaceアカウント（企業ドメイン）での利用が対象です</text>
+</svg>

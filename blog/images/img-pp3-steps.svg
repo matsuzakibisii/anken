@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <style>text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }</style>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3730A3"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#EEF2FF" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="900" fill="#1E1B4B">助成金を活用してAI研修を実施するまでの3ステップ</text>
+
+  <!-- タイムライン横線 -->
+  <line x1="100" y1="210" x2="1100" y2="210" stroke="#3730A3" stroke-width="3" stroke-dasharray="6,4" opacity="0.4"/>
+
+  <!-- ========== STEP 1 ========== -->
+  <rect x="60" y="88" width="320" height="330" rx="16" fill="#FFFFFF" stroke="#3730A3" stroke-width="2.5"/>
+
+  <circle cx="220" cy="88" r="30" fill="#3730A3"/>
+  <text x="220" y="96" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">01</text>
+
+  <!-- アイコン：書類 -->
+  <rect x="196" y="118" width="48" height="58" rx="6" fill="#EEF2FF"/>
+  <line x1="206" y1="133" x2="236" y2="133" stroke="#3730A3" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="206" y1="144" x2="236" y2="144" stroke="#3730A3" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="206" y1="155" x2="226" y2="155" stroke="#3730A3" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="234,118 244,118 244,130 234,130" fill="#D97706"/>
+
+  <text x="220" y="200" text-anchor="middle" font-size="17" font-weight="900" fill="#1E1B4B">計画届の提出</text>
+  <rect x="100" y="210" width="240" height="28" rx="8" fill="#D97706"/>
+  <text x="220" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">⚠️ 研修開始の1ヶ月前まで</text>
+
+  <text x="220" y="268" text-anchor="middle" font-size="13" fill="#374151">研修内容・外部講師・</text>
+  <text x="220" y="286" text-anchor="middle" font-size="13" fill="#374151">費用を確定し、管轄の</text>
+  <text x="220" y="304" text-anchor="middle" font-size="13" fill="#374151">都道府県労働局へ</text>
+  <text x="220" y="322" text-anchor="middle" font-size="13" fill="#374151">「職業訓練実施計画届」</text>
+  <text x="220" y="340" text-anchor="middle" font-size="13" fill="#374151">を提出する。</text>
+  <text x="220" y="365" text-anchor="middle" font-size="12" fill="#6B7280">※GビズIDの取得に</text>
+  <text x="220" y="382" text-anchor="middle" font-size="12" fill="#6B7280">2〜3週間かかるため早めに</text>
+  <text x="220" y="399" text-anchor="middle" font-size="12" fill="#6B7280">動き始めることが重要</text>
+
+  <!-- 矢印1 -->
+  <line x1="392" y1="255" x2="448" y2="255" stroke="#3730A3" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- ========== STEP 2 ========== -->
+  <rect x="440" y="88" width="320" height="330" rx="16" fill="#FFFFFF" stroke="#D97706" stroke-width="2.5"/>
+
+  <circle cx="600" cy="88" r="30" fill="#D97706"/>
+  <text x="600" y="96" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">02</text>
+
+  <!-- アイコン：研修/PC -->
+  <rect x="576" y="120" width="48" height="36" rx="4" fill="#FEF3C7"/>
+  <rect x="580" y="124" width="40" height="24" rx="2" fill="#D97706" opacity="0.7"/>
+  <rect x="588" y="156" width="24" height="5" rx="2" fill="#D97706"/>
+  <rect x="572" y="161" width="56" height="4" rx="2" fill="#FEF3C7"/>
+
+  <text x="600" y="200" text-anchor="middle" font-size="17" font-weight="900" fill="#1E1B4B">研修の実施</text>
+  <rect x="480" y="210" width="240" height="28" rx="8" fill="#3730A3"/>
+  <text x="600" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">10時間以上・OFF-JT形式</text>
+
+  <text x="600" y="268" text-anchor="middle" font-size="13" fill="#374151">外部AI講師（スポット外注）</text>
+  <text x="600" y="286" text-anchor="middle" font-size="13" fill="#374151">によるカスタマイズ研修を</text>
+  <text x="600" y="304" text-anchor="middle" font-size="13" fill="#374151">実施する。</text>
+  <text x="600" y="330" text-anchor="middle" font-size="13" fill="#374151">出席簿・タイムシートで</text>
+  <text x="600" y="348" text-anchor="middle" font-size="13" fill="#374151">受講実績を正確に記録。</text>
+  <text x="600" y="374" text-anchor="middle" font-size="12" fill="#6B7280">※契約書・請求書・</text>
+  <text x="600" y="392" text-anchor="middle" font-size="12" fill="#6B7280">カリキュラムも保存必須</text>
+
+  <!-- 矢印2 -->
+  <line x1="772" y1="255" x2="828" y2="255" stroke="#3730A3" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- ========== STEP 3 ========== -->
+  <rect x="820" y="88" width="320" height="330" rx="16" fill="#FFFFFF" stroke="#3730A3" stroke-width="2.5"/>
+
+  <circle cx="980" cy="88" r="30" fill="#3730A3"/>
+  <text x="980" y="96" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">03</text>
+
+  <!-- アイコン：チェックマーク -->
+  <circle cx="980" cy="148" r="28" fill="#EEF2FF"/>
+  <path d="M966 148 l8 10 l18-18" stroke="#3730A3" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="980" y="200" text-anchor="middle" font-size="17" font-weight="900" fill="#1E1B4B">支給申請</text>
+  <rect x="860" y="210" width="240" height="28" rx="8" fill="#D97706"/>
+  <text x="980" y="229" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">⚠️ 研修終了後2ヶ月以内</text>
+
+  <text x="980" y="268" text-anchor="middle" font-size="13" fill="#374151">支給申請書と証拠書類</text>
+  <text x="980" y="286" text-anchor="middle" font-size="13" fill="#374151">（出席簿・請求書・</text>
+  <text x="980" y="304" text-anchor="middle" font-size="13" fill="#374151">賃金台帳等）を提出し、</text>
+  <text x="980" y="322" text-anchor="middle" font-size="13" fill="#374151">助成金の支給を受ける。</text>
+  <text x="980" y="355" text-anchor="middle" font-size="13" fill="#1E1B4B" font-weight="700">中小企業の助成額（例）</text>
+  <text x="980" y="376" text-anchor="middle" font-size="13" fill="#D97706" font-weight="700">経費助成：75万円</text>
+  <text x="980" y="395" text-anchor="middle" font-size="13" fill="#3730A3" font-weight="700">賃金助成：32万円</text>
+
+  <!-- 制度期限 -->
+  <rect x="60" y="440" width="1080" height="26" rx="8" fill="#3730A3" opacity="0.12"/>
+  <text x="600" y="458" text-anchor="middle" font-size="13" fill="#1E1B4B" font-weight="700">⚠️ この制度は2026年度（令和8年度）末までの時限措置。申請は早めに動き始めることを強く推奨します。</text>
+</svg>

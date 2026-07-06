@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gemini for Google WorkspaceをGmail・Docs・Sheets・Meetで業務に活かす方法を初心者向けに解説。有効化の手順から各アプリの具体的な使い方まで、ステップバイステップでわかります。【2026年版】">
+  <title>Gemini for Google Workspaceの使い方と活用法｜Gmail・Docs・SheetsでAIを業務に組み込む方法【2026年版】 | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Gemini for Google Workspaceの使い方と活用法｜Gmail・Docs・SheetsでAIを業務に組み込む方法【2026年版】">
+  <meta property="og:description" content="Gemini for Google WorkspaceをGmail・Docs・Sheets・Meetで業務に活かす方法を解説。有効化の手順から各アプリの具体的な使い方までわかります。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-ss1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-ss.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Gemini for Google Workspaceの使い方と活用法｜Gmail・Docs・SheetsでAIを業務に組み込む方法【2026年版】">
+  <meta name="twitter:description" content="Gmail・Docs・Sheets・MeetでGemini AIを業務に組み込む具体的な手順と活用事例を初心者向けに解説。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-ss1-hero.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GWT2G24L7Z');
+    gtag('config', 'G-VHGE2HHG65');
+  </script>
+  <!-- favicon（blog/配下のファイルは ../で参照） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_ss',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_ss',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>Gemini for Google Workspaceの使い方と活用法｜Gmail・Docs・SheetsでAIを業務に組み込む方法</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--e">AIの使い方・設定・機能解説</span>
+      <h1 class="article-hero__title">Gemini for Google Workspaceの使い方と活用法<br>Gmail・Docs・SheetsでAIを業務に組み込む方法【2026年版】</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年7月6日</span>
+        <span class="article-hero__meta-item">⏱ 約9分で読めます</span>
+        <span class="article-hero__meta-item">🔑 Gemini for Google Workspace 使い方, Google Workspace AI, Gmail AI 活用</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-ss1-hero.png" alt="ポップアート風のイラスト。Gmail・Docs・Sheets・MeetのアイコンがAIの星と稲妻に囲まれ、業務効率化を表現したビビッドな構図" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- リード文 -->
+      <div class="article-lead">
+        「Googleのサービスを毎日使っているのに、Geminiとの連携機能をまだほとんど触れていない」——そんなビジネスパーソンが非常に多い状況です。Gemini for Google Workspaceは、<strong>Gmail・Docs・Sheets・MeetにAI機能を追加する</strong>Googleの法人向けサービスです。2026年現在、多くの企業がすでに導入対象プランを契約しているにもかかわらず、機能を使いこなせていないケースが目立ちます。本記事では、Gemini for Google Workspaceの基本から各アプリでの具体的な使い方まで、初心者にもわかりやすく解説します。
+      </div>
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">Gemini for Google Workspaceとは？</a></li>
+          <li><a href="#sec2">利用できるプランと費用</a></li>
+          <li><a href="#sec3">有効化から使い始めるまでの3ステップ</a></li>
+          <li><a href="#sec4">Gmailでの活用：メール作成・返信を効率化</a></li>
+          <li><a href="#sec5">Google Docsでの活用：文書作成・要約・翻訳</a></li>
+          <li><a href="#sec6">Google Sheetsでの活用：数式補完とデータ整理</a></li>
+          <li><a href="#sec7">Google Meetでの活用：議事録の自動生成</a></li>
+          <li><a href="#sec8">注意点と運用のコツ</a></li>
+          <li><a href="#sec9">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <!-- 本文 -->
+      <article class="article-body">
+
+        <h2 id="sec1">Gemini for Google Workspaceとは？</h2>
+
+        <p>Gemini for Google Workspaceは、GoogleのAI「Gemini」をGmailやGoogle Docs、Sheets、MeetなどのビジネスアプリケーションにAI機能として組み込むサービスです。スタンドアローンのAIチャットツール（gemini.google.com）とは異なり、<strong>普段使っているGoogleアプリの中でAIが使える</strong>のが最大の特徴です。</p>
+
+        <p>たとえばGmailでメールを書くとき、「件名と状況を入力するだけでAIが本文を下書き」してくれます。Google Docsでは「テーマを入力するだけで文書の叩き台を生成」、Google Meetでは「会議中の議事録をAIが自動作成」してくれます。アプリの切り替えなく、作業の流れの中でAIを活用できるのが最大のメリットです。</p>
+
+        <div class="note-box" style="background:#E8F0FE;border-left:4px solid #1A73E8;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#1565C0;"><strong>💡 ChatGPT・Claude との違い</strong><br>ChatGPTやClaudeは別タブで開いてコピー&amp;ペーストする手間が発生します。Gemini for Google WorkspaceはGmailやDocsの画面内でそのまま使えるため、コンテキストの切り替えコストがゼロです。特にGoogle Workspaceをメインに使っている職場での効果が顕著です。</p>
+        </div>
+
+        <h2 id="sec2">利用できるプランと費用</h2>
+
+        <p>Gemini for Google WorkspaceのAI機能は、Google Workspaceの有料プランに含まれています（2026年7月時点）。</p>
+
+        <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;">
+            <thead>
+              <tr style="background:#1A73E8;color:#FFFFFF;">
+                <th style="padding:12px 16px;text-align:left;">プラン</th>
+                <th style="padding:12px 16px;text-align:left;">月額（1ユーザー）</th>
+                <th style="padding:12px 16px;text-align:left;">GeminiのAI機能</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:#FFFFFF;">
+                <td style="padding:12px 16px;font-weight:700;">Business Starter</td>
+                <td style="padding:12px 16px;">約600円〜</td>
+                <td style="padding:12px 16px;">Gmail・Docs・Sheetsの基本AI機能</td>
+              </tr>
+              <tr style="background:#F9FAFB;">
+                <td style="padding:12px 16px;font-weight:700;">Business Standard</td>
+                <td style="padding:12px 16px;">約1,300円〜</td>
+                <td style="padding:12px 16px;">上記＋Meet議事録自動作成・高度な要約</td>
+              </tr>
+              <tr style="background:#FFFFFF;">
+                <td style="padding:12px 16px;font-weight:700;">Business Plus</td>
+                <td style="padding:12px 16px;">約2,200円〜</td>
+                <td style="padding:12px 16px;">上記＋高度なセキュリティ・管理機能</td>
+              </tr>
+              <tr style="background:#F9FAFB;">
+                <td style="padding:12px 16px;font-weight:700;">Enterprise</td>
+                <td style="padding:12px 16px;">要見積</td>
+                <td style="padding:12px 16px;">全AI機能＋カスタマイズ・高度な管理</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>すでにGoogle Workspaceのビジネスプランを契約している企業は、<strong>追加コストゼロ、または最小コストでGeminiのAI機能を有効化できる可能性</strong>があります。まず自社の契約プランを確認してみましょう。</p>
+
+        <h2 id="sec3">有効化から使い始めるまでの3ステップ</h2>
+
+        <p>Gemini for Google WorkspaceのAI機能を使い始めるには、管理者による有効化と、各ユーザーが実際に触れてみることが必要です。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-ss3-flow.svg" alt="Gemini for Google Workspace 始めるまでの3ステップ：プラン確認・有効化、各アプリで試用、業務フローへ組み込み" width="1200" height="480">
+          <figcaption>図1：Gemini for Google Workspace を始めるまでの3ステップ</figcaption>
+        </figure>
+
+        <p><strong>STEP 1：プランを確認・有効化する（管理者作業）</strong></p>
+        <p><a href="https://admin.google.com" target="_blank" rel="noopener">Google管理コンソール（admin.google.com）</a>にアクセスし、「アプリ」→「Workspace の Google アプリ」→「設定」からGeminiのAI機能が有効になっているか確認します。Business Starter以上のプランでは、デフォルトで有効になっているケースが多いですが、組織のポリシーによって無効化されている場合もあります。所要時間は約30分です。</p>
+
+        <p><strong>STEP 2：各アプリで機能を実際に試す（ユーザー作業）</strong></p>
+        <p>有効化後は、まずGmailで「メールを作成」ボタンの近くに表示される「Geminiで下書きを作成」ボタンを探してみてください。次にGoogle Docsで新規文書を開くと「Geminiで下書きを作成」が表示されます。1〜3日かけて実際に使ってみることで、どの機能が自分の業務に合うかがわかります。</p>
+
+        <p><strong>STEP 3：業務フローに組み込む（チーム展開）</strong></p>
+        <p>個人で使い方を把握したら、チームや部署にナレッジを共有します。よく使うプロンプトのパターンをドキュメントにまとめて社内共有する、月次でAI活用事例を共有する場を設けるなどの工夫で、定着化が加速します。</p>
+
+        <h2 id="sec4">Gmailでの活用：メール作成・返信を効率化</h2>
+
+        <p>Geminiを使ったGmailの活用は、最も即効性があります。特に<strong>定型的なやり取りが多い営業メール・社内連絡・取引先への報告メール</strong>では、作業時間を大幅に削減できます。</p>
+
+        <p><strong>主な活用方法：</strong></p>
+        <ul>
+          <li><strong>メール本文の自動生成</strong>：新規作成画面で「Geminiで下書きを作成」をクリックし、件名と伝えたいポイントを入力するだけで本文が生成されます</li>
+          <li><strong>返信文の自動提案</strong>：受信メールを開いた状態でGeminiを起動すると、メールの内容を読んで返信案を提案してくれます</li>
+          <li><strong>長いスレッドの要約</strong>：「このスレッドを要約して」と入力するだけで、長いメール往来の要点を数行にまとめてくれます</li>
+          <li><strong>文体・トーンの調整</strong>：生成された文章に対して「もっと丁寧に」「箇条書きにして」「英語に翻訳して」などの追加指示が可能です</li>
+        </ul>
+
+        <div class="note-box" style="background:#FEF3C7;border-left:4px solid #F59E0B;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#92400E;"><strong>📝 実際のプロンプト例（Gmail）</strong><br>「株式会社〇〇の〇〇様へ、先日の打ち合わせのお礼と、来週の資料送付の連絡をする。丁寧なビジネスメールで200字程度で書いて。」<br><br>このように状況と文字数を具体的に伝えると、精度の高い下書きが生成されます。</p>
+        </div>
+
+        <h2 id="sec5">Google Docsでの活用：文書作成・要約・翻訳</h2>
+
+        <p>Google Docsでは、GeminiがAI文書アシスタントとして動きます。<strong>報告書・提案書・マニュアルなどの定型文書</strong>作成において特に威力を発揮します。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-ss2-features.svg" alt="Gemini for Google Workspace 4アプリ別の主な活用機能一覧：Gmail、Google Docs、Google Sheets、Google Meet" width="1200" height="520">
+          <figcaption>図2：Gemini for Google Workspace｜4アプリ別の主な活用機能</figcaption>
+        </figure>
+
+        <p><strong>主な活用方法：</strong></p>
+        <ul>
+          <li><strong>文書の叩き台生成</strong>：新規文書でGeminiを起動し「〇〇に関する提案書を書いて。目的は〇〇で、読者は〇〇部長」と入力するだけで構成付きの下書きが生成されます</li>
+          <li><strong>長文の要約・サマリー作成</strong>：既存の長い文書を貼り付け「この文書を300字で要約して」と指示できます。会議前の資料把握に便利です</li>
+          <li><strong>文章品質の改善</strong>：作成した文章に対して「誤字を直して」「箇条書きにして」「もっと簡潔にして」といった編集指示が可能です</li>
+          <li><strong>多言語翻訳</strong>：「英語に翻訳して」「中国語に翻訳して」と入力するだけで、文書全体または選択した部分を翻訳できます</li>
+        </ul>
+
+        <p>特に便利なのは、<strong>既存の社内文書・議事録・メールの文章をDocsに貼り付けて、Geminiに要約・再構成させる</strong>ワークフローです。情報の整理コストが大幅に下がります。</p>
+
+        <h2 id="sec6">Google Sheetsでの活用：数式補完とデータ整理</h2>
+
+        <p>Google SheetsのGemini機能は、<strong>Excelや関数に不慣れなビジネスパーソン</strong>にとって特に心強い機能です。「やりたいことを日本語で入力するだけで、必要な数式を提案してくれる」のが最大の特徴です。</p>
+
+        <p><strong>主な活用方法：</strong></p>
+        <ul>
+          <li><strong>数式・関数の提案</strong>：Sheetsのサイドパネルで「A列の合計をB列の条件でフィルタして出したい」と入力すると、対応するSUMIF関数などを提案してくれます</li>
+          <li><strong>データの傾向分析</strong>：「このデータで売上が高い月はどこか」「異常値がある行はどれか」といった質問をすると、AIが分析してくれます</li>
+          <li><strong>データの分類・タグ付け</strong>：テキストリスト（顧客名・商品名など）をカテゴリ分けしたいとき、「このリストをA・B・Cのカテゴリに分類して」と指示するだけで自動分類されます</li>
+          <li><strong>表のフォーマット整形</strong>：コピー&amp;ペーストしたバラバラなデータを「統一フォーマットに整えて」と指示して整形できます</li>
+        </ul>
+
+        <div class="note-box" style="background:#F1FFF5;border-left:4px solid #34A853;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#1B5E20;"><strong>📊 Sheetsで特に便利なユースケース</strong><br>「顧客リスト500件のうち、都道府県が空欄になっている行を抽出して」「このアンケートの自由記述欄をポジティブ/ネガティブ/中立で分類して」——こうした繰り返し作業の自動化が、Gemini × Sheetsの組み合わせで実現できます。</p>
+        </div>
+
+        <h2 id="sec7">Google Meetでの活用：議事録の自動生成</h2>
+
+        <p>Google MeetのGemini機能（Business Standard以上で利用可能）は、会議の生産性を直接的に向上させます。特に<strong>議事録担当者の負担軽減</strong>と<strong>欠席者のキャッチアップ効率化</strong>に大きな効果があります。</p>
+
+        <p><strong>主な活用方法：</strong></p>
+        <ul>
+          <li><strong>リアルタイム議事録の自動生成</strong>：会議開始後に「メモを取る」ボタンをONにすると、発言内容をAIがリアルタイムで記録します。会議終了後にGoogle Docsへ自動保存されます</li>
+          <li><strong>アクションアイテムの自動抽出</strong>：議事録から「誰が・何を・いつまでに」というToDoをGeminiが自動抽出してくれます</li>
+          <li><strong>リアルタイム字幕・翻訳</strong>：外国語の会議でも字幕をリアルタイムで表示。英語・中国語などへの翻訳字幕表示も可能です</li>
+          <li><strong>録画した会議のサマリー生成</strong>：会議に参加できなかった場合でも、録画＋Gemini要約を使えば短時間で内容を把握できます</li>
+        </ul>
+
+        <p>議事録作成の自動化については、<a href="blog-x.html">「議事録作成をAIで自動化する手順」</a>でさらに詳しく解説しています。あわせてご参照ください。</p>
+
+        <h2 id="sec8">注意点と運用のコツ</h2>
+
+        <p>Gemini for Google Workspaceを業務で活用する際は、以下の点に注意が必要です。</p>
+
+        <p><strong>① 機密情報・個人情報の入力に注意する</strong></p>
+        <p>GoogleはWorkspaceのデータをGeminiのモデルトレーニングに使用しないと明言していますが、社内ルールとして「顧客の個人情報・機密性の高い契約情報はAIに入力しない」というガイドラインを設けておくことを推奨します。</p>
+
+        <p><strong>② 生成内容は必ず確認・編集する</strong></p>
+        <p>AIが生成したメール・文書・要約には誤りや不自然な表現が含まれることがあります。そのまま使うのではなく、人間が確認・編集したうえで送信・共有することが大前提です。</p>
+
+        <p><strong>③ 管理者と利用者でルールを統一する</strong></p>
+        <p>機能の有効・無効化は管理者が一元管理できます。組織全体で「Geminiを使ってよい用途・使ってはいけない用途」を事前に整理し、ガイドラインとして共有しておくと、混乱なく展開できます。</p>
+
+        <p><strong>④ まず「1つのアプリ・1つの用途」から始める</strong></p>
+        <p>全機能を一度に使いこなそうとせず、まずGmailのメール下書き生成から始めて慣れていくのが最も定着しやすいアプローチです。効果を実感したチームメンバーが自発的に広めてくれるようになります。</p>
+
+        <h2 id="sec9">まとめ</h2>
+
+        <p>Gemini for Google Workspaceは、すでにGoogle Workspaceを使っている企業にとって<strong>追加導入コストが最小で始められるAI機能</strong>です。Gmail・Docs・Sheets・Meetのそれぞれで、日常業務の繰り返し作業を大幅に効率化できます。</p>
+
+        <ul>
+          <li><strong>メール作成・返信の効率化</strong> → Gmail × Gemini</li>
+          <li><strong>文書作成・長文要約・翻訳</strong> → Google Docs × Gemini</li>
+          <li><strong>数式補完・データ整理・分類</strong> → Google Sheets × Gemini</li>
+          <li><strong>議事録自動生成・ToDoの抽出</strong> → Google Meet × Gemini</li>
+        </ul>
+
+        <p>まずは管理コンソールでGeminiのAI機能が有効になっているか確認し、1つのアプリで試してみることから始めてみてください。「AIを使う」という特別な準備なく、普段の業務の延長線上でAIを体験できます。</p>
+
+        <div class="note-box" style="background:#FEF3C7;border-left:4px solid #F59E0B;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0;">
+          <p style="margin:0;font-size:14px;color:#92400E;"><strong>🔧 「Gemini連携ツールを自社仕様にカスタマイズしたい」方へ</strong><br>Gemini for Google Workspaceを活用した社内ツールの開発・カスタマイズ（AppScript連携・データ連携・自動化フロー構築など）を検討中の企業は、ANKENのスポット発注をご活用ください。Google Workspaceの開発経験があるエンジニアが週末・スポット対応で請け負います。</p>
+        </div>
+
+        <!-- CTAボックス -->
+        <div class="cta-box">
+          <div class="cta-box__title">Google Workspace × AI活用をスポット外注で実現する</div>
+          <p class="cta-box__desc">Gemini API連携・AppScript自動化・スプレッドシートBot開発など、Google Workspace環境でのAI開発をスポットで依頼できます。固定費ゼロ・週末対応も可能です。</p>
+          <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_ss',event_label:'bottom_cta'})">👉 無料でスポット依頼を相談する</a>
+          <p class="cta-box__sub">初回相談は無料です。要件が固まっていなくてもOKです。</p>
+        </div>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-rr.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">FDEに依頼できる業務範囲と活用事例3選</span>
+          </a>
+          <a href="blog-a.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">即戦力スポットエンジニアの確保方法</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">AI活用をスポット外注で実現</div>
+        <p class="sidebar-cta__desc">Google Workspace連携・Gemini API対応エンジニアへ週末スポット発注。固定費ゼロで始められます。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_ss',event_label:'sidebar_cta'})">無料でスポット依頼を相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-q.html">ChatGPT・Claude・Gemini の違いと使い分け完全ガイド</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-x.html">議事録作成をAIで自動化する手順</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-ee.html">社内AIリテラシー研修の進め方</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8FAF9" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#1A2E25">既存ベンダー対応 vs スポット外注 比較</text>
+
+  <!-- Column headers -->
+  <!-- Header: 比較項目 -->
+  <rect x="40" y="76" width="260" height="54" rx="8" fill="#E8F0EC"/>
+  <text x="170" y="109" text-anchor="middle" font-size="15" font-weight="700" fill="#2D6A4F">比較項目</text>
+
+  <!-- Header: 既存ベンダー -->
+  <rect x="320" y="76" width="380" height="54" rx="8" fill="#FDE8E8"/>
+  <text x="510" y="109" text-anchor="middle" font-size="15" font-weight="700" fill="#B91C1C">既存ベンダーへの依頼</text>
+
+  <!-- Header: スポット外注 -->
+  <rect x="720" y="76" width="440" height="54" rx="8" fill="#D1FAE5"/>
+  <text x="940" y="109" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">スポット外注（ANKEN）</text>
+
+  <!-- Row 1: 初動対応速度 -->
+  <rect x="40" y="148" width="260" height="90" rx="8" fill="#EFF7F2" stroke="#C3DDD0" stroke-width="1"/>
+  <text x="170" y="185" text-anchor="middle" font-size="14" font-weight="700" fill="#1A2E25">⏱ 初動対応速度</text>
+  <text x="170" y="210" text-anchor="middle" font-size="12" fill="#4B7A60">（依頼から対応開始まで）</text>
+
+  <rect x="320" y="148" width="380" height="90" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="510" y="183" text-anchor="middle" font-size="17" font-weight="700" fill="#DC2626">1〜4週間待ち</text>
+  <text x="510" y="210" text-anchor="middle" font-size="12" fill="#991B1B">要件確認・見積もり・社内調整に時間がかかる</text>
+
+  <rect x="720" y="148" width="440" height="90" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="940" y="183" text-anchor="middle" font-size="17" font-weight="700" fill="#059669">即日〜3営業日</text>
+  <text x="940" y="210" text-anchor="middle" font-size="12" fill="#065F46">タスクが整理できていれば最短当日にマッチング可能</text>
+
+  <!-- Row 2: 小規模改修コスト -->
+  <rect x="40" y="256" width="260" height="90" rx="8" fill="#EFF7F2" stroke="#C3DDD0" stroke-width="1"/>
+  <text x="170" y="293" text-anchor="middle" font-size="14" font-weight="700" fill="#1A2E25">💰 小規模改修コスト</text>
+  <text x="170" y="318" text-anchor="middle" font-size="12" fill="#4B7A60">（バグ修正・機能追加など）</text>
+
+  <rect x="320" y="256" width="380" height="90" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="510" y="291" text-anchor="middle" font-size="17" font-weight="700" fill="#DC2626">最低10〜30万円〜</text>
+  <text x="510" y="318" text-anchor="middle" font-size="12" fill="#991B1B">管理費・最低費用が発生しやすく割高になりがち</text>
+
+  <rect x="720" y="256" width="440" height="90" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="940" y="291" text-anchor="middle" font-size="17" font-weight="700" fill="#059669">タスク単価（2〜30万円）</text>
+  <text x="940" y="318" text-anchor="middle" font-size="12" fill="#065F46">中間マージンなし・必要な作業分だけ発注できる</text>
+
+  <!-- Row 3: 発注の柔軟性 -->
+  <rect x="40" y="364" width="260" height="90" rx="8" fill="#EFF7F2" stroke="#C3DDD0" stroke-width="1"/>
+  <text x="170" y="401" text-anchor="middle" font-size="14" font-weight="700" fill="#1A2E25">🔄 発注の柔軟性</text>
+  <text x="170" y="426" text-anchor="middle" font-size="12" fill="#4B7A60">（案件単位 vs タスク単位）</text>
+
+  <rect x="320" y="364" width="380" height="90" rx="8" fill="#FEF2F2" stroke="#FECACA" stroke-width="1"/>
+  <text x="510" y="399" text-anchor="middle" font-size="17" font-weight="700" fill="#DC2626">年間契約・担当者固定</text>
+  <text x="510" y="426" text-anchor="middle" font-size="12" fill="#991B1B">担当者の空き次第で依頼ができないことも</text>
+
+  <rect x="720" y="364" width="440" height="90" rx="8" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="940" y="399" text-anchor="middle" font-size="17" font-weight="700" fill="#059669">タスク単位・必要な時だけ</text>
+  <text x="940" y="426" text-anchor="middle" font-size="12" fill="#065F46">月ごとの固定費不要・複数エンジニアに並行発注も可</text>
+
+  <!-- VS badge -->
+  <circle cx="298" cy="296" r="22" fill="#2D6A4F"/>
+  <text x="298" y="302" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+</svg>

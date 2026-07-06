@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6D28D9"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#ECFEFF" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="#0E4D6A">採用面接AI化の3ステップ</text>
+
+  <!-- ========== STEP 1 ========== -->
+  <rect x="60" y="90" width="300" height="340" rx="16" fill="#FFFFFF" stroke="#6D28D9" stroke-width="2.5"/>
+
+  <!-- ステップ番号バッジ -->
+  <circle cx="210" cy="130" r="30" fill="#6D28D9"/>
+  <text x="210" y="138" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">01</text>
+
+  <!-- アイコン：マイク -->
+  <circle cx="210" cy="210" r="28" fill="#EDE9FE"/>
+  <rect x="200" y="190" width="20" height="32" rx="10" fill="#6D28D9"/>
+  <path d="M194 220 Q194 240 210 240 Q226 240 226 220" stroke="#6D28D9" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <line x1="210" y1="240" x2="210" y2="252" stroke="#6D28D9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="252" x2="220" y2="252" stroke="#6D28D9" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="210" y="285" text-anchor="middle" font-size="18" font-weight="900" fill="#3B0764">音声文字起こし</text>
+  <text x="210" y="308" text-anchor="middle" font-size="14" fill="#5B21B6">自動化</text>
+
+  <text x="210" y="340" text-anchor="middle" font-size="13" fill="#4C1D95">WhisperやNottaで</text>
+  <text x="210" y="358" text-anchor="middle" font-size="13" fill="#4C1D95">面接音声を即テキスト化。</text>
+  <text x="210" y="376" text-anchor="middle" font-size="13" fill="#4C1D95">ChatGPTで議事録を</text>
+  <text x="210" y="394" text-anchor="middle" font-size="13" fill="#4C1D95">自動整形する。</text>
+
+  <!-- 矢印1 -->
+  <line x1="372" y1="260" x2="428" y2="260" stroke="#6D28D9" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- ========== STEP 2 ========== -->
+  <rect x="450" y="90" width="300" height="340" rx="16" fill="#FFFFFF" stroke="#0891B2" stroke-width="2.5"/>
+
+  <circle cx="600" cy="130" r="30" fill="#0891B2"/>
+  <text x="600" y="138" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">02</text>
+
+  <!-- アイコン：チェックリスト -->
+  <rect x="576" y="186" width="48" height="50" rx="6" fill="#CFFAFE"/>
+  <line x1="584" y1="200" x2="616" y2="200" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="584" y1="212" x2="616" y2="212" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="584" y1="224" x2="600" y2="224" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="622" cy="200" r="5" fill="#0891B2" opacity="0.3"/>
+  <path d="M618 211 l3 4 l6-7" stroke="#0891B2" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="600" y="285" text-anchor="middle" font-size="18" font-weight="900" fill="#0E4D6A">評価補助プロンプト</text>
+  <text x="600" y="308" text-anchor="middle" font-size="14" fill="#0369A1">で評価を標準化</text>
+
+  <text x="600" y="340" text-anchor="middle" font-size="13" fill="#075985">評価軸ごとに発言を</text>
+  <text x="600" y="358" text-anchor="middle" font-size="13" fill="#075985">AIが抽出・分析。</text>
+  <text x="600" y="376" text-anchor="middle" font-size="13" fill="#075985">面接官間の評価ブレを</text>
+  <text x="600" y="394" text-anchor="middle" font-size="13" fill="#075985">大幅に減らす。</text>
+
+  <!-- 矢印2 -->
+  <line x1="762" y1="260" x2="818" y2="260" stroke="#6D28D9" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- ========== STEP 3 ========== -->
+  <rect x="840" y="90" width="300" height="340" rx="16" fill="#FFFFFF" stroke="#6D28D9" stroke-width="2.5"/>
+
+  <circle cx="990" cy="130" r="30" fill="#6D28D9"/>
+  <text x="990" y="138" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">03</text>
+
+  <!-- アイコン：メール/文書 -->
+  <rect x="966" y="185" width="48" height="36" rx="6" fill="#EDE9FE"/>
+  <polyline points="966,185 990,205 1014,185" stroke="#6D28D9" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="990" y="242" text-anchor="middle" font-size="11" fill="#6D28D9">✦✦✦</text>
+
+  <text x="990" y="285" text-anchor="middle" font-size="18" font-weight="900" fill="#3B0764">フィードバック文</text>
+  <text x="990" y="308" text-anchor="middle" font-size="14" fill="#5B21B6">AI生成テンプレート整備</text>
+
+  <text x="990" y="340" text-anchor="middle" font-size="13" fill="#4C1D95">不採用通知・合格通知・</text>
+  <text x="990" y="358" text-anchor="middle" font-size="13" fill="#4C1D95">選考理由文を評価シートから</text>
+  <text x="990" y="376" text-anchor="middle" font-size="13" fill="#4C1D95">自動生成。文書化工数を</text>
+  <text x="990" y="394" text-anchor="middle" font-size="13" fill="#4C1D95">大幅に削減する。</text>
+
+  <!-- 下部メッセージ -->
+  <rect x="200" y="448" width="800" height="22" rx="8" fill="#6D28D9" opacity="0.12"/>
+  <text x="600" y="464" text-anchor="middle" font-size="13" fill="#3B0764" font-weight="700">まずSTEP 1の文字起こし自動化だけを試し、効果を確認してから段階的に導入することを推奨します</text>
+</svg>

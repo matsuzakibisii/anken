@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8FAFF" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="22" font-weight="900" fill="#1D4ED8">FDEに依頼できる3つの業務カテゴリ</text>
+
+  <!-- カード1：AI・ツール選定とPoC -->
+  <rect x="40" y="80" width="340" height="370" rx="14" fill="#1D4ED8"/>
+  <rect x="40" y="80" width="340" height="80" rx="14" fill="#1D4ED8"/>
+  <rect x="40" y="140" width="340" height="20" rx="0" fill="#1D4ED8"/>
+
+  <!-- カード1 アイコン背景 -->
+  <circle cx="210" cy="145" r="34" fill="rgba(255,255,255,0.15)"/>
+  <!-- 虫眼鏡アイコン -->
+  <circle cx="205" cy="140" r="14" fill="none" stroke="white" stroke-width="3.5"/>
+  <line x1="215" y1="150" x2="226" y2="161" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+
+  <text x="210" y="198" text-anchor="middle" font-size="17" font-weight="900" fill="white">① AI・ツール選定</text>
+  <text x="210" y="218" text-anchor="middle" font-size="17" font-weight="900" fill="white">PoC設計・実装</text>
+
+  <rect x="60" y="238" width="300" height="1.5" fill="rgba(255,255,255,0.3)"/>
+
+  <text x="210" y="268" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">複数ツールの比較検証・評価</text>
+  <text x="210" y="295" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">PoC環境構築と試験運用</text>
+  <text x="210" y="322" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">業務用プロンプトの設計・検証</text>
+  <text x="210" y="349" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">費用対効果レポートの作成</text>
+
+  <!-- 期間バッジ -->
+  <rect x="110" y="400" width="200" height="32" rx="16" fill="rgba(255,255,255,0.18)"/>
+  <text x="210" y="421" text-anchor="middle" font-size="13" font-weight="700" fill="white">目安：1〜2週間のスポット稼働</text>
+
+  <!-- カード2：業務フローへのAI組み込み -->
+  <rect x="430" y="80" width="340" height="370" rx="14" fill="#FB923C"/>
+
+  <!-- カード2 アイコン背景 -->
+  <circle cx="600" cy="145" r="34" fill="rgba(255,255,255,0.15)"/>
+  <!-- ギアアイコン -->
+  <circle cx="600" cy="145" r="11" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="600" cy="145" r="5" fill="white"/>
+  <line x1="600" y1="130" x2="600" y2="134" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="600" y1="156" x2="600" y2="160" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="585" y1="145" x2="589" y2="145" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="611" y1="145" x2="615" y2="145" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="589.4" y1="134.4" x2="592.2" y2="137.2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="607.8" y1="152.8" x2="610.6" y2="155.6" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="600" y="198" text-anchor="middle" font-size="17" font-weight="900" fill="white">② 既存業務フローへの</text>
+  <text x="600" y="218" text-anchor="middle" font-size="17" font-weight="900" fill="white">AI組み込み</text>
+
+  <rect x="450" y="238" width="300" height="1.5" fill="rgba(255,255,255,0.3)"/>
+
+  <text x="600" y="268" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.95)" font-weight="400">Slack・Notion・kintone等とのAPI連携</text>
+  <text x="600" y="295" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.95)" font-weight="400">業務最適化プロンプト設計・実装</text>
+  <text x="600" y="322" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.95)" font-weight="400">RPAやバッチ処理との統合</text>
+  <text x="600" y="349" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.95)" font-weight="400">動作検証・現場フィードバック対応</text>
+
+  <!-- 期間バッジ -->
+  <rect x="500" y="400" width="200" height="32" rx="16" fill="rgba(255,255,255,0.18)"/>
+  <text x="600" y="421" text-anchor="middle" font-size="13" font-weight="700" fill="white">目安：2〜4週間のスポット稼働</text>
+
+  <!-- カード3：社内展開・研修・伴走支援 -->
+  <rect x="820" y="80" width="340" height="370" rx="14" fill="#0F766E"/>
+
+  <!-- カード3 アイコン背景 -->
+  <circle cx="990" cy="145" r="34" fill="rgba(255,255,255,0.15)"/>
+  <!-- 人物アイコン -->
+  <circle cx="990" cy="135" r="8" fill="white"/>
+  <path d="M975 162 Q990 155 1005 162" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <text x="990" y="198" text-anchor="middle" font-size="17" font-weight="900" fill="white">③ 社内展開・研修</text>
+  <text x="990" y="218" text-anchor="middle" font-size="17" font-weight="900" fill="white">伴走支援</text>
+
+  <rect x="840" y="238" width="300" height="1.5" fill="rgba(255,255,255,0.3)"/>
+
+  <text x="990" y="268" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">社内向けマニュアル・手順書作成</text>
+  <text x="990" y="295" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">操作研修の実施（部署別対応可）</text>
+  <text x="990" y="322" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">プロンプト集の整備・Notion化</text>
+  <text x="990" y="349" text-anchor="middle" font-size="13.5" fill="rgba(255,255,255,0.92)" font-weight="400">利用状況モニタリングと改善提案</text>
+
+  <!-- 期間バッジ -->
+  <rect x="890" y="400" width="200" height="32" rx="16" fill="rgba(255,255,255,0.18)"/>
+  <text x="990" y="421" text-anchor="middle" font-size="13" font-weight="700" fill="white">目安：1〜3ヶ月の継続稼働</text>
+
+  <!-- 下部注記 -->
+  <text x="600" y="480" text-anchor="middle" font-size="12" fill="#6B7280">※ いずれもANKENのスポット外注（固定費ゼロ・タスク単位）で発注可能です</text>
+</svg>

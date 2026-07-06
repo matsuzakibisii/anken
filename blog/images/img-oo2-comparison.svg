@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F5F3FF" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#3B0764">AI導入前後の面接業務工数比較（1回の面接あたりの目安）</text>
+
+  <!-- 凡例 -->
+  <rect x="340" y="68" width="18" height="18" rx="4" fill="#6D28D9"/>
+  <text x="364" y="82" font-size="15" fill="#3B0764" font-weight="700">AI導入前</text>
+  <rect x="480" y="68" width="18" height="18" rx="4" fill="#0891B2"/>
+  <text x="504" y="82" font-size="15" fill="#3B0764" font-weight="700">AI導入後</text>
+
+  <!-- === 行1: 議事録作成 === -->
+  <!-- ラベル -->
+  <text x="170" y="140" text-anchor="end" font-size="16" font-weight="700" fill="#1E0A3C">議事録作成</text>
+
+  <!-- 導入前バー（45分 / 最大60分 = 750px幅で換算 → 562px） -->
+  <rect x="185" y="120" width="562" height="30" rx="6" fill="#6D28D9"/>
+  <text x="757" y="141" font-size="15" font-weight="700" fill="#6D28D9">45分</text>
+
+  <!-- 導入後バー（8分 → 100px） -->
+  <rect x="185" y="158" width="100" height="30" rx="6" fill="#0891B2"/>
+  <text x="295" y="179" font-size="15" font-weight="700" fill="#0891B2">8分</text>
+
+  <!-- 削減表示 -->
+  <text x="820" y="157" font-size="13" fill="#7C3AED" font-weight="700">▼ 約82%削減</text>
+
+  <!-- === 行2: 評価シート記入 === -->
+  <text x="170" y="248" text-anchor="end" font-size="16" font-weight="700" fill="#1E0A3C">評価シート記入</text>
+
+  <!-- 導入前バー（25分 → 312px） -->
+  <rect x="185" y="228" width="312" height="30" rx="6" fill="#6D28D9"/>
+  <text x="507" y="249" font-size="15" font-weight="700" fill="#6D28D9">25分</text>
+
+  <!-- 導入後バー（12分 → 150px） -->
+  <rect x="185" y="266" width="150" height="30" rx="6" fill="#0891B2"/>
+  <text x="345" y="287" font-size="15" font-weight="700" fill="#0891B2">12分</text>
+
+  <!-- 削減表示 -->
+  <text x="820" y="265" font-size="13" fill="#7C3AED" font-weight="700">▼ 約52%削減</text>
+
+  <!-- === 行3: フィードバック文作成 === -->
+  <text x="170" y="356" text-anchor="end" font-size="16" font-weight="700" fill="#1E0A3C">フィードバック文作成</text>
+
+  <!-- 導入前バー（25分 → 312px） -->
+  <rect x="185" y="336" width="312" height="30" rx="6" fill="#6D28D9"/>
+  <text x="507" y="357" font-size="15" font-weight="700" fill="#6D28D9">25分</text>
+
+  <!-- 導入後バー（5分 → 62px） -->
+  <rect x="185" y="374" width="62" height="30" rx="6" fill="#0891B2"/>
+  <text x="257" y="395" font-size="15" font-weight="700" fill="#0891B2">5分</text>
+
+  <!-- 削減表示 -->
+  <text x="820" y="373" font-size="13" fill="#7C3AED" font-weight="700">▼ 約80%削減</text>
+
+  <!-- 合計ボックス -->
+  <rect x="185" y="430" width="960" height="52" rx="10" fill="#3B0764"/>
+  <text x="605" y="450" text-anchor="middle" font-size="15" fill="#DDD6FE" font-weight="700">面接1回あたりの合計工数</text>
+  <text x="440" y="472" text-anchor="middle" font-size="20" font-weight="900" fill="#C4B5FD">AI導入前：合計約95分</text>
+  <text x="770" y="472" text-anchor="middle" font-size="20" font-weight="900" fill="#67E8F9">AI導入後：合計約25分</text>
+  <text x="605" y="472" text-anchor="middle" font-size="18" fill="#F9A8D4">→</text>
+</svg>

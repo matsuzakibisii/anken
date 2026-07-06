@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <style>text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }</style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#FAFAF7" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="46" text-anchor="middle" font-size="21" font-weight="900" fill="#1E1B4B">AI研修100万円に助成金を適用した場合のコスト比較（社員20名・2日間・16時間）</text>
+
+  <!-- ===== 左：助成金なし ===== -->
+  <rect x="80" y="80" width="460" height="370" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="310" y="115" text-anchor="middle" font-size="17" font-weight="700" fill="#475569">助成金なし</text>
+
+  <!-- 棒グラフ：100万円 -->
+  <rect x="160" y="140" width="300" height="240" rx="8" fill="#94A3B8"/>
+  <text x="310" y="230" text-anchor="middle" font-size="32" font-weight="900" fill="#FFFFFF">100万円</text>
+  <text x="310" y="262" text-anchor="middle" font-size="15" fill="#F1F5F9">全額自己負担</text>
+
+  <!-- 内訳ラベル -->
+  <text x="310" y="410" text-anchor="middle" font-size="14" fill="#64748B">研修費：100万円</text>
+  <text x="310" y="432" text-anchor="middle" font-size="14" fill="#64748B">自己負担：<tspan font-weight="900" fill="#DC2626">100万円</tspan></text>
+
+  <!-- ===== 右：助成金あり ===== -->
+  <rect x="660" y="80" width="460" height="370" rx="14" fill="#FFFFFF" stroke="#3730A3" stroke-width="2"/>
+  <rect x="660" y="80" width="460" height="46" rx="14" fill="#3730A3"/>
+  <rect x="660" y="106" width="460" height="20" fill="#3730A3"/>
+  <text x="890" y="110" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">助成金あり（中小企業・75%）</text>
+
+  <!-- 積み上げ棒グラフ -->
+  <!-- 助成金部分（75万円） 国負担 -->
+  <rect x="740" y="140" width="300" height="180" rx="8" fill="#D97706"/>
+  <text x="890" y="220" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">75万円</text>
+  <text x="890" y="246" text-anchor="middle" font-size="13" fill="#FEF3C7">国の助成（経費の75%）</text>
+
+  <!-- 自己負担部分（25万円） -->
+  <rect x="740" y="320" width="300" height="60" rx="8" fill="#3730A3"/>
+  <text x="890" y="358" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">25万円</text>
+
+  <!-- 賃金助成バッジ -->
+  <rect x="700" y="396" width="380" height="38" rx="8" fill="#EEF2FF"/>
+  <text x="890" y="421" text-anchor="middle" font-size="14" fill="#3730A3" font-weight="700">＋賃金助成：32万円（1,000円×16h×20名）</text>
+
+  <!-- 自己負担ラベル -->
+  <text x="890" y="450" text-anchor="middle" font-size="14" fill="#3730A3">研修費の自己負担：<tspan font-size="18" font-weight="900" fill="#1E1B4B">25万円</tspan></text>
+
+  <!-- 矢印 -->
+  <line x1="550" y1="270" x2="650" y2="270" stroke="#D97706" stroke-width="3" marker-end="url(#arrowOrange)"/>
+  <defs>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D97706"/>
+    </marker>
+  </defs>
+  <text x="600" y="260" text-anchor="middle" font-size="13" fill="#D97706" font-weight="700">75%</text>
+  <text x="600" y="278" text-anchor="middle" font-size="13" fill="#D97706" font-weight="700">削減</text>
+</svg>
