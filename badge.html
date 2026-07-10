@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>無料｜ANKEN 稼働ステータス・AIスキルバッジ ジェネレーター｜プロフィールに貼るだけ</title>
+<meta name="description" content="週末稼働・副業の空き状況やAIスキルをSNSやポートフォリオに貼れる無料バッジを作成。ANKENの登録メンバーでなくてもどなたでも無料でご利用いただけます。" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ANKEN 稼働ステータス・AIスキルバッジ ジェネレーター（無料）" />
+<meta property="og:description" content="週末稼働の空き状況や得意なAIスキルを可視化する無料バッジ。プロフィールやSNSに貼るだけ。" />
+<meta property="og:url" content="https://anken.bisii.co.jp/badge.html" />
+<meta property="og:site_name" content="ANKEN（アンケン）" />
+<meta property="og:locale" content="ja_JP" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="theme-color" content="#0B1221" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0B1221',
+          midnight: '#101935',
+          accent: '#F59E0B',
+          accentDark: '#B45309',
+          accentText: '#92400E',
+          highlight: '#FACC15',
+          softgray: '#FAF8F2',
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<style>
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body { font-family: 'Noto Sans JP', system-ui, sans-serif; line-break: strict; overflow-x: hidden; }
+  .ja-phrase { word-break: keep-all; overflow-wrap: break-word; line-break: strict; }
+  @supports (word-break: auto-phrase) { .ja-auto { word-break: auto-phrase; } }
+  textarea { resize: none; }
+  .badge-preview-wrap svg { display: block; max-width: 100%; height: auto; }
+  .copied-flash { animation: flash 1.1s ease; }
+  @keyframes flash { 0% { background-color: #FACC15; } 100% { background-color: transparent; } }
+  .swatch input:checked + span { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0B1221; }
+  .opt-card:has(input:checked) { border-color: #F59E0B; background: rgba(245,158,11,0.06); }
+</style>
+</head>
+
+<body class="bg-white text-ink antialiased ja-auto">
+
+<!-- ============================== HEADER ============================== -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="inline-flex w-8 h-8 rounded-lg bg-ink items-center justify-center">
+        <img src="logo-40.png" class="w-7 h-7" alt="ANKEN">
+      </span>
+      <span class="font-bold tracking-tight text-lg"><span class="text-accentText">ANKEN</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+      <a href="index.html" class="hover:text-ink transition">サービストップ</a>
+      <a href="member.html" class="hover:text-ink transition">副業メンバー登録</a>
+      <a href="contact.html" class="hover:text-ink transition">お問い合わせ</a>
+    </nav>
+    <a href="member.html#register" class="inline-flex items-center bg-highlight hover:bg-yellow-300 text-ink font-black px-4 py-2 rounded-lg text-xs sm:text-sm transition">無料で登録する</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="relative overflow-hidden bg-ink pt-16 pb-20 md:pt-20 md:pb-24">
+  <div class="absolute top-10 right-10 w-56 h-56 rounded-full bg-accent/10 blur-3xl"></div>
+  <div class="absolute bottom-0 left-8 w-64 h-64 rounded-full bg-highlight/10 blur-3xl"></div>
+  <div class="relative max-w-4xl mx-auto px-4 md:px-6 text-center">
+    <span class="inline-flex items-center gap-1.5 bg-accent/20 border border-accent/30 text-accent text-xs font-bold tracking-widest uppercase px-3 py-1.5 rounded-full mb-6">
+      Free Widget
+    </span>
+    <h1 class="text-white text-3xl md:text-5xl font-black leading-tight tracking-tight mb-5">
+      <span class="phrase">稼働ステータス・AIスキルバッジを、</span><br>
+      <span class="text-highlight phrase">無料でつくる。</span>
+    </h1>
+    <p class="text-white/70 text-base md:text-lg max-w-2xl mx-auto leading-relaxed ja-auto">
+      「今週末は空いてます」「このAIスキルが得意です」を、ひと目で伝えるバッジです。X（Twitter）のプロフィール、note、ポートフォリオサイトに貼るだけ。<br class="hidden md:block">
+      ANKENに登録していない方も、どなたでも無料でお使いいただけます。
+    </p>
+  </div>
+</section>
+
+<!-- ===== GENERATOR ===== -->
+<section class="bg-softgray py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+
+      <!-- FORM -->
+      <div class="lg:col-span-2 bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm h-fit">
+        <p class="text-accent text-xs font-bold tracking-widest uppercase mb-2">Step 1</p>
+        <h2 class="text-xl font-black text-ink mb-6">バッジの内容を選ぶ</h2>
+
+        <label class="block text-sm font-bold text-gray-700 mb-1.5">バッジの種類</label>
+        <div class="grid grid-cols-2 gap-3 mb-5">
+          <label class="opt-card flex items-center justify-center gap-2 border border-gray-200 rounded-lg px-3 py-2.5 text-sm cursor-pointer transition">
+            <input type="radio" name="f-type" value="status" checked class="accent-accent"> 稼働ステータス
+          </label>
+          <label class="opt-card flex items-center justify-center gap-2 border border-gray-200 rounded-lg px-3 py-2.5 text-sm cursor-pointer transition">
+            <input type="radio" name="f-type" value="skill" class="accent-accent"> AIスキル
+          </label>
+        </div>
+
+        <label class="block text-sm font-bold text-gray-700 mb-1.5">お名前・屋号（任意）</label>
+        <input id="f-name" type="text" maxlength="16" placeholder="例）田中太郎"
+          class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm mb-5 focus:outline-none focus:ring-2 focus:ring-accent/40">
+
+        <!-- 稼働ステータス -->
+        <div id="status-section">
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">稼働ステータス</label>
+          <select id="f-status" class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm mb-5 focus:outline-none focus:ring-2 focus:ring-accent/40">
+            <option value="available">今週末 稼働OK</option>
+            <option value="consult">相談受付中</option>
+            <option value="full">只今 満稿</option>
+          </select>
+        </div>
+
+        <!-- AIスキル -->
+        <div id="skill-section" class="hidden">
+          <label class="block text-sm font-bold text-gray-700 mb-1.5">AIスキル（最大3つまで選択）</label>
+          <div class="grid grid-cols-1 gap-2 mb-2" id="skill-list">
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="生成AI自動化"> 生成AI業務自動化
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="RAG構築"> RAG・社内ナレッジ検索構築
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="データ分析"> データ分析・BI
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="プロンプト設計"> プロンプトエンジニアリング
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="AI-OCR"> AI-OCR・書類自動化
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="Notion/Slack連携"> Notion・Slack連携
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="ノーコード開発"> ノーコード開発
+            </label>
+            <label class="opt-card flex items-center gap-2 text-sm border border-gray-200 rounded-lg px-3 py-2 cursor-pointer transition">
+              <input type="checkbox" class="f-skill accent-accent" value="API連携"> API・システム連携
+            </label>
+          </div>
+          <p class="text-xs text-gray-400 mb-5" id="skill-count-note">0 / 3 選択中</p>
+        </div>
+
+        <label class="block text-sm font-bold text-gray-700 mb-1.5">カラー</label>
+        <div class="grid grid-cols-5 gap-2 mb-5">
+          <label class="swatch flex flex-col items-center gap-1.5 cursor-pointer">
+            <input type="radio" name="f-color" value="ink" checked class="sr-only">
+            <span class="w-8 h-8 rounded-full border border-black/10" style="background:#0B1221"></span>
+            <span class="text-[10px] text-gray-500">ダーク</span>
+          </label>
+          <label class="swatch flex flex-col items-center gap-1.5 cursor-pointer">
+            <input type="radio" name="f-color" value="midnight" class="sr-only">
+            <span class="w-8 h-8 rounded-full border border-black/10" style="background:#101935"></span>
+            <span class="text-[10px] text-gray-500">ミッドナイト</span>
+          </label>
+          <label class="swatch flex flex-col items-center gap-1.5 cursor-pointer">
+            <input type="radio" name="f-color" value="accent" class="sr-only">
+            <span class="w-8 h-8 rounded-full border border-black/10" style="background:#F59E0B"></span>
+            <span class="text-[10px] text-gray-500">琥珀</span>
+          </label>
+          <label class="swatch flex flex-col items-center gap-1.5 cursor-pointer">
+            <input type="radio" name="f-color" value="highlight" class="sr-only">
+            <span class="w-8 h-8 rounded-full border border-black/10" style="background:#FACC15"></span>
+            <span class="text-[10px] text-gray-500">ハイライト</span>
+          </label>
+          <label class="swatch flex flex-col items-center gap-1.5 cursor-pointer">
+            <input type="radio" name="f-color" value="softgray" class="sr-only">
+            <span class="w-8 h-8 rounded-full border border-black/10" style="background:#FAF8F2"></span>
+            <span class="text-[10px] text-gray-500">ウォーム</span>
+          </label>
+        </div>
+
+        <label class="block text-sm font-bold text-gray-700 mb-1.5">リンク先URL</label>
+        <input id="f-link" type="text" value="https://anken.bisii.co.jp/member.html"
+          class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm mb-2 focus:outline-none focus:ring-2 focus:ring-accent/40">
+        <p class="text-xs text-gray-400 leading-relaxed">バッジをクリックした人の遷移先です。ご自身のANKENプロフィールをお持ちの場合はそのURLに変更してください。</p>
+      </div>
+
+      <!-- PREVIEW & OUTPUT -->
+      <div class="lg:col-span-3 space-y-6">
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+          <p class="text-accent text-xs font-bold tracking-widest uppercase mb-2">Step 2</p>
+          <h2 class="text-xl font-black text-ink mb-6">プレビュー</h2>
+          <div class="badge-preview-wrap bg-softgray rounded-xl p-8 flex items-center justify-center min-h-[100px]" id="preview"></div>
+          <div class="flex flex-wrap gap-3 mt-5">
+            <button id="btn-download" class="inline-flex items-center gap-2 bg-ink hover:bg-midnight text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition">
+              SVGをダウンロード
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+          <h3 class="text-base font-bold text-ink mb-3">埋め込みコード（HTML）</h3>
+          <textarea id="out-html" rows="3" readonly class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-xs font-mono text-gray-600 bg-softgray/60 mb-3"></textarea>
+          <button data-copy="out-html" class="copy-btn inline-flex items-center gap-2 bg-accent hover:bg-accentDark text-white text-sm font-bold px-4 py-2.5 rounded-lg transition">コピーする</button>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+          <h3 class="text-base font-bold text-ink mb-3">埋め込みコード（Markdown / note・Zenn・GitHub向け）</h3>
+          <textarea id="out-md" rows="2" readonly class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-xs font-mono text-gray-600 bg-softgray/60 mb-3"></textarea>
+          <button data-copy="out-md" class="copy-btn inline-flex items-center gap-2 bg-accent hover:bg-accentDark text-white text-sm font-bold px-4 py-2.5 rounded-lg transition">コピーする</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4 md:px-6">
+    <p class="text-center text-gray-400 text-sm font-bold tracking-widest uppercase mb-8">Why Badge?</p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="bg-softgray rounded-xl p-5">
+        <p class="text-gray-700 font-medium leading-snug text-sm">「稼働してますアピール」や「得意なAIスキル」を、文章を書かずに一枚で伝えられます。</p>
+      </div>
+      <div class="bg-softgray rounded-xl p-5">
+        <p class="text-gray-700 font-medium leading-snug text-sm">貼るだけで、興味を持った人があなたのリンク先に直接アクセスできます。</p>
+      </div>
+      <div class="bg-softgray rounded-xl p-5">
+        <p class="text-gray-700 font-medium leading-snug text-sm">登録・利用は無料。ANKENの会員でなくてもお使いいただけます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== USAGE NOTE ===== -->
+<section id="terms" class="bg-softgray py-12 md:py-16">
+  <div class="max-w-4xl mx-auto px-4 md:px-6">
+    <h3 class="text-base font-bold text-ink mb-3">バッジのご利用について</h3>
+    <ul class="text-xs text-gray-500 leading-relaxed space-y-1.5 list-disc pl-4">
+      <li>本バッジは無料でご利用いただけます。登録・審査は不要です。</li>
+      <li>ロゴ表記の改変、ご用意しているカラー以外への変更、ANKENの信用を損なう掲載はご遠慮ください。</li>
+      <li>バッジのデザインは予告なく変更・提供終了となる場合があります。</li>
+      <li>生成されたSVGはお使いのブラウザ内で作成され、ANKEN側にお名前等の入力内容は送信・保存されません。</li>
+      <li>商用媒体への大量掲載など、ご不明点は<a href="contact.html" class="text-accentText underline">お問い合わせ</a>までご連絡ください。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-ink text-white/60 py-12">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+    <p>&copy; Bisii Co., Ltd. / anken.bisii.co.jp</p>
+    <div class="flex gap-5">
+      <a href="index.html" class="hover:text-white transition">サービストップ</a>
+      <a href="member-terms.html" class="hover:text-white transition">利用規約</a>
+      <a href="contact.html" class="hover:text-white transition">お問い合わせ</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // 実際のANKENロゴ（logo-32.png）をそのまま埋め込むための Base64（デザイン改変を防ぐため画像そのものを使用）
+  const ANKEN_LOGO_B64 = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFZ0lEQVR4nK2XTWhTWxSFv5umQYu1P6YBraVgtNqgCLGC+EMJOFBMUUeCqKPWTpxoO5ASdCAoaBoHKqhYcOJAJ05Ky3sOSjEzabVgcm3SYhtDqm0q2h8hyT13v8F7CfZp0jTv7dEd7LPXuuues886mogIJVZ2qaZppY7AUipoFvhn8FLeZc0ENE3LAUUiEaLRaA68FCWKIpAFNE2TgYEBDMMAYHp6mqmpKQCUUgwODuZ6i1WjKAKapmEYBhaLhenpaXRdz4FkgXRdZ2pqKtdbrBpFEZifn8dqtSIieDwegsEgAPX19dTX1wPw+vVrPB4PIoLVaiWZTBanghQopZSIiPT29sro6KiIiGQyGYlEIr/0jkcikslkRETk7du34vf7V8zIVwUJmKYppmnK3NycdHV1yczMjJimmRucyWTEMAwxDENERAzDkEQiIV1dXTI3N5dbX6g0kfw6KaUwTZPy8nJCoRCaprFz507KysryKhoKhTBNkz179pDJZLBYLAX7CxLIV8lkkqmpKf7480/SqRQVFRXU1NTQ3NzMkSNH1jQrL4F0Ok1/fz+Li4ts3ryZ1tZWxsfHGRwcJB6Po+s6N2/exOFw8PXrV2ZnZ3n37h3fvn2jo6ODWCxGLBajsrISr9eLzWYrjoD8YyiTk5M8fPiQ1tZWXrx4QU1NDdXV1Zw6dYo3b97gdrtpaWn5ZeDY2BiPHz9mYWGBM2fOMDw8TGdnJ9u3b/+tWVnzSZPJZDh48CBer5cvX75w8uRJ7HY7ExMTfP/+nZaWFgKBAIlEgsbGRi5cuEBVVRV79+7lzp07PHv2DK/Xi2EYOeP6XeX1AU3TWFpaQilFKpXCZrOhlOLly5dcvnyZvr4+6urquHLlClu3buX69evMzs4CkEqlMAwDpRRLS0sFTamgEWV3sKZpKKUoKyvD6XTS3d2NUorz58+zZcsWTp8+TXt7Ozdu3GBxcZF169ZhmiZlZWVYLIW9rui7wGr9+2sdPXqUs2fP0tHRkbNiwzDYvXs3nZ2d3Lp1C6XUqsBFKwBgs9morKzk7t27+Hw+Ghsbc7diltzIyAgbNmzgxIkT3Lt3j+rq6hUz1kzANE2Wl5dJpVLMzc3R09ODy+Xi+PHjtLe3Mzw8jMViwTRNRISmpib8fj/79u0jmUwSDAZJp9MsLy9jmubaCTgcDsLhMD6fj5mZGZaXl/F4PLx//55Hjx5x+/Ztnj9/jtVq5cePH4RCIXw+H5cuXcLhcFBVVcXVq1cJhUI4HI68BFZ1wkwmQ3l5OX19fSSTSdra2tB1HafTydOnT6mtreXatWv09vZy4MABJiYm2L9/Py6Xi3Q6ndeAVlUgW9lruKWlhbGxMTZu3Eg8HmfTpk243W6am5sJBAJ0dXXR399PJBLB6XSilFoVvCgFgNwRHBkZoaenB7/fz+fPn2loaCAajbJ+/XoGBgaora3l4sWL1NXV/T28iFBSFIGfLXRycpInT57w8eNH2traePXqFTt27EApxblz59i2bdsva/4TgewgXdcREVwuF/F4nIWFBYLBIMeOHSMWi+F2u6moqEDXdTRNY9euXcWRKCaQJJNJ6e7ulkQiUTDhKKUkkUhId3e3zM/PFxVIiopkgUAgF8kMw5BoNLqCiFJKJiYmcslodHRUAoHAihklERCRXCTLPn/48EHu378vIiLhcFjC4bCIiDx48EB0Xc+9cTaSrVarHkNN07Db7bmoPTQ0xOHDhwGIxWJ8+vQJgEOHDjE0NJSL5Xa7vahNmDcP/Guf5PygoaEBl8sFrPT57Ob8ufd/O4a/I6RpGuPj42iaRlNTU8m/ZmsmUAioFBIlKfAzIPy33/O/AMw3uD57z2DRAAAAAElFTkSuQmCC";
+  const LOGO_DATA_URI = "data:image/png;base64," + ANKEN_LOGO_B64;
+
+  const STATUS = {
+    available: { message: '今週末 稼働OK' },
+    consult:   { message: '相談受付中' },
+    full:      { message: '只今 満稿' },
+  };
+
+  // ブランドガイドラインの公式カラーのみ使用（改変防止のため選択肢を限定）
+  const COLORS = {
+    ink:      { bg: '#0B1221', text: '#FFFFFF' },
+    midnight: { bg: '#101935', text: '#FFFFFF' },
+    accent:   { bg: '#F59E0B', text: '#92400E' },
+    highlight:{ bg: '#FACC15', text: '#92400E' },
+    softgray: { bg: '#FAF8F2', text: '#92400E' },
+  };
+
+  function escXml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function textWidth(str, size) {
+    let w = 0;
+    for (const ch of String(str)) {
+      w += /[\x00-\xff]/.test(ch) ? size * 0.58 : size * 1.0;
+    }
+    return w;
+  }
+
+  function buildBadgeSVG(opts) {
+    const color = COLORS[opts.colorKey];
+
+    let message;
+    if (opts.type === 'skill') {
+      const list = opts.skills.length ? opts.skills.join('・') : 'AIスキル登録者';
+      message = (opts.name ? opts.name + '｜' : '') + list;
+    } else {
+      message = (opts.name ? opts.name + '｜' : '') + STATUS[opts.statusKey].message;
+    }
+
+    const fontSize = 13;
+    const height = 32;
+    const outerRadius = 8; // ブランドガイドライン「base」角丸トークン
+    const chipMargin = 4;
+    const chipSize = height - chipMargin * 2; // 24
+    const chipRadius = 6;
+    const iconPad = 3;
+    const iconSize = chipSize - iconPad * 2; // 18
+    const gapChipToMessage = 10;
+    const rightPad = 14;
+
+    const msgTextX = chipMargin + chipSize + gapChipToMessage;
+    const msgTextW = textWidth(message, fontSize);
+    const totalW = Math.round(msgTextX + msgTextW + rightPad);
+
+    // <image> は href のみを使用（xlink:href を名前空間宣言なしで使うと
+    // 一部のSVGパーサーで "unbound prefix" エラーになりロゴが表示されなくなるため）
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${totalW}" height="${height}" viewBox="0 0 ${totalW} ${height}" role="img" aria-label="ANKEN: ${escXml(message)}">
+  <rect width="${totalW}" height="${height}" rx="${outerRadius}" fill="${color.bg}"/>
+  <rect x="${chipMargin}" y="${chipMargin}" width="${chipSize}" height="${chipSize}" rx="${chipRadius}" fill="#FFFFFF"/>
+  <image x="${chipMargin + iconPad}" y="${chipMargin + iconPad}" width="${iconSize}" height="${iconSize}" href="${LOGO_DATA_URI}"/>
+  <text x="${msgTextX}" y="${height / 2 + 1}" dominant-baseline="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="700" font-size="${fontSize}" fill="${color.text}">${escXml(message)}</text>
+</svg>`;
+    return svg;
+  }
+
+  function svgToDataUri(svg) {
+    return 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svg)));
+  }
+
+  function updateSectionVisibility(type) {
+    document.getElementById('status-section').classList.toggle('hidden', type !== 'status');
+    document.getElementById('skill-section').classList.toggle('hidden', type !== 'skill');
+  }
+
+  function enforceSkillLimit() {
+    const boxes = Array.from(document.querySelectorAll('.f-skill'));
+    const checked = boxes.filter(b => b.checked);
+    boxes.forEach(b => { if (!b.checked) b.disabled = checked.length >= 3; });
+    document.getElementById('skill-count-note').textContent = `${checked.length} / 3 選択中`;
+  }
+
+  function currentOpts() {
+    const type = document.querySelector('input[name="f-type"]:checked').value;
+    const skills = Array.from(document.querySelectorAll('.f-skill:checked')).map(b => b.value);
+    return {
+      type,
+      name: document.getElementById('f-name').value.trim().slice(0, 16),
+      statusKey: document.getElementById('f-status').value,
+      skills,
+      colorKey: document.querySelector('input[name="f-color"]:checked').value,
+      link: document.getElementById('f-link').value.trim() || 'https://anken.bisii.co.jp/member.html',
+    };
+  }
+
+  function render() {
+    const type = document.querySelector('input[name="f-type"]:checked').value;
+    updateSectionVisibility(type);
+    enforceSkillLimit();
+
+    const opts = currentOpts();
+    const svg = buildBadgeSVG(opts);
+    const dataUri = svgToDataUri(svg);
+    const dims = svg.match(/width="(\d+)" height="(\d+)"/);
+    const w = dims ? dims[1] : '200';
+    const h = dims ? dims[2] : '32';
+
+    let altBase;
+    if (opts.type === 'skill') {
+      altBase = opts.skills.length ? opts.skills.join('・') : 'AIスキル登録者';
+    } else {
+      altBase = STATUS[opts.statusKey].message;
+    }
+    const altText = (opts.name ? opts.name + '｜' : '') + altBase;
+
+    document.getElementById('preview').innerHTML = svg;
+
+    const htmlEmbed = `<a href="${opts.link}" target="_blank" rel="noopener noreferrer"><img src="${dataUri}" width="${w}" height="${h}" alt="ANKEN: ${altText}"></a>`;
+    const mdEmbed = `[![ANKEN: ${altText}](${dataUri})](${opts.link})`;
+
+    document.getElementById('out-html').value = htmlEmbed;
+    document.getElementById('out-md').value = mdEmbed;
+
+    window.__ankenBadgeSvg = svg;
+  }
+
+  ['input', 'change'].forEach(evt => {
+    document.getElementById('f-name').addEventListener(evt, render);
+    document.getElementById('f-status').addEventListener(evt, render);
+    document.getElementById('f-link').addEventListener(evt, render);
+    document.querySelectorAll('input[name="f-theme"], input[name="f-type"], input[name="f-color"]').forEach(el => el.addEventListener(evt, render));
+    document.querySelectorAll('.f-skill').forEach(el => el.addEventListener(evt, render));
+  });
+
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-copy');
+      const el = document.getElementById(targetId);
+      el.select();
+      navigator.clipboard.writeText(el.value).then(() => {
+        const original = btn.textContent;
+        btn.textContent = 'コピーしました！';
+        el.classList.add('copied-flash');
+        setTimeout(() => { btn.textContent = original; el.classList.remove('copied-flash'); }, 1400);
+      });
+    });
+  });
+
+  document.getElementById('btn-download').addEventListener('click', () => {
+    const blob = new Blob([window.__ankenBadgeSvg], { type: 'image/svg+xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'anken-badge.svg';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>

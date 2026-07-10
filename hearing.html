@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>無料の業務提案書を受け取る｜ANKEN（アンケン）</title>
+<meta name="description" content="5〜8分のチャット形式ヒアリングに回答するだけ。AIがあなたの業務課題を分析し、FDE解決提案書を無料で作成します。" />
+<meta name="robots" content="noindex" />
+
+<!-- OGP -->
+<meta property="og:title" content="無料の業務提案書を受け取る｜ANKEN" />
+<meta property="og:image" content="https://anken.bisii.co.jp/assets/OGP.png" />
+<meta property="og:url" content="https://anken.bisii.co.jp/hearing.html" />
+<meta property="og:site_name" content="ANKEN（アンケン）" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0B1221" />
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0B1221',
+          midnight: '#101935',
+          card: '#162040',
+          accent: '#F59E0B',
+          accentDark: '#B45309',
+          highlight: '#FACC15',
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<!-- Google tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GWT2G24L7Z');
+</script>
+
+<style>
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+  body { font-family: 'Noto Sans JP', system-ui, sans-serif; line-break: strict; }
+
+  /* ===== Scrollbar ===== */
+  #messages::-webkit-scrollbar { width: 4px; }
+  #messages::-webkit-scrollbar-track { background: transparent; }
+  #messages::-webkit-scrollbar-thumb { background: #2a3a5a; border-radius: 2px; }
+
+  /* ===== Chat bubbles ===== */
+  .bubble-ai {
+    max-width: 82%;
+    background: #162040;
+    border-left: 3px solid #F59E0B;
+    color: #e8eaf0;
+    border-radius: 0 14px 14px 14px;
+    padding: 12px 16px;
+    font-size: 0.925rem;
+    line-height: 1.65;
+  }
+  .bubble-user {
+    max-width: 80%;
+    background: #B45309;
+    color: #fff;
+    border-radius: 14px 0 14px 14px;
+    padding: 10px 16px;
+    font-size: 0.925rem;
+    line-height: 1.6;
+    text-align: right;
+  }
+  .bubble-system {
+    text-align: center;
+    color: #5a7090;
+    font-size: 0.8rem;
+    padding: 4px 0;
+  }
+
+  /* ===== Animations ===== */
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeSlideUp 0.35s ease both; }
+
+  @keyframes typingDot {
+    0%,80%,100% { transform: scale(0.6); opacity: 0.4; }
+    40%         { transform: scale(1);   opacity: 1; }
+  }
+  .dot1 { animation: typingDot 1.2s infinite 0s; }
+  .dot2 { animation: typingDot 1.2s infinite 0.2s; }
+  .dot3 { animation: typingDot 1.2s infinite 0.4s; }
+
+  /* ===== Quick reply buttons ===== */
+  .qr-btn {
+    border: 1.5px solid #F59E0B;
+    color: #F59E0B;
+    background: transparent;
+    border-radius: 100px;
+    padding: 7px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s;
+    white-space: nowrap;
+  }
+  .qr-btn:hover, .qr-btn.selected {
+    background: #F59E0B;
+    color: #0B1221;
+  }
+
+  /* ===== Progress bar ===== */
+  #progress-fill {
+    transition: width 0.45s cubic-bezier(.4,0,.2,1);
+    background: linear-gradient(90deg, #F59E0B, #FACC15);
+    border-radius: 0 2px 2px 0;
+  }
+
+  /* ===== Spinner ===== */
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner { animation: spin 0.9s linear infinite; }
+
+  /* ===== PRINT STYLES ===== */
+  @media print {
+    #chat-screen, #loading-screen, #app-header, .no-print { display: none !important; }
+    #proposal-screen { display: block !important; }
+    body { background: #fff; color: #111; }
+    .print-section { page-break-inside: avoid; }
+  }
+
+  /* Proposal screen styles (shown on screen too) */
+  #proposal-screen {
+    background: #fff;
+    color: #111;
+    min-height: 100vh;
+  }
+  .prop-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  .prop-table th {
+    background: #0f3460;
+    color: #fff;
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: 700;
+  }
+  .prop-table td { padding: 7px 10px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+  .prop-table tr:nth-child(even) td { background: #f9fafb; }
+  .tag-high   { background: #fee2e2; color: #991b1b; }
+  .tag-mid    { background: #fef9c3; color: #713f12; }
+  .tag-low    { background: #f0fdf4; color: #166534; }
+  .tag-hyp    { background: #f3f4f6; color: #374151; font-style: italic; }
+  .priority-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .prop-h1 {
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #0f3460;
+    border-bottom: 3px solid #F59E0B;
+    padding-bottom: 6px;
+    margin: 24px 0 12px;
+  }
+  .prop-h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #16213e;
+    margin: 16px 0 8px;
+  }
+  .assumption-note {
+    color: #a8460a;
+    font-size: 0.82rem;
+    margin-top: 4px;
+  }
+</style>
+</head>
+
+<body class="bg-ink text-white antialiased">
+
+<!-- ===== HEADER ===== -->
+<header id="app-header" class="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b border-white/10">
+  <div class="max-w-2xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="inline-flex w-7 h-7 rounded-lg bg-midnight items-center justify-center border border-white/10">
+        <img src="logo-40.png" class="w-5 h-5" alt="ANKEN" />
+      </span>
+      <span class="font-black tracking-tight text-base"><span class="text-accent">ANKEN</span></span>
+    </a>
+    <span class="text-white/40 text-xs">無料 業務提案書ヒアリング</span>
+  </div>
+</header>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="h-1 bg-white/10 no-print" id="progress-bar-wrap">
+  <div id="progress-fill" class="h-full" style="width:0%"></div>
+</div>
+
+<!-- ===== CHAT SCREEN ===== -->
+<div id="chat-screen" class="flex flex-col" style="height: calc(100dvh - 60px);">
+
+  <!-- Messages area -->
+  <div id="messages" class="flex-1 overflow-y-auto px-4 py-5 space-y-4 max-w-2xl w-full mx-auto" style="scroll-behavior:smooth">
+    <!-- Messages injected by JS -->
+  </div>
+
+  <!-- Input area -->
+  <div id="input-area" class="border-t border-white/10 bg-midnight/80 backdrop-blur px-4 pt-3 pb-4 max-w-2xl w-full mx-auto">
+    <!-- Quick reply buttons -->
+    <div id="quick-replies" class="flex flex-wrap gap-2 mb-3 hidden"></div>
+
+    <!-- Text input row -->
+    <div id="text-input-area" class="flex gap-2 hidden">
+      <input
+        id="text-input"
+        type="text"
+        placeholder="ここに入力してください…"
+        class="flex-1 bg-card border border-white/15 text-white placeholder-white/30 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accent transition"
+        autocomplete="off"
+        inputmode="text"
+      />
+      <button id="send-btn"
+        class="bg-accent hover:bg-highlight text-ink font-black px-5 py-3 rounded-xl text-sm transition shrink-0 disabled:opacity-40"
+        onclick="submitText()">
+        送信
+      </button>
+    </div>
+
+    <!-- Email input row (special) -->
+    <div id="email-input-area" class="flex gap-2 hidden">
+      <input
+        id="email-input"
+        type="email"
+        placeholder="your@company.com"
+        class="flex-1 bg-card border border-white/15 text-white placeholder-white/30 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accent transition"
+        autocomplete="email"
+        inputmode="email"
+      />
+      <button
+        class="bg-accent hover:bg-highlight text-ink font-black px-5 py-3 rounded-xl text-sm transition shrink-0"
+        onclick="submitEmail()">
+        送信
+      </button>
+    </div>
+
+    <!-- Action row: Skip + Finish early -->
+    <div class="flex items-center justify-between mt-2">
+      <button id="skip-btn" class="text-white/35 text-xs hover:text-white/60 transition hidden" onclick="skipQuestion()">
+        スキップ →
+      </button>
+      <button id="finish-btn" class="text-accent/60 text-xs hover:text-accent transition ml-auto hidden" onclick="finishEarly()">
+        このまま提案書を作成する →
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== LOADING SCREEN ===== -->
+<div id="loading-screen" class="hidden fixed inset-0 bg-ink flex flex-col items-center justify-center z-50">
+  <div class="text-center space-y-6 px-4">
+    <div class="w-16 h-16 rounded-full border-4 border-accent/20 border-t-accent mx-auto spinner"></div>
+    <div>
+      <p class="text-white font-black text-lg" id="loading-msg">Claude AIが業務課題を分析しています…</p>
+      <p class="text-white/40 text-sm mt-1">通常10〜20秒かかります</p>
+    </div>
+    <div class="flex gap-2 justify-center text-white/30 text-xs">
+      <span id="step1" class="">✓ ヒアリング完了</span>
+      <span>›</span>
+      <span id="step2" class="text-accent">AI分析中</span>
+      <span>›</span>
+      <span id="step3" class="">提案書生成</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROPOSAL SCREEN ===== -->
+<div id="proposal-screen" class="hidden">
+
+  <!-- Action bar (no-print) -->
+  <div class="no-print sticky top-0 z-40 bg-white border-b border-gray-200 px-4 py-3">
+    <div class="max-w-3xl mx-auto flex items-center justify-between">
+      <a href="hearing.html" class="text-sm text-gray-500 hover:text-gray-800 flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+        やり直す
+      </a>
+      <button onclick="window.print()"
+        class="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6v-8z"/>
+        </svg>
+        PDFとして保存
+      </button>
+    </div>
+  </div>
+
+  <!-- Proposal content -->
+  <div id="proposal-content" class="max-w-3xl mx-auto px-4 py-8 print-section">
+    <!-- Injected by renderProposal() -->
+  </div>
+
+  <!-- Footer CTA (no-print) -->
+  <div class="no-print bg-gray-50 border-t border-gray-200 py-10 text-center mt-8">
+    <p class="text-gray-600 text-sm mb-4">この提案について詳しく相談したい場合はこちら</p>
+    <a href="contact.html"
+      class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white font-black px-7 py-3.5 rounded-xl text-sm transition">
+      無料相談を申し込む →
+    </a>
+    <p class="text-gray-400 text-xs mt-3">要件が固まっていなくても大丈夫です</p>
+  </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+/* ─── 設定 ─── */
+// Vercelにすべてデプロイした場合は '/api/generate' に変更してください
+const API_ENDPOINT = '/api/generate';
+const WEB3FORMS_KEY = '4934e419-c922-482a-84be-11c82d5c4c07';
+
+/* ─── 質問定義 ─── */
+const QUESTIONS = [
+  {
+    id: 'company',
+    category: 'A',
+    text: '最初に、会社名と業種・事業内容を教えてください。',
+    type: 'text',
+    placeholder: '例：株式会社〇〇、アパレル雑貨の卸売とEC運営'
+  },
+  {
+    id: 'team_size',
+    category: 'A',
+    text: '対象業務を担当しているチームは何名くらいですか？',
+    type: 'choice',
+    choices: ['1名', '2〜5名', '6〜10名', '10名以上']
+  },
+  {
+    id: 'background',
+    category: 'A',
+    text: '今回ご相談いただいた背景・きっかけを教えてください。（どんな小さなことでも大丈夫です）',
+    type: 'text',
+    placeholder: '例：月末の残業が増えている、担当者が退職しそうで引き継ぎが心配'
+  },
+  {
+    id: 'systems',
+    category: 'B',
+    categoryIntro: '次に、現在のシステム・ツール環境について教えてください。',
+    text: '現在使っているシステム・ツールをすべて教えてください。（会計、販売管理、SaaS、Excel管理など）',
+    type: 'text',
+    placeholder: '例：弥生販売、マネーフォワード、BASE、Google Workspace、Chatwork など'
+  },
+  {
+    id: 'integrations',
+    category: 'C',
+    text: 'これらのツール間でのデータのやり取りは、自動化されていますか？',
+    type: 'choice',
+    choices: ['ほぼ手動でコピー・入力', '一部自動・一部手動', 'ほぼ自動連携済み', 'よくわからない']
+  },
+  {
+    id: 'pain_point',
+    category: 'D',
+    categoryIntro: '業務の課題についてお聞かせください。',
+    text: '現在の業務で最も時間がかかっている作業・一番の悩みは何ですか？',
+    type: 'text',
+    placeholder: '例：EC注文データを毎日手入力している、月末に請求書を1件ずつ手作業で発行している'
+  },
+  {
+    id: 'person_dependency',
+    category: 'D',
+    text: '特定の担当者に業務が集中している（属人化）箇所はありますか？',
+    type: 'choice',
+    choices: ['ある', 'ない', 'わからない']
+  },
+  {
+    id: 'errors',
+    category: 'D',
+    text: 'ミスやトラブルが起きやすい業務はありますか？（入力ミス・集計エラーなど）',
+    type: 'text',
+    placeholder: '例：金額の入力ミスが月数件ある。なければ「特になし」と入力'
+  },
+  {
+    id: 'frequency',
+    category: 'E',
+    categoryIntro: '業務フローの詳細について教えてください。',
+    text: 'その業務はどのくらいの頻度で発生しますか？',
+    type: 'choice',
+    choices: ['毎日（日次）', '週に数回', '月1〜数回', '都度・不定期']
+  },
+  {
+    id: 'volume',
+    category: 'E',
+    text: '処理するデータの量（件数・行数など）の規模感は？',
+    type: 'choice',
+    choices: ['少量（月100件以下）', '中量（月100〜500件）', '大量（月500件以上）', 'わからない']
+  },
+  {
+    id: 'data_flow',
+    category: 'E',
+    text: 'データはどのように流れていますか？（どこから入ってどこへ出るか）',
+    type: 'text',
+    placeholder: '例：BASEの注文 → 手入力 → 弥生販売 → Excel集計 → マネーフォワードに入力'
+  },
+  {
+    id: 'goal',
+    category: 'F',
+    categoryIntro: 'あとは目標と体制を確認させてください。',
+    text: '解決後の理想の状態・ゴールイメージを教えてください。',
+    type: 'text',
+    placeholder: '例：注文データを自動で取り込んで請求書まで自動発行されるようにしたい'
+  },
+  {
+    id: 'budget',
+    category: 'F',
+    text: '想定している予算感はありますか？（目安でかまいません）',
+    type: 'choice',
+    choices: ['30万円以下', '30〜100万円', '100〜300万円', '300万円以上', 'まだ決まっていない']
+  },
+  {
+    id: 'timeline',
+    category: 'F',
+    text: 'ご希望の開始時期は？',
+    type: 'choice',
+    choices: ['すぐにでも（1ヶ月以内）', '1〜3ヶ月後', '3ヶ月以上先', '未定']
+  },
+  {
+    id: 'email',
+    category: 'G',
+    categoryIntro: 'ありがとうございます。最後に連絡先をお願いします。',
+    text: '提案書の送付先メールアドレスと、お名前を教えてください。\n（※ヒアリング完了後、すぐに画面で提案書をご確認いただけます）',
+    type: 'email',
+    placeholder: 'your@company.com'
+  }
+];
+
+const TOTAL_Q = QUESTIONS.length;
+
+/* ─── 状態管理 ─── */
+let currentQ = -1; // -1 = welcome screen
+let answers = {};
+let typingTimer = null;
+
+/* ─── 便利関数 ─── */
+const $ = id => document.getElementById(id);
+const msgArea = () => $('messages');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+function scrollBottom() {
+  const el = msgArea();
+  el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
+}
+
+function updateProgress() {
+  const answered = Object.keys(answers).length;
+  const pct = Math.min(100, Math.round((answered / TOTAL_Q) * 100));
+  $('progress-fill').style.width = pct + '%';
+}
+
+/* ─── メッセージ描画 ─── */
+function addAIBubble(text, delay = 0) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      // typing indicator
+      const typing = document.createElement('div');
+      typing.className = 'flex gap-2 fade-in';
+      typing.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-accent/20 flex items-center justify-center shrink-0 mt-0.5">
+          <span class="text-accent text-xs font-black">A</span>
+        </div>
+        <div class="bubble-ai flex gap-1 items-center py-3">
+          <span class="dot1 w-2 h-2 bg-accent/60 rounded-full inline-block"></span>
+          <span class="dot2 w-2 h-2 bg-accent/60 rounded-full inline-block"></span>
+          <span class="dot3 w-2 h-2 bg-accent/60 rounded-full inline-block"></span>
+        </div>`;
+      msgArea().appendChild(typing);
+      scrollBottom();
+
+      setTimeout(() => {
+        typing.remove();
+        const row = document.createElement('div');
+        row.className = 'flex gap-2 fade-in';
+        const lines = text.split('\n').map(l => `<p>${l}</p>`).join('');
+        row.innerHTML = `
+          <div class="w-7 h-7 rounded-full bg-accent/20 flex items-center justify-center shrink-0 mt-0.5">
+            <span class="text-accent text-xs font-black">A</span>
+          </div>
+          <div class="bubble-ai">${lines}</div>`;
+        msgArea().appendChild(row);
+        scrollBottom();
+        resolve();
+      }, 900);
+    }, delay);
+  });
+}
+
+function addUserBubble(text) {
+  const row = document.createElement('div');
+  row.className = 'flex justify-end fade-in';
+  row.innerHTML = `<div class="bubble-user">${escHtml(text)}</div>`;
+  msgArea().appendChild(row);
+  scrollBottom();
+}
+
+function addSystemMsg(text) {
+  const el = document.createElement('div');
+  el.className = 'bubble-system fade-in';
+  el.textContent = text;
+  msgArea().appendChild(el);
+  scrollBottom();
+}
+
+function escHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* ─── 入力エリア制御 ─── */
+function hideAllInputs() {
+  $('quick-replies').classList.add('hidden');
+  $('text-input-area').classList.add('hidden');
+  $('email-input-area').classList.add('hidden');
+  $('skip-btn').classList.add('hidden');
+  $('finish-btn').classList.add('hidden');
+}
+
+function showQuickReplies(choices, allowMulti = false) {
+  const qr = $('quick-replies');
+  qr.innerHTML = '';
+  choices.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = 'qr-btn';
+    btn.textContent = c;
+    btn.onclick = () => {
+      if (allowMulti) {
+        btn.classList.toggle('selected');
+      } else {
+        document.querySelectorAll('.qr-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        setTimeout(() => submitChoice(c), 200);
+      }
+    };
+    qr.appendChild(btn);
+  });
+  qr.classList.remove('hidden');
+  $('skip-btn').classList.remove('hidden');
+  if (currentQ >= 4) $('finish-btn').classList.remove('hidden');
+}
+
+function showTextInput(placeholder, type = 'text') {
+  const inp = $('text-input');
+  inp.placeholder = placeholder || 'ここに入力してください…';
+  inp.type = type;
+  $('text-input-area').classList.remove('hidden');
+  $('skip-btn').classList.remove('hidden');
+  if (currentQ >= 4) $('finish-btn').classList.remove('hidden');
+  setTimeout(() => inp.focus(), 100);
+}
+
+function showEmailInput(placeholder) {
+  const inp = $('email-input');
+  inp.placeholder = placeholder || 'your@company.com';
+  $('email-input-area').classList.remove('hidden');
+  setTimeout(() => inp.focus(), 100);
+}
+
+/* ─── 回答処理 ─── */
+function recordAnswer(qId, value) {
+  answers[qId] = { status: 'answered', value };
+  updateProgress();
+}
+
+function submitChoice(value) {
+  const q = QUESTIONS[currentQ];
+  recordAnswer(q.id, value);
+  addUserBubble(value);
+  hideAllInputs();
+  setTimeout(() => nextQuestion(), 500);
+}
+
+function submitText() {
+  const val = $('text-input').value.trim();
+  if (!val) return;
+  $('text-input').value = '';
+  const q = QUESTIONS[currentQ];
+  recordAnswer(q.id, val);
+  addUserBubble(val);
+  hideAllInputs();
+  setTimeout(() => nextQuestion(), 500);
+}
+
+function submitEmail() {
+  const val = $('email-input').value.trim();
+  if (!val || !val.includes('@')) {
+    $('email-input').style.borderColor = '#ef4444';
+    $('email-input').placeholder = '有効なメールアドレスを入力してください';
+    return;
+  }
+  const q = QUESTIONS[currentQ];
+  recordAnswer(q.id, val);
+  addUserBubble(val);
+  hideAllInputs();
+  setTimeout(() => generateProposal(), 600);
+}
+
+function skipQuestion() {
+  const q = QUESTIONS[currentQ];
+  answers[q.id] = { status: 'skipped', value: null };
+  addSystemMsg('スキップしました');
+  hideAllInputs();
+  setTimeout(() => nextQuestion(), 400);
+}
+
+function finishEarly() {
+  // Mark remaining as unanswered and generate
+  for (let i = currentQ; i < TOTAL_Q; i++) {
+    const q = QUESTIONS[i];
+    if (!answers[q.id]) answers[q.id] = { status: 'unanswered', value: null };
+  }
+  // If no email yet, prompt for it
+  if (!answers['email'] || !answers['email'].value) {
+    addAIBubble('提案書を作成します。最後にメールアドレスだけ教えてください。').then(() => {
+      hideAllInputs();
+      showEmailInput('your@company.com');
+    });
+  } else {
+    generateProposal();
+  }
+}
+
+/* ─── 質問進行 ─── */
+async function nextQuestion() {
+  currentQ++;
+
+  if (currentQ >= TOTAL_Q) {
+    generateProposal();
+    return;
+  }
+
+  const q = QUESTIONS[currentQ];
+
+  // カテゴリ導入メッセージ
+  if (q.categoryIntro) {
+    await addAIBubble(q.categoryIntro);
+    await sleep(200);
+  }
+
+  await addAIBubble(q.text);
+
+  // 入力UIを表示
+  if (q.type === 'choice') {
+    showQuickReplies(q.choices);
+  } else if (q.type === 'email') {
+    showEmailInput(q.placeholder);
+  } else {
+    showTextInput(q.placeholder);
+  }
+}
+
+/* ─── スタート ─── */
+async function startHearing() {
+  await addAIBubble('こんにちは！ANKENのFDEアシスタントです。\nいくつかご質問させていただき、御社の業務課題をAIが分析した<strong>無料の提案書</strong>をその場でご提供します。');
+  await sleep(300);
+  await addAIBubble('所要時間は5〜8分ほどです。わからない質問はスキップOKです。では始めましょう！');
+  await sleep(400);
+  nextQuestion();
+}
+
+/* ─── Enterキー送信 ─── */
+document.addEventListener('DOMContentLoaded', () => {
+  $('text-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submitText(); }
+  });
+  $('email-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); submitEmail(); }
+  });
+  startHearing();
+});
+
+/* ─── 提案書生成 ─── */
+async function generateProposal() {
+  // Lead capture (Web3Forms, fire-and-forget)
+  sendLead();
+
+  // Show loading
+  $('chat-screen').classList.add('hidden');
+  $('loading-screen').classList.remove('hidden');
+
+  // Animate loading steps
+  setTimeout(() => { $('step2').classList.remove('text-accent'); $('step3').classList.add('text-accent'); }, 4000);
+
+  try {
+    const res = await fetch(API_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ answers }),
+      signal: AbortSignal.timeout(60000)
+    });
+    if (!res.ok) throw new Error('API error ' + res.status);
+    const data = await res.json();
+    $('loading-screen').classList.add('hidden');
+    renderProposal(data.proposal);
+  } catch (err) {
+    console.error(err);
+    $('loading-screen').classList.add('hidden');
+    showApiError();
+  }
+}
+
+function showApiError() {
+  $('chat-screen').classList.remove('hidden');
+  const el = document.createElement('div');
+  el.className = 'fade-in mx-auto max-w-sm text-center py-8';
+  el.innerHTML = `
+    <p class="text-white/60 text-sm mb-4">提案書の自動生成に失敗しました。<br>お手数ですが、直接ご相談ください。</p>
+    <a href="contact.html" class="inline-block bg-accent text-ink font-black px-6 py-3 rounded-xl text-sm">
+      無料相談フォームへ →
+    </a>`;
+  msgArea().appendChild(el);
+  scrollBottom();
+}
+
+function sendLead() {
+  const emailAns = answers['email'];
+  const companyAns = answers['company'];
+  const email = emailAns?.value || '';
+  const company = companyAns?.value || '（未回答）';
+  const answeredCount = Object.values(answers).filter(a => a.status === 'answered').length;
+
+  const payload = new FormData();
+  payload.append('access_key', WEB3FORMS_KEY);
+  payload.append('subject', `【ANKENヒアリング】${company}`);
+  payload.append('from_name', 'ANKENヒアリングフォーム');
+  payload.append('email', email);
+  payload.append('company', company);
+  payload.append('pain_point', answers['pain_point']?.value || '');
+  payload.append('goal', answers['goal']?.value || '');
+  payload.append('budget', answers['budget']?.value || '');
+  payload.append('timeline', answers['timeline']?.value || '');
+  payload.append('answer_rate', `${answeredCount}/${TOTAL_Q}項目回答`);
+
+  fetch('https://api.web3forms.com/submit', { method: 'POST', body: payload }).catch(() => {});
+}
+
+/* ─── 提案書レンダリング ─── */
+function renderProposal(p) {
+  const today = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+  const company = p.company || '御社';
+  const answeredCount = Object.values(answers).filter(a => a.status === 'answered').length;
+  const answerRate = Math.round(answeredCount / TOTAL_Q * 100);
+
+  let html = `
+    <!-- Cover -->
+    <div class="print-section mb-8 border-b-4 border-amber-500 pb-8">
+      <p class="text-gray-400 text-xs mb-2">ANKEN FDE解決提案書</p>
+      <h1 class="text-3xl font-black text-gray-900 mb-1">業務課題整理・解決提案書</h1>
+      <p class="text-amber-600 font-bold text-sm mb-6">AI生成ドキュメント（ヒアリング回答率 ${answerRate}%）</p>
+      <table class="prop-table max-w-md">
+        <tr><td class="font-bold text-gray-500 w-32">対象企業</td><td class="font-bold">${escHtml(company)}</td></tr>
+        <tr><td class="font-bold text-gray-500">ヒアリング日</td><td>${today}</td></tr>
+        <tr><td class="font-bold text-gray-500">回答状況</td><td>${answeredCount}/${TOTAL_Q}項目</td></tr>
+        <tr><td class="font-bold text-gray-500">発行</td><td>ANKEN（株式会社bisii）</td></tr>
+      </table>
+    </div>
+
+    <!-- Disclaimer for low answer rate -->
+    ${answerRate < 50 ? `
+    <div class="print-section mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4">
+      <p class="text-amber-800 font-bold text-sm mb-1">⚠ 概算精度に関する注記</p>
+      <p class="text-amber-700 text-xs">ヒアリング回答率が50%未満のため、本資料の期間・費用は仮定が多く含まれます。正式な見積りには追加ヒアリングが必要です。</p>
+    </div>` : ''}
+
+    <!-- 1. Summary -->
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">1. エグゼクティブサマリー</h2>
+      <p class="text-gray-700 leading-relaxed text-sm">${escHtml(p.summary || '')}</p>
+    </div>`;
+
+  // 2. Issues
+  if (p.issues && p.issues.length) {
+    html += `
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">2. 業務課題（重要度順）</h2>
+      <table class="prop-table">
+        <tr><th>優先度</th><th>課題</th><th>詳細</th></tr>
+        ${p.issues.map(iss => {
+          const tagCls = iss.priority === '高' ? 'tag-high' : iss.priority === '中' ? 'tag-mid' : 'tag-low';
+          const hyp = iss.is_hypothesis ? ' <span class="tag-hyp priority-tag">(仮説)</span>' : '';
+          return `<tr>
+            <td><span class="priority-tag ${tagCls}">${escHtml(iss.priority)}</span></td>
+            <td class="font-bold">${escHtml(iss.title)}${hyp}</td>
+            <td class="text-gray-600">${escHtml(iss.detail || '')}</td>
+          </tr>`;
+        }).join('')}
+      </table>
+    </div>`;
+  }
+
+  // 3. Requirements
+  if (p.requirements) {
+    html += `
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">3. 要件定義</h2>
+      <table class="prop-table">
+        <tr><th style="width:100px">区分</th><th>内容</th></tr>
+        ${(p.requirements.must||[]).map(r => `<tr><td class="font-bold text-green-700">Must（必須）</td><td>${escHtml(r)}</td></tr>`).join('')}
+        ${(p.requirements.want||[]).map(r => `<tr><td class="font-bold text-blue-700">Want（希望）</td><td>${escHtml(r)}</td></tr>`).join('')}
+      </table>
+    </div>`;
+  }
+
+  // 4. Phases
+  if (p.phases && p.phases.length) {
+    html += `
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">4. FDEによる解決提案</h2>
+      <table class="prop-table">
+        <tr><th>フェーズ</th><th>担当</th><th>内容</th><th>期間目安</th></tr>
+        ${p.phases.map(ph => `<tr>
+          <td class="font-bold">${escHtml(ph.name)}</td>
+          <td>${escHtml(ph.responsible)}</td>
+          <td class="text-gray-600">${escHtml(ph.content)}</td>
+          <td class="font-bold text-amber-700 whitespace-nowrap">${escHtml(ph.duration)}</td>
+        </tr>`).join('')}
+      </table>
+    </div>`;
+  }
+
+  // 5. Cost
+  if (p.cost) {
+    html += `
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">5. 概算費用</h2>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
+        <p class="text-xl font-black text-amber-700">${escHtml(p.cost.range)}</p>
+        <p class="text-amber-600 text-xs mt-1">（仮定値。ANKEN正式レート確定後に差し替え）</p>
+      </div>
+      ${p.cost.note ? `<p class="assumption-note">※ ${escHtml(p.cost.note)}</p>` : ''}
+    </div>`;
+  }
+
+  // 6. Open items
+  if (p.open_items && p.open_items.length) {
+    html += `
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">6. 前提条件・確認事項</h2>
+      <p class="text-gray-500 text-xs mb-3">以下の項目は未回答のため仮定で補完しています。正式見積りには確認が必要です。</p>
+      <ul class="space-y-1">
+        ${p.open_items.map(item => `<li class="flex gap-2 text-sm text-gray-700"><span class="text-amber-500">›</span>${escHtml(item)}</li>`).join('')}
+      </ul>
+    </div>`;
+  }
+
+  // 7. Next actions
+  if (p.next_actions && p.next_actions.length) {
+    html += `
+    <div class="print-section mb-6">
+      <h2 class="prop-h1">7. 次のアクション</h2>
+      <ol class="space-y-2">
+        ${p.next_actions.map((a, i) => `<li class="flex gap-3 text-sm text-gray-700">
+          <span class="w-6 h-6 rounded-full bg-amber-500 text-white font-black text-xs flex items-center justify-center shrink-0">${i+1}</span>
+          ${escHtml(a)}
+        </li>`).join('')}
+      </ol>
+    </div>`;
+  }
+
+  // Footer
+  html += `
+    <div class="mt-10 pt-6 border-t border-gray-200 text-center">
+      <p class="text-gray-400 text-xs">ANKEN（運営：株式会社bisii） https://anken.bisii.co.jp</p>
+      <p class="text-gray-300 text-xs mt-1">本資料はAIが生成した参考提案です。正式なご提案は別途お打ち合わせにてご提示します。</p>
+    </div>`;
+
+  $('proposal-content').innerHTML = html;
+  $('proposal-screen').classList.remove('hidden');
+
+  // Scroll to top
+  window.scrollTo({ top: 0, behavior: 'auto' });
+
+  // GA event
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'proposal_generated', { company: p.company || '不明' });
+  }
+}
+</script>
+</body>
+</html>

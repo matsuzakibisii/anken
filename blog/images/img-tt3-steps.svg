@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#FAFAF9" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#1C1917">スポット外注でEC在庫管理AI自動化を導入する3ステップ</text>
+
+  <!-- Step 1 Card -->
+  <rect x="60" y="80" width="320" height="320" rx="16" fill="#FFF7F4" stroke="#E07A5F" stroke-width="2.5"/>
+
+  <!-- Step badge -->
+  <circle cx="220" cy="130" r="34" fill="#E07A5F"/>
+  <text x="220" y="123" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">STEP</text>
+  <text x="220" y="143" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">1</text>
+
+  <text x="220" y="188" text-anchor="middle" font-size="15" font-weight="900" fill="#7C2D12">現状整理・データ棚卸し</text>
+  <text x="220" y="210" text-anchor="middle" font-size="12" fill="#78350F">目安：1〜2週間（社内作業）</text>
+
+  <line x1="90" y1="228" x2="350" y2="228" stroke="#FDDDD4" stroke-width="1.5"/>
+
+  <text x="108" y="256" font-size="13" fill="#334155">📋 現在のシステム名を一覧化</text>
+  <text x="108" y="278" font-size="13" fill="#334155">📊 販売データ所在を確認</text>
+  <text x="108" y="300" font-size="13" fill="#334155">🔌 APIの有無をチェック</text>
+  <text x="108" y="322" font-size="13" fill="#334155">📅 必要データ期間を確認</text>
+
+  <rect x="90" y="340" width="260" height="44" rx="8" fill="#E07A5F" opacity="0.12"/>
+  <text x="220" y="356" text-anchor="middle" font-size="11" fill="#7C2D12" font-weight="700">✓ 過去2年分の販売データが</text>
+  <text x="220" y="372" text-anchor="middle" font-size="11" fill="#7C2D12" font-weight="700">整備されていることが理想</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M385 240 L435 240" stroke="#334155" stroke-width="3" marker-end="url(#stepArr)"/>
+  <defs>
+    <marker id="stepArr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0 0 L10 4 L0 8 Z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <!-- Step 2 Card -->
+  <rect x="440" y="80" width="320" height="320" rx="16" fill="#F0F4FF" stroke="#334155" stroke-width="2.5"/>
+
+  <circle cx="600" cy="130" r="34" fill="#334155"/>
+  <text x="600" y="123" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">STEP</text>
+  <text x="600" y="143" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">2</text>
+
+  <text x="600" y="188" text-anchor="middle" font-size="15" font-weight="900" fill="#1E2D3D">PoC開発をスポット外注に依頼</text>
+  <text x="600" y="210" text-anchor="middle" font-size="12" fill="#334155">目安：2〜4週間 / 30〜60万円</text>
+
+  <line x1="470" y1="228" x2="730" y2="228" stroke="#C7D2E0" stroke-width="1.5"/>
+
+  <text x="468" y="256" font-size="13" fill="#334155">🛒 ANKENでEC開発者を発注</text>
+  <text x="468" y="278" font-size="13" fill="#334155">🧪 1商品カテゴリでPoC開始</text>
+  <text x="468" y="300" font-size="13" fill="#334155">📈 需要予測+発注アラートを試作</text>
+  <text x="468" y="322" font-size="13" fill="#334155">✅ 2〜3週間の検証期間で精度確認</text>
+
+  <rect x="468" y="340" width="264" height="44" rx="8" fill="#334155" opacity="0.12"/>
+  <text x="600" y="356" text-anchor="middle" font-size="11" fill="#1C2B35" font-weight="700">最初は汎用SaaSでは対応できない</text>
+  <text x="600" y="372" text-anchor="middle" font-size="11" fill="#1C2B35" font-weight="700">独自ルールがある場合に特に有効</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M765 240 L815 240" stroke="#334155" stroke-width="3" marker-end="url(#stepArr)"/>
+
+  <!-- Step 3 Card -->
+  <rect x="820" y="80" width="320" height="320" rx="16" fill="#FFF9F0" stroke="#D97706" stroke-width="2.5"/>
+
+  <circle cx="980" cy="130" r="34" fill="#D97706"/>
+  <text x="980" y="123" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">STEP</text>
+  <text x="980" y="143" text-anchor="middle" font-size="22" font-weight="900" fill="#FFFFFF">3</text>
+
+  <text x="980" y="188" text-anchor="middle" font-size="15" font-weight="900" fill="#7C2D12">本番稼働・運用ルール整備</text>
+  <text x="980" y="210" text-anchor="middle" font-size="12" fill="#92400E">目安：追加2〜3週間 / 40〜100万円</text>
+
+  <line x1="848" y1="228" x2="1112" y2="228" stroke="#FDE68A" stroke-width="1.5"/>
+
+  <text x="848" y="256" font-size="13" fill="#334155">🌐 全商品・全チャネルへ展開</text>
+  <text x="848" y="278" font-size="13" fill="#334155">🔄 マルチチャネル在庫同期を実装</text>
+  <text x="848" y="300" font-size="13" fill="#334155">⚙️ 自動発注ワークフローを設定</text>
+  <text x="848" y="322" font-size="13" fill="#334155">📝 運用マニュアルを整備</text>
+
+  <rect x="848" y="340" width="264" height="44" rx="8" fill="#D97706" opacity="0.12"/>
+  <text x="980" y="356" text-anchor="middle" font-size="11" fill="#7C2D12" font-weight="700">「AIは提案、人間が承認」の</text>
+  <text x="980" y="372" text-anchor="middle" font-size="11" fill="#7C2D12" font-weight="700">ハイブリッド運用から始めると安全</text>
+
+  <!-- Footer -->
+  <text x="600" y="460" text-anchor="middle" font-size="11" fill="#A8A29E">ANKENではPoCフェーズから対応可能なEC開発エンジニアをスポット外注で紹介します</text>
+</svg>

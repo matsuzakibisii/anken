@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#FAFAF9" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#1C1917">EC在庫管理の3大課題とAI自動化による解決策</text>
+
+  <!-- Column headers -->
+  <rect x="60" y="72" width="320" height="44" rx="8" fill="#334155"/>
+  <text x="220" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">① 在庫切れ（機会損失）</text>
+
+  <rect x="440" y="72" width="320" height="44" rx="8" fill="#334155"/>
+  <text x="600" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">② 過剰在庫（資金圧迫）</text>
+
+  <rect x="820" y="72" width="320" height="44" rx="8" fill="#334155"/>
+  <text x="980" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">③ マルチチャネルのズレ</text>
+
+  <!-- Card 1 -->
+  <rect x="60" y="128" width="320" height="160" rx="12" fill="#FFF7F4" stroke="#E07A5F" stroke-width="2"/>
+  <!-- Icon: empty box -->
+  <rect x="180" y="148" width="80" height="60" rx="6" fill="#FDDDD4" stroke="#E07A5F" stroke-width="2"/>
+  <text x="220" y="185" text-anchor="middle" font-size="28" fill="#E07A5F">📦</text>
+  <text x="220" y="220" text-anchor="middle" font-size="13" fill="#7C2D12" font-weight="700">在庫切れ × SNSバズ</text>
+  <text x="220" y="240" text-anchor="middle" font-size="12" fill="#78350F">→ 売上機会を逃す</text>
+  <text x="220" y="258" text-anchor="middle" font-size="12" fill="#78350F">→ 需要急変に対応できない</text>
+
+  <!-- Arrow 1 -->
+  <path d="M220 296 L220 330" stroke="#E07A5F" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arr1)"/>
+  <defs>
+    <marker id="arr1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#E07A5F"/>
+    </marker>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#E07A5F"/>
+    </marker>
+    <marker id="arr3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#E07A5F"/>
+    </marker>
+  </defs>
+
+  <!-- Solution 1 -->
+  <rect x="60" y="330" width="320" height="120" rx="12" fill="#E07A5F"/>
+  <text x="220" y="362" text-anchor="middle" font-size="14" font-weight="900" fill="#FFFFFF">AI需要予測で解決</text>
+  <text x="220" y="385" text-anchor="middle" font-size="12" fill="#FFE4DC">過去の売上+季節性+外部データで</text>
+  <text x="220" y="403" text-anchor="middle" font-size="12" fill="#FFE4DC">将来の需要を自動計算</text>
+  <text x="220" y="425" text-anchor="middle" font-size="12" fill="#FFE4DC">→ 発注タイミングを自動提案</text>
+  <text x="220" y="443" text-anchor="middle" font-size="12" fill="#FFE4DC">在庫切れリスクを大幅削減</text>
+
+  <!-- Card 2 -->
+  <rect x="440" y="128" width="320" height="160" rx="12" fill="#F0F9F4" stroke="#334155" stroke-width="2"/>
+  <text x="600" y="185" text-anchor="middle" font-size="28" fill="#334155">🏭</text>
+  <text x="600" y="220" text-anchor="middle" font-size="13" fill="#1C2B35" font-weight="700">発注過多 × 売れ残り</text>
+  <text x="600" y="240" text-anchor="middle" font-size="12" fill="#334155">→ 倉庫スペース圧迫</text>
+  <text x="600" y="258" text-anchor="middle" font-size="12" fill="#334155">→ キャッシュフロー悪化</text>
+
+  <path d="M600 296 L600 330" stroke="#334155" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arr2)"/>
+
+  <!-- Solution 2 -->
+  <rect x="440" y="330" width="320" height="120" rx="12" fill="#334155"/>
+  <text x="600" y="362" text-anchor="middle" font-size="14" font-weight="900" fill="#FFFFFF">最適発注量の自動算出</text>
+  <text x="600" y="385" text-anchor="middle" font-size="12" fill="#B9C4CE">商品ごとの安全在庫・</text>
+  <text x="600" y="403" text-anchor="middle" font-size="12" fill="#B9C4CE">リードタイムを自動計算</text>
+  <text x="600" y="425" text-anchor="middle" font-size="12" fill="#B9C4CE">→ 過剰在庫を最小化</text>
+  <text x="600" y="443" text-anchor="middle" font-size="12" fill="#B9C4CE">属人化も排除</text>
+
+  <!-- Card 3 -->
+  <rect x="820" y="128" width="320" height="160" rx="12" fill="#FFF9F0" stroke="#E07A5F" stroke-width="2"/>
+  <text x="980" y="185" text-anchor="middle" font-size="28" fill="#D97706">🔄</text>
+  <text x="980" y="220" text-anchor="middle" font-size="13" fill="#7C2D12" font-weight="700">Amazon・楽天・自社サイト</text>
+  <text x="980" y="240" text-anchor="middle" font-size="12" fill="#78350F">→ 在庫数がずれてダブル受注</text>
+  <text x="980" y="258" text-anchor="middle" font-size="12" fill="#78350F">→ 受注キャンセルでペナルティ</text>
+
+  <path d="M980 296 L980 330" stroke="#D97706" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#arr3)"/>
+
+  <!-- Solution 3 -->
+  <rect x="820" y="330" width="320" height="120" rx="12" fill="#D97706"/>
+  <text x="980" y="362" text-anchor="middle" font-size="14" font-weight="900" fill="#FFFFFF">リアルタイム在庫同期</text>
+  <text x="980" y="385" text-anchor="middle" font-size="12" fill="#FEF3C7">各チャネルAPIと連携し</text>
+  <text x="980" y="403" text-anchor="middle" font-size="12" fill="#FEF3C7">在庫数を常時同期</text>
+  <text x="980" y="425" text-anchor="middle" font-size="12" fill="#FEF3C7">→ マルチチャネル在庫ズレゼロ</text>
+  <text x="980" y="443" text-anchor="middle" font-size="12" fill="#FEF3C7">ダブル受注を防止</text>
+
+  <!-- Footer label -->
+  <text x="600" y="488" text-anchor="middle" font-size="11" fill="#A8A29E">AI在庫管理の自動化により3大課題すべてをシステムで解決できます</text>
+</svg>
