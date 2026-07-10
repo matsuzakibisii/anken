@@ -1,0 +1,90 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <rect width="1200" height="480" fill="#F0F4FF"/>
+
+  <!-- タイトル -->
+  <text x="600" y="46" text-anchor="middle" font-size="22" font-weight="900" fill="#1E3A8A">スポット外注でCAD図面AI化を進める3ステップ</text>
+
+  <!-- ステップカード共通 幅300 -->
+
+  <!-- STEP1 -->
+  <rect x="60" y="80" width="300" height="340" rx="16" fill="#ffffff" stroke="#1E40AF" stroke-width="2"/>
+  <rect x="60" y="80" width="300" height="72" rx="16" fill="#1E40AF"/>
+  <rect x="60" y="120" width="300" height="32" fill="#1E40AF"/>
+  <text x="210" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#BFD9FF">STEP 1</text>
+  <text x="210" y="143" text-anchor="middle" font-size="15" font-weight="900" fill="#ffffff">対象業務・図面を特定</text>
+
+  <!-- アイコン：ターゲット -->
+  <circle cx="210" cy="202" r="32" fill="none" stroke="#1E40AF" stroke-width="2.5"/>
+  <circle cx="210" cy="202" r="20" fill="none" stroke="#1E40AF" stroke-width="1.5"/>
+  <circle cx="210" cy="202" r="8" fill="#1E40AF"/>
+  <line x1="210" y1="164" x2="210" y2="170" stroke="#1E40AF" stroke-width="2"/>
+  <line x1="210" y1="234" x2="210" y2="240" stroke="#1E40AF" stroke-width="2"/>
+  <line x1="172" y1="202" x2="178" y2="202" stroke="#1E40AF" stroke-width="2"/>
+  <line x1="242" y1="202" x2="248" y2="202" stroke="#1E40AF" stroke-width="2"/>
+
+  <text x="210" y="258" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40A0">「何の図面を」</text>
+  <text x="210" y="276" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40A0">「何に使いたいか」を1つに絞る</text>
+  <line x1="85" y1="292" x2="335" y2="292" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="210" y="314" text-anchor="middle" font-size="11" fill="#6B7280">例：AutoCAD DXFファイル</text>
+  <text x="210" y="332" text-anchor="middle" font-size="11" fill="#6B7280">月20件 → 数量拾い出しを自動化</text>
+  <rect x="95" y="350" width="230" height="52" rx="10" fill="#EFF6FF"/>
+  <text x="210" y="372" text-anchor="middle" font-size="11" fill="#1E40AF">✓ 対象フォーマット（DXF/PDF/紙）</text>
+  <text x="210" y="392" text-anchor="middle" font-size="11" fill="#1E40AF">✓ データ量・品質を事前確認</text>
+
+  <!-- 矢印1 -->
+  <polygon points="390,250 420,238 420,262" fill="#D97706"/>
+  <line x1="360" y1="250" x2="418" y2="250" stroke="#D97706" stroke-width="3"/>
+
+  <!-- STEP2 -->
+  <rect x="450" y="80" width="300" height="340" rx="16" fill="#ffffff" stroke="#D97706" stroke-width="2.5"/>
+  <rect x="450" y="80" width="300" height="72" rx="16" fill="#D97706"/>
+  <rect x="450" y="120" width="300" height="32" fill="#D97706"/>
+  <text x="600" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#FEF3C7">STEP 2</text>
+  <text x="600" y="143" text-anchor="middle" font-size="15" font-weight="900" fill="#ffffff">ドメイン知識のある</text>
+
+  <!-- テキストが2行に -->
+  <rect x="450" y="148" width="300" height="0" fill="#D97706"/>
+  <text x="600" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">　AIエンジニアに発注</text>
+
+  <!-- アイコン：エンジニア選定 -->
+  <circle cx="600" cy="206" r="22" fill="none" stroke="#D97706" stroke-width="2"/>
+  <text x="600" y="213" text-anchor="middle" font-size="18" fill="#D97706">👷</text>
+  <rect x="540" y="234" width="120" height="18" rx="4" fill="#FEF3C7"/>
+  <text x="600" y="247" text-anchor="middle" font-size="10" font-weight="700" fill="#92400E">CAD/建設ドメイン実績を確認</text>
+
+  <line x1="475" y1="262" x2="725" y2="262" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="600" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">確認ポイント</text>
+  <text x="600" y="304" text-anchor="middle" font-size="11" fill="#6B7280">DXF/DWGパーサー実装経験</text>
+  <text x="600" y="322" text-anchor="middle" font-size="11" fill="#6B7280">建設系AI-OCRの開発実績</text>
+  <rect x="485" y="350" width="230" height="52" rx="10" fill="#FEF3C7"/>
+  <text x="600" y="372" text-anchor="middle" font-size="11" fill="#92400E">✓ 図面サンプル5〜10件で</text>
+  <text x="600" y="392" text-anchor="middle" font-size="11" fill="#92400E">　対応可否・精度目安を確認</text>
+
+  <!-- 矢印2 -->
+  <polygon points="780,250 810,238 810,262" fill="#D97706"/>
+  <line x1="750" y1="250" x2="808" y2="250" stroke="#D97706" stroke-width="3"/>
+
+  <!-- STEP3 -->
+  <rect x="840" y="80" width="300" height="340" rx="16" fill="#ffffff" stroke="#1E40AF" stroke-width="2"/>
+  <rect x="840" y="80" width="300" height="72" rx="16" fill="#1E40AF"/>
+  <rect x="840" y="120" width="300" height="32" fill="#1E40AF"/>
+  <text x="990" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#BFD9FF">STEP 3</text>
+  <text x="990" y="143" text-anchor="middle" font-size="15" font-weight="900" fill="#ffffff">PoC検証 → 本運用へ</text>
+
+  <!-- アイコン：サイクル -->
+  <path d="M990 178 A28 28 0 1 1 962 206" fill="none" stroke="#1E40AF" stroke-width="2.5"/>
+  <polygon points="960,192 956,208 970,204" fill="#1E40AF"/>
+  <text x="990" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="#1E40AF">3〜4週間</text>
+
+  <line x1="865" y1="238" x2="1115" y2="238" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="990" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#1E40A0">PoCサイクル（3〜4週間）</text>
+  <text x="990" y="280" text-anchor="middle" font-size="11" fill="#6B7280">20〜30件の図面サンプルで精度確認</text>
+  <text x="990" y="298" text-anchor="middle" font-size="11" fill="#6B7280">目標：85〜90% → チューニングで90%+</text>
+  <rect x="870" y="320" width="240" height="32" rx="8" fill="#EFF6FF"/>
+  <text x="990" y="341" text-anchor="middle" font-size="11" font-weight="700" fill="#1E40AF">人間チェック併用のハイブリッド運用で定着</text>
+  <rect x="870" y="364" width="240" height="32" rx="8" fill="#FEF3C7"/>
+  <text x="990" y="385" text-anchor="middle" font-size="11" font-weight="700" fill="#92400E">精度安定後 → 他フォーマット・工程に拡大</text>
+
+  <!-- 出典 -->
+  <text x="600" y="466" text-anchor="middle" font-size="10" fill="#9CA3AF">ANKEN編集部作成（2026年7月）| 費用・期間は案件規模・図面フォーマットにより異なります</text>
+</svg>
