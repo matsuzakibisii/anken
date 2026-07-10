@@ -1,0 +1,88 @@
+# ANKEN（アンケン）by bisii
+
+> ANKENは、開発リソース不足に悩む企業と、スポット副業を希望するメガベンチャー出身エンジニアをタスク単位でマッチングする「マイクロ・マッチングサービス」です。固定費ゼロ・週1〜タスク単位から即戦力エンジニアへ依頼できます。
+
+## サービス概要
+
+- **サービス名**: ANKEN（アンケン）
+- **運営**: 株式会社ビシィッ
+- **URL**: https://anken.bisii.co.jp
+- **対象**: 発注者（企業・経営者・Webディレクター）とエンジニア（副業・スポット案件希望者）
+- **特徴**: スポット外注・単発発注・タスク単位・週1稼働・土日稼働に特化したマッチング
+
+## 主要キーワード
+
+スポット外注, スポット発注, 単発外注, タスク単位 エンジニア, 副業エンジニア, AI開発 外注, AI導入 スポット, FDE フォワードデプロイドエンジニア, マイクロマッチング, 開発リソース不足, 週末エンジニア, AI業務効率化
+
+## ブログ記事一覧
+
+### 発注者向け｜スポット外注（ジャンルA）
+
+- [スポットエンジニアに依頼したい企業へ｜今すぐ即戦力を確保する方法](https://anken.bisii.co.jp/blog/blog-a.html)
+- [「ちょっとした開発」を外注するベストな方法とは？単発・スポットで頼めるエンジニアの見つけ方](https://anken.bisii.co.jp/blog/blog-e.html)
+- [エンジニアが採用できない。そのとき使える、採用ゼロ・即日稼働の外注術](https://anken.bisii.co.jp/blog/blog-h.html)
+- [採用より速く、外注より安く。開発リソース不足をスポット発注で突破する方法](https://anken.bisii.co.jp/blog/blog-k.html)
+- [エンジニアが採用できない中小企業が開発を止めない唯一の方法](https://anken.bisii.co.jp/blog/blog-n.html)
+- [エンジニア外注でよくある失敗5選と対策｜スポット発注で低リスクに開発を進める方法](https://anken.bisii.co.jp/blog/blog-t.html)
+- [伝わる依頼文の書き方｜スポット外注で失敗しないための5つの要素とテンプレート](https://anken.bisii.co.jp/blog/blog-v.html)
+- [スポット外注の費用相場2026年版｜タスク別の予算感とコストを抑える3つのコツ](https://anken.bisii.co.jp/blog/blog-y.html)
+- [kintoneカスタマイズをスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-dd.html)
+- [社内システム・業務ツールの小規模改修をスポット外注で依頼する方法](https://anken.bisii.co.jp/blog/blog-qq.html)
+
+### 発注者向け｜AI開発（ジャンルB）
+
+- [「AIツールを作りたいけどエンジニアがいない」を週末スポット発注で解決する方法](https://anken.bisii.co.jp/blog/blog-b.html)
+- [社内AIツール、ノウハウ不足でも作れる。週末スポットで即戦力を使い倒す方法](https://anken.bisii.co.jp/blog/blog-f.html)
+- [AI活用が「PoC止まり」で終わる会社と前に進む会社の、たった一つの差](https://anken.bisii.co.jp/blog/blog-i.html)
+- [ノーコードでは限界。生成AI社内ツールを週末スポットで実装する現実的な方法](https://anken.bisii.co.jp/blog/blog-m.html)
+- [AIエージェント開発を週末スポットで依頼する方法｜DXをスモールスタートで加速](https://anken.bisii.co.jp/blog/blog-p.html)
+- [バックオフィスAI化を低コストで実現する方法](https://anken.bisii.co.jp/blog/blog-u.html)
+- [社内ナレッジ検索AI（RAG）導入をスポット発注で実現する方法](https://anken.bisii.co.jp/blog/blog-w.html)
+- [カスタマーサポートのAI化（チャットボット導入）をスポット発注で実現する方法](https://anken.bisii.co.jp/blog/blog-z.html)
+- [士業のAI活用をスポット発注で実現する方法｜税理士・社労士事務所のAI導入入門](https://anken.bisii.co.jp/blog/blog-bb.html)
+- [請求書・書類処理のAI化（AI-OCR導入）をスポット発注で実現する方法](https://anken.bisii.co.jp/blog/blog-ff.html)
+- [求人原稿・スカウト文のAI自動生成をスポット発注で実現する方法](https://anken.bisii.co.jp/blog/blog-gg.html)
+- [FDE（フォワード・デプロイド・エンジニア）とは？AI導入を成功させる新職種をスポット外注で確保する方法](https://anken.bisii.co.jp/blog/blog-ii.html)
+- [契約書AIチェック導入をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-jj.html)
+- [不動産業のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-nn.html)
+- [人材開発支援助成金でAI研修費を75%削減する方法](https://anken.bisii.co.jp/blog/blog-pp.html)
+- [FDEに依頼できる業務範囲と活用事例3選](https://anken.bisii.co.jp/blog/blog-rr.html)
+- [EC在庫管理のAI自動化をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-tt.html)
+- [建設業・製造業のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-vv.html)
+
+### 発注者向け｜ガイド・まとめ（ジャンルH）
+
+- [スポット・エンジニア外注 完全ガイド【2026年版】｜費用相場・探し方・失敗しない依頼の流れ](https://anken.bisii.co.jp/blog/blog-pillar.html)
+- [デジタル化・AI導入補助金2026をスポット外注で活用する方法](https://anken.bisii.co.jp/blog/blog-cc.html)
+- [個人事業主・フリーランスのためのAI導入補助金2026活用法](https://anken.bisii.co.jp/blog/blog-ll.html)
+
+### AIの使い方・設定・機能解説（ジャンルE）
+
+- [ChatGPT・Claude・Gemini の違いと使い分け完全ガイド【2026年最新版】](https://anken.bisii.co.jp/blog/blog-q.html)
+- [社内AIリテラシー研修の進め方｜ChatGPT・Claude導入で何を教えるべきか【2026年版】](https://anken.bisii.co.jp/blog/blog-ee.html)
+- [Gemini for Google Workspaceの使い方と活用法](https://anken.bisii.co.jp/blog/blog-ss.html)
+
+### 参考プロンプト集｜業務効率化（ジャンルF）
+
+- [業務効率化に使えるAIプロンプト集30選【コピペOK・2026年版】](https://anken.bisii.co.jp/blog/blog-s.html)
+- [カスタマー対応に使えるAIプロンプト集20選](https://anken.bisii.co.jp/blog/blog-kk.html)
+
+### AI業務効率化｜方法・手順（ジャンルG）
+
+- [AI業務効率化の実践手順5ステップ](https://anken.bisii.co.jp/blog/blog-r.html)
+- [議事録作成をAIで自動化する手順](https://anken.bisii.co.jp/blog/blog-x.html)
+- [見積書作成をAIで自動化する手順](https://anken.bisii.co.jp/blog/blog-aa.html)
+- [Notion・Slack連携の情報分散をAIで解消する手順](https://anken.bisii.co.jp/blog/blog-hh.html)
+- [採用面接の議事録・評価をAIで効率化する手順](https://anken.bisii.co.jp/blog/blog-oo.html)
+- [企画書・提案資料をAIでレビュー・改善する手順](https://anken.bisii.co.jp/blog/blog-uu.html)
+
+### エンジニア向け（ジャンルC・D）
+
+- [副業エンジニアの単価相場2026年版](https://anken.bisii.co.jp/blog/blog-j.html)
+- [FDEスキルを副業・スポット案件に活かす方法](https://anken.bisii.co.jp/blog/blog-mm.html)
+
+## お問い合わせ・登録
+
+- 発注者（スポット外注を依頼したい）: https://anken.bisii.co.jp/contact.html
+- エンジニア登録（副業・スポット案件を受けたい）: https://anken.bisii.co.jp/member.html#register
+- ブログ一覧: https://anken.bisii.co.jp/blog/media.html

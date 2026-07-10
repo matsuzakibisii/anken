@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="企画書・提案資料をAIでレビュー・分析し説得力を高める手順を5ステップで解説。ChatGPT・Claudeを使った構成チェック・論理補強・表現改善の具体的なプロンプト例付き。2026年版。">
+  <title>企画書・提案資料をAIでレビュー・改善する手順｜説得力を高める5ステップ【2026年版】 | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="企画書・提案資料をAIでレビュー・改善する手順｜説得力を高める5ステップ【2026年版】">
+  <meta property="og:description" content="ChatGPT・ClaudeなどのAIを使って企画書の構成・論理・表現を分析し、説得力を高める5ステップの実践手順。具体的なプロンプト例も紹介。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-uu1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-uu.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="企画書・提案資料をAIでレビュー・改善する手順｜説得力を高める5ステップ【2026年版】">
+  <meta name="twitter:description" content="AIで企画書・提案資料の構成・論理・表現を分析。説得力を高める5ステップの実践手順を解説します。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-uu1-hero.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GWT2G24L7Z');
+    gtag('config', 'G-VHGE2HHG65');
+  </script>
+  <link rel="canonical" href="https://anken.bisii.co.jp/blog/blog-uu.html" />
+  <!-- JSON-LD: Article + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "企画書・提案資料をAIでレビュー・改善する手順｜説得力を高める5ステップ【2026年版】",
+        "description": "企画書・提案資料をAIでレビュー・分析し説得力を高める手順を5ステップで解説。ChatGPT・Claudeを使った構成チェック・論理補強・表現改善の具体的なプロンプト例付き。2026年版。",
+        "image": "https://anken.bisii.co.jp/blog/images/img-uu1-hero.png",
+        "datePublished": "2026-07-08",
+        "dateModified": "2026-07-08",
+        "author": {
+          "@type": "Organization",
+          "name": "ANKEN編集部",
+          "url": "https://anken.bisii.co.jp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "株式会社ビシィッ",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://anken.bisii.co.jp/apple-touch-icon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ANKENブログ TOP",
+            "item": "https://anken.bisii.co.jp/blog/media.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "企画書・提案資料をAIでレビュー・改善する手順｜説得力を高める5ステップ【2026年版】",
+            "item": "https://anken.bisii.co.jp/blog/blog-uu.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- favicon（blog/配下のファイルは ../で参照） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_uu',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_uu',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>企画書・提案資料をAIでレビュー・改善する手順｜説得力を高める5ステップ【2026年版】</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--g">AI業務効率化｜方法・手順</span>
+      <h1 class="article-hero__title">企画書・提案資料をAIでレビュー・改善する手順<br>説得力を高める5ステップ【2026年版】</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年7月8日</span>
+        <span class="article-hero__meta-item">⏱ 約8分で読めます</span>
+        <span class="article-hero__meta-item">🔑 企画書 AI分析, 提案資料 レビュー AI, AI 業務効率化 資料作成</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-uu1-hero.png" alt="ミニマルな抽象構図。幾何学的な形と流線が重なり合い、文書が分析・精製されるプロセスを抽象的に表現。エメラルドグリーンと深いスレートの配色" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- リード文 -->
+      <div class="article-lead">
+        「上司に企画書を出したら大幅な修正を求められた」「提案資料が通らないが、何が足りないのか自分では気づけない」「レビューを頼める相手が社内にいない」——資料作成の悩みを抱えるビジネスパーソンは多いですが、2026年現在、<strong>ChatGPTやClaudeなどの生成AIが「第三者レビュアー」として機能する</strong>時代になっています。本記事では、AIを使って企画書・提案資料の構成・論理・表現を分析し、説得力を高める<strong>実践的な5ステップ</strong>を、具体的なプロンプト例とともに解説します。
+      </div>
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">なぜ企画書レビューにAIが有効なのか</a></li>
+          <li><a href="#sec2">AIで企画書を分析・改善する5ステップ</a></li>
+          <li><a href="#sec3">すぐに使えるプロンプト例</a></li>
+          <li><a href="#sec4">AIレビューの限界と注意点</a></li>
+          <li><a href="#sec5">高度な分析が必要な場合はスポット外注で専門家と連携</a></li>
+          <li><a href="#sec6">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <!-- 本文 -->
+      <article class="article-body">
+
+        <h2 id="sec1">なぜ企画書レビューにAIが有効なのか</h2>
+
+        <p>企画書・提案資料のレビューは、本来なら経験豊富な先輩や上司に頼むのが理想です。しかし現実には「忙しそうで頼みにくい」「そもそも専門知識を持つレビュアーがいない」「社外向け資料は守秘義務があってチームで見せにくい」というケースが多くあります。こうした状況でAIは<strong>いつでも・何度でも・感情なしに</strong>フィードバックを返してくれる存在として機能します。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-uu2-comparison.svg" alt="AI分析と人間レビューの特性比較：スピード・客観性・専門性・コストの4軸で比較" width="1200" height="500">
+          <figcaption>図1：AI分析 vs 人間レビューの特性比較</figcaption>
+        </figure>
+
+        <p><strong>AIが得意とする企画書レビューの観点</strong>は大きく3つあります。</p>
+
+        <p><strong>①構成の論理チェック：</strong>「課題→原因→解決策→効果→アクション」という一般的なロジックの流れに沿っているか、各セクションのつながりが自然かを確認します。AIは文章全体の構造を把握し「Aを主張しているのにBの根拠しかない」という矛盾を見つけるのが得意です。</p>
+
+        <p><strong>②具体性・根拠の不足箇所の特定：</strong>「〜と思われます」「効果が期待できます」という曖昧な表現、数字や事例が欠けている主張を洗い出します。<strong>「何ページのどの文が抽象的すぎるか」</strong>を具体的に指摘させることができます。</p>
+
+        <p><strong>③読み手視点のフィードバック：</strong>「この資料を読んだ意思決定者は何を疑問に思うか」という視点でAIに質問させると、作者が気づいていない「穴」を発見できます。自分で書いた文章は「書いた意図」込みで読んでしまうバイアスを、AIが客観的に補完します。</p>
+
+        <div class="point-box">
+          <div class="point-box__title">AIレビューが最も効果を発揮するシーン</div>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.8;color:#374151;">新規事業提案・予算申請・外部パートナーへの提案書・補助金申請書など、<strong>「一発勝負で通したい資料」</strong>ほどAIレビューの恩恵が大きくなります。社内向けの軽い報告資料よりも、意思決定者を動かす必要がある資料に時間を割くのがコスパの高い使い方です。</p>
+        </div>
+
+        <h2 id="sec2">AIで企画書を分析・改善する5ステップ</h2>
+
+        <figure class="article-figure">
+          <img src="images/img-uu3-steps.svg" alt="AIで企画書を分析・改善する5ステップ：テキスト化→観点設定→構成チェック→根拠補強→表現磨き" width="1200" height="480">
+          <figcaption>図2：AIで企画書を分析・改善する5ステップ</figcaption>
+        </figure>
+
+        <p><strong>STEP 1：資料をテキスト形式に変換する</strong></p>
+        <p>AIに読み込ませるには、まず資料をテキスト化する必要があります。PowerPointやWordの場合は「名前を付けて保存→テキストファイル（.txt）」またはCopy All Textでクリップボードに取得します。PDFの場合はAdobe AcrobatやPDF2Goなどのオンラインツールでテキスト抽出します。</p>
+        <p>注意点は<strong>「テキスト化した後、図表の代わりに説明文を補足する」</strong>ことです。図のキャプションや表の数値が抜け落ちると、AIが「データがない」という誤ったフィードバックをします。図の内容は「【図：売上推移グラフ。2024年→2026年で150%成長】」のように文章で補足しておきます。</p>
+
+        <p><strong>STEP 2：AIに「評価の観点」と「読み手の立場」を指定する</strong></p>
+        <p>AIに「この企画書をレビューしてください」とだけ伝えると、一般的なフィードバックしか返ってきません。効果的な分析を得るためのポイントは2つです。</p>
+        <p>①<strong>評価の観点を列挙する：</strong>「論理構成・具体性・読み手への訴求力・リスクへの言及・アクションの明確さ」の5軸で評価してほしいと明示します。AIは明示された観点に絞って深く分析するため、フィードバックの質が格段に上がります。</p>
+        <p>②<strong>読み手の立場を設定する：</strong>「50代の経営者で新規投資に慎重なタイプ」「3社から提案を受けている調達担当者」のように具体的な読み手ペルソナを与えると、AIがその視点から疑問・懸念・欠けている情報を指摘してくれます。</p>
+
+        <p><strong>STEP 3：構成・論理の流れをチェックする</strong></p>
+        <p>STEP2のセットアップが終わったら、まず全体の論理構成を評価させます。「各セクションのつながりを評価し、飛躍している箇所・前提が説明されていない箇所を箇条書きで挙げてください」と依頼します。</p>
+        <p>AIが返した指摘リストを見て、<strong>「致命的な論理の穴（構成を変えなければいけないもの）」と「表現レベルの修正（言葉を足せばいいもの）」</strong>を自分で分類します。構成を変える必要がある場合は、AIに「このセクション順序を〜と変えたほうが自然ですか？」と問い直すと代替案を提示してくれます。</p>
+
+        <p><strong>STEP 4：具体性・根拠・数字の補強箇所を特定する</strong></p>
+        <p>論理構成に問題がなければ、次は「中身の充実度」を評価させます。「主張の根拠として数値・事例・出典が不足している箇所を全て列挙し、どのようなデータがあれば説得力が増すかを提案してください」と依頼します。</p>
+        <p>AIは具体的に「〜という主張に対して、市場規模データや導入事例があると強くなる」という形で補強ポイントを示してくれます。補強に必要なデータは、AIに追加で「市場規模を裏付ける公的データの検索キーワードを教えてください」と聞くと効率よく収集できます。</p>
+
+        <p><strong>STEP 5：表現の磨き上げと最終確認</strong></p>
+        <p>構成と根拠が固まったら、最後に表現の精度を上げます。「読み手に冗長・曖昧・専門用語で伝わりにくいと感じさせる表現を指摘し、それぞれ改善案を提示してください」と依頼します。</p>
+        <p>また、<strong>「この資料全体を読んだ意思決定者が最後に持つ疑問・不安を3つ挙げてください」</strong>というプロンプトを最終確認として使うと効果的です。AIが列挙した疑問に資料が答えられていなければ、追記または事前のQ&A準備が必要です。これがプレゼン後の想定外の反論を防ぐ最も実践的な使い方です。</p>
+
+        <h2 id="sec3">すぐに使えるプロンプト例</h2>
+
+        <p>以下のプロンプトはコピー＆ペーストしてそのままChatGPT（GPT-4o）またはClaudeに使えます。【　】内を資料の内容に合わせて変更してください。</p>
+
+        <p><strong>【構成・論理チェック用プロンプト】</strong></p>
+        <div class="note-box" style="background:#F5F3FF;border-left:4px solid #7C3AED;padding:16px 20px;margin:16px 0;border-radius:0 8px 8px 0;font-family:monospace;font-size:13px;line-height:1.8;color:#1C1917;">
+          あなたは経営コンサルタントです。以下の企画書を【50代・慎重派の経営者】の視点でレビューしてください。<br><br>
+          評価軸：①論理構成の一貫性　②各セクションのつながり　③前提説明の過不足　④飛躍・矛盾している箇所<br><br>
+          出力形式：<br>
+          - 良い点（3つ以内）<br>
+          - 改善が必要な箇所（箇条書き、場所を明示）<br>
+          - 最優先で修正すべき1点<br><br>
+          【ここに企画書テキストを貼り付け】
+        </div>
+
+        <p><strong>【根拠・具体性チェック用プロンプト】</strong></p>
+        <div class="note-box" style="background:#F0FDF4;border-left:4px solid #10B981;padding:16px 20px;margin:16px 0;border-radius:0 8px 8px 0;font-family:monospace;font-size:13px;line-height:1.8;color:#1C1917;">
+          以下の企画書において、主張の根拠として数値・事例・出典が不足している箇所を全て抽出してください。<br><br>
+          各箇所について：<br>
+          1. 不足している根拠の種類（統計データ・事例・専門家の見解 等）<br>
+          2. 説得力を高めるために追加すべき情報の方向性<br>
+          3. 検索すべきキーワード<br><br>
+          を箇条書きで示してください。<br><br>
+          【ここに企画書テキストを貼り付け】
+        </div>
+
+        <p><strong>【最終確認用プロンプト（意思決定者の疑問を先読みする）】</strong></p>
+        <div class="note-box" style="background:#FFF7ED;border-left:4px solid #F59E0B;padding:16px 20px;margin:16px 0;border-radius:0 8px 8px 0;font-family:monospace;font-size:13px;line-height:1.8;color:#1C1917;">
+          この企画書を読んだ意思決定者（【役職・立場を記載】）が最後に持つであろう<br>
+          ①疑問（3つ）　②懸念・不安（3つ）　③知りたいが書かれていない情報（3つ）<br>
+          をそれぞれ挙げてください。<br>
+          また、それぞれに対してこの資料内でどう対応できるかの提案もお願いします。<br><br>
+          【ここに企画書テキストを貼り付け】
+        </div>
+
+        <h2 id="sec4">AIレビューの限界と注意点</h2>
+
+        <p>AIによる企画書レビューは非常に有効ですが、把握しておくべき限界もあります。</p>
+
+        <p><strong>①社内政治・文化的背景を読めない：</strong>「この部長は数字より感情に動かされる」「この会社は前例のない提案を嫌う」といった組織内のコンテキストはAIには分かりません。AIのフィードバックはあくまで「一般的な論理と表現の観点から」であり、組織特有の慣習や人間関係は反映されません。AIの提案をそのまま適用するのではなく、最終的な判断は人間が行う必要があります。</p>
+
+        <p><strong>②最新情報・業界固有の事情を知らない場合がある：</strong>AIの知識には訓練データのカットオフがあります。特に直近の市場データや規制動向が重要な業界（医療・金融・建設等）では、AIが提示した「根拠として使えるデータ」が古い可能性があります。必ず一次情報で裏取りを行ってください。</p>
+
+        <p><strong>③機密情報の取り扱いに注意する：</strong>クラウド型AIサービス（ChatGPT Plusなど）に企画書をそのまま貼り付けると、情報がサーバーに送信されます。未発表の新製品情報・M&A計画・個人情報を含む資料は、サービスの利用規約・データ保護ポリシーを確認した上で、企業のセキュリティ規定に従って使用してください。Microsoft 365 Copilotなど企業向けプランでは入力データが学習に使われない設定が可能です。</p>
+
+        <div class="point-box">
+          <div class="point-box__title">機密情報を扱う場合のAI活用の工夫</div>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.8;color:#374151;">会社名・個人名・金額など機密に当たる情報を<strong>「A社」「X万円」など仮称・伏せ字に置き換えてからAIに貼り付ける</strong>方法が現実的なリスク低減策です。論理構成や表現の分析には固有情報が必須ではないため、多くのケースで対応できます。</p>
+        </div>
+
+        <h2 id="sec5">高度な分析が必要な場合はスポット外注で専門家と連携</h2>
+
+        <p>AIによるセルフレビューで対応できるのは「構成・論理・表現」の改善までです。それ以上の価値を資料に加えたい場合——たとえば<strong>「業界専門家の知見を踏まえた市場分析の追加」「財務モデルの検証」「相手企業が重視する観点に特化したカスタマイズ」</strong>——は、ドメイン知識を持つ人間の専門家が不可欠です。</p>
+
+        <p>ANKENでは、特定の業界・業務テーマに精通したエキスパートをスポット外注で依頼できます。例えば次のような依頼が可能です。</p>
+
+        <p>・新規事業提案書のロジック補強（MBA・事業開発経験者）</p>
+        <p>・補助金申請書の要件適合チェック（採択実績のある専門家）</p>
+        <p>・ITシステム導入提案書の技術的妥当性の検証（現役エンジニア）</p>
+        <p>・投資家向け資料（ピッチデック）のフィードバック（VC・エンジェル経験者）</p>
+
+        <p>AIで「8割の仕上げ」を済ませた上で、専門家に「残り2割の目利き」を依頼するという<strong>ハイブリッドアプローチ</strong>が、コストと質のバランスを最大化します。スポット外注は月額契約ではなくタスク単位で依頼できるため、「この1本の資料だけ見てほしい」という使い方にも対応しています。</p>
+
+        <!-- CTAボックス -->
+        <div class="cta-box">
+          <div class="cta-box__title">提案資料のレビュー・分析をプロに依頼したい方へ</div>
+          <p class="cta-box__desc">ANKENでは特定業界・業務テーマの専門家をスポット外注で依頼できます。AIで仕上げた資料に専門家の目を通すタスク単位の依頼から対応可能。まずはお気軽にご相談ください。</p>
+          <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_uu',event_label:'body_cta_contact'})">👉 無料で相談する（資料レビューをスポット依頼する）</a>
+          <p class="cta-box__sub">「どんな専門家に頼めばいいか分からない」という段階からご相談いただけます。</p>
+        </div>
+
+        <h2 id="sec6">まとめ</h2>
+
+        <p>企画書・提案資料のAI活用は、<strong>STEP1（テキスト化）→STEP2（観点と読み手を設定）→STEP3（論理チェック）→STEP4（根拠補強）→STEP5（表現の磨き上げと最終確認）</strong>の5ステップで進めると、自己レビューでは気づけない盲点を効率的に発見できます。</p>
+
+        <p>AIは「何度でも批判なく赤を入れてくれる共同作業者」です。ただし、組織の文脈・業界特有の事情・最新データは人間が補完する必要があります。AIで土台を固め、重要な資料は専門家の目も借りるハイブリッドなアプローチが、2026年の標準的な「資料作成の賢い進め方」になっています。</p>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-tt.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">EC在庫管理のAI自動化をスポット外注で実現する方法</span>
+          </a>
+          <a href="blog-vv.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">建設業・製造業のAI活用をスポット外注で実現する方法</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">提案資料のレビューをプロに依頼する</div>
+        <p class="sidebar-cta__desc">特定業界・業務テーマの専門家をスポット外注でタスク単位に依頼できます。AIで仕上げた資料の最終確認・ロジック補強からご相談可能です。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_uu',event_label:'sidebar_cta'})">無料で相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-x.html">議事録作成をAIで自動化する手順｜文字起こしから要約・タスク化まで</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-aa.html">見積書作成をAIで自動化する手順｜エクセル属人化から脱却する4ステップ</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--f" style="font-size:11px;margin-bottom:4px;display:inline-block;">参考プロンプト集｜業務効率化</span>
+            <a href="blog-kk.html">カスタマー対応に使えるAIプロンプト集20選</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

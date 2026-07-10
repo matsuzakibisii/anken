@@ -1,0 +1,123 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="900" fill="#1E293B">スポット外注でAI活用を進める3ステップ</text>
+  <line x1="200" y1="64" x2="1000" y2="64" stroke="#C2410C" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- === Connector lines between steps === -->
+  <!-- Arrow 1->2 -->
+  <line x1="370" y1="240" x2="440" y2="240" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="6 4"/>
+  <polygon points="440,234 454,240 440,246" fill="#CBD5E1"/>
+  <!-- Arrow 2->3 -->
+  <line x1="760" y1="240" x2="830" y2="240" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="6 4"/>
+  <polygon points="830,234 844,240 830,246" fill="#CBD5E1"/>
+
+  <!-- ===== STEP 1 ===== -->
+  <!-- Main card -->
+  <rect x="50" y="95" width="320" height="330" rx="20" ry="20" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- Left accent stripe -->
+  <rect x="50" y="95" width="8" height="330" rx="4" ry="4" fill="#C2410C"/>
+
+  <!-- Step badge -->
+  <circle cx="148" cy="85" r="28" fill="#C2410C"/>
+  <text x="148" y="79" text-anchor="middle" font-size="11" font-weight="700" fill="white">STEP</text>
+  <text x="148" y="97" text-anchor="middle" font-size="19" font-weight="900" fill="white">1</text>
+
+  <!-- Icon area -->
+  <rect x="100" y="115" width="220" height="90" rx="12" fill="#FFF1EE"/>
+  <!-- Magnifying glass icon -->
+  <circle cx="185" cy="158" r="26" fill="none" stroke="#C2410C" stroke-width="5"/>
+  <line x1="204" y1="177" x2="225" y2="198" stroke="#C2410C" stroke-width="5" stroke-linecap="round"/>
+  <!-- Document icon -->
+  <rect x="242" y="135" width="52" height="46" rx="6" fill="white" stroke="#C2410C" stroke-width="2"/>
+  <line x1="250" y1="148" x2="286" y2="148" stroke="#C2410C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="250" y1="158" x2="286" y2="158" stroke="#C2410C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="250" y1="168" x2="272" y2="168" stroke="#C2410C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Step title -->
+  <text x="210" y="237" text-anchor="middle" font-size="15" font-weight="900" fill="#C2410C">課題の絞り込み</text>
+  <text x="210" y="260" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">AI活用の</text>
+  <text x="210" y="282" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">「最初の1テーマ」</text>
+  <text x="210" y="304" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">を絞り込む</text>
+
+  <line x1="80" y1="320" x2="350" y2="320" stroke="#F1F5F9" stroke-width="1.5"/>
+
+  <!-- Detail bullets -->
+  <circle cx="90" cy="343" r="5" fill="#C2410C"/>
+  <text x="103" y="348" font-size="13" fill="#475569">繰り返し手作業をリスト化</text>
+  <circle cx="90" cy="367" r="5" fill="#C2410C"/>
+  <text x="103" y="372" font-size="13" fill="#475569">既存データがある業務を優先</text>
+  <circle cx="90" cy="391" r="5" fill="#C2410C"/>
+  <text x="103" y="396" font-size="13" fill="#475569">現場担当者と課題確認</text>
+
+  <!-- ===== STEP 2 ===== -->
+  <rect x="444" y="95" width="320" height="330" rx="20" ry="20" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="444" y="95" width="8" height="330" rx="4" ry="4" fill="#0369A1"/>
+
+  <circle cx="542" cy="85" r="28" fill="#0369A1"/>
+  <text x="542" y="79" text-anchor="middle" font-size="11" font-weight="700" fill="white">STEP</text>
+  <text x="542" y="97" text-anchor="middle" font-size="19" font-weight="900" fill="white">2</text>
+
+  <rect x="494" y="115" width="220" height="90" rx="12" fill="#EFF6FF"/>
+  <!-- Engineer icon -->
+  <circle cx="565" cy="145" r="18" fill="#0369A1"/>
+  <path d="M540 195 Q540 170 565 170 Q590 170 590 195" fill="#0369A1"/>
+  <!-- Star badge -->
+  <circle cx="590" cy="130" r="15" fill="#F59E0B"/>
+  <text x="590" y="136" text-anchor="middle" font-size="16" fill="white">★</text>
+  <!-- Link icon -->
+  <rect x="602" y="140" width="94" height="40" rx="8" fill="white" stroke="#0369A1" stroke-width="2"/>
+  <text x="649" y="154" text-anchor="middle" font-size="10" font-weight="700" fill="#0369A1">ANKEN</text>
+  <text x="649" y="170" text-anchor="middle" font-size="10" fill="#64748B">マッチング</text>
+
+  <text x="604" y="237" text-anchor="middle" font-size="15" font-weight="900" fill="#0369A1">エンジニア選定</text>
+  <text x="604" y="260" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">業種実績のある</text>
+  <text x="604" y="282" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">AIエンジニアに</text>
+  <text x="604" y="304" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">スポット依頼する</text>
+
+  <line x1="474" y1="320" x2="744" y2="320" stroke="#F1F5F9" stroke-width="1.5"/>
+
+  <circle cx="484" cy="343" r="5" fill="#0369A1"/>
+  <text x="497" y="348" font-size="13" fill="#475569">発注書に課題・データ量を記載</text>
+  <circle cx="484" cy="367" r="5" fill="#0369A1"/>
+  <text x="497" y="372" font-size="13" fill="#475569">複数エンジニアから提案比較</text>
+  <circle cx="484" cy="391" r="5" fill="#0369A1"/>
+  <text x="497" y="396" font-size="13" fill="#475569">30〜80万円・3〜4週間で着手</text>
+
+  <!-- ===== STEP 3 ===== -->
+  <rect x="838" y="95" width="320" height="330" rx="20" ry="20" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="838" y="95" width="8" height="330" rx="4" ry="4" fill="#1E293B"/>
+
+  <circle cx="936" cy="85" r="28" fill="#1E293B"/>
+  <text x="936" y="79" text-anchor="middle" font-size="11" font-weight="700" fill="white">STEP</text>
+  <text x="936" y="97" text-anchor="middle" font-size="19" font-weight="900" fill="white">3</text>
+
+  <rect x="888" y="115" width="220" height="90" rx="12" fill="#F8FAFC"/>
+  <!-- Cycle arrows icon -->
+  <circle cx="980" cy="162" r="28" fill="none" stroke="#1E293B" stroke-width="4"/>
+  <path d="M980 134 A28 28 0 0 1 1008 162" fill="none" stroke="#C2410C" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="1006,152 1014,162 1004,168" fill="#C2410C"/>
+  <path d="M980 190 A28 28 0 0 1 952 162" fill="none" stroke="#0369A1" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="954,172 946,162 956,156" fill="#0369A1"/>
+  <!-- Center check -->
+  <text x="980" y="169" text-anchor="middle" font-size="18" font-weight="900" fill="#1E293B">✓</text>
+
+  <text x="998" y="237" text-anchor="middle" font-size="15" font-weight="900" fill="#475569">PoC→拡大</text>
+  <text x="998" y="260" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">3週間PoC→</text>
+  <text x="998" y="282" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">成果確認→</text>
+  <text x="998" y="304" text-anchor="middle" font-size="17" font-weight="900" fill="#1E293B">次工程へ展開</text>
+
+  <line x1="868" y1="320" x2="1138" y2="320" stroke="#F1F5F9" stroke-width="1.5"/>
+
+  <circle cx="878" cy="343" r="5" fill="#475569"/>
+  <text x="891" y="348" font-size="13" fill="#475569">1週：データ受取・ベースライン構築</text>
+  <circle cx="878" cy="367" r="5" fill="#475569"/>
+  <text x="891" y="372" font-size="13" fill="#475569">2週：現場フィードバック収集</text>
+  <circle cx="878" cy="391" r="5" fill="#475569"/>
+  <text x="891" y="396" font-size="13" fill="#475569">3週：改良版納品・精度評価</text>
+
+  <!-- Footer note -->
+  <text x="600" y="470" text-anchor="middle" font-size="11" fill="#94A3B8">ANKEN編集部作成 © 2026</text>
+</svg>

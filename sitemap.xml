@@ -38,7 +38,7 @@
   <!-- ブログ：ピラーページ -->
   <url>
     <loc>https://anken.bisii.co.jp/blog/blog-pillar.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -345,6 +345,20 @@
   <url>
     <loc>https://anken.bisii.co.jp/blog/blog-tt.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-uu.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-vv.html</loc>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

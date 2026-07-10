@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#1E293B">AIで企画書を分析・改善する 5ステップ</text>
+  <line x1="160" y1="60" x2="1040" y2="60" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Step boxes: y starts at 80 -->
+  <!-- STEP 1 -->
+  <rect x="36" y="82" width="192" height="220" rx="14" fill="#7C3AED"/>
+  <rect x="40" y="86" width="184" height="212" rx="11" fill="#F5F3FF"/>
+  <circle cx="132" cy="120" r="22" fill="#7C3AED"/>
+  <text x="132" y="127" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">1</text>
+  <text x="132" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">テキスト化</text>
+  <line x1="72" y1="170" x2="192" y2="170" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="132" y="192" text-anchor="middle" font-size="11" fill="#4C1D95">資料をPowerPoint</text>
+  <text x="132" y="208" text-anchor="middle" font-size="11" fill="#4C1D95">やPDFから</text>
+  <text x="132" y="224" text-anchor="middle" font-size="11" fill="#4C1D95">テキストに変換</text>
+  <text x="132" y="248" text-anchor="middle" font-size="10" fill="#6D28D9">図表はキャプション</text>
+  <text x="132" y="263" text-anchor="middle" font-size="10" fill="#6D28D9">で補足する</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="234" y1="192" x2="258" y2="192" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- STEP 2 -->
+  <rect x="264" y="82" width="192" height="220" rx="14" fill="#7C3AED"/>
+  <rect x="268" y="86" width="184" height="212" rx="11" fill="#F5F3FF"/>
+  <circle cx="360" cy="120" r="22" fill="#7C3AED"/>
+  <text x="360" y="127" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">2</text>
+  <text x="360" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">観点・読み手設定</text>
+  <line x1="300" y1="170" x2="420" y2="170" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="360" y="192" text-anchor="middle" font-size="11" fill="#4C1D95">評価軸（論理・具体性</text>
+  <text x="360" y="208" text-anchor="middle" font-size="11" fill="#4C1D95">・表現・リスク）と</text>
+  <text x="360" y="224" text-anchor="middle" font-size="11" fill="#4C1D95">読み手ペルソナを指定</text>
+  <text x="360" y="248" text-anchor="middle" font-size="10" fill="#6D28D9">ここが最も</text>
+  <text x="360" y="263" text-anchor="middle" font-size="10" fill="#6D28D9">重要なプロンプト設計</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="462" y1="192" x2="486" y2="192" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- STEP 3 -->
+  <rect x="492" y="82" width="192" height="220" rx="14" fill="#10B981"/>
+  <rect x="496" y="86" width="184" height="212" rx="11" fill="#F0FDF4"/>
+  <circle cx="588" cy="120" r="22" fill="#10B981"/>
+  <text x="588" y="127" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">3</text>
+  <text x="588" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#10B981">構成・論理チェック</text>
+  <line x1="528" y1="170" x2="648" y2="170" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="588" y="192" text-anchor="middle" font-size="11" fill="#064E3B">各セクションの</text>
+  <text x="588" y="208" text-anchor="middle" font-size="11" fill="#064E3B">つながり・矛盾・</text>
+  <text x="588" y="224" text-anchor="middle" font-size="11" fill="#064E3B">前提の過不足を確認</text>
+  <text x="588" y="248" text-anchor="middle" font-size="10" fill="#059669">致命的な穴を</text>
+  <text x="588" y="263" text-anchor="middle" font-size="10" fill="#059669">この段階で潰す</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="690" y1="192" x2="714" y2="192" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- STEP 4 -->
+  <rect x="720" y="82" width="192" height="220" rx="14" fill="#10B981"/>
+  <rect x="724" y="86" width="184" height="212" rx="11" fill="#F0FDF4"/>
+  <circle cx="816" cy="120" r="22" fill="#10B981"/>
+  <text x="816" y="127" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">4</text>
+  <text x="816" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#10B981">根拠・具体性補強</text>
+  <line x1="756" y1="170" x2="876" y2="170" stroke="#A7F3D0" stroke-width="1"/>
+  <text x="816" y="192" text-anchor="middle" font-size="11" fill="#064E3B">数値・事例・出典が</text>
+  <text x="816" y="208" text-anchor="middle" font-size="11" fill="#064E3B">不足している箇所を</text>
+  <text x="816" y="224" text-anchor="middle" font-size="11" fill="#064E3B">AIに全て抽出させる</text>
+  <text x="816" y="248" text-anchor="middle" font-size="10" fill="#059669">補強すべきデータの</text>
+  <text x="816" y="263" text-anchor="middle" font-size="10" fill="#059669">検索KWも提示させる</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="918" y1="192" x2="942" y2="192" stroke="#7C3AED" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- STEP 5 -->
+  <rect x="948" y="82" width="216" height="220" rx="14" fill="#7C3AED"/>
+  <rect x="952" y="86" width="208" height="212" rx="11" fill="#F5F3FF"/>
+  <circle cx="1056" cy="120" r="22" fill="#7C3AED"/>
+  <text x="1056" y="127" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">5</text>
+  <text x="1056" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">表現磨き・最終確認</text>
+  <line x1="984" y1="170" x2="1128" y2="170" stroke="#DDD6FE" stroke-width="1"/>
+  <text x="1056" y="192" text-anchor="middle" font-size="11" fill="#4C1D95">冗長・曖昧・難解な</text>
+  <text x="1056" y="208" text-anchor="middle" font-size="11" fill="#4C1D95">表現を改善。読み手の</text>
+  <text x="1056" y="224" text-anchor="middle" font-size="11" fill="#4C1D95">疑問・不安を先読み</text>
+  <text x="1056" y="248" text-anchor="middle" font-size="10" fill="#6D28D9">「意思決定者が最後に</text>
+  <text x="1056" y="263" text-anchor="middle" font-size="10" fill="#6D28D9">持つ疑問3つ」を確認</text>
+
+  <!-- Bottom section: output -->
+  <rect x="36" y="326" width="1128" height="62" rx="12" fill="#1E293B"/>
+  <text x="600" y="352" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">🎯 AIレビュー完了後のアウトプット</text>
+  <text x="600" y="374" text-anchor="middle" font-size="12" fill="#94A3B8">修正すべき箇所が優先順位付きで明確になった企画書　＋　想定Q&amp;A（プレゼン対策）</text>
+
+  <!-- Tips row -->
+  <rect x="36" y="408" width="540" height="56" rx="10" fill="#EDE9FE"/>
+  <text x="48" y="430" font-size="12" font-weight="700" fill="#5B21B6">💡 AIレビューのコツ</text>
+  <text x="48" y="449" font-size="11" fill="#4C1D95">STEP2の「観点指定」と「読み手ペルソナ」設定がフィードバック精度を左右する最重要ポイント</text>
+  <text x="48" y="458" font-size="11" fill="#4C1D95">一度に全部ではなく、STEP3→4→5を分けて依頼するほうが深いフィードバックが得られる</text>
+
+  <rect x="596" y="408" width="568" height="56" rx="10" fill="#D1FAE5"/>
+  <text x="608" y="430" font-size="12" font-weight="700" fill="#065F46">🔒 機密情報の取り扱い</text>
+  <text x="608" y="449" font-size="11" fill="#064E3B">会社名・金額など機密情報は「A社」「X万円」に仮称化してからAIに貼り付ける</text>
+  <text x="608" y="458" font-size="11" fill="#064E3B">論理・構成の分析には固有情報は不要なため、多くのケースでこの方法で対応できる</text>
+</svg>
