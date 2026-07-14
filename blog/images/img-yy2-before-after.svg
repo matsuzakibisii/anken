@@ -1,0 +1,83 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#FAFAF8"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#1A1A1A">介護施設3大業務のDX前後時間比較（月間・50名規模施設の想定）</text>
+
+  <!-- Legend -->
+  <rect x="370" y="68" width="20" height="14" rx="3" fill="#FB7185"/>
+  <text x="396" y="80" font-size="14" fill="#374151">DX導入前</text>
+  <rect x="490" y="68" width="20" height="14" rx="3" fill="#166534"/>
+  <text x="516" y="80" font-size="14" fill="#374151">DX導入後</text>
+
+  <!-- ====== Column 1: 給与計算 ====== -->
+  <!-- Header -->
+  <rect x="80" y="100" width="300" height="44" rx="8" fill="#FFF1F2"/>
+  <text x="230" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#9F1239">① 給与計算・勤怠集計</text>
+
+  <!-- Bar: Before (15h) scale: 1h = 16px, max 20h = 320px -->
+  <rect x="130" y="165" width="240" height="36" rx="6" fill="#FB7185"/>
+  <text x="374" y="188" font-size="14" font-weight="700" fill="#9F1239">15時間/月</text>
+
+  <!-- Bar: After (2.5h) -->
+  <rect x="130" y="215" width="40" height="36" rx="6" fill="#166534"/>
+  <text x="174" y="238" font-size="14" font-weight="700" fill="#14532D">2.5h</text>
+
+  <!-- Reduction badge -->
+  <rect x="130" y="268" width="240" height="28" rx="14" fill="#ECFDF5"/>
+  <text x="250" y="287" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">▼ 約83%削減（12.5時間減）</text>
+
+  <!-- ====== Column 2: シフト管理 ====== -->
+  <rect x="450" y="100" width="300" height="44" rx="8" fill="#FFF1F2"/>
+  <text x="600" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#9F1239">② シフト作成・管理</text>
+
+  <!-- Bar: Before (8h) -->
+  <rect x="500" y="165" width="128" height="36" rx="6" fill="#FB7185"/>
+  <text x="632" y="188" font-size="14" font-weight="700" fill="#9F1239">8時間/月</text>
+
+  <!-- Bar: After (1.5h) -->
+  <rect x="500" y="215" width="24" height="36" rx="6" fill="#166534"/>
+  <text x="528" y="238" font-size="14" font-weight="700" fill="#14532D">1.5h</text>
+
+  <!-- Reduction badge -->
+  <rect x="500" y="268" width="200" height="28" rx="14" fill="#ECFDF5"/>
+  <text x="600" y="287" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">▼ 約81%削減（6.5時間減）</text>
+
+  <!-- ====== Column 3: 介護記録 ====== -->
+  <rect x="820" y="100" width="300" height="44" rx="8" fill="#FFF1F2"/>
+  <text x="970" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#9F1239">③ 介護記録入力</text>
+
+  <!-- Bar: Before (22h = スタッフ1人想定 × 月22日) -->
+  <rect x="870" y="165" width="256" height="36" rx="6" fill="#FB7185"/>
+  <!-- note: scaled to 16px/h, 16h shown = 256px -->
+  <text x="1130" y="188" font-size="14" font-weight="700" fill="#9F1239">16時間/月</text>
+
+  <!-- Bar: After (5h) -->
+  <rect x="870" y="215" width="80" height="36" rx="6" fill="#166534"/>
+  <text x="954" y="238" font-size="14" font-weight="700" fill="#14532D">5時間/月</text>
+
+  <!-- Reduction badge -->
+  <rect x="870" y="268" width="220" height="28" rx="14" fill="#ECFDF5"/>
+  <text x="980" y="287" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">▼ 約69%削減（11時間減）</text>
+
+  <!-- Axis labels -->
+  <text x="230" y="155" text-anchor="middle" font-size="12" fill="#6B7280">導入前</text>
+  <text x="230" y="207" text-anchor="middle" font-size="12" fill="#6B7280">導入後</text>
+  <text x="600" y="155" text-anchor="middle" font-size="12" fill="#6B7280">導入前</text>
+  <text x="600" y="207" text-anchor="middle" font-size="12" fill="#6B7280">導入後</text>
+  <text x="970" y="155" text-anchor="middle" font-size="12" fill="#6B7280">導入前</text>
+  <text x="970" y="207" text-anchor="middle" font-size="12" fill="#6B7280">導入後</text>
+
+  <!-- Dividers -->
+  <line x1="420" y1="100" x2="420" y2="320" stroke="#E5E7EB" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="790" y1="100" x2="790" y2="320" stroke="#E5E7EB" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Total savings banner -->
+  <rect x="200" y="340" width="800" height="60" rx="12" fill="#166534"/>
+  <text x="600" y="367" text-anchor="middle" font-size="14" fill="#FFFFFF">3業務合計の削減効果（月間）</text>
+  <text x="600" y="392" text-anchor="middle" font-size="22" font-weight="900" fill="#BBF7D0">DX前 39時間 → DX後 9時間　　▼ 約30時間削減／月</text>
+
+  <!-- Footnote -->
+  <text x="600" y="460" text-anchor="middle" font-size="11" fill="#9CA3AF">※ スタッフ50名規模・施設管理担当者2名換算の概算値。実際の削減効果は業務量・システム構成によって異なります。</text>
+</svg>

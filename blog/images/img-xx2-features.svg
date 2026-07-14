@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F5F3FF"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#4C1D95">NotebookLMの主な機能4つ（2026年版）</text>
+
+  <!-- Card 1: Q&A チャット -->
+  <rect x="40" y="80" width="258" height="360" rx="16" fill="#ffffff" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="40" y="80" width="258" height="60" rx="16" fill="#7C3AED"/>
+  <rect x="40" y="120" width="258" height="20" rx="0" fill="#7C3AED"/>
+  <!-- Icon: chat bubbles -->
+  <circle cx="80" cy="110" r="16" fill="none" stroke="#EDE9FE" stroke-width="2"/>
+  <text x="80" y="116" text-anchor="middle" font-size="16" fill="#EDE9FE">💬</text>
+  <text x="169" y="107" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Q&amp;Aチャット</text>
+  <text x="169" y="126" text-anchor="middle" font-size="11" fill="#DDD6FE">ソース限定</text>
+
+  <text x="169" y="185" text-anchor="middle" font-size="30" fill="#7C3AED">🔍</text>
+  <text x="169" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">登録資料に特化した</text>
+  <text x="169" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">チャットQ&amp;A</text>
+  <text x="169" y="290" text-anchor="middle" font-size="12" fill="#6B7280">指定ソース外は</text>
+  <text x="169" y="310" text-anchor="middle" font-size="12" fill="#6B7280">参照しないため</text>
+  <text x="169" y="330" text-anchor="middle" font-size="12" fill="#6B7280">ハルシネーション</text>
+  <text x="169" y="350" text-anchor="middle" font-size="12" fill="#6B7280">がほぼ起きない</text>
+  <rect x="74" y="390" width="110" height="28" rx="14" fill="#7C3AED"/>
+  <text x="129" y="409" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">引用元明示</text>
+
+  <!-- Card 2: 要約・目次 -->
+  <rect x="320" y="80" width="258" height="360" rx="16" fill="#ffffff" stroke="#65A30D" stroke-width="2"/>
+  <rect x="320" y="80" width="258" height="60" rx="16" fill="#65A30D"/>
+  <rect x="320" y="120" width="258" height="20" rx="0" fill="#65A30D"/>
+  <text x="449" y="107" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">要約・目次生成</text>
+  <text x="449" y="126" text-anchor="middle" font-size="11" fill="#ECFCCB">自動コンテンツ</text>
+
+  <text x="449" y="185" text-anchor="middle" font-size="30" fill="#65A30D">📋</text>
+  <text x="449" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">長文資料を即座に</text>
+  <text x="449" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">要約・整理</text>
+  <text x="449" y="290" text-anchor="middle" font-size="12" fill="#6B7280">FAQ・目次・要約・</text>
+  <text x="449" y="310" text-anchor="middle" font-size="12" fill="#6B7280">タイムラインを</text>
+  <text x="449" y="330" text-anchor="middle" font-size="12" fill="#6B7280">ワンクリックで</text>
+  <text x="449" y="350" text-anchor="middle" font-size="12" fill="#6B7280">自動生成</text>
+  <rect x="354" y="390" width="110" height="28" rx="14" fill="#65A30D"/>
+  <text x="409" y="409" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">学習ガイドも自動</text>
+
+  <!-- Card 3: Audio Overview -->
+  <rect x="600" y="80" width="258" height="360" rx="16" fill="#ffffff" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="600" y="80" width="258" height="60" rx="16" fill="#7C3AED"/>
+  <rect x="600" y="120" width="258" height="20" rx="0" fill="#7C3AED"/>
+  <text x="729" y="107" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">音声概要</text>
+  <text x="729" y="126" text-anchor="middle" font-size="11" fill="#DDD6FE">Audio Overview</text>
+
+  <text x="729" y="185" text-anchor="middle" font-size="30" fill="#7C3AED">🎙️</text>
+  <text x="729" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">2人のAIホストが</text>
+  <text x="729" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">ポッドキャスト形式で解説</text>
+  <text x="729" y="290" text-anchor="middle" font-size="12" fill="#6B7280">移動中・通勤中に</text>
+  <text x="729" y="310" text-anchor="middle" font-size="12" fill="#6B7280">耳から資料を</text>
+  <text x="729" y="330" text-anchor="middle" font-size="12" fill="#6B7280">インプット可能。</text>
+  <text x="729" y="350" text-anchor="middle" font-size="12" fill="#6B7280">日本語対応済み</text>
+  <rect x="634" y="390" width="110" height="28" rx="14" fill="#7C3AED"/>
+  <text x="689" y="409" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1〜2分で生成</text>
+
+  <!-- Card 4: Mind Map -->
+  <rect x="880" y="80" width="258" height="360" rx="16" fill="#ffffff" stroke="#65A30D" stroke-width="2"/>
+  <rect x="880" y="80" width="258" height="60" rx="16" fill="#65A30D"/>
+  <rect x="880" y="120" width="258" height="20" rx="0" fill="#65A30D"/>
+  <text x="1009" y="107" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">マインドマップ</text>
+  <text x="1009" y="126" text-anchor="middle" font-size="11" fill="#ECFCCB">自動生成</text>
+
+  <text x="1009" y="185" text-anchor="middle" font-size="30" fill="#65A30D">🗺️</text>
+  <text x="1009" y="230" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">資料の構造・論点を</text>
+  <text x="1009" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">視覚的にマッピング</text>
+  <text x="1009" y="290" text-anchor="middle" font-size="12" fill="#6B7280">複数資料を横断的に</text>
+  <text x="1009" y="310" text-anchor="middle" font-size="12" fill="#6B7280">整理。プレゼン</text>
+  <text x="1009" y="330" text-anchor="middle" font-size="12" fill="#6B7280">構成の出発点として</text>
+  <text x="1009" y="350" text-anchor="middle" font-size="12" fill="#6B7280">活用できる</text>
+  <rect x="914" y="390" width="110" height="28" rx="14" fill="#65A30D"/>
+  <text x="969" y="409" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">キーワード関連整理</text>
+
+  <!-- Footer note -->
+  <text x="600" y="480" text-anchor="middle" font-size="11" fill="#9CA3AF">※ 機能・仕様は2026年7月時点。NotebookLM Plus では一部機能の上限が拡張されます。</text>
+</svg>

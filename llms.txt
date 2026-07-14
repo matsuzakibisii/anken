@@ -50,6 +50,7 @@
 - [EC在庫管理のAI自動化をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-tt.html)
 - [建設業・製造業のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-vv.html)
 - [建築・CAD図面のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-ww.html)
+- [社会福祉法人・介護施設の業務DXをスポット外注で実現する方法｜給与計算・シフト・記録をAI化する3ステップ](https://anken.bisii.co.jp/blog/blog-yy.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
@@ -62,6 +63,7 @@
 - [ChatGPT・Claude・Gemini の違いと使い分け完全ガイド【2026年最新版】](https://anken.bisii.co.jp/blog/blog-q.html)
 - [社内AIリテラシー研修の進め方｜ChatGPT・Claude導入で何を教えるべきか【2026年版】](https://anken.bisii.co.jp/blog/blog-ee.html)
 - [Gemini for Google Workspaceの使い方と活用法](https://anken.bisii.co.jp/blog/blog-ss.html)
+- [NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】](https://anken.bisii.co.jp/blog/blog-xx.html)
 
 ### 参考プロンプト集｜業務効率化（ジャンルF）
 

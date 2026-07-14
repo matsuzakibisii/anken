@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#FAFAF8"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#1A1A1A">スポット外注で介護DXを進める3ステップ</text>
+  <text x="600" y="74" text-anchor="middle" font-size="14" fill="#6B7280">IT専任担当者なし・固定費ゼロから始める実践フロー</text>
+
+  <!-- ===== STEP 1 ===== -->
+  <!-- Card -->
+  <rect x="60" y="100" width="310" height="290" rx="16" fill="#FFFFFF" stroke="#FB7185" stroke-width="2.5"/>
+  <!-- Step badge -->
+  <rect x="60" y="100" width="310" height="64" rx="16" fill="#FB7185"/>
+  <rect x="60" y="132" width="310" height="32" fill="#FB7185"/>
+  <text x="215" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">STEP 1　　目安：1〜2週間</text>
+  <text x="215" y="148" text-anchor="middle" font-size="18" font-weight="900" fill="#FFFFFF">業務棚卸しと優先順位付け</text>
+
+  <!-- Icon area -->
+  <circle cx="215" cy="210" r="34" fill="#FFF1F2"/>
+  <!-- Clipboard icon -->
+  <rect x="198" y="192" width="34" height="38" rx="4" fill="none" stroke="#FB7185" stroke-width="2.5"/>
+  <rect x="207" y="187" width="16" height="8" rx="3" fill="#FB7185"/>
+  <line x1="206" y1="207" x2="224" y2="207" stroke="#FB7185" stroke-width="2"/>
+  <line x1="206" y1="215" x2="224" y2="215" stroke="#FB7185" stroke-width="2"/>
+  <line x1="206" y1="223" x2="218" y2="223" stroke="#FB7185" stroke-width="2"/>
+
+  <!-- Body text -->
+  <text x="215" y="268" text-anchor="middle" font-size="13" fill="#374151">現場スタッフにヒアリングし、</text>
+  <text x="215" y="287" text-anchor="middle" font-size="13" fill="#374151">各業務の月間工数を計測。</text>
+  <text x="215" y="306" text-anchor="middle" font-size="13" fill="#374151">「月10時間以上かかっている」</text>
+  <text x="215" y="325" text-anchor="middle" font-size="13" fill="#374151">業務を1つ選んでターゲットに。</text>
+  <!-- Outcome label -->
+  <rect x="90" y="348" width="250" height="28" rx="8" fill="#FFF1F2"/>
+  <text x="215" y="367" text-anchor="middle" font-size="12" font-weight="700" fill="#9F1239">✓ 発注仕様書のたたき台が完成</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="390,238 420,224 420,252" fill="#166534"/>
+  <line x1="370" y1="238" x2="422" y2="238" stroke="#166534" stroke-width="3"/>
+
+  <!-- ===== STEP 2 ===== -->
+  <rect x="440" y="100" width="310" height="290" rx="16" fill="#FFFFFF" stroke="#166534" stroke-width="2.5"/>
+  <rect x="440" y="100" width="310" height="64" rx="16" fill="#166534"/>
+  <rect x="440" y="132" width="310" height="32" fill="#166534"/>
+  <text x="595" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">STEP 2　　目安：1〜2か月</text>
+  <text x="595" y="148" text-anchor="middle" font-size="18" font-weight="900" fill="#FFFFFF">スポット外注で一点突破開発</text>
+
+  <!-- Icon: Wrench/Gear -->
+  <circle cx="595" cy="210" r="34" fill="#ECFDF5"/>
+  <circle cx="595" cy="210" r="16" fill="none" stroke="#166534" stroke-width="3"/>
+  <circle cx="595" cy="210" r="6" fill="#166534"/>
+  <line x1="595" y1="188" x2="595" y2="196" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+  <line x1="595" y1="224" x2="595" y2="232" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+  <line x1="573" y1="210" x2="581" y2="210" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+  <line x1="609" y1="210" x2="617" y2="210" stroke="#166534" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="595" y="268" text-anchor="middle" font-size="13" fill="#374151">ANKENでエンジニアをマッチング。</text>
+  <text x="595" y="287" text-anchor="middle" font-size="13" fill="#374151">給与計算・シフト・記録の</text>
+  <text x="595" y="306" text-anchor="middle" font-size="13" fill="#374151">いずれか1業務を自動化する</text>
+  <text x="595" y="325" text-anchor="middle" font-size="13" fill="#374151">スクリプト・ツールを開発。</text>
+  <rect x="470" y="348" width="250" height="28" rx="8" fill="#ECFDF5"/>
+  <text x="595" y="367" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">✓ 費用目安 10〜30万円で試作完成</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="770,238 800,224 800,252" fill="#166534"/>
+  <line x1="750" y1="238" x2="802" y2="238" stroke="#166534" stroke-width="3"/>
+
+  <!-- ===== STEP 3 ===== -->
+  <rect x="820" y="100" width="310" height="290" rx="16" fill="#FFFFFF" stroke="#FB7185" stroke-width="2.5"/>
+  <rect x="820" y="100" width="310" height="64" rx="16" fill="#FB7185"/>
+  <rect x="820" y="132" width="310" height="32" fill="#FB7185"/>
+  <text x="975" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">STEP 3　　目安：導入後1〜3か月</text>
+  <text x="975" y="148" text-anchor="middle" font-size="18" font-weight="900" fill="#FFFFFF">現場展開とPDCAで定着</text>
+
+  <!-- Icon: checkmark circle -->
+  <circle cx="975" cy="210" r="34" fill="#FFF1F2"/>
+  <circle cx="975" cy="210" r="18" fill="none" stroke="#FB7185" stroke-width="3"/>
+  <polyline points="963,210 972,219 990,201" fill="none" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="975" y="268" text-anchor="middle" font-size="13" fill="#374151">スタッフ向け30分操作説明会を実施。</text>
+  <text x="975" y="287" text-anchor="middle" font-size="13" fill="#374151">初月の要望・不具合を収集し</text>
+  <text x="975" y="306" text-anchor="middle" font-size="13" fill="#374151">追加修正をスポットで依頼。</text>
+  <text x="975" y="325" text-anchor="middle" font-size="13" fill="#374151">3か月後にROI測定して報告。</text>
+  <rect x="850" y="348" width="250" height="28" rx="8" fill="#FFF1F2"/>
+  <text x="975" y="367" text-anchor="middle" font-size="12" font-weight="700" fill="#9F1239">✓ 次のDX予算承認につなげる</text>
+
+  <!-- Footer note -->
+  <text x="600" y="430" text-anchor="middle" font-size="13" fill="#166534" font-weight="700">スポット外注なら「1業務・1機能」から試せるため、失敗リスクを最小化して介護DXを段階的に進められます。</text>
+  <text x="600" y="456" text-anchor="middle" font-size="12" fill="#9CA3AF">ANKENでは介護・福祉業界のシステム開発経験を持つエンジニアをスポット単位でマッチングします。</text>
+</svg>

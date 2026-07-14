@@ -1,0 +1,88 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F5F3FF"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#4C1D95">ビジネスで使えるNotebookLM 活用シーン3選</text>
+
+  <!-- ===== Scene 1 ===== -->
+  <rect x="40" y="80" width="340" height="360" rx="16" fill="#ffffff" stroke="#7C3AED" stroke-width="2"/>
+  <!-- Header bar -->
+  <rect x="40" y="80" width="340" height="56" rx="16" fill="#7C3AED"/>
+  <rect x="40" y="116" width="340" height="20" fill="#7C3AED"/>
+  <text x="220" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">シーン① 会議前の資料読み込み</text>
+
+  <!-- Flow inside card -->
+  <rect x="70" y="160" width="280" height="46" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="210" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">📂 議事録・提案書をアップロード</text>
+  <text x="210" y="198" text-anchor="middle" font-size="11" fill="#6B7280">PDF / Google Doc / スライド</text>
+
+  <text x="210" y="230" text-anchor="middle" font-size="20" fill="#7C3AED">↓</text>
+
+  <rect x="70" y="242" width="280" height="46" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="210" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">💬 チャットで論点を質問</text>
+  <text x="210" y="280" text-anchor="middle" font-size="11" fill="#6B7280">「前回からの変更点は？」など</text>
+
+  <text x="210" y="312" text-anchor="middle" font-size="20" fill="#7C3AED">↓</text>
+
+  <rect x="70" y="324" width="280" height="46" rx="10" fill="#7C3AED"/>
+  <text x="210" y="344" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">✅ 会議までに全体把握完了</text>
+  <text x="210" y="362" text-anchor="middle" font-size="11" fill="#DDD6FE">数十ページを数分でキャッチアップ</text>
+
+  <!-- Benefit tag -->
+  <rect x="100" y="390" width="220" height="32" rx="16" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="210" y="411" text-anchor="middle" font-size="12" font-weight="700" fill="#7C3AED">準備時間 最大80%削減</text>
+
+  <!-- ===== Scene 2 ===== -->
+  <rect x="430" y="80" width="340" height="360" rx="16" fill="#ffffff" stroke="#65A30D" stroke-width="2"/>
+  <rect x="430" y="80" width="340" height="56" rx="16" fill="#65A30D"/>
+  <rect x="430" y="116" width="340" height="20" fill="#65A30D"/>
+  <text x="600" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">シーン② 競合・業界情報の継続整理</text>
+
+  <rect x="460" y="160" width="280" height="46" rx="10" fill="#ECFCCB" stroke="#65A30D" stroke-width="1.5"/>
+  <text x="600" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">📰 レポート・PR文を定期追加</text>
+  <text x="600" y="198" text-anchor="middle" font-size="11" fill="#6B7280">業界白書・競合プレスリリース等</text>
+
+  <text x="600" y="230" text-anchor="middle" font-size="20" fill="#65A30D">↓</text>
+
+  <rect x="460" y="242" width="280" height="46" rx="10" fill="#ECFCCB" stroke="#65A30D" stroke-width="1.5"/>
+  <text x="600" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#365314">🔎 横断的に比較・分析</text>
+  <text x="600" y="280" text-anchor="middle" font-size="11" fill="#6B7280">「A社とB社のサービス比較」など</text>
+
+  <text x="600" y="312" text-anchor="middle" font-size="20" fill="#65A30D">↓</text>
+
+  <rect x="460" y="324" width="280" height="46" rx="10" fill="#65A30D"/>
+  <text x="600" y="344" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">✅ 市場トレンドを即座にまとめ</text>
+  <text x="600" y="362" text-anchor="middle" font-size="11" fill="#ECFCCB">複数ソース横断で矛盾を発見しやすい</text>
+
+  <rect x="490" y="390" width="220" height="32" rx="16" fill="#F0FDF4" stroke="#65A30D" stroke-width="1.5"/>
+  <text x="600" y="411" text-anchor="middle" font-size="12" font-weight="700" fill="#65A30D">「情報ダム」として積み上げ可能</text>
+
+  <!-- ===== Scene 3 ===== -->
+  <rect x="820" y="80" width="340" height="360" rx="16" fill="#ffffff" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="820" y="80" width="340" height="56" rx="16" fill="#7C3AED"/>
+  <rect x="820" y="116" width="340" height="20" fill="#7C3AED"/>
+  <text x="990" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">シーン③ 社内マニュアルのQ&amp;A化</text>
+
+  <rect x="850" y="160" width="280" height="46" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="990" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">📖 就業規則・マニュアルを登録</text>
+  <text x="990" y="198" text-anchor="middle" font-size="11" fill="#6B7280">規程・操作手順書・FAQ文書等</text>
+
+  <text x="990" y="230" text-anchor="middle" font-size="20" fill="#7C3AED">↓</text>
+
+  <rect x="850" y="242" width="280" height="46" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="990" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#4C1D95">❓ 社員が自分で検索・質問</text>
+  <text x="990" y="280" text-anchor="middle" font-size="11" fill="#6B7280">「有給は何日前に申請?」など</text>
+
+  <text x="990" y="312" text-anchor="middle" font-size="20" fill="#7C3AED">↓</text>
+
+  <rect x="850" y="324" width="280" height="46" rx="10" fill="#7C3AED"/>
+  <text x="990" y="344" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">✅ 人事・総務への問い合わせ激減</text>
+  <text x="990" y="362" text-anchor="middle" font-size="11" fill="#DDD6FE">社内FAQ Botとして機能する</text>
+
+  <rect x="880" y="390" width="220" height="32" rx="16" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="990" y="411" text-anchor="middle" font-size="12" font-weight="700" fill="#7C3AED">問い合わせ工数 大幅削減</text>
+
+  <!-- Footer -->
+  <text x="600" y="462" text-anchor="middle" font-size="11" fill="#9CA3AF">※ Googleアカウントがあれば今すぐ無料で試せます。notebooklm.google.com</text>
+</svg>

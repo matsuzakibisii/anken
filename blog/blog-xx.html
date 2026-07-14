@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GoogleのNotebookLMの使い方・設定・活用法を初心者向けに解説。音声概要（Audio Overview）・FAQ自動生成・PDFや動画からのQ&amp;A機能を業務に活かす方法を網羅した2026年版ガイド。">
+  <title>NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】 | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】">
+  <meta property="og:description" content="GoogleのNotebookLMの使い方・設定・活用法を初心者向けに解説。音声概要・FAQ自動生成・PDFや動画からのQ&amp;A機能を業務に活かす2026年版ガイド。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-xx1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-xx.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】">
+  <meta name="twitter:description" content="NotebookLMの使い方・設定・活用法。音声概要・FAQ自動生成・社内資料Q&amp;A化を業務で使いこなす方法を解説。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-xx1-hero.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GWT2G24L7Z');
+    gtag('config', 'G-VHGE2HHG65');
+  </script>
+  <link rel="canonical" href="https://anken.bisii.co.jp/blog/blog-xx.html" />
+  <!-- JSON-LD: Article + BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】",
+        "description": "GoogleのNotebookLMの使い方・設定・活用法を初心者向けに解説。音声概要（Audio Overview）・FAQ自動生成・PDFや動画からのQ&A機能を業務に活かす方法を網羅した2026年版ガイド。",
+        "image": "https://anken.bisii.co.jp/blog/images/img-xx1-hero.png",
+        "datePublished": "2026-07-11",
+        "dateModified": "2026-07-11",
+        "author": {
+          "@type": "Organization",
+          "name": "ANKEN編集部",
+          "url": "https://anken.bisii.co.jp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "株式会社ビシィッ",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://anken.bisii.co.jp/apple-touch-icon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ANKENブログ TOP",
+            "item": "https://anken.bisii.co.jp/blog/media.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】",
+            "item": "https://anken.bisii.co.jp/blog/blog-xx.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- favicon（blog/配下のファイルは ../で参照） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_xx',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_xx',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--e">AIの使い方・設定・機能解説</span>
+      <h1 class="article-hero__title">NotebookLMの使い方と活用法<br>音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年7月11日</span>
+        <span class="article-hero__meta-item">⏱ 約10分で読めます</span>
+        <span class="article-hero__meta-item">🔑 NotebookLM 使い方, 音声概要 Audio Overview, AI ノートブック 活用法</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-xx1-hero.png" alt="3Dレンダー風のイラスト。半透明のノートブックが浮かび、周囲からPDF・動画・Webページが吸い込まれ、Q&Aカード・音声波形・マインドマップが放射状に展開される。バイオレットとライムグリーンの配色で知識の整理と活用を表現" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- リード文 -->
+      <div class="article-lead">
+        <strong>NotebookLMとは、PDFや動画・Webページなど「あなたが指定したソース」だけを参照してQ&amp;Aや要約・音声ポッドキャストを自動生成するGoogleのAIノートブックツールです。ChatGPTやClaudeと最大に異なる点は「指定ソース以外の情報を使わないため、ハルシネーション（でたらめ）がほぼ起きない」こと。</strong>2026年現在、日本語対応が安定し、ビジネスパーソンの情報整理・会議準備・競合調査ツールとして急速に普及しています。本記事では、NotebookLMの主な機能・使い方・業務での活用シーン3選を、最新機能（Audio Overview・マインドマップ生成・チームノートブック）を含めて解説します。
+      </div>
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">NotebookLMとは｜他のAIと何が違うのか</a></li>
+          <li><a href="#sec2">NotebookLMの主な機能4つ</a></li>
+          <li><a href="#sec3">NotebookLMの始め方（アカウント設定・ノートブック作成）</a></li>
+          <li><a href="#sec4">ビジネスで使える活用シーン3選</a></li>
+          <li><a href="#sec5">音声概要（Audio Overview）の使い方</a></li>
+          <li><a href="#sec6">よくある質問</a></li>
+          <li><a href="#sec7">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <article>
+
+        <h2 id="sec1">NotebookLMとは｜他のAIと何が違うのか</h2>
+
+        <p>NotebookLM（ノートブックエルエム）は、Googleが提供する無料のAI調査・ノートツールです。最大の特徴は<strong>「グラウンディング（接地）」</strong>と呼ばれる仕組みで、ユーザーが事前に登録したソース文書だけを参照して回答を生成します。</p>
+
+        <p>ChatGPTやClaudeは学習データ全体（インターネット上の膨大な情報）から回答を生成するため、「もっともらしいが誤った情報（ハルシネーション）」が生じることがあります。NotebookLMでは指定ソース外の情報を使わないため、<strong>回答の根拠となるソース引用が明示され、情報の信頼性を確認しやすい</strong>という大きなメリットがあります。</p>
+
+        <p>2026年7月時点のNotebookLMは個人・ビジネス利用ともに無料（NotebookLM Plus は有料）で利用でき、1つのノートブックにソースを最大50件、各ソースは最大500,000字まで登録可能です。Googleアカウントがあれば即日利用できます。</p>
+
+        <div class="point-box">
+          <div class="point-box__title">NotebookLM と他の主要AIの違い（早見表）</div>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.8;color:#374151;">
+            <strong>NotebookLM</strong>：指定ソースのみ参照 → ハルシネーション少・引用明示。長文資料のQ&amp;A・要約・音声化が得意。<br>
+            <strong>ChatGPT</strong>：学習データ全体を参照 → 汎用性高・創作・コーディングが得意。ハルシネーションリスクあり。<br>
+            <strong>Claude</strong>：学習データ全体を参照 → 長文理解・文章生成・分析が得意。ハルシネーションリスクあり。<br>
+            <strong>使い分けのポイント</strong>：「特定の資料・文書を深く分析したい」ならNotebookLM。「汎用的な質問・文章生成」ならChatGPT / Claude。
+          </p>
+        </div>
+
+        <h2 id="sec2">NotebookLMの主な機能4つ</h2>
+
+        <figure class="article-figure">
+          <img src="images/img-xx2-features.svg" alt="NotebookLMの4つの主な機能を示すカード図。左からQ&Aチャット、要約・目次生成、音声概要（Audio Overview）、マインドマップ自動生成の4つをバイオレットとライムグリーンで表現" width="1200" height="500">
+          <figcaption>NotebookLMの主な機能4つ（2026年7月現在）</figcaption>
+        </figure>
+
+        <p><strong>① Q&amp;Aチャット（ソース限定）</strong><br>
+        登録したソース文書に対してチャット形式で質問できます。「この契約書で解約条件はどこに書かれているか」「このレポートの主要な結論を3点まとめて」など、具体的な質問に対してソース内の該当箇所を引用しながら回答します。引用元は回答の下に番号付きで表示されるので、原文を確認するのが簡単です。</p>
+
+        <p><strong>② 要約・目次・FAQ自動生成</strong><br>
+        ノートブックを作成すると、登録したソースから自動的に「よくある質問（FAQ）」「目次」「要約」「タイムライン（年表）」「学習ガイド」などのコンテンツが生成されます。長い報告書や仕様書を素早く把握したいときに特に役立ちます。</p>
+
+        <p><strong>③ 音声概要（Audio Overview）</strong><br>
+        2024年後半から提供が始まった機能で、登録したソースの内容をもとに2人のAIホストが対話形式で解説するポッドキャスト音声を自動生成します。通勤中・移動中に耳から情報をインプットできる点が好評で、2026年現在は日本語での生成品質も大幅に向上しています。</p>
+
+        <p><strong>④ マインドマップ自動生成</strong><br>
+        登録したソースの構造・論点・キーワードの関連をマインドマップ形式で視覚化します。複数の資料を横断的に整理したいときや、プレゼン構成を考えるときの出発点として使えます。</p>
+
+        <h2 id="sec3">NotebookLMの始め方（アカウント設定・ノートブック作成）</h2>
+
+        <p>NotebookLMはGoogleアカウントがあれば追加設定なしで使い始められます。手順は以下の通りです。</p>
+
+        <p><strong>STEP 1：アクセス</strong><br>
+        ブラウザで <code>notebooklm.google.com</code> にアクセスし、Googleアカウントでログインします。法人利用の場合はGoogle Workspace アカウントでもログイン可能です。</p>
+
+        <p><strong>STEP 2：新しいノートブックを作成</strong><br>
+        ホーム画面の「新しいノートブック」ボタンをクリックします。ノートブックはプロジェクト単位で管理するイメージで、「〇〇プロジェクト資料集」「競合調査2026Q3」など目的別に複数作成できます。</p>
+
+        <p><strong>STEP 3：ソースを追加</strong><br>
+        ノートブックにソースを追加します。対応フォーマットはPDF・Google ドキュメント・Google スライド・テキストファイル・Webページ（URL）・YouTube動画（URL）・コピー＆ペーストテキストです。最大50件まで登録でき、複数ファイルを一度にアップロードできます。</p>
+
+        <p><strong>STEP 4：チャットで質問・機能を使う</strong><br>
+        ソース登録が完了すると、右側のチャット欄で質問できるようになります。また「概要パネル」から自動生成されたFAQ・要約・目次・マインドマップにアクセスできます。</p>
+
+        <div class="point-box">
+          <div class="point-box__title">NotebookLM を使う際の3つの注意点</div>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.8;color:#374151;">
+            ①<strong>登録したソース外の情報は回答に含まれない</strong>：「これ以外の業界事例を教えて」という質問には答えられません。追加の背景情報が必要なら、別のソースとして登録してください。<br>
+            ②<strong>機密情報の取り扱いに注意</strong>：Google Workspace エディション（ビジネス契約）以外の個人アカウントでは、登録データがGoogleのAI学習に使用される場合があります。社外秘・個人情報を含む資料は利用規約を必ず確認してください。<br>
+            ③<strong>ソースの品質が回答品質を決める</strong>：スキャンした紙資料の画像PDFはテキスト抽出精度が下がります。テキストレイヤーのあるPDFか、Wordファイルをそのまま登録するのが最善です。
+          </p>
+        </div>
+
+        <h2 id="sec4">ビジネスで使える活用シーン3選</h2>
+
+        <figure class="article-figure">
+          <img src="images/img-xx3-usecases.svg" alt="NotebookLMの3つの活用シーンを示すフロー図。会議資料まとめ・競合調査・社内マニュアルQ&A化の3パターンをバイオレットとライムグリーンで表現" width="1200" height="480">
+          <figcaption>ビジネスにおけるNotebookLMの主な活用シーン3選</figcaption>
+        </figure>
+
+        <p><strong>活用シーン①：会議前の資料読み込み・論点整理</strong><br>
+        重役会議・取締役会・プロジェクト定例など、事前に大量の資料を読み込む必要がある場面でNotebookLMは特に威力を発揮します。議事録・レポート・提案書をNotebookLMにアップロードし、「前回会議からの変更点は何か」「今回の主要論点を3つ挙げて」「Aさんの発言で気になる点は」などと質問することで、数十ページの資料を短時間で把握できます。</p>
+
+        <p><strong>活用シーン②：業界レポート・競合情報の継続的な整理</strong><br>
+        業界白書・競合他社のプレスリリース・市場調査レポートを定期的にNotebookLMに追加していく「情報ダム」として活用できます。「〇〇社と△△社のサービス比較」「2026年上半期の市場トレンドまとめ」などの質問に対して、登録した複数ソースを横断的に参照して回答してくれます。</p>
+
+        <p><strong>活用シーン③：社内マニュアル・規程文書のQ&amp;A化</strong><br>
+        就業規則・経費精算ルール・システム操作マニュアルなどを登録しておくと、「有給取得は何日前に申請するか」「経費申請の上限は部署ごとに違うか」といった問い合わせにNotebookLMが即答できる「社内FAQ bot」として機能します。人事・総務・情シスへの問い合わせを自分で解決できるため、問い合わせ工数の削減につながります。</p>
+
+        <h2 id="sec5">音声概要（Audio Overview）の使い方</h2>
+
+        <p>Audio Overviewは、NotebookLM最大の差別化機能です。登録したソースをもとに2人のAIホストが掛け合い形式でポッドキャスト風に解説する音声を自動生成します。2026年現在、日本語での生成精度は高く、10〜15分程度の音声が約1〜2分で生成されます。</p>
+
+        <p><strong>生成手順</strong><br>
+        ①ノートブック上部の「概要パネル」を開く → ②「Audio Overview を生成」ボタンをクリック → ③数分待つと音声ファイルが生成される → ④ブラウザ内で再生、またはダウンロードして持ち出し可能。</p>
+
+        <p><strong>カスタマイズのポイント</strong><br>
+        生成前に「カスタマイズ」ボタンから、ホストに対して「初心者向けに平易な言葉で解説してください」「専門家向けに技術的な詳細を重視してください」などの指示を与えることができます。報告書を移動中にインプットしたい・チームメンバーに音声で共有したいというシーンで活用されています。</p>
+
+        <p><strong>Audio Overviewの限界</strong><br>
+        あくまでソースに基づいた解説であり、ホストの発言内容を細かくコントロールすることはできません。また数値・固有名詞の読み上げに誤りが出ることがあるため、重要な数値は音声後に原文で確認する運用が安全です。</p>
+
+        <!-- CTAボックス -->
+        <div class="cta-box">
+          <div class="cta-box__title">NotebookLMをもっと使いこなしたい・社内への展開を検討している方へ</div>
+          <p class="cta-box__desc">ANKENでは、AIツールの社内展開支援・業務自動化システムのスポット開発を得意とするエンジニアをご紹介しています。「NotebookLMを使った社内Q&amp;Aシステムを構築したい」「AIリテラシー研修と合わせてツール導入したい」という企業様のご相談も承っています。</p>
+          <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_xx',event_label:'body_cta_contact'})">👉 無料で相談する（AIツール活用支援をスポット外注で依頼する）</a>
+          <p class="cta-box__sub">「どのAIツールが自社に合うか」「NotebookLMと他ツールの組み合わせ方」など気軽にご相談ください。</p>
+        </div>
+
+        <h2 id="sec6">よくある質問</h2>
+
+        <section class="faq-section">
+          <dl class="faq-list">
+            <dt>Q. NotebookLMは無料で使えますか？</dt>
+            <dd>A. 基本機能は無料です。月額料金が必要なNotebookLM Plusでは生成上限の引き上げ・チーム共有・優先サポートなどの追加機能が使えます。</dd>
+            <dt>Q. 社外秘の資料をNotebookLMに登録しても大丈夫ですか？</dt>
+            <dd>A. Google Workspace契約企業は管理者設定でデータ学習をオフにできます。個人アカウントは利用規約を確認の上、機密資料は登録しないことを推奨します。</dd>
+            <dt>Q. 音声概要（Audio Overview）は日本語で生成できますか？</dt>
+            <dd>A. できます。日本語ソースを登録すると日本語で音声が生成されます。2026年現在、日本語の読み上げ品質は実用レベルまで向上しています。</dd>
+          </dl>
+        </section>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "NotebookLMは無料で使えますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "基本機能は無料です。月額料金が必要なNotebookLM Plusでは生成上限の引き上げ・チーム共有・優先サポートなどの追加機能が使えます。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "社外秘の資料をNotebookLMに登録しても大丈夫ですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google Workspace契約企業は管理者設定でデータ学習をオフにできます。個人アカウントは利用規約を確認の上、機密資料は登録しないことを推奨します。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "音声概要（Audio Overview）は日本語で生成できますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "できます。日本語ソースを登録すると日本語で音声が生成されます。2026年現在、日本語の読み上げ品質は実用レベルまで向上しています。"
+              }
+            }
+          ]
+        }
+        </script>
+
+        <h2 id="sec7">まとめ</h2>
+
+        <p>NotebookLMは「指定ソースのみを参照する」という設計思想により、ハルシネーションリスクを大幅に抑えながら資料の深い理解を助けてくれるAIツールです。会議前の資料読み込み・競合情報の整理・社内マニュアルのQ&amp;A化など、情報の量が多くて時間がかかる業務に特に効果的です。</p>
+
+        <p>使い始めのポイントを3つまとめます。<strong>①まずは手元の長いPDF1〜2件を登録して「要約」と「FAQ自動生成」を試す、②Audio Overviewで音声インプットの快適さを体験する、③社内資料をまとめたノートブックを1つ作りチームで共有する。</strong>無料で今すぐ始められるので、まず1つノートブックを作ることから実践してみてください。</p>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-ww.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">建築・CAD図面のAI活用をスポット外注で実現する方法</span>
+          </a>
+          <a href="blog-yy.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">社会福祉法人・介護施設の業務DXをスポット外注で実現する方法</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">AIツール活用をプロに相談する</div>
+        <p class="sidebar-cta__desc">NotebookLMをはじめとするAIツールの社内展開・業務自動化システムのスポット開発をAIエンジニアにご依頼いただけます。「何から始めればいいか」の相談から対応します。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_xx',event_label:'sidebar_cta'})">無料で相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-q.html">ChatGPT・Claude・Geminiの違いと使い分け完全ガイド</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-ss.html">Gemini for Google Workspaceの使い方と活用法</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--e" style="font-size:11px;margin-bottom:4px;display:inline-block;">AIの使い方・設定・機能解説</span>
+            <a href="blog-ee.html">社内AIリテラシー研修の進め方｜ChatGPT・Claude導入で何を教えるべきか</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
