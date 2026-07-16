@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8FAFC" rx="12"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#1E293B">電話対応業務の担当者工数比較（1日あたり）</text>
+  <text x="600" y="76" text-anchor="middle" font-size="14" fill="#64748B">AI自動音声応答を導入することで対応工数を最大70%削減できます</text>
+
+  <!-- ========== 凡例 ========== -->
+  <rect x="380" y="98" width="14" height="14" fill="#DC2626" rx="3"/>
+  <text x="400" y="110" font-size="13" fill="#374151">導入前</text>
+  <rect x="480" y="98" width="14" height="14" fill="#059669" rx="3"/>
+  <text x="500" y="110" font-size="13" fill="#374151">導入後</text>
+
+  <!-- ========== グラフエリア ========== -->
+  <!-- Y軸ラベル -->
+  <text x="88" y="145" text-anchor="end" font-size="12" fill="#64748B">5時間</text>
+  <line x1="95" y1="141" x2="1110" y2="141" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="88" y="210" text-anchor="end" font-size="12" fill="#64748B">4時間</text>
+  <line x1="95" y1="206" x2="1110" y2="206" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="88" y="275" text-anchor="end" font-size="12" fill="#64748B">3時間</text>
+  <line x1="95" y1="271" x2="1110" y2="271" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="88" y="340" text-anchor="end" font-size="12" fill="#64748B">2時間</text>
+  <line x1="95" y1="336" x2="1110" y2="336" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="88" y="405" text-anchor="end" font-size="12" fill="#64748B">1時間</text>
+  <line x1="95" y1="401" x2="1110" y2="401" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- X軸ベースライン -->
+  <line x1="95" y1="436" x2="1110" y2="436" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- ========== カテゴリ1: 受付・取次 ========== -->
+  <!-- 導入前: 2.0h → 2/5×295=118px -->
+  <rect x="140" y="318" width="80" height="118" fill="#DC2626" rx="4"/>
+  <text x="180" y="312" text-anchor="middle" font-size="13" font-weight="700" fill="#DC2626">2.0h</text>
+  <!-- 導入後: 0.4h → 0.4/5×295=23.6px -->
+  <rect x="240" y="412" width="80" height="24" fill="#059669" rx="4"/>
+  <text x="280" y="407" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">0.4h</text>
+  <!-- ラベル -->
+  <text x="230" y="460" text-anchor="middle" font-size="13" fill="#374151" font-weight="500">受付・取次</text>
+
+  <!-- ========== カテゴリ2: FAQ回答 ========== -->
+  <!-- 導入前: 1.5h → 89px -->
+  <rect x="370" y="347" width="80" height="89" fill="#DC2626" rx="4"/>
+  <text x="410" y="341" text-anchor="middle" font-size="13" font-weight="700" fill="#DC2626">1.5h</text>
+  <!-- 導入後: 0.2h → 12px -->
+  <rect x="470" y="424" width="80" height="12" fill="#059669" rx="4"/>
+  <text x="510" y="418" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">0.2h</text>
+  <!-- ラベル -->
+  <text x="460" y="460" text-anchor="middle" font-size="13" fill="#374151" font-weight="500">FAQ回答</text>
+
+  <!-- ========== カテゴリ3: 折り返し対応 ========== -->
+  <!-- 導入前: 1.0h → 59px -->
+  <rect x="600" y="377" width="80" height="59" fill="#DC2626" rx="4"/>
+  <text x="640" y="371" text-anchor="middle" font-size="13" font-weight="700" fill="#DC2626">1.0h</text>
+  <!-- 導入後: 0.3h → 18px -->
+  <rect x="700" y="418" width="80" height="18" fill="#059669" rx="4"/>
+  <text x="740" y="413" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">0.3h</text>
+  <!-- ラベル -->
+  <text x="690" y="460" text-anchor="middle" font-size="13" fill="#374151" font-weight="500">折り返し対応</text>
+
+  <!-- ========== カテゴリ4: 通話記録・報告 ========== -->
+  <!-- 導入前: 0.5h → 30px -->
+  <rect x="830" y="406" width="80" height="30" fill="#DC2626" rx="4"/>
+  <text x="870" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="#DC2626">0.5h</text>
+  <!-- 導入後: 0.1h → 6px -->
+  <rect x="930" y="430" width="80" height="6" fill="#059669" rx="4"/>
+  <text x="970" y="425" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">0.1h</text>
+  <!-- ラベル -->
+  <text x="920" y="460" text-anchor="middle" font-size="13" fill="#374151" font-weight="500">通話記録・報告</text>
+
+  <!-- ========== 合計バッジ ========== -->
+  <!-- 導入前合計 -->
+  <rect x="240" y="130" width="180" height="52" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.5" rx="8"/>
+  <text x="330" y="152" text-anchor="middle" font-size="12" fill="#DC2626">導入前の合計</text>
+  <text x="330" y="174" text-anchor="middle" font-size="20" font-weight="900" fill="#DC2626">約 5.0 時間/日</text>
+  <!-- 導入後合計 -->
+  <rect x="740" y="130" width="180" height="52" fill="#F0FDF4" stroke="#059669" stroke-width="1.5" rx="8"/>
+  <text x="830" y="152" text-anchor="middle" font-size="12" fill="#059669">導入後の合計</text>
+  <text x="830" y="174" text-anchor="middle" font-size="20" font-weight="900" fill="#059669">約 1.0 時間/日</text>
+  <!-- 矢印＋削減率 -->
+  <line x1="425" y1="156" x2="735" y2="156" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect x="530" y="140" width="140" height="32" fill="#F1F5F9" rx="16"/>
+  <text x="600" y="161" text-anchor="middle" font-size="15" font-weight="900" fill="#1E293B">▼ 約 80% 削減</text>
+
+  <!-- 注釈 -->
+  <text x="600" y="492" text-anchor="middle" font-size="11" fill="#94A3B8">※工数削減効果は業種・問い合わせ内容・システム設定により異なります</text>
+</svg>

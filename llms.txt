@@ -28,6 +28,7 @@
 - [スポット外注の費用相場2026年版｜タスク別の予算感とコストを抑える3つのコツ](https://anken.bisii.co.jp/blog/blog-y.html)
 - [kintoneカスタマイズをスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-dd.html)
 - [社内システム・業務ツールの小規模改修をスポット外注で依頼する方法](https://anken.bisii.co.jp/blog/blog-qq.html)
+- [運送業の点検業務システム化をスポット外注で実現する方法｜NFC・kintone連携アプリを単発依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-zz.html)
 
 ### 発注者向け｜AI開発（ジャンルB）
 
@@ -78,6 +79,7 @@
 - [Notion・Slack連携の情報分散をAIで解消する手順](https://anken.bisii.co.jp/blog/blog-hh.html)
 - [採用面接の議事録・評価をAIで効率化する手順](https://anken.bisii.co.jp/blog/blog-oo.html)
 - [企画書・提案資料をAIでレビュー・改善する手順](https://anken.bisii.co.jp/blog/blog-uu.html)
+- [代表電話・問い合わせ対応のAI自動音声応答を導入する方法](https://anken.bisii.co.jp/blog/blog-aaa.html)
 
 ### エンジニア向け（ジャンルC・D）
 

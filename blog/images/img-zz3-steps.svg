@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#F8F9FB" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="700" fill="#1E3A5F">スポット外注で点検システム化を進める3ステップ</text>
+
+  <!-- ステップカード共通設定 -->
+  <!-- STEP 1 -->
+  <rect x="60" y="90" width="320" height="340" rx="14" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2"/>
+  <rect x="60" y="90" width="320" height="64" rx="14" fill="#1E3A5F"/>
+  <rect x="60" y="130" width="320" height="24" fill="#1E3A5F"/>
+  <text x="220" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#F97316">STEP 1</text>
+  <text x="220" y="148" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">要件整理</text>
+
+  <!-- Step 1 Icon: clipboard -->
+  <rect x="190" y="172" width="60" height="68" rx="6" fill="#EFF6FF" stroke="#1E3A5F" stroke-width="1.5"/>
+  <rect x="202" y="165" width="36" height="14" rx="4" fill="#1E3A5F"/>
+  <line x1="200" y1="192" x2="240" y2="192" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="200" y1="204" x2="240" y2="204" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="200" y1="216" x2="230" y2="216" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <text x="220" y="265" text-anchor="middle" font-size="13" fill="#374151">• kintoneフィールド設計</text>
+  <text x="220" y="288" text-anchor="middle" font-size="13" fill="#374151">• NFCタグ規格の選定</text>
+  <text x="220" y="311" text-anchor="middle" font-size="13" fill="#374151">• Android機種・OS確認</text>
+  <text x="220" y="334" text-anchor="middle" font-size="13" fill="#374151">• レスポンス・オフライン</text>
+  <text x="220" y="352" text-anchor="middle" font-size="13" fill="#374151">　 要件の明文化</text>
+  <rect x="110" y="392" width="220" height="26" rx="6" fill="#EFF6FF"/>
+  <text x="220" y="410" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A5F">目安：1〜2週間</text>
+
+  <!-- 矢印1 -->
+  <polygon points="418,250 448,236 448,264" fill="#F97316"/>
+  <rect x="380" y="244" width="68" height="12" rx="6" fill="#F97316"/>
+
+  <!-- STEP 2 -->
+  <rect x="440" y="90" width="320" height="340" rx="14" fill="#FFFFFF" stroke="#F97316" stroke-width="2"/>
+  <rect x="440" y="90" width="320" height="64" rx="14" fill="#F97316"/>
+  <rect x="440" y="130" width="320" height="24" fill="#F97316"/>
+  <text x="600" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#1E3A5F">STEP 2</text>
+  <text x="600" y="148" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">コア機能開発</text>
+
+  <!-- Step 2 Icon: smartphone + NFC -->
+  <rect x="578" y="168" width="44" height="76" rx="6" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <rect x="586" y="176" width="28" height="44" rx="2" fill="#FDBA74"/>
+  <circle cx="600" cy="232" r="4" fill="#F97316"/>
+  <!-- NFC waves -->
+  <path d="M616 186 Q628 199 616 212" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+  <path d="M622 180 Q638 199 622 218" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="600" y="265" text-anchor="middle" font-size="13" fill="#374151">• NFCタグ読み取り機能</text>
+  <text x="600" y="288" text-anchor="middle" font-size="13" fill="#374151">• 点検チェックリスト表示</text>
+  <text x="600" y="311" text-anchor="middle" font-size="13" fill="#374151">• kintone REST API連携</text>
+  <text x="600" y="334" text-anchor="middle" font-size="13" fill="#374151">• 管理者向け通知機能</text>
+  <text x="600" y="357" text-anchor="middle" font-size="13" fill="#374151">　 （追加オプション）</text>
+  <rect x="490" y="392" width="220" height="26" rx="6" fill="#FFF7ED"/>
+  <text x="600" y="410" text-anchor="middle" font-size="13" font-weight="700" fill="#C2540A">費用：20〜40万円・4〜8週間</text>
+
+  <!-- 矢印2 -->
+  <polygon points="798,250 828,236 828,264" fill="#1E3A5F"/>
+  <rect x="760" y="244" width="68" height="12" rx="6" fill="#1E3A5F"/>
+
+  <!-- STEP 3 -->
+  <rect x="820" y="90" width="320" height="340" rx="14" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2"/>
+  <rect x="820" y="90" width="320" height="64" rx="14" fill="#1E3A5F"/>
+  <rect x="820" y="130" width="320" height="24" fill="#1E3A5F"/>
+  <text x="980" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#F97316">STEP 3</text>
+  <text x="980" y="148" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">試験運用と拡張</text>
+
+  <!-- Step 3 Icon: graph trend up -->
+  <rect x="950" y="170" width="60" height="54" rx="4" fill="#EFF6FF" stroke="#1E3A5F" stroke-width="1.5"/>
+  <polyline points="960,210 973,198 985,204 1000,182" fill="none" stroke="#F97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="996,177 1004,181 998,187" fill="#F97316"/>
+
+  <text x="980" y="251" text-anchor="middle" font-size="13" fill="#374151">• 1〜2台・数名で試験運用</text>
+  <text x="980" y="274" text-anchor="middle" font-size="13" fill="#374151">• 読み取り精度・UX検証</text>
+  <text x="980" y="297" text-anchor="middle" font-size="13" fill="#374151">• 集計レポート自動化を追加</text>
+  <text x="980" y="320" text-anchor="middle" font-size="13" fill="#374151">• オフライン同期など</text>
+  <text x="980" y="343" text-anchor="middle" font-size="13" fill="#374151">　 段階的に機能拡張</text>
+  <rect x="870" y="392" width="220" height="26" rx="6" fill="#EFF6FF"/>
+  <text x="980" y="410" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A5F">追加機能：5〜15万円/件</text>
+
+  <!-- 下部キャプション -->
+  <text x="600" y="456" text-anchor="middle" font-size="13" fill="#64748B">スポット外注ならコア機能から着手し、効果確認後に機能を拡張できます</text>
+</svg>

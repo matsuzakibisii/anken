@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8F9FB" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="700" fill="#1E3A5F">点検業務3大課題とシステム導入後の解決効果</text>
+
+  <!-- ヘッダーラベル（課題 / 解決後） -->
+  <rect x="60" y="80" width="500" height="44" rx="8" fill="#1E3A5F"/>
+  <text x="310" y="108" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">紙運用の課題</text>
+  <rect x="640" y="80" width="500" height="44" rx="8" fill="#F97316"/>
+  <text x="890" y="108" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">NFC×kintone導入後の効果</text>
+
+  <!-- 矢印（中央） -->
+  <text x="590" y="294" text-anchor="middle" font-size="28" fill="#1E3A5F">→</text>
+
+  <!-- ---- 課題カード 1 ---- -->
+  <rect x="60" y="148" width="500" height="94" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="60" y="148" width="8" height="94" rx="4" fill="#1E3A5F"/>
+  <text x="88" y="178" font-size="15" font-weight="700" fill="#1E3A5F">① 記録漏れ・不正記入のリスク</text>
+  <text x="88" y="200" font-size="13" fill="#374151">「後でまとめて記入」「空欄のまま提出」が常態化。</text>
+  <text x="88" y="220" font-size="13" fill="#374151">監査・事故調査で記録の信憑性が問われる。</text>
+
+  <!-- 解決カード 1 -->
+  <rect x="640" y="148" width="500" height="94" rx="10" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <rect x="640" y="148" width="8" height="94" rx="4" fill="#F97316"/>
+  <text x="668" y="178" font-size="15" font-weight="700" fill="#C2540A">NFC読み取り時刻・GPS自動付記</text>
+  <text x="668" y="200" font-size="13" fill="#374151">かざした記録が即時kintoneに保存され改ざん不可。</text>
+  <text x="668" y="220" font-size="13" fill="#374151">未チェック項目は送信できない設計で漏れゼロに。</text>
+
+  <!-- ---- 課題カード 2 ---- -->
+  <rect x="60" y="258" width="500" height="94" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="60" y="258" width="8" height="94" rx="4" fill="#1E3A5F"/>
+  <text x="88" y="288" font-size="15" font-weight="700" fill="#1E3A5F">② 管理者の集計・確認工数が大きい</text>
+  <text x="88" y="310" font-size="13" fill="#374151">50台規模の営業所では月間20〜40時間が</text>
+  <text x="88" y="330" font-size="13" fill="#374151">確認・集計作業に費やされている。</text>
+
+  <!-- 解決カード 2 -->
+  <rect x="640" y="258" width="500" height="94" rx="10" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <rect x="640" y="258" width="8" height="94" rx="4" fill="#F97316"/>
+  <text x="668" y="288" font-size="15" font-weight="700" fill="#C2540A">ダッシュボード表示＋異常時自動通知</text>
+  <text x="668" y="310" font-size="13" fill="#374151">管理者はPC・スマホで全車両の状況を即確認。</text>
+  <text x="668" y="330" font-size="13" fill="#374151">異常記録はメール・Slack通知で即時アラート。</text>
+
+  <!-- ---- 課題カード 3 ---- -->
+  <rect x="60" y="368" width="500" height="94" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="60" y="368" width="8" height="94" rx="4" fill="#1E3A5F"/>
+  <text x="88" y="398" font-size="15" font-weight="700" fill="#1E3A5F">③ 車両ごとの傾向分析ができない</text>
+  <text x="88" y="420" font-size="13" fill="#374151">「同じ車両で繰り返し異常が記録されていた」</text>
+  <text x="88" y="440" font-size="13" fill="#374151">という情報を紙では遡れない。</text>
+
+  <!-- 解決カード 3 -->
+  <rect x="640" y="368" width="500" height="94" rx="10" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+  <rect x="640" y="368" width="8" height="94" rx="4" fill="#F97316"/>
+  <text x="668" y="398" font-size="15" font-weight="700" fill="#C2540A">kintoneで点検履歴を可視化・分析</text>
+  <text x="668" y="420" font-size="13" fill="#374151">車両別の異常頻度グラフで整備優先順位を把握。</text>
+  <text x="668" y="440" font-size="13" fill="#374151">予防整備コストの最適化と早期対応を実現。</text>
+
+  <!-- 矢印3本（縦方向） -->
+  <text x="590" y="202" text-anchor="middle" font-size="22" fill="#94A3B8">→</text>
+  <text x="590" y="318" text-anchor="middle" font-size="22" fill="#94A3B8">→</text>
+  <text x="590" y="428" text-anchor="middle" font-size="22" fill="#94A3B8">→</text>
+</svg>
