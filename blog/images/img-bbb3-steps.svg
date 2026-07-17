@@ -1,0 +1,119 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; }
+    </style>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#84CC16"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#F0FDF4"/>
+
+  <!-- タイトル -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="900" fill="#1E1B4B">スポット外注でAI画面監視RPAを導入する3ステップ</text>
+
+  <!-- STEP1 カード -->
+  <rect x="50" y="80" width="310" height="340" rx="16" fill="#1E1B4B"/>
+  <rect x="50" y="80" width="310" height="56" rx="16" fill="#1E1B4B"/>
+  <rect x="50" y="116" width="310" height="20" fill="#1E1B4B"/>
+  <!-- ステップバッジ -->
+  <circle cx="110" cy="108" r="22" fill="#84CC16"/>
+  <text x="110" y="115" text-anchor="middle" font-size="16" font-weight="900" fill="#1E1B4B">01</text>
+  <text x="222" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#84CC16">期間：1〜2週間</text>
+  <text x="222" y="122" text-anchor="middle" font-size="12" fill="#94A3B8">社内作業（担当者が実施）</text>
+
+  <text x="205" y="170" text-anchor="middle" font-size="19" font-weight="900" fill="#FFFFFF">エラーパターンの</text>
+  <text x="205" y="196" text-anchor="middle" font-size="19" font-weight="900" fill="#84CC16">棚卸しと要件整理</text>
+
+  <line x1="75" y1="215" x2="335" y2="215" stroke="#2D2A52" stroke-width="1"/>
+
+  <rect x="70" y="228" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="205" y="248" text-anchor="middle" font-size="13" fill="#E2E8F0">過去のエラーログを収集・分類</text>
+
+  <rect x="70" y="266" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="205" y="286" text-anchor="middle" font-size="13" fill="#E2E8F0">エラー画面のスクリーンショット収集</text>
+
+  <rect x="70" y="304" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="205" y="324" text-anchor="middle" font-size="13" fill="#E2E8F0">各エラーの復旧手順を文書化</text>
+
+  <rect x="70" y="342" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="205" y="362" text-anchor="middle" font-size="13" fill="#E2E8F0">RPAツール名・OS・システム名を整理</text>
+
+  <text x="205" y="405" text-anchor="middle" font-size="13" fill="#84CC16" font-weight="700">📄 この資料が外注依頼の核になる</text>
+  <text x="205" y="425" text-anchor="middle" font-size="12" fill="#64748B">整理済みの資料を渡すと</text>
+  <text x="205" y="443" text-anchor="middle" font-size="12" fill="#64748B">見積精度が大きく向上します</text>
+
+  <!-- 矢印1 -->
+  <line x1="385" y1="255" x2="435" y2="255" stroke="#84CC16" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="410" y="242" text-anchor="middle" font-size="11" fill="#84CC16" font-weight="700">スポット</text>
+  <text x="410" y="275" text-anchor="middle" font-size="11" fill="#84CC16" font-weight="700">外注依頼</text>
+
+  <!-- STEP2 カード -->
+  <rect x="445" y="80" width="310" height="340" rx="16" fill="#1E1B4B"/>
+  <rect x="445" y="80" width="310" height="56" rx="16" fill="#1E1B4B"/>
+  <rect x="445" y="116" width="310" height="20" fill="#1E1B4B"/>
+  <!-- ステップバッジ -->
+  <circle cx="505" cy="108" r="22" fill="#84CC16"/>
+  <text x="505" y="115" text-anchor="middle" font-size="16" font-weight="900" fill="#1E1B4B">02</text>
+  <text x="617" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#84CC16">期間：3〜6週間</text>
+  <text x="617" y="122" text-anchor="middle" font-size="12" fill="#94A3B8">スポット外注エンジニアが担当</text>
+
+  <text x="600" y="170" text-anchor="middle" font-size="19" font-weight="900" fill="#FFFFFF">AI監視モジュールの</text>
+  <text x="600" y="196" text-anchor="middle" font-size="19" font-weight="900" fill="#84CC16">開発・設定</text>
+
+  <line x1="470" y1="215" x2="730" y2="215" stroke="#2D2A52" stroke-width="1"/>
+
+  <rect x="465" y="228" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="600" y="248" text-anchor="middle" font-size="13" fill="#E2E8F0">画像認識モデルの構築（スクリーンショット学習）</text>
+
+  <rect x="465" y="266" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="600" y="286" text-anchor="middle" font-size="13" fill="#E2E8F0">各エラーへの自動応答スクリプト作成</text>
+
+  <rect x="465" y="304" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="600" y="324" text-anchor="middle" font-size="13" fill="#E2E8F0">自動再ログイン処理の実装</text>
+
+  <rect x="465" y="342" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="600" y="362" text-anchor="middle" font-size="13" fill="#E2E8F0">Slack・Teams通知連携の設定</text>
+
+  <text x="600" y="405" text-anchor="middle" font-size="13" fill="#84CC16" font-weight="700">💰 費用目安：30〜80万円</text>
+  <text x="600" y="425" text-anchor="middle" font-size="12" fill="#64748B">Python + OpenCV等で実装</text>
+  <text x="600" y="443" text-anchor="middle" font-size="12" fill="#64748B">既存RPAへの後付けが基本設計</text>
+
+  <!-- 矢印2 -->
+  <line x1="780" y1="255" x2="830" y2="255" stroke="#84CC16" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="805" y="242" text-anchor="middle" font-size="11" fill="#84CC16" font-weight="700">動作</text>
+  <text x="805" y="275" text-anchor="middle" font-size="11" fill="#84CC16" font-weight="700">確認</text>
+
+  <!-- STEP3 カード -->
+  <rect x="840" y="80" width="310" height="340" rx="16" fill="#1E1B4B"/>
+  <rect x="840" y="80" width="310" height="56" rx="16" fill="#1E1B4B"/>
+  <rect x="840" y="116" width="310" height="20" fill="#1E1B4B"/>
+  <!-- ステップバッジ -->
+  <circle cx="900" cy="108" r="22" fill="#84CC16"/>
+  <text x="900" y="115" text-anchor="middle" font-size="16" font-weight="900" fill="#1E1B4B">03</text>
+  <text x="1012" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#84CC16">期間：2〜4週間</text>
+  <text x="1012" y="122" text-anchor="middle" font-size="12" fill="#94A3B8">協同で精度向上に取り組む</text>
+
+  <text x="995" y="170" text-anchor="middle" font-size="19" font-weight="900" fill="#FFFFFF">試験稼働と</text>
+  <text x="995" y="196" text-anchor="middle" font-size="19" font-weight="900" fill="#84CC16">アラート調整</text>
+
+  <line x1="865" y1="215" x2="1125" y2="215" stroke="#2D2A52" stroke-width="1"/>
+
+  <rect x="860" y="228" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="995" y="248" text-anchor="middle" font-size="13" fill="#E2E8F0">テスト環境または夜間限定で稼働開始</text>
+
+  <rect x="860" y="266" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="995" y="286" text-anchor="middle" font-size="13" fill="#E2E8F0">誤検知・見逃しパターンを洗い出し</text>
+
+  <rect x="860" y="304" width="270" height="30" rx="6" fill="#2D2A52"/>
+  <text x="995" y="324" text-anchor="middle" font-size="13" fill="#E2E8F0">モデル再学習・スクリプト修正（共同）</text>
+
+  <rect x="860" y="342" width="270" height="30" rx="6" fill="#84CC16"/>
+  <text x="995" y="362" text-anchor="middle" font-size="13" fill="#1E1B4B" font-weight="700">🎉 本番無人稼働の安定化へ</text>
+
+  <text x="995" y="405" text-anchor="middle" font-size="13" fill="#84CC16" font-weight="700">目標：月1〜2件以下の人的介入</text>
+  <text x="995" y="425" text-anchor="middle" font-size="12" fill="#64748B">新パターン追加はスポット</text>
+  <text x="995" y="443" text-anchor="middle" font-size="12" fill="#64748B">追加依頼（1〜5万円/件）で対応</text>
+</svg>

@@ -52,6 +52,7 @@
 - [建設業・製造業のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-vv.html)
 - [建築・CAD図面のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-ww.html)
 - [社会福祉法人・介護施設の業務DXをスポット外注で実現する方法｜給与計算・シフト・記録をAI化する3ステップ](https://anken.bisii.co.jp/blog/blog-yy.html)
+- [RPAの無人稼働エラーをAIで自動復旧する方法｜製造業のRPA監視をスポット外注で実現する3ステップ](https://anken.bisii.co.jp/blog/blog-bbb.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
