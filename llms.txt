@@ -29,6 +29,7 @@
 - [kintoneカスタマイズをスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-dd.html)
 - [社内システム・業務ツールの小規模改修をスポット外注で依頼する方法](https://anken.bisii.co.jp/blog/blog-qq.html)
 - [運送業の点検業務システム化をスポット外注で実現する方法｜NFC・kintone連携アプリを単発依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-zz.html)
+- [情シス不在の中小企業が社内IT運用をスポット外注で解決する3ステップ｜ネットワーク・ヘルプデスクを単発で頼む方法](https://anken.bisii.co.jp/blog/blog-ccc.html)
 
 ### 発注者向け｜AI開発（ジャンルB）
 

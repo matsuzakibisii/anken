@@ -72,6 +72,43 @@
             "item": "https://anken.bisii.co.jp/blog/blog-hh.html"
           }
         ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "Notion・Slack連携の情報分散をAIで解消する手順｜散らばった社内情報を一元化する5ステップ",
+        "description": "Notion・Slackがバラバラに運用され、必要な情報が見つからない——その課題をAIで解消する方法を解説。導入前に整理すべき3つのポイントと、情報を一元化する5つの手順、よくある失敗と対策を紹介します。",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "情報の集約先（Notion）を整理する",
+            "text": "まず、最終的な情報の集約先となるNotionのデータベース構造を整理します。「議事録」「決定事項」「ナレッジ」など、転記先のカテゴリをあらかじめ用意しておくことで、AIが転記する際の振り分けがスムーズになります。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Slack上の会話をNotionへ自動連携する",
+            "text": "特定のチャンネル・特定の絵文字リアクションが付いた発言など、転記対象とする条件を決めた上で、SlackとNotionを自動連携する仕組みを構築します。すべての発言を転記すると情報が埋もれるため、「これは残す」という人の判断（合図）を起点にする運用が定着しやすい方法です。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "AIに要約・タグ付けをさせる",
+            "text": "転記された会話をAIに要約させ、案件名・担当者・カテゴリなどのタグを自動で付与させます。タグ付けまで自動化しておくことで、後から検索したときに「キーワードが完全一致しなくても、関連する情報が見つかる」状態を作れます。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "検索・通知をAIで効率化する",
+            "text": "社内向けのAIチャット窓口を用意し、「〇〇の決定事項を教えて」と聞けばNotionに集約された情報から該当箇所を要約して回答する仕組みを整えます。あわせて、重要な更新だけを関係者のSlackに自動通知することで、探す手間と気づけない手間の両方を減らせます。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "運用ルールを固定して定着させる",
+            "text": "最後に、「転記の合図にする絵文字」「カテゴリの命名規則」「通知を受け取る範囲」などのルールをドキュメント化し、チーム全体に共有します。ルールが固定されていないと、運用する人によって扱いがバラバラになり、徐々に使われなくなるため、このステップを省略しないことが重要です。"
+          }
+        ]
       }
     ]
   }
@@ -131,6 +168,12 @@
     <!-- メインコンテンツ -->
     <main class="article-main">
 
+      
+            <div class="article-lead">
+        <strong>Notion・Slackがバラバラに運用されて情報が見つからない課題は、AIを使った5つの手順で一元化できます。</strong>導入前に整理すべき3つのポイントと、よくある失敗・対策を解説します。
+      </div>
+
+      <p class="article-freshness" style="font-size:13px;color:#6b7280;margin:-12px 0 24px;padding:0;">📅 本記事は2026年6月時点の情報に基づいています。</p>
       <!-- 目次 -->
       <nav class="toc" aria-label="目次">
         <div class="toc__title">この記事の目次</div>
@@ -331,6 +374,8 @@
           <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_hh',event_label:'bottom_cta_contact'})">👉 無料でスポット依頼を相談する</a>
           <p class="cta-box__sub">初回相談は無料です。要件が固まっていなくてもOKです。</p>
         </div>
+
+                <p class="article-author-note" style="font-size:13px;color:#6b7280;margin:24px 0 8px;border-top:1px solid #e5e7eb;padding-top:16px;">✎ ANKEN編集部が2026年6月に内容を確認・更新しました。AI・DX分野のスポット外注支援実績をもとに執筆しています。</p>
 
         <!-- 記事間ナビ -->
         <nav class="article-nav" aria-label="関連記事">

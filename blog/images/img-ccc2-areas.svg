@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8F7FF" rx="0"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="22" font-weight="900" fill="#1E1B4B">情シスなし中小企業の3大ITリスクとスポット外注による解決策</text>
+
+  <!-- カード1: ネットワーク障害 -->
+  <rect x="40" y="80" width="340" height="380" rx="16" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="40" y="80" width="340" height="56" rx="16" fill="#7C3AED"/>
+  <rect x="40" y="116" width="340" height="20" rx="0" fill="#7C3AED"/>
+  <text x="210" y="116" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">ネットワーク障害</text>
+  <text x="210" y="138" text-anchor="middle" font-size="13" fill="#FFFFFF">対応不能リスク</text>
+
+  <!-- アイコン（ネットワーク） -->
+  <circle cx="210" cy="192" r="30" fill="#7C3AED" opacity="0.15"/>
+  <path d="M190 192 L230 192 M210 172 L210 212 M195 177 L225 207 M195 207 L225 177" stroke="#7C3AED" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="210" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#5B21B6">【現状の問題】</text>
+  <text x="210" y="272" text-anchor="middle" font-size="12" fill="#374151">Wi-Fi障害・VPN切断のたびに</text>
+  <text x="210" y="292" text-anchor="middle" font-size="12" fill="#374151">原因特定できず業務が停止</text>
+  <text x="210" y="318" text-anchor="middle" font-size="13" font-weight="700" fill="#5B21B6">【スポット外注の解決策】</text>
+  <rect x="72" y="330" width="276" height="2" rx="1" fill="#DDD6FE"/>
+  <text x="210" y="352" text-anchor="middle" font-size="12" fill="#374151">ネットワーク設計・保守を</text>
+  <text x="210" y="372" text-anchor="middle" font-size="12" fill="#374151">月次スポット契約で委託</text>
+  <text x="210" y="395" text-anchor="middle" font-size="11" fill="#7C3AED" font-weight="700">月2〜5万円から整備可能</text>
+  <rect x="80" y="415" width="260" height="28" rx="14" fill="#7C3AED"/>
+  <text x="210" y="433" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">障害時リモート対応でカバー</text>
+
+  <!-- カード2: セキュリティ -->
+  <rect x="430" y="80" width="340" height="380" rx="16" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="2"/>
+  <rect x="430" y="80" width="340" height="56" rx="16" fill="#0EA5E9"/>
+  <rect x="430" y="116" width="340" height="20" rx="0" fill="#0EA5E9"/>
+  <text x="600" y="116" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">セキュリティインシデント</text>
+  <text x="600" y="138" text-anchor="middle" font-size="13" fill="#FFFFFF">無防備リスク</text>
+
+  <!-- アイコン（シールド） -->
+  <circle cx="600" cy="192" r="30" fill="#0EA5E9" opacity="0.15"/>
+  <path d="M600 163 L620 171 L620 191 C620 203 611 213 600 217 C589 213 580 203 580 191 L580 171 Z" stroke="#0EA5E9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  <path d="M591 191 L597 197 L611 183" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <text x="600" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#0369A1">【現状の問題】</text>
+  <text x="600" y="272" text-anchor="middle" font-size="12" fill="#374151">Windowsアップデート放置・</text>
+  <text x="600" y="292" text-anchor="middle" font-size="12" fill="#374151">EDR未導入でランサム被害リスク</text>
+  <text x="600" y="318" text-anchor="middle" font-size="13" font-weight="700" fill="#0369A1">【スポット外注の解決策】</text>
+  <rect x="462" y="330" width="276" height="2" rx="1" fill="#BAE6FD"/>
+  <text x="600" y="352" text-anchor="middle" font-size="12" fill="#374151">セキュリティ診断→対策実施を</text>
+  <text x="600" y="372" text-anchor="middle" font-size="12" fill="#374151">スポット単発で依頼</text>
+  <text x="600" y="395" text-anchor="middle" font-size="11" fill="#0369A1" font-weight="700">診断＋初期対策5〜20万円から</text>
+  <rect x="470" y="415" width="260" height="28" rx="14" fill="#0EA5E9"/>
+  <text x="600" y="433" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">四半期チェックで予防型運用へ</text>
+
+  <!-- カード3: ヘルプデスク -->
+  <rect x="820" y="80" width="340" height="380" rx="16" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <rect x="820" y="80" width="340" height="56" rx="16" fill="#D97706"/>
+  <rect x="820" y="116" width="340" height="20" rx="0" fill="#D97706"/>
+  <text x="990" y="116" text-anchor="middle" font-size="16" font-weight="900" fill="#FFFFFF">ヘルプデスク空白</text>
+  <text x="990" y="138" text-anchor="middle" font-size="13" fill="#FFFFFF">属人化リスク</text>
+
+  <!-- アイコン（ヘッドセット） -->
+  <circle cx="990" cy="192" r="30" fill="#D97706" opacity="0.15"/>
+  <path d="M975 192 C975 183 982 175 990 175 C998 175 1005 183 1005 192" stroke="#D97706" stroke-width="2.5" fill="none"/>
+  <rect x="972" y="192" width="8" height="14" rx="4" fill="#D97706"/>
+  <rect x="1000" y="192" width="8" height="14" rx="4" fill="#D97706"/>
+  <path d="M1005 198 L1008 198 C1008 205 1002 210 995 210" stroke="#D97706" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <text x="990" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#B45309">【現状の問題】</text>
+  <text x="990" y="272" text-anchor="middle" font-size="12" fill="#374151">「詳しい人」不在時にPC設定・</text>
+  <text x="990" y="292" text-anchor="middle" font-size="12" fill="#374151">アカウント管理が止まる</text>
+  <text x="990" y="318" text-anchor="middle" font-size="13" font-weight="700" fill="#B45309">【スポット外注の解決策】</text>
+  <rect x="852" y="330" width="276" height="2" rx="1" fill="#FDE68A"/>
+  <text x="990" y="352" text-anchor="middle" font-size="12" fill="#374151">PC設定・入退社アカウント管理を</text>
+  <text x="990" y="372" text-anchor="middle" font-size="12" fill="#374151">リモートスポットで都度依頼</text>
+  <text x="990" y="395" text-anchor="middle" font-size="11" fill="#B45309" font-weight="700">1件2〜5万円・月次契約も可能</text>
+  <rect x="860" y="415" width="260" height="28" rx="14" fill="#D97706"/>
+  <text x="990" y="433" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">引き継ぎマニュアルも同時作成</text>
+</svg>

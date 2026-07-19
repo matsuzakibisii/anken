@@ -1,0 +1,103 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#F8F7FF" rx="0"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="900" fill="#1E1B4B">スポット外注で社内IT運用を整備する3ステップ</text>
+
+  <!-- 横ライン -->
+  <line x1="120" y1="230" x2="1080" y2="230" stroke="#DDD6FE" stroke-width="3" stroke-dasharray="8,6"/>
+
+  <!-- STEP1 ボックス -->
+  <rect x="60" y="90" width="300" height="290" rx="18" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="60" y="90" width="300" height="60" rx="18" fill="#7C3AED"/>
+  <rect x="60" y="128" width="300" height="22" rx="0" fill="#7C3AED"/>
+  <text x="100" y="110" font-size="13" font-weight="900" fill="#EDE9FE">STEP</text>
+  <text x="145" y="116" font-size="30" font-weight="900" fill="#FFFFFF">1</text>
+  <text x="200" y="108" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">IT資産・リスクの</text>
+  <text x="200" y="128" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">現状棚卸し</text>
+  <text x="210" y="162" text-anchor="middle" font-size="11" fill="#6B7280">所要時間：1〜2日</text>
+
+  <!-- STEP1 アイコン -->
+  <rect x="170" y="178" width="80" height="60" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <line x1="185" y1="195" x2="235" y2="195" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+  <line x1="185" y1="208" x2="230" y2="208" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+  <line x1="185" y1="221" x2="220" y2="221" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="243" cy="221" r="5" fill="#7C3AED"/>
+
+  <text x="210" y="264" text-anchor="middle" font-size="12" fill="#374151">• PC台数・OSバージョン確認</text>
+  <text x="210" y="284" text-anchor="middle" font-size="12" fill="#374151">• 利用SaaS・機器の一覧化</text>
+  <text x="210" y="304" text-anchor="middle" font-size="12" fill="#374151">• IT属人化状況の把握</text>
+  <text x="210" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#5B21B6">この一覧がスポット外注</text>
+  <text x="210" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#5B21B6">依頼書の素材になる</text>
+
+  <!-- 矢印1 -->
+  <polygon points="390,230 420,210 420,250" fill="#7C3AED"/>
+  <line x1="360" y1="230" x2="416" y2="230" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- STEP2 ボックス -->
+  <rect x="450" y="90" width="300" height="290" rx="18" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2.5"/>
+  <rect x="450" y="90" width="300" height="60" rx="18" fill="#0EA5E9"/>
+  <rect x="450" y="128" width="300" height="22" rx="0" fill="#0EA5E9"/>
+  <text x="490" y="110" font-size="13" font-weight="900" fill="#E0F2FE">STEP</text>
+  <text x="535" y="116" font-size="30" font-weight="900" fill="#FFFFFF">2</text>
+  <text x="590" y="108" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">タスク切り出しと</text>
+  <text x="590" y="128" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">外注先選定・単発依頼</text>
+  <text x="600" y="162" text-anchor="middle" font-size="11" fill="#6B7280">所要時間：1〜2週間</text>
+
+  <!-- STEP2 アイコン -->
+  <rect x="560" y="178" width="80" height="60" rx="8" fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1.5"/>
+  <circle cx="580" cy="195" r="8" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+  <path d="M574 195 L578 199 L586 191" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="620" cy="195" r="8" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+  <path d="M614 195 L618 199 L626 191" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="575" y1="218" x2="625" y2="218" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+  <line x1="575" y1="228" x2="615" y2="228" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="600" y="264" text-anchor="middle" font-size="12" fill="#374151">• 緊急 / 積み残し / 将来対策で分類</text>
+  <text x="600" y="284" text-anchor="middle" font-size="12" fill="#374151">• スポット外注先に要件共有</text>
+  <text x="600" y="304" text-anchor="middle" font-size="12" fill="#374151">• 単発対応後に記録を依頼</text>
+  <text x="600" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#0369A1">単発1件2〜15万円</text>
+  <text x="600" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#0369A1">「現状診断」から始めるのが最短</text>
+
+  <!-- 矢印2 -->
+  <polygon points="780,230 810,210 810,250" fill="#0EA5E9"/>
+  <line x1="750" y1="230" x2="806" y2="230" stroke="#0EA5E9" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- STEP3 ボックス -->
+  <rect x="840" y="90" width="300" height="290" rx="18" fill="#FFFFFF" stroke="#D97706" stroke-width="2.5"/>
+  <rect x="840" y="90" width="300" height="60" rx="18" fill="#D97706"/>
+  <rect x="840" y="128" width="300" height="22" rx="0" fill="#D97706"/>
+  <text x="880" y="110" font-size="13" font-weight="900" fill="#FEF3C7">STEP</text>
+  <text x="925" y="116" font-size="30" font-weight="900" fill="#FFFFFF">3</text>
+  <text x="980" y="108" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">マニュアル整備・</text>
+  <text x="980" y="128" text-anchor="middle" font-size="13" font-weight="900" fill="#FFFFFF">月次スポット契約へ移行</text>
+  <text x="990" y="162" text-anchor="middle" font-size="11" fill="#6B7280">所要時間：1〜3か月</text>
+
+  <!-- STEP3 アイコン -->
+  <rect x="950" y="178" width="80" height="60" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <path d="M965 195 Q970 185 980 188 Q990 185 995 195 Q990 205 980 208 Q970 205 965 195Z" fill="none" stroke="#D97706" stroke-width="2"/>
+  <circle cx="980" cy="195" r="4" fill="#D97706"/>
+  <path d="M1005 178 L1012 178 L1012 230 L1005 230" stroke="#D97706" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="1009" y1="196" x2="1018" y2="196" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="1009" y1="204" x2="1018" y2="204" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="1009" y1="212" x2="1018" y2="212" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+
+  <text x="990" y="264" text-anchor="middle" font-size="12" fill="#374151">• よくある作業をマニュアル化</text>
+  <text x="990" y="284" text-anchor="middle" font-size="12" fill="#374151">• 月次スポット保守契約を締結</text>
+  <text x="990" y="304" text-anchor="middle" font-size="12" fill="#374151">• 後手対応→予防型運用へ転換</text>
+  <text x="990" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#B45309">月次契約：月2〜8万円</text>
+  <text x="990" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#B45309">正社員採用より年間数百万円削減</text>
+
+  <!-- 下部サマリー -->
+  <rect x="60" y="400" width="1080" height="56" rx="12" fill="#7C3AED" opacity="0.08"/>
+  <text x="600" y="428" text-anchor="middle" font-size="14" fill="#1E1B4B">初期整備：現状診断5〜15万円 ＋ 課題対応10〜30万円（スポット単発） ／ 継続維持管理：月次スポット月2〜8万円</text>
+  <text x="600" y="448" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">正社員IT担当者の採用コスト（年400〜600万円）に対して大幅なコスト削減が可能</text>
+</svg>

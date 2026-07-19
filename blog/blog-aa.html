@@ -72,6 +72,37 @@
             "item": "https://anken.bisii.co.jp/blog/blog-aa.html"
           }
         ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "見積書作成をAIで自動化する手順｜エクセル属人化から脱却する4ステップ",
+        "description": "見積書作成が「担当者の経験」に依存して属人化していませんか。エクセルでの手作業から脱却し、AIで見積書作成を自動化する手順を4ステップで解説。自社の商品・料金体系に合わせたカスタム実装はスポット発注で低コストに進められます。",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "過去の見積書・商品マスターを整理する",
+            "text": "最初に行うべきは、過去の見積書をできるだけ多く集めることです。エクセル・PDF・紙どの形式でも構いません。「商品名」「数量」「単価」「特記事項」がどのように書かれているかを確認し、商品マスターとして整理できる項目を洗い出します。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "AIが参照できる形にデータを整える",
+            "text": "整理した商品マスターと過去の見積書を、エンジニアがAIで参照できる形（データベースやスプレッドシート連携など）に構築します。紙やPDFの見積書が多い場合は、OCRでテキスト化する工程もここに含まれます。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "入力フォームと自動生成の仕組みを試作する",
+            "text": "「顧客名・商品・数量を入力すると見積書案が自動生成される」という簡易的な画面を用意し、実際の担当者に使ってもらいます。既存のAI APIやテンプレートを組み合わせる実装が中心になるため、週末2〜3日のスポット稼働で試作まで進められる場合があります。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "現場で使いながら精度を調整する",
+            "text": "試作版を実際の見積もり依頼に使ってもらい、「金額の出し方がおかしい」「この特記事項も自動で入れたい」といったフィードバックをもとに調整します。全商品への展開を急がず、対象商品群を徐々に広げていくことで、自社に合った形に仕上がっていきます。"
+          }
+        ]
       }
     ]
   }
@@ -131,6 +162,12 @@
     <!-- メインコンテンツ -->
     <main class="article-main">
 
+      
+            <div class="article-lead">
+        <strong>見積書作成の属人化は、AIによる自動化を4つのステップで進めることで解消できます。</strong>エクセルでの手作業から脱却し、自社の商品・料金体系に合わせたカスタム実装をスポット発注で低コストに進める方法を解説します。
+      </div>
+
+      <p class="article-freshness" style="font-size:13px;color:#6b7280;margin:-12px 0 24px;padding:0;">📅 本記事は2026年6月時点の情報に基づいています。</p>
       <!-- 目次 -->
       <nav class="toc" aria-label="目次">
         <div class="toc__title">この記事の目次</div>
@@ -312,6 +349,8 @@
           <a href="../contact.html" class="btn btn--primary" onclick="gtag('event','cta_click',{event_category:'blog_aa',event_label:'bottom_cta_contact'})">👉 無料でスポット依頼を相談する</a>
           <p class="cta-box__sub">初回相談は無料です。要件が固まっていなくてもOKです。</p>
         </div>
+
+                <p class="article-author-note" style="font-size:13px;color:#6b7280;margin:24px 0 8px;border-top:1px solid #e5e7eb;padding-top:16px;">✎ ANKEN編集部が2026年6月に内容を確認・更新しました。AI・DX分野のスポット外注支援実績をもとに執筆しています。</p>
 
         <!-- 記事間ナビ -->
         <nav class="article-nav" aria-label="関連記事">
