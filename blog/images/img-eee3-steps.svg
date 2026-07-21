@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="26" font-weight="700" fill="#1E293B">社内マニュアル動画をAIで作成する3ステップ</text>
+
+  <!-- Step 1 Card -->
+  <rect x="40" y="90" width="320" height="340" rx="16" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+  <!-- Step badge -->
+  <circle cx="200" cy="128" r="30" fill="#2563EB"/>
+  <text x="200" y="136" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">1</text>
+  <!-- Icon area -->
+  <rect x="160" y="168" width="80" height="60" rx="8" fill="#DBEAFE"/>
+  <!-- Document icon -->
+  <text x="200" y="210" text-anchor="middle" font-size="36">✏️</text>
+  <!-- Title -->
+  <text x="200" y="252" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">AIでスクリプト生成</text>
+  <!-- Duration -->
+  <rect x="110" y="264" width="180" height="28" rx="14" fill="#2563EB"/>
+  <text x="200" y="283" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">⏱ 30分〜2時間</text>
+  <!-- Description lines -->
+  <text x="200" y="318" text-anchor="middle" font-size="13" fill="#374151">既存マニュアルのテキストを</text>
+  <text x="200" y="338" text-anchor="middle" font-size="13" fill="#374151">ChatGPT等でスクリプトに変換</text>
+  <text x="200" y="362" text-anchor="middle" font-size="12" fill="#6B7280">「1文60字以内・結論ファースト」</text>
+  <text x="200" y="380" text-anchor="middle" font-size="12" fill="#6B7280">で動画向けの文体に最適化</text>
+  <text x="200" y="402" text-anchor="middle" font-size="12" fill="#6B7280">声に出して読み上げて確認</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="378,260 418,240 418,280" fill="#EA580C"/>
+  <line x1="362" y1="260" x2="418" y2="260" stroke="#EA580C" stroke-width="4"/>
+
+  <!-- Step 2 Card -->
+  <rect x="440" y="90" width="320" height="340" rx="16" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <circle cx="600" cy="128" r="30" fill="#EA580C"/>
+  <text x="600" y="136" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">2</text>
+  <rect x="560" y="168" width="80" height="60" rx="8" fill="#FFEDD5"/>
+  <text x="600" y="210" text-anchor="middle" font-size="36">🎬</text>
+  <text x="600" y="252" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">AI動画ツールで自動生成</text>
+  <rect x="510" y="264" width="180" height="28" rx="14" fill="#EA580C"/>
+  <text x="600" y="283" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">⏱ 30分〜3時間</text>
+  <text x="600" y="318" text-anchor="middle" font-size="13" fill="#374151">Synthesia・HeyGen等の</text>
+  <text x="600" y="338" text-anchor="middle" font-size="13" fill="#374151">AI動画生成ツールに入力</text>
+  <text x="600" y="362" text-anchor="middle" font-size="12" fill="#6B7280">AIアバターがナレーション読み上げ</text>
+  <text x="600" y="382" text-anchor="middle" font-size="12" fill="#6B7280">スライド＋字幕付きで自動完成</text>
+  <text x="600" y="402" text-anchor="middle" font-size="12" fill="#6B7280">月額5,000〜30,000円で利用可能</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="778,260 818,240 818,280" fill="#EA580C"/>
+  <line x1="762" y1="260" x2="818" y2="260" stroke="#EA580C" stroke-width="4"/>
+
+  <!-- Step 3 Card -->
+  <rect x="840" y="90" width="320" height="340" rx="16" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+  <circle cx="1000" cy="128" r="30" fill="#16A34A"/>
+  <text x="1000" y="136" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">3</text>
+  <rect x="960" y="168" width="80" height="60" rx="8" fill="#DCFCE7"/>
+  <text x="1000" y="210" text-anchor="middle" font-size="36">📡</text>
+  <text x="1000" y="252" text-anchor="middle" font-size="16" font-weight="700" fill="#1E293B">配信・更新管理システム化</text>
+  <rect x="910" y="264" width="180" height="28" rx="14" fill="#16A34A"/>
+  <text x="1000" y="283" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">⏱ 1〜3日（初回のみ）</text>
+  <text x="1000" y="318" text-anchor="middle" font-size="13" fill="#374151">Notion・SharePoint等に格納し</text>
+  <text x="1000" y="338" text-anchor="middle" font-size="13" fill="#374151">バージョン管理ルールを設定</text>
+  <text x="1000" y="362" text-anchor="middle" font-size="12" fill="#6B7280">「スクリプトが正本」ルールで</text>
+  <text x="1000" y="382" text-anchor="middle" font-size="12" fill="#6B7280">改訂時はAI再生成だけでOK</text>
+  <text x="1000" y="402" text-anchor="middle" font-size="12" fill="#6B7280">初期設定はスポット外注も活用可</text>
+
+  <!-- Bottom message -->
+  <rect x="200" y="448" width="800" height="22" rx="11" fill="#1E293B"/>
+  <text x="600" y="464" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">撮影・編集ソフト・出演者すべて不要　テキストさえあればAIが動画を作る</text>
+</svg>

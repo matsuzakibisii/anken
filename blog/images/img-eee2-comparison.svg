@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="700" fill="#1E293B">従来の動画制作 vs AI動画生成ツール</text>
+
+  <!-- Header row -->
+  <!-- Label col -->
+  <rect x="30" y="72" width="220" height="52" rx="8" fill="#1E293B"/>
+  <text x="140" y="103" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">比較項目</text>
+
+  <!-- Traditional col header -->
+  <rect x="268" y="72" width="420" height="52" rx="8" fill="#EA580C"/>
+  <text x="478" y="103" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">従来の社内制作・外注</text>
+
+  <!-- AI col header -->
+  <rect x="706" y="72" width="464" height="52" rx="8" fill="#2563EB"/>
+  <text x="938" y="103" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">AI動画生成ツール活用</text>
+
+  <!-- Row 1: 制作期間 -->
+  <rect x="30" y="140" width="220" height="72" rx="6" fill="#E2E8F0"/>
+  <text x="140" y="178" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">📅 制作期間</text>
+  <text x="140" y="200" text-anchor="middle" font-size="12" fill="#64748B">（1本あたり）</text>
+
+  <rect x="268" y="140" width="420" height="72" rx="6" fill="#FFF7ED"/>
+  <text x="478" y="172" text-anchor="middle" font-size="22" font-weight="900" fill="#EA580C">1〜2週間</text>
+  <text x="478" y="198" text-anchor="middle" font-size="13" fill="#92400E">撮影・編集・確認サイクルが必要</text>
+
+  <rect x="706" y="140" width="464" height="72" rx="6" fill="#EFF6FF"/>
+  <text x="938" y="172" text-anchor="middle" font-size="22" font-weight="900" fill="#2563EB">3時間〜1日</text>
+  <text x="938" y="198" text-anchor="middle" font-size="13" fill="#1E40AF">スクリプト入力→AI自動生成のみ</text>
+
+  <!-- Row 2: 制作コスト -->
+  <rect x="30" y="228" width="220" height="72" rx="6" fill="#E2E8F0"/>
+  <text x="140" y="266" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">💴 制作コスト</text>
+  <text x="140" y="288" text-anchor="middle" font-size="12" fill="#64748B">（10本合計）</text>
+
+  <rect x="268" y="228" width="420" height="72" rx="6" fill="#FFF7ED"/>
+  <text x="478" y="260" text-anchor="middle" font-size="22" font-weight="900" fill="#EA580C">60〜1,000万円</text>
+  <text x="478" y="286" text-anchor="middle" font-size="13" fill="#92400E">工数換算含む／外注は特に高額</text>
+
+  <rect x="706" y="228" width="464" height="72" rx="6" fill="#EFF6FF"/>
+  <text x="938" y="260" text-anchor="middle" font-size="22" font-weight="900" fill="#2563EB">5〜20万円</text>
+  <text x="938" y="286" text-anchor="middle" font-size="13" fill="#1E40AF">ツール月額＋初期スポット外注費のみ</text>
+
+  <!-- Row 3: 更新難易度 -->
+  <rect x="30" y="316" width="220" height="72" rx="6" fill="#E2E8F0"/>
+  <text x="140" y="354" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">🔄 更新の手間</text>
+  <text x="140" y="376" text-anchor="middle" font-size="12" fill="#64748B">（マニュアル改訂時）</text>
+
+  <rect x="268" y="316" width="420" height="72" rx="6" fill="#FFF7ED"/>
+  <text x="478" y="348" text-anchor="middle" font-size="22" font-weight="900" fill="#EA580C">再撮影＋再編集</text>
+  <text x="478" y="374" text-anchor="middle" font-size="13" fill="#92400E">改訂1回あたり6〜20万円相当の工数</text>
+
+  <rect x="706" y="316" width="464" height="72" rx="6" fill="#EFF6FF"/>
+  <text x="938" y="348" text-anchor="middle" font-size="22" font-weight="900" fill="#2563EB">スクリプト修正のみ</text>
+  <text x="938" y="374" text-anchor="middle" font-size="13" fill="#1E40AF">テキスト修正→AI再生成で即完了</text>
+
+  <!-- Row 4: 出演者 -->
+  <rect x="30" y="404" width="220" height="72" rx="6" fill="#E2E8F0"/>
+  <text x="140" y="442" text-anchor="middle" font-size="15" font-weight="700" fill="#1E293B">🎥 出演者</text>
+  <text x="140" y="464" text-anchor="middle" font-size="12" fill="#64748B">（撮影準備）</text>
+
+  <rect x="268" y="404" width="420" height="72" rx="6" fill="#FFF7ED"/>
+  <text x="478" y="436" text-anchor="middle" font-size="22" font-weight="900" fill="#EA580C">必要</text>
+  <text x="478" y="462" text-anchor="middle" font-size="13" fill="#92400E">スケジュール調整・場所確保が必要</text>
+
+  <rect x="706" y="404" width="464" height="72" rx="6" fill="#EFF6FF"/>
+  <text x="938" y="436" text-anchor="middle" font-size="22" font-weight="900" fill="#2563EB">不要</text>
+  <text x="938" y="462" text-anchor="middle" font-size="13" fill="#1E40AF">AIアバターがナレーションを担当</text>
+</svg>

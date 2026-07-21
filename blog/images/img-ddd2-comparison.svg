@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="520" fill="#fafafa" rx="0"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="#111827">手動管理（Excel・紙）vs システム化：下請法対応4項目の比較</text>
+
+  <!-- 列ヘッダー背景 -->
+  <rect x="60" y="76" width="490" height="48" rx="10" fill="#fce7ea"/>
+  <rect x="570" y="76" width="570" height="48" rx="10" fill="#d1fae5"/>
+
+  <!-- 列ヘッダーテキスト -->
+  <text x="305" y="107" text-anchor="middle" font-size="18" font-weight="700" fill="#E11D48">❌ 手動管理（Excel・紙）</text>
+  <text x="855" y="107" text-anchor="middle" font-size="18" font-weight="700" fill="#0F766E">✅ システム化（スポット外注で構築）</text>
+
+  <!-- カード1: 書面交付 -->
+  <rect x="60" y="144" width="1110" height="84" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="60" y="144" width="8" height="84" rx="4" fill="#0F766E"/>
+  <!-- ラベル -->
+  <text x="92" y="174" font-size="13" font-weight="700" fill="#6b7280">📄 書面交付義務（3条書面）</text>
+  <!-- 手動側 -->
+  <rect x="80" y="185" width="430" height="30" rx="6" fill="#fce7ea"/>
+  <text x="295" y="205" text-anchor="middle" font-size="14" fill="#E11D48" font-weight="500">都度テンプレートを手作業で埋める（30〜60分/件）、記載漏れリスクあり</text>
+  <!-- システム側 -->
+  <rect x="590" y="185" width="530" height="30" rx="6" fill="#d1fae5"/>
+  <text x="855" y="205" text-anchor="middle" font-size="14" fill="#0F766E" font-weight="500">入力フォームから法定記載事項を自動入力・PDF生成・メール送付まで自動</text>
+
+  <!-- カード2: 禁止事項チェック -->
+  <rect x="60" y="244" width="1110" height="84" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="60" y="244" width="8" height="84" rx="4" fill="#E11D48"/>
+  <text x="92" y="274" font-size="13" font-weight="700" fill="#6b7280">⚠️ 禁止行為の遵守チェック</text>
+  <rect x="80" y="285" width="430" height="30" rx="6" fill="#fce7ea"/>
+  <text x="295" y="305" text-anchor="middle" font-size="14" fill="#E11D48" font-weight="500">担当者の目視・記憶頼み、慣行的な違反行為が見落とされるリスク</text>
+  <rect x="590" y="285" width="530" height="30" rx="6" fill="#d1fae5"/>
+  <text x="855" y="305" text-anchor="middle" font-size="14" fill="#0F766E" font-weight="500">「減額変更」「返品」等の操作時に禁止事項アラートを自動表示</text>
+
+  <!-- カード3: 支払期日管理 -->
+  <rect x="60" y="344" width="1110" height="84" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="60" y="344" width="8" height="84" rx="4" fill="#0F766E"/>
+  <text x="92" y="374" font-size="13" font-weight="700" fill="#6b7280">🗓️ 支払期日管理（受領後60日以内）</text>
+  <rect x="80" y="385" width="430" height="30" rx="6" fill="#fce7ea"/>
+  <text x="295" y="405" text-anchor="middle" font-size="14" fill="#E11D48" font-weight="500">Excelの手動カレンダー管理・繁忙期の見落としで支払遅延リスク</text>
+  <rect x="590" y="385" width="530" height="30" rx="6" fill="#d1fae5"/>
+  <text x="855" y="405" text-anchor="middle" font-size="14" fill="#0F766E" font-weight="500">受領日入力→60日後の期日を自動計算・7日前・当日アラートメール送信</text>
+
+  <!-- カード4: 帳簿保存 -->
+  <rect x="60" y="444" width="1110" height="60" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="60" y="444" width="8" height="60" rx="4" fill="#E11D48"/>
+  <text x="92" y="468" font-size="13" font-weight="700" fill="#6b7280">🗂️ 帳簿の作成・保存（2年間）</text>
+  <rect x="80" y="475" width="430" height="22" rx="5" fill="#fce7ea"/>
+  <text x="295" y="491" text-anchor="middle" font-size="13" fill="#E11D48" font-weight="500">紙・Excelで散在、立入検査時の即時提出が困難</text>
+  <rect x="590" y="475" width="530" height="22" rx="5" fill="#d1fae5"/>
+  <text x="855" y="491" text-anchor="middle" font-size="13" fill="#0F766E" font-weight="500">クラウドDB一元管理・取引先別・期間別で即時検索・PDF出力対応</text>
+
+  <!-- 区切り矢印 -->
+  <text x="552" y="310" text-anchor="middle" font-size="28" fill="#9ca3af">→</text>
+</svg>

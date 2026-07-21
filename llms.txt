@@ -54,6 +54,7 @@
 - [建築・CAD図面のAI活用をスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-ww.html)
 - [社会福祉法人・介護施設の業務DXをスポット外注で実現する方法｜給与計算・シフト・記録をAI化する3ステップ](https://anken.bisii.co.jp/blog/blog-yy.html)
 - [RPAの無人稼働エラーをAIで自動復旧する方法｜製造業のRPA監視をスポット外注で実現する3ステップ](https://anken.bisii.co.jp/blog/blog-bbb.html)
+- [下請法コンプライアンス対応の発注管理システムをスポット外注で構築する方法｜書面交付を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-ddd.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
@@ -82,6 +83,7 @@
 - [採用面接の議事録・評価をAIで効率化する手順](https://anken.bisii.co.jp/blog/blog-oo.html)
 - [企画書・提案資料をAIでレビュー・改善する手順](https://anken.bisii.co.jp/blog/blog-uu.html)
 - [代表電話・問い合わせ対応のAI自動音声応答を導入する方法](https://anken.bisii.co.jp/blog/blog-aaa.html)
+- [社内マニュアル動画をAIで自動作成する手順｜制作費90%削減3ステップ](https://anken.bisii.co.jp/blog/blog-eee.html)
 
 ### エンジニア向け（ジャンルC・D）
 

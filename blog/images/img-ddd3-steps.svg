@@ -1,0 +1,67 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#fafafa"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="24" font-weight="900" fill="#111827">スポット外注で発注管理システムを構築する3ステップ</text>
+
+  <!-- STEP 1 カード -->
+  <rect x="40" y="80" width="320" height="340" rx="16" fill="#ffffff" stroke="#E11D48" stroke-width="2.5"/>
+  <rect x="40" y="80" width="320" height="72" rx="16" fill="#E11D48"/>
+  <rect x="40" y="128" width="320" height="24" fill="#E11D48"/>
+  <text x="200" y="122" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">STEP 1</text>
+  <text x="200" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#ffe4e8">1〜2週間</text>
+  <!-- アイコン -->
+  <text x="200" y="205" text-anchor="middle" font-size="44">🔍</text>
+  <!-- 見出し -->
+  <text x="200" y="255" text-anchor="middle" font-size="16" font-weight="900" fill="#E11D48">発注フローの棚卸し</text>
+  <text x="200" y="276" text-anchor="middle" font-size="16" font-weight="900" fill="#E11D48">と下請法チェック</text>
+  <!-- 説明 -->
+  <foreignObject x="60" y="290" width="280" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;color:#374151;line-height:1.7;text-align:center;">
+      現在の発注フローを洗い出し、書面交付・禁止事項・帳簿保存の対応状況を確認。対応できていない箇所をリスト化する。
+    </div>
+  </foreignObject>
+
+  <!-- 矢印1 -->
+  <polygon points="380,240 420,220 420,260" fill="#0F766E"/>
+  <line x1="360" y1="240" x2="418" y2="240" stroke="#0F766E" stroke-width="3"/>
+
+  <!-- STEP 2 カード -->
+  <rect x="440" y="80" width="320" height="340" rx="16" fill="#ffffff" stroke="#0F766E" stroke-width="2.5"/>
+  <rect x="440" y="80" width="320" height="72" rx="16" fill="#0F766E"/>
+  <rect x="440" y="128" width="320" height="24" fill="#0F766E"/>
+  <text x="600" y="122" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">STEP 2</text>
+  <text x="600" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#ccfbf1">1〜2週間</text>
+  <text x="600" y="205" text-anchor="middle" font-size="44">📋</text>
+  <text x="600" y="255" text-anchor="middle" font-size="16" font-weight="900" fill="#0F766E">要件定義と</text>
+  <text x="600" y="276" text-anchor="middle" font-size="16" font-weight="900" fill="#0F766E">スポット外注依頼</text>
+  <foreignObject x="460" y="290" width="280" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;color:#374151;line-height:1.7;text-align:center;">
+      課題リストから「自動化する機能」を絞り込み、書面生成・禁止事項アラート・期日管理・帳簿保存の4機能を優先して要件化。
+    </div>
+  </foreignObject>
+
+  <!-- 矢印2 -->
+  <polygon points="780,240 820,220 820,260" fill="#0F766E"/>
+  <line x1="760" y1="240" x2="818" y2="240" stroke="#0F766E" stroke-width="3"/>
+
+  <!-- STEP 3 カード -->
+  <rect x="840" y="80" width="320" height="340" rx="16" fill="#ffffff" stroke="#E11D48" stroke-width="2.5"/>
+  <rect x="840" y="80" width="320" height="72" rx="16" fill="#E11D48"/>
+  <rect x="840" y="128" width="320" height="24" fill="#E11D48"/>
+  <text x="1000" y="122" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">STEP 3</text>
+  <text x="1000" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#ffe4e8">4〜8週間</text>
+  <text x="1000" y="205" text-anchor="middle" font-size="44">🚀</text>
+  <text x="1000" y="255" text-anchor="middle" font-size="16" font-weight="900" fill="#E11D48">開発・テスト</text>
+  <text x="1000" y="276" text-anchor="middle" font-size="16" font-weight="900" fill="#E11D48">・運用開始</text>
+  <foreignObject x="860" y="290" width="280" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;color:#374151;line-height:1.7;text-align:center;">
+      開発中間段階でデモ確認・テスト。会計ソフトとの連携検証と担当者レクチャーを経て本番稼働。運用ルールも同時に整備する。
+    </div>
+  </foreignObject>
+
+  <!-- 完成バッジ -->
+  <rect x="380" y="440" width="440" height="32" rx="16" fill="#0F766E"/>
+  <text x="600" y="461" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">✅ 下請法コンプライアンス対応の発注管理システム稼働開始</text>
+</svg>
