@@ -30,46 +30,21 @@
 
 <!-- Tailwind CSS (CDN) -->
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#0B1221',
-          midnight: '#101935',
-          accent: '#F59E0B',
-          accentDark: '#B45309',
-          accentText: '#92400E',
-          highlight: '#FACC15',
-          softgray: '#FAF8F2',
-        },
-        fontFamily: {
-          sans: ['"Noto Sans JP"', '"Hiragino Kaku Gothic ProN"', 'system-ui', 'sans-serif'],
-        },
-      },
-    },
-  };
-</script>
+<script src="assets/js/tailwind-config.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
-<style>
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Noto Sans JP', system-ui, sans-serif; line-break: strict; }
-  .phrase { display: inline-block; }
+<!-- 共通コンポーネントCSS（index/member/contact共通） -->
+<link rel="stylesheet" href="assets/css/common.css" />
 
+<style>
+  /* contact.html 固有スタイル：hero-bg は他ページより控えめなグラデーションに上書き */
   .hero-bg {
     background:
       radial-gradient(900px 500px at 80% -10%, rgba(245,158,11,0.28), transparent 60%),
       radial-gradient(700px 400px at -10% 60%, rgba(250,204,21,0.18), transparent 60%),
       linear-gradient(180deg, #0B1221 0%, #101935 100%);
-  }
-  .grid-bg {
-    background-image:
-      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
-    background-size: 48px 48px;
   }
 
   /* input focus ring */
@@ -78,17 +53,6 @@
     border-color: #F59E0B;
     box-shadow: 0 0 0 3px rgba(245,158,11,0.18);
   }
-
-  /* submit button ripple */
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .spinner { animation: spin 0.8s linear infinite; }
-
-  /* success fade */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .fade-up { animation: fadeUp 0.4s ease both; }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>

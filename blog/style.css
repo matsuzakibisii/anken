@@ -31,6 +31,16 @@
   --color-tag-b-text:   #1E7E34;
   --color-tag-c:        #FFF3E0;
   --color-tag-c-text:   #E65100;
+  --color-tag-d:        #CCFBF1;
+  --color-tag-d-text:   #0F766E;
+  --color-tag-e:        #F3E8FF;
+  --color-tag-e-text:   #7E22CE;
+  --color-tag-f:        #FCE7F3;
+  --color-tag-f-text:   #BE185D;
+  --color-tag-g:        #E0E7FF;
+  --color-tag-g-text:   #4338CA;
+  --color-tag-h:        #FEF3C7;
+  --color-tag-h-text:   #92400E;
 
   /* タイポグラフィ */
   --font-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
@@ -411,6 +421,11 @@ img { max-width: 100%; height: auto; display: block; }
 .article-tag--a { background: var(--color-tag-a); color: var(--color-tag-a-text); }
 .article-tag--b { background: var(--color-tag-b); color: var(--color-tag-b-text); }
 .article-tag--c { background: var(--color-tag-c); color: var(--color-tag-c-text); }
+.article-tag--d { background: var(--color-tag-d); color: var(--color-tag-d-text); }
+.article-tag--e { background: var(--color-tag-e); color: var(--color-tag-e-text); }
+.article-tag--f { background: var(--color-tag-f); color: var(--color-tag-f-text); }
+.article-tag--g { background: var(--color-tag-g); color: var(--color-tag-g-text); }
+.article-tag--h { background: var(--color-tag-h); color: var(--color-tag-h-text); }
 
 .article-card__title {
   font-size: var(--font-size-md);
