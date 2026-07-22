@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#FAFAF8"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="22" font-weight="900" fill="#1E1B4B">AIチャットボット導入前後の問い合わせ対応比較</text>
+
+  <!-- Left column header: Before -->
+  <rect x="60" y="70" width="490" height="52" rx="10" fill="#4338CA"/>
+  <text x="305" y="103" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">導入前：人が全件対応</text>
+
+  <!-- Right column header: After -->
+  <rect x="650" y="70" width="490" height="52" rx="10" fill="#F97316"/>
+  <text x="895" y="103" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">導入後：AIが定型質問を自動処理</text>
+
+  <!-- Row 1: 対応時間 -->
+  <rect x="60" y="138" width="1080" height="6" rx="3" fill="#E0E7FF"/>
+  <!-- Label -->
+  <text x="600" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">📞 1日あたりの対応工数</text>
+  <!-- Before value -->
+  <rect x="80" y="188" width="450" height="52" rx="8" fill="#EEF2FF"/>
+  <text x="305" y="220" text-anchor="middle" font-size="28" font-weight="900" fill="#4338CA">2〜3時間</text>
+  <text x="305" y="234" text-anchor="middle" font-size="11" fill="#6B7280">（スタッフが直接対応）</text>
+  <!-- After value -->
+  <rect x="670" y="188" width="450" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="895" y="220" text-anchor="middle" font-size="28" font-weight="900" fill="#F97316">30〜40分</text>
+  <text x="895" y="234" text-anchor="middle" font-size="11" fill="#6B7280">（AI自動処理後の残件のみ対応）</text>
+
+  <!-- Row 2: 夜間対応 -->
+  <rect x="60" y="256" width="1080" height="6" rx="3" fill="#E0E7FF"/>
+  <text x="600" y="294" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">🌙 夜間・休日の即時回答率</text>
+  <rect x="80" y="306" width="450" height="52" rx="8" fill="#EEF2FF"/>
+  <text x="305" y="338" text-anchor="middle" font-size="28" font-weight="900" fill="#4338CA">0%</text>
+  <text x="305" y="352" text-anchor="middle" font-size="11" fill="#6B7280">（翌営業日まで放置）</text>
+  <rect x="670" y="306" width="450" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="895" y="338" text-anchor="middle" font-size="28" font-weight="900" fill="#F97316">80%以上</text>
+  <text x="895" y="352" text-anchor="middle" font-size="11" fill="#6B7280">（定型質問は即時回答）</text>
+
+  <!-- Row 3: 自動化率 -->
+  <rect x="60" y="374" width="1080" height="6" rx="3" fill="#E0E7FF"/>
+  <text x="600" y="412" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">🤖 問い合わせの自動処理率</text>
+  <rect x="80" y="424" width="450" height="52" rx="8" fill="#EEF2FF"/>
+  <text x="305" y="456" text-anchor="middle" font-size="28" font-weight="900" fill="#4338CA">0%</text>
+  <text x="305" y="470" text-anchor="middle" font-size="11" fill="#6B7280">（すべてスタッフが手動対応）</text>
+  <rect x="670" y="424" width="450" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="895" y="456" text-anchor="middle" font-size="28" font-weight="900" fill="#F97316">75〜80%</text>
+  <text x="895" y="470" text-anchor="middle" font-size="11" fill="#6B7280">（定型質問はAIが処理）</text>
+
+  <!-- Arrow in center -->
+  <polygon points="595,280 605,270 605,276 615,276 615,284 605,284 605,290" fill="#F97316" opacity="0.8"/>
+</svg>
