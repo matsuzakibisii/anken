@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="自社製品・企業情報をAI検索（AIO/GEO）に対応させるには、情報の棚卸し→直接回答型コンテンツ設計→技術実装の3ステップが基本です。ChatGPT・Perplexityで引用される情報設計の具体的な手順を解説します。">
+  <title>自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPTで引用されるコンテンツ設計の3ステップ【2026年版】 | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPTで引用されるコンテンツ設計の3ステップ【2026年版】">
+  <meta property="og:description" content="自社製品・企業情報をAI検索（AIO/GEO）に対応させるには、情報の棚卸し→直接回答型コンテンツ設計→技術実装の3ステップが基本です。ChatGPT・Perplexityで引用される情報設計の具体的な手順を解説します。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-ggg1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-ggg.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPTで引用されるコンテンツ設計の3ステップ【2026年版】">
+  <meta name="twitter:description" content="自社製品・企業情報をAI検索（AIO/GEO）に対応させるには、情報の棚卸し→直接回答型コンテンツ設計→技術実装の3ステップが基本です。ChatGPT・Perplexityで引用される情報設計の具体的な手順を解説します。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-ggg1-hero.png">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+<script src="analytics.js"></script>
+  <link rel="canonical" href="https://anken.bisii.co.jp/blog/blog-ggg.html" />
+  <!-- JSON-LD: Article + BreadcrumbList + HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPTで引用されるコンテンツ設計の3ステップ【2026年版】",
+        "description": "自社製品・企業情報をAI検索（AIO/GEO）に対応させるには、情報の棚卸し→直接回答型コンテンツ設計→技術実装の3ステップが基本です。ChatGPT・Perplexityで引用される情報設計の具体的な手順を解説します。",
+        "image": "https://anken.bisii.co.jp/blog/images/img-ggg1-hero.png",
+        "datePublished": "2026-07-23",
+        "dateModified": "2026-07-23",
+        "author": {
+          "@type": "Organization",
+          "name": "ANKEN編集部",
+          "url": "https://anken.bisii.co.jp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "株式会社ビシィッ",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://anken.bisii.co.jp/apple-touch-icon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ANKENブログ TOP",
+            "item": "https://anken.bisii.co.jp/blog/media.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPTで引用されるコンテンツ設計の3ステップ【2026年版】",
+            "item": "https://anken.bisii.co.jp/blog/blog-ggg.html"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "自社製品・企業情報をAI検索（AIO/GEO）に対応させる3ステップ",
+        "description": "ChatGPT・Perplexity・Google AI Overviewsで自社情報が引用されるコンテンツ設計の手順",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "自社情報を「AIが引用しやすい形」に棚卸しする",
+            "text": "製品・サービスの特徴・価格・実績・よくある質問を「問い×回答」形式で一覧化します。定義・数値・具体事例を明確にし、AIが1問1答で引用できる粒度に整理することがポイントです。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "AI引用対応コンテンツを設計・制作する",
+            "text": "各ページの冒頭を「問いへの直接回答」から始め、FAQセクション・定義ブロック・数値入りの事例説明を追加します。ChatGPT・Perplexityは「結論ファースト＋根拠＋数値」の構成を持つコンテンツを引用しやすい傾向があります。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "技術実装でAIクローラーに情報を届ける",
+            "text": "FAQPage JSON-LD・HowTo JSON-LD・llms.txtをサイトに実装し、Search ConsoleとGoogle Analytics 4でAI経由の流入を計測します。robots.txtで主要AIクローラー（GPTBot・ClaudeBot・PerplexityBot等）を許可していることも確認します。"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- favicon（blog/配下のファイルは ../で参照） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_ggg',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_ggg',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--g">AI業務効率化｜方法・手順</span>
+      <h1 class="article-hero__title">自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法<br>ChatGPTで引用されるコンテンツ設計の3ステップ【2026年版】</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年7月23日</span>
+        <span class="article-hero__meta-item">⏱ 約10分で読めます</span>
+        <span class="article-hero__meta-item">🔑 AIO/GEO対応, AI検索最適化 企業情報, ChatGPT 引用 コンテンツ設計</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-ggg1-hero.png" alt="ミニマルな抽象構図。マゼンタとシアンの幾何学的な情報フローを表すグラフィック。AIクローラーが構造化されたコンテンツブロックを引用するイメージ" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- リード文 -->
+      <div class="article-lead">
+        <strong>自社製品・企業情報をAI検索（AIO/GEO）に対応させるには、「情報の棚卸し→直接回答型コンテンツ設計→技術実装」の3ステップが基本です。</strong>2026年8月現在、日本語Google検索の主要クエリの30〜40%でAI Overviewsが表示されており、引用されなければ競合他社が代わりに顧客へ情報を届けます。ChatGPT・Perplexityでも同様です。特別なツールは不要で、既存の製品ページ・企業情報ページを「AIが1問1答で引用しやすい構成」に整えるだけで、引用確率は大きく上がります。
+      </div>
+
+      <p class="article-freshness" style="font-size:13px;color:#6b7280;margin:-12px 0 24px;padding:0;">📅 本記事は2026年7月時点の情報に基づいています。</p>
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">AIO/GEOとは何か・なぜ2026年に対応が急務なのか</a></li>
+          <li><a href="#sec2">対応しないと起こる3つのリスク</a></li>
+          <li><a href="#sec3">AI検索対応の3ステップ</a></li>
+          <li><a href="#sec4">技術実装はスポット外注で効率化する</a></li>
+          <li><a href="#sec5">よくある質問</a></li>
+          <li><a href="#sec6">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <article>
+
+        <h2 id="sec1">AIO/GEOとは何か・なぜ2026年に対応が急務なのか</h2>
+
+        <p>2026年、検索体験は大きく変わりました。GoogleはAI Overviews（旧SGE）を日本語検索に本格展開し、ChatGPT・Perplexity・Claudeなどの対話型AIが検索エンジンとして日常的に使われるようになっています。その影響を示す2つの言葉を整理します。</p>
+
+        <div class="definition-box">
+          📖 <strong>AIO（AI Overviews Optimization）とは</strong><br>
+          GoogleのAI Overviews（検索結果上部に表示されるAI生成サマリー）に自社情報が引用・掲載されるよう、コンテンツや技術実装を最適化すること。2026年8月現在、日本語検索で主要クエリの30〜40%にAI Overviewsが表示されており、最上位の注目エリアを占める。
+        </div>
+
+        <div class="definition-box">
+          📖 <strong>GEO（Generative Engine Optimization）とは</strong><br>
+          ChatGPT Search・Perplexity・Claude等の生成AI検索エンジンで自社情報が引用・回答に含まれるよう最適化すること。従来のSEO（Googleランキング最適化）とは評価軸が異なり、「構造化・具体性・信頼性」が引用の鍵になる。
+        </div>
+
+        <p>これらが重要な理由はシンプルです。<strong>AI Overviewsに引用された情報は、ユーザーが「続きを読みに来なくても」その場で回答として消費されます。</strong>つまりゼロクリック（=自社サイトへのアクセスがないまま情報が伝わる）が増える一方、引用されなかった企業は「存在しないのと同じ」状態になりえます。</p>
+
+        <p>特に製品・サービス・料金・実績などを正確に伝えたい企業にとって、<strong>「AIが正しく引用してくれるかどうか」は競争力に直結します。</strong>競合他社が最適化した情報を提供している場合、AIは競合の情報を優先的に引用します。</p>
+
+        <h2 id="sec2">対応しないと起こる3つのリスク</h2>
+
+        <p><strong>① 競合の情報がユーザーに届く</strong><br>
+        「〇〇業界 おすすめサービス」「〇〇ツール 比較」といったクエリのAI Overviewsに競合名が並び、自社名が出てこない状況が実際に発生しています。特にBtoB製品・専門サービスは調査フェーズでのAI利用率が高く、ここで認知される/されないの差が商談数に直結します。</p>
+
+        <p><strong>② 自社情報が誤って引用されるリスク</strong><br>
+        AIは学習データや外部サイトの情報をもとに回答を生成します。自社サイトに「AIが引用できる明確な情報」がない場合、古い情報・競合との比較ページ・口コミサイトの内容が根拠になり、不正確な内容が「自社の情報」として伝わるケースがあります。</p>
+
+        <p><strong>③ 既存SEOの効果が薄まる</strong><br>
+        AI Overviewsが表示されるクエリでは、1〜3位の有機検索クリック率が平均で15〜30%低下するとされています。SEOでの順位維持にコストをかけつつ、AI引用対応を放置すると、同じキーワードへの投資対効果が年々悪化します。</p>
+
+        <h2 id="sec3">AI検索対応の3ステップ</h2>
+
+        <figure class="article-figure">
+          <img src="images/img-ggg2-comparison.svg" alt="AI検索対応の前後比較図。マゼンタとシアンの2カラム構成。対応前は散在する情報・低引用率・ゼロクリック損失、対応後は構造化情報・高引用率・ブランド認知拡大を示す" width="1200" height="500">
+          <figcaption>AI検索対応前後の変化：情報構造と引用率の比較</figcaption>
+        </figure>
+
+        <h3>ステップ1｜自社情報を「AIが引用しやすい形」に棚卸しする</h3>
+
+        <p>まず、自社の製品・サービスに関して「ユーザーがAIに聞きそうな質問」を20〜30個書き出します。</p>
+
+        <p><strong>棚卸しで整理すべき情報の5カテゴリ</strong></p>
+        <ul>
+          <li><strong>定義・概要</strong>：「〇〇とは何か」「何ができるサービスか」</li>
+          <li><strong>費用・価格</strong>：「料金の目安」「初期費用はいくらか」</li>
+          <li><strong>実績・事例</strong>：「どんな企業が使っているか」「導入後の効果は」</li>
+          <li><strong>他社との違い</strong>：「既存の方法との違い」「選ばれる理由」</li>
+          <li><strong>手順・使い方</strong>：「どうやって始めるか」「何から手をつけるか」</li>
+        </ul>
+
+        <p>それぞれに対して、<strong>「30〜80字で直接答えられる短文回答」を用意します。</strong>長い説明は後ろに続けてよいですが、最初の1文が回答のコアになるよう意識します。AIは回答の最初の1〜2文を引用することが多いためです。</p>
+
+        <p><strong>数値を具体的に入れることが引用率向上の最重要ポイントです。</strong>「コストを削減できます」ではなく「初年度のコストを平均32%削減した実績があります」のように、引用した側が「根拠として使えるデータ」を含める情報を優先します。</p>
+
+        <h3>ステップ2｜AI引用対応コンテンツを設計・制作する</h3>
+
+        <p>棚卸しした情報をもとに、各ページを「AIが引用しやすいフォーマット」に整えます。4つの要素を実装します。</p>
+
+        <p><strong>① 直接回答型リード文（各ページの冒頭）</strong><br>
+        ページの冒頭の1〜2文を「そのページが答える主な問いへの直接回答」にします。「〜について解説します」という導入文ではなく、「〇〇は△△で実現できます。費用は〜が目安です」という形式です。AIはページの最初の200字を重視して引用候補として評価します。</p>
+
+        <p><strong>② FAQセクション（各ページの下部）</strong><br>
+        ページ下部にQ&Aを3〜5問設置します。各質問は「ユーザーがAIに実際に聞きそうな口語表現」に近づけ、回答は50〜100字で完結させます。ChatGPTやPerplexityはFAQ形式のコンテンツを「引用しやすい単位」として認識する傾向があります。</p>
+
+        <p><strong>③ 定義ブロック（専門用語・サービス固有の概念）</strong><br>
+        「〇〇とは」という定義説明は、本文に埋め込まず枠囲みや太字で視覚的に独立させます。AIは明確に区切られた定義文を「信頼できる一次情報」として引用しやすいとされています。</p>
+
+        <p><strong>④ 数値入り事例・実績の掲載</strong><br>
+        「〇業種のクライアントで△△日・□万円で導入完了」「導入企業の平均工数削減率72%」など、具体的な数値と業種・状況を組み合わせた実績情報を本文に含めます。AIは根拠として引用できるデータを積極的に使う傾向があります。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-ggg3-steps.svg" alt="AIO/GEO対応3ステップのフロー図。マゼンタとシアンの配色。左から右へ：STEP1 情報棚卸し→STEP2 コンテンツ設計・制作→STEP3 技術実装。各ステップの主な作業内容を示す" width="1200" height="480">
+          <figcaption>AI検索（AIO/GEO）対応の3ステップフロー</figcaption>
+        </figure>
+
+        <h3>ステップ3｜技術実装でAIクローラーに確実に届ける</h3>
+
+        <p>コンテンツを整備したら、技術面でAIクローラーが情報を正しく読み取れる環境を整えます。</p>
+
+        <p><strong>① FAQPage JSON-LD の実装</strong><br>
+        FAQセクションの内容を `FAQPage` スキーマで構造化データとして記述します。GoogleのAI Overviewsは構造化データを参照して引用候補を評価するため、HTML上のFAQとJSON-LDを一致させることが重要です。</p>
+
+        <p><strong>② HowTo JSON-LD の実装（手順コンテンツに適用）</strong><br>
+        「〇ステップで△△する方法」という手順コンテンツには `HowTo` スキーマを追加します。各ステップに `name`・`text` を記述することで、AIが各ステップを単体で引用できるようになります。</p>
+
+        <p><strong>③ llms.txt の設置</strong><br>
+        サイトルートに `llms.txt` を設置し、AIが参照すべき重要ページのURLとその概要をリスト化します。ChatGPT・Claudeなどの主要AIは `llms.txt` を優先的に参照してサイト情報を取得する傾向があります。Google AI Overviewsへの直接効果は未確認ですが、入り口を開けておくコストは低く、導入を推奨します。</p>
+
+        <p><strong>④ robots.txt の確認</strong><br>
+        `robots.txt` でGPTBot・ClaudeBot・PerplexityBot・Google-Extended 等の主要AIクローラーをブロックしていないことを確認します。意図せずブロックしているケースが小規模サイトで散見されます。</p>
+
+        <p><strong>⑤ sitemap.xml + Search Console インデックス登録</strong><br>
+        最適化したページのURLを `sitemap.xml` に追記し、Search Consoleでインデックス登録をリクエストします。AI Overviewsの引用候補はGoogleがクロール・インデックス済みのページから選ばれるため、インデックス状況の確認は必須です。</p>
+
+        <h2 id="sec4">技術実装はスポット外注で効率化する</h2>
+
+        <p>ステップ1・2の情報棚卸しとコンテンツ制作は、自社のことを最もよく知る社内チームで進めるのが理想的です。一方でステップ3の技術実装（JSON-LD・llms.txt・robots.txt確認・sitemap更新）は、フロントエンド開発の知識が必要なため、担当者がいない企業では進まないまま放置されがちです。</p>
+
+        <p>こうした「一度やれば完成する単発タスク」はスポット外注に向いています。</p>
+
+        <p><strong>スポット外注で依頼できる技術タスクの例</strong></p>
+        <ul>
+          <li>既存ページへのFAQPage JSON-LD・HowTo JSON-LD の実装（主要5〜10ページ）</li>
+          <li>llms.txt の作成とサーバーへの設置</li>
+          <li>robots.txt のAIクローラー許可設定の確認と修正</li>
+          <li>sitemap.xml への最適化対象ページの追加</li>
+          <li>GA4でAI Assistantチャネルの計測設定（参照元タグの設定）</li>
+        </ul>
+
+        <p>これらをまとめて1〜2日のスポット対応として依頼する場合、費用は<strong>3〜15万円程度が目安です。</strong>社内でエンジニアを採用・育成するコスト、または既存の月額契約ベンダーに追加依頼するコストと比べると、はるかに低コストで完了します。</p>
+
+        <p>ANKENでは、こうした「一度きりの技術的なタスク」を経験豊富なスポットエンジニアに単発で依頼できます。要件が固まっていない段階からの相談も歓迎しています。</p>
+
+        <div style="text-align:center;margin:32px 0;">
+          <a href="../contact.html" class="btn-primary-lg" onclick="gtag('event','cta_click',{event_category:'blog_ggg',event_label:'body_cta'})">AIO/GEO対応をスポット外注で相談する（無料）</a>
+        </div>
+
+        <!-- FAQセクション -->
+        <section class="faq-section" id="sec5">
+          <h2>よくある質問</h2>
+          <dl class="faq-list">
+            <dt>Q. AIO/GEO対応にかかる費用の目安はいくらですか？</dt>
+            <dd>A. コンテンツ整備は既存情報の加工が中心のため、ツール費用はほぼゼロです。技術実装（JSON-LD・llms.txt等）をスポット外注した場合の費用は3〜15万円程度が目安です。</dd>
+            <dt>Q. AI検索対応すると従来のSEOはどうなりますか？</dt>
+            <dd>A. 基本的に補完関係にあります。E-E-A-T重視・構造化データ・直接回答型コンテンツはSEOにも有効であり、AIO対応は既存SEOをさらに強化します。</dd>
+            <dt>Q. どのAI検索エンジンを優先的に対応すればよいですか？</dt>
+            <dd>A. 2026年現在はGoogle AI Overviewsが流入への影響が最大のため最優先です。次いでChatGPT Search、Perplexityの順で対応を進めるのが効率的です。</dd>
+          </dl>
+        </section>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "AIO/GEO対応にかかる費用の目安はいくらですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "コンテンツ整備は既存情報の加工が中心のため、ツール費用はほぼゼロです。技術実装（JSON-LD・llms.txt等）をスポット外注した場合の費用は3〜15万円程度が目安です。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "AI検索対応すると従来のSEOはどうなりますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "基本的に補完関係にあります。E-E-A-T重視・構造化データ・直接回答型コンテンツはSEOにも有効であり、AIO対応は既存SEOをさらに強化します。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "どのAI検索エンジンを優先的に対応すればよいですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2026年現在はGoogle AI Overviewsが流入への影響が最大のため最優先です。次いでChatGPT Search、Perplexityの順で対応を進めるのが効率的です。"
+              }
+            }
+          ]
+        }
+        </script>
+
+        <h2 id="sec6">まとめ</h2>
+
+        <p>自社製品・企業情報をAI検索（AIO/GEO）に対応させるポイントは3つです。<strong>①情報を「問い×直接回答」の形式に棚卸しする、②各ページの冒頭・FAQセクション・定義ブロックを整備してAIが引用しやすい構成にする、③FAQPage JSON-LD・HowTo JSON-LD・llms.txtを実装してAIクローラーに確実に届ける。</strong></p>
+
+        <p>コンテンツ設計（ステップ1・2）は自社の専門知識を持つ担当者が主導し、技術実装（ステップ3）は経験あるスポットエンジニアに単発で依頼するという分担が最も効率的です。2026年現在、AI検索への引用有無は集客・問い合わせ数に直接影響を与える段階に入っています。後回しにするほど、競合との差が広がります。</p>
+
+        <p class="article-author-note" style="font-size:13px;color:#6b7280;margin:24px 0 8px;border-top:1px solid #e5e7eb;padding-top:16px;">✎ ANKEN編集部が2026年7月に内容を確認・更新しました。AI検索対応・スポット外注支援の実績をもとに執筆しています。</p>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-fff.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">学習塾・教育事業者のAIチャットボット導入をスポット外注で実現する方法</span>
+          </a>
+          <a href="blog-a.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">即戦力スポットエンジニアの確保方法</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">AIO/GEO対応をスポット外注で依頼する</div>
+        <p class="sidebar-cta__desc">JSON-LD実装・llms.txt設置・robots.txt確認など、技術的な対応をタスク単位でスポット外注できます。まずは無料でご相談ください。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_ggg',event_label:'sidebar_cta'})">無料で相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-r.html">AI業務効率化の実践手順5ステップ</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-hh.html">Notion・Slack連携の情報分散をAIで解消する手順</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--g" style="font-size:11px;margin-bottom:4px;display:inline-block;">AI業務効率化｜方法・手順</span>
+            <a href="blog-uu.html">企画書・提案資料をAIでレビュー・改善する手順</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

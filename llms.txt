@@ -85,6 +85,7 @@
 - [企画書・提案資料をAIでレビュー・改善する手順](https://anken.bisii.co.jp/blog/blog-uu.html)
 - [代表電話・問い合わせ対応のAI自動音声応答を導入する方法](https://anken.bisii.co.jp/blog/blog-aaa.html)
 - [社内マニュアル動画をAIで自動作成する手順｜制作費90%削減3ステップ](https://anken.bisii.co.jp/blog/blog-eee.html)
+- [自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPT引用コンテンツ設計3ステップ](https://anken.bisii.co.jp/blog/blog-ggg.html)
 
 ### エンジニア向け（ジャンルC・D）
 
