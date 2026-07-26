@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#FAFAF8"/>
+
+  <!-- タイトル -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1F1F1F">スポット外注で自動マッチング機能を追加する3ステップ</text>
+
+  <!-- 横ライン（背景トラック） -->
+  <line x1="80" y1="230" x2="1120" y2="230" stroke="#E9D5FF" stroke-width="4"/>
+
+  <!-- STEP 1 -->
+  <rect x="60" y="120" width="310" height="220" rx="16" fill="#FFFFFF" stroke="#9333EA" stroke-width="2.5"/>
+  <!-- 上部アクセント -->
+  <rect x="60" y="120" width="310" height="8" rx="8" fill="#9333EA"/>
+  <!-- 番号サークル -->
+  <circle cx="215" cy="120" r="28" fill="#9333EA"/>
+  <text x="215" y="128" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">1</text>
+  <!-- ステップ内容 -->
+  <text x="215" y="185" text-anchor="middle" font-size="15" font-weight="700" fill="#5B21B6">マッチング要件の</text>
+  <text x="215" y="207" text-anchor="middle" font-size="15" font-weight="700" fill="#5B21B6">整理と仕様化</text>
+  <line x1="90" y1="225" x2="340" y2="225" stroke="#E9D5FF" stroke-width="1"/>
+  <text x="215" y="249" text-anchor="middle" font-size="12" fill="#374151">・マッチング条件のリスト化</text>
+  <text x="215" y="267" text-anchor="middle" font-size="12" fill="#374151">・優先順位付け</text>
+  <text x="215" y="285" text-anchor="middle" font-size="12" fill="#374151">・NG条件の定義</text>
+  <text x="215" y="315" text-anchor="middle" font-size="11" fill="#9333EA" font-weight="700">担当者が主役のフェーズ</text>
+
+  <!-- 矢印1→2 -->
+  <path d="M 375 230 L 425 230" stroke="#D97706" stroke-width="3" fill="none" marker-end="url(#arrowGold)"/>
+  <defs>
+    <marker id="arrowGold" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <!-- STEP 2 -->
+  <rect x="445" y="120" width="310" height="220" rx="16" fill="#FFFFFF" stroke="#D97706" stroke-width="2.5"/>
+  <rect x="445" y="120" width="310" height="8" rx="8" fill="#D97706"/>
+  <circle cx="600" cy="120" r="28" fill="#D97706"/>
+  <text x="600" y="128" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="600" y="185" text-anchor="middle" font-size="15" font-weight="700" fill="#92400E">アルゴリズム開発と</text>
+  <text x="600" y="207" text-anchor="middle" font-size="15" font-weight="700" fill="#92400E">既存システム組み込み</text>
+  <line x1="475" y1="225" x2="725" y2="225" stroke="#FDE68A" stroke-width="1"/>
+  <text x="600" y="249" text-anchor="middle" font-size="12" fill="#374151">・スコアリングロジックの実装</text>
+  <text x="600" y="267" text-anchor="middle" font-size="12" fill="#374151">・距離計算API連携</text>
+  <text x="600" y="285" text-anchor="middle" font-size="12" fill="#374151">・既存DBへのAPI接続</text>
+  <text x="600" y="315" text-anchor="middle" font-size="11" fill="#D97706" font-weight="700">スポット外注先が担当するフェーズ</text>
+
+  <!-- 矢印2→3 -->
+  <path d="M 760 230 L 810 230" stroke="#D97706" stroke-width="3" fill="none" marker-end="url(#arrowGold)"/>
+
+  <!-- STEP 3 -->
+  <rect x="830" y="120" width="310" height="220" rx="16" fill="#FFFFFF" stroke="#374151" stroke-width="2.5"/>
+  <rect x="830" y="120" width="310" height="8" rx="8" fill="#374151"/>
+  <circle cx="985" cy="120" r="28" fill="#374151"/>
+  <text x="985" y="128" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="985" y="185" text-anchor="middle" font-size="15" font-weight="700" fill="#1F1F1F">テスト検証・</text>
+  <text x="985" y="207" text-anchor="middle" font-size="15" font-weight="700" fill="#1F1F1F">本番稼働</text>
+  <line x1="860" y1="225" x2="1110" y2="225" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="985" y="249" text-anchor="middle" font-size="12" fill="#374151">・過去実績での精度確認</text>
+  <text x="985" y="267" text-anchor="middle" font-size="12" fill="#374151">・2〜4週間の並行運用</text>
+  <text x="985" y="285" text-anchor="middle" font-size="12" fill="#374151">・本番切り替え・運用開始</text>
+  <text x="985" y="315" text-anchor="middle" font-size="11" fill="#374151" font-weight="700">担当者が上書き修正できる設計に</text>
+
+  <!-- 期間・費用サマリ -->
+  <rect x="300" y="380" width="600" height="64" rx="12" fill="#9333EA" opacity="0.08" stroke="#9333EA" stroke-width="1.5"/>
+  <text x="600" y="408" text-anchor="middle" font-size="14" font-weight="700" fill="#5B21B6">スポット外注の目安</text>
+  <text x="600" y="432" text-anchor="middle" font-size="13" fill="#374151">費用：30〜70万円程度　　開発期間：4〜8週間（要件整理〜テスト運用まで）</text>
+</svg>

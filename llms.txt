@@ -56,6 +56,8 @@
 - [RPAの無人稼働エラーをAIで自動復旧する方法｜製造業のRPA監視をスポット外注で実現する3ステップ](https://anken.bisii.co.jp/blog/blog-bbb.html)
 - [下請法コンプライアンス対応の発注管理システムをスポット外注で構築する方法｜書面交付を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-ddd.html)
 - [学習塾・教育事業者のAIチャットボット導入をスポット外注で実現する方法｜生徒対応を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-fff.html)
+- [医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ](https://anken.bisii.co.jp/blog/blog-hhh.html)
+- [人材派遣スタッフの自動マッチング機能をスポット外注で追加する方法｜既存システムに機能だけを依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-iii.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
@@ -89,6 +91,7 @@
 
 ### エンジニア向け（ジャンルC・D）
 
+- [FDE副業の単価相場2026年版｜AI導入支援スキルをスポット案件の高収入に変える3ステップ](https://anken.bisii.co.jp/blog/blog-jjj.html)
 - [土日だけでOK！メガベンチャーエンジニアが副業でAI案件を稼ぐ方法](https://anken.bisii.co.jp/blog/blog-c.html)
 - [週末だけOK。エンジニア副業を「スポット案件」で無理なく始める方法](https://anken.bisii.co.jp/blog/blog-d.html)
 - [本業エンジニアがAI副業で一石二鳥。週1スポット案件でスキルアップする方法](https://anken.bisii.co.jp/blog/blog-g.html)

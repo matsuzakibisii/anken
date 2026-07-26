@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#FAFFFE" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="24" font-weight="700" fill="#0D9488">FDE副業で高単価スポット案件を継続受注する3ステップ</text>
+
+  <!-- Step Cards -->
+  <!-- STEP 1 -->
+  <rect x="60" y="90" width="320" height="320" rx="16" fill="white" stroke="#0D9488" stroke-width="2.5"/>
+  <rect x="60" y="90" width="320" height="72" rx="16" fill="#0D9488"/>
+  <rect x="60" y="130" width="320" height="32" fill="#0D9488"/>
+  <text x="220" y="124" text-anchor="middle" font-size="14" font-weight="700" fill="white">STEP 1</text>
+  <text x="220" y="148" text-anchor="middle" font-size="13" fill="white">実装実績を公開する</text>
+
+  <!-- Icon for Step 1 -->
+  <circle cx="220" cy="225" r="44" fill="#E6FAF8"/>
+  <text x="220" y="234" text-anchor="middle" font-size="38">💻</text>
+
+  <text x="220" y="295" text-anchor="middle" font-size="15" font-weight="700" fill="#0D9488">GitHubで実装サンプルを公開</text>
+  <text x="220" y="320" text-anchor="middle" font-size="12" fill="#374151">動くデモ・わかりやすい</text>
+  <text x="220" y="338" text-anchor="middle" font-size="12" fill="#374151">README・整理されたコード</text>
+  <text x="220" y="356" text-anchor="middle" font-size="12" fill="#6B7280">「作れる」エビデンスを先に作る</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M 390 250 L 450 250" stroke="#EAB308" stroke-width="4" marker-end="url(#arrowGold)"/>
+  <defs>
+    <marker id="arrowGold" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#EAB308"/>
+    </marker>
+  </defs>
+
+  <!-- STEP 2 -->
+  <rect x="460" y="90" width="320" height="320" rx="16" fill="white" stroke="#EAB308" stroke-width="2.5"/>
+  <rect x="460" y="90" width="320" height="72" rx="16" fill="#EAB308"/>
+  <rect x="460" y="130" width="320" height="32" fill="#EAB308"/>
+  <text x="620" y="124" text-anchor="middle" font-size="14" font-weight="700" fill="white">STEP 2</text>
+  <text x="620" y="148" text-anchor="middle" font-size="13" fill="white">業界専門性を打ち出す</text>
+
+  <!-- Icon for Step 2 -->
+  <circle cx="620" cy="225" r="44" fill="#FEFCE8"/>
+  <text x="620" y="234" text-anchor="middle" font-size="38">🎯</text>
+
+  <text x="620" y="295" text-anchor="middle" font-size="15" font-weight="700" fill="#B45309">ニッチ専門性をプロフィールに明記</text>
+  <text x="620" y="320" text-anchor="middle" font-size="12" fill="#374151">「業界名×AI実装力」の掛け算</text>
+  <text x="620" y="338" text-anchor="middle" font-size="12" fill="#374151">競合が減り単価交渉が有利に</text>
+  <text x="620" y="356" text-anchor="middle" font-size="12" fill="#6B7280">医療・製造・士業 等</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M 790 250 L 850 250" stroke="#EAB308" stroke-width="4" marker-end="url(#arrowGold)"/>
+
+  <!-- STEP 3 -->
+  <rect x="860" y="90" width="320" height="320" rx="16" fill="white" stroke="#0D9488" stroke-width="2.5"/>
+  <rect x="860" y="90" width="320" height="72" rx="16" fill="#0D9488"/>
+  <rect x="860" y="130" width="320" height="32" fill="#0D9488"/>
+  <text x="1020" y="124" text-anchor="middle" font-size="14" font-weight="700" fill="white">STEP 3</text>
+  <text x="1020" y="148" text-anchor="middle" font-size="13" fill="white">初案件でリピートをつかむ</text>
+
+  <!-- Icon for Step 3 -->
+  <circle cx="1020" cy="225" r="44" fill="#E6FAF8"/>
+  <text x="1020" y="234" text-anchor="middle" font-size="38">🔄</text>
+
+  <text x="1020" y="295" text-anchor="middle" font-size="15" font-weight="700" fill="#0D9488">丁寧な納品＋引き継ぎドキュメント</text>
+  <text x="1020" y="320" text-anchor="middle" font-size="12" fill="#374151">「なぜこの設計か」の説明</text>
+  <text x="1020" y="338" text-anchor="middle" font-size="12" fill="#374151">次のステップを提案</text>
+  <text x="1020" y="356" text-anchor="middle" font-size="12" fill="#6B7280">リピート・紹介で単価が自然に上昇</text>
+
+  <!-- Bottom tag -->
+  <rect x="350" y="440" width="500" height="30" rx="15" fill="#0D9488" opacity="0.1"/>
+  <text x="600" y="460" text-anchor="middle" font-size="13" fill="#0D9488" font-weight="700">継続受注のサイクルが生まれると、FDE副業は安定した副収入になります</text>
+</svg>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="医療機関の契約医師・資格証明書管理をAI化するには、AI-OCRでの証明書自動読み取り→kintoneへの自動登録→期限アラート自動送信の3ステップが有効です。手作業・目視管理による更新漏れをゼロにする具体的な方法を解説します。">
+  <title>医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- OGP / SNS Card -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ">
+  <meta property="og:description" content="医療機関の契約医師・資格証明書管理をAI化するには、AI-OCRでの証明書自動読み取り→kintoneへの自動登録→期限アラート自動送信の3ステップが有効です。手作業・目視管理による更新漏れをゼロにする具体的な方法を解説します。">
+  <meta property="og:image"       content="https://anken.bisii.co.jp/blog/images/img-hhh1-hero.png">
+  <meta property="og:url"         content="https://anken.bisii.co.jp/blog/blog-hhh.html">
+  <meta property="og:site_name"   content="ANKENブログ">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ">
+  <meta name="twitter:description" content="医療機関の契約医師・資格証明書管理をAI化するには、AI-OCRでの証明書自動読み取り→kintoneへの自動登録→期限アラート自動送信の3ステップが有効です。手作業・目視管理による更新漏れをゼロにする具体的な方法を解説します。">
+  <meta name="twitter:image"       content="https://anken.bisii.co.jp/blog/images/img-hhh1-hero.png">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+<script src="analytics.js"></script>
+  <link rel="canonical" href="https://anken.bisii.co.jp/blog/blog-hhh.html" />
+  <!-- JSON-LD: Article + BreadcrumbList + HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ",
+        "description": "医療機関の契約医師・資格証明書管理をAI化するには、AI-OCRでの証明書自動読み取り→kintoneへの自動登録→期限アラート自動送信の3ステップが有効です。手作業・目視管理による更新漏れをゼロにする具体的な方法を解説します。",
+        "image": "https://anken.bisii.co.jp/blog/images/img-hhh1-hero.png",
+        "datePublished": "2026-07-24",
+        "dateModified": "2026-07-24",
+        "author": {
+          "@type": "Organization",
+          "name": "ANKEN編集部",
+          "url": "https://anken.bisii.co.jp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "株式会社ビシィッ",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://anken.bisii.co.jp/apple-touch-icon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ANKENブログ TOP",
+            "item": "https://anken.bisii.co.jp/blog/media.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ",
+            "item": "https://anken.bisii.co.jp/blog/blog-hhh.html"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "医療機関の契約医師・資格証明書管理をAI化する3ステップ",
+        "description": "AI-OCR×kintone連携で契約医師の資格・保険証明書の更新管理を自動化する手順",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "AI-OCRで資格証明書・保険証書を自動読み取りする",
+            "text": "医師から提出されたPDF・画像の証明書をAI-OCRで自動読み取りし、氏名・資格種別・有効期限などのキー情報を抽出します。手動転記ゼロ・転記ミスゼロが目標です。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "kintoneに自動登録し一元管理する",
+            "text": "抽出したデータをkintoneの契約医師管理アプリに自動登録します。API連携で元データのPDFも添付保存し、医師ごと・資格種別ごとの有効期限一覧を常時最新化します。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "期限アラートメールを自動送信する",
+            "text": "kintoneのワークフロー機能またはAPI連携で、有効期限の90日前・60日前・30日前に段階的なリマインドメールを医師本人と担当者に自動送信します。文面のカスタマイズも可能です。"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- favicon（blog/配下のファイルは ../で参照） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="https://anken.bisii.co.jp" class="site-header__logo">
+        <span class="site-header__logo-mark">ANKEN</span>
+        <span class="site-header__logo-sub">by bisii</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+        <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+        <a href="../member.html#register" class="btn-header-outline" onclick="gtag('event','cta_click',{event_category:'blog_hhh',event_label:'header_register'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="btn-header" onclick="gtag('event','cta_click',{event_category:'blog_hhh',event_label:'header_cta'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- パンくず -->
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol class="breadcrumb__list">
+      <li><a href="https://anken.bisii.co.jp/blog/media.html">ANKENブログ TOP</a></li>
+      <li>医療機関の契約医師・資格証明書管理をAI化する方法</li>
+    </ol>
+  </nav>
+
+  <!-- 記事ヒーロー -->
+  <div class="article-hero">
+    <div class="article-hero__inner">
+      <span class="article-hero__tag article-tag article-tag--b">発注者向け｜AI開発</span>
+      <h1 class="article-hero__title">医療機関の契約医師・資格証明書管理をAI化する方法<br>AI-OCR×kintone連携で更新漏れをゼロにする3ステップ</h1>
+      <div class="article-hero__meta">
+        <span class="article-hero__meta-item">📅 2026年7月24日</span>
+        <span class="article-hero__meta-item">⏱ 約10分で読めます</span>
+        <span class="article-hero__meta-item">🔑 資格証明書管理 AI自動化, AI-OCR kintone連携, 医師資格 更新漏れ対策</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- フィーチャー画像 -->
+  <div class="article-featured-img">
+    <img src="images/img-hhh1-hero.png" alt="3Dレンダー風。医師の資格証明書PDFがAI-OCRスキャナーのビームでデータ化され、kintoneダッシュボードカードへ変換されていく。ロイヤルブルーとグリーンの照明。" width="1200" height="630">
+  </div>
+
+  <!-- 記事レイアウト -->
+  <div class="article-layout">
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+
+      <!-- リード文 -->
+      <div class="article-lead">
+        <strong>医療機関の契約医師・資格証明書管理をAI化するには、「AI-OCRで証明書を自動読み取り→kintoneに自動登録→期限アラートメールを自動送信」の3ステップが基本です。</strong>遠隔画像診断事業者や複数拠点を持つ医療機関では、数十〜数百名の契約医師の資格証・保険証書の有効期限をExcelや目視で管理するケースが多く、更新漏れが発生した場合の法的リスクや業務停止リスクは深刻です。AI-OCR×kintone連携によるシステム化はスポット外注で1〜2ヶ月で実現でき、費用は30〜80万円が目安です。
+      </div>
+
+      <p class="article-freshness" style="font-size:13px;color:#6b7280;margin:-12px 0 24px;padding:0;">📅 本記事は2026年7月時点の情報に基づいています。</p>
+
+      <!-- 目次 -->
+      <nav class="toc" aria-label="目次">
+        <div class="toc__title">この記事の目次</div>
+        <ol class="toc__list">
+          <li><a href="#sec1">医療機関の契約医師資格管理でよくある課題</a></li>
+          <li><a href="#sec2">AI化で解決できる3つのポイント</a></li>
+          <li><a href="#sec3">AI-OCR×kintone連携の3ステップ実装</a></li>
+          <li><a href="#sec4">スポット外注で実現するメリットと費用感</a></li>
+          <li><a href="#sec5">よくある質問</a></li>
+          <li><a href="#sec6">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <!-- 早期CTA -->
+      <div class="cta-box" style="background:#EFF6FF;border:2px solid #1D4ED8;border-radius:12px;padding:24px;margin:32px 0;text-align:center;">
+        <p style="font-weight:700;font-size:1.05rem;margin:0 0 8px;">資格証明書管理のAI化をスポット外注で相談する</p>
+        <p class="cta-box__sub" style="font-size:0.9rem;color:#374151;margin:0 0 16px;">何から手をつければ…という段階でも大丈夫です。要件が固まっていない状態でもご相談いただけます。しつこい営業は一切ありません。</p>
+        <a href="../contact.html" class="btn-primary-lg" onclick="gtag('event','cta_click',{event_category:'blog_hhh',event_label:'early_cta'})">無料で相談する（初回相談無料・1時間以内返信）</a>
+      </div>
+
+      <article>
+
+        <h2 id="sec1">医療機関の契約医師資格管理でよくある課題</h2>
+
+        <p>遠隔画像診断事業者・複数診療科を持つ病院・クリニックグループなど、多数の契約医師と業務委託契約を結ぶ医療機関では、資格証明書管理が属人的なオペレーションになりがちです。</p>
+
+        <p>具体的には次のような状況が典型的な課題として挙げられます。</p>
+
+        <ul>
+          <li><strong>管理対象が多い</strong>：契約医師が50〜300名規模になると、資格種別（専門医・認定医・指導医等）×有効期限の組み合わせが数百件単位になる</li>
+          <li><strong>証明書の種別が多岐にわたる</strong>：賠償責任保険（年1回更新）・専門医資格（5年に1回更新）・診断書作成認定など、更新頻度・更新手続きが資格ごとに異なる</li>
+          <li><strong>提出手段がバラバラ</strong>：医師からの証明書提出がメール添付・郵送・持参など統一されておらず、受領確認が複数担当者に分散する</li>
+          <li><strong>有効期限の把握が手作業</strong>：ExcelやスプレッドシートにPDFを目視確認しながら手入力するため、転記ミス・入力漏れが発生しやすい</li>
+          <li><strong>リマインドが属人的</strong>：担当者が記憶やカレンダーに頼ってリマインドするため、担当者異動や繁忙期に抜けが生じる</li>
+        </ul>
+
+        <p>こうした問題は少人数の事務担当者が多数の医師を管理する組織で特に顕著になります。更新漏れが発生すると、保険加入要件を満たさないまま業務を継続するリスクや、資格の空白期間に行われた診断の法的有効性への影響が生じます。</p>
+
+        <h2 id="sec2">AI化で解決できる3つのポイント</h2>
+
+        <p>AI-OCR×kintone連携によるシステム化は、上記の課題を3つの方向で解決します。</p>
+
+        <p><strong>① 証明書の読み取り・データ化を自動化する</strong><br>
+        医師から提出されたPDFや画像ファイルをAI-OCRが自動解析し、氏名・資格種別・資格番号・有効期限などの必須項目を抽出します。手入力・転記が不要になるため、転記ミスが構造的に発生しない仕組みになります。</p>
+
+        <p><strong>② kintoneに集約して常時最新状態を維持する</strong><br>
+        抽出データをkintoneの契約医師管理アプリに自動登録し、元のPDFも紐付けて保存します。医師ごと・資格種別ごと・有効期限順に一覧表示でき、担当者が変わっても引き継ぎなしで管理状況を把握できます。</p>
+
+        <p><strong>③ 期限アラートを段階的に自動送信する</strong><br>
+        有効期限の90日前・60日前・30日前に、医師本人と担当者の両方にリマインドメールを自動送信します。文面を段階ごとに変えることも可能（例：90日前は案内メール・30日前は警告メール）で、人的チェックに頼らない更新管理体制を実現します。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-hhh2-process.svg" alt="資格証明書管理のBefore/After比較図。ロイヤルブルーとグリーンの配色。左：手動管理（Excel目視・手入力・メールリマインド手作業）、右：AI化後（AI-OCR自動読み取り・kintone自動登録・自動リマインド送信）" width="1200" height="500">
+          <figcaption>資格証明書管理のBefore（手作業）After（AI化）比較</figcaption>
+        </figure>
+
+        <h2 id="sec3">AI-OCR×kintone連携の3ステップ実装</h2>
+
+        <h3>ステップ1｜AI-OCRで資格証明書・保険証書を自動読み取りする</h3>
+
+        <p>医師から提出された証明書（PDF・JPG・PNG等）を受信するメールボックスまたは共有フォルダを起点として、AI-OCRが自動的にファイルを検出・解析します。</p>
+
+        <p><strong>AI-OCRが抽出する主な項目</strong></p>
+        <ul>
+          <li>氏名（医師氏名）</li>
+          <li>資格種別（専門医・指導医・賠償責任保険等）</li>
+          <li>資格番号・証書番号</li>
+          <li>有効期限（開始日・終了日）</li>
+          <li>発行機関名</li>
+        </ul>
+
+        <p>現在のAI-OCRツールは、書式が異なる証明書でも高精度で情報抽出できます。ただし、<strong>手書き文字の多い古い証明書や、読み取り精度が低い場合は人間のダブルチェックフローを組み込むことを推奨します。</strong>例えば「信頼度スコアが閾値未満の場合はkintone上で要確認フラグを立てる」仕組みにすれば、完全自動化と品質担保を両立できます。</p>
+
+        <p>よく使われるAI-OCRサービスの選択肢としては、以下が挙げられます。</p>
+
+        <ul>
+          <li><strong>AI inside（DX Suite）</strong>：日本語帳票に強く、kintoneとの連携実績が豊富</li>
+          <li><strong>FlexiCapture（ABBYY）</strong>：多様なフォーマット対応・高精度</li>
+          <li><strong>Azure Form Recognizer / Google Document AI</strong>：クラウドAPIとして利用でき、開発コストを抑えられる</li>
+          <li><strong>ChatGPT（GPT-4o Vision）</strong>：プロンプト設計によって証明書の構造解析も可能。低コストで試験導入しやすい</li>
+        </ul>
+
+        <p>どのツールを選ぶかは、証明書の種別・量・既存のシステム環境によって変わります。スポット外注先のエンジニアと要件整理をしてから選定するのが現実的です。</p>
+
+        <h3>ステップ2｜kintoneに自動登録し一元管理する</h3>
+
+        <p>AI-OCRで抽出したデータをkintoneの「契約医師管理アプリ」に自動登録します。kintone APIまたはWebhook連携を使えば、OCR完了後に即座にkintoneへのデータ書き込みが行われます。</p>
+
+        <p><strong>kintoneアプリで管理するフィールド設計の例</strong></p>
+
+        <div class="point-box">
+          【契約医師マスタ】氏名 / 所属施設 / 専門科 / 連絡先メール<br>
+          【資格・保険台帳】資格種別 / 証書番号 / 有効期限 / 提出日 / 添付PDF / 確認ステータス / 要確認フラグ
+        </div>
+
+        <p>kintoneの標準機能でフィルタリング（有効期限が90日以内のレコードだけ表示する等）も可能なため、担当者はダッシュボードを確認するだけで全医師の証明書ステータスを一目で把握できます。</p>
+
+        <p>また、kintoneはノーコードでアプリ設計ができるため、<strong>新たな資格種別が追加になった場合でも、フィールド追加をシステム改修なしで自社対応できる点が長期運用のメリットです。</strong></p>
+
+        <h3>ステップ3｜期限アラートメールを自動送信する</h3>
+
+        <p>kintoneのワークフロー機能（またはkroutine等のkintone連携ツール・API）を使い、有効期限フィールドを参照して段階的なリマインドメールを自動送信します。</p>
+
+        <figure class="article-figure">
+          <img src="images/img-hhh3-steps.svg" alt="スポット外注でAI-OCR×kintone連携システムを構築する3ステップフロー図。ロイヤルブルーとグリーンの配色。STEP1 要件整理・ツール選定→STEP2 AI-OCR連携・kintoneアプリ構築→STEP3 自動リマインド設定・テスト運用" width="1200" height="480">
+          <figcaption>スポット外注でシステム構築する3ステップフロー</figcaption>
+        </figure>
+
+        <p><strong>リマインドメールの設計例</strong></p>
+
+        <ul>
+          <li><strong>90日前</strong>：「〇〇先生の△△資格（証書番号：◇◇）の有効期限が90日後に到来します。更新手続きをご確認ください。」（案内・確認促進）</li>
+          <li><strong>60日前</strong>：「△△資格の有効期限まで60日です。更新証明書の準備・ご提出をお願いします。」（行動促進）</li>
+          <li><strong>30日前</strong>：「【重要】△△資格の有効期限まで30日です。証明書のご提出がまだの場合は至急ご対応ください。」（緊急案内）</li>
+          <li><strong>期限当日・超過</strong>：担当者にアラート通知（業務停止リスクへの対処）</li>
+        </ul>
+
+        <p>文面はkintone側のテンプレートとして管理することで、担当者が自社でカスタマイズできます。送信先は医師本人・担当事務・部門責任者の複数設定が可能です。</p>
+
+        <p>このステップ3まで実装することで、<strong>担当者がシステムを開かなくても、期限が近づいた医師にだけ自動でリマインドが届く体制が完成します。</strong></p>
+
+        <h2 id="sec4">スポット外注で実現するメリットと費用感</h2>
+
+        <p>このシステムの構築は、kintone・AI-OCR・API連携の知識を持つエンジニアがいれば、設計から稼働まで約4〜8週間で完了します。ただし多くの医療機関では、こうした開発知識を持つ情報システム担当者が社内にいないケースが大半です。</p>
+
+        <p><strong>スポット外注が適している理由</strong></p>
+
+        <ul>
+          <li>「一度作れば長期稼働できる」単発の開発タスクであるため、月額の保守契約は必要ない</li>
+          <li>kintoneはノーコードで運用できるため、構築後の日常運用は自社で完結できる</li>
+          <li>AI-OCRのAPIは月額従量課金型が多く、大きな固定費が発生しない</li>
+          <li>既存のExcel管理から移行するデータ整形も、スポット作業として依頼できる</li>
+        </ul>
+
+        <p><strong>費用の目安</strong></p>
+
+        <div class="point-box">
+          AI-OCR連携＋kintoneアプリ構築＋自動リマインド設定：<strong>30〜80万円程度</strong>（規模・証明書種別数・リマインド条件の複雑さによる）<br>
+          開発期間の目安：4〜8週間（要件定義〜テスト運用まで）<br>
+          ※月額のkintoneライセンス・AI-OCR API利用料は別途
+        </div>
+
+        <p>社内エンジニアを採用するコスト（年収600万円以上＋採用費）や、SIerへの常駐型開発依頼（数百万円規模）と比べると、スポット外注は圧倒的に低コストです。また、<strong>要件が固まっていない段階でも相談ベースで進められるため、「何から始めればよいか分からない」状態からでも着手できます。</strong></p>
+
+        <div style="text-align:center;margin:32px 0;">
+          <a href="../contact.html" class="btn-primary-lg" onclick="gtag('event','cta_click',{event_category:'blog_hhh',event_label:'body_cta'})">資格証明書管理AI化をスポット外注で相談する（無料）</a>
+        </div>
+
+        <!-- FAQセクション -->
+        <section class="faq-section" id="sec5">
+          <h2>よくある質問</h2>
+          <dl class="faq-list">
+            <dt>Q. kintoneを使っていない場合でもシステム化できますか？</dt>
+            <dd>A. 可能です。kintone以外にもNotionやAirtable、Excelベースの管理システムへのAI-OCR連携も対応できます。ただし、kintoneはノーコードで柔軟に運用できるため、新規導入も含めた検討を推奨します。</dd>
+            <dt>Q. AI-OCRの読み取り精度が低い場合はどうなりますか？</dt>
+            <dd>A. 信頼度スコアが閾値以下のレコードに「要確認フラグ」を自動付与し、担当者が手動で確認するフローを組み込みます。完全自動化と品質担保を両立できる設計にします。</dd>
+            <dt>Q. 個人情報（医師の資格情報）のセキュリティは大丈夫ですか？</dt>
+            <dd>A. kintoneはISO 27001認証取得済みで、アクセス権限管理・通信暗号化に対応しています。AI-OCRのAPIもデータ非保存設定が可能なものを選定します。スポット外注先とNDAを締結した上で開発を進めます。</dd>
+          </dl>
+        </section>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "kintoneを使っていない場合でもシステム化できますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可能です。kintone以外にもNotionやAirtable、Excelベースの管理システムへのAI-OCR連携も対応できます。ただし、kintoneはノーコードで柔軟に運用できるため、新規導入も含めた検討を推奨します。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "AI-OCRの読み取り精度が低い場合はどうなりますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "信頼度スコアが閾値以下のレコードに「要確認フラグ」を自動付与し、担当者が手動で確認するフローを組み込みます。完全自動化と品質担保を両立できる設計にします。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "個人情報（医師の資格情報）のセキュリティは大丈夫ですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "kintoneはISO 27001認証取得済みで、アクセス権限管理・通信暗号化に対応しています。AI-OCRのAPIもデータ非保存設定が可能なものを選定します。スポット外注先とNDAを締結した上で開発を進めます。"
+              }
+            }
+          ]
+        }
+        </script>
+
+        <h2 id="sec6">まとめ</h2>
+
+        <p>医療機関の契約医師・資格証明書管理をAI化するポイントは3つです。<strong>①AI-OCRで証明書を自動読み取りして転記ミスをゼロにする、②kintoneに自動登録して全員の証明書ステータスを一元管理する、③期限90日前から段階的なリマインドメールを自動送信して更新漏れをゼロにする。</strong></p>
+
+        <p>システムの構築はkintone・AI-OCR・API連携の知識を持つエンジニアへのスポット外注で4〜8週間・30〜80万円程度から実現できます。構築後の日常運用はkintoneのノーコード機能で自社対応でき、月額の大きな固定費も発生しません。担当者の異動があっても引き継ぎゼロで管理を継続できる体制が整います。</p>
+
+        <p class="article-author-note" style="font-size:13px;color:#6b7280;margin:24px 0 8px;border-top:1px solid #e5e7eb;padding-top:16px;">✎ ANKEN編集部が2026年7月に内容を確認・更新しました。AI-OCR×kintone連携によるスポット外注支援の実績をもとに執筆しています。</p>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-ggg.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法</span>
+          </a>
+          <a href="blog-iii.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">人材派遣スタッフの自動マッチング機能をスポット外注で追加する方法</span>
+          </a>
+        </nav>
+
+        <p style="text-align:center; margin-top: 24px;">
+          <a href="https://anken.bisii.co.jp/blog/media.html">← ブログ一覧に戻る</a>
+        </p>
+
+      </article>
+    </main>
+
+    <!-- サイドバー -->
+    <aside class="article-sidebar">
+
+      <div class="sidebar-cta">
+        <div class="sidebar-cta__title">契約医師資格管理のAI化をスポット外注で依頼する</div>
+        <p class="sidebar-cta__desc">AI-OCR読み取り・kintone連携・自動リマインド設定をタスク単位でスポット外注できます。まずは無料でご相談ください。</p>
+        <a href="../contact.html" class="btn--sidebar" onclick="gtag('event','cta_click',{event_category:'blog_hhh',event_label:'sidebar_cta'})">無料で相談する</a>
+      </div>
+
+      <div class="sidebar-widget">
+        <div class="sidebar-widget__title">関連記事</div>
+        <ul class="sidebar-article-list">
+          <li>
+            <span class="article-tag article-tag--b" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜AI開発</span>
+            <a href="blog-iii.html">人材派遣スタッフの自動マッチング機能をスポット外注で追加する方法</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--b" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜AI開発</span>
+            <a href="blog-ff.html">請求書・書類処理のAI化（AI-OCR導入）をスポット発注で実現する方法</a>
+          </li>
+          <li>
+            <span class="article-tag article-tag--b" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜AI開発</span>
+            <a href="blog-jj.html">契約書AIチェック導入をスポット外注で実現する方法</a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div><!-- /article-layout -->
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">ANKEN</div>
+      <p class="site-footer__desc">開発リソース不足に悩む企業と、副業・フリーランスエンジニアをマイクロ単位でつなぐマッチングサービス。固定費ゼロ・スポットから始められます。</p>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ All rights reserved.</p>
+        <div class="site-footer__links">
+          <a href="https://anken.bisii.co.jp/blog/media.html">コンテンツメディア</a>
+          <a href="../contact.html">お問い合わせ</a>
+          <a href="../member.html#register">エンジニア登録</a>
+          <a href="https://anken.bisii.co.jp" target="_blank" rel="noopener">サービスTOP</a>
+          <a href="https://bisii.co.jp" target="_blank" rel="noopener">会社概要</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

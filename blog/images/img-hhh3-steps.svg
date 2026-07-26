@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F0FDF4"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="22" font-weight="900" fill="#1e293b">スポット外注でAI-OCR×kintone連携システムを構築する3ステップ</text>
+
+  <!-- Step connector line -->
+  <line x1="200" y1="240" x2="1000" y2="240" stroke="#16A34A" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- STEP 1 -->
+  <circle cx="200" cy="240" r="56" fill="#1D4ED8"/>
+  <text x="200" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#93c5fd">STEP</text>
+  <text x="200" y="252" text-anchor="middle" font-size="30" font-weight="900" fill="#fff">1</text>
+
+  <rect x="80" y="310" width="240" height="140" rx="14" fill="#fff" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="200" y="336" text-anchor="middle" font-size="14" font-weight="900" fill="#1D4ED8">要件整理・ツール選定</text>
+  <text x="200" y="358" text-anchor="middle" font-size="12" fill="#374151">管理対象の証明書種別・</text>
+  <text x="200" y="375" text-anchor="middle" font-size="12" fill="#374151">提出フローを整理</text>
+  <text x="200" y="395" text-anchor="middle" font-size="12" fill="#374151">AI-OCRサービスと</text>
+  <text x="200" y="413" text-anchor="middle" font-size="12" fill="#374151">kintoneアプリ設計を確定</text>
+  <rect x="108" y="426" width="184" height="14" rx="7" fill="#EFF6FF"/>
+  <text x="200" y="437" text-anchor="middle" font-size="11" font-weight="700" fill="#1D4ED8">目安：1〜2週間</text>
+
+  <!-- Label above step 1 -->
+  <rect x="96" y="96" width="208" height="110" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="200" y="120" text-anchor="middle" font-size="12" fill="#6b7280">▼ 主な確認ポイント</text>
+  <text x="200" y="140" text-anchor="middle" font-size="11.5" fill="#374151">✓ 証明書の種別・件数</text>
+  <text x="200" y="158" text-anchor="middle" font-size="11.5" fill="#374151">✓ 提出経路（メール/郵送）</text>
+  <text x="200" y="176" text-anchor="middle" font-size="11.5" fill="#374151">✓ 既存システム環境</text>
+  <text x="200" y="194" text-anchor="middle" font-size="11.5" fill="#374151">✓ リマインド送信ルール</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="465" y="248" text-anchor="middle" font-size="30" fill="#16A34A">▶</text>
+
+  <!-- STEP 2 -->
+  <circle cx="600" cy="240" r="56" fill="#16A34A"/>
+  <text x="600" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#86efac">STEP</text>
+  <text x="600" y="252" text-anchor="middle" font-size="30" font-weight="900" fill="#fff">2</text>
+
+  <rect x="480" y="310" width="240" height="140" rx="14" fill="#fff" stroke="#16A34A" stroke-width="2"/>
+  <text x="600" y="336" text-anchor="middle" font-size="14" font-weight="900" fill="#166534">AI-OCR連携・kintone構築</text>
+  <text x="600" y="358" text-anchor="middle" font-size="12" fill="#374151">AI-OCR APIと受信フォルダを</text>
+  <text x="600" y="375" text-anchor="middle" font-size="12" fill="#374151">連携し自動読み取り設定</text>
+  <text x="600" y="395" text-anchor="middle" font-size="12" fill="#374151">kintoneアプリを構築し</text>
+  <text x="600" y="413" text-anchor="middle" font-size="12" fill="#374151">API連携でデータ自動登録</text>
+  <rect x="508" y="426" width="184" height="14" rx="7" fill="#DCFCE7"/>
+  <text x="600" y="437" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">目安：2〜4週間</text>
+
+  <!-- Label above step 2 -->
+  <rect x="496" y="96" width="208" height="110" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="600" y="120" text-anchor="middle" font-size="12" fill="#6b7280">▼ 主な開発内容</text>
+  <text x="600" y="140" text-anchor="middle" font-size="11.5" fill="#374151">✓ AI-OCR API設定</text>
+  <text x="600" y="158" text-anchor="middle" font-size="11.5" fill="#374151">✓ kintoneアプリ設計・構築</text>
+  <text x="600" y="176" text-anchor="middle" font-size="11.5" fill="#374151">✓ データ連携スクリプト</text>
+  <text x="600" y="194" text-anchor="middle" font-size="11.5" fill="#374151">✓ 要確認フラグ設定</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="865" y="248" text-anchor="middle" font-size="30" fill="#16A34A">▶</text>
+
+  <!-- STEP 3 -->
+  <circle cx="1000" cy="240" r="56" fill="#0F766E"/>
+  <text x="1000" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#99f6e4">STEP</text>
+  <text x="1000" y="252" text-anchor="middle" font-size="30" font-weight="900" fill="#fff">3</text>
+
+  <rect x="880" y="310" width="240" height="140" rx="14" fill="#fff" stroke="#0F766E" stroke-width="2"/>
+  <text x="1000" y="336" text-anchor="middle" font-size="14" font-weight="900" fill="#0F766E">自動リマインド設定・テスト</text>
+  <text x="1000" y="358" text-anchor="middle" font-size="12" fill="#374151">90日前・60日前・30日前の</text>
+  <text x="1000" y="375" text-anchor="middle" font-size="12" fill="#374151">段階的リマインド設定</text>
+  <text x="1000" y="395" text-anchor="middle" font-size="12" fill="#374151">テスト送信・検証後に</text>
+  <text x="1000" y="413" text-anchor="middle" font-size="12" fill="#374151">本番稼働・引き継ぎ</text>
+  <rect x="908" y="426" width="184" height="14" rx="7" fill="#F0FDFA"/>
+  <text x="1000" y="437" text-anchor="middle" font-size="11" font-weight="700" fill="#0F766E">目安：1〜2週間</text>
+
+  <!-- Label above step 3 -->
+  <rect x="896" y="96" width="208" height="110" rx="12" fill="#fff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="1000" y="120" text-anchor="middle" font-size="12" fill="#6b7280">▼ 完成後の状態</text>
+  <text x="1000" y="140" text-anchor="middle" font-size="11.5" fill="#374151">✓ 更新漏れゼロ体制</text>
+  <text x="1000" y="158" text-anchor="middle" font-size="11.5" fill="#374151">✓ 担当者異動の影響なし</text>
+  <text x="1000" y="176" text-anchor="middle" font-size="11.5" fill="#374151">✓ kintoneで自社運用</text>
+  <text x="1000" y="194" text-anchor="middle" font-size="11.5" fill="#374151">✓ 月額固定費を最小化</text>
+</svg>
