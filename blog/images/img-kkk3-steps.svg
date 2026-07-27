@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#F1F5F9"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="900" fill="#1E293B">スポット外注を使ったWebサービス保守引き継ぎ 3ステップ</text>
+
+  <!-- ステップカード全体の背景帯 -->
+  <rect x="40" y="70" width="1120" height="320" rx="16" fill="#fff" filter="url(#shadow)"/>
+
+  <!-- フィルター定義 -->
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#CBD5E1" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- STEP1 カード -->
+  <rect x="60" y="88" width="330" height="288" rx="12" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <!-- ステップバッジ -->
+  <rect x="60" y="88" width="330" height="64" rx="12" fill="#EA580C"/>
+  <rect x="60" y="128" width="330" height="24" fill="#EA580C"/>
+  <text x="225" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#FED7AA">STEP</text>
+  <text x="225" y="142" text-anchor="middle" font-size="36" font-weight="900" fill="#fff">1</text>
+  <!-- アイコン：ファイルと虫眼鏡 -->
+  <rect x="188" y="160" width="74" height="56" rx="6" fill="#FDBA74"/>
+  <rect x="196" y="168" width="46" height="32" rx="3" fill="#fff"/>
+  <line x1="204" y1="176" x2="230" y2="176" stroke="#EA580C" stroke-width="2"/>
+  <line x1="204" y1="182" x2="230" y2="182" stroke="#EA580C" stroke-width="2"/>
+  <line x1="204" y1="188" x2="222" y2="188" stroke="#EA580C" stroke-width="2"/>
+  <circle cx="243" cy="197" r="10" fill="none" stroke="#EA580C" stroke-width="2.5"/>
+  <line x1="250" y1="204" x2="258" y2="212" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- テキスト -->
+  <text x="225" y="242" text-anchor="middle" font-size="17" font-weight="900" fill="#9A3412">現状把握・棚卸し</text>
+  <text x="225" y="266" text-anchor="middle" font-size="13" fill="#C2410C">スポット外注で</text>
+  <text x="225" y="284" text-anchor="middle" font-size="13" fill="#7C3016">コード・インフラ・認証情報の</text>
+  <text x="225" y="302" text-anchor="middle" font-size="13" fill="#7C3016">調査とドキュメント作成を依頼</text>
+  <!-- 期間バッジ -->
+  <rect x="130" y="322" width="190" height="36" rx="18" fill="#EA580C"/>
+  <text x="225" y="345" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">⏱ 1〜3日 / 3〜8万円</text>
+
+  <!-- 矢印1 -->
+  <polygon points="435,232 415,220 415,244" fill="#64748B"/>
+  <line x1="390" y1="232" x2="433" y2="232" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- STEP2 カード -->
+  <rect x="435" y="88" width="330" height="288" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <!-- ステップバッジ -->
+  <rect x="435" y="88" width="330" height="64" rx="12" fill="#3B82F6"/>
+  <rect x="435" y="128" width="330" height="24" fill="#3B82F6"/>
+  <text x="600" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#BFDBFE">STEP</text>
+  <text x="600" y="142" text-anchor="middle" font-size="36" font-weight="900" fill="#fff">2</text>
+  <!-- アイコン：人物マッチ -->
+  <circle cx="577" cy="190" r="18" fill="#93C5FD"/>
+  <circle cx="577" cy="183" r="7" fill="#fff"/>
+  <path d="M564,206 Q577,196 590,206" fill="#fff"/>
+  <circle cx="623" cy="190" r="18" fill="#DBEAFE"/>
+  <text x="623" y="196" text-anchor="middle" font-size="18">🔧</text>
+  <line x1="596" y1="190" x2="604" y2="190" stroke="#3B82F6" stroke-width="2" stroke-dasharray="3,2"/>
+  <polygon points="608,190 602,185 602,195" fill="#3B82F6"/>
+  <!-- テキスト -->
+  <text x="600" y="242" text-anchor="middle" font-size="17" font-weight="900" fill="#1E3A8A">引き継ぎエンジニア確保</text>
+  <text x="600" y="266" text-anchor="middle" font-size="13" fill="#1D4ED8">技術スタックと稼働形態が</text>
+  <text x="600" y="284" text-anchor="middle" font-size="13" fill="#1E40AF">合うエンジニアをANKENで</text>
+  <text x="600" y="302" text-anchor="middle" font-size="13" fill="#1E40AF">マッチング・確保する</text>
+  <!-- 期間バッジ -->
+  <rect x="505" y="322" width="190" height="36" rx="18" fill="#3B82F6"/>
+  <text x="600" y="345" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">⏱ 1〜5日 / 確保後即スタート</text>
+
+  <!-- 矢印2 -->
+  <polygon points="810,232 790,220 790,244" fill="#64748B"/>
+  <line x1="765" y1="232" x2="808" y2="232" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- STEP3 カード -->
+  <rect x="810" y="88" width="330" height="288" rx="12" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+  <!-- ステップバッジ -->
+  <rect x="810" y="88" width="330" height="64" rx="12" fill="#16A34A"/>
+  <rect x="810" y="128" width="330" height="24" fill="#16A34A"/>
+  <text x="975" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#BBF7D0">STEP</text>
+  <text x="975" y="142" text-anchor="middle" font-size="36" font-weight="900" fill="#fff">3</text>
+  <!-- アイコン：積み上げる階段 -->
+  <rect x="945" y="210" width="20" height="8"  rx="2" fill="#4ADE80"/>
+  <rect x="935" y="202" width="30" height="8"  rx="2" fill="#22C55E"/>
+  <rect x="925" y="194" width="40" height="8"  rx="2" fill="#16A34A"/>
+  <rect x="955" y="186" width="46" height="8"  rx="2" fill="#166534"/>
+  <text x="975" y="176" font-size="18" text-anchor="middle">📈</text>
+  <!-- テキスト -->
+  <text x="975" y="242" text-anchor="middle" font-size="17" font-weight="900" fill="#166534">段階的保守体制確立</text>
+  <text x="975" y="266" text-anchor="middle" font-size="13" fill="#15803D">小さなタスクから始めて</text>
+  <text x="975" y="284" text-anchor="middle" font-size="13" fill="#166534">緊急対応→定期保守→機能改善</text>
+  <text x="975" y="302" text-anchor="middle" font-size="13" fill="#166534">の順で保守範囲を拡大する</text>
+  <!-- 期間バッジ -->
+  <rect x="880" y="322" width="190" height="36" rx="18" fill="#16A34A"/>
+  <text x="975" y="345" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">⏱ 2〜4週間で体制完了</text>
+
+  <!-- ボトムの合計サマリ -->
+  <rect x="300" y="420" width="600" height="44" rx="22" fill="#1E293B"/>
+  <text x="600" y="437" text-anchor="middle" font-size="13" fill="#94A3B8">合計コスト目安</text>
+  <text x="600" y="456" text-anchor="middle" font-size="16" font-weight="700" fill="#F59E0B">小規模：20〜40万円　中規模：40〜80万円　大手SIer比　初期費用 60〜80% 削減</text>
+</svg>

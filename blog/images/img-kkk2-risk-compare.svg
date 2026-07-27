@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8FAFC"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="#1E293B">ベンダー依存リスク vs スポット外注引き継ぎのメリット比較</text>
+
+  <!-- 左カラムヘッダー（リスク側・ディープオレンジ） -->
+  <rect x="60" y="80" width="480" height="58" rx="8" fill="#EA580C"/>
+  <text x="300" y="108" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">⚠️ ベンダー依存のリスク</text>
+  <text x="300" y="128" text-anchor="middle" font-size="14" fill="#FED7AA">契約終了・廃業時に直面する3大問題</text>
+
+  <!-- 右カラムヘッダー（スレートブルー） -->
+  <rect x="660" y="80" width="480" height="58" rx="8" fill="#3B82F6"/>
+  <text x="900" y="108" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">✅ スポット外注引き継ぎのメリット</text>
+  <text x="900" y="128" text-anchor="middle" font-size="14" fill="#BFDBFE">同じ問題をスポット外注で解決する</text>
+
+  <!-- 中央の矢印ライン -->
+  <line x1="600" y1="80" x2="600" y2="470" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="600,75 592,90 608,90" fill="#94A3B8"/>
+
+  <!-- アイテム1 -->
+  <!-- 左：機能停止リスク -->
+  <rect x="60" y="160" width="480" height="80" rx="8" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5"/>
+  <rect x="60" y="160" width="8" height="80" rx="4" fill="#EA580C"/>
+  <text x="90" y="190" font-size="16" font-weight="700" fill="#9A3412">① 契約終了と同時に保守が止まる</text>
+  <text x="90" y="215" font-size="13" fill="#7C3016">ベンダーが廃業・連絡不能になると、バグ対応・</text>
+  <text x="90" y="232" font-size="13" fill="#7C3016">サーバー管理など全ての保守が即日ストップする</text>
+
+  <!-- 右：即時対応 -->
+  <rect x="660" y="160" width="480" height="80" rx="8" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5"/>
+  <rect x="660" y="160" width="8" height="80" rx="4" fill="#3B82F6"/>
+  <text x="690" y="190" font-size="16" font-weight="700" fill="#1E3A8A">① 即時対応できるエンジニアを確保できる</text>
+  <text x="690" y="215" font-size="13" fill="#1D4ED8">棚卸し調査（1〜3日）からスタートし、引き継ぎ</text>
+  <text x="690" y="232" font-size="13" fill="#1D4ED8">エンジニアを最短1〜3営業日以内に確保できる</text>
+
+  <!-- vs バッジ -->
+  <circle cx="600" cy="200" r="24" fill="#1E293B"/>
+  <text x="600" y="207" text-anchor="middle" font-size="14" font-weight="900" fill="#F59E0B">VS</text>
+
+  <!-- アイテム2 -->
+  <!-- 左：費用高騰 -->
+  <rect x="60" y="262" width="480" height="80" rx="8" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5"/>
+  <rect x="60" y="262" width="8" height="80" rx="4" fill="#EA580C"/>
+  <text x="90" y="292" font-size="16" font-weight="700" fill="#9A3412">② 大手SIerへの移行で費用が高騰する</text>
+  <text x="90" y="317" font-size="13" fill="#7C3016">緊急対応・大手への一括依頼では初期100万円〜・</text>
+  <text x="90" y="334" font-size="13" fill="#7C3016">月額保守10〜30万円という費用が通常相場</text>
+
+  <!-- 右：費用透明 -->
+  <rect x="660" y="262" width="480" height="80" rx="8" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5"/>
+  <rect x="660" y="262" width="8" height="80" rx="4" fill="#3B82F6"/>
+  <text x="690" y="292" font-size="16" font-weight="700" fill="#1E3A8A">② 費用が透明でタスク単位から依頼できる</text>
+  <text x="690" y="317" font-size="13" fill="#1D4ED8">棚卸し調査3〜8万円・中規模引き継ぎ40〜80万円。</text>
+  <text x="690" y="334" font-size="13" fill="#1D4ED8">大手SIerより初期費用を60〜80%削減できる</text>
+
+  <!-- vs バッジ -->
+  <circle cx="600" cy="302" r="24" fill="#1E293B"/>
+  <text x="600" y="309" text-anchor="middle" font-size="14" font-weight="900" fill="#F59E0B">VS</text>
+
+  <!-- アイテム3 -->
+  <!-- 左：ロックイン継続 -->
+  <rect x="60" y="364" width="480" height="80" rx="8" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5"/>
+  <rect x="60" y="364" width="8" height="80" rx="4" fill="#EA580C"/>
+  <text x="90" y="394" font-size="16" font-weight="700" fill="#9A3412">③ 次のベンダーへのロックインが繰り返される</text>
+  <text x="90" y="419" font-size="13" fill="#7C3016">急いで選んだ新ベンダーに再び依存し、ドキュメント</text>
+  <text x="90" y="436" font-size="13" fill="#7C3016">なし・ブラックボックス化が繰り返されるリスク</text>
+
+  <!-- 右：段階的引き継ぎ -->
+  <rect x="660" y="364" width="480" height="80" rx="8" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.5"/>
+  <rect x="660" y="364" width="8" height="80" rx="4" fill="#3B82F6"/>
+  <text x="690" y="394" font-size="16" font-weight="700" fill="#1E3A8A">③ 段階的引き継ぎでロックインを防止できる</text>
+  <text x="690" y="419" font-size="13" fill="#1D4ED8">フェーズごとにドキュメントを更新する習慣を最初</text>
+  <text x="690" y="436" font-size="13" fill="#1D4ED8">から確立し、次の引き継ぎもスムーズにできる体制を構築</text>
+
+  <!-- vs バッジ -->
+  <circle cx="600" cy="404" r="24" fill="#1E293B"/>
+  <text x="600" y="411" text-anchor="middle" font-size="14" font-weight="900" fill="#F59E0B">VS</text>
+
+  <!-- フッターメモ -->
+  <text x="600" y="490" text-anchor="middle" font-size="12" fill="#94A3B8">出典：ANKEN編集部（2026年7月）スポット外注での保守引き継ぎ実績をもとに作成</text>
+</svg>
