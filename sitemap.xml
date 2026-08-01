@@ -462,6 +462,38 @@
   </url>
 
   <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-mmm.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-ooo.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-ppp.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-nnn.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-lll.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://anken.bisii.co.jp/blog/blog-kkk.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>

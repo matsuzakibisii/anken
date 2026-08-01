@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8FAFC" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-size="22" font-weight="700" fill="#1E293B">給与計算前処理の工程別工数比較：手作業 vs AI自動化</text>
+  <text x="600" y="80" text-anchor="middle" font-size="14" fill="#64748B">（顧客20社・従業員200名規模の事務所での月次工数目安）</text>
+
+  <!-- Legend -->
+  <rect x="780" y="100" width="18" height="18" rx="4" fill="#3B82F6"/>
+  <text x="805" y="114" font-size="13" fill="#374151">手作業（現状）</text>
+  <rect x="930" y="100" width="18" height="18" rx="4" fill="#059669"/>
+  <text x="955" y="114" font-size="13" fill="#374151">AI自動化後</text>
+
+  <!-- X-axis label -->
+  <text x="600" y="472" text-anchor="middle" font-size="13" fill="#64748B">工数削減率（平均87%減）</text>
+
+  <!-- Row 1: タイムカード読み取り・転記 -->
+  <!-- Label -->
+  <text x="250" y="175" text-anchor="end" font-size="14" font-weight="600" fill="#1E293B">タイムカード</text>
+  <text x="250" y="193" text-anchor="end" font-size="14" font-weight="600" fill="#1E293B">読み取り・転記</text>
+  <!-- Hand bar: 45分 = 45/100 * 650 = 292.5px -->
+  <rect x="270" y="158" width="585" height="26" rx="6" fill="#3B82F6" opacity="0.85"/>
+  <text x="860" y="176" font-size="13" font-weight="700" fill="#1E293B">45分/件</text>
+  <!-- AI bar: 5分 = 5/100 * 650 = 32.5px -->
+  <rect x="270" y="190" width="65" height="26" rx="6" fill="#059669" opacity="0.9"/>
+  <text x="340" y="208" font-size="13" font-weight="700" fill="#1E293B">5分/件</text>
+
+  <!-- Row 2: 就業ルール適用・手当計算 -->
+  <text x="250" y="275" text-anchor="end" font-size="14" font-weight="600" fill="#1E293B">就業ルール適用</text>
+  <text x="250" y="293" text-anchor="end" font-size="14" font-weight="600" fill="#1E293B">・手当計算</text>
+  <!-- Hand bar: 30分 = 390px -->
+  <rect x="270" y="258" width="390" height="26" rx="6" fill="#3B82F6" opacity="0.85"/>
+  <text x="665" y="276" font-size="13" font-weight="700" fill="#1E293B">30分/件</text>
+  <!-- AI bar: 3分 = 39px -->
+  <rect x="270" y="290" width="39" height="26" rx="6" fill="#059669" opacity="0.9"/>
+  <text x="314" y="308" font-size="13" font-weight="700" fill="#1E293B">3分/件</text>
+
+  <!-- Row 3: 給与ソフト入力・転記 -->
+  <text x="250" y="375" text-anchor="end" font-size="14" font-weight="600" fill="#1E293B">給与ソフト</text>
+  <text x="250" y="393" text-anchor="end" font-size="14" font-weight="600" fill="#1E293B">入力・転記</text>
+  <!-- Hand bar: 15分 = 195px -->
+  <rect x="270" y="358" width="195" height="26" rx="6" fill="#3B82F6" opacity="0.85"/>
+  <text x="470" y="376" font-size="13" font-weight="700" fill="#1E293B">15分/件</text>
+  <!-- AI bar: 2分 = 26px -->
+  <rect x="270" y="390" width="26" height="26" rx="6" fill="#059669" opacity="0.9"/>
+  <text x="301" y="408" font-size="13" font-weight="700" fill="#1E293B">2分/件</text>
+
+  <!-- Scale labels -->
+  <line x1="270" y1="130" x2="270" y2="450" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="270" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">0</text>
+  <line x1="400" y1="435" x2="400" y2="445" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="400" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">10</text>
+  <line x1="530" y1="435" x2="530" y2="445" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="530" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">20</text>
+  <line x1="660" y1="435" x2="660" y2="445" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="660" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">30</text>
+  <line x1="790" y1="435" x2="790" y2="445" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="790" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">40</text>
+  <line x1="920" y1="435" x2="920" y2="445" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="920" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">50</text>
+  <text x="980" y="448" text-anchor="middle" font-size="11" fill="#94A3B8">（分/件）</text>
+</svg>

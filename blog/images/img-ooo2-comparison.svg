@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F8F5FF"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="#3B0764">給与計算の月次工数比較：Excel手作業 vs ローコードシステム導入後</text>
+
+  <!-- 凡例 -->
+  <rect x="300" y="74" width="20" height="14" rx="3" fill="#7C3AED"/>
+  <text x="327" y="86" font-size="14" fill="#4B5563">Excel手作業</text>
+  <rect x="480" y="74" width="20" height="14" rx="3" fill="#0D9488"/>
+  <text x="507" y="86" font-size="14" fill="#4B5563">ローコードシステム導入後</text>
+
+  <!-- フェーズラベル（Y軸） -->
+  <text x="205" y="163" text-anchor="end" font-size="14" fill="#374151">日報・実績データ収集</text>
+  <text x="205" y="243" text-anchor="end" font-size="14" fill="#374151">手当・立替金の計算</text>
+  <text x="205" y="323" text-anchor="end" font-size="14" fill="#374151">確認・差し戻し対応</text>
+  <text x="205" y="403" text-anchor="end" font-size="14" fill="#374151">給与ソフトへのデータ転記</text>
+
+  <!-- 基準線 -->
+  <line x1="220" y1="100" x2="220" y2="450" stroke="#D1D5DB" stroke-width="1"/>
+
+  <!-- フェーズ1: 日報・実績データ収集 -->
+  <!-- Excel -->
+  <rect x="225" y="142" width="460" height="26" rx="4" fill="#7C3AED"/>
+  <text x="695" y="160" font-size="13" fill="#7C3AED" font-weight="700">9.2時間（紙日報→手入力）</text>
+  <!-- システム -->
+  <rect x="225" y="173" width="80" height="26" rx="4" fill="#0D9488"/>
+  <text x="315" y="191" font-size="13" fill="#0D9488" font-weight="700">1.5時間（自動集計）</text>
+
+  <!-- フェーズ2: 手当・立替金の計算 -->
+  <!-- Excel -->
+  <rect x="225" y="222" width="560" height="26" rx="4" fill="#7C3AED"/>
+  <text x="795" y="240" font-size="13" fill="#7C3AED" font-weight="700">11.2時間（複雑な計算・突合）</text>
+  <!-- システム -->
+  <rect x="225" y="253" width="50" height="26" rx="4" fill="#0D9488"/>
+  <text x="285" y="271" font-size="13" fill="#0D9488" font-weight="700">1.0時間（自動計算）</text>
+
+  <!-- フェーズ3: 確認・差し戻し対応 -->
+  <!-- Excel -->
+  <rect x="225" y="302" width="300" height="26" rx="4" fill="#7C3AED"/>
+  <text x="535" y="320" font-size="13" fill="#7C3AED" font-weight="700">6.0時間</text>
+  <!-- システム -->
+  <rect x="225" y="333" width="120" height="26" rx="4" fill="#0D9488"/>
+  <text x="355" y="351" font-size="13" fill="#0D9488" font-weight="700">2.4時間（電子承認）</text>
+
+  <!-- フェーズ4: 給与ソフトへのデータ転記 -->
+  <!-- Excel -->
+  <rect x="225" y="382" width="240" height="26" rx="4" fill="#7C3AED"/>
+  <text x="475" y="400" font-size="13" fill="#7C3AED" font-weight="700">4.8時間（手入力）</text>
+  <!-- システム -->
+  <rect x="225" y="413" width="30" height="26" rx="4" fill="#0D9488"/>
+  <text x="265" y="431" font-size="13" fill="#0D9488" font-weight="700">0.6時間（CSV出力→自動取込）</text>
+
+  <!-- 合計ラベル -->
+  <rect x="40" y="450" width="1120" height="1" fill="#D1D5DB"/>
+  <text x="220" y="480" text-anchor="end" font-size="15" font-weight="700" fill="#374151">月次合計</text>
+  <text x="450" y="480" text-anchor="middle" font-size="18" font-weight="900" fill="#7C3AED">31.2時間（Excel手作業）</text>
+  <text x="830" y="480" text-anchor="middle" font-size="18" font-weight="900" fill="#0D9488">→ 5.5時間（システム化後）</text>
+  <text x="1080" y="480" text-anchor="middle" font-size="15" font-weight="700" fill="#374151">約82%削減</text>
+</svg>

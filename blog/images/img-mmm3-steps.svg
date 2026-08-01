@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8FAFC" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2937">AIロールプレイング研修ツール導入 3ステップ</text>
+
+  <!-- Step cards -->
+  <!-- STEP 1 -->
+  <rect x="40" y="70" width="330" height="360" rx="14" fill="#FFFFFF" stroke="#E11D48" stroke-width="2.5"/>
+  <rect x="40" y="70" width="330" height="64" rx="14" fill="#E11D48"/>
+  <rect x="40" y="114" width="330" height="20" rx="0" fill="#E11D48"/>
+  <text x="205" y="108" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">STEP 1</text>
+  <text x="205" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#E11D48">シナリオ設計・ペルソナ作成</text>
+  <text x="205" y="200" text-anchor="middle" font-size="13" fill="#374151">📋 練習場面・シーンの洗い出し</text>
+  <text x="205" y="226" text-anchor="middle" font-size="13" fill="#374151">🧑 顧客ペルソナを3〜5種類設計</text>
+  <text x="205" y="252" text-anchor="middle" font-size="13" fill="#374151">💬 会話フロー・プロンプト設計</text>
+  <text x="205" y="278" text-anchor="middle" font-size="13" fill="#374151">📊 評価基準・採点軸の定義</text>
+  <line x1="80" y1="300" x2="330" y2="300" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="205" y="332" text-anchor="middle" font-size="15" font-weight="700" fill="#E11D48">1〜2週間</text>
+  <text x="205" y="358" text-anchor="middle" font-size="14" fill="#6B7280">費用目安：10〜20万円</text>
+  <text x="205" y="382" text-anchor="middle" font-size="12" fill="#9CA3AF">スポット外注（研修設計＋</text>
+  <text x="205" y="400" text-anchor="middle" font-size="12" fill="#9CA3AF">プロンプトエンジニア）</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="400,230 430,215 430,245" fill="#15803D"/>
+  <line x1="370" y1="230" x2="430" y2="230" stroke="#15803D" stroke-width="3"/>
+
+  <!-- STEP 2 -->
+  <rect x="435" y="70" width="330" height="360" rx="14" fill="#FFFFFF" stroke="#15803D" stroke-width="2.5"/>
+  <rect x="435" y="70" width="330" height="64" rx="14" fill="#15803D"/>
+  <rect x="435" y="114" width="330" height="20" rx="0" fill="#15803D"/>
+  <text x="600" y="108" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">STEP 2</text>
+  <text x="600" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#15803D">AIシステム構築</text>
+  <text x="600" y="200" text-anchor="middle" font-size="13" fill="#374151">🤖 会話AIバックエンド実装</text>
+  <text x="600" y="226" text-anchor="middle" font-size="13" fill="#374151">💻 チャット / 音声UI構築</text>
+  <text x="600" y="252" text-anchor="middle" font-size="13" fill="#374151">📝 自動フィードバック機能実装</text>
+  <text x="600" y="278" text-anchor="middle" font-size="13" fill="#374151">📈 受講記録・管理画面構築</text>
+  <line x1="475" y1="300" x2="725" y2="300" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="600" y="332" text-anchor="middle" font-size="15" font-weight="700" fill="#15803D">2〜3週間</text>
+  <text x="600" y="358" text-anchor="middle" font-size="14" fill="#6B7280">費用目安：15〜40万円</text>
+  <text x="600" y="382" text-anchor="middle" font-size="12" fill="#9CA3AF">スポット外注</text>
+  <text x="600" y="400" text-anchor="middle" font-size="12" fill="#9CA3AF">（APIエンジニア）</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="795,230 825,215 825,245" fill="#E11D48"/>
+  <line x1="765" y1="230" x2="825" y2="230" stroke="#E11D48" stroke-width="3"/>
+
+  <!-- STEP 3 -->
+  <rect x="830" y="70" width="330" height="360" rx="14" fill="#FFFFFF" stroke="#E11D48" stroke-width="2.5"/>
+  <rect x="830" y="70" width="330" height="64" rx="14" fill="#E11D48"/>
+  <rect x="830" y="114" width="330" height="20" rx="0" fill="#E11D48"/>
+  <text x="995" y="108" text-anchor="middle" font-size="20" font-weight="900" fill="#FFFFFF">STEP 3</text>
+  <text x="995" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#E11D48">試験運用・効果測定・改善</text>
+  <text x="995" y="200" text-anchor="middle" font-size="13" fill="#374151">🧪 5〜10名でのパイロット運用</text>
+  <text x="995" y="226" text-anchor="middle" font-size="13" fill="#374151">📊 利用頻度・スコア推移を計測</text>
+  <text x="995" y="252" text-anchor="middle" font-size="13" fill="#374151">🔧 シナリオ・プロンプト調整</text>
+  <text x="995" y="278" text-anchor="middle" font-size="13" fill="#374151">🔄 月次サイクルで継続改善</text>
+  <line x1="870" y1="300" x2="1120" y2="300" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="995" y="332" text-anchor="middle" font-size="15" font-weight="700" fill="#E11D48">継続（月次）</text>
+  <text x="995" y="358" text-anchor="middle" font-size="14" fill="#6B7280">費用目安：月3〜10万円</text>
+  <text x="995" y="382" text-anchor="middle" font-size="12" fill="#9CA3AF">スポット外注</text>
+  <text x="995" y="400" text-anchor="middle" font-size="12" fill="#9CA3AF">（月1〜3日稼働）</text>
+
+  <!-- Total cost note -->
+  <rect x="300" y="445" width="600" height="28" rx="8" fill="#1F2937"/>
+  <text x="600" y="464" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">初期導入合計（小規模）：30〜50万円・4〜6週間</text>
+</svg>

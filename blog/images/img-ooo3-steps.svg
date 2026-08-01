@@ -1,0 +1,67 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#F0FDFA"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="24" font-weight="900" fill="#134E4A">給与計算システムをスポット外注で構築する3ステップ</text>
+
+  <!-- ステップ1 ボックス -->
+  <rect x="60" y="90" width="310" height="310" rx="16" fill="#ffffff" stroke="#7C3AED" stroke-width="3"/>
+  <rect x="60" y="90" width="310" height="64" rx="16" fill="#7C3AED"/>
+  <rect x="60" y="130" width="310" height="24" fill="#7C3AED"/>
+  <text x="215" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#EDE9FE">STEP 1</text>
+  <text x="215" y="147" text-anchor="middle" font-size="17" font-weight="900" fill="#ffffff">業務フロー整理・要件定義</text>
+  <text x="215" y="185" text-anchor="middle" font-size="13" fill="#6D28D9" font-weight="700">スポット外注費用目安</text>
+  <text x="215" y="208" text-anchor="middle" font-size="22" font-weight="900" fill="#7C3AED">5〜15万円</text>
+  <text x="215" y="228" text-anchor="middle" font-size="13" fill="#7C3AED">1〜3日</text>
+  <line x1="90" y1="246" x2="340" y2="246" stroke="#EDE9FE" stroke-width="1"/>
+  <text x="215" y="270" text-anchor="middle" font-size="13" fill="#374151">● 計算ロジックの全量洗い出し</text>
+  <text x="215" y="293" text-anchor="middle" font-size="13" fill="#374151">● ツール選定の判断材料作成</text>
+  <text x="215" y="316" text-anchor="middle" font-size="13" fill="#374151">● 要件定義書・画面設計書納品</text>
+  <text x="215" y="339" text-anchor="middle" font-size="13" fill="#374151">● 次フェーズ見積もり精度を確保</text>
+  <text x="215" y="380" text-anchor="middle" font-size="12" fill="#9CA3AF">段階的発注・確認後に次へ進めるOK</text>
+
+  <!-- 矢印1 -->
+  <polygon points="415,245 445,225 445,265" fill="#0D9488"/>
+  <text x="430" y="255" text-anchor="middle" font-size="11" fill="#0D9488" font-weight="700">承認後</text>
+
+  <!-- ステップ2 ボックス -->
+  <rect x="450" y="90" width="310" height="310" rx="16" fill="#ffffff" stroke="#0D9488" stroke-width="3"/>
+  <rect x="450" y="90" width="310" height="64" rx="16" fill="#0D9488"/>
+  <rect x="450" y="130" width="310" height="24" fill="#0D9488"/>
+  <text x="605" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#CCFBF1">STEP 2</text>
+  <text x="605" y="147" text-anchor="middle" font-size="17" font-weight="900" fill="#ffffff">ローコードシステム開発</text>
+  <text x="605" y="185" text-anchor="middle" font-size="13" fill="#0F766E" font-weight="700">スポット外注費用目安</text>
+  <text x="605" y="208" text-anchor="middle" font-size="22" font-weight="900" fill="#0D9488">30〜80万円</text>
+  <text x="605" y="228" text-anchor="middle" font-size="13" fill="#0D9488">2〜6週間</text>
+  <line x1="480" y1="246" x2="730" y2="246" stroke="#CCFBF1" stroke-width="1"/>
+  <text x="605" y="270" text-anchor="middle" font-size="13" fill="#374151">● 入力フォーム・自動計算の実装</text>
+  <text x="605" y="293" text-anchor="middle" font-size="13" fill="#374151">● 給与ソフトとのCSV連携</text>
+  <text x="605" y="316" text-anchor="middle" font-size="13" fill="#374151">● 承認ワークフローの設定</text>
+  <text x="605" y="339" text-anchor="middle" font-size="13" fill="#374151">● 月次レポート自動生成</text>
+  <text x="605" y="380" text-anchor="middle" font-size="12" fill="#9CA3AF">最重要計算項目3〜5種類から段階的に</text>
+
+  <!-- 矢印2 -->
+  <polygon points="805,245 835,225 835,265" fill="#7C3AED"/>
+  <text x="820" y="255" text-anchor="middle" font-size="11" fill="#7C3AED" font-weight="700">完成後</text>
+
+  <!-- ステップ3 ボックス -->
+  <rect x="840" y="90" width="310" height="310" rx="16" fill="#ffffff" stroke="#7C3AED" stroke-width="2" stroke-dasharray="6,3"/>
+  <rect x="840" y="90" width="310" height="64" rx="16" fill="#7C3AED" opacity="0.85"/>
+  <rect x="840" y="130" width="310" height="24" fill="#7C3AED" opacity="0.85"/>
+  <text x="995" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#EDE9FE">STEP 3</text>
+  <text x="995" y="147" text-anchor="middle" font-size="17" font-weight="900" fill="#ffffff">内製保守体制の整備・引渡し</text>
+  <text x="995" y="185" text-anchor="middle" font-size="13" fill="#6D28D9" font-weight="700">スポット外注費用目安</text>
+  <text x="995" y="208" text-anchor="middle" font-size="22" font-weight="900" fill="#7C3AED">10〜20万円</text>
+  <text x="995" y="228" text-anchor="middle" font-size="13" fill="#7C3AED">3〜5日</text>
+  <line x1="870" y1="246" x2="1120" y2="246" stroke="#EDE9FE" stroke-width="1"/>
+  <text x="995" y="270" text-anchor="middle" font-size="13" fill="#374151">● 操作マニュアルの作成</text>
+  <text x="995" y="293" text-anchor="middle" font-size="13" fill="#374151">● パラメータ管理画面の整備</text>
+  <text x="995" y="316" text-anchor="middle" font-size="13" fill="#374151">● 担当者ハンズオン研修</text>
+  <text x="995" y="339" text-anchor="middle" font-size="13" fill="#374151">● 不具合対処FAQ整備</text>
+  <text x="995" y="380" text-anchor="middle" font-size="12" fill="#9CA3AF">以降の保守・改修を自社で内製化できる状態に</text>
+
+  <!-- 合計 -->
+  <rect x="250" y="425" width="700" height="44" rx="10" fill="#134E4A" opacity="0.9"/>
+  <text x="600" y="452" text-anchor="middle" font-size="16" font-weight="900" fill="#ffffff">合計目安：45〜120万円・5〜10週間 → 月次工数を最大82%削減</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#FAFAFA" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="22" font-weight="700" fill="#1F2937">従来の研修 vs AIロールプレイング研修ツール 比較</text>
+
+  <!-- Column headers -->
+  <!-- Traditional -->
+  <rect x="60" y="70" width="500" height="54" rx="10" fill="#E11D48"/>
+  <text x="310" y="102" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">従来のロールプレイング研修</text>
+  <!-- AI -->
+  <rect x="640" y="70" width="500" height="54" rx="10" fill="#15803D"/>
+  <text x="890" y="102" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">AIロールプレイング研修ツール</text>
+
+  <!-- Row 1: 練習回数 -->
+  <rect x="40" y="140" width="1120" height="70" rx="8" fill="#FFF1F2"/>
+  <text x="600" y="161" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">🎯 練習回数</text>
+  <text x="310" y="190" text-anchor="middle" font-size="16" fill="#E11D48" font-weight="600">集合研修時のみ（1回10〜20分/人）</text>
+  <text x="890" y="190" text-anchor="middle" font-size="16" fill="#15803D" font-weight="600">24時間・何回でも・無制限</text>
+
+  <!-- Row 2: フィードバック即時性 -->
+  <rect x="40" y="220" width="1120" height="70" rx="8" fill="#F0FDF4"/>
+  <text x="600" y="241" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">⚡ フィードバック即時性</text>
+  <text x="310" y="270" text-anchor="middle" font-size="16" fill="#E11D48" font-weight="600">翌日以降・主観的・属人的</text>
+  <text x="890" y="270" text-anchor="middle" font-size="16" fill="#15803D" font-weight="600">終了直後・自動・客観的スコア</text>
+
+  <!-- Row 3: スケジュール柔軟性 -->
+  <rect x="40" y="300" width="1120" height="70" rx="8" fill="#FFF1F2"/>
+  <text x="600" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">🗓 スケジュール柔軟性</text>
+  <text x="310" y="350" text-anchor="middle" font-size="16" fill="#E11D48" font-weight="600">集合研修日時に依存</text>
+  <text x="890" y="350" text-anchor="middle" font-size="16" fill="#15803D" font-weight="600">いつでも・どこでもスマホで練習可</text>
+
+  <!-- Row 4: 費用（継続コスト） -->
+  <rect x="40" y="380" width="1120" height="70" rx="8" fill="#F0FDF4"/>
+  <text x="600" y="401" text-anchor="middle" font-size="13" font-weight="700" fill="#6B7280">💴 継続コスト</text>
+  <text x="310" y="430" text-anchor="middle" font-size="16" fill="#E11D48" font-weight="600">毎回講師費用・会場費が発生</text>
+  <text x="890" y="430" text-anchor="middle" font-size="16" fill="#15803D" font-weight="600">初期構築後は月3〜10万円で維持</text>
+
+  <!-- Center divider -->
+  <line x1="600" y1="130" x2="600" y2="460" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="8,4"/>
+</svg>

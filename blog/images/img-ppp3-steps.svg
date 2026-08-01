@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8FAFC" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1E293B">給与計算前処理の3ステップ自動化フロー</text>
+
+  <!-- Step 1 Box -->
+  <rect x="60" y="100" width="290" height="220" rx="14" fill="#ECFDF5" stroke="#059669" stroke-width="2.5"/>
+  <rect x="60" y="100" width="290" height="52" rx="14" fill="#059669"/>
+  <rect x="60" y="132" width="290" height="20" fill="#059669"/>
+  <text x="205" y="134" text-anchor="middle" font-size="14" font-weight="900" fill="white">STEP 1</text>
+  <text x="205" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="white">AI-OCRで自動読み取り</text>
+
+  <!-- Step 1 Icon area -->
+  <circle cx="205" cy="205" r="38" fill="#D1FAE5"/>
+  <!-- Camera/scan icon -->
+  <rect x="182" y="188" width="46" height="34" rx="6" fill="none" stroke="#059669" stroke-width="3"/>
+  <circle cx="205" cy="205" r="10" fill="none" stroke="#059669" stroke-width="2.5"/>
+  <rect x="197" y="184" width="16" height="7" rx="3" fill="#059669"/>
+  <!-- Scan lines -->
+  <line x1="182" y1="203" x2="228" y2="203" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <text x="205" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#065F46">写真→テキスト変換</text>
+  <text x="205" y="282" text-anchor="middle" font-size="12" fill="#047857">LINEで届いた写真を</text>
+  <text x="205" y="300" text-anchor="middle" font-size="12" fill="#047857">AI-OCRで即時テキスト化</text>
+  <text x="205" y="318" text-anchor="middle" font-size="11" fill="#059669">⏱ 45分→5分に短縮</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="370,205 400,190 400,220" fill="#059669"/>
+  <line x1="349" y1="205" x2="400" y2="205" stroke="#059669" stroke-width="3"/>
+  <text x="385" y="238" text-anchor="middle" font-size="11" fill="#059669" font-weight="700">自動</text>
+  <text x="385" y="253" text-anchor="middle" font-size="11" fill="#059669" font-weight="700">連携</text>
+
+  <!-- Step 2 Box -->
+  <rect x="415" y="100" width="370" height="220" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5"/>
+  <rect x="415" y="100" width="370" height="52" rx="14" fill="#3B82F6"/>
+  <rect x="415" y="132" width="370" height="20" fill="#3B82F6"/>
+  <text x="600" y="134" text-anchor="middle" font-size="14" font-weight="900" fill="white">STEP 2</text>
+  <text x="600" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="white">就業ルールテンプレートで自動集計</text>
+
+  <!-- Step 2 Icon -->
+  <circle cx="600" cy="205" r="38" fill="#DBEAFE"/>
+  <!-- Table icon -->
+  <rect x="577" y="186" width="46" height="38" rx="4" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+  <line x1="577" y1="197" x2="623" y2="197" stroke="#3B82F6" stroke-width="2"/>
+  <line x1="600" y1="186" x2="600" y2="224" stroke="#3B82F6" stroke-width="1.5"/>
+  <rect x="581" y="202" width="15" height="9" rx="1" fill="#3B82F6" opacity="0.4"/>
+  <rect x="604" y="202" width="15" height="9" rx="1" fill="#3B82F6" opacity="0.7"/>
+  <rect x="581" y="214" width="15" height="6" rx="1" fill="#3B82F6" opacity="0.3"/>
+  <rect x="604" y="214" width="15" height="6" rx="1" fill="#059669" opacity="0.8"/>
+
+  <text x="600" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#1E40AF">顧客別ルールを自動適用</text>
+  <text x="600" y="282" text-anchor="middle" font-size="12" fill="#1D4ED8">丸め・残業・深夜割増を</text>
+  <text x="600" y="300" text-anchor="middle" font-size="12" fill="#1D4ED8">顧客マスタに基づき自動計算</text>
+  <text x="600" y="318" text-anchor="middle" font-size="11" fill="#3B82F6">⏱ 30分→3分に短縮</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="805,205 835,190 835,220" fill="#3B82F6"/>
+  <line x1="784" y1="205" x2="835" y2="205" stroke="#3B82F6" stroke-width="3"/>
+  <text x="820" y="238" text-anchor="middle" font-size="11" fill="#3B82F6" font-weight="700">自動</text>
+  <text x="820" y="253" text-anchor="middle" font-size="11" fill="#3B82F6" font-weight="700">出力</text>
+
+  <!-- Step 3 Box -->
+  <rect x="850" y="100" width="290" height="220" rx="14" fill="#F0FDF4" stroke="#059669" stroke-width="2.5"/>
+  <rect x="850" y="100" width="290" height="52" rx="14" fill="#059669"/>
+  <rect x="850" y="132" width="290" height="20" fill="#059669"/>
+  <text x="995" y="134" text-anchor="middle" font-size="14" font-weight="900" fill="white">STEP 3</text>
+  <text x="995" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="white">CSV出力・給与ソフト取り込み</text>
+
+  <!-- Step 3 Icon -->
+  <circle cx="995" cy="205" r="38" fill="#D1FAE5"/>
+  <!-- CSV/file icon -->
+  <rect x="975" y="184" width="32" height="40" rx="4" fill="none" stroke="#059669" stroke-width="2.5"/>
+  <polygon points="998,184 1007,184 1007,195" fill="#D1FAE5" stroke="#059669" stroke-width="1.5"/>
+  <line x1="979" y1="200" x2="1001" y2="200" stroke="#059669" stroke-width="1.5"/>
+  <line x1="979" y1="208" x2="1001" y2="208" stroke="#059669" stroke-width="1.5"/>
+  <line x1="979" y1="216" x2="995" y2="216" stroke="#059669" stroke-width="1.5"/>
+  <!-- Download arrow -->
+  <text x="1021" y="215" font-size="22" fill="#3B82F6" font-weight="900">→</text>
+
+  <text x="995" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#065F46">給与ソフトへ自動取り込み</text>
+  <text x="995" y="282" text-anchor="middle" font-size="12" fill="#047857">弥生・freee・PCA等に</text>
+  <text x="995" y="300" text-anchor="middle" font-size="12" fill="#047857">対応CSVで1クリック取込み</text>
+  <text x="995" y="318" text-anchor="middle" font-size="11" fill="#059669">⏱ 15分→2分に短縮</text>
+
+  <!-- Bottom summary bar -->
+  <rect x="60" y="350" width="1080" height="86" rx="14" fill="#1E293B"/>
+  <text x="600" y="385" text-anchor="middle" font-size="16" font-weight="900" fill="white">3ステップ合計の効果：月次工数 30〜40時間削減</text>
+  <text x="600" y="410" text-anchor="middle" font-size="13" fill="#94A3B8">（顧客20社・従業員200名規模の事務所の場合）</text>
+  <text x="600" y="428" text-anchor="middle" font-size="13" fill="#059669" font-weight="700">AI-OCR月額1〜5万円 ＋ 初期構築10〜40万円（早ければ3〜6ヶ月で回収）</text>
+</svg>

@@ -59,6 +59,9 @@
 - [学習塾・教育事業者のAIチャットボット導入をスポット外注で実現する方法｜生徒対応を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-fff.html)
 - [医療機関の契約医師・資格証明書管理をAI化する方法｜AI-OCR×kintone連携で更新漏れをゼロにする3ステップ](https://anken.bisii.co.jp/blog/blog-hhh.html)
 - [人材派遣スタッフの自動マッチング機能をスポット外注で追加する方法｜既存システムに機能だけを依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-iii.html)
+- [製造業のシニア社員ノウハウをAIチャット化する方法｜技術伝承システムをスポット外注で構築する3ステップ](https://anken.bisii.co.jp/blog/blog-lll.html)
+- [AI定着に失敗する企業こそFDE活用｜スポット外注で現場浸透させる3ステップ【2026年版】](https://anken.bisii.co.jp/blog/blog-nnn.html)
+- [送迎・運輸業の給与計算システムをスポット外注で構築する方法｜特殊手当・立替金を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-ooo.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
@@ -89,6 +92,8 @@
 - [代表電話・問い合わせ対応のAI自動音声応答を導入する方法](https://anken.bisii.co.jp/blog/blog-aaa.html)
 - [社内マニュアル動画をAIで自動作成する手順｜制作費90%削減3ステップ](https://anken.bisii.co.jp/blog/blog-eee.html)
 - [自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPT引用コンテンツ設計3ステップ](https://anken.bisii.co.jp/blog/blog-ggg.html)
+- [AIロールプレイング研修ツールを導入する手順｜営業・接客力を最大化する3ステップ](https://anken.bisii.co.jp/blog/blog-mmm.html)
+- [給与計算の下準備をAIで自動化する手順｜タイムカード写真の読み取りから就業ルール適用・CSV出力まで3ステップ](https://anken.bisii.co.jp/blog/blog-ppp.html)
 
 ### エンジニア向け（ジャンルC・D）
 
