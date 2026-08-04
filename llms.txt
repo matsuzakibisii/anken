@@ -62,6 +62,7 @@
 - [製造業のシニア社員ノウハウをAIチャット化する方法｜技術伝承システムをスポット外注で構築する3ステップ](https://anken.bisii.co.jp/blog/blog-lll.html)
 - [AI定着に失敗する企業こそFDE活用｜スポット外注で現場浸透させる3ステップ【2026年版】](https://anken.bisii.co.jp/blog/blog-nnn.html)
 - [送迎・運輸業の給与計算システムをスポット外注で構築する方法｜特殊手当・立替金を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-ooo.html)
+- [建設業の紙ベース勤怠管理をGPS打刻クラウド化する方法｜現場作業員の出退勤をスポット外注で効率化する3ステップ](https://anken.bisii.co.jp/blog/blog-rrr.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
@@ -97,6 +98,7 @@
 
 ### エンジニア向け（ジャンルC・D）
 
+- [FDE副業の案件を継続受注する方法｜AI導入支援のスポット依頼で選ばれ続ける実績構築3ステップ](https://anken.bisii.co.jp/blog/blog-qqq.html)
 - [FDE副業の単価相場2026年版｜AI導入支援スキルをスポット案件の高収入に変える3ステップ](https://anken.bisii.co.jp/blog/blog-jjj.html)
 - [土日だけでOK！メガベンチャーエンジニアが副業でAI案件を稼ぐ方法](https://anken.bisii.co.jp/blog/blog-c.html)
 - [週末だけOK。エンジニア副業を「スポット案件」で無理なく始める方法](https://anken.bisii.co.jp/blog/blog-d.html)

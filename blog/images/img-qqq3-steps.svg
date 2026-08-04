@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8F7FF" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="48" font-size="22" font-weight="900" fill="#312E81" text-anchor="middle">FDE副業で継続受注を生む3ステップ</text>
+
+  <!-- Step boxes -->
+  <!-- STEP 1 -->
+  <rect x="60" y="90" width="310" height="320" rx="16" fill="#312E81"/>
+  <rect x="72" y="102" width="286" height="296" rx="12" fill="#1E1B5E"/>
+  <!-- Step badge -->
+  <circle cx="215" cy="130" r="28" fill="#EAB308"/>
+  <text x="215" y="123" font-size="13" font-weight="900" fill="#312E81" text-anchor="middle">STEP</text>
+  <text x="215" y="142" font-size="20" font-weight="900" fill="#312E81" text-anchor="middle">1</text>
+  <!-- Step icon: document -->
+  <rect x="186" y="168" width="58" height="46" rx="6" fill="#EAB308" opacity="0.2"/>
+  <rect x="193" y="175" width="20" height="3" rx="2" fill="#EAB308"/>
+  <rect x="193" y="183" width="38" height="3" rx="2" fill="#EAB308"/>
+  <rect x="193" y="191" width="30" height="3" rx="2" fill="#EAB308"/>
+  <rect x="193" y="199" width="24" height="3" rx="2" fill="#EAB308"/>
+  <!-- Step title -->
+  <text x="215" y="238" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">引き継ぎ資料と</text>
+  <text x="215" y="258" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">次ステップ提案を</text>
+  <text x="215" y="278" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">納品に含める</text>
+  <!-- Description -->
+  <foreignObject x="84" y="290" width="262" height="96">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0;">
+      <p style="font-family:'Noto Sans JP',sans-serif;font-size:12px;color:#C7D2FE;line-height:1.6;margin:0;">動くツールを渡して終わりにせず、引き継ぎドキュメント＋使い方デモ動画＋フェーズ2提案をセットで納品。「次もこのエンジニアに」という理由を作る。</p>
+    </body>
+  </foreignObject>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="382,250 408,232 408,268" fill="#EAB308"/>
+  <line x1="370" y1="250" x2="407" y2="250" stroke="#EAB308" stroke-width="3"/>
+
+  <!-- STEP 2 -->
+  <rect x="420" y="90" width="310" height="320" rx="16" fill="#312E81"/>
+  <rect x="432" y="102" width="286" height="296" rx="12" fill="#1E1B5E"/>
+  <!-- Step badge -->
+  <circle cx="575" cy="130" r="28" fill="#EAB308"/>
+  <text x="575" y="123" font-size="13" font-weight="900" fill="#312E81" text-anchor="middle">STEP</text>
+  <text x="575" y="142" font-size="20" font-weight="900" fill="#312E81" text-anchor="middle">2</text>
+  <!-- Step icon: SNS/network -->
+  <circle cx="575" cy="192" r="20" fill="#EAB308" opacity="0.2"/>
+  <circle cx="562" cy="186" r="5" fill="#EAB308"/>
+  <circle cx="588" cy="186" r="5" fill="#EAB308"/>
+  <circle cx="575" cy="202" r="5" fill="#EAB308"/>
+  <line x1="566" y1="189" x2="573" y2="199" stroke="#EAB308" stroke-width="2"/>
+  <line x1="584" y1="189" x2="577" y2="199" stroke="#EAB308" stroke-width="2"/>
+  <line x1="567" y1="186" x2="583" y2="186" stroke="#EAB308" stroke-width="2"/>
+  <!-- Step title -->
+  <text x="575" y="238" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">SNS・GitHubで</text>
+  <text x="575" y="258" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">実績を可視化し</text>
+  <text x="575" y="278" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">リファラル流入を設計</text>
+  <!-- Description -->
+  <foreignObject x="444" y="290" width="262" height="96">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0;">
+      <p style="font-family:'Noto Sans JP',sans-serif;font-size:12px;color:#C7D2FE;line-height:1.6;margin:0;">守秘義務の範囲内で「〇〇業界×成果指標」をSNS・Zennに発信。GitHubに匿名サンプルを公開してプラットフォーム外からの問い合わせを生む。</p>
+    </body>
+  </foreignObject>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="742,250 768,232 768,268" fill="#EAB308"/>
+  <line x1="730" y1="250" x2="767" y2="250" stroke="#EAB308" stroke-width="3"/>
+
+  <!-- STEP 3 -->
+  <rect x="780" y="90" width="310" height="320" rx="16" fill="#312E81"/>
+  <rect x="792" y="102" width="286" height="296" rx="12" fill="#1E1B5E"/>
+  <!-- Step badge -->
+  <circle cx="935" cy="130" r="28" fill="#EAB308"/>
+  <text x="935" y="123" font-size="13" font-weight="900" fill="#312E81" text-anchor="middle">STEP</text>
+  <text x="935" y="142" font-size="20" font-weight="900" fill="#312E81" text-anchor="middle">3</text>
+  <!-- Step icon: profile/chart -->
+  <rect x="910" y="168" width="50" height="46" rx="6" fill="#EAB308" opacity="0.2"/>
+  <circle cx="920" cy="181" r="7" fill="#EAB308"/>
+  <rect x="910" y="195" width="50" height="3" rx="2" fill="#EAB308"/>
+  <rect x="910" y="203" width="38" height="3" rx="2" fill="#EAB308"/>
+  <rect x="910" y="207" width="25" height="3" rx="2" fill="#EAB308"/>
+  <!-- Step title -->
+  <text x="935" y="238" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">プロフィールを</text>
+  <text x="935" y="258" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">実績ベースで更新し</text>
+  <text x="935" y="278" font-size="15" font-weight="900" fill="#EAB308" text-anchor="middle">マッチング精度を上げる</text>
+  <!-- Description -->
+  <foreignObject x="804" y="290" width="262" height="96">
+    <body xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0;">
+      <p style="font-family:'Noto Sans JP',sans-serif;font-size:12px;color:#C7D2FE;line-height:1.6;margin:0;">担当業界・使用技術スタック・定量成果を案件完了ごとに追記。3件の実績で発注者との「まさにこれ」マッチングが起き、紹介・リピートが加速する。</p>
+    </body>
+  </foreignObject>
+
+  <!-- Bottom result banner -->
+  <rect x="60" y="432" width="1080" height="34" rx="10" fill="#EAB308"/>
+  <text x="600" y="454" font-size="15" font-weight="900" fill="#312E81" text-anchor="middle">▶ 3ステップを継続することで、3〜6ヶ月でリピート・紹介受注が安定化。月10万円超の継続収入を実現。</text>
+</svg>

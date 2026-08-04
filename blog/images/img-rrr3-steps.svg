@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8F9FF"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="24" font-weight="900" fill="#1E1B4B">建設業GPS打刻クラウド化 3ステップ実施フロー</text>
+
+  <!-- Step 1 Box -->
+  <rect x="60" y="88" width="310" height="330" rx="18" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <!-- Step Number -->
+  <circle cx="215" cy="130" r="28" fill="#EA580C"/>
+  <text x="215" y="138" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">1</text>
+  <text x="215" y="178" text-anchor="middle" font-size="16" font-weight="900" fill="#9A3412">現状整理・要件定義</text>
+
+  <text x="215" y="216" text-anchor="middle" font-size="13" fill="#374151">📋 現場数・作業員数を確認</text>
+  <text x="215" y="240" text-anchor="middle" font-size="13" fill="#374151">💼 雇用形態別人数を整理</text>
+  <text x="215" y="264" text-anchor="middle" font-size="13" fill="#374151">🔗 連携したい給与ソフト確認</text>
+  <text x="215" y="288" text-anchor="middle" font-size="13" fill="#374151">📱 スマホ普及率の確認</text>
+
+  <rect x="90" y="318" width="250" height="70" rx="10" fill="#FFEDD5"/>
+  <text x="215" y="342" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">所要期間：</text>
+  <text x="215" y="362" text-anchor="middle" font-size="13" font-weight="900" fill="#EA580C">1〜3日</text>
+  <text x="215" y="378" text-anchor="middle" font-size="11" fill="#9A3412">（社内担当者のみで完了可能）</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="417" y="268" text-anchor="middle" font-size="40" fill="#4338CA">→</text>
+
+  <!-- Step 2 Box -->
+  <rect x="445" y="88" width="310" height="330" rx="18" fill="#EEF2FF" stroke="#4338CA" stroke-width="2.5"/>
+  <circle cx="600" cy="130" r="28" fill="#4338CA"/>
+  <text x="600" y="138" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">2</text>
+  <text x="600" y="178" text-anchor="middle" font-size="16" font-weight="900" fill="#3730A3">スポット外注で設定・連携</text>
+
+  <text x="600" y="216" text-anchor="middle" font-size="13" fill="#374151">🔍 SaaS選定（建設業対応確認）</text>
+  <text x="600" y="240" text-anchor="middle" font-size="13" fill="#374151">📍 GPS打刻エリアを現場登録</text>
+  <text x="600" y="264" text-anchor="middle" font-size="13" fill="#374151">🔗 給与ソフトCSV／API連携</text>
+  <text x="600" y="288" text-anchor="middle" font-size="13" fill="#374151">📄 作業員向けマニュアル作成</text>
+
+  <rect x="475" y="318" width="250" height="70" rx="10" fill="#E0E7FF"/>
+  <text x="600" y="342" text-anchor="middle" font-size="12" font-weight="700" fill="#3730A3">所要期間：</text>
+  <text x="600" y="362" text-anchor="middle" font-size="13" font-weight="900" fill="#4338CA">2〜4週間</text>
+  <text x="600" y="378" text-anchor="middle" font-size="11" fill="#3730A3">（費用目安：10〜30万円）</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="802" y="268" text-anchor="middle" font-size="40" fill="#EA580C">→</text>
+
+  <!-- Step 3 Box -->
+  <rect x="830" y="88" width="310" height="330" rx="18" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <circle cx="985" cy="130" r="28" fill="#EA580C"/>
+  <text x="985" y="138" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">3</text>
+  <text x="985" y="178" text-anchor="middle" font-size="16" font-weight="900" fill="#9A3412">試験運用・全展開・定着化</text>
+
+  <text x="985" y="216" text-anchor="middle" font-size="13" fill="#374151">🏗 1現場20〜30名でパイロット</text>
+  <text x="985" y="240" text-anchor="middle" font-size="13" fill="#374151">✅ 打刻漏れ・GPS精度を確認</text>
+  <text x="985" y="264" text-anchor="middle" font-size="13" fill="#374151">📊 集計データを手作業と照合</text>
+  <text x="985" y="288" text-anchor="middle" font-size="13" fill="#374151">🚀 全現場に展開・自動化定着</text>
+
+  <rect x="860" y="318" width="250" height="70" rx="10" fill="#FFEDD5"/>
+  <text x="985" y="342" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">所要期間：</text>
+  <text x="985" y="362" text-anchor="middle" font-size="13" font-weight="900" fill="#EA580C">1〜2ヶ月（全展開まで）</text>
+  <text x="985" y="378" text-anchor="middle" font-size="11" fill="#9A3412">（月次集計工数 ほぼゼロに）</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="460" text-anchor="middle" font-size="13" fill="#9CA3AF">ANKENでは建設業の勤怠クラウド化経験のあるスポットエンジニアをステップ2から紹介します。まずは無料でご相談ください。</text>
+</svg>

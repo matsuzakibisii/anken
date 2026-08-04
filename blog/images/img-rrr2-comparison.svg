@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8F9FF"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="#1E1B4B">紙管理 vs GPS打刻クラウド｜月次業務の負荷比較</text>
+
+  <!-- Left Column: 紙管理 -->
+  <rect x="60" y="80" width="500" height="380" rx="16" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="2"/>
+  <text x="310" y="118" text-anchor="middle" font-size="20" font-weight="900" fill="#BE123C">📄 紙・手書き管理（現状）</text>
+
+  <!-- Row 1: 月次集計時間 -->
+  <rect x="90" y="136" width="440" height="74" rx="10" fill="#fff" stroke="#FECDD3" stroke-width="1.5"/>
+  <text x="114" y="163" font-size="13" font-weight="700" fill="#6B7280">月次集計時間</text>
+  <text x="114" y="188" font-size="22" font-weight="900" fill="#BE123C">20〜40時間 / 月</text>
+
+  <!-- Row 2: 集計ミス -->
+  <rect x="90" y="222" width="440" height="74" rx="10" fill="#fff" stroke="#FECDD3" stroke-width="1.5"/>
+  <text x="114" y="249" font-size="13" font-weight="700" fill="#6B7280">集計ミス・転記ミス</text>
+  <text x="114" y="274" font-size="22" font-weight="900" fill="#BE123C">月3〜8件 発生</text>
+
+  <!-- Row 3: 打刻の信頼性 -->
+  <rect x="90" y="308" width="440" height="74" rx="10" fill="#fff" stroke="#FECDD3" stroke-width="1.5"/>
+  <text x="114" y="335" font-size="13" font-weight="700" fill="#6B7280">打刻の正確性</text>
+  <text x="114" y="360" font-size="22" font-weight="900" fill="#BE123C">後から記入・まとめ記入が多い</text>
+
+  <!-- Row 4: 給与連携 -->
+  <rect x="90" y="394" width="440" height="54" rx="10" fill="#fff" stroke="#FECDD3" stroke-width="1.5"/>
+  <text x="114" y="421" font-size="13" font-weight="700" fill="#6B7280">給与ソフト連携</text>
+  <text x="114" y="439" font-size="18" font-weight="900" fill="#BE123C">手入力・コピペが必要</text>
+
+  <!-- Arrow -->
+  <text x="601" y="300" text-anchor="middle" font-size="48" fill="#4338CA">→</text>
+  <text x="601" y="330" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">スポット外注</text>
+  <text x="601" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">10〜30万円</text>
+
+  <!-- Right Column: GPS打刻クラウド -->
+  <rect x="640" y="80" width="500" height="380" rx="16" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="2"/>
+  <text x="890" y="118" text-anchor="middle" font-size="20" font-weight="900" fill="#3730A3">📱 GPS打刻クラウド（導入後）</text>
+
+  <!-- Row 1 -->
+  <rect x="670" y="136" width="440" height="74" rx="10" fill="#fff" stroke="#C7D2FE" stroke-width="1.5"/>
+  <text x="694" y="163" font-size="13" font-weight="700" fill="#6B7280">月次集計時間</text>
+  <text x="694" y="188" font-size="22" font-weight="900" fill="#4338CA">ほぼ0時間（自動集計）</text>
+
+  <!-- Row 2 -->
+  <rect x="670" y="222" width="440" height="74" rx="10" fill="#fff" stroke="#C7D2FE" stroke-width="1.5"/>
+  <text x="694" y="249" font-size="13" font-weight="700" fill="#6B7280">集計ミス・転記ミス</text>
+  <text x="694" y="274" font-size="22" font-weight="900" fill="#4338CA">0件（自動化で解消）</text>
+
+  <!-- Row 3 -->
+  <rect x="670" y="308" width="440" height="74" rx="10" fill="#fff" stroke="#C7D2FE" stroke-width="1.5"/>
+  <text x="694" y="335" font-size="13" font-weight="700" fill="#6B7280">打刻の正確性</text>
+  <text x="694" y="360" font-size="22" font-weight="900" fill="#4338CA">GPS位置情報で現場打刻を記録</text>
+
+  <!-- Row 4 -->
+  <rect x="670" y="394" width="440" height="54" rx="10" fill="#fff" stroke="#C7D2FE" stroke-width="1.5"/>
+  <text x="694" y="421" font-size="13" font-weight="700" fill="#6B7280">給与ソフト連携</text>
+  <text x="694" y="439" font-size="18" font-weight="900" fill="#4338CA">CSV自動出力・API連携に対応</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="490" text-anchor="middle" font-size="13" fill="#9CA3AF">※ 集計工数削減による人件費換算：月20〜40万円削減　初期スポット外注費：10〜30万円　回収期間：約1ヶ月</text>
+</svg>

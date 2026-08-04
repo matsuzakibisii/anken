@@ -474,6 +474,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-rrr.html</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-qqq.html</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://anken.bisii.co.jp/blog/blog-ppp.html</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
