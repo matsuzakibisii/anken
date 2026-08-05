@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="520" fill="#fafafa" rx="16"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="900" fill="#1f2937">ヘルパーマッチングの属人化 vs AI化　業務比較</text>
+
+  <!-- Column headers -->
+  <!-- Before (left) -->
+  <rect x="60" y="72" width="510" height="52" rx="10" fill="#fee2e2"/>
+  <text x="315" y="104" text-anchor="middle" font-size="21" font-weight="900" fill="#E11D48">❌ 属人化（現状）</text>
+
+  <!-- After (right) -->
+  <rect x="630" y="72" width="510" height="52" rx="10" fill="#dcfce7"/>
+  <text x="885" y="104" text-anchor="middle" font-size="21" font-weight="900" fill="#16A34A">✅ AI化（導入後）</text>
+
+  <!-- Row 1: マッチング判断 -->
+  <rect x="60" y="140" width="510" height="80" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="90" y="167" font-size="13" fill="#6b7280" font-weight="700">マッチング判断</text>
+  <text x="90" y="192" font-size="17" fill="#1f2937">担当者の経験・記憶・相性ノート</text>
+  <text x="90" y="212" font-size="14" fill="#E11D48">→ 担当者が変わると品質低下リスク</text>
+
+  <rect x="630" y="140" width="510" height="80" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="660" y="167" font-size="13" fill="#6b7280" font-weight="700">マッチング判断</text>
+  <text x="660" y="192" font-size="17" fill="#1f2937">AIが相性スコアを数値化・理由を言語化</text>
+  <text x="660" y="212" font-size="14" fill="#16A34A">→ 担当者が変わっても一定品質を維持</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="180" r="22" fill="#1f2937"/>
+  <text x="600" y="186" text-anchor="middle" font-size="13" font-weight="900" fill="#ffffff">VS</text>
+
+  <!-- Row 2: マッチング工数 -->
+  <rect x="60" y="236" width="510" height="80" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="90" y="263" font-size="13" fill="#6b7280" font-weight="700">1件あたりの工数</text>
+  <text x="90" y="288" font-size="17" fill="#1f2937">約30分　（複数候補を頭の中で比較）</text>
+  <text x="90" y="308" font-size="14" fill="#E11D48">→ 件数が多い日は業務が圧迫される</text>
+
+  <rect x="630" y="236" width="510" height="80" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="660" y="263" font-size="13" fill="#6b7280" font-weight="700">1件あたりの工数</text>
+  <text x="660" y="288" font-size="17" fill="#1f2937">約5分　（AIの提案候補3件から選ぶだけ）</text>
+  <text x="660" y="308" font-size="14" fill="#16A34A">→ 工数83%削減・他業務に集中できる</text>
+
+  <circle cx="600" cy="276" r="22" fill="#1f2937"/>
+  <text x="600" y="282" text-anchor="middle" font-size="13" font-weight="900" fill="#ffffff">VS</text>
+
+  <!-- Row 3: 引継ぎ -->
+  <rect x="60" y="332" width="510" height="80" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="90" y="359" font-size="13" fill="#6b7280" font-weight="700">担当者交代・引継ぎ</text>
+  <text x="90" y="384" font-size="17" fill="#1f2937">ノウハウが頭の中にあり引継ぎ困難</text>
+  <text x="90" y="404" font-size="14" fill="#E11D48">→ 退職リスクがそのままサービス品質リスクに</text>
+
+  <rect x="630" y="332" width="510" height="80" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="660" y="359" font-size="13" fill="#6b7280" font-weight="700">担当者交代・引継ぎ</text>
+  <text x="660" y="384" font-size="17" fill="#1f2937">スコアリングのロジックはシステムに蓄積</text>
+  <text x="660" y="404" font-size="14" fill="#16A34A">→ 新任担当者がすぐ同水準で業務開始できる</text>
+
+  <circle cx="600" cy="372" r="22" fill="#1f2937"/>
+  <text x="600" y="378" text-anchor="middle" font-size="13" font-weight="900" fill="#ffffff">VS</text>
+
+  <!-- Row 4: 請求連携 -->
+  <rect x="60" y="428" width="510" height="72" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="90" y="455" font-size="13" fill="#6b7280" font-weight="700">国保連請求との連携</text>
+  <text x="90" y="480" font-size="17" fill="#1f2937">訪問実績を手動で転記・月次10〜20h</text>
+
+  <rect x="630" y="428" width="510" height="72" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="660" y="455" font-size="13" fill="#6b7280" font-weight="700">国保連請求との連携</text>
+  <text x="660" y="480" font-size="17" fill="#1f2937">実績データから請求データを自動生成</text>
+
+  <circle cx="600" cy="464" r="22" fill="#1f2937"/>
+  <text x="600" y="470" text-anchor="middle" font-size="13" font-weight="900" fill="#ffffff">VS</text>
+</svg>
