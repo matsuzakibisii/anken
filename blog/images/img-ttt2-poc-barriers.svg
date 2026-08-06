@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#F0F4FF" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="24" font-weight="900" fill="#1E40AF">AI導入 PoC停滞の3つの壁とFDEが解決できること</text>
+
+  <!-- 壁カード1：技術的な壁 -->
+  <rect x="36" y="80" width="348" height="170" fill="#FFFFFF" rx="14" stroke="#1E40AF" stroke-width="2.5"/>
+  <rect x="36" y="80" width="348" height="42" fill="#1E40AF" rx="14"/>
+  <rect x="36" y="108" width="348" height="14" fill="#1E40AF"/>
+  <text x="210" y="109" text-anchor="middle" font-size="17" font-weight="900" fill="#FFFFFF">壁① 技術的な壁</text>
+  <text x="56" y="148" font-size="14" fill="#374151">PoCは実験環境（Jupyter等）で完成。しかし</text>
+  <text x="56" y="170" font-size="14" fill="#374151">既存システムとのAPI連携・クラウドインフラ・</text>
+  <text x="56" y="192" font-size="14" fill="#374151">例外処理設計が未実装のままプロジェクト終了。</text>
+  <text x="56" y="220" font-size="13" fill="#6B7280">→ 本番グレードへの書き換えスキルが不足</text>
+
+  <!-- 壁カード2：現場の壁 -->
+  <rect x="428" y="80" width="348" height="170" fill="#FFFFFF" rx="14" stroke="#1E40AF" stroke-width="2.5"/>
+  <rect x="428" y="80" width="348" height="42" fill="#1E40AF" rx="14"/>
+  <rect x="428" y="108" width="348" height="14" fill="#1E40AF"/>
+  <text x="602" y="109" text-anchor="middle" font-size="17" font-weight="900" fill="#FFFFFF">壁② 現場の壁</text>
+  <text x="448" y="148" font-size="14" fill="#374151">AIが何を判断しているか現場担当者が理解</text>
+  <text x="448" y="170" font-size="14" fill="#374151">できない。業務フロー変更が未設計で、操作</text>
+  <text x="448" y="192" font-size="14" fill="#374151">研修もなく現場が使わない・使えない状態に。</text>
+  <text x="448" y="220" font-size="13" fill="#6B7280">→ 現場定着の設計と教育が丸ごと抜け落ちる</text>
+
+  <!-- 壁カード3：組織の壁 -->
+  <rect x="820" y="80" width="348" height="170" fill="#FFFFFF" rx="14" stroke="#1E40AF" stroke-width="2.5"/>
+  <rect x="820" y="80" width="348" height="42" fill="#1E40AF" rx="14"/>
+  <rect x="820" y="108" width="348" height="14" fill="#1E40AF"/>
+  <text x="994" y="109" text-anchor="middle" font-size="17" font-weight="900" fill="#FFFFFF">壁③ 組織の壁</text>
+  <text x="840" y="148" font-size="14" fill="#374151">PoCオーナーが異動・予算が先送り・KPI未</text>
+  <text x="840" y="170" font-size="14" fill="#374151">設定でプロジェクトが自然消滅。「PoC完了」</text>
+  <text x="840" y="192" font-size="14" fill="#374151">で区切られて誰も本番化を引き継がない状態。</text>
+  <text x="840" y="220" font-size="13" fill="#6B7280">→ 本番化の意思決定者とオーナーが不在</text>
+
+  <!-- ↓ 矢印 -->
+  <text x="210" y="278" text-anchor="middle" font-size="28" fill="#65A30D" font-weight="900">↓</text>
+  <text x="602" y="278" text-anchor="middle" font-size="28" fill="#65A30D" font-weight="900">↓</text>
+  <text x="994" y="278" text-anchor="middle" font-size="28" fill="#65A30D" font-weight="900">↓</text>
+
+  <!-- FDE解決カード1 -->
+  <rect x="36" y="288" width="348" height="150" fill="#ECFDF5" rx="14" stroke="#65A30D" stroke-width="2.5"/>
+  <text x="210" y="316" text-anchor="middle" font-size="15" font-weight="900" fill="#065F46">✅ FDEが解決：技術移行設計</text>
+  <text x="56" y="344" font-size="13.5" fill="#374151">PoCコード・モデルを受け取り、本番グレードの</text>
+  <text x="56" y="364" font-size="13.5" fill="#374151">API設計・インフラ構成・エラーハンドリングを</text>
+  <text x="56" y="384" font-size="13.5" fill="#374151">実装。既存システムとの連携も一体で担当。</text>
+  <text x="210" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#65A30D">スポット外注 期間1〜2ヶ月</text>
+
+  <!-- FDE解決カード2 -->
+  <rect x="428" y="288" width="348" height="150" fill="#ECFDF5" rx="14" stroke="#65A30D" stroke-width="2.5"/>
+  <text x="602" y="316" text-anchor="middle" font-size="15" font-weight="900" fill="#065F46">✅ FDEが解決：現場定着設計</text>
+  <text x="448" y="344" font-size="13.5" fill="#374151">業務フローへのAI組み込み設計・UI調整から</text>
+  <text x="448" y="364" font-size="13.5" fill="#374151">現場担当者へのハンズオン研修・FAQ整備・</text>
+  <text x="448" y="384" font-size="13.5" fill="#374151">不具合一次対応まで一体で引き受ける。</text>
+  <text x="602" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#65A30D">研修3回＋フォロー4週間が目安</text>
+
+  <!-- FDE解決カード3 -->
+  <rect x="820" y="288" width="348" height="150" fill="#ECFDF5" rx="14" stroke="#65A30D" stroke-width="2.5"/>
+  <text x="994" y="316" text-anchor="middle" font-size="15" font-weight="900" fill="#065F46">✅ FDEが解決：本番化ロードマップ</text>
+  <text x="840" y="344" font-size="13.5" fill="#374151">PoC報告書・現場ヒアリングをもとに本番化の</text>
+  <text x="840" y="364" font-size="13.5" fill="#374151">スコープ・スケジュール・KPIを定義し、社内</text>
+  <text x="840" y="384" font-size="13.5" fill="#374151">承認フローへの提案資料作成もサポート。</text>
+  <text x="994" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#65A30D">費用20〜50万円・期間1〜2ヶ月が目安</text>
+
+  <!-- 出典 -->
+  <text x="600" y="478" text-anchor="middle" font-size="11" fill="#9CA3AF">出典：ANKEN編集部調査（2026年8月）</text>
+</svg>

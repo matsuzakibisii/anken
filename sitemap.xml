@@ -480,6 +480,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-ttt.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://anken.bisii.co.jp/blog/blog-sss.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>

@@ -64,6 +64,7 @@
 - [送迎・運輸業の給与計算システムをスポット外注で構築する方法｜特殊手当・立替金を自動化する3ステップ](https://anken.bisii.co.jp/blog/blog-ooo.html)
 - [建設業の紙ベース勤怠管理をGPS打刻クラウド化する方法｜現場作業員の出退勤をスポット外注で効率化する3ステップ](https://anken.bisii.co.jp/blog/blog-rrr.html)
 - [訪問介護・障害福祉事業所のヘルパーマッチングをAI化する方法｜スポット外注で業務管理システムを構築する3ステップ](https://anken.bisii.co.jp/blog/blog-sss.html)
+- [AI導入をPoC止まりで終わらせないFDE活用術｜本番運用まで伸ばすスポット外注3ステップ](https://anken.bisii.co.jp/blog/blog-ttt.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
