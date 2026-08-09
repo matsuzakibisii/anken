@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Excelマクロ（VBA）の廃止・ブロック対応をスポット外注で乗り越える方法を解説。棚卸しから移行先選定・開発依頼・引き継ぎドキュメント整備まで3ステップで業務を止めずに移行できます。" />
+  <title>ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ | ANKENブログ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ" />
+  <meta property="og:description" content="VBAマクロの廃止・ブロック対応をスポット外注で解決。棚卸し→移行先選定→開発依頼まで3ステップで業務を止めずに移行する方法を解説します。" />
+  <meta property="og:image" content="https://anken.bisii.co.jp/blog/images/img-vvv1-hero.png" />
+  <meta property="og:url" content="https://anken.bisii.co.jp/blog/blog-vvv.html" />
+  <meta property="og:site_name" content="ANKENブログ" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ" />
+  <meta name="twitter:description" content="VBAマクロの廃止・ブロック対応をスポット外注で解決。棚卸し→移行先選定→開発依頼まで3ステップで業務を止めずに移行する方法を解説します。" />
+  <meta name="twitter:image" content="https://anken.bisii.co.jp/blog/images/img-vvv1-hero.png" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+  <script src="analytics.js"></script>
+
+  <!-- canonical -->
+  <link rel="canonical" href="https://anken.bisii.co.jp/blog/blog-vvv.html" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ",
+        "description": "ExcelマクロVBAの廃止・ブロック対応をスポット外注で乗り越える方法を解説。棚卸しから移行先選定・開発依頼・引き継ぎドキュメント整備まで3ステップで業務を止めずに移行できます。",
+        "image": "https://anken.bisii.co.jp/blog/images/img-vvv1-hero.png",
+        "datePublished": "2026-08-09",
+        "dateModified": "2026-08-09",
+        "author": {
+          "@type": "Organization",
+          "name": "ANKEN編集部",
+          "url": "https://anken.bisii.co.jp"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "株式会社ビシィッ",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://anken.bisii.co.jp/apple-touch-icon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ANKENブログ TOP",
+            "item": "https://anken.bisii.co.jp/blog/media.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ",
+            "item": "https://anken.bisii.co.jp/blog/blog-vvv.html"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "ExcelマクロVBA廃止対応をスポット外注で乗り越える3ステップ",
+        "description": "VBAマクロの廃止・ブロック問題をスポット外注を活用して業務を止めずに移行する手順",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "VBAマクロの棚卸しと移行先の選定をスポット外注で実施する",
+            "text": "社内で使われているVBAマクロを一覧化し、業務への影響度・複雑さ・優先度を整理した上で、Power Automate Desktop・Python・ノーコードツール・Webアプリの中から最適な移行先をスポット外注のエンジニアと共に選定する。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "スポット外注で移行開発を依頼する",
+            "text": "選定した移行先に合わせた開発をスポット外注で発注する。要件定義から実装・テストまでをタスク単位で依頼することで、社内リソースを使わず短期間で移行を完了できる。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "移行後の運用・引き継ぎドキュメントを整備する",
+            "text": "移行完了後に操作マニュアル・メンテナンス手順書をスポット外注で作成し、担当者が退職・異動しても業務が止まらない体制を整える。"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "VBAマクロが使えなくなると具体的にどんな影響がありますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Microsoft社のVBAブロック方針により、インターネットからダウンロードしたファイルや共有フォルダのExcelでVBAが既定で実行不可になります。これにより毎日使っている請求書処理・在庫集計・報告書自動作成などの業務マクロが突然止まるリスクがあります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "VBA移行にかかる費用と期間はどれくらいですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "スポット外注での移行費用はマクロの複雑さによって異なりますが、単純な定型作業の自動化であれば10〜25万円・3〜5週間が目安です。複数人が使うWebアプリへの移行は30〜150万円・1〜4ヶ月程度かかります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "社内にIT担当がいなくてもスポット外注でVBA移行できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、できます。スポット外注のエンジニアが棚卸し・選定・開発・ドキュメント整備まで一貫して対応するため、社内にIT専任者がいなくても移行を進められます。現場の業務担当者からヒアリングするだけで進行できます。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="shortcut icon" href="../favicon.ico" />
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="../index.html" class="site-header__logo">
+        <span class="site-header__logo-text">ANKEN</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="../index.html#about" class="site-header__nav-link">サービスについて</a>
+        <a href="../index.html#steps" class="site-header__nav-link">利用の流れ</a>
+        <a href="media.html" class="site-header__nav-link">ブログ</a>
+        <a href="../member.html" class="site-header__cta site-header__cta--outline"
+           onclick="gtag('event','cta_click',{event_category:'blog_vvv',event_label:'header_engineer'})">エンジニアとして登録する</a>
+        <a href="../contact.html" class="site-header__cta site-header__cta--primary"
+           onclick="gtag('event','cta_click',{event_category:'blog_vvv',event_label:'header_contact'})">無料で相談する</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main class="article-main">
+    <div class="article-container">
+      <!-- 左カラム：記事本文 -->
+      <article class="article-body">
+        <!-- ヒーロー画像 -->
+        <div class="article-hero">
+          <img src="images/img-vvv1-hero.png" alt="手書きスケッチ風のVBAマクロ移行イメージ" width="1200" height="630" loading="eager" />
+        </div>
+
+        <!-- タグ・タイトル -->
+        <div class="article-header">
+          <span class="article-tag article-tag--a">発注者向け｜スポット外注</span>
+          <h1 class="article-title">ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ</h1>
+        </div>
+
+        <!-- リード文（直接回答型） -->
+        <p class="article-lead">ExcelマクロVBAの廃止・ブロック対応は、<strong>スポット外注のエンジニアに3ステップで丸ごと依頼する</strong>のが最短解です。棚卸しと移行先の選定から開発・引き継ぎドキュメント整備まで、社内IT担当ゼロでも業務を止めずに移行できます。</p>
+
+        <!-- 鮮度ステートメント -->
+        <p class="article-freshness">本記事は2026年8月時点の情報に基づいています。</p>
+
+        <!-- 目次 -->
+        <nav class="toc" aria-label="目次">
+          <div class="toc__title">目次</div>
+          <ol class="toc__list">
+            <li><a href="#problem">VBAマクロ廃止・ブロック問題の実態</a></li>
+            <li><a href="#steps">スポット外注でVBA移行を進める3ステップ</a>
+              <ol>
+                <li><a href="#step1">STEP1｜棚卸しと移行先の選定</a></li>
+                <li><a href="#step2">STEP2｜移行開発を依頼する</a></li>
+                <li><a href="#step3">STEP3｜運用・引き継ぎドキュメントを整備する</a></li>
+              </ol>
+            </li>
+            <li><a href="#merit">スポット外注で移行するメリット</a></li>
+            <li><a href="#summary">まとめ</a></li>
+          </ol>
+        </nav>
+
+        <!-- 早期CTA -->
+        <div class="cta-box" style="background:#EFF6FF;border:1.5px solid #3B82F6;border-radius:10px;padding:20px 24px;margin:28px 0;">
+          <p style="margin:0 0 6px;font-weight:700;font-size:15px;color:#1E40AF;">「VBAが動かなくなる前に動きたいが、何から始めれば…」という段階でも大丈夫です</p>
+          <p style="margin:0 0 14px;font-size:13px;color:#374151;">ANKENのエンジニアが棚卸しから移行先の選定まで一緒に整理します。初回相談は無料、しつこい営業は一切ありません。</p>
+          <a href="../contact.html" style="display:inline-block;background:#3B82F6;color:#fff;font-weight:700;font-size:14px;padding:10px 22px;border-radius:6px;text-decoration:none;"
+             onclick="gtag('event','cta_click',{event_category:'blog_vvv',event_label:'early_cta'})">無料で相談する →</a>
+        </div>
+
+        <!-- 本文 -->
+        <section id="problem">
+          <h2>VBAマクロ廃止・ブロック問題の実態</h2>
+          <p>2022年以降、Microsoftはセキュリティ強化のため<strong>インターネット由来のOfficeファイルに含まれるVBAマクロを既定でブロック</strong>する方針を打ち出しました。これにより、メールで受け取ったExcelファイル・共有サーバー上のブック・社外から持ち込まれたファイルのVBAが実行できなくなるケースが相次いでいます。</p>
+          <p>さらに2026年現在、多くの企業が長年使ってきた基幹業務マクロの保守に行き詰まっています。「VBAを書いていた担当者が退職した」「コードが属人化していて誰も触れない」「セキュリティポリシーでマクロを全面禁止にする方針が出た」といった声が、発注ナビなどの案件情報にも多数見受けられます。</p>
+          <p>最も深刻なのは<strong>「いつ止まるかわからない不確実性」</strong>です。今日は動いていても、次回のWindows・Office更新後に突然動かなくなるリスクを抱えたまま業務が続いている——これが多くの中小企業の現状です。</p>
+
+          <!-- 移行先比較マトリクス（図） -->
+          <figure class="article-figure">
+            <img src="images/img-vvv2-matrix.svg" alt="VBAマクロ移行先4選：自社DIY vs スポット外注依頼の比較マトリクス" width="1200" height="560" loading="lazy" />
+            <figcaption>VBAマクロ移行先4選の比較（自社DIY難易度・費用・スポット外注との相性）</figcaption>
+          </figure>
+
+          <p>移行先の選択肢は大きく4つあります。<strong>Power Automate Desktop</strong>は定型のクリック・転記自動化に向いており、M365環境があればスポット外注との相性が最高です。<strong>Pythonスクリプト</strong>はデータ加工・集計・ファイル変換に強く、汎用性が高く依頼しやすい点が魅力です。<strong>kintone・Notionなどノーコードツール</strong>はデータ管理や承認フローの置き換えに適しており、カスタマイズ依頼も容易です。<strong>Webアプリ（社内ツール開発）</strong>は複数人同時利用や外部連携が必要なケースに最適で、スポット外注が最も力を発揮する領域です。</p>
+        </section>
+
+        <section id="steps">
+          <h2>スポット外注でVBA移行を進める3ステップ</h2>
+          <p>「移行したいけれど何から手をつければいいかわからない」——その状態でも、以下の3ステップで整理すれば動き出せます。スポット外注のエンジニアは各ステップを単発のタスクとして受けることができるため、全工程を一社に丸投げする必要はありません。</p>
+
+          <!-- 3ステップタイムライン（図） -->
+          <figure class="article-figure">
+            <img src="images/img-vvv3-timeline.svg" alt="VBA移行スポット外注の3ステップタイムライン：棚卸し選定→移行開発→ドキュメント整備" width="1200" height="420" loading="lazy" />
+            <figcaption>VBA移行をスポット外注で進める3ステップと期間の目安</figcaption>
+          </figure>
+
+          <div id="step1">
+            <h3>STEP1｜VBAマクロの棚卸しと移行先の選定をスポット外注で実施する</h3>
+            <p>まず、社内で使われているVBAマクロを洗い出し、<strong>①業務への影響度（止まったら困る度合い）②コードの複雑さ③移行の優先順位</strong>の3軸で整理します。この棚卸し作業自体をスポット外注のエンジニアに依頼できます。現場の業務担当者へのヒアリングだけで進められるため、社内にITの専門家がいなくても問題ありません。</p>
+            <p>棚卸し完了後、マクロごとに最適な移行先を選定します。「このマクロは月1回しか使わないからPythonスクリプトで十分」「毎日10人が使うこの集計ツールはkintoneに移した方が長持ちする」といった判断をエンジニアと一緒に行います。</p>
+            <div class="point-box">
+              <p><strong>費用・期間の目安：</strong>棚卸し・選定フェーズのみなら5〜15万円・1〜2週間が一般的です。マクロの本数が多い（20本以上）場合や、基幹業務への影響が大きい場合は期間が伸びることがあります。</p>
+            </div>
+          </div>
+
+          <div id="step2">
+            <h3>STEP2｜スポット外注で移行開発を依頼する</h3>
+            <p>選定した移行先に合わせて、いよいよ開発を発注します。スポット外注の強みは<strong>「1マクロ単位・1機能単位でタスクを切り出せる」</strong>点です。全部まとめてSIerに頼む必要はなく、優先度の高いマクロから順番に依頼していくことができます。</p>
+            <p>開発の流れは概ね「要件定義 → 実装 → テスト → 納品」ですが、スポット外注では各工程を同じエンジニアに連続で依頼するか、工程ごとに分けて依頼するかを柔軟に選べます。社内の業務担当者が「こういう動きをしてほしい」と説明できれば、要件定義もエンジニアがサポートしてくれます。</p>
+            <div class="point-box">
+              <p><strong>移行先別の費用目安：</strong>Power Automate Desktop / Python：10〜30万円・3〜6週間。kintone・ノーコードツール：15〜35万円・4〜7週間。Webアプリ（社内ツール）：30〜150万円・1〜4ヶ月。</p>
+            </div>
+          </div>
+
+          <div id="step3">
+            <h3>STEP3｜移行後の運用・引き継ぎドキュメントを整備する</h3>
+            <p>移行完了後に見落とされがちなのが<strong>「ドキュメント整備」</strong>です。どれだけ優れた仕組みを作っても、操作マニュアルや設定変更の手順書がなければ、担当者が変わった途端に「誰も使えない」状態になります。</p>
+            <p>ドキュメント整備もスポット外注で依頼できます。エンジニアが開発した仕組みをそのまま文書化してもらうのが最も効率的で、技術的に正確な内容が短期間で仕上がります。現場の業務担当者向けの「操作マニュアル」と、次のエンジニア向けの「メンテナンス手順書」の2種類を用意しておくと、将来のカスタマイズ依頼もスムーズになります。</p>
+          </div>
+        </section>
+
+        <section id="merit">
+          <h2>スポット外注でVBA移行するメリット</h2>
+          <p>VBA移行をスポット外注で行う最大のメリットは<strong>「必要な分だけ、必要なときに依頼できる」</strong>点です。正社員エンジニアを採用する必要がなく、既存のSIerとの長期契約も不要です。移行規模に応じて予算をコントロールしながら、段階的に進められます。</p>
+          <p>また、スポット外注のエンジニアはさまざまな業種・業務の移行を経験しているため、「こういうケースではPower Automate Desktopより Pythonの方が長期的にメンテしやすい」といった実践的なアドバイスを得られます。自社だけでは判断できない技術選定の壁を、外部の知見で越えられるのも大きな利点です。</p>
+          <p>さらに、移行プロジェクトを通じてスポット外注エンジニアとの信頼関係が生まれれば、将来の追加改修や別システムのスポット発注にもつなげやすくなります。</p>
+        </section>
+
+        <section id="summary">
+          <h2>まとめ</h2>
+          <p>ExcelマクロVBAの廃止・ブロック対応は、放置するほどリスクが高まります。しかし「何から始めるかわからない」「IT担当がいない」という状況でも、スポット外注を活用すれば3ステップで移行を進められます。</p>
+          <p>棚卸し・移行先選定（STEP1）は1〜2週間で完了し、その後の移行開発（STEP2）・ドキュメント整備（STEP3）をタスク単位で依頼することで、業務を止めずに段階的に対応できます。今すぐすべてのマクロを移行する必要はなく、影響度の高いものから順に着手するだけで十分です。</p>
+        </section>
+
+        <!-- FAQセクション -->
+        <section class="faq-section">
+          <h2>よくある質問</h2>
+          <dl class="faq-list">
+            <dt>Q. VBAマクロが使えなくなると具体的にどんな影響がありますか？</dt>
+            <dd>A. Microsoft社のVBAブロック方針により、インターネットからダウンロードしたExcelファイルや共有フォルダのブックでVBAが既定で実行不可となります。請求書処理・在庫集計・報告書自動作成などの業務マクロが突然止まるリスクがあります。</dd>
+            <dt>Q. VBA移行にかかる費用と期間はどれくらいですか？</dt>
+            <dd>A. スポット外注での移行費用は複雑さによりますが、定型作業の自動化なら10〜25万円・3〜5週間、複数人が使うWebアプリへの移行は30〜150万円・1〜4ヶ月が目安です。</dd>
+            <dt>Q. 社内にIT担当がいなくてもスポット外注でVBA移行できますか？</dt>
+            <dd>A. はい、できます。エンジニアが棚卸し・選定・開発・ドキュメント整備まで対応するため、社内にIT専任者がいなくても現場担当者へのヒアリングだけで移行を進められます。</dd>
+          </dl>
+        </section>
+        <!-- FAQのJSON-LDはhead内@graphに統合済み -->
+
+        <!-- 記事末尾CTA -->
+        <div class="cta-box" style="background:#EFF6FF;border:1.5px solid #3B82F6;border-radius:10px;padding:24px;margin:36px 0 24px;">
+          <p style="margin:0 0 8px;font-weight:700;font-size:16px;color:#1E40AF;">VBAマクロの移行をスポット外注で依頼したい方へ</p>
+          <p style="margin:0 0 14px;font-size:14px;color:#374151;">ANKENでは棚卸しから移行先の選定・開発・ドキュメント整備まで一貫して対応できるエンジニアをマッチングします。要件が固まっていなくてもOK、1時間以内にご返信します。</p>
+          <a href="../contact.html" style="display:inline-block;background:#3B82F6;color:#fff;font-weight:700;font-size:15px;padding:12px 28px;border-radius:7px;text-decoration:none;"
+             onclick="gtag('event','cta_click',{event_category:'blog_vvv',event_label:'bottom_cta'})">無料で相談する →</a>
+        </div>
+
+        <!-- 著者・監修表記 -->
+        <p class="article-author-note">ANKEN編集部が2026年8月に内容を確認・更新しました。ANKENは累計500件超のスポット外注マッチング実績をもとに、発注者向けの実践的な情報をお届けしています。</p>
+
+        <!-- 記事間ナビ -->
+        <nav class="article-nav" aria-label="関連記事">
+          <a href="blog-uuu.html" class="article-nav__link article-nav__link--prev">
+            <span class="article-nav__label">← 前の記事</span>
+            <span class="article-nav__title">ホテル業の電話・メール対応をAIで自動化する手順</span>
+          </a>
+          <a href="blog-a.html" class="article-nav__link article-nav__link--next">
+            <span class="article-nav__label">次の記事 →</span>
+            <span class="article-nav__title">即戦力スポットエンジニアの確保方法</span>
+          </a>
+        </nav>
+
+        <!-- ブログ一覧に戻る -->
+        <div class="article-back">
+          <a href="media.html">← ブログ一覧に戻る</a>
+        </div>
+      </article>
+
+      <!-- 右カラム：サイドバー -->
+      <aside class="article-sidebar">
+        <!-- サイドバーCTA -->
+        <div class="sidebar-cta">
+          <p class="sidebar-cta__title">スポット外注の相談はこちら</p>
+          <p class="sidebar-cta__desc">要件が固まっていなくてもOK。まずはお気軽にご相談ください。</p>
+          <a href="../contact.html" class="sidebar-cta__btn"
+             onclick="gtag('event','cta_click',{event_category:'blog_vvv',event_label:'sidebar_cta'})">無料で相談する</a>
+        </div>
+
+        <!-- 関連記事 -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget__title">関連記事</div>
+          <ul class="sidebar-article-list">
+            <li>
+              <span class="article-tag article-tag--a" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜スポット外注</span>
+              <a href="blog-dd.html">kintoneカスタマイズをスポット外注で実現する方法</a>
+            </li>
+            <li>
+              <span class="article-tag article-tag--a" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜スポット外注</span>
+              <a href="blog-qq.html">社内システム・業務ツールの小規模改修をスポット外注で依頼する方法</a>
+            </li>
+            <li>
+              <span class="article-tag article-tag--a" style="font-size:11px;margin-bottom:4px;display:inline-block;">発注者向け｜スポット外注</span>
+              <a href="blog-kkk.html">既存ベンダー離脱後のWebサービス保守をスポット外注で引き継ぐ方法</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 株式会社ビシィッ</p>
+    </div>
+  </footer>
+
+  <!-- モバイル固定CTAバー -->
+  <div class="mobile-sticky-cta">
+    <a href="../contact.html" class="mobile-sticky-cta__btn mobile-sticky-cta__btn--primary"
+       onclick="gtag('event','cta_click',{event_category:'blog_vvv',event_label:'mobile_sticky'})">無料で相談する</a>
+  </div>
+
+</body>
+</html>

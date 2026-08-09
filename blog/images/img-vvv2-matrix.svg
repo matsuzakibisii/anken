@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560">
+  <style>
+    text { font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; }
+    .title { font-size: 22px; font-weight: 900; fill: #1E1B4B; }
+    .col-header { font-size: 13px; font-weight: 700; fill: #fff; }
+    .row-label { font-size: 14px; font-weight: 700; fill: #1E40AF; }
+    .cell-text { font-size: 12px; fill: #1E293B; }
+    .cell-sub { font-size: 11px; fill: #475569; }
+    .compat-best { font-size: 12px; font-weight: 700; fill: #BE123C; }
+    .compat-good { font-size: 12px; font-weight: 700; fill: #1E40AF; }
+    .stars { font-size: 13px; fill: #475569; }
+  </style>
+
+  <!-- 背景 -->
+  <rect width="1200" height="560" fill="#F8FAFC" rx="16"/>
+
+  <!-- タイトル -->
+  <text x="60" y="52" class="title">VBAマクロ移行先4選：自社DIY vs スポット外注依頼の比較</text>
+
+  <!-- ヘッダー行 -->
+  <rect x="40" y="68" width="220" height="44" rx="6" fill="#1E40AF"/>
+  <rect x="268" y="68" width="180" height="44" rx="6" fill="#1E40AF"/>
+  <rect x="456" y="68" width="170" height="44" rx="6" fill="#1E40AF"/>
+  <rect x="634" y="68" width="218" height="44" rx="6" fill="#BE123C"/>
+  <rect x="860" y="68" width="300" height="44" rx="6" fill="#1E40AF"/>
+
+  <text x="150" y="95" class="col-header" text-anchor="middle">移行先ツール</text>
+  <text x="358" y="95" class="col-header" text-anchor="middle">主な用途</text>
+  <text x="541" y="95" class="col-header" text-anchor="middle">自社DIY難易度</text>
+  <text x="743" y="95" class="col-header" text-anchor="middle">費用目安（外注）</text>
+  <text x="1010" y="95" class="col-header" text-anchor="middle">スポット外注との相性</text>
+
+  <!-- 行1: Power Automate Desktop -->
+  <rect x="40" y="120" width="1120" height="90" rx="6" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="60" y="154" class="row-label">Power Automate</text>
+  <text x="60" y="172" class="row-label">Desktop</text>
+  <text x="358" y="150" class="cell-text" text-anchor="middle">定型業務クリック・</text>
+  <text x="358" y="168" class="cell-text" text-anchor="middle">転記自動化</text>
+  <text x="541" y="157" class="stars" text-anchor="middle">★★★☆☆（難）</text>
+  <text x="743" y="150" class="cell-text" text-anchor="middle">10〜25万円</text>
+  <text x="743" y="168" class="cell-sub" text-anchor="middle">3〜5週間</text>
+  <text x="1010" y="150" class="compat-best" text-anchor="middle">◎ 最高</text>
+  <text x="1010" y="168" class="cell-sub" text-anchor="middle">M365環境で即対応可</text>
+
+  <!-- 行2: Python -->
+  <rect x="40" y="218" width="1120" height="90" rx="6" fill="#F0F9FF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="60" y="252" class="row-label">Pythonスクリプト</text>
+  <text x="358" y="248" class="cell-text" text-anchor="middle">データ加工・集計・</text>
+  <text x="358" y="266" class="cell-text" text-anchor="middle">ファイル変換</text>
+  <text x="541" y="255" class="stars" text-anchor="middle">★★★★★</text>
+  <text x="743" y="248" class="cell-text" text-anchor="middle">10〜30万円</text>
+  <text x="743" y="266" class="cell-sub" text-anchor="middle">3〜6週間</text>
+  <text x="1010" y="248" class="compat-best" text-anchor="middle">◎ 最高</text>
+  <text x="1010" y="266" class="cell-sub" text-anchor="middle">汎用性が高く依頼しやすい</text>
+
+  <!-- 行3: kintone/ノーコード -->
+  <rect x="40" y="316" width="1120" height="90" rx="6" fill="#fff" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="60" y="350" class="row-label">kintone・Notion等</text>
+  <text x="60" y="368" class="row-label">ノーコードDB</text>
+  <text x="358" y="346" class="cell-text" text-anchor="middle">データ管理・</text>
+  <text x="358" y="364" class="cell-text" text-anchor="middle">承認フロー</text>
+  <text x="541" y="353" class="stars" text-anchor="middle">★★★☆☆（難）</text>
+  <text x="743" y="346" class="cell-text" text-anchor="middle">15〜35万円</text>
+  <text x="743" y="364" class="cell-sub" text-anchor="middle">4〜7週間</text>
+  <text x="1010" y="346" class="compat-good" text-anchor="middle">○ 高い</text>
+  <text x="1010" y="364" class="cell-sub" text-anchor="middle">カスタマイズ依頼が容易</text>
+
+  <!-- 行4: Webアプリ -->
+  <rect x="40" y="414" width="1120" height="90" rx="6" fill="#FFF1F2" stroke="#FECDD3" stroke-width="1.5"/>
+  <text x="60" y="448" class="row-label">Webアプリ</text>
+  <text x="60" y="466" class="row-label">社内ツール開発</text>
+  <text x="358" y="444" class="cell-text" text-anchor="middle">複数人同時利用・</text>
+  <text x="358" y="462" class="cell-text" text-anchor="middle">外部連携が必要なケース</text>
+  <text x="541" y="451" class="stars" text-anchor="middle">★★★★★</text>
+  <text x="743" y="444" class="cell-text" text-anchor="middle">30〜150万円</text>
+  <text x="743" y="462" class="cell-sub" text-anchor="middle">1〜4ヶ月</text>
+  <text x="1010" y="444" class="compat-best" text-anchor="middle">◎ 最高</text>
+  <text x="1010" y="462" class="cell-sub" text-anchor="middle">スポット外注が最適解</text>
+
+  <!-- フッター注記 -->
+  <text x="60" y="530" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="#94A3B8">※ 費用・期間はマクロの複雑さや本数により変動します。上記はスポット外注依頼時の目安です。</text>
+</svg>

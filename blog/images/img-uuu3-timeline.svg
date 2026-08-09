@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" width="1200" height="420">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+  </defs>
+  <rect width="1200" height="420" fill="#f8fafc"/>
+  <text x="600" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">ホテルのAI自動応対システム　導入タイムライン</text>
+  <line x1="80" y1="200" x2="1120" y2="200" stroke="#cbd5e1" stroke-width="4"/>
+  <polygon points="1115,193 1128,200 1115,207" fill="#cbd5e1"/>
+  <!-- Period labels -->
+  <text x="220" y="240" text-anchor="middle" font-size="13" fill="#64748b">1週目</text>
+  <text x="600" y="240" text-anchor="middle" font-size="13" fill="#64748b">2〜6週目（構築フェーズ）</text>
+  <text x="980" y="240" text-anchor="middle" font-size="13" fill="#64748b">7〜8週目以降</text>
+  <line x1="420" y1="228" x2="780" y2="228" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- STEP 1 -->
+  <circle cx="220" cy="200" r="22" fill="#0F766E"/>
+  <text x="220" y="206" text-anchor="middle" font-size="15" font-weight="900" fill="white">1</text>
+  <line x1="220" y1="178" x2="220" y2="110" stroke="#0F766E" stroke-width="2" stroke-dasharray="5,4"/>
+  <rect x="100" y="36" width="240" height="74" rx="10" fill="white" stroke="#0F766E" stroke-width="2.5"/>
+  <text x="220" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#0F766E">STEP 1　要件・ツール選定</text>
+  <text x="220" y="81" text-anchor="middle" font-size="12" fill="#374151">FAQ洗い出し・対応ルート整理</text>
+  <text x="220" y="98" text-anchor="middle" font-size="12" fill="#374151">スポット外注先へ要件を提示する</text>
+  <!-- STEP 2 -->
+  <circle cx="600" cy="200" r="22" fill="#F43F5E"/>
+  <text x="600" y="206" text-anchor="middle" font-size="15" font-weight="900" fill="white">2</text>
+  <line x1="600" y1="222" x2="600" y2="285" stroke="#F43F5E" stroke-width="2" stroke-dasharray="5,4"/>
+  <rect x="460" y="285" width="280" height="88" rx="10" fill="white" stroke="#F43F5E" stroke-width="2.5"/>
+  <text x="600" y="311" text-anchor="middle" font-size="13" font-weight="700" fill="#F43F5E">STEP 2　構築・設定・テスト</text>
+  <text x="600" y="330" text-anchor="middle" font-size="12" fill="#374151">AI応答シナリオ作成・システム接続</text>
+  <text x="600" y="348" text-anchor="middle" font-size="12" fill="#374151">ホテルスタッフと並行テスト運用</text>
+  <text x="600" y="364" text-anchor="middle" font-size="11" fill="#F43F5E">※ 通常営業を止めずに進行</text>
+  <!-- STEP 3 -->
+  <circle cx="980" cy="200" r="22" fill="#0F766E"/>
+  <text x="980" y="206" text-anchor="middle" font-size="15" font-weight="900" fill="white">3</text>
+  <line x1="980" y1="178" x2="980" y2="110" stroke="#0F766E" stroke-width="2" stroke-dasharray="5,4"/>
+  <rect x="860" y="36" width="240" height="74" rx="10" fill="white" stroke="#0F766E" stroke-width="2.5"/>
+  <text x="980" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#0F766E">STEP 3　本番稼働・定着</text>
+  <text x="980" y="81" text-anchor="middle" font-size="12" fill="#374151">AI自動応対を正式ローンチ</text>
+  <text x="980" y="98" text-anchor="middle" font-size="12" fill="#374151">定型対応率・スタッフ工数を継続計測</text>
+  <!-- Goal marker -->
+  <circle cx="1140" cy="200" r="20" fill="#F43F5E"/>
+  <text x="1140" y="196" text-anchor="middle" font-size="11" font-weight="700" fill="white">完了</text>
+  <text x="1140" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="white">🎉</text>
+  <!-- Footer bar -->
+  <rect x="80" y="380" width="1040" height="30" rx="6" fill="#0F766E"/>
+  <text x="600" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="white">定型自動化率70〜80%　スタッフ対応時間削減 週15〜20時間　初期スポット外注費用目安：8〜40万円</text>
+</svg>

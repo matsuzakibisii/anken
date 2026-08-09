@@ -31,6 +31,7 @@
 - [運送業の点検業務システム化をスポット外注で実現する方法｜NFC・kintone連携アプリを単発依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-zz.html)
 - [情シス不在の中小企業が社内IT運用をスポット外注で解決する3ステップ｜ネットワーク・ヘルプデスクを単発で頼む方法](https://anken.bisii.co.jp/blog/blog-ccc.html)
 - [既存ベンダー離脱後のWebサービス保守をスポット外注で引き継ぐ方法｜移管リスクをゼロにする3ステップ](https://anken.bisii.co.jp/blog/blog-kkk.html)
+- [ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ](https://anken.bisii.co.jp/blog/blog-vvv.html)
 
 ### 発注者向け｜AI開発（ジャンルB）
 
@@ -97,6 +98,7 @@
 - [自社製品・企業情報をAI検索（AIO/GEO）に対応させる方法｜ChatGPT引用コンテンツ設計3ステップ](https://anken.bisii.co.jp/blog/blog-ggg.html)
 - [AIロールプレイング研修ツールを導入する手順｜営業・接客力を最大化する3ステップ](https://anken.bisii.co.jp/blog/blog-mmm.html)
 - [給与計算の下準備をAIで自動化する手順｜タイムカード写真の読み取りから就業ルール適用・CSV出力まで3ステップ](https://anken.bisii.co.jp/blog/blog-ppp.html)
+- [ホテル業の電話・メール対応をAIで自動化する手順](https://anken.bisii.co.jp/blog/blog-uuu.html)
 
 ### エンジニア向け（ジャンルC・D）
 

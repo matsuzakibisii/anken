@@ -1,0 +1,75 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#0F0A1E"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#F3F0FF">PoC段階と本番実装フェーズの4つの違い</text>
+
+  <!-- Column headers -->
+  <!-- PoC段階 -->
+  <rect x="80" y="70" width="470" height="50" rx="8" fill="#2D1F5E"/>
+  <text x="315" y="103" text-anchor="middle" font-size="18" font-weight="700" fill="#A78BFA">PoC段階</text>
+
+  <!-- → arrow -->
+  <text x="580" y="103" text-anchor="middle" font-size="28" fill="#D97706">→</text>
+
+  <!-- 本番実装フェーズ -->
+  <rect x="650" y="70" width="470" height="50" rx="8" fill="#3B1A0A"/>
+  <text x="885" y="103" text-anchor="middle" font-size="18" font-weight="700" fill="#D97706">本番実装フェーズ</text>
+
+  <!-- Row backgrounds alternating -->
+  <rect x="60" y="138" width="1080" height="72" rx="6" fill="#1A1033" opacity="0.8"/>
+  <rect x="60" y="218" width="1080" height="72" rx="6" fill="#160D27" opacity="0.8"/>
+  <rect x="60" y="298" width="1080" height="72" rx="6" fill="#1A1033" opacity="0.8"/>
+  <rect x="60" y="378" width="1080" height="72" rx="6" fill="#160D27" opacity="0.8"/>
+
+  <!-- Row labels -->
+  <text x="110" y="165" font-size="13" fill="#9CA3AF" font-weight="700">難易度</text>
+  <text x="110" y="245" font-size="13" fill="#9CA3AF" font-weight="700">期間</text>
+  <text x="110" y="325" font-size="13" fill="#9CA3AF" font-weight="700">必要スキル</text>
+  <text x="110" y="405" font-size="13" fill="#9CA3AF" font-weight="700">関与部門</text>
+
+  <!-- Divider line -->
+  <line x1="220" y1="138" x2="220" y2="458" stroke="#3B2F6E" stroke-width="1"/>
+  <line x1="570" y1="130" x2="570" y2="458" stroke="#5B21B6" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+  <line x1="630" y1="130" x2="630" y2="458" stroke="#5B21B6" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+  <line x1="980" y1="138" x2="980" y2="458" stroke="#3B2F6E" stroke-width="1"/>
+
+  <!-- Row 1: 難易度 -->
+  <!-- PoC -->
+  <text x="395" y="162" text-anchor="middle" font-size="15" fill="#A78BFA">理想データ・限定条件下</text>
+  <text x="395" y="184" text-anchor="middle" font-size="13" fill="#7C6FAD">制御された環境で検証</text>
+  <!-- 本番 -->
+  <text x="805" y="162" text-anchor="middle" font-size="15" fill="#D97706">例外処理・連携・権限設計が必要</text>
+  <text x="805" y="184" text-anchor="middle" font-size="13" fill="#9E7B40">リアルデータ・イレギュラー対応</text>
+
+  <!-- Row 2: 期間 -->
+  <!-- PoC -->
+  <text x="395" y="242" text-anchor="middle" font-size="15" fill="#A78BFA">2〜8週間</text>
+  <text x="395" y="264" text-anchor="middle" font-size="13" fill="#7C6FAD">短期集中・成果物はデモ</text>
+  <!-- 本番 -->
+  <text x="805" y="242" text-anchor="middle" font-size="15" fill="#D97706">6〜12週間（スモールスタート）</text>
+  <text x="805" y="264" text-anchor="middle" font-size="13" fill="#9E7B40">全体展開まで含めると数ヶ月</text>
+
+  <!-- Row 3: 必要スキル -->
+  <!-- PoC -->
+  <text x="395" y="322" text-anchor="middle" font-size="15" fill="#A78BFA">AI/MLエンジニアリング</text>
+  <text x="395" y="344" text-anchor="middle" font-size="13" fill="#7C6FAD">技術検証が主目的</text>
+  <!-- 本番 -->
+  <text x="805" y="322" text-anchor="middle" font-size="15" fill="#D97706">技術 ＋ ビジネス理解 ＋ 現場調整</text>
+  <text x="805" y="344" text-anchor="middle" font-size="13" fill="#9E7B40">FDEスキルが必要になる段階</text>
+
+  <!-- Row 4: 関与部門 -->
+  <!-- PoC -->
+  <text x="395" y="402" text-anchor="middle" font-size="15" fill="#A78BFA">IT部門・外部ベンダー</text>
+  <text x="395" y="424" text-anchor="middle" font-size="13" fill="#7C6FAD">少人数・限定的</text>
+  <!-- 本番 -->
+  <text x="805" y="402" text-anchor="middle" font-size="15" fill="#D97706">IT・現場・経営・セキュリティ担当</text>
+  <text x="805" y="424" text-anchor="middle" font-size="13" fill="#9E7B40">多部門を横断するコミュニケーション</text>
+
+  <!-- Center arrow between sections -->
+  <text x="600" y="310" text-anchor="middle" font-size="36" fill="#D97706" opacity="0.7">→</text>
+
+  <!-- Footer note -->
+  <text x="600" y="483" text-anchor="middle" font-size="12" fill="#6B7280">FDEはPoC段階では不要。本番実装フェーズで集中投入するのが最も効果的。</text>
+</svg>
