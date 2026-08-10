@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F9FAFB"/>
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="22" font-weight="700" fill="#374151">文書品質チェックをAIで自動化する3ステップ</text>
+  <!-- STEP 1 Box -->
+  <rect x="40" y="90" width="300" height="340" rx="12" fill="white" stroke="#10B981" stroke-width="2"/>
+  <!-- STEP 1 circle -->
+  <circle cx="190" cy="145" r="40" fill="#10B981"/>
+  <text x="190" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="white">STEP</text>
+  <text x="190" y="159" text-anchor="middle" font-size="24" font-weight="900" fill="white">1</text>
+  <!-- STEP 1 content -->
+  <text x="190" y="218" text-anchor="middle" font-size="17" font-weight="700" fill="#374151">AIツール選定・設定</text>
+  <line x1="70" y1="230" x2="310" y2="230" stroke="#D1FAE5" stroke-width="1"/>
+  <text x="190" y="262" text-anchor="middle" font-size="13" fill="#6B7280">用途に合わせてChatGPT</text>
+  <text x="190" y="280" text-anchor="middle" font-size="13" fill="#6B7280">またはClaude等を選定し</text>
+  <text x="190" y="298" text-anchor="middle" font-size="13" fill="#6B7280">アクセス権限を設定する</text>
+  <!-- Tag -->
+  <rect x="98" y="385" width="184" height="28" rx="14" fill="#ECFDF5"/>
+  <text x="190" y="403" text-anchor="middle" font-size="12" font-weight="700" fill="#059669">所要時間：1〜2日</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="345,255 395,240 395,270" fill="#10B981" opacity="0.8"/>
+  <line x1="340" y1="255" x2="395" y2="255" stroke="#10B981" stroke-width="3"/>
+  <polygon points="455,255 405,240 405,270" fill="#10B981" opacity="0.8"/>
+
+  <!-- STEP 2 Box -->
+  <rect x="450" y="90" width="300" height="340" rx="12" fill="white" stroke="#10B981" stroke-width="2"/>
+  <!-- STEP 2 circle -->
+  <circle cx="600" cy="145" r="40" fill="#10B981"/>
+  <text x="600" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="white">STEP</text>
+  <text x="600" y="159" text-anchor="middle" font-size="24" font-weight="900" fill="white">2</text>
+  <!-- STEP 2 content -->
+  <text x="600" y="218" text-anchor="middle" font-size="17" font-weight="700" fill="#374151">チェック項目のプロンプト化</text>
+  <line x1="480" y1="230" x2="720" y2="230" stroke="#D1FAE5" stroke-width="1"/>
+  <text x="600" y="262" text-anchor="middle" font-size="13" fill="#6B7280">誤字脱字・表記揺れ・数値</text>
+  <text x="600" y="280" text-anchor="middle" font-size="13" fill="#6B7280">矛盾など確認基準をAIへの</text>
+  <text x="600" y="298" text-anchor="middle" font-size="13" fill="#6B7280">指示文として整理・テスト</text>
+  <!-- Tag -->
+  <rect x="508" y="385" width="184" height="28" rx="14" fill="#ECFDF5"/>
+  <text x="600" y="403" text-anchor="middle" font-size="12" font-weight="700" fill="#059669">所要時間：3〜5日</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="755,255 805,240 805,270" fill="#10B981" opacity="0.8"/>
+  <line x1="750" y1="255" x2="805" y2="255" stroke="#10B981" stroke-width="3"/>
+  <polygon points="865,255 815,240 815,270" fill="#10B981" opacity="0.8"/>
+
+  <!-- STEP 3 Box -->
+  <rect x="860" y="90" width="300" height="340" rx="12" fill="white" stroke="#10B981" stroke-width="2"/>
+  <!-- STEP 3 circle -->
+  <circle cx="1010" cy="145" r="40" fill="#374151"/>
+  <text x="1010" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="white">STEP</text>
+  <text x="1010" y="159" text-anchor="middle" font-size="24" font-weight="900" fill="white">3</text>
+  <!-- STEP 3 content -->
+  <text x="1010" y="218" text-anchor="middle" font-size="17" font-weight="700" fill="#374151">定期実行フロー構築</text>
+  <line x1="890" y1="230" x2="1130" y2="230" stroke="#D1FAE5" stroke-width="1"/>
+  <text x="1010" y="262" text-anchor="middle" font-size="13" fill="#6B7280">Make等の自動化ツールで</text>
+  <text x="1010" y="280" text-anchor="middle" font-size="13" fill="#6B7280">ファイル保存→AI確認→レポート</text>
+  <text x="1010" y="298" text-anchor="middle" font-size="13" fill="#6B7280">を自動フロー化して完成</text>
+  <!-- Tag -->
+  <rect x="895" y="385" width="230" height="28" rx="14" fill="#F0FDF4"/>
+  <text x="1010" y="403" text-anchor="middle" font-size="12" font-weight="700" fill="#065F46">所要時間：1〜2週間</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="460" text-anchor="middle" font-size="12" fill="#9CA3AF">スポット外注を活用すれば、初期構築を専門家に依頼して最短3日で稼働可能</text>
+</svg>

@@ -99,6 +99,7 @@
 - [AIロールプレイング研修ツールを導入する手順｜営業・接客力を最大化する3ステップ](https://anken.bisii.co.jp/blog/blog-mmm.html)
 - [給与計算の下準備をAIで自動化する手順｜タイムカード写真の読み取りから就業ルール適用・CSV出力まで3ステップ](https://anken.bisii.co.jp/blog/blog-ppp.html)
 - [ホテル業の電話・メール対応をAIで自動化する手順](https://anken.bisii.co.jp/blog/blog-uuu.html)
+- [文書・資料の品質チェックをAIで自動化する手順](https://anken.bisii.co.jp/blog/blog-www.html)
 
 ### エンジニア向け（ジャンルC・D）
 

@@ -1,0 +1,77 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <clipPath id="tc">
+      <rect x="40" y="62" width="1120" height="412" rx="8"/>
+    </clipPath>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F9FAFB"/>
+  <!-- Title -->
+  <text x="600" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#374151">AI品質チェック：自動化 vs 手動チェック 比較マトリクス</text>
+  <!-- Table outer border -->
+  <rect x="40" y="62" width="1120" height="412" rx="8" fill="white" stroke="#D1FAE5" stroke-width="2"/>
+  <!-- Header row background (clipped to rounded rect) -->
+  <rect x="40" y="62" width="320" height="55" fill="#374151" clip-path="url(#tc)"/>
+  <rect x="360" y="62" width="430" height="55" fill="#10B981" clip-path="url(#tc)"/>
+  <rect x="790" y="62" width="370" height="55" fill="#6B7280" clip-path="url(#tc)"/>
+  <!-- Header text -->
+  <text x="200" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="white">チェック基準</text>
+  <text x="575" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="white">AI自動チェック</text>
+  <text x="975" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="white">手動チェック</text>
+  <!-- Vertical dividers -->
+  <line x1="360" y1="62" x2="360" y2="474" stroke="#D1FAE5" stroke-width="1.5"/>
+  <line x1="790" y1="62" x2="790" y2="474" stroke="#D1FAE5" stroke-width="1.5"/>
+  <!-- Row 1: チェック速度 y=117 to 176 -->
+  <rect x="40" y="117" width="1120" height="59" fill="white"/>
+  <text x="200" y="152" text-anchor="middle" font-size="15" fill="#374151">チェック速度</text>
+  <rect x="366" y="122" width="418" height="49" rx="4" fill="#ECFDF5"/>
+  <text x="575" y="152" text-anchor="middle" font-size="20" font-weight="700" fill="#059669">◎</text>
+  <text x="700" y="152" text-anchor="middle" font-size="13" fill="#065F46">数秒〜数分で完了</text>
+  <text x="975" y="152" text-anchor="middle" font-size="20" font-weight="700" fill="#F59E0B">△</text>
+  <!-- Row 2: 月次コスト y=176 to 235 -->
+  <rect x="40" y="176" width="1120" height="59" fill="#F9FAFB"/>
+  <text x="200" y="211" text-anchor="middle" font-size="15" fill="#374151">月次コスト</text>
+  <rect x="366" y="181" width="418" height="49" rx="4" fill="#ECFDF5"/>
+  <text x="575" y="211" text-anchor="middle" font-size="20" font-weight="700" fill="#059669">◎</text>
+  <text x="700" y="211" text-anchor="middle" font-size="13" fill="#065F46">月額固定・低コスト</text>
+  <text x="975" y="211" text-anchor="middle" font-size="20" font-weight="700" fill="#EF4444">×</text>
+  <!-- Row 3: 精度の均一性 y=235 to 294 -->
+  <rect x="40" y="235" width="1120" height="59" fill="white"/>
+  <text x="200" y="270" text-anchor="middle" font-size="15" fill="#374151">精度の均一性</text>
+  <rect x="366" y="240" width="418" height="49" rx="4" fill="#ECFDF5"/>
+  <text x="575" y="270" text-anchor="middle" font-size="20" font-weight="700" fill="#059669">◎</text>
+  <text x="700" y="270" text-anchor="middle" font-size="13" fill="#065F46">ルール通りに毎回均一</text>
+  <text x="975" y="270" text-anchor="middle" font-size="20" font-weight="700" fill="#F59E0B">△</text>
+  <!-- Row 4: 表記揺れ検出 y=294 to 353 -->
+  <rect x="40" y="294" width="1120" height="59" fill="#F9FAFB"/>
+  <text x="200" y="329" text-anchor="middle" font-size="15" fill="#374151">表記揺れ検出</text>
+  <rect x="366" y="299" width="418" height="49" rx="4" fill="#ECFDF5"/>
+  <text x="575" y="329" text-anchor="middle" font-size="20" font-weight="700" fill="#059669">◎</text>
+  <text x="700" y="329" text-anchor="middle" font-size="13" fill="#065F46">大量の辞書でパターン網羅</text>
+  <text x="975" y="329" text-anchor="middle" font-size="20" font-weight="700" fill="#F59E0B">△</text>
+  <!-- Row 5: 深夜・休日対応 y=353 to 412 -->
+  <rect x="40" y="353" width="1120" height="59" fill="white"/>
+  <text x="200" y="388" text-anchor="middle" font-size="15" fill="#374151">深夜・休日対応</text>
+  <rect x="366" y="358" width="418" height="49" rx="4" fill="#ECFDF5"/>
+  <text x="575" y="388" text-anchor="middle" font-size="20" font-weight="700" fill="#059669">◎</text>
+  <text x="700" y="388" text-anchor="middle" font-size="13" fill="#065F46">24時間365日稼働</text>
+  <text x="975" y="388" text-anchor="middle" font-size="20" font-weight="700" fill="#EF4444">×</text>
+  <!-- Row 6: 同時処理量 y=412 to 474 -->
+  <rect x="40" y="412" width="1120" height="62" fill="#F9FAFB" clip-path="url(#tc)"/>
+  <text x="200" y="448" text-anchor="middle" font-size="15" fill="#374151">同時処理量</text>
+  <rect x="366" y="417" width="418" height="52" rx="4" fill="#ECFDF5" clip-path="url(#tc)"/>
+  <text x="575" y="448" text-anchor="middle" font-size="20" font-weight="700" fill="#059669">◎</text>
+  <text x="700" y="448" text-anchor="middle" font-size="13" fill="#065F46">何百件でも同時処理可</text>
+  <text x="975" y="448" text-anchor="middle" font-size="20" font-weight="700" fill="#EF4444">×</text>
+  <!-- Horizontal dividers -->
+  <line x1="40" y1="176" x2="1160" y2="176" stroke="#D1FAE5" stroke-width="1"/>
+  <line x1="40" y1="235" x2="1160" y2="235" stroke="#D1FAE5" stroke-width="1"/>
+  <line x1="40" y1="294" x2="1160" y2="294" stroke="#D1FAE5" stroke-width="1"/>
+  <line x1="40" y1="353" x2="1160" y2="353" stroke="#D1FAE5" stroke-width="1"/>
+  <line x1="40" y1="412" x2="1160" y2="412" stroke="#D1FAE5" stroke-width="1"/>
+  <!-- Legend -->
+  <text x="820" y="492" text-anchor="middle" font-size="12" fill="#6B7280">◎ 優れている　△ 普通　× 課題あり</text>
+</svg>
