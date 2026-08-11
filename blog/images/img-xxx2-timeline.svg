@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8F8FC" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#1E1B4B">FDE副業獲得から安定収入まで｜6ヶ月タイムライン</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="76" text-anchor="middle" font-size="14" fill="#6B7280">チャネル整備→初案件→リピート受注→月10万円超の安定収入</text>
+
+  <!-- Timeline base line -->
+  <line x1="110" y1="260" x2="1090" y2="260" stroke="#C7D2FE" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Arrow at end -->
+  <polygon points="1090,252 1110,260 1090,268" fill="#4338CA"/>
+
+  <!-- ===== Milestone 1: 0ヶ月目 ===== -->
+  <!-- Connector line up -->
+  <line x1="140" y1="220" x2="140" y2="260" stroke="#4338CA" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- Circle -->
+  <circle cx="140" cy="260" r="14" fill="#4338CA" stroke="#fff" stroke-width="3"/>
+  <text x="140" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text>
+  <!-- Month label below -->
+  <text x="140" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">0ヶ月目</text>
+  <!-- Content box above -->
+  <rect x="50" y="120" width="180" height="88" rx="8" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+  <text x="140" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#312E81">ANKEN登録</text>
+  <text x="140" y="163" text-anchor="middle" font-size="12" fill="#4B5563">プロフィールを</text>
+  <text x="140" y="179" text-anchor="middle" font-size="12" fill="#4B5563">実績ベースで記述</text>
+  <text x="140" y="198" text-anchor="middle" font-size="11" fill="#6366F1">チャネル3つを整備</text>
+
+  <!-- ===== Milestone 2: 1ヶ月目 ===== -->
+  <line x1="380" y1="260" x2="380" y2="340" stroke="#D97706" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="380" cy="260" r="14" fill="#D97706" stroke="#fff" stroke-width="3"/>
+  <text x="380" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text>
+  <text x="380" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#92400E">1ヶ月目</text>
+  <!-- Content box below -->
+  <rect x="295" y="345" width="170" height="88" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="380" y="370" text-anchor="middle" font-size="13" font-weight="700" fill="#78350F">初案件受注</text>
+  <text x="380" y="389" text-anchor="middle" font-size="12" fill="#4B5563">単発1日・</text>
+  <text x="380" y="405" text-anchor="middle" font-size="12" fill="#4B5563">3〜8万円を獲得</text>
+  <text x="380" y="424" text-anchor="middle" font-size="11" fill="#D97706">キックオフで課題合意</text>
+
+  <!-- ===== Milestone 3: 2ヶ月目 ===== -->
+  <line x1="620" y1="220" x2="620" y2="260" stroke="#4338CA" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="620" cy="260" r="14" fill="#4338CA" stroke="#fff" stroke-width="3"/>
+  <text x="620" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">3</text>
+  <text x="620" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#4338CA">2ヶ月目</text>
+  <!-- Content box above -->
+  <rect x="530" y="120" width="180" height="88" rx="8" fill="#EEF2FF" stroke="#818CF8" stroke-width="1.5"/>
+  <text x="620" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#312E81">成果ドキュメント</text>
+  <text x="620" y="163" text-anchor="middle" font-size="12" fill="#4B5563">提出＋次フェーズ</text>
+  <text x="620" y="179" text-anchor="middle" font-size="12" fill="#4B5563">課題を先出し提案</text>
+  <text x="620" y="198" text-anchor="middle" font-size="11" fill="#6366F1">「また頼みたい」を獲得</text>
+
+  <!-- ===== Milestone 4: 3ヶ月目 ===== -->
+  <line x1="860" y1="260" x2="860" y2="340" stroke="#D97706" stroke-width="2" stroke-dasharray="4,3"/>
+  <circle cx="860" cy="260" r="14" fill="#D97706" stroke="#fff" stroke-width="3"/>
+  <text x="860" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4</text>
+  <text x="860" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#92400E">3ヶ月目</text>
+  <!-- Content box below -->
+  <rect x="775" y="345" width="170" height="88" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="860" y="370" text-anchor="middle" font-size="13" font-weight="700" fill="#78350F">リピート受注</text>
+  <text x="860" y="389" text-anchor="middle" font-size="12" fill="#4B5563">月2〜3本の</text>
+  <text x="860" y="405" text-anchor="middle" font-size="12" fill="#4B5563">安定受注ベース</text>
+  <text x="860" y="424" text-anchor="middle" font-size="11" fill="#D97706">月1チェックイン定着</text>
+
+  <!-- ===== Milestone 5: 6ヶ月目 ===== -->
+  <line x1="1060" y1="200" x2="1060" y2="260" stroke="#059669" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- Larger circle for final milestone -->
+  <circle cx="1060" cy="260" r="18" fill="#059669" stroke="#fff" stroke-width="3"/>
+  <text x="1060" y="266" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">✓</text>
+  <text x="1060" y="293" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">6ヶ月目</text>
+  <!-- Content box above (wider, highlighted) -->
+  <rect x="950" y="100" width="200" height="88" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="1050" y="125" text-anchor="middle" font-size="14" font-weight="800" fill="#065F46">月10万円超</text>
+  <text x="1050" y="145" text-anchor="middle" font-size="12" fill="#4B5563">安定収入達成</text>
+  <text x="1050" y="162" text-anchor="middle" font-size="12" fill="#4B5563">リファラル紹介も</text>
+  <text x="1050" y="178" text-anchor="middle" font-size="11" fill="#059669">複数社からのオファー</text>
+
+  <!-- Footer note -->
+  <text x="600" y="474" text-anchor="middle" font-size="12" fill="#9CA3AF">※ 上記は平均的な進行例。案件規模・稼働日数により前後します。</text>
+
+</svg>

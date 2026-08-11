@@ -1,0 +1,117 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8F8FC" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="21" font-weight="700" fill="#1E1B4B">FDE副業タスク種別｜難易度・単価・継続発注率マトリクス</text>
+  <text x="600" y="72" text-anchor="middle" font-size="13" fill="#6B7280">自分の強みに合ったタスクを選ぶと、継続受注につながりやすい</text>
+
+  <!-- Table outer border -->
+  <rect x="60" y="90" width="1080" height="370" rx="10" fill="#fff" stroke="#C7D2FE" stroke-width="2"/>
+
+  <!-- Header row background -->
+  <rect x="60" y="90" width="1080" height="52" rx="10" fill="#4338CA"/>
+  <!-- Fix bottom corners of header (not rounded) -->
+  <rect x="60" y="118" width="1080" height="24" fill="#4338CA"/>
+
+  <!-- Header text -->
+  <text x="200" y="122" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">タスク種別</text>
+  <text x="490" y="122" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">難易度</text>
+  <text x="720" y="122" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">単価目安</text>
+  <text x="970" y="122" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">継続発注率</text>
+
+  <!-- Vertical dividers in header -->
+  <line x1="380" y1="90" x2="380" y2="142" stroke="#6366F1" stroke-width="1"/>
+  <line x1="600" y1="90" x2="600" y2="142" stroke="#6366F1" stroke-width="1"/>
+  <line x1="840" y1="90" x2="840" y2="142" stroke="#6366F1" stroke-width="1"/>
+
+  <!-- ===== ROW 1: AIツール設定・PoC支援 ===== -->
+  <rect x="60" y="142" width="1080" height="74" fill="#EEF2FF"/>
+  <!-- Row dividers -->
+  <line x1="380" y1="142" x2="380" y2="216" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="600" y1="142" x2="600" y2="216" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="840" y1="142" x2="840" y2="216" stroke="#C7D2FE" stroke-width="1"/>
+  <!-- Task name -->
+  <text x="200" y="172" text-anchor="middle" font-size="14" font-weight="700" fill="#312E81">AIツール設定</text>
+  <text x="200" y="192" text-anchor="middle" font-size="13" fill="#4338CA">PoC支援</text>
+  <!-- Difficulty: ★★☆☆ -->
+  <text x="420" y="165" font-size="18" fill="#D97706">★★</text>
+  <text x="460" y="165" font-size="18" fill="#D1D5DB">★★</text>
+  <text x="490" y="185" text-anchor="middle" font-size="12" fill="#6B7280">やや易しい</text>
+  <!-- Price -->
+  <text x="720" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">3〜5万円</text>
+  <text x="720" y="188" text-anchor="middle" font-size="12" fill="#6B7280">/ 1日稼働</text>
+  <!-- Repeat rate bar -->
+  <rect x="870" y="163" width="180" height="16" rx="8" fill="#E5E7EB"/>
+  <rect x="870" y="163" width="126" height="16" rx="8" fill="#D97706"/>
+  <text x="970" y="197" text-anchor="middle" font-size="12" fill="#92400E">70%（高い）</text>
+
+  <!-- ===== ROW 2: 業務フロー設計・プロトタイプ ===== -->
+  <rect x="60" y="216" width="1080" height="74" fill="#fff"/>
+  <line x1="380" y1="216" x2="380" y2="290" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="600" y1="216" x2="600" y2="290" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="840" y1="216" x2="840" y2="290" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="200" y="246" text-anchor="middle" font-size="14" font-weight="700" fill="#312E81">業務フロー設計</text>
+  <text x="200" y="266" text-anchor="middle" font-size="13" fill="#4338CA">プロトタイプ作成</text>
+  <!-- Difficulty: ★★★☆ -->
+  <text x="420" y="239" font-size="18" fill="#D97706">★★★</text>
+  <text x="474" y="239" font-size="18" fill="#D1D5DB">★</text>
+  <text x="490" y="260" text-anchor="middle" font-size="12" fill="#6B7280">中程度</text>
+  <!-- Price -->
+  <text x="720" y="243" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">4〜6万円</text>
+  <text x="720" y="263" text-anchor="middle" font-size="12" fill="#6B7280">/ 1日稼働</text>
+  <!-- Repeat rate bar -->
+  <rect x="870" y="238" width="180" height="16" rx="8" fill="#E5E7EB"/>
+  <rect x="870" y="238" width="153" height="16" rx="8" fill="#4338CA"/>
+  <text x="970" y="271" text-anchor="middle" font-size="12" fill="#312E81">85%（非常に高い）</text>
+
+  <!-- ===== ROW 3: 内製ツール開発 ===== -->
+  <rect x="60" y="290" width="1080" height="74" fill="#EEF2FF"/>
+  <line x1="380" y1="290" x2="380" y2="364" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="600" y1="290" x2="600" y2="364" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="840" y1="290" x2="840" y2="364" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="200" y="320" text-anchor="middle" font-size="14" font-weight="700" fill="#312E81">内製ツール開発</text>
+  <text x="200" y="340" text-anchor="middle" font-size="13" fill="#4338CA">（小規模スクリプト等）</text>
+  <!-- Difficulty: ★★★★ -->
+  <text x="414" y="313" font-size="18" fill="#D97706">★★★★</text>
+  <text x="490" y="335" text-anchor="middle" font-size="12" fill="#6B7280">やや難しい</text>
+  <!-- Price -->
+  <text x="720" y="317" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">5〜8万円</text>
+  <text x="720" y="337" text-anchor="middle" font-size="12" fill="#6B7280">/ 1日稼働</text>
+  <!-- Repeat rate bar -->
+  <rect x="870" y="312" width="180" height="16" rx="8" fill="#E5E7EB"/>
+  <rect x="870" y="312" width="108" height="16" rx="8" fill="#D97706"/>
+  <text x="970" y="345" text-anchor="middle" font-size="12" fill="#92400E">60%（中程度）</text>
+
+  <!-- ===== ROW 4: 研修・定着支援 ===== -->
+  <rect x="60" y="364" width="1080" height="74" fill="#fff"/>
+  <!-- Bottom rounded corners fix -->
+  <rect x="60" y="420" width="1080" height="16" fill="#fff"/>
+  <rect x="60" y="420" width="1080" height="20" rx="10" fill="#fff"/>
+  <line x1="380" y1="364" x2="380" y2="460" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="600" y1="364" x2="600" y2="460" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="840" y1="364" x2="840" y2="460" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="200" y="394" text-anchor="middle" font-size="14" font-weight="700" fill="#312E81">AI研修・定着支援</text>
+  <text x="200" y="414" text-anchor="middle" font-size="13" fill="#4338CA">社内展開サポート</text>
+  <!-- Difficulty: ★★☆☆ -->
+  <text x="420" y="387" font-size="18" fill="#D97706">★★</text>
+  <text x="460" y="387" font-size="18" fill="#D1D5DB">★★</text>
+  <text x="490" y="408" text-anchor="middle" font-size="12" fill="#6B7280">やや易しい</text>
+  <!-- Price -->
+  <text x="720" y="391" text-anchor="middle" font-size="15" font-weight="700" fill="#065F46">3〜5万円</text>
+  <text x="720" y="411" text-anchor="middle" font-size="12" fill="#6B7280">/ 半日〜1日</text>
+  <!-- Repeat rate bar -->
+  <rect x="870" y="386" width="180" height="16" rx="8" fill="#E5E7EB"/>
+  <rect x="870" y="386" width="162" height="16" rx="8" fill="#4338CA"/>
+  <text x="970" y="419" text-anchor="middle" font-size="12" fill="#312E81">90%（最高水準）</text>
+
+  <!-- Horizontal row dividers -->
+  <line x1="62" y1="216" x2="1138" y2="216" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="62" y1="290" x2="1138" y2="290" stroke="#C7D2FE" stroke-width="1"/>
+  <line x1="62" y1="364" x2="1138" y2="364" stroke="#C7D2FE" stroke-width="1"/>
+
+  <!-- Footer note -->
+  <text x="600" y="478" text-anchor="middle" font-size="12" fill="#9CA3AF">※ 単価・継続発注率はANKEN掲載案件の傾向をもとにした目安です。スキルセット・案件規模により変動します。</text>
+
+</svg>

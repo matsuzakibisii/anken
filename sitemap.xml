@@ -498,6 +498,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://anken.bisii.co.jp/blog/blog-xxx.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://anken.bisii.co.jp/blog/blog-www.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
