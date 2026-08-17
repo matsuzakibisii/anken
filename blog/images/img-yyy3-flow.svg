@@ -1,0 +1,110 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F0F9FF" rx="0"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="21" font-weight="700" fill="#1E293B">スポット外注でAIエージェントを構築する3ステップ</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="72" text-anchor="middle" font-size="13" fill="#64748B">要件定義からPoC構築・現場展開まで一貫して依頼できる</text>
+
+  <!-- ===== STEP 1 box ===== -->
+  <rect x="40" y="100" width="330" height="350" rx="14" fill="#ffffff" stroke="#3B82F6" stroke-width="2.5"/>
+  <!-- step badge -->
+  <rect x="40" y="100" width="330" height="58" rx="14" fill="#3B82F6"/>
+  <rect x="40" y="142" width="330" height="16" fill="#3B82F6"/>
+  <text x="56" y="118" font-size="12" fill="#BFDBFE" font-weight="700">STEP</text>
+  <text x="56" y="143" font-size="28" font-weight="900" fill="#ffffff">1</text>
+  <text x="98" y="127" font-size="15" font-weight="700" fill="#ffffff">要件定義・データ整備</text>
+  <text x="98" y="148" font-size="12" fill="#BFDBFE">スポット外注で先行させる</text>
+
+  <!-- items -->
+  <rect x="60" y="172" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="80" y="193" font-size="12" fill="#1D4ED8" font-weight="700">問い合わせ種別の棚卸し</text>
+  <text x="80" y="213" font-size="11" fill="#374151">AIで自動対応できる割合を判定（目安60〜70%）</text>
+
+  <rect x="60" y="234" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="80" y="255" font-size="12" fill="#1D4ED8" font-weight="700">RAGデータ範囲の設計</text>
+  <text x="80" y="275" font-size="11" fill="#374151">マニュアル・FAQ・対応履歴を取り込み範囲に設定</text>
+
+  <rect x="60" y="296" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="80" y="317" font-size="12" fill="#1D4ED8" font-weight="700">マスキング方針の定義</text>
+  <text x="80" y="337" font-size="11" fill="#374151">個人情報・アカウント情報の出力制御ルールを策定</text>
+
+  <rect x="60" y="358" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="80" y="379" font-size="12" fill="#1D4ED8" font-weight="700">回答根拠の明示要件を定義</text>
+  <text x="80" y="399" font-size="11" fill="#374151">参照元ドキュメント名・URLの表示仕様を決定</text>
+
+  <text x="205" y="448" text-anchor="middle" font-size="12" fill="#94A3B8">期間目安：1〜3日</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="374" y1="274" x2="422" y2="274" stroke="#3B82F6" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== STEP 2 box ===== -->
+  <rect x="435" y="100" width="330" height="350" rx="14" fill="#ffffff" stroke="#3B82F6" stroke-width="2.5"/>
+  <rect x="435" y="100" width="330" height="58" rx="14" fill="#3B82F6"/>
+  <rect x="435" y="142" width="330" height="16" fill="#3B82F6"/>
+  <text x="451" y="118" font-size="12" fill="#BFDBFE" font-weight="700">STEP</text>
+  <text x="451" y="143" font-size="28" font-weight="900" fill="#ffffff">2</text>
+  <text x="493" y="127" font-size="15" font-weight="700" fill="#ffffff">PoC構築・精度検証</text>
+  <text x="493" y="148" font-size="12" fill="#BFDBFE">スポット外注で実装〜数値検証</text>
+
+  <!-- items -->
+  <rect x="455" y="172" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="475" y="193" font-size="12" fill="#1D4ED8" font-weight="700">技術選定の比較提案を受ける</text>
+  <text x="475" y="213" font-size="11" fill="#374151">LLM API連携 vs パッケージ製品をフラットに比較</text>
+
+  <rect x="455" y="234" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="475" y="255" font-size="12" fill="#1D4ED8" font-weight="700">オンプレ / クラウド選定</text>
+  <text x="475" y="275" font-size="11" fill="#374151">セキュリティ要件と予算から最適構成を提案</text>
+
+  <rect x="455" y="296" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="475" y="317" font-size="12" fill="#1D4ED8" font-weight="700">PoC実装・テスト稼働</text>
+  <text x="475" y="337" font-size="11" fill="#374151">2週間の試験運用でマスキング動作を確認</text>
+
+  <rect x="455" y="358" width="290" height="52" rx="8" fill="#EFF6FF"/>
+  <text x="475" y="379" font-size="12" fill="#1D4ED8" font-weight="700">精度を数値で検証・報告</text>
+  <text x="475" y="399" font-size="11" fill="#374151">自動回答率60%超・OK判定率85%超が本導入目安</text>
+
+  <text x="600" y="448" text-anchor="middle" font-size="12" fill="#94A3B8">期間目安：2〜4週間</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="769" y1="274" x2="817" y2="274" stroke="#3B82F6" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== STEP 3 box ===== -->
+  <rect x="830" y="100" width="330" height="350" rx="14" fill="#ffffff" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="830" y="100" width="330" height="58" rx="14" fill="#EA580C"/>
+  <rect x="830" y="142" width="330" height="16" fill="#EA580C"/>
+  <text x="846" y="118" font-size="12" fill="#FED7AA" font-weight="700">STEP</text>
+  <text x="846" y="143" font-size="28" font-weight="900" fill="#ffffff">3</text>
+  <text x="888" y="127" font-size="15" font-weight="700" fill="#ffffff">現場展開・ハンドオフ</text>
+  <text x="888" y="148" font-size="12" fill="#FED7AA">スポット外注で引き渡し完了</text>
+
+  <!-- items -->
+  <rect x="850" y="172" width="290" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="870" y="193" font-size="12" fill="#9A3412" font-weight="700">利用手順ガイドの整備</text>
+  <text x="870" y="213" font-size="11" fill="#374151">従業員向けの使い方・エスカレーション手順を文書化</text>
+
+  <rect x="850" y="234" width="290" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="870" y="255" font-size="12" fill="#9A3412" font-weight="700">RAGデータ更新ルールの文書化</text>
+  <text x="870" y="275" font-size="11" fill="#374151">非エンジニアが更新できる手順書として納品</text>
+
+  <rect x="850" y="296" width="290" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="870" y="317" font-size="12" fill="#9A3412" font-weight="700">本番リリース・動作確認</text>
+  <text x="870" y="337" font-size="11" fill="#374151">社内Slack・ポータル等へ組み込み・全社展開</text>
+
+  <rect x="850" y="358" width="290" height="52" rx="8" fill="#FFF7ED"/>
+  <text x="870" y="379" font-size="12" fill="#9A3412" font-weight="700">継続チューニング体制を確立</text>
+  <text x="870" y="399" font-size="11" fill="#374151">月1〜2日のスポット外注でプロンプト・RAD最適化</text>
+
+  <text x="995" y="448" text-anchor="middle" font-size="12" fill="#94A3B8">期間目安：1〜2週間</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+    text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#FAFAF7"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="22" font-weight="900" fill="#1A1A1A">FDE初回発注ブリーフ｜5項目チェックリスト</text>
+  <text x="600" y="70" text-anchor="middle" font-size="14" fill="#6B7280">これを用意するだけで、FDEは初日から動き出せる</text>
+
+  <!-- Header row -->
+  <rect x="60" y="90" width="510" height="44" rx="6" fill="#065F46"/>
+  <text x="315" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">項目</text>
+  <rect x="590" y="90" width="560" height="44" rx="6" fill="#065F46"/>
+  <text x="870" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">具体的に書くこと（例）</text>
+
+  <!-- Row 1 -->
+  <rect x="60" y="142" width="510" height="62" rx="0" fill="#F0FDF4" stroke="#065F46" stroke-width="1"/>
+  <rect x="60" y="142" width="510" height="62" fill="none" stroke="#D1FAE5" stroke-width="0"/>
+  <!-- Checkbox -->
+  <rect x="80" y="158" width="24" height="24" rx="5" fill="#fff" stroke="#065F46" stroke-width="2"/>
+  <polyline points="85,170 91,177 103,163" stroke="#065F46" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="168" font-size="13" font-weight="700" fill="#065F46">① 解決したい業務課題</text>
+  <text x="120" y="187" font-size="12" fill="#374151">現状どんな問題が起きているか（時間・コスト・ミス）</text>
+
+  <rect x="590" y="142" width="560" height="62" fill="#FEFEF5" stroke="#D97706" stroke-width="1"/>
+  <text x="610" y="164" font-size="12" fill="#374151">「月次レポートを手作業で集計しており毎月10時間かかっている。</text>
+  <text x="610" y="183" font-size="12" fill="#374151">自動化してExcelからGoogleスプレッドシートに移行したい」</text>
+
+  <!-- Row 2 -->
+  <rect x="60" y="208" width="510" height="62" fill="#F0FDF4" stroke="#065F46" stroke-width="1"/>
+  <rect x="80" y="224" width="24" height="24" rx="5" fill="#fff" stroke="#065F46" stroke-width="2"/>
+  <polyline points="85,236 91,243 103,229" stroke="#065F46" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="234" font-size="13" font-weight="700" fill="#065F46">② 現在使っているツール・環境</text>
+  <text x="120" y="253" font-size="12" fill="#374151">利用中のSaaS・OS・API有無・社内システムとの連携要件</text>
+
+  <rect x="590" y="208" width="560" height="62" fill="#FEFEF5" stroke="#D97706" stroke-width="1"/>
+  <text x="610" y="230" font-size="12" fill="#374151">「Google Workspace（Sheets/Drive）、kintone、</text>
+  <text x="610" y="249" font-size="12" fill="#374151">Windows PC環境。社内DBへのAPIアクセス不可」</text>
+
+  <!-- Row 3 -->
+  <rect x="60" y="274" width="510" height="62" fill="#F0FDF4" stroke="#065F46" stroke-width="1"/>
+  <rect x="80" y="290" width="24" height="24" rx="5" fill="#fff" stroke="#065F46" stroke-width="2"/>
+  <polyline points="85,302 91,309 103,295" stroke="#065F46" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="300" font-size="13" font-weight="700" fill="#065F46">③ 完了の定義（完了条件）</text>
+  <text x="120" y="319" font-size="12" fill="#374151">「何ができたらOK」を数値・動作で具体的に定義する</text>
+
+  <rect x="590" y="274" width="560" height="62" fill="#FEFEF5" stroke="#D97706" stroke-width="1"/>
+  <text x="610" y="296" font-size="12" fill="#374151">「Sheetsのボタンを1回クリックするだけで、</text>
+  <text x="610" y="315" font-size="12" fill="#374151">指定フォルダの全ファイルから集計が完了する状態」</text>
+
+  <!-- Row 4 -->
+  <rect x="60" y="340" width="510" height="62" fill="#F0FDF4" stroke="#065F46" stroke-width="1"/>
+  <rect x="80" y="356" width="24" height="24" rx="5" fill="#fff" stroke="#D97706" stroke-width="2"/>
+  <text x="120" y="366" font-size="13" font-weight="700" fill="#065F46">④ 稼働日数・期日・予算感</text>
+  <text x="120" y="385" font-size="12" fill="#374151">稼働日数の目安、希望納期、予算の上限</text>
+
+  <rect x="590" y="340" width="560" height="62" fill="#FEFEF5" stroke="#D97706" stroke-width="1"/>
+  <text x="610" y="362" font-size="12" fill="#374151">「2日稼働・来月末までに動くもので十分。</text>
+  <text x="610" y="381" font-size="12" fill="#374151">予算は10〜15万円を想定」</text>
+
+  <!-- Row 5 -->
+  <rect x="60" y="406" width="510" height="62" rx="0" fill="#FFF7ED" stroke="#D97706" stroke-width="1.5"/>
+  <rect x="80" y="422" width="24" height="24" rx="5" fill="#fff" stroke="#D97706" stroke-width="2"/>
+  <text x="120" y="432" font-size="13" font-weight="700" fill="#D97706">⑤ 社内の窓口担当者と権限</text>
+  <text x="120" y="451" font-size="12" fill="#374151">FDEが質問・確認できる相手、アクセス権限の承認者</text>
+
+  <rect x="590" y="406" width="560" height="62" fill="#FFF7ED" stroke="#D97706" stroke-width="1.5"/>
+  <text x="610" y="428" font-size="12" fill="#374151">「担当：経営企画部 田中（Slack連絡OK）</text>
+  <text x="610" y="447" font-size="12" fill="#374151">Sheetsアクセス権限は田中が付与できる」</text>
+
+  <!-- Legend -->
+  <rect x="60" y="475" width="14" height="14" rx="3" fill="#065F46" opacity="0.15" stroke="#065F46" stroke-width="1"/>
+  <text x="80" y="487" font-size="11" fill="#065F46">FDE側が特に重視する項目</text>
+  <rect x="280" y="475" width="14" height="14" rx="3" fill="#FFF7ED" stroke="#D97706" stroke-width="1.5"/>
+  <text x="300" y="487" font-size="11" fill="#D97706">最初は曖昧でも相談しながら決められる項目</text>
+</svg>

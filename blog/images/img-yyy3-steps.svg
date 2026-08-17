@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#312E81">FDE活用でAI投資ROIを最大化する3ステップ</text>
+
+  <!-- Step connector lines (behind boxes) -->
+  <line x1="310" y1="230" x2="400" y2="230" stroke="#EA580C" stroke-width="3" stroke-dasharray="6,3"/>
+  <line x1="710" y1="230" x2="800" y2="230" stroke="#EA580C" stroke-width="3" stroke-dasharray="6,3"/>
+
+  <!-- Arrow heads -->
+  <polygon points="400,220 425,230 400,240" fill="#EA580C"/>
+  <polygon points="800,220 825,230 800,240" fill="#EA580C"/>
+
+  <!-- STEP 1 Box -->
+  <rect x="60" y="90" width="250" height="280" rx="12" fill="#FFFFFF" stroke="#312E81" stroke-width="2.5"/>
+  <rect x="60" y="90" width="250" height="52" rx="12" fill="#312E81"/>
+  <rect x="60" y="128" width="250" height="14" fill="#312E81"/>
+  <text x="185" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#EA580C">STEP 1</text>
+
+  <!-- Step 1 icon: magnifying glass -->
+  <circle cx="185" cy="185" r="30" fill="#EEF0FF" stroke="#312E81" stroke-width="2"/>
+  <circle cx="180" cy="180" r="13" fill="none" stroke="#312E81" stroke-width="2.5"/>
+  <line x1="190" y1="190" x2="200" y2="200" stroke="#312E81" stroke-width="2.5" stroke-linecap="round"/>
+
+  <text x="185" y="232" text-anchor="middle" font-size="17" font-weight="700" fill="#312E81">ROI指標を設定する</text>
+  <text x="185" y="258" text-anchor="middle" font-size="13" fill="#4B5563">「何をもって成功とするか」</text>
+  <text x="185" y="278" text-anchor="middle" font-size="13" fill="#4B5563">を数値で定義する</text>
+  <text x="185" y="310" text-anchor="middle" font-size="12" fill="#6B7280">例：処理時間50%削減</text>
+  <text x="185" y="330" text-anchor="middle" font-size="12" fill="#6B7280">コスト月30万円削減</text>
+  <text x="185" y="350" text-anchor="middle" font-size="12" fill="#6B7280">エラー率1%未満</text>
+
+  <!-- STEP 2 Box -->
+  <rect x="430" y="90" width="340" height="280" rx="12" fill="#FFFFFF" stroke="#312E81" stroke-width="2.5"/>
+  <rect x="430" y="90" width="340" height="52" rx="12" fill="#312E81"/>
+  <rect x="430" y="128" width="340" height="14" fill="#312E81"/>
+  <text x="600" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#EA580C">STEP 2</text>
+
+  <!-- Step 2 icon: person + wrench -->
+  <circle cx="590" cy="180" r="13" fill="none" stroke="#312E81" stroke-width="2.5"/>
+  <line x1="590" y1="193" x2="590" y2="215" stroke="#312E81" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="205" x2="577" y2="220" stroke="#312E81" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="205" x2="603" y2="220" stroke="#312E81" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- wrench -->
+  <line x1="615" y1="170" x2="630" y2="185" stroke="#EA580C" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="612" cy="168" r="6" fill="none" stroke="#EA580C" stroke-width="2.5"/>
+
+  <text x="600" y="240" text-anchor="middle" font-size="17" font-weight="700" fill="#312E81">FDEをスポット外注でアサイン</text>
+  <text x="600" y="266" text-anchor="middle" font-size="13" fill="#4B5563">AI実装と現場定着の両方を</text>
+  <text x="600" y="286" text-anchor="middle" font-size="13" fill="#4B5563">担える人材を単発で確保する</text>
+  <text x="600" y="318" text-anchor="middle" font-size="12" fill="#6B7280">PoC→本番実装まで一貫支援</text>
+  <text x="600" y="338" text-anchor="middle" font-size="12" fill="#6B7280">最短1週間でアサイン可能</text>
+  <text x="600" y="358" text-anchor="middle" font-size="12" fill="#6B7280">タスク単位で費用を最小化</text>
+
+  <!-- STEP 3 Box -->
+  <rect x="890" y="90" width="250" height="280" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="3"/>
+  <rect x="890" y="90" width="250" height="52" rx="12" fill="#EA580C"/>
+  <rect x="890" y="128" width="250" height="14" fill="#EA580C"/>
+  <text x="1015" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">STEP 3</text>
+
+  <!-- Step 3 icon: bar chart (ROI visualized) -->
+  <rect x="990" y="190" width="18" height="24" rx="2" fill="#312E81"/>
+  <rect x="1015" y="172" width="18" height="42" rx="2" fill="#312E81"/>
+  <rect x="1040" y="158" width="18" height="56" rx="2" fill="#EA580C"/>
+  <line x1="982" y1="214" x2="1068" y2="214" stroke="#312E81" stroke-width="2"/>
+
+  <text x="1015" y="237" text-anchor="middle" font-size="17" font-weight="700" fill="#312E81">ROIを計測・改善サイクル</text>
+  <text x="1015" y="263" text-anchor="middle" font-size="13" fill="#4B5563">設定した指標を継続モニタリング</text>
+  <text x="1015" y="283" text-anchor="middle" font-size="13" fill="#4B5563">改善を繰り返して効果を最大化</text>
+  <text x="1015" y="315" text-anchor="middle" font-size="12" fill="#6B7280">月次でKPIレポート確認</text>
+  <text x="1015" y="335" text-anchor="middle" font-size="12" fill="#6B7280">改善点はFDEに追加依頼</text>
+  <text x="1015" y="355" text-anchor="middle" font-size="12" fill="#6B7280">ROI実績を次投資に活用</text>
+
+  <!-- Bottom label -->
+  <rect x="380" y="405" width="440" height="44" rx="22" fill="#312E81"/>
+  <text x="600" y="432" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">ANKENなら最短1週間でFDEをアサイン｜無料相談受付中</text>
+
+  <!-- Footer note -->
+  <text x="600" y="468" text-anchor="middle" font-size="12" fill="#6B7280">スポット外注で小さく始め、効果を確認しながらAI投資のROIを積み上げる</text>
+</svg>

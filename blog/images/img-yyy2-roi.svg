@@ -1,0 +1,99 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8F7FF"/>
+
+  <!-- Title -->
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="700" fill="#312E81">AI投資ROI評価マトリクス｜FDE活用による費用対効果チェック</text>
+
+  <!-- Table header background -->
+  <rect x="60" y="70" width="1080" height="52" rx="6" fill="#312E81"/>
+
+  <!-- Header text -->
+  <text x="200" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">評価項目</text>
+  <text x="500" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">FDE活用なし（従来型）</text>
+  <text x="760" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">FDE活用あり（スポット外注）</text>
+  <text x="1040" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#EA580C">ROI改善度</text>
+
+  <!-- Vertical dividers in header -->
+  <line x1="340" y1="70" x2="340" y2="122" stroke="#4C46A0" stroke-width="1"/>
+  <line x1="640" y1="70" x2="640" y2="122" stroke="#4C46A0" stroke-width="1"/>
+  <line x1="900" y1="70" x2="900" y2="122" stroke="#4C46A0" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="60" y="122" width="1080" height="58" fill="#FFFFFF"/>
+  <rect x="60" y="122" width="280" height="58" fill="#EEF0FF"/>
+  <text x="200" y="148" text-anchor="middle" font-size="15" font-weight="700" fill="#312E81">導入コスト</text>
+  <text x="200" y="168" text-anchor="middle" font-size="13" fill="#312E81">（初期費用）</text>
+  <text x="490" y="148" text-anchor="middle" font-size="14" fill="#4B5563">月額50〜200万円</text>
+  <text x="490" y="168" text-anchor="middle" font-size="13" fill="#6B7280">（ベンダー固定費）</text>
+  <text x="770" y="148" text-anchor="middle" font-size="14" fill="#312E81">タスク単位で単発依頼</text>
+  <text x="770" y="168" text-anchor="middle" font-size="13" fill="#312E81">10〜50万円/プロジェクト</text>
+  <text x="1040" y="157" text-anchor="middle" font-size="22" font-weight="700" fill="#EA580C">↓ 60〜80%</text>
+
+  <!-- Row divider -->
+  <line x1="60" y1="180" x2="1140" y2="180" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Row 2 -->
+  <rect x="60" y="180" width="1080" height="58" fill="#FAFAFA"/>
+  <rect x="60" y="180" width="280" height="58" fill="#EEF0FF"/>
+  <text x="200" y="206" text-anchor="middle" font-size="15" font-weight="700" fill="#312E81">稼働開始まで</text>
+  <text x="200" y="226" text-anchor="middle" font-size="13" fill="#312E81">（リードタイム）</text>
+  <text x="490" y="206" text-anchor="middle" font-size="14" fill="#4B5563">3〜6ヶ月（要件定義〜開発）</text>
+  <text x="490" y="226" text-anchor="middle" font-size="13" fill="#6B7280">採用なら6〜12ヶ月</text>
+  <text x="770" y="206" text-anchor="middle" font-size="14" fill="#312E81">最短1週間でアサイン</text>
+  <text x="770" y="226" text-anchor="middle" font-size="13" fill="#312E81">即日稼働も可能</text>
+  <text x="1040" y="216" text-anchor="middle" font-size="22" font-weight="700" fill="#EA580C">↓ 90%</text>
+
+  <!-- Row divider -->
+  <line x1="60" y1="238" x2="1140" y2="238" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <rect x="60" y="238" width="1080" height="58" fill="#FFFFFF"/>
+  <rect x="60" y="238" width="280" height="58" fill="#EEF0FF"/>
+  <text x="200" y="264" text-anchor="middle" font-size="15" font-weight="700" fill="#312E81">AI定着率</text>
+  <text x="200" y="284" text-anchor="middle" font-size="13" fill="#312E81">（現場浸透）</text>
+  <text x="490" y="264" text-anchor="middle" font-size="14" fill="#4B5563">PoC止まりが70%超</text>
+  <text x="490" y="284" text-anchor="middle" font-size="13" fill="#6B7280">本番導入に失敗するケースが多数</text>
+  <text x="770" y="264" text-anchor="middle" font-size="14" fill="#312E81">現場密着でPoCを本番実装へ</text>
+  <text x="770" y="284" text-anchor="middle" font-size="13" fill="#312E81">定着率が大幅改善</text>
+  <text x="1040" y="274" text-anchor="middle" font-size="22" font-weight="700" fill="#EA580C">↑ 3倍</text>
+
+  <!-- Row divider -->
+  <line x1="60" y1="296" x2="1140" y2="296" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Row 4 -->
+  <rect x="60" y="296" width="1080" height="58" fill="#FAFAFA"/>
+  <rect x="60" y="296" width="280" height="58" fill="#EEF0FF"/>
+  <text x="200" y="322" text-anchor="middle" font-size="15" font-weight="700" fill="#312E81">ROI回収期間</text>
+  <text x="200" y="342" text-anchor="middle" font-size="13" fill="#312E81">（投資回収）</text>
+  <text x="490" y="322" text-anchor="middle" font-size="14" fill="#4B5563">18〜36ヶ月</text>
+  <text x="490" y="342" text-anchor="middle" font-size="13" fill="#6B7280">（定着失敗で回収できないことも）</text>
+  <text x="770" y="322" text-anchor="middle" font-size="14" fill="#312E81">3〜6ヶ月で回収可能</text>
+  <text x="770" y="342" text-anchor="middle" font-size="13" fill="#312E81">小さく始めて効果検証</text>
+  <text x="1040" y="332" text-anchor="middle" font-size="22" font-weight="700" fill="#EA580C">↓ 6分の1</text>
+
+  <!-- Row divider -->
+  <line x1="60" y1="354" x2="1140" y2="354" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Row 5 -->
+  <rect x="60" y="354" width="1080" height="58" fill="#FFFFFF"/>
+  <rect x="60" y="354" width="280" height="58" fill="#EEF0FF"/>
+  <text x="200" y="380" text-anchor="middle" font-size="15" font-weight="700" fill="#312E81">スケーラビリティ</text>
+  <text x="200" y="400" text-anchor="middle" font-size="13" fill="#312E81">（拡張性）</text>
+  <text x="490" y="380" text-anchor="middle" font-size="14" fill="#4B5563">固定契約でスケールが困難</text>
+  <text x="490" y="400" text-anchor="middle" font-size="13" fill="#6B7280">追加費用が高額になりやすい</text>
+  <text x="770" y="380" text-anchor="middle" font-size="14" fill="#312E81">必要な時だけ必要な分だけ</text>
+  <text x="770" y="400" text-anchor="middle" font-size="13" fill="#312E81">タスク単位で柔軟に拡張</text>
+  <text x="1040" y="390" text-anchor="middle" font-size="22" font-weight="700" fill="#EA580C">◎</text>
+
+  <!-- Table outer border -->
+  <rect x="60" y="70" width="1080" height="342" rx="6" fill="none" stroke="#312E81" stroke-width="2"/>
+
+  <!-- Vertical dividers -->
+  <line x1="340" y1="122" x2="340" y2="412" stroke="#D1D5DB" stroke-width="1"/>
+  <line x1="640" y1="122" x2="640" y2="412" stroke="#D1D5DB" stroke-width="1"/>
+  <line x1="900" y1="122" x2="900" y2="412" stroke="#D1D5DB" stroke-width="1"/>
+
+  <!-- Bottom note -->
+  <text x="600" y="465" text-anchor="middle" font-size="13" fill="#6B7280">※ 数値はANKEN支援実績（国内200社以上）に基づく目安。業種・規模により異なります。</text>
+</svg>
