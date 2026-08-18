@@ -32,6 +32,7 @@
 - [情シス不在の中小企業が社内IT運用をスポット外注で解決する3ステップ｜ネットワーク・ヘルプデスクを単発で頼む方法](https://anken.bisii.co.jp/blog/blog-ccc.html)
 - [既存ベンダー離脱後のWebサービス保守をスポット外注で引き継ぐ方法｜移管リスクをゼロにする3ステップ](https://anken.bisii.co.jp/blog/blog-kkk.html)
 - [ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ](https://anken.bisii.co.jp/blog/blog-vvv.html)
+- [DX推進のPM・ディレクターをスポット外注で確保する方法｜社内に旗振り役がいない中小企業が業務改善を進める3ステップ](https://anken.bisii.co.jp/blog/blog-zzz.html)
 
 ### 発注者向け｜AI開発（ジャンルB）
 

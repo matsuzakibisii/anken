@@ -1,0 +1,77 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#FAFAFA"/>
+
+  <!-- タイトル -->
+  <text x="600" y="46" text-anchor="middle" fill="#1F2937" font-size="22" font-weight="700">スポット外注PMに依頼できる業務 vs 社内担当者が担う業務</text>
+  <text x="600" y="70" text-anchor="middle" fill="#6B7280" font-size="13">発注前に役割分担を明確にしておくことで、スムーズに動き出せる</text>
+
+  <!-- 左列ヘッダー（パープル） -->
+  <rect x="60" y="90" width="510" height="52" rx="8" ry="8" fill="#7C3AED"/>
+  <text x="315" y="123" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">✅ スポットPMに任せる業務</text>
+
+  <!-- 右列ヘッダー（ゴールデン） -->
+  <rect x="630" y="90" width="510" height="52" rx="8" ry="8" fill="#CA8A04"/>
+  <text x="885" y="123" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">🏢 社内担当者が担う業務</text>
+
+  <!-- 区切り縦線 -->
+  <line x1="600" y1="88" x2="600" y2="450" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- 左列アイテム（パープル系） -->
+  <!-- Row 1 -->
+  <rect x="60" y="158" width="510" height="44" rx="6" fill="#F5F3FF"/>
+  <rect x="60" y="158" width="5" height="44" rx="3" fill="#7C3AED"/>
+  <text x="85" y="185" fill="#4B5563" font-size="15">現状業務のヒアリング・フロー可視化</text>
+
+  <!-- Row 2 -->
+  <rect x="60" y="210" width="510" height="44" rx="6" fill="#EDE9FE"/>
+  <rect x="60" y="210" width="5" height="44" rx="3" fill="#7C3AED"/>
+  <text x="85" y="237" fill="#4B5563" font-size="15">ツール・ベンダーの比較選定・評価</text>
+
+  <!-- Row 3 -->
+  <rect x="60" y="262" width="510" height="44" rx="6" fill="#F5F3FF"/>
+  <rect x="60" y="262" width="5" height="44" rx="3" fill="#7C3AED"/>
+  <text x="85" y="289" fill="#4B5563" font-size="15">要件定義書・仕様書の作成</text>
+
+  <!-- Row 4 -->
+  <rect x="60" y="314" width="510" height="44" rx="6" fill="#EDE9FE"/>
+  <rect x="60" y="314" width="5" height="44" rx="3" fill="#7C3AED"/>
+  <text x="85" y="341" fill="#4B5563" font-size="15">工程管理・進捗報告・課題管理</text>
+
+  <!-- Row 5 -->
+  <rect x="60" y="366" width="510" height="44" rx="6" fill="#F5F3FF"/>
+  <rect x="60" y="366" width="5" height="44" rx="3" fill="#7C3AED"/>
+  <text x="85" y="393" fill="#4B5563" font-size="15">引継ぎドキュメント・内製化支援</text>
+
+  <!-- 右列アイテム（ゴールデン系） -->
+  <!-- Row 1 -->
+  <rect x="630" y="158" width="510" height="44" rx="6" fill="#FEFCE8"/>
+  <rect x="630" y="158" width="5" height="44" rx="3" fill="#CA8A04"/>
+  <text x="655" y="185" fill="#4B5563" font-size="15">社内関係者への根回し・意思疎通</text>
+
+  <!-- Row 2 -->
+  <rect x="630" y="210" width="510" height="44" rx="6" fill="#FEF3C7"/>
+  <rect x="630" y="210" width="5" height="44" rx="3" fill="#CA8A04"/>
+  <text x="655" y="237" fill="#4B5563" font-size="15">予算の最終承認・稟議対応</text>
+
+  <!-- Row 3 -->
+  <rect x="630" y="262" width="510" height="44" rx="6" fill="#FEFCE8"/>
+  <rect x="630" y="262" width="5" height="44" rx="3" fill="#CA8A04"/>
+  <text x="655" y="289" fill="#4B5563" font-size="15">現場スタッフへの周知・変更管理</text>
+
+  <!-- Row 4 -->
+  <rect x="630" y="314" width="510" height="44" rx="6" fill="#FEF3C7"/>
+  <rect x="630" y="314" width="5" height="44" rx="3" fill="#CA8A04"/>
+  <text x="655" y="341" fill="#4B5563" font-size="15">ベンダーとの最終契約・発注書対応</text>
+
+  <!-- Row 5 -->
+  <rect x="630" y="366" width="510" height="44" rx="6" fill="#FEFCE8"/>
+  <rect x="630" y="366" width="5" height="44" rx="3" fill="#CA8A04"/>
+  <text x="655" y="393" fill="#4B5563" font-size="15">日常業務との優先度調整・例外対応</text>
+
+  <!-- フッターポイント -->
+  <rect x="60" y="424" width="1080" height="38" rx="6" fill="#F3F4F6"/>
+  <text x="600" y="448" text-anchor="middle" fill="#374151" font-size="13" font-weight="500">💡 左列をスポットPMに一括で委任することで、社内担当者は本来業務に集中しながらDXを前進させられる</text>
+
+</svg>

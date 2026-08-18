@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans JP',sans-serif;">
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#FAF9FF"/>
+
+  <!-- 上部タイトルバー（ゴールデン） -->
+  <rect x="0" y="0" width="1200" height="64" fill="#CA8A04"/>
+  <text x="600" y="41" text-anchor="middle" fill="#fff" font-size="22" font-weight="700" letter-spacing="1">DX推進PMが担う3つの旗振り役割</text>
+
+  <!-- 付箋カード 1 -->
+  <!-- ピン留め（上部） -->
+  <ellipse cx="233" cy="112" rx="12" ry="12" fill="#7C3AED" opacity="0.85"/>
+  <ellipse cx="233" cy="112" rx="5" ry="5" fill="#fff" opacity="0.6"/>
+
+  <rect x="80" y="116" width="305" height="320" rx="4" ry="4" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5" filter="url(#shadow)"/>
+  <!-- カード上部アクセントライン -->
+  <rect x="80" y="116" width="305" height="8" rx="4" fill="#7C3AED"/>
+
+  <text x="233" y="162" text-anchor="middle" fill="#5B21B6" font-size="17" font-weight="700">① ロードマップ設計</text>
+  <line x1="105" y1="175" x2="360" y2="175" stroke="#C4B5FD" stroke-width="1.5"/>
+
+  <text x="108" y="204" fill="#374151" font-size="14.5">・現状の業務フローを可視化する</text>
+  <text x="108" y="232" fill="#374151" font-size="14.5">・DX化の優先順位を決める</text>
+  <text x="108" y="260" fill="#374151" font-size="14.5">・3〜6ヶ月の工程計画を作成</text>
+  <text x="108" y="288" fill="#374151" font-size="14.5">・ツール・ベンダー候補を一覧化</text>
+  <text x="108" y="316" fill="#374151" font-size="14.5">・経営層へ説明資料を整備</text>
+
+  <!-- 成果物メモ -->
+  <rect x="105" y="340" width="255" height="76" rx="6" fill="#EDE9FE" stroke="#A78BFA" stroke-width="1.2"/>
+  <text x="233" y="363" text-anchor="middle" fill="#6D28D9" font-size="12" font-weight="700">主な成果物</text>
+  <text x="233" y="382" text-anchor="middle" fill="#4B5563" font-size="12">現状業務マップ・優先度マトリクス</text>
+  <text x="233" y="399" text-anchor="middle" fill="#4B5563" font-size="12">ロードマップ（ガントチャート）</text>
+
+  <!-- 付箋カード 2 -->
+  <ellipse cx="600" cy="112" rx="12" ry="12" fill="#7C3AED" opacity="0.85"/>
+  <ellipse cx="600" cy="112" rx="5" ry="5" fill="#fff" opacity="0.6"/>
+
+  <rect x="448" y="116" width="305" height="320" rx="4" ry="4" fill="#FEFCE8" stroke="#CA8A04" stroke-width="2.5"/>
+  <rect x="448" y="116" width="305" height="8" rx="4" fill="#CA8A04"/>
+
+  <text x="600" y="162" text-anchor="middle" fill="#92400E" font-size="17" font-weight="700">② ベンダー・社内調整</text>
+  <line x1="473" y1="175" x2="728" y2="175" stroke="#FCD34D" stroke-width="1.5"/>
+
+  <text x="476" y="204" fill="#374151" font-size="14.5">・ベンダーへの要件定義を代行</text>
+  <text x="476" y="232" fill="#374151" font-size="14.5">・複数社の見積もり比較・評価</text>
+  <text x="476" y="260" fill="#374151" font-size="14.5">・社内ステークホルダーとの調整</text>
+  <text x="476" y="288" fill="#374151" font-size="14.5">・週次の進捗報告・課題管理</text>
+  <text x="476" y="316" fill="#374151" font-size="14.5">・スコープ変更の影響評価</text>
+
+  <rect x="473" y="340" width="255" height="76" rx="6" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1.2"/>
+  <text x="600" y="363" text-anchor="middle" fill="#92400E" font-size="12" font-weight="700">主な成果物</text>
+  <text x="600" y="382" text-anchor="middle" fill="#4B5563" font-size="12">ベンダー比較表・要件定義書</text>
+  <text x="600" y="399" text-anchor="middle" fill="#4B5563" font-size="12">週次ステータスレポート</text>
+
+  <!-- 付箋カード 3 -->
+  <ellipse cx="967" cy="112" rx="12" ry="12" fill="#7C3AED" opacity="0.85"/>
+  <ellipse cx="967" cy="112" rx="5" ry="5" fill="#fff" opacity="0.6"/>
+
+  <rect x="815" y="116" width="305" height="320" rx="4" ry="4" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="815" y="116" width="305" height="8" rx="4" fill="#7C3AED"/>
+
+  <text x="967" y="155" text-anchor="middle" fill="#5B21B6" font-size="17" font-weight="700">③ 内製化・引継ぎ支援</text>
+  <line x1="840" y1="170" x2="1095" y2="170" stroke="#C4B5FD" stroke-width="1.5"/>
+
+  <text x="843" y="199" fill="#374151" font-size="14.5">・判断根拠を都度ドキュメント化</text>
+  <text x="843" y="227" fill="#374151" font-size="14.5">・社内担当者への知識移転</text>
+  <text x="843" y="255" fill="#374151" font-size="14.5">・非エンジニア向けマニュアル作成</text>
+  <text x="843" y="283" fill="#374151" font-size="14.5">・完了後の軽量な相談窓口継続</text>
+  <text x="843" y="311" fill="#374151" font-size="14.5">・次フェーズへの引継ぎ面談</text>
+
+  <rect x="840" y="340" width="255" height="76" rx="6" fill="#EDE9FE" stroke="#A78BFA" stroke-width="1.2"/>
+  <text x="967" y="363" text-anchor="middle" fill="#6D28D9" font-size="12" font-weight="700">主な成果物</text>
+  <text x="967" y="382" text-anchor="middle" fill="#4B5563" font-size="12">判断ログ・引継ぎドキュメント</text>
+  <text x="967" y="399" text-anchor="middle" fill="#4B5563" font-size="12">担当者向け操作・運用マニュアル</text>
+
+  <!-- フッターノート -->
+  <text x="600" y="478" text-anchor="middle" fill="#9CA3AF" font-size="12">※ スポット外注では上記3役割を週1〜2日の稼働でカバー。フルタイム採用なしで即日スタートが可能。</text>
+
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#7C3AED" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+</svg>
