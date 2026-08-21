@@ -1,0 +1,88 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="#0F0B2A"/>
+
+  <!-- タイトル -->
+  <text x="600" y="52" text-anchor="middle" font-size="26" font-weight="900" fill="#E0D9FF">Microsoft 365 Copilot — アプリ別の主な機能</text>
+  <text x="600" y="80" text-anchor="middle" font-size="15" fill="#9D8FD4">2026年8月現在</text>
+
+  <!-- カード共通設定: 5枚横並び 幅210 間隔16 左マージン30 -->
+
+  <!-- Word カード -->
+  <rect x="30" y="108" width="210" height="350" rx="14" fill="#1E1540" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="30" y="108" width="210" height="52" rx="14" fill="#8B5CF6"/>
+  <rect x="30" y="146" width="210" height="14" fill="#8B5CF6"/>
+  <text x="135" y="140" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">📝 Word</text>
+  <text x="135" y="186" text-anchor="middle" font-size="13" fill="#C4B9F5">文書の下書き・要約</text>
+  <line x1="55" y1="200" x2="215" y2="200" stroke="#3D2F6E" stroke-width="1"/>
+  <text x="135" y="225" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 提案書・報告書をゼロから生成</text>
+  <text x="135" y="248" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 既存文書を3行で要約</text>
+  <text x="135" y="271" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 文体・トーンを指定して書き直し</text>
+  <text x="135" y="294" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 他のファイルを参照して執筆</text>
+  <text x="135" y="317" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 文書内Q&amp;A（チャット）</text>
+  <rect x="55" y="398" width="160" height="36" rx="8" fill="#8B5CF6" opacity="0.18"/>
+  <text x="135" y="421" text-anchor="middle" font-size="13" fill="#C4B9F5" font-weight="700">企画書作成工数 ▼70%</text>
+
+  <!-- Excel カード -->
+  <rect x="258" y="108" width="210" height="350" rx="14" fill="#1E1540" stroke="#F97316" stroke-width="2"/>
+  <rect x="258" y="108" width="210" height="52" rx="14" fill="#F97316"/>
+  <rect x="258" y="146" width="210" height="14" fill="#F97316"/>
+  <text x="363" y="140" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">📊 Excel</text>
+  <text x="363" y="186" text-anchor="middle" font-size="13" fill="#FDD9B5">データ分析・数式自動生成</text>
+  <line x1="283" y1="200" x2="443" y2="200" stroke="#5A3010" stroke-width="1"/>
+  <text x="363" y="225" text-anchor="middle" font-size="12" fill="#FDBA74">▸ 自然言語でデータ分析を指示</text>
+  <text x="363" y="248" text-anchor="middle" font-size="12" fill="#FDBA74">▸ 数式・関数を自動生成</text>
+  <text x="363" y="271" text-anchor="middle" font-size="12" fill="#FDBA74">▸ グラフ・ピボット自動作成</text>
+  <text x="363" y="294" text-anchor="middle" font-size="12" fill="#FDBA74">▸ 異常値・トレンドのハイライト</text>
+  <text x="363" y="317" text-anchor="middle" font-size="12" fill="#FDBA74">▸ 月次レポートの文章化</text>
+  <rect x="283" y="398" width="160" height="36" rx="8" fill="#F97316" opacity="0.18"/>
+  <text x="363" y="421" text-anchor="middle" font-size="13" fill="#FDBA74" font-weight="700">分析時間 2h → 20分</text>
+
+  <!-- Teams カード -->
+  <rect x="486" y="108" width="210" height="350" rx="14" fill="#1E1540" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="486" y="108" width="210" height="52" rx="14" fill="#5B21B6"/>
+  <rect x="486" y="146" width="210" height="14" fill="#5B21B6"/>
+  <text x="591" y="140" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">💬 Teams</text>
+  <text x="591" y="186" text-anchor="middle" font-size="13" fill="#C4B9F5">会議要約・アクション抽出</text>
+  <line x1="511" y1="200" x2="671" y2="200" stroke="#3D2F6E" stroke-width="1"/>
+  <text x="591" y="225" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 会議議事録を自動生成</text>
+  <text x="591" y="248" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 決定事項・宿題を箇条書き</text>
+  <text x="591" y="271" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 途中参加者向け要約</text>
+  <text x="591" y="294" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 特定発言の検索・引用</text>
+  <text x="591" y="317" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 会議後のフォローアップ文作成</text>
+  <rect x="511" y="398" width="160" height="36" rx="8" fill="#5B21B6" opacity="0.25"/>
+  <text x="591" y="421" text-anchor="middle" font-size="13" fill="#C4B9F5" font-weight="700">議事録作業 10分 → 1分</text>
+
+  <!-- Outlook カード -->
+  <rect x="714" y="108" width="210" height="350" rx="14" fill="#1E1540" stroke="#F97316" stroke-width="2"/>
+  <rect x="714" y="108" width="210" height="52" rx="14" fill="#EA580C"/>
+  <rect x="714" y="146" width="210" height="14" fill="#EA580C"/>
+  <text x="819" y="140" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">📧 Outlook</text>
+  <text x="819" y="186" text-anchor="middle" font-size="13" fill="#FDD9B5">メール作成・返信の高速化</text>
+  <line x1="739" y1="200" x2="899" y2="200" stroke="#5A3010" stroke-width="1"/>
+  <text x="819" y="225" text-anchor="middle" font-size="12" fill="#FDBA74">▸ メールの下書きを自動生成</text>
+  <text x="819" y="248" text-anchor="middle" font-size="12" fill="#FDBA74">▸ トーン指定で返信を作成</text>
+  <text x="819" y="271" text-anchor="middle" font-size="12" fill="#FDBA74">▸ メールスレッドを3行で要約</text>
+  <text x="819" y="294" text-anchor="middle" font-size="12" fill="#FDBA74">▸ 未読を重要度別に整理</text>
+  <text x="819" y="317" text-anchor="middle" font-size="12" fill="#FDBA74">▸ 合意事項・ToDoの抽出</text>
+  <rect x="739" y="398" width="160" height="36" rx="8" fill="#EA580C" opacity="0.20"/>
+  <text x="819" y="421" text-anchor="middle" font-size="13" fill="#FDBA74" font-weight="700">メール処理 1h → 15分</text>
+
+  <!-- PowerPoint カード -->
+  <rect x="942" y="108" width="210" height="350" rx="14" fill="#1E1540" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="942" y="108" width="210" height="52" rx="14" fill="#7C3AED"/>
+  <rect x="942" y="146" width="210" height="14" fill="#7C3AED"/>
+  <text x="1047" y="140" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">🖼 PowerPoint</text>
+  <text x="1047" y="186" text-anchor="middle" font-size="13" fill="#C4B9F5">スライド自動作成</text>
+  <line x1="967" y1="200" x2="1127" y2="200" stroke="#3D2F6E" stroke-width="1"/>
+  <text x="1047" y="225" text-anchor="middle" font-size="12" fill="#A89DE8">▸ テーマ・構成を自動生成</text>
+  <text x="1047" y="248" text-anchor="middle" font-size="12" fill="#A89DE8">▸ Wordから10枚スライドに変換</text>
+  <text x="1047" y="271" text-anchor="middle" font-size="12" fill="#A89DE8">▸ デザインテンプレート自動適用</text>
+  <text x="1047" y="294" text-anchor="middle" font-size="12" fill="#A89DE8">▸ スピーカーノート自動生成</text>
+  <text x="1047" y="317" text-anchor="middle" font-size="12" fill="#A89DE8">▸ 画像・アイコン自動挿入提案</text>
+  <rect x="967" y="398" width="160" height="36" rx="8" fill="#7C3AED" opacity="0.22"/>
+  <text x="1047" y="421" text-anchor="middle" font-size="13" fill="#C4B9F5" font-weight="700">資料作成 3h → 30分</text>
+
+  <!-- フッターノート -->
+  <text x="600" y="484" text-anchor="middle" font-size="12" fill="#6B5FAD">※ 利用にはMicrosoft 365 Business Standard以上のライセンスにCopilotアドオン追加が必要</text>
+</svg>

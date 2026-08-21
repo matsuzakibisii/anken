@@ -33,6 +33,7 @@
 - [既存ベンダー離脱後のWebサービス保守をスポット外注で引き継ぐ方法｜移管リスクをゼロにする3ステップ](https://anken.bisii.co.jp/blog/blog-kkk.html)
 - [ExcelマクロVBA廃止対応をスポット外注で乗り越える方法｜業務を止めずに移行する3ステップ](https://anken.bisii.co.jp/blog/blog-vvv.html)
 - [DX推進のPM・ディレクターをスポット外注で確保する方法｜社内に旗振り役がいない中小企業が業務改善を進める3ステップ](https://anken.bisii.co.jp/blog/blog-zzz.html)
+- [VB6・AccessVBAの基幹システム保守をスポット外注で解決する方法｜ベンダー廃業・保守切れでも業務を止めない3ステップ](https://anken.bisii.co.jp/blog/blog-bbbb.html)
 
 ### 発注者向け｜AI開発（ジャンルB）
 
@@ -68,6 +69,7 @@
 - [訪問介護・障害福祉事業所のヘルパーマッチングをAI化する方法｜スポット外注で業務管理システムを構築する3ステップ](https://anken.bisii.co.jp/blog/blog-sss.html)
 - [AI導入をPoC止まりで終わらせないFDE活用術｜本番運用まで伸ばすスポット外注3ステップ](https://anken.bisii.co.jp/blog/blog-ttt.html)
 - [社内ITヘルプデスクのAI化をスポット外注で実現する方法｜RAG連携・機密マスキング設計まで依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-yyy.html)
+- [Power Automate Desktop業務自動化をスポット外注で実現する方法｜RPAシナリオ作成から保守まで依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-cccc.html)
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
@@ -81,6 +83,7 @@
 - [社内AIリテラシー研修の進め方｜ChatGPT・Claude導入で何を教えるべきか【2026年版】](https://anken.bisii.co.jp/blog/blog-ee.html)
 - [Gemini for Google Workspaceの使い方と活用法](https://anken.bisii.co.jp/blog/blog-ss.html)
 - [NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】](https://anken.bisii.co.jp/blog/blog-xx.html)
+- [Microsoft 365 Copilotの使い方と活用法｜Word・Excel・Teams・Outlookで業務を自動化する全機能ガイド【2026年版】](https://anken.bisii.co.jp/blog/blog-aaaa.html)
 
 ### 参考プロンプト集｜業務効率化（ジャンルF）
 

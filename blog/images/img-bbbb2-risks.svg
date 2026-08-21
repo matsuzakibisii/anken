@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" width="1200" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" fill="#0C2340" font-size="26" font-weight="900">VB6・Accessレガシーシステムの3大リスク</text>
+
+  <!-- Card 1: 保守デッドロック -->
+  <rect x="60" y="90" width="330" height="360" rx="16" fill="#0E7490" opacity="0.08"/>
+  <rect x="60" y="90" width="330" height="6" rx="3" fill="#0E7490"/>
+  <!-- Icon: person with X -->
+  <circle cx="225" cy="165" r="38" fill="#0E7490" opacity="0.15"/>
+  <text x="225" y="178" text-anchor="middle" font-size="40">👤</text>
+  <text x="255" y="148" text-anchor="middle" font-size="24" fill="#B91C1C">✕</text>
+
+  <text x="225" y="236" text-anchor="middle" fill="#0E7490" font-size="20" font-weight="900">① 保守デッドロック</text>
+  <text x="225" y="264" text-anchor="middle" fill="#1F2937" font-size="15">担当者・ベンダーが</text>
+  <text x="225" y="285" text-anchor="middle" fill="#1F2937" font-size="15">消えた状態</text>
+  <rect x="90" y="306" width="270" height="2" fill="#0E7490" opacity="0.2"/>
+  <text x="225" y="332" text-anchor="middle" fill="#374151" font-size="13">退職・廃業で問い合わせ先が</text>
+  <text x="225" y="352" text-anchor="middle" fill="#374151" font-size="13">消滅。誰も触れないが</text>
+  <text x="225" y="372" text-anchor="middle" fill="#374151" font-size="13">止めることもできない。</text>
+  <!-- Risk badge -->
+  <rect x="140" y="402" width="170" height="32" rx="16" fill="#B91C1C"/>
+  <text x="225" y="422" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">緊急度：高</text>
+
+  <!-- Card 2: セキュリティリスク -->
+  <rect x="435" y="90" width="330" height="360" rx="16" fill="#0E7490" opacity="0.08"/>
+  <rect x="435" y="90" width="330" height="6" rx="3" fill="#0E7490"/>
+  <!-- Icon: shield with warning -->
+  <circle cx="600" cy="165" r="38" fill="#0E7490" opacity="0.15"/>
+  <text x="600" y="178" text-anchor="middle" font-size="40">🛡</text>
+  <text x="630" y="148" text-anchor="middle" font-size="24" fill="#B91C1C">⚠</text>
+
+  <text x="600" y="236" text-anchor="middle" fill="#0E7490" font-size="20" font-weight="900">② セキュリティリスク</text>
+  <text x="600" y="264" text-anchor="middle" fill="#1F2937" font-size="15">OSアップデートで</text>
+  <text x="600" y="285" text-anchor="middle" fill="#1F2937" font-size="15">突然動かなくなる</text>
+  <rect x="465" y="306" width="270" height="2" fill="#0E7490" opacity="0.2"/>
+  <text x="600" y="332" text-anchor="middle" fill="#374151" font-size="13">VB6サポート終了は2008年。</text>
+  <text x="600" y="352" text-anchor="middle" fill="#374151" font-size="13">Windows 11アップグレードで</text>
+  <text x="600" y="372" text-anchor="middle" fill="#374151" font-size="13">起動不能になる事例が急増。</text>
+  <rect x="515" y="402" width="170" height="32" rx="16" fill="#B91C1C"/>
+  <text x="600" y="422" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">緊急度：高</text>
+
+  <!-- Card 3: 属人化コスト -->
+  <rect x="810" y="90" width="330" height="360" rx="16" fill="#0E7490" opacity="0.08"/>
+  <rect x="810" y="90" width="330" height="6" rx="3" fill="#0E7490"/>
+  <!-- Icon: rising cost graph -->
+  <circle cx="975" cy="165" r="38" fill="#0E7490" opacity="0.15"/>
+  <text x="975" y="178" text-anchor="middle" font-size="40">📈</text>
+  <text x="1005" y="148" text-anchor="middle" font-size="24" fill="#B91C1C">💸</text>
+
+  <text x="975" y="236" text-anchor="middle" fill="#0E7490" font-size="20" font-weight="900">③ 改修コストの膨張</text>
+  <text x="975" y="264" text-anchor="middle" fill="#1F2937" font-size="15">修正箇所が連鎖して</text>
+  <text x="975" y="285" text-anchor="middle" fill="#1F2937" font-size="15">コストが予算超過</text>
+  <rect x="840" y="306" width="270" height="2" fill="#0E7490" opacity="0.2"/>
+  <text x="975" y="332" text-anchor="middle" fill="#374151" font-size="13">仕様書なし・コメントなし。</text>
+  <text x="975" y="352" text-anchor="middle" fill="#374151" font-size="13">1箇所直すと別の箇所が壊れる</text>
+  <text x="975" y="372" text-anchor="middle" fill="#374151" font-size="13">「もぐら叩き」状態に。</text>
+  <rect x="890" y="402" width="170" height="32" rx="16" fill="#B91C1C"/>
+  <text x="975" y="422" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">緊急度：中〜高</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="484" text-anchor="middle" fill="#6B7280" font-size="13">→ 3つのリスクは「保守できる人間がいない」という一点が増幅させている</text>
+</svg>

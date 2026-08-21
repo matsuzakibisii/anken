@@ -1,0 +1,129 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- 背景 -->
+  <rect width="1200" height="480" fill="#0F0B2A"/>
+
+  <!-- タイトル -->
+  <text x="600" y="48" text-anchor="middle" font-size="26" font-weight="900" fill="#E0D9FF">M365 Copilot 業務活用シーン 3選</text>
+  <text x="600" y="74" text-anchor="middle" font-size="14" fill="#9D8FD4">「社内データ × Office」で業務時間を劇的に短縮する</text>
+
+  <!-- ===== シーン1: 会議議事録 ===== -->
+  <!-- カード背景 -->
+  <rect x="30" y="100" width="340" height="340" rx="16" fill="#1A1035" stroke="#8B5CF6" stroke-width="2"/>
+  <!-- ヘッダー -->
+  <rect x="30" y="100" width="340" height="56" rx="16" fill="#8B5CF6"/>
+  <rect x="30" y="140" width="340" height="16" fill="#8B5CF6"/>
+  <text x="200" y="132" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">💬 シーン① Teams 会議議事録</text>
+
+  <!-- フローステップ -->
+  <!-- Before -->
+  <rect x="50" y="175" width="140" height="50" rx="8" fill="#2D1F5A"/>
+  <text x="120" y="197" text-anchor="middle" font-size="12" fill="#A89DE8" font-weight="700">🔴 Before</text>
+  <text x="120" y="214" text-anchor="middle" font-size="11" fill="#7B68C8">手書き・後でまとめ直し</text>
+  <text x="120" y="228" text-anchor="middle" font-size="11" fill="#7B68C8">→ 10〜20分かかる</text>
+
+  <!-- 矢印 -->
+  <text x="200" y="208" text-anchor="middle" font-size="22" fill="#8B5CF6">→</text>
+
+  <!-- After -->
+  <rect x="210" y="175" width="140" height="50" rx="8" fill="#3B0764"/>
+  <text x="280" y="197" text-anchor="middle" font-size="12" fill="#DDD6FE" font-weight="700">🟢 Copilot後</text>
+  <text x="280" y="214" text-anchor="middle" font-size="11" fill="#C4B9F5">会議後1分で自動生成</text>
+  <text x="280" y="228" text-anchor="middle" font-size="11" fill="#C4B9F5">→ 確認・修正のみ</text>
+
+  <!-- プロンプト例 -->
+  <rect x="50" y="240" width="300" height="68" rx="8" fill="#0D0A1E" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="200" y="257" text-anchor="middle" font-size="11" fill="#8B5CF6" font-weight="700">▸ 入力例</text>
+  <text x="200" y="272" text-anchor="middle" font-size="11" fill="#A89DE8">「今日の会議の議事録を作成して。</text>
+  <text x="200" y="287" text-anchor="middle" font-size="11" fill="#A89DE8">決定事項・宿題・担当者・期日を整理」</text>
+  <text x="200" y="302" text-anchor="middle" font-size="11" fill="#6D60B0">→ 1〜2分で生成完了</text>
+
+  <!-- 成果バッジ -->
+  <rect x="50" y="326" width="300" height="38" rx="8" fill="#8B5CF6" opacity="0.22"/>
+  <text x="200" y="350" text-anchor="middle" font-size="14" fill="#DDD6FE" font-weight="900">議事録作業 20分 → 1分 ▼95%削減</text>
+
+  <!-- ユースケース -->
+  <text x="200" y="398" text-anchor="middle" font-size="12" fill="#7B68C8">多人数定例MTG・報告会・プロジェクト定例など</text>
+  <text x="200" y="415" text-anchor="middle" font-size="12" fill="#7B68C8">「誰が議事録を書くか問題」が解消</text>
+
+  <!-- ===== シーン2: 月次レポート ===== -->
+  <rect x="430" y="100" width="340" height="340" rx="16" fill="#1A1035" stroke="#F97316" stroke-width="2"/>
+  <rect x="430" y="100" width="340" height="56" rx="16" fill="#F97316"/>
+  <rect x="430" y="140" width="340" height="16" fill="#F97316"/>
+  <text x="600" y="132" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">📊 シーン② Excel×Word 月次レポート</text>
+
+  <!-- Before -->
+  <rect x="450" y="175" width="140" height="50" rx="8" fill="#3B1A08"/>
+  <text x="520" y="197" text-anchor="middle" font-size="12" fill="#FDD9B5" font-weight="700">🔴 Before</text>
+  <text x="520" y="214" text-anchor="middle" font-size="11" fill="#FDBA74">Excelで集計→Wordで執筆</text>
+  <text x="520" y="228" text-anchor="middle" font-size="11" fill="#FDBA74">→ 2〜3時間かかる</text>
+
+  <!-- 矢印 -->
+  <text x="600" y="208" text-anchor="middle" font-size="22" fill="#F97316">→</text>
+
+  <!-- After -->
+  <rect x="610" y="175" width="140" height="50" rx="8" fill="#7C2D12"/>
+  <text x="680" y="197" text-anchor="middle" font-size="12" fill="#FED7AA" font-weight="700">🟢 Copilot後</text>
+  <text x="680" y="214" text-anchor="middle" font-size="11" fill="#FDD9B5">分析+文章化を連携</text>
+  <text x="680" y="228" text-anchor="middle" font-size="11" fill="#FDD9B5">→ 30分以内に完了</text>
+
+  <!-- 2ステップフロー -->
+  <rect x="450" y="240" width="135" height="68" rx="8" fill="#0D0A1E" stroke="#F97316" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="517" y="257" text-anchor="middle" font-size="11" fill="#F97316" font-weight="700">STEP 1: Excel</text>
+  <text x="517" y="272" text-anchor="middle" font-size="11" fill="#FDBA74">「前月比・部門別</text>
+  <text x="517" y="287" text-anchor="middle" font-size="11" fill="#FDBA74">合計を分析して」</text>
+  <text x="517" y="302" text-anchor="middle" font-size="11" fill="#9A6020">→ グラフ自動生成</text>
+
+  <text x="600" y="278" text-anchor="middle" font-size="22" fill="#F97316">→</text>
+
+  <rect x="615" y="240" width="135" height="68" rx="8" fill="#0D0A1E" stroke="#F97316" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="682" y="257" text-anchor="middle" font-size="11" fill="#F97316" font-weight="700">STEP 2: Word</text>
+  <text x="682" y="272" text-anchor="middle" font-size="11" fill="#FDBA74">「経営層向け報告書</text>
+  <text x="682" y="287" text-anchor="middle" font-size="11" fill="#FDBA74">として文章化して」</text>
+  <text x="682" y="302" text-anchor="middle" font-size="11" fill="#9A6020">→ 下書き自動生成</text>
+
+  <!-- 成果バッジ -->
+  <rect x="450" y="326" width="300" height="38" rx="8" fill="#F97316" opacity="0.22"/>
+  <text x="600" y="350" text-anchor="middle" font-size="14" fill="#FDD9B5" font-weight="900">月次レポート 3h → 30分 ▼83%削減</text>
+
+  <text x="600" y="398" text-anchor="middle" font-size="12" fill="#9A6020">管理職・経理・営業企画などのレポート業務に効果大</text>
+  <text x="600" y="415" text-anchor="middle" font-size="12" fill="#9A6020">意思決定の議論に使える時間が増える</text>
+
+  <!-- ===== シーン3: メール高速化 ===== -->
+  <rect x="830" y="100" width="340" height="340" rx="16" fill="#1A1035" stroke="#8B5CF6" stroke-width="2"/>
+  <rect x="830" y="100" width="340" height="56" rx="16" fill="#6D28D9"/>
+  <rect x="830" y="140" width="340" height="16" fill="#6D28D9"/>
+  <text x="1000" y="132" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">📧 シーン③ Outlook メール対応</text>
+
+  <!-- Before -->
+  <rect x="850" y="175" width="140" height="50" rx="8" fill="#2D1F5A"/>
+  <text x="920" y="197" text-anchor="middle" font-size="12" fill="#A89DE8" font-weight="700">🔴 Before</text>
+  <text x="920" y="214" text-anchor="middle" font-size="11" fill="#7B68C8">返信文を毎回ゼロから</text>
+  <text x="920" y="228" text-anchor="middle" font-size="11" fill="#7B68C8">→ 1時間以上かかる</text>
+
+  <!-- 矢印 -->
+  <text x="1000" y="208" text-anchor="middle" font-size="22" fill="#8B5CF6">→</text>
+
+  <!-- After -->
+  <rect x="1010" y="175" width="140" height="50" rx="8" fill="#3B0764"/>
+  <text x="1080" y="197" text-anchor="middle" font-size="12" fill="#DDD6FE" font-weight="700">🟢 Copilot後</text>
+  <text x="1080" y="214" text-anchor="middle" font-size="11" fill="#C4B9F5">下書きを確認・修正</text>
+  <text x="1080" y="228" text-anchor="middle" font-size="11" fill="#C4B9F5">→ 15〜20分に短縮</text>
+
+  <!-- 使い方3点 -->
+  <rect x="850" y="240" width="300" height="84" rx="8" fill="#0D0A1E" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="1000" y="257" text-anchor="middle" font-size="11" fill="#8B5CF6" font-weight="700">▸ よく使う指示パターン</text>
+  <text x="1000" y="274" text-anchor="middle" font-size="11" fill="#A89DE8">①「未読を重要度別にまとめて」</text>
+  <text x="1000" y="291" text-anchor="middle" font-size="11" fill="#A89DE8">②「この問い合わせへの返信を書いて</text>
+  <text x="1000" y="306" text-anchor="middle" font-size="11" fill="#A89DE8">　（丁寧・感謝のトーン）」</text>
+  <text x="1000" y="319" text-anchor="middle" font-size="11" fill="#6D60B0">③「スレッドの合意事項を抽出して」</text>
+
+  <!-- 成果バッジ -->
+  <rect x="850" y="340" width="300" height="38" rx="8" fill="#8B5CF6" opacity="0.22"/>
+  <text x="1000" y="364" text-anchor="middle" font-size="14" fill="#DDD6FE" font-weight="900">メール処理 1h → 15分 ▼75%削減</text>
+
+  <text x="1000" y="398" text-anchor="middle" font-size="12" fill="#7B68C8">大量メール処理の担当者・営業・CS部門に特に効果大</text>
+  <text x="1000" y="415" text-anchor="middle" font-size="12" fill="#7B68C8">「返信を書く」から「確認する」作業に変わる</text>
+
+  <!-- フッター -->
+  <text x="600" y="460" text-anchor="middle" font-size="12" fill="#6B5FAD">© ANKEN by bisii — AIを活かした業務改善はANKENのスポット外注でご相談ください</text>
+</svg>

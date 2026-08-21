@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" width="1200" height="480">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0E7490"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#F8FAFC"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" fill="#0C2340" font-size="26" font-weight="900">VB6・Access保守スポット外注の3ステップ</text>
+
+  <!-- Timeline line -->
+  <line x1="100" y1="230" x2="1100" y2="230" stroke="#0E7490" stroke-width="3" stroke-dasharray="8,4" opacity="0.4"/>
+
+  <!-- Step 1 -->
+  <rect x="55" y="90" width="300" height="280" rx="14" fill="#fff" stroke="#0E7490" stroke-width="2.5"/>
+  <rect x="55" y="90" width="300" height="56" rx="14" fill="#0E7490"/>
+  <rect x="55" y="124" width="300" height="22" fill="#0E7490"/>
+  <text x="205" y="125" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">STEP 1</text>
+
+  <!-- step 1 icon area -->
+  <text x="205" y="190" text-anchor="middle" font-size="42">📁</text>
+
+  <text x="205" y="232" text-anchor="middle" fill="#0E7490" font-size="18" font-weight="900">引継ぎパッケージを整える</text>
+  <rect x="80" y="244" width="250" height="1.5" fill="#E5E7EB"/>
+  <text x="205" y="272" text-anchor="middle" fill="#374151" font-size="13">・ソースコード一式</text>
+  <text x="205" y="293" text-anchor="middle" fill="#374151" font-size="13">・開発環境構成情報</text>
+  <text x="205" y="314" text-anchor="middle" fill="#374151" font-size="13">・修正内容の画面キャプチャ</text>
+  <rect x="95" y="338" width="220" height="20" rx="10" fill="#ECFEFF"/>
+  <text x="205" y="352" text-anchor="middle" fill="#0E7490" font-size="12" font-weight="700">仕様書なしでもOK</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="358" y1="230" x2="412" y2="230" stroke="#0E7490" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="385" y="220" text-anchor="middle" fill="#0E7490" font-size="12" font-weight="700">30分〜</text>
+  <text x="385" y="248" text-anchor="middle" fill="#0E7490" font-size="12" font-weight="700">1時間</text>
+
+  <!-- Step 2 -->
+  <rect x="420" y="90" width="360" height="280" rx="14" fill="#fff" stroke="#0E7490" stroke-width="2.5"/>
+  <rect x="420" y="90" width="360" height="56" rx="14" fill="#0E7490"/>
+  <rect x="420" y="124" width="360" height="22" fill="#0E7490"/>
+  <text x="600" y="125" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">STEP 2</text>
+
+  <text x="600" y="190" text-anchor="middle" font-size="42">🔍</text>
+
+  <text x="600" y="232" text-anchor="middle" fill="#0E7490" font-size="18" font-weight="900">ANKENでエンジニアに依頼</text>
+  <rect x="445" y="244" width="310" height="1.5" fill="#E5E7EB"/>
+  <text x="600" y="272" text-anchor="middle" fill="#374151" font-size="13">① 条件入力→マッチング</text>
+  <text x="600" y="293" text-anchor="middle" fill="#374151" font-size="13">② 面談でコードを見せて確認</text>
+  <text x="600" y="314" text-anchor="middle" fill="#374151" font-size="13">③ まずコードリーディング単発発注</text>
+  <rect x="470" y="338" width="260" height="20" rx="10" fill="#ECFEFF"/>
+  <text x="600" y="352" text-anchor="middle" fill="#0E7490" font-size="12" font-weight="700">最短2〜3営業日で着手可能</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="782" y1="230" x2="836" y2="230" stroke="#0E7490" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="809" y="220" text-anchor="middle" fill="#0E7490" font-size="12" font-weight="700">保守安定後</text>
+
+  <!-- Step 3 -->
+  <rect x="845" y="90" width="300" height="280" rx="14" fill="#fff" stroke="#0E7490" stroke-width="2.5"/>
+  <rect x="845" y="90" width="300" height="56" rx="14" fill="#0E7490"/>
+  <rect x="845" y="124" width="300" height="22" fill="#0E7490"/>
+  <text x="995" y="125" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">STEP 3</text>
+
+  <text x="995" y="190" text-anchor="middle" font-size="42">🗺</text>
+
+  <text x="995" y="232" text-anchor="middle" fill="#0E7490" font-size="18" font-weight="900">段階移行ロードマップ</text>
+  <rect x="870" y="244" width="250" height="1.5" fill="#E5E7EB"/>
+  <text x="995" y="272" text-anchor="middle" fill="#374151" font-size="13">・機能ごとに移行優先度を整理</text>
+  <text x="995" y="293" text-anchor="middle" fill="#374151" font-size="13">・ローコードツールへの移行検討</text>
+  <text x="995" y="314" text-anchor="middle" fill="#374151" font-size="13">・2〜3年スパンで計画的に推進</text>
+  <rect x="885" y="338" width="220" height="20" rx="10" fill="#ECFEFF"/>
+  <text x="995" y="352" text-anchor="middle" fill="#0E7490" font-size="12" font-weight="700">業務を止めずに脱レガシー</text>
+
+  <!-- Cost band -->
+  <rect x="55" y="392" width="1090" height="54" rx="10" fill="#0E7490" opacity="0.08"/>
+  <text x="170" y="424" text-anchor="middle" fill="#0E7490" font-size="14" font-weight="900">コードリーディング</text>
+  <text x="170" y="442" text-anchor="middle" fill="#374151" font-size="13">3〜8万円（単発）</text>
+  <text x="550" y="424" text-anchor="middle" fill="#0E7490" font-size="14" font-weight="900">バグ修正・機能改修</text>
+  <text x="550" y="442" text-anchor="middle" fill="#374151" font-size="13">5〜40万円（規模による）</text>
+  <text x="990" y="424" text-anchor="middle" fill="#0E7490" font-size="14" font-weight="900">継続保守（週1日）</text>
+  <text x="990" y="442" text-anchor="middle" fill="#374151" font-size="13">月15〜25万円</text>
+</svg>
