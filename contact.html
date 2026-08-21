@@ -39,6 +39,11 @@
 <link rel="stylesheet" href="assets/css/common.css" />
 
 <style>
+  /* 任意項目アコーディオンのデフォルト三角マーカーを消す（2026-08-21 CRO） */
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary::marker { content: ""; }
+
   /* contact.html 固有スタイル：hero-bg は他ページより控えめなグラデーションに上書き */
   .hero-bg {
     background:
@@ -249,12 +254,17 @@
           <p class="mt-1 text-xs text-red-500 hidden" id="situation-error">現在の状況を選択してください。</p>
         </div>
 
-        <!-- 希望する人材タイプ -->
-        <div>
-          <label class="block text-sm font-bold text-gray-800 mb-2">
-            希望する人材タイプ <span class="text-gray-400 text-xs font-normal ml-1">（複数選択可）</span>
-          </label>
-          <p class="text-xs text-gray-400 mb-1.5">― エンジニア職種 ―</p>
+        <!-- 希望する人材タイプ（2026-08-21 CRO：初期状態で折りたたみ。項目は削らず視覚的な重さだけ削減） -->
+        <details class="group border border-gray-200 rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between gap-2 px-4 py-3 cursor-pointer list-none hover:bg-gray-50 transition">
+            <span class="text-sm font-bold text-gray-800">
+              希望する人材タイプを指定する
+              <span class="text-gray-400 text-xs font-normal ml-1">（任意・未選択でも送信できます）</span>
+            </span>
+            <svg class="w-4 h-4 text-gray-400 shrink-0 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="px-4 pb-4 pt-1 border-t border-gray-100">
+          <p class="text-xs text-gray-400 mb-1.5 mt-3">― エンジニア職種 ―</p>
           <div class="grid grid-cols-2 gap-2 mb-3">
             <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
               <input type="checkbox" name="talent" value="フロントエンド" class="accent-amber-500 shrink-0">
@@ -312,7 +322,8 @@
               <span>その他</span>
             </label>
           </div>
-        </div>
+          </div>
+        </details>
 
         <!-- 稼働希望 -->
         <div>
@@ -364,11 +375,16 @@
           </div>
         </div>
 
-        <!-- どこでこのサイトをお知りになりましたか？ -->
-        <div>
-          <label class="block text-sm font-bold text-gray-800 mb-2">
-            どこでこのサイトをお知りになりましたか？ <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span>
-          </label>
+        <!-- どこでこのサイトをお知りになりましたか？（2026-08-21 CRO No.3：初期状態で折りたたみ） -->
+        <details class="group border border-gray-200 rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between gap-2 px-4 py-3 cursor-pointer list-none hover:bg-gray-50 transition">
+            <span class="text-sm font-bold text-gray-800">
+              どこでこのサイトをお知りになりましたか？
+              <span class="text-gray-400 text-xs font-normal ml-1">（任意）</span>
+            </span>
+            <svg class="w-4 h-4 text-gray-400 shrink-0 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
+          <div class="px-4 pb-4 pt-4 border-t border-gray-100">
           <div class="grid grid-cols-2 gap-2">
             <label class="flex items-center gap-2 border border-gray-200 rounded-xl px-3 py-2.5 text-sm cursor-pointer hover:border-amber-400 transition has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50">
               <input type="radio" name="referral_source" value="Yahoo!、Googleなどで検索した" class="accent-amber-500 shrink-0">
@@ -412,7 +428,8 @@
               class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm transition resize-none"
             ></textarea>
           </div>
-        </div>
+          </div>
+        </details>
 
         <!-- ご依頼内容 -->
         <div>

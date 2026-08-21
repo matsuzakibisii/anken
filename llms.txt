@@ -18,16 +18,10 @@
 
 ### 発注者向け｜スポット外注（ジャンルA）
 
-- [スポットエンジニアに依頼したい企業へ｜今すぐ即戦力を確保する方法](https://anken.bisii.co.jp/blog/blog-a.html)
-- [「ちょっとした開発」を外注するベストな方法とは？単発・スポットで頼めるエンジニアの見つけ方](https://anken.bisii.co.jp/blog/blog-e.html)
-- [エンジニアが採用できない。そのとき使える、採用ゼロ・即日稼働の外注術](https://anken.bisii.co.jp/blog/blog-h.html)
-- [採用より速く、外注より安く。開発リソース不足をスポット発注で突破する方法](https://anken.bisii.co.jp/blog/blog-k.html)
-- [エンジニアが採用できない中小企業が開発を止めない唯一の方法](https://anken.bisii.co.jp/blog/blog-n.html)
 - [エンジニア外注でよくある失敗5選と対策｜スポット発注で低リスクに開発を進める方法](https://anken.bisii.co.jp/blog/blog-t.html)
 - [伝わる依頼文の書き方｜スポット外注で失敗しないための5つの要素とテンプレート](https://anken.bisii.co.jp/blog/blog-v.html)
 - [スポット外注の費用相場2026年版｜タスク別の予算感とコストを抑える3つのコツ](https://anken.bisii.co.jp/blog/blog-y.html)
 - [kintoneカスタマイズをスポット外注で実現する方法](https://anken.bisii.co.jp/blog/blog-dd.html)
-- [社内システム・業務ツールの小規模改修をスポット外注で依頼する方法](https://anken.bisii.co.jp/blog/blog-qq.html)
 - [運送業の点検業務システム化をスポット外注で実現する方法｜NFC・kintone連携アプリを単発依頼する3ステップ](https://anken.bisii.co.jp/blog/blog-zz.html)
 - [情シス不在の中小企業が社内IT運用をスポット外注で解決する3ステップ｜ネットワーク・ヘルプデスクを単発で頼む方法](https://anken.bisii.co.jp/blog/blog-ccc.html)
 - [既存ベンダー離脱後のWebサービス保守をスポット外注で引き継ぐ方法｜移管リスクをゼロにする3ステップ](https://anken.bisii.co.jp/blog/blog-kkk.html)
@@ -73,7 +67,7 @@
 
 ### 発注者向け｜ガイド・まとめ（ジャンルH）
 
-- [スポット・エンジニア外注 完全ガイド【2026年版】｜費用相場・探し方・失敗しない依頼の流れ](https://anken.bisii.co.jp/blog/blog-pillar.html)
+- [スポット・エンジニア外注 完全ガイド【2026年版】｜費用相場・探し方・依頼の流れ・改修依頼まで全解説](https://anken.bisii.co.jp/blog/blog-pillar.html) — スポット外注の基本を扱う決定版。採用市場の実態（求人倍率6.70倍・実質採用コスト200〜300万円）、タスク別費用相場、エンジニアの探し方5ルート、依頼の流れ、既存システム改修の3ステップ、使いこなす3つのポイント、活用事例10選、FAQ12問を収録。2026-08-21に関連記事6本を統合。
 - [デジタル化・AI導入補助金2026をスポット外注で活用する方法](https://anken.bisii.co.jp/blog/blog-cc.html)
 - [個人事業主・フリーランスのためのAI導入補助金2026活用法](https://anken.bisii.co.jp/blog/blog-ll.html)
 

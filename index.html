@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>スポットFDE人材紹介｜AI導入・業務課題を現場で解決｜ANKEN（アンケン）</title>
-<meta name="description" content="ANKENはスポットFDE（Forward Deployed Engineer）紹介サービス。週末・タスク単位で、業務課題に深く入り込みAI導入・開発を現場で実装するエンジニアを確保できます。固定費ゼロ、面談最小限、無料の業務コンサルレポート付き。" />
+<meta name="description" content="ANKENはスポットFDE（Forward Deployed Engineer）紹介サービス。週末・タスク単位で、業務課題に深く入り込みAI導入・開発を現場で実装するエンジニアを確保できます。固定費ゼロ、面談最小限、ご相談・お見積りは無料。" />
 <meta name="keywords" content="スポットFDE, FDE人材紹介, FDE 業務委託, FDEとは, AI導入 エンジニア外注, スポット発注, 即戦力エンジニア, 副業エンジニア, マイクロマッチング, フリーランス" />
 <!-- OGP / SNS Card -->
 <meta property="og:type" content="website" />
@@ -132,7 +132,7 @@
 
       <p class="mt-6 md:mt-8 text-base md:text-lg text-gray-300 leading-relaxed ja-phrase">
         <span class="phrase">ANKEN（アンケン）は、</span><span class="phrase">企業の現場に入り込み<strong class="text-white">課題解決から実装まで</strong>担う「<strong class="text-white">スポットFDE</strong>（Forward Deployed Engineer）」紹介サービス。</span>
-        <span class="phrase">ヒアリングのプロが業務コンサルレポートを<strong class="text-highlight">無料</strong>で作成し、最適なFDE人材をお見積りします。</span>
+        <span class="phrase">ヒアリングのプロが業務課題を整理し、最適なFDE人材を<strong class="text-highlight">無料</strong>でお見積りします。</span>
         <span class="phrase">メガベンチャー出身のハイスペックメンバーが副業として現場支援するので、単価を抑えて品質の高い実装をご提供することができます。</span>
         <span class="phrase">少額案件のお試しから、</span><span class="phrase">AI導入・開発チームのビジネスマッチングまで。</span><span class="phrase">発注企業様はサービスは無料で利用可能！</span><span class="phrase">名刺1枚と10分のヒアリングで導入イメージまでお手伝いいたします。</span>
       </p>
@@ -148,6 +148,14 @@
           <span class="phrase">利用の流れを見る（3ステップ）</span>
         </a>
       </div>
+
+      <!-- CTA直下のリスク打ち消しマイクロコピー（2026-08-21 CRO） -->
+      <p class="mt-3 text-xs md:text-sm text-gray-400 ja-phrase">
+        <span class="phrase">名刺1枚と10分のヒアリングだけ。</span>
+        <span class="phrase">費用はかかりません。</span>
+        <span class="phrase">発注の意思が固まっていなくても大丈夫です。</span>
+        <span class="phrase">営業電話は一切いたしません。</span>
+      </p>
 
       <!-- Feature badges -->
       <div class="mt-8 flex flex-wrap gap-3">
@@ -177,7 +185,7 @@
       <!-- KPI strip -->
       <dl class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
         <div class="bg-white/[0.07] border border-white/10 rounded-xl p-4">
-          <dt class="text-xs text-gray-400">業務コンサルレポート</dt>
+          <dt class="text-xs text-gray-400">ご相談・お見積り</dt>
           <dd class="text-2xl font-black mt-1 text-white">¥0<span class="text-xs font-medium text-gray-400 ml-1">／回</span></dd>
         </div>
         <div class="bg-white/[0.07] border border-white/10 rounded-xl p-4">
@@ -253,7 +261,8 @@
             FDEについてもっと詳しく見る
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-5 py-3 rounded-xl text-sm transition">
+          <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'fde_section'})"
+             class="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-5 py-3 rounded-xl text-sm transition">
             スポットFDEを無料相談する
           </a>
         </div>
@@ -483,18 +492,18 @@
       <!-- Strength 1 (HERO USP) -->
       <article class="card-hover bg-gradient-to-b from-white/[0.07] to-white/[0.03] rounded-2xl p-7 border border-accent/40 relative">
         <span class="absolute -top-3 left-7 bg-highlight text-ink text-[11px] font-bold px-3 py-1 rounded-full">サービスの強み</span>
-        <!-- illustration: free 業務コンサルレポート document creation -->
+        <!-- illustration: free consultation & estimate -->
         <div class="flex justify-center">
           <svg viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg" width="150" height="100" style="display:block;">
             <defs>
-              <linearGradient id="業務コンサルレポートDocGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBBF24" stop-opacity="0.18"/><stop offset="100%" stop-color="#F59E0B" stop-opacity="0.06"/></linearGradient>
+              <linearGradient id="estimateDocGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBBF24" stop-opacity="0.18"/><stop offset="100%" stop-color="#F59E0B" stop-opacity="0.06"/></linearGradient>
             </defs>
             <!-- main document -->
             <rect x="38" y="8" width="60" height="76" rx="5" fill="white" opacity="0.12" stroke="#F59E0B" stroke-width="1.5"/>
-            <rect x="38" y="8" width="60" height="76" rx="5" fill="url(#業務コンサルレポートDocGrad)"/>
+            <rect x="38" y="8" width="60" height="76" rx="5" fill="url(#estimateDocGrad)"/>
             <!-- doc header band -->
             <rect x="38" y="8" width="60" height="14" rx="5" fill="#F59E0B" opacity="0.4"/>
-            <text x="68" y="19" text-anchor="middle" font-size="7" font-weight="bold" fill="#FBBF24" font-family="sans-serif">業務コンサルレポート</text>
+            <text x="68" y="19" text-anchor="middle" font-size="7" font-weight="bold" fill="#FBBF24" font-family="sans-serif">お見積り</text>
             <!-- text lines -->
             <line x1="46" y1="32" x2="90" y2="32" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
             <line x1="46" y1="40" x2="90" y2="40" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
@@ -565,7 +574,7 @@
             <line x1="13" y1="42" x2="33" y2="42" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
             <line x1="13" y1="48" x2="33" y2="48" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
             <line x1="13" y1="54" x2="26" y2="54" stroke="#F59E0B" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
-            <text x="23" y="38" text-anchor="middle" font-size="5" fill="#FACC15" font-family="sans-serif" font-weight="bold">業務コンサルレポート</text>
+            <text x="23" y="38" text-anchor="middle" font-size="5" fill="#FACC15" font-family="sans-serif" font-weight="bold">業務課題</text>
             <!-- speed indicator -->
             <rect x="50" y="78" width="50" height="12" rx="6" fill="#FACC15" opacity="0.15" stroke="#FACC15" stroke-width="0.8"/>
             <text x="75" y="87" text-anchor="middle" font-size="6.5" font-weight="bold" fill="#FACC15" font-family="sans-serif">最速 即日ご紹介</text>
@@ -654,7 +663,7 @@
         <span class="phrase"><span class="text-accentText">3ステップ</span>だけ</span>
       </h2>
       <p class="mt-5 text-gray-600 text-sm md:text-base ja-phrase">
-        <span class="phrase">ご相談から業務コンサルレポート作成とメンバー紹介まで、</span>
+        <span class="phrase">ご相談からお見積り・メンバー紹介まで、</span>
         <span class="phrase">最短即日で完結します。</span>
       </p>
     </div>
@@ -702,7 +711,7 @@
           </div>
         </div>
         <h3 class="mt-5 text-lg md:text-xl font-bold ja-phrase">
-          <span class="phrase">業務コンサルレポート ＆</span>
+          <span class="phrase">お見積り ＆</span>
           <span class="phrase">メンバー紹介</span>
         </h3>
         <p class="mt-2 text-sm text-gray-600 leading-relaxed ja-phrase">
@@ -1030,7 +1039,8 @@
     </ul>
 
     <div class="mt-10 text-center">
-      <a href="contact.html" class="inline-flex items-center gap-2 text-sm md:text-base font-bold text-accentText hover:text-accentDark transition">
+      <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'usecase_section'})"
+         class="inline-flex items-center gap-2 text-sm md:text-base font-bold text-accentText hover:text-accentDark transition">
         <span class="phrase">この他にも多数のご相談をいただいております。まずはお気軽にご相談ください</span>
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -1149,7 +1159,7 @@
           <div class="flex justify-start">
             <div class="max-w-[90%] bg-highlight/10 border border-highlight/30 rounded-xl px-3 py-2 text-[11px] leading-relaxed break-words">
               <span class="text-highlight font-bold">✦ ANKEN AI：</span>
-              <span class="text-gray-200">業務コンサルレポートとお見積りを作成いたします…</span>
+              <span class="text-gray-200">ご要望を整理してお見積りをご提示します…</span>
             </div>
           </div>
         </div>
@@ -1182,7 +1192,7 @@
           <span class="faq-icon text-accentText text-2xl leading-none">＋</span>
         </summary>
         <p class="mt-4 text-sm text-gray-700 leading-relaxed ja-phrase">
-          <span class="phrase">業務コンサルレポート（業務コンサルレポート）の作成や、</span>
+          <span class="phrase">ご相談・お見積りの作成や、</span>
           <span class="phrase">候補者の紹介までは</span><span class="phrase"><strong>すべて無料</strong>です。</span>
           <span class="phrase">実際にマッチングが成立し、</span>
           <span class="phrase">業務委託契約を締結いただいた場合のみ、</span>
@@ -1412,7 +1422,7 @@
   <div class="absolute inset-0 hero-bg opacity-90"></div>
   <div class="relative max-w-5xl mx-auto px-4 md:px-6 py-20 md:py-28 text-center">
     <h2 class="text-3xl md:text-5xl font-black leading-tight ja-phrase">
-      <span class="phrase">業務コンサルレポート＆お見積り</span>
+      <span class="phrase">ご相談＆お見積り</span>
       <span class="phrase"><span class="text-highlight">無料</span>でご提供します。</span>
     </h2>
     <p class="mt-5 text-gray-200 text-sm md:text-base ja-phrase">
@@ -1426,7 +1436,7 @@
     <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3">
       <a href="contact.html" onclick="gaSend('cta_click',{cta_location:'bottom_cta'})"
          class="inline-flex items-center justify-center gap-2 bg-highlight hover:bg-yellow-300 text-ink font-black px-7 py-4 rounded-xl text-base md:text-lg transition shadow-xl shadow-highlight/30">
-        <span class="phrase">お問合せ</span>
+        <span class="phrase">無料で業務課題を相談する</span>
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <a href="member.html"
