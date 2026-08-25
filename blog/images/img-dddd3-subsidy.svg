@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="480" fill="#FFFBF0"/>
+
+  <!-- Title -->
+  <text x="600" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#1E1B4B">人材開発支援助成金 申請フロー（3ステップ）</text>
+  <text x="600" y="70" text-anchor="middle" font-size="14" fill="#92400E">中小企業：受講料の最大75%を助成。研修開始前の事前申請が必須です。</text>
+
+  <!-- Step boxes -->
+  <!-- STEP 1 -->
+  <rect x="60" y="110" width="310" height="260" rx="12" fill="#4F46E5"/>
+  <rect x="60" y="110" width="310" height="60" rx="12" fill="#3730A3"/>
+  <!-- top corners fix for bottom of header -->
+  <rect x="60" y="148" width="310" height="22" fill="#3730A3"/>
+
+  <text x="215" y="148" text-anchor="middle" font-size="18" font-weight="900" fill="#F59E0B">STEP 1</text>
+  <text x="215" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#E0E7FF">研修計画の策定と</text>
+  <text x="215" y="202" text-anchor="middle" font-size="15" font-weight="700" fill="#E0E7FF">事前申請</text>
+
+  <text x="215" y="235" text-anchor="middle" font-size="13" fill="#C7D2FE">研修開始の</text>
+  <text x="215" y="255" text-anchor="middle" font-size="20" font-weight="900" fill="#F59E0B">1か月前まで</text>
+  <text x="215" y="280" text-anchor="middle" font-size="13" fill="#C7D2FE">に都道府県労働局へ</text>
+  <text x="215" y="300" text-anchor="middle" font-size="13" fill="#C7D2FE">「訓練実施計画届」を提出</text>
+
+  <rect x="95" y="325" width="240" height="30" rx="6" fill="#F59E0B"/>
+  <text x="215" y="345" text-anchor="middle" font-size="13" font-weight="700" fill="#1E1B4B">受講者・内容・費用見積りを準備</text>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="388,228 428,240 388,252" fill="#4F46E5"/>
+  <line x1="370" y1="240" x2="425" y2="240" stroke="#4F46E5" stroke-width="4"/>
+
+  <!-- STEP 2 -->
+  <rect x="445" y="110" width="310" height="260" rx="12" fill="#4F46E5"/>
+  <rect x="445" y="110" width="310" height="60" rx="12" fill="#3730A3"/>
+  <rect x="445" y="148" width="310" height="22" fill="#3730A3"/>
+
+  <text x="600" y="148" text-anchor="middle" font-size="18" font-weight="900" fill="#F59E0B">STEP 2</text>
+  <text x="600" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#E0E7FF">研修を実施し</text>
+  <text x="600" y="202" text-anchor="middle" font-size="15" font-weight="700" fill="#E0E7FF">記録を保管</text>
+
+  <text x="600" y="235" text-anchor="middle" font-size="13" fill="#C7D2FE">出席簿・修了証・</text>
+  <text x="600" y="255" text-anchor="middle" font-size="13" fill="#C7D2FE">領収書を必ず保管</text>
+  <text x="600" y="280" text-anchor="middle" font-size="20" font-weight="900" fill="#F59E0B">書類不備は</text>
+  <text x="600" y="300" text-anchor="middle" font-size="20" font-weight="900" fill="#F59E0B">要注意</text>
+
+  <rect x="480" y="325" width="240" height="30" rx="6" fill="#F59E0B"/>
+  <text x="600" y="345" text-anchor="middle" font-size="13" font-weight="700" fill="#1E1B4B">欠席超過は助成対象外になる場合あり</text>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="773,228 813,240 773,252" fill="#4F46E5"/>
+  <line x1="755" y1="240" x2="810" y2="240" stroke="#4F46E5" stroke-width="4"/>
+
+  <!-- STEP 3 -->
+  <rect x="830" y="110" width="310" height="260" rx="12" fill="#4F46E5"/>
+  <rect x="830" y="110" width="310" height="60" rx="12" fill="#3730A3"/>
+  <rect x="830" y="148" width="310" height="22" fill="#3730A3"/>
+
+  <text x="985" y="148" text-anchor="middle" font-size="18" font-weight="900" fill="#F59E0B">STEP 3</text>
+  <text x="985" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#E0E7FF">修了後に</text>
+  <text x="985" y="202" text-anchor="middle" font-size="15" font-weight="700" fill="#E0E7FF">支給申請</text>
+
+  <text x="985" y="235" text-anchor="middle" font-size="13" fill="#C7D2FE">修了日の翌日から</text>
+  <text x="985" y="255" text-anchor="middle" font-size="20" font-weight="900" fill="#F59E0B">2か月以内</text>
+  <text x="985" y="280" text-anchor="middle" font-size="13" fill="#C7D2FE">に労働局へ</text>
+  <text x="985" y="300" text-anchor="middle" font-size="13" fill="#C7D2FE">支給申請書を提出</text>
+
+  <rect x="865" y="325" width="240" height="30" rx="6" fill="#F59E0B"/>
+  <text x="985" y="345" text-anchor="middle" font-size="13" font-weight="700" fill="#1E1B4B">受講料の最大75%が後日振り込み</text>
+
+  <!-- Bottom note -->
+  <text x="600" y="420" text-anchor="middle" font-size="13" fill="#374151">💡 申請代行・手続き支援は社会保険労務士（社労士）に相談するとスムーズです</text>
+  <text x="600" y="445" text-anchor="middle" font-size="12" fill="#9CA3AF">※ 助成金の要件・上限額は制度改正により変わる場合があります。最新情報は厚生労働省または労働局にご確認ください。</text>
+  <text x="600" y="465" text-anchor="middle" font-size="12" fill="#9CA3AF">対象：雇用保険被保険者（正規・一定条件の非正規）。個人事業主本人は対象外。</text>
+</svg>

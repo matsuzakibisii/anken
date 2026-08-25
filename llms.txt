@@ -31,11 +31,7 @@
 
 ### 発注者向け｜AI開発（ジャンルB）
 
-- [「AIツールを作りたいけどエンジニアがいない」を週末スポット発注で解決する方法](https://anken.bisii.co.jp/blog/blog-b.html)
-- [社内AIツール、ノウハウ不足でも作れる。週末スポットで即戦力を使い倒す方法](https://anken.bisii.co.jp/blog/blog-f.html)
-- [AI活用が「PoC止まり」で終わる会社と前に進む会社の、たった一つの差](https://anken.bisii.co.jp/blog/blog-i.html)
-- [ノーコードでは限界。生成AI社内ツールを週末スポットで実装する現実的な方法](https://anken.bisii.co.jp/blog/blog-m.html)
-- [AIエージェント開発を週末スポットで依頼する方法｜DXをスモールスタートで加速](https://anken.bisii.co.jp/blog/blog-p.html)
+- [社内AIツール開発をスポット外注で作る完全ガイド【2026年版】｜費用8万円〜・事例12選](https://anken.bisii.co.jp/blog/blog-m.html)
 - [バックオフィスAI化を低コストで実現する方法](https://anken.bisii.co.jp/blog/blog-u.html)
 - [社内ナレッジ検索AI（RAG）導入をスポット発注で実現する方法](https://anken.bisii.co.jp/blog/blog-w.html)
 - [カスタマーサポートのAI化（チャットボット導入）をスポット発注で実現する方法](https://anken.bisii.co.jp/blog/blog-z.html)
@@ -78,6 +74,7 @@
 - [Gemini for Google Workspaceの使い方と活用法](https://anken.bisii.co.jp/blog/blog-ss.html)
 - [NotebookLMの使い方と活用法｜音声概要・FAQ・社内資料まとめに使える全機能解説【2026年版】](https://anken.bisii.co.jp/blog/blog-xx.html)
 - [Microsoft 365 Copilotの使い方と活用法｜Word・Excel・Teams・Outlookで業務を自動化する全機能ガイド【2026年版】](https://anken.bisii.co.jp/blog/blog-aaaa.html)
+- [AI研修の費用相場2026｜種類・料金・助成金を徹底比較【中小企業向け】](https://anken.bisii.co.jp/blog/blog-dddd.html)
 
 ### 参考プロンプト集｜業務効率化（ジャンルF）
 
