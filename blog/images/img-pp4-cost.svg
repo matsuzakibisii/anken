@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="AI研修の種類別 費用相場">
+  <defs>
+    <linearGradient id="c1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3E6259"/><stop offset="1" stop-color="#6E9A8B"/></linearGradient>
+    <linearGradient id="c2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4A6B8A"/><stop offset="1" stop-color="#7FA2C0"/></linearGradient>
+    <linearGradient id="c3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8A6A3B"/><stop offset="1" stop-color="#C4A268"/></linearGradient>
+    <linearGradient id="c4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C3F58"/><stop offset="1" stop-color="#B06B85"/></linearGradient>
+    <linearGradient id="c5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#57457A"/><stop offset="1" stop-color="#8B77AE"/></linearGradient>
+  </defs>
+
+  <rect width="1200" height="560" fill="#FBF9F6"/>
+
+  <text x="60" y="56" font-family="'Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#2A2622">AI研修の種類別　費用相場</text>
+  <text x="60" y="86" font-family="'Noto Sans JP',sans-serif" font-size="16" fill="#6B635B">2026年8月時点・税別目安。形式により「1人あたり」「1社あたり」「1日あたり」と単位が異なります</text>
+
+  <g font-family="'Noto Sans JP',sans-serif">
+    <!-- card 1 -->
+    <rect x="60" y="118" width="212" height="230" rx="16" fill="#FFFFFF" stroke="#E8E2D9"/>
+    <rect x="60" y="118" width="212" height="8" rx="4" fill="url(#c1)"/>
+    <text x="86" y="160" font-size="15" font-weight="700" fill="#3E6259">① eラーニング型</text>
+    <text x="86" y="184" font-size="13" fill="#8A8177">サブスクリプション</text>
+    <text x="86" y="228" font-size="26" font-weight="700" fill="#2A2622">月3,000</text>
+    <text x="86" y="258" font-size="26" font-weight="700" fill="#2A2622">〜8,000円</text>
+    <text x="86" y="282" font-size="13" fill="#6B635B">／人</text>
+    <text x="86" y="316" font-size="13" fill="#6B635B">全社の底上げに向く</text>
+
+    <!-- card 2 -->
+    <rect x="288" y="118" width="212" height="230" rx="16" fill="#FFFFFF" stroke="#E8E2D9"/>
+    <rect x="288" y="118" width="212" height="8" rx="4" fill="url(#c2)"/>
+    <text x="314" y="160" font-size="15" font-weight="700" fill="#4A6B8A">② 動画パッケージ</text>
+    <text x="314" y="184" font-size="13" fill="#8A8177">買い切り型</text>
+    <text x="314" y="228" font-size="26" font-weight="700" fill="#2A2622">10〜30</text>
+    <text x="314" y="258" font-size="26" font-weight="700" fill="#2A2622">万円</text>
+    <text x="314" y="282" font-size="13" fill="#6B635B">／社（30〜100名）</text>
+    <text x="314" y="316" font-size="13" fill="#6B635B">更新頻度の確認が必須</text>
+
+    <!-- card 3 -->
+    <rect x="516" y="118" width="212" height="230" rx="16" fill="#FFFFFF" stroke="#E8E2D9"/>
+    <rect x="516" y="118" width="212" height="8" rx="4" fill="url(#c3)"/>
+    <text x="542" y="160" font-size="15" font-weight="700" fill="#8A6A3B">③ 公開セミナー</text>
+    <text x="542" y="184" font-size="13" fill="#8A8177">外部参加型</text>
+    <text x="542" y="228" font-size="26" font-weight="700" fill="#2A2622">3〜8</text>
+    <text x="542" y="258" font-size="26" font-weight="700" fill="#2A2622">万円</text>
+    <text x="542" y="282" font-size="13" fill="#6B635B">／人・回</text>
+    <text x="542" y="316" font-size="13" fill="#6B635B">カスタマイズ不可</text>
+
+    <!-- card 4 (highlight) -->
+    <rect x="744" y="112" width="212" height="242" rx="16" fill="#FFFFFF" stroke="#7C3F58" stroke-width="2"/>
+    <rect x="744" y="112" width="212" height="8" rx="4" fill="url(#c4)"/>
+    <text x="770" y="156" font-size="15" font-weight="700" fill="#7C3F58">④ 社内集合研修</text>
+    <text x="770" y="180" font-size="13" fill="#8A8177">講師派遣型</text>
+    <text x="770" y="226" font-size="26" font-weight="700" fill="#2A2622">10〜30</text>
+    <text x="770" y="256" font-size="26" font-weight="700" fill="#2A2622">万円</text>
+    <text x="770" y="280" font-size="13" fill="#6B635B">／日</text>
+    <rect x="770" y="298" width="160" height="26" rx="13" fill="#F6EAF0"/>
+    <text x="782" y="316" font-size="12" font-weight="700" fill="#7C3F58">助成金と最も相性◎</text>
+
+    <!-- card 5 -->
+    <rect x="972" y="118" width="168" height="230" rx="16" fill="#FFFFFF" stroke="#E8E2D9"/>
+    <rect x="972" y="118" width="168" height="8" rx="4" fill="url(#c5)"/>
+    <text x="996" y="160" font-size="15" font-weight="700" fill="#57457A">⑤ コンサル併設</text>
+    <text x="996" y="184" font-size="13" fill="#8A8177">伴走支援つき</text>
+    <text x="996" y="228" font-size="24" font-weight="700" fill="#2A2622">30〜100</text>
+    <text x="996" y="256" font-size="24" font-weight="700" fill="#2A2622">万円超</text>
+    <text x="996" y="280" font-size="13" fill="#6B635B">／複数月</text>
+    <text x="996" y="316" font-size="13" fill="#6B635B">本格導入向け</text>
+  </g>
+
+  <!-- subsidy band -->
+  <g font-family="'Noto Sans JP',sans-serif">
+    <rect x="60" y="382" width="1080" height="66" rx="14" fill="#F1EDE5"/>
+    <text x="88" y="414" font-size="17" font-weight="700" fill="#2A2622">助成金を適用すると（中小企業）</text>
+    <text x="88" y="438" font-size="14" fill="#5C544B">人材開発支援助成金で受講料の最大75%が補助され、実質負担は定価の約25%に。大企業は最大60%。</text>
+    <rect x="880" y="396" width="232" height="40" rx="20" fill="#7C3F58"/>
+    <text x="996" y="422" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">自己負担 約25%</text>
+  </g>
+
+  <g font-family="'Noto Sans JP',sans-serif">
+    <text x="60" y="486" font-size="14" fill="#8A8177">💡 講師派遣型の費用は「人数」ではなく「日数」に連動します。20名でも40名でも、1日研修なら講師費はほぼ変わりません。</text>
+    <text x="60" y="512" font-size="14" fill="#8A8177">💡 見積もりに「研修後フォロー費」が含まれているかを必ず確認してください。後から追加費用になりやすい項目です。</text>
+    <text x="60" y="540" font-size="12" fill="#A79E93">出典：各社公開価格および一般的な発注実績にもとづくANKEN編集部まとめ（2026年8月時点・税別）</text>
+  </g>
+</svg>

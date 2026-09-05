@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--
+  ========================================================================
+  contact-lp.html｜リスティング広告 専用ランディングページ（下書き・未公開）
+  作成: 2026-09-04（戦略D／リスティング再始動チェックリスト B-1）
+
+  【重要】このページはサイト内のどこからもリンクされていない。
+  デプロイしても、広告のURLに指定しない限り誰も到達しない。
+  不要なら本ファイルを削除するだけで元に戻る。
+
+  設計意図（GA4 2026-09-04 の実測にもとづく）:
+   - contact.html は過去30日で表示回数 0。トップ→問い合わせの遷移が実測で 0%。
+     よって広告の着地点を index.html にして contact.html へ送る2段構成は採らない。
+   - このページは「広告文 → オファー → フォーム」を1枚に収め、遷移を挟まない。
+   - 入力は 会社名／氏名／メール／相談内容 の4項目のみ（contact.html の
+     希望人材13チェック・単価帯・着手時期・流入経路は初回接触では聞かない）。
+   - noindex。トップページと検索結果で食い合わせないため。
+  ========================================================================
+-->
+
+<title>開発・AI導入の困りごとをスポットで解決｜ANKEN（アンケン）</title>
+<meta name="description" content="AI電話対応・図面や帳票のAI-OCR・見積書の自動化など、「作りたいものは決まっているが手が足りない」課題に、スポットFDEが実装で応えます。相談・見積りは無料。" />
+
+<!-- 広告専用LPのため検索インデックスさせない（トップページとのカニバリ防止） -->
+<meta name="robots" content="noindex,follow" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0B1221" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/common.css" />
+
+<!-- Google tag (gtag.js) — contact.html と同一の2プロパティ構成 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWT2G24L7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GWT2G24L7Z');
+  gtag('config', 'G-VHGE2HHG65');
+</script>
+
+<style>
+  body { font-family: 'Noto Sans JP', sans-serif; }
+  .lp-hero {
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(245,158,11,0.30), transparent 60%),
+      radial-gradient(700px 400px at -10% 60%, rgba(250,204,21,0.18), transparent 60%),
+      linear-gradient(180deg, #0B1221 0%, #101935 100%);
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #F59E0B;
+    box-shadow: 0 0 0 3px rgba(245,158,11,0.18);
+  }
+</style>
+</head>
+
+<body class="bg-white text-[#0B1221] antialiased">
+
+<!-- ===== ヘッダー（リンクは最小限。離脱先を作らない） ===== -->
+<header class="lp-hero text-white">
+  <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
+    <span class="font-black text-lg tracking-tight">ANKEN<span class="text-amber-400">.</span></span>
+    <span class="text-xs text-gray-300">株式会社ビシィッ</span>
+  </div>
+
+  <!-- ===== ヒーロー＋フォーム（1画面内に収める） ===== -->
+  <div class="max-w-5xl mx-auto px-5 pb-14 pt-6 grid md:grid-cols-2 gap-10 items-start">
+
+    <div>
+      <p class="inline-block text-xs font-bold text-amber-300 border border-amber-400/40 rounded-full px-3 py-1 mb-4">
+        スポットFDE／タスク単位の実装
+      </p>
+      <h1 class="text-3xl md:text-4xl font-black leading-tight mb-5">
+        「作りたいものは決まっている。<br class="hidden md:block">手が足りないだけ」を、<br class="hidden md:block">
+        <span class="text-amber-400">スポットで動く状態にします。</span>
+      </h1>
+      <p class="text-gray-300 leading-relaxed mb-7">
+        採用も、月額契約も不要です。実務経験のあるエンジニアが必要な範囲だけ入り、
+        動くところまで実装します。要件が固まっていない段階のご相談で構いません。
+      </p>
+
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3">
+          <span class="text-amber-400 font-black shrink-0">01</span>
+          <span><strong class="font-bold">電話対応をAIに任せたい</strong><br><span class="text-gray-400">一次受け・要件ヒアリング・折り返し予約の自動化</span></span>
+        </li>
+        <li class="flex gap-3">
+          <span class="text-amber-400 font-black shrink-0">02</span>
+          <span><strong class="font-bold">図面・帳票を人が読んで転記している</strong><br><span class="text-gray-400">AI-OCRでの読み取り、既存システムへの連携</span></span>
+        </li>
+        <li class="flex gap-3">
+          <span class="text-amber-400 font-black shrink-0">03</span>
+          <span><strong class="font-bold">見積・積算に毎回半日かかる</strong><br><span class="text-gray-400">過去見積の再利用、単価表からの自動算出</span></span>
+        </li>
+      </ul>
+
+      <div class="mt-8 pt-6 border-t border-white/10 text-sm text-gray-300 space-y-1.5">
+        <p>・ご相談・お見積りは無料です</p>
+        <p>・営業時間内であれば1時間以内にご返信します</p>
+        <p>・いただいた内容を営業目的で第三者に共有することはありません</p>
+      </div>
+    </div>
+
+    <!-- ---- フォーム本体（4項目・遷移なし） ---- -->
+    <div id="form-card" class="bg-white text-[#0B1221] rounded-2xl shadow-2xl p-6 md:p-7">
+
+      <div id="form-wrap">
+        <h2 class="text-xl font-black mb-1.5">無料で相談する</h2>
+        <p class="text-sm text-gray-500 mb-6">入力は4項目だけ。1分で送信できます。</p>
+
+        <form id="lp-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="4934e419-c922-482a-84be-11c82d5c4c07" />
+          <input type="hidden" name="subject" value="【ANKEN】広告LPからのお問い合わせ" />
+          <input type="hidden" name="from_name" value="ANKEN 広告LP" />
+          <!-- 広告グループ／キャンペーンの識別用。JSでURLパラメータから自動補完される -->
+          <input type="hidden" id="ad_source" name="ad_source" value="contact-lp" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+          <div class="mb-4">
+            <label for="company" class="block text-sm font-bold text-gray-800 mb-1.5">会社名 <span class="text-amber-600">*</span></label>
+            <input id="company" name="company" type="text" required autocomplete="organization"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="株式会社ビシィッ" />
+            <p class="hidden mt-1.5 text-xs text-red-600" data-error-for="company">会社名を入力してください</p>
+          </div>
+
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-bold text-gray-800 mb-1.5">お名前 <span class="text-amber-600">*</span></label>
+            <input id="name" name="name" type="text" required autocomplete="name"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="山田 太郎" />
+            <p class="hidden mt-1.5 text-xs text-red-600" data-error-for="name">お名前を入力してください</p>
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-bold text-gray-800 mb-1.5">メールアドレス <span class="text-amber-600">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm" placeholder="taro@example.co.jp" />
+            <p class="hidden mt-1.5 text-xs text-red-600" data-error-for="email">メールアドレスの形式をご確認ください</p>
+          </div>
+
+          <div class="mb-6">
+            <label for="message" class="block text-sm font-bold text-gray-800 mb-1.5">ご相談内容</label>
+            <textarea id="message" name="message" rows="4"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm"
+              placeholder="例：紙の見積書をAIで読み取って基幹システムに取り込みたい。要件はまだ固まっていません。"></textarea>
+            <p class="mt-1.5 text-xs text-gray-400">任意。ひとことだけでも構いません。</p>
+          </div>
+
+          <button id="submit-btn" type="submit"
+            class="w-full bg-amber-500 hover:bg-amber-600 transition text-white font-black rounded-xl px-6 py-4 text-base flex items-center justify-center gap-2 disabled:opacity-60"
+            onclick="if(typeof gtag==='function') gtag('event','cta_click',{event_category:'contact_lp',event_label:'lp_submit_btn'})">
+            <span id="btn-label">無料で相談する</span>
+            <svg id="btn-arrow" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg id="btn-spinner" class="hidden w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </button>
+
+          <p id="error-msg" class="hidden mt-3 text-sm text-red-600">
+            送信に失敗しました。お手数ですが時間をおいて再度お試しください。
+          </p>
+
+          <p class="mt-4 text-xs text-gray-400 leading-relaxed">
+            送信により<a href="company-terms.html" class="underline hover:text-gray-600">利用規約</a>に同意したものとみなします。
+          </p>
+        </form>
+      </div>
+
+      <!-- 送信完了 -->
+      <div id="success-msg" class="hidden text-center py-8">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-amber-100 flex items-center justify-center">
+          <svg class="w-7 h-7 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h2 class="text-xl font-black mb-2">送信しました</h2>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          ご相談ありがとうございます。<br>
+          営業時間内であれば1時間以内にご返信します。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ===== 補足（スクロールした人向け・離脱リンクは置かない） ===== -->
+<section class="max-w-5xl mx-auto px-5 py-14">
+  <h2 class="text-2xl font-black mb-8 text-center">よくあるご質問</h2>
+  <div class="grid md:grid-cols-2 gap-6 text-sm">
+    <div class="border border-gray-200 rounded-2xl p-5">
+      <p class="font-bold mb-2">要件が固まっていなくても相談できますか？</p>
+      <p class="text-gray-600 leading-relaxed">はい。「この作業をなくしたい」だけの状態で構いません。何をどこまで自動化できるかの整理から入ります。</p>
+    </div>
+    <div class="border border-gray-200 rounded-2xl p-5">
+      <p class="font-bold mb-2">小さい依頼でも受けてもらえますか？</p>
+      <p class="text-gray-600 leading-relaxed">タスク単位・週1稼働からお受けしています。月額の固定契約や最低発注金額はありません。</p>
+    </div>
+    <div class="border border-gray-200 rounded-2xl p-5">
+      <p class="font-bold mb-2">費用はどのくらいかかりますか？</p>
+      <p class="text-gray-600 leading-relaxed">内容によって変わるため、まずお見積りをお出しします。相談・見積りの段階で費用は発生しません。</p>
+    </div>
+    <div class="border border-gray-200 rounded-2xl p-5">
+      <p class="font-bold mb-2">既存のシステムがあるのですが対応できますか？</p>
+      <p class="text-gray-600 leading-relaxed">既存システムへの機能追加・連携・保守引き継ぎも対象です。現行の構成をうかがったうえでご提案します。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-gray-200 py-8">
+  <div class="max-w-5xl mx-auto px-5 text-center text-xs text-gray-400">
+    <p class="mb-1">ANKEN（アンケン）／株式会社ビシィッ</p>
+    <p>&copy; 2026 bisii Inc.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const form       = document.getElementById('lp-form');
+  const formWrap   = document.getElementById('form-wrap');
+  const successMsg = document.getElementById('success-msg');
+  const errorMsg   = document.getElementById('error-msg');
+  const btn        = document.getElementById('submit-btn');
+  const btnLabel   = document.getElementById('btn-label');
+  const btnArrow   = document.getElementById('btn-arrow');
+  const btnSpinner = document.getElementById('btn-spinner');
+
+  /* ---- 広告グループの識別子をURLパラメータから拾う ----
+     例: /contact-lp.html?utm_campaign=spot&utm_content=ai-tel
+     → 送信メールに「どの広告グループから来たか」が入るので、
+        グループ別のCV数を Google広告の管理画面を見ずに判別できる。 */
+  try {
+    const p = new URLSearchParams(location.search);
+    const tag = [p.get('utm_campaign'), p.get('utm_content'), p.get('utm_term'), p.get('gclid') ? 'gclid' : null]
+      .filter(Boolean).join(' / ');
+    if (tag) document.getElementById('ad_source').value = 'contact-lp: ' + tag;
+  } catch (e) { /* パラメータなしでも通常どおり動作させる */ }
+
+  const showError = (id, show) => {
+    const el = document.querySelector('[data-error-for="' + id + '"]');
+    if (el) el.classList.toggle('hidden', !show);
+  };
+
+  const validate = (el) => {
+    const ok = el.value.trim() !== '' && el.checkValidity();
+    showError(el.id, !ok);
+    el.classList.toggle('border-red-400', !ok);
+    return ok;
+  };
+
+  ['company', 'name', 'email'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('blur', () => validate(el));
+    el.addEventListener('input', () => { if (el.value.trim() !== '') showError(id, false); });
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const fields = ['company', 'name', 'email'].map(id => document.getElementById(id));
+    if (!fields.every(validate)) {
+      fields.find(f => f.value.trim() === '' || !f.checkValidity())?.focus();
+      return;
+    }
+
+    btn.disabled = true;
+    btnLabel.textContent = '送信中...';
+    btnArrow.classList.add('hidden');
+    btnSpinner.classList.remove('hidden');
+    errorMsg.classList.add('hidden');
+
+    try {
+      const res  = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      const json = await res.json().catch(() => ({}));
+
+      if (res.ok && json.success) {
+        /* contact.html と同じイベント名。Google広告へのCVインポート設定を分けずに済む */
+        if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: 'contact_lp' });
+        formWrap.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+        document.getElementById('form-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        throw new Error(json.message || 'server error');
+      }
+    } catch (err) {
+      errorMsg.classList.remove('hidden');
+      btn.disabled = false;
+      btnLabel.textContent = '無料で相談する';
+      btnArrow.classList.remove('hidden');
+      btnSpinner.classList.add('hidden');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

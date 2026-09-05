@@ -1,0 +1,44 @@
+# ANKEN 301リダイレクト設定
+# Cloudflare Pages / Netlify 共通フォーマット（デプロイ出力のルートに置くこと）
+# 書式: <元パス> <転送先パス> <ステータスコード>
+#
+# 統合リライトで吸収した記事を受け皿へ恒久転送する。
+# 記載順にマッチするため、個別ルールを先に、ワイルドカードを後に置く。
+# 最終更新: 2026-08-25
+
+# --- クラスタA：スポット外注の基本 → blog-pillar（2026-08-21 統合） ---
+/blog/blog-a.html      /blog/blog-pillar.html   301
+/blog/blog-e.html      /blog/blog-pillar.html   301
+/blog/blog-h.html      /blog/blog-pillar.html   301
+/blog/blog-k.html      /blog/blog-pillar.html   301
+/blog/blog-n.html      /blog/blog-pillar.html   301
+/blog/blog-qq.html     /blog/blog-pillar.html   301
+
+# --- クラスタC：社内AIツール開発 → blog-m（2026-08-24 統合） ---
+/blog/blog-b.html      /blog/blog-m.html        301
+/blog/blog-f.html      /blog/blog-m.html        301
+/blog/blog-i.html      /blog/blog-m.html        301
+/blog/blog-p.html      /blog/blog-m.html        301
+
+# --- AI研修・助成金 → blog-pp（2026-08-25 統合） ---
+/blog/blog-ee.html     /blog/blog-pp.html       301
+/blog/blog-dddd.html   /blog/blog-pp.html       301
+
+# --- 建設・製造クラスタ：現場AI総論 → blog-ww（2026-08-27 統合） ---
+/blog/blog-vv.html     /blog/blog-ww.html       301
+
+# --- クラスタM-1：社内ナレッジ検索AI（RAG） → blog-w（2026-08-31 統合） ---
+/blog/blog-yyy.html    /blog/blog-w.html        301
+/blog/blog-hh.html     /blog/blog-w.html        301
+/blog/blog-lll.html    /blog/blog-w.html        301
+
+# --- クラスタM-2：問い合わせ対応の自動化（社外向け） → blog-aaa（2026-08-31 統合） ---
+/blog/blog-z.html      /blog/blog-aaa.html      301
+
+# --- クラスタJ-1：請求書・書類処理のAI-OCR化 → blog-ff（2026-09-03 統合） ---
+/blog/blog-u.html      /blog/blog-ff.html       301
+
+# --- クラスタJ-2：給与計算の自動化 → blog-ppp（2026-09-03 統合） ---
+/blog/blog-ooo.html    /blog/blog-ppp.html      301
+
+# --- 以降、統合するたびにこのファイルへ追記する ---
